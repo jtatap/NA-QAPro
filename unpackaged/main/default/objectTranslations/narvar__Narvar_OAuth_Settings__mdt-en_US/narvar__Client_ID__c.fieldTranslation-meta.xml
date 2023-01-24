@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This needs to match the Consumer Key in the Connected App named, Narvar Customer Service Platform API --></help>
+        <label><!-- Client ID --></label>
+        <name>narvar__Client_ID__c</name>
+    </CustomFieldTranslation>

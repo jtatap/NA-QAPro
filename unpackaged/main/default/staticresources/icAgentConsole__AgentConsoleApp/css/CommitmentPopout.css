@@ -1,0 +1,222 @@
+﻿@charset 'UTF-8';
+
+::-ms-clear {
+    display: none;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: verdana;
+    color: #00396B;
+}
+
+.commitmentReminder {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: -moz-none;
+}
+
+.userselectable {
+    -moz-user-select: text !important;
+    -khtml-user-select: text !important;
+    -webkit-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+}
+
+.commitmentReminder .bgHeaderGradient {
+    background-color: #00396B;
+}
+
+.commitmentReminder .bgBodyGradient {
+    background-color: #FFFFFF;
+}
+
+.commitmentReminder .brRoundT {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.commitmentReminder .brRoundB {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.commitmentReminder .header {
+    height: 32px;
+}
+
+    .commitmentReminder .header .logo {
+        float: left;
+        margin-top: 9px;
+        margin-left: 7px;
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+
+
+.commitmentReminder .btnStyle {
+    float: left;
+    height: 20px;
+    width: 60px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 11px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+ }
+
+.commitmentReminder .controlsPanel .proceedbtnStyle, .commitmentReminder .controlsPanel .rescheduleBtnStyle, .commitmentReminder .controlsPanel .dismissBtnStyle {
+    float: left;
+    height: 20px;
+    width: 70px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 11px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    /*color: #000000;*/
+}
+
+.commitmentReminder .controlsPanel .rescheduleBtnStyle {
+    width: 80px;
+}
+
+.commitmentReminder .controlsPanel .proceedBtn, .commitmentReminder .controlsPanel .dismissBtn {
+    float: left;
+    margin-left: 12px;
+    max-width: 52px;
+}
+
+.commitmentReminder .controlsPanel .rescheduleBtn {
+    margin-left: 0px;
+}
+
+.commitmentReminder .btnDivEnable {
+    background-color: #FFF !important;
+    cursor: default !important;
+}
+
+.commitmentReminder .btnDivHover {
+    background-color: #B0ADAB !important;
+    cursor: pointer !important;
+}
+
+.commitmentReminder .pinImage {
+    background: url('images/pin.png') no-repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.commitmentReminder .agentName {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+    width: 200px;
+}
+
+.commitmentReminder .agentPhone {
+    font-size: 12px;
+    margin-left: 40px;
+    width: 170px;
+    margin-top: 3px;
+}
+
+.commitmentReminder .controlsPanel {
+    height: 25px;
+    padding: 4px 3px 0px 3px;
+    margin: 12px 0px 10px 65px;
+}
+
+.commitmentReminder {
+    height: 100vh;
+}
+
+    .commitmentReminder .contentPanel {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .commitmentReminder .namePanel {
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 5px;
+    }
+
+    .commitmentReminder .reminderTimeLabelContainer {
+        text-align: center;
+        font-weight: bold;
+    }
+
+.renderTextSize {
+    width: auto;
+    position: absolute;
+    top: -200px;
+}
+
+.commitmentReminder .textEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.commitmentReminder .popupDiv {
+    position: absolute;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+
+    .commitmentReminder .popupDiv .msgDiv {
+        background: rgb(68, 68, 68); /* The Fallback */
+        background: rgba(68, 68, 68, 0.85);
+        margin-top: 120px;
+        padding: 5px 0 30px 5px; /*OK buttom at the bottom*/
+        position: relative;
+        text-align: left;
+        width: 90%;
+    }
+
+        .commitmentReminder .popupDiv .msgDiv .iMsg {
+            color: #FFFFFF;
+            font-size: 11px;
+        }
+
+        .commitmentReminder .popupDiv .msgDiv .eMsg {
+            color: #FF0000;
+            font-size: 11px;
+        }
+
+        .commitmentReminder .popupDiv .msgDiv .yesBtn {
+            bottom: 5px;
+            font-size: 11px;
+            margin-right: 6px;
+            padding: 2px 3px;
+            position: absolute;
+            right: 50px;
+            text-align: center;
+            width: 40px;
+        }
+
+        .commitmentReminder .popupDiv .msgDiv .noBtn {
+            bottom: 5px;
+            font-size: 11px;
+            padding: 2px 3px;
+            position: absolute;
+            right: 5px;
+            text-align: center;
+            width: 40px;
+        }

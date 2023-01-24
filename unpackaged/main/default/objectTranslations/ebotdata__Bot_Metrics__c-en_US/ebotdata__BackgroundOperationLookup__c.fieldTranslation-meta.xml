@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- BackgroundOperationLookup --></label>
+        <name>ebotdata__BackgroundOperationLookup__c</name>
+        <relationshipLabel><!-- Bot Metrics --></relationshipLabel>
+    </CustomFieldTranslation>

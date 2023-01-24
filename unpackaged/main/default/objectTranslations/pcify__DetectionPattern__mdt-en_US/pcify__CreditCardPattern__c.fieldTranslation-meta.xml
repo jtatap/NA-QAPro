@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- *If TRUE, this Detection Pattern will verify that detected credit card numbers are valid. 
+*If you only want RegEx without credit card number validation (i.e. for a Social Security Number Pattern), then set this checkbox to false. --></help>
+        <label><!-- CreditCardPattern --></label>
+        <name>pcify__CreditCardPattern__c</name>
+    </CustomFieldTranslation>

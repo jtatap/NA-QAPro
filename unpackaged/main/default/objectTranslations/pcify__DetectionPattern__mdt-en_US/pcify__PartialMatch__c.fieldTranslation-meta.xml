@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- PCIFY will skip entire field if a partial negative pattern match is detected. --></help>
+        <label><!-- PartialMatch --></label>
+        <name>pcify__PartialMatch__c</name>
+    </CustomFieldTranslation>

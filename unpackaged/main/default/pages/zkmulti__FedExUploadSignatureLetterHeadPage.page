@@ -1,0 +1,133 @@
+<apex:page standardController="zkmulti__MCShipmate_Preference__c" extensions="zkmulti.RemoteHandler" lightningStylesheets="true" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Import the Design System style sheet -->
+  <apex:slds />
+	<apex:variable var="prod" value="{!URLFOR($Resource.zkmulti__zkApp)}" />
+	<apex:variable var="prodVendor" value="{!URLFOR($Resource.zkmulti__zkAppVendor)}" />
+
+	<apex:variable var="dev" value="https://localhost:3001" />
+	<apex:variable var="hostApp" value="{!IF(isDevMod, dev, prod)}" />
+	<apex:variable var="hostVendor" value="{!IF(isDevMod, dev, prodVendor)}" />
+
+	<apex:stylesheet value="{!hostVendor + '/vendor.bundle.css'}"/>
+	<apex:stylesheet value="{!hostApp + '/main.bundle.css'}"/>
+	<apex:includeScript value="{!hostVendor + '/vendor.bundle.js'}" />
+	<apex:includeScript value="{!hostApp + '/main.bundle.js'}" />
+
+</head>
+<body>
+	<script>
+		(function() {
+			'strict mode';
+			angular
+				.module('app')
+				.constant('config', {
+					hostMain: "{!hostApp}",
+					host: "{!hostVendor}",
+					isDevMode: "{!isDevMod}",
+					UrlPathPrefix: "{!$Site.Prefix}",
+					recordId: '{!JSENCODE(MCShipmate_Preference__c.Id)}',
+					api: {
+						Session_ID: '{!$Api.Session_ID}'
+					},
+					pages: {
+						CommercialInvoice: '{!URLFOR($Action.zkmulti__CommercialInvoice__c.New)}',
+						ProFormaInvoice: '{!URLFOR($Action.zkmulti__ProFormaInvoice__c.New)}',
+					},
+					user: {
+						id: '{!JSENCODE($User.Id)}',
+						email: '{!JSENCODE($User.Email)}',
+						firstname: '{!JSENCODE($User.FirstName)}',
+						lastname: '{!JSENCODE($User.LastName)}'
+					},
+				})
+				.constant('setting', {
+				});
+		})();
+	</script>
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds-scope">
+	<div ng-app="app" class="zkapplication" ng-strict-di="true" ng-cloak="true">
+		<app>
+			<fedex-upload-signature-letterhead></fedex-upload-signature-letterhead>
+		</app>
+	</div>
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+</html>
+
+<!-- <apex:page tabStyle="zkmulti__MCShipmate_Preference__c" standardController="zkmulti__MCShipmate_Preference__c" 
+	extensions="zkmulti.FedExUploadImageController" action="{! init }"> -->
+
+	
+<!--
+	<c:Loading id="LoadingControl"/>
+	<apex:sectionHeader title="Upload Signature and LetterHead images"  subtitle="Upload Signature and LetterHead images"/>
+	<apex:form >
+		<apex:pageBlock title="Upload Signature and LetterHead images" mode="edit">
+			<apex:pageBlockButtons >
+				<apex:commandButton action="{! doSave }" value="Save"/>
+				<apex:commandButton action="{! doCancel }" value="Cancel"/>
+			</apex:pageBlockButtons>
+
+			<apex:outputPanel id="uploadMessageAddMsg">
+				<c:MessageListDisplay id="MessageList" msgList="{! messageList }"/>
+			</apex:outputPanel>
+
+			<apex:pageBlockSection title="Uploaded images" columns="1">
+				<apex:pageBlockTable value="{! images }" var="image" title="Uploaded images">
+					<apex:column headerValue="Name" value="{! image.Name }" width="10%"/>
+					<apex:column headerValue="Image"  width="70%">
+						<apex:image url="{! image.url }" /> 
+					</apex:column>
+					<apex:column headerValue="Remove"  width="10%">
+						<apex:commandLink value="Remove image" action="{! doRemoveAttachment }">
+							<apex:param name="attId" value="{! image.attachmentId }" />
+						</apex:commandLink>
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Upload new image">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Image Id"/>
+					<apex:selectList value="{! selectedNewName }" size="1" multiselect="false" disabled="{! availableNameCount == 0 }">
+						<apex:selectOptions value="{! nameOptions }"/>
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Image" for="uploadId"/>
+					<apex:inputFile value="{! attBody }" filename="{! newAttachment.name }" id="uploadId" disabled="{! availableNameCount == 0 }"/>
+				</apex:pageBlockSectionItem>
+				<apex:commandButton action="{! doUpload }" value="Upload" disabled="{! availableNameCount == 0 }"/>
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Default Signature">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Uploaded Image"/>
+					<apex:selectList value="{! selectedDefaultSignatureImage }" size="1" multiselect="false" disabled="{! availableImageCount == 0 }">
+						<apex:selectOptions value="{! availableImagesOptions }"/>
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Default LetterHead">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Uploaded Image"/>
+					<apex:selectList value="{! selectedDefaultLetterHeadImage }" size="1" multiselect="false" disabled="{! availableImageCount == 0 }">
+						<apex:selectOptions value="{! availableImagesOptions }"/>
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+-->
+</apex:page>

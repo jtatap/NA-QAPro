@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This checkbox skips all Detection Patterns.  If selected, PCIFY will only find PII that passes the Luhn Algorithm.  USE WITH CAUTION. --></help>
+        <label><!-- LuhnOnly --></label>
+        <name>pcify__LuhnOnly__c</name>
+    </CustomFieldTranslation>

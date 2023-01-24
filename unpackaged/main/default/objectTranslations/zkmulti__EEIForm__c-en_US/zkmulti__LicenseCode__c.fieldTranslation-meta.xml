@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The standard license code published by US government (from C30 to C60) --></help>
+        <label><!-- License Code --></label>
+        <name>zkmulti__LicenseCode__c</name>
+    </CustomFieldTranslation>

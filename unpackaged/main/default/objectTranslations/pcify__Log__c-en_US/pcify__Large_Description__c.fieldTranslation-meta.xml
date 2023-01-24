@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Complete exception message or debug message --></help>
+        <label><!-- Large Description --></label>
+        <name>pcify__Large_Description__c</name>
+    </CustomFieldTranslation>

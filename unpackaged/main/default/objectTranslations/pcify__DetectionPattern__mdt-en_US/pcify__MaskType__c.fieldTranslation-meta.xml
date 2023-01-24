@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Full Mask: all credit card number characters are masked 
+Last4: all credit card number characters are masked but the last 4 characters 
+First6andLast4: all credit card number characters are masked by the first 6 and the last 4 characters --></help>
+        <label><!-- MaskType --></label>
+        <name>pcify__MaskType__c</name>
+        <picklistValues>
+            <masterLabel>First6andLast4</masterLabel>
+            <translation><!-- First6andLast4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FullMask</masterLabel>
+            <translation><!-- FullMask --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last4</masterLabel>
+            <translation><!-- Last4 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

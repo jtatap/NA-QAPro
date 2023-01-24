@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set this property to create activities from inContact agent console app, after the contact is disconnected --></help>
+        <label><!-- Create Task --></label>
+        <name>icAgentConsole__CreateTask__c</name>
+    </CustomFieldTranslation>

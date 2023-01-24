@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'openSans';
+  src: url(fonts/OpenSans-Regular.ttf?orgId=00D1U000000xmv4);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #767676;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ccc;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid #2196f3;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#loginPanel {
+  height: 100%;
+  background-image: url(images/background-pattern.svg), linear-gradient(rgb(0, 158, 218), rgb(0, 124, 190));
+}
+
+#loginPanel .agentLogin {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: openSans;
+}
+
+#loginPanel .agentLogin .logo-section {
+  min-width: 180px;
+  max-width: 360px;
+  padding: 10px;
+  margin: 100px auto 0;
+}
+
+#loginPanel .agentLogin .logo-section .nice-ic-logo {
+  background-image: url(images/nice-ic-cxone-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
+}
+
+#loginPanel .agentLogin #copyRight-contactUs {
+  padding: 0px 10px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+#loginPanel .agentLogin #copyRight-contactUs #footer-logo {
+  background-image: url(images/nice-ic-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 15px;
+  margin-bottom: 2px;
+}
+
+#loginPanel .agentLogin #copyRight-contactUs #copyRightMsg {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+#loginPanel .agentLogin #copyRight-contactUs #copyRightMsg div {
+  display: inline-block;
+  padding: 2px;
+}
+
+#loginPanel .agentLogin .loginFormPanel {
+  min-width: 180px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+#loginPanel .agentLogin .loginFormPanel .login-form-header {
+  font-size: 13px;
+  color: #404040;
+  border-bottom: 1px solid #d6dee5;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm {
+  padding: 0 20px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.btnPanel {
+  margin-bottom: 0;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.pwdPanel {
+  margin-bottom: 15px;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .login-form-input {
+  height: 40px;
+  background-color: #fff;
+  outline: 0;
+  line-height: 21px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #d6dee5;
+  box-shadow: none;
+  padding: 6px 12px;
+  box-sizing: border-box;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .login-form-input.top-space {
+  margin-top: 30px;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.btnPanel .login-form-input {
+  margin-bottom: 30px;
+  background-color: #007cbe;
+  border: 1px solid #007cbe;
+  border-radius: 3px;
+  border-bottom: 1px solid #105286;
+  box-shadow: 0 1px 0 #105286;
+  color: #fff;
+  cursor: pointer;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.btnPanel .login-form-input:hover {
+  background-color: #298fd8;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.btnPanel.btn-clicked .login-form-input {
+  background-color: #196ab4;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel.btnPanel.btn-disabled .login-form-input {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .errorPanel {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #d82132;
+  max-height: 52px;
+  overflow: auto;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .showPwdIcon {
+  background-image: url(images/ico_visible_norm.png);
+  top: 10px;
+  right: 5%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel input::-ms-reveal {
+  display: none;
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .showPwdIcon:hover {
+  background-image: url(images/ico_visible_hover.png);
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .showPwdIcon.passwdShown {
+  background-image: url(images/ico_invisible_norm.png);
+}
+
+#loginPanel .agentLogin .loginFormPanel .loginForm .namePanel .showPwdIcon.passwdShown:hover {
+  background-image: url(images/ico_invisible_hover.png);
+}
+
+@media screen and (max-width: 219px) {
+  #loginPanel .agentLogin .logo-section {
+    margin: 0;
+  }
+  
+  #loginPanel .agentLogin .logo-section .nice-ic-logo {
+    padding: 0;
+    height: 20px;
+  }
+  
+  #loginPanel .agentLogin #copyRight-contactUs {
+    width: 180px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 590px;
+}
+
+td #loginPanel {
+  position: absolute;
+  height: 98%;
+  width: calc(100% - 240px);
+}
+
+#evolveLoginFrame {
+  width: 100%;
+  height: 100%;
+}
+
+.loadingSpinner {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+.progressDiv:before {
+  left: -6px;
+}
+
+.progressDiv:after {
+  left: 6px;
+}
+
+.progressDiv:after, .progressDiv:before {
+  content: "";
+  position: absolute;
+}
+
+.progressDiv, .progressDiv:after, .progressDiv:before {
+  width: 4px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+
+.progress-bounce-middle {
+  -webkit-animation: bounce-middle .6s ease .1s infinite;
+  animation: bounce-middle .6s ease .1s infinite;
+}
+
+.progress-bounce-middle:before {
+  -webkit-animation: bounce-middle .6s ease 0s infinite;
+  animation: bounce-middle .6s ease 0s infinite;
+}
+
+.progress-bounce-middle:after {
+  -webkit-animation: bounce-middle .6s ease .2s infinite;
+  animation: bounce-middle .6s ease .2s infinite;
+}
+
+.progress-bounce-middle:after, .progress-bounce-middle:before {
+  top: 50%;
+  -webkit-transform: translateY(-10px) translateZ(0);
+  transform: translateY(-10px) translateZ(0);
+}
+
+@-webkit-keyframes bounce-middle {
+  0%, 100% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+  }
+  
+  50% {
+    height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+  }
+}
+
+@keyframes bounce-middle {
+  0%, 100% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+  }
+  
+  50% {
+    height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+  }
+}
+
+.ssoErrorPanel {
+  color: white;
+  font-weight: bold;
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
+  font-family: openSans;
+}
+
+.downloadLogPanel {
+  text-align: center;
+  margin: 5px;
+}
+
+#loginPanel .agentLogin .downloadLogPanel a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#loginPanel .agentLogin .downloadLogPanel a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.hiddenIframe {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+}

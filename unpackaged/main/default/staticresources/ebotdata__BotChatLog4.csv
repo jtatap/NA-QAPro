@@ -1,0 +1,102 @@
+ebotdata__Business_Metric_Type__c,ebotdata__Current_Confidence_For_Utterance__c,ebotdata__Current_Dialog_Id__c,ebotdata__Current_Dialog_Name__c,ebotdata__Current_Threshold_High__c,ebotdata__Current_Utterance__c,ebotdata__Intent_Name__c,ebotdata__Intent_Type__c,ebotdata__Live_Agent_Session_Id__c,ebotdata__Successful_Resolution__c,ebotdata__Topic_Name__c
+,,0Xd1l00000001ChCAI,Confused,,what are the steps to add the schedule,bot.fallback,Generic,f6a33abf-c28c-4ef6-9f67-3d9389045e87,,
+,0.9983,0Xd1l00000001D2CAI,Escalation_Flow,0.9977,help me export a product schedule,bot.escalation,Generic,244615ad-cb38-40c7-9c49-c0bd135571b8,,
+,,0Xd1l00000001ChCAI,Confused,,show me how to create a schedule,bot.fallback,Generic,209b991a-1a5b-4469-9d5f-4dfc35b3814d,,
+Direct,0.9998,0Xd1l00000001DXCAY,simple_product,0.9866,there is no frequency or reach,business.product.simple_product,Business,128d592d-e149-43cb-b7aa-44d1362a1394,,product
+Start,0.9989,0Xd1l00000001CuCAI,Get_Article,0.0164,"help ""Cannot open more than 5 research report groups""",bot.business_answer.presentation,Generic,7d27edb2-2f91-4378-b687-8269f4a5faa8,,
+Direct,0.9729,0Xd1l00000001DYCAY,More_than_5,0.0164,how do I generate a report,business.product.more_than_5,Business,e9c1da93-6c19-42b6-b2e2-f247afd93785,,product
+,0.9729,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,how do I generate a report,bot.escalation,Generic,e9c1da93-6c19-42b6-b2e2-f247afd93785,,
+,0.9643,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,the research report window won't open,bot.escalation,Generic,13b6cdeb-c5b4-4b1f-a116-df0c82a3d3f8,,
+Direct,0.9997,0Xd1l00000001DXCAY,simple_product,0.9866,help me with the frequency/reach,business.product.simple_product,Business,ba5aabd4-8ffe-4be0-a89e-283977a70c2d,,product
+Start,0.9998,0Xd1l00000001CuCAI,Get_Article,0.9866,there is no frequency or reach,bot.business_answer.presentation,Generic,128d592d-e149-43cb-b7aa-44d1362a1394,,
+Direct,0.9978,0Xd1l00000001DjCAI,Error_55,0.9877,im having an issue in product range,business.product.error.55,Business,ef782795-9e25-45f8-b37b-163cfada9c1d,,product
+,0.9978,0Xd1l00000001D2CAI,Escalation_Flow,0.9877,im having an issue in product range,bot.escalation,Generic,ef782795-9e25-45f8-b37b-163cfada9c1d,,
+Start,0.5234,0Xd1l00000001CuCAI,Get_Article,0.1621,unable to get to gtc,bot.business_answer.presentation,Generic,94462902-1d35-4b90-a548-d5b0f1ab5796,,
+,0.9988,0Xd1l00000001D2CAI,Escalation_Flow,0.9985,I need help to make a selection for questions desktop,bot.escalation,Generic,25b79335-d504-4b86-a3fb-16052cf577fc,,
+Start,0.9978,0Xd1l00000001CuCAI,Get_Article,0.9877,im having an issue in product range,bot.business_answer.presentation,Generic,ef782795-9e25-45f8-b37b-163cfada9c1d,,
+Direct,0.9781,0Xd1l00000001DhCAI,Error_800004005,0.0184,error 55 on product page,business.product.error.800004005,Business,abddce11-bf6a-4a82-aabd-45892cd3f3fb,,product
+Direct,0.9954,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.0092,help me enter product data,business.product.cannot_enter_data,Business,f6a33abf-c28c-4ef6-9f67-3d9389045e87,,product
+Start,0.9954,0Xd1l00000001CuCAI,Get_Article,0.0092,help me enter product data,bot.business_answer.presentation,Generic,f6a33abf-c28c-4ef6-9f67-3d9389045e87,,
+,0.9954,0Xd1l00000001D2CAI,Escalation_Flow,0.0092,help me enter product data,bot.escalation,Generic,f6a33abf-c28c-4ef6-9f67-3d9389045e87,,
+Start,0.9975,0Xd1l00000001CuCAI,Get_Article,0.9969,product dictionary isn't working for me,bot.business_answer.presentation,Generic,97dc8646-6061-4e84-822b-24cad31249a0,,
+,0.9975,0Xd1l00000001D2CAI,Escalation_Flow,0.9969,product dictionary isn't working for me,bot.escalation,Generic,97dc8646-6061-4e84-822b-24cad31249a0,,
+Direct,0.511,0Xd1l00000001DYCAY,More_than_5,0.0164,getting an npower error,business.product.more_than_5,Business,e831abd0-f0ec-4ed7-b8f9-24633dc1c7f3,,product
+Start,0.511,0Xd1l00000001CuCAI,Get_Article,0.0164,getting an npower error,bot.business_answer.presentation,Generic,e831abd0-f0ec-4ed7-b8f9-24633dc1c7f3,,
+Direct,0.5234,0Xd1l00000001DJCAY,Access_Issues,0.1621,unable to get to gtc,business.gtc.access_issues,Business,94462902-1d35-4b90-a548-d5b0f1ab5796,,Global Track Complete
+Start,0.9781,0Xd1l00000001CuCAI,Get_Article,0.0184,error 55 on product page,bot.business_answer.presentation,Generic,abddce11-bf6a-4a82-aabd-45892cd3f3fb,,
+,0.9781,0Xd1l00000001D2CAI,Escalation_Flow,0.0184,error 55 on product page,bot.escalation,Generic,abddce11-bf6a-4a82-aabd-45892cd3f3fb,,
+,0.9998,0Xd1l00000001D2CAI,Escalation_Flow,0.9866,there is no frequency or reach,bot.escalation,Generic,128d592d-e149-43cb-b7aa-44d1362a1394,,
+Direct,1,0Xd1l00000001DPCAY,Item_Numbers,0.9994,I am getting missing item on AD,business.desktop.item_numbers,Business,cc3cb147-355f-493e-89fd-53a38e0aa4c7,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9994,I am getting missing item on AD,bot.business_answer.presentation,Generic,cc3cb147-355f-493e-89fd-53a38e0aa4c7,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9994,I am getting missing item on AD,bot.escalation,Generic,3669bdd3-15d7-4ab9-9e7e-ed06a458bc66,,
+,0.995,0Xd1l00000001D2CAI,Escalation_Flow,0.0092,can't enter data on the tapascan web,bot.escalation,Generic,d2659db3-c5b6-4c4b-8329-5c21f2f9d85a,,
+Start,0.9997,0Xd1l00000001CuCAI,Get_Article,0.9866,help me with the frequency/reach,bot.business_answer.presentation,Generic,ba5aabd4-8ffe-4be0-a89e-283977a70c2d,,
+,0.9997,0Xd1l00000001D2CAI,Escalation_Flow,0.9866,help me with the frequency/reach,bot.escalation,Generic,ba5aabd4-8ffe-4be0-a89e-283977a70c2d,,
+Direct,1,0Xd1l00000001DPCAY,Item_Numbers,0.9994,I am getting missing item on AD,business.desktop.item_numbers,Business,3669bdd3-15d7-4ab9-9e7e-ed06a458bc66,,questions Desktop
+,0.4131,0Xd1l00000001D2CAI,Escalation_Flow,0.0184,why is there a 3004 error,bot.escalation,Generic,be94d0d4-0aa3-4f35-811f-bdeb6a65bfb8,,
+Direct,0.98,0Xd1l00000001DWCAY,Product_Access_Problem,0.6622,there is a product error showing up,business.product.access_problem,Business,697e7619-d30f-4cc3-b664-81af0dc40b69,,product
+Start,0.98,0Xd1l00000001CuCAI,Get_Article,0.6622,there is a product error showing up,bot.business_answer.presentation,Generic,697e7619-d30f-4cc3-b664-81af0dc40b69,,
+,0.98,0Xd1l00000001D2CAI,Escalation_Flow,0.6622,there is a product error showing up,bot.escalation,Generic,697e7619-d30f-4cc3-b664-81af0dc40b69,,
+Direct,0.9928,0Xd1l00000001DWCAY,Product_Access_Problem,0.6622,there is an error opening the project,business.product.access_problem,Business,3ab3248f-7ffc-453d-a74d-6a0d64a6ce27,,product
+Start,0.9928,0Xd1l00000001CuCAI,Get_Article,0.6622,there is an error opening the project,bot.business_answer.presentation,Generic,3ab3248f-7ffc-453d-a74d-6a0d64a6ce27,,
+,0.9928,0Xd1l00000001D2CAI,Escalation_Flow,0.6622,there is an error opening the project,bot.escalation,Generic,3ab3248f-7ffc-453d-a74d-6a0d64a6ce27,,
+,0.418,0Xd1l00000001D2CAI,Escalation_Flow,0.0055,i am having an error creating a spot,bot.escalation,Generic,12267fae-2dd9-4c7d-81d2-fae9c458c5ce,,
+Direct,0.6175,0Xd1l00000001DgCAI,Undefined_Word,0.0055,how do I add schedule to the schedule,business.product.undefined_word,Business,11d03dee-a68e-4c47-bf92-5f0b6b560f9a,,product
+Direct,0.995,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.0092,can't enter data on the tapascan web,business.product.cannot_enter_data,Business,d2659db3-c5b6-4c4b-8329-5c21f2f9d85a,,product
+Start,0.995,0Xd1l00000001CuCAI,Get_Article,0.0092,can't enter data on the tapascan web,bot.business_answer.presentation,Generic,d2659db3-c5b6-4c4b-8329-5c21f2f9d85a,,
+Start,0.9984,0Xd1l00000001CuCAI,Get_Article,0.0164,why can't I open more than 5 groups for product,bot.business_answer.presentation,Generic,209b991a-1a5b-4469-9d5f-4dfc35b3814d,,
+,0.6623,0Xd1l00000001D2CAI,Escalation_Flow,0.0737,the error: 3004 on the questions On Demand is showing,bot.escalation,Generic,d4e2af59-b644-4409-a874-7cbfb94e9743,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9994,I am getting missing item on AD,bot.business_answer.presentation,Generic,3669bdd3-15d7-4ab9-9e7e-ed06a458bc66,,
+,0.9984,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,why can't I open more than 5 groups for product,bot.escalation,Generic,209b991a-1a5b-4469-9d5f-4dfc35b3814d,,
+Start,0.9729,0Xd1l00000001CuCAI,Get_Article,0.0164,how do I generate a report,bot.business_answer.presentation,Generic,e9c1da93-6c19-42b6-b2e2-f247afd93785,,
+Direct,0.9643,0Xd1l00000001DYCAY,More_than_5,0.0164,the research report window won't open,business.product.more_than_5,Business,13b6cdeb-c5b4-4b1f-a116-df0c82a3d3f8,,product
+Start,0.9643,0Xd1l00000001CuCAI,Get_Article,0.0164,the research report window won't open,bot.business_answer.presentation,Generic,13b6cdeb-c5b4-4b1f-a116-df0c82a3d3f8,,
+Start,0.6175,0Xd1l00000001CuCAI,Get_Article,0.0055,how do I add schedule to the schedule,bot.business_answer.presentation,Generic,11d03dee-a68e-4c47-bf92-5f0b6b560f9a,,
+,0.6175,0Xd1l00000001D2CAI,Escalation_Flow,0.0055,how do I add schedule to the schedule,bot.escalation,Generic,11d03dee-a68e-4c47-bf92-5f0b6b560f9a,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9994,I am getting missing item on AD,bot.escalation,Generic,cc3cb147-355f-493e-89fd-53a38e0aa4c7,,
+Direct,0.9988,0Xd1l00000001DTCAY,Secondary_Monitor,0.9985,I need help to make a selection for questions desktop,business.desktop.secondary_monitor,Business,25b79335-d504-4b86-a3fb-16052cf577fc,,questions Desktop
+Start,0.9988,0Xd1l00000001CuCAI,Get_Article,0.9985,I need help to make a selection for questions desktop,bot.business_answer.presentation,Generic,25b79335-d504-4b86-a3fb-16052cf577fc,,
+Direct,0.3219,0Xd1l00000001DhCAI,Error_800004005,0.0184,i see an error,business.product.error.800004005,Business,c632b95c-e38e-44eb-8398-f17810c40951,,product
+Start,0.3219,0Xd1l00000001CuCAI,Get_Article,0.0184,i see an error,bot.business_answer.presentation,Generic,c632b95c-e38e-44eb-8398-f17810c40951,,
+,0.3219,0Xd1l00000001D2CAI,Escalation_Flow,0.0184,i see an error,bot.escalation,Generic,c632b95c-e38e-44eb-8398-f17810c40951,,
+,0.511,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,getting an npower error,bot.escalation,Generic,e831abd0-f0ec-4ed7-b8f9-24633dc1c7f3,,
+,0.5234,0Xd1l00000001D2CAI,Escalation_Flow,0.1621,unable to get to gtc,bot.escalation,Generic,94462902-1d35-4b90-a548-d5b0f1ab5796,,
+Direct,0.9178,0Xd1l00000001DJCAY,Access_Issues,0.1621,having problems with global track complete gtc,business.gtc.access_issues,Business,7c000a27-b7c7-4886-b07d-ba2e3d89fbb8,,Global Track Complete
+Start,0.9178,0Xd1l00000001CuCAI,Get_Article,0.1621,having problems with global track complete gtc,bot.business_answer.presentation,Generic,7c000a27-b7c7-4886-b07d-ba2e3d89fbb8,,
+,0.9178,0Xd1l00000001D2CAI,Escalation_Flow,0.1621,having problems with global track complete gtc,bot.escalation,Generic,7c000a27-b7c7-4886-b07d-ba2e3d89fbb8,,
+Direct,0.9975,0Xd1l00000001DkCAI,Dictionary,0.9969,product dictionary isn't working for me,business.product.dictionary,Business,97dc8646-6061-4e84-822b-24cad31249a0,,product
+Direct,0.9989,0Xd1l00000001DYCAY,More_than_5,0.0164,"help ""Cannot open more than 5 research report groups""",business.product.more_than_5,Business,7d27edb2-2f91-4378-b687-8269f4a5faa8,,product
+,0.9989,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,"help ""Cannot open more than 5 research report groups""",bot.escalation,Generic,7d27edb2-2f91-4378-b687-8269f4a5faa8,,
+Start,0.7661,0Xd1l00000001CuCAI,Get_Article,0.0737,what is the 10004 error on questions portal,bot.business_answer.presentation,Generic,d10e4098-707b-4c7a-b7b4-63338c7affc6,,
+Start,0.4131,0Xd1l00000001CuCAI,Get_Article,0.0184,why is there a 3004 error,bot.business_answer.presentation,Generic,be94d0d4-0aa3-4f35-811f-bdeb6a65bfb8,,
+,0.9989,0Xd1l00000001D2CAI,Escalation_Flow,0.9981,error #80040dc2 did not open in database,bot.escalation,Generic,a0c84c64-fc63-4801-9a8c-e43009af984f,,
+Direct,0.9096,0Xd1l00000001DgCAI,Undefined_Word,0.0055,help for the undefined word error,business.product.undefined_word,Business,dd4d62a6-74a5-404b-9d78-d12bfc32e7ce,,product
+Start,0.9096,0Xd1l00000001CuCAI,Get_Article,0.0055,help for the undefined word error,bot.business_answer.presentation,Generic,dd4d62a6-74a5-404b-9d78-d12bfc32e7ce,,
+,0.9096,0Xd1l00000001D2CAI,Escalation_Flow,0.0055,help for the undefined word error,bot.escalation,Generic,dd4d62a6-74a5-404b-9d78-d12bfc32e7ce,,
+Direct,0.9969,0Xd1l00000001DjCAI,Error_55,0.9877,there is an error when I refresh a database,business.product.error.55,Business,f2829715-8730-4a1d-80ac-0b3569e4c211,,product
+,0.9969,0Xd1l00000001D2CAI,Escalation_Flow,0.9877,there is an error when I refresh a database,bot.escalation,Generic,f2829715-8730-4a1d-80ac-0b3569e4c211,,
+Start,0.99,0Xd1l00000001CuCAI,Get_Article,0.977,what is the flash error,bot.business_answer.presentation,Generic,806c818f-b727-4cc2-be33-caaef2d603b4,,
+,0.99,0Xd1l00000001D2CAI,Escalation_Flow,0.977,what is the flash error,bot.escalation,Generic,806c818f-b727-4cc2-be33-caaef2d603b4,,
+Direct,0.9848,0Xd1l00000001DlCAI,Error_Flash,0.977,there is a chrome flash issue,business.npower.error.flash,Business,2789bf6f-01e4-4bf1-82aa-9b8b88707a13,,NPOWER
+Start,0.9848,0Xd1l00000001CuCAI,Get_Article,0.977,there is a chrome flash issue,bot.business_answer.presentation,Generic,2789bf6f-01e4-4bf1-82aa-9b8b88707a13,,
+,0.9848,0Xd1l00000001D2CAI,Escalation_Flow,0.977,there is a chrome flash issue,bot.escalation,Generic,2789bf6f-01e4-4bf1-82aa-9b8b88707a13,,
+,,0Xd1l00000001ChCAI,Confused,,80040DC2 error is in product,bot.fallback,Generic,a0c84c64-fc63-4801-9a8c-e43009af984f,,
+Direct,0.9989,0Xd1l00000001DiCAI,Error_80040dc2,0.9981,error #80040dc2 did not open in database,business.product.error.80040dc2,Business,a0c84c64-fc63-4801-9a8c-e43009af984f,,product
+Start,0.9989,0Xd1l00000001CuCAI,Get_Article,0.9981,error #80040dc2 did not open in database,bot.business_answer.presentation,Generic,a0c84c64-fc63-4801-9a8c-e43009af984f,,
+Start,0.9969,0Xd1l00000001CuCAI,Get_Article,0.9877,there is an error when I refresh a database,bot.business_answer.presentation,Generic,f2829715-8730-4a1d-80ac-0b3569e4c211,,
+Direct,0.7661,0Xd1l00000001DnCAI,Error_3004,0.0737,what is the 10004 error on questions portal,business.product.error.3004,Business,d10e4098-707b-4c7a-b7b4-63338c7affc6,,Company product
+,,0Xd1l00000001ChCAI,Confused,,i need help for the dictionary,bot.fallback,Generic,97dc8646-6061-4e84-822b-24cad31249a0,,
+Start,0.6623,0Xd1l00000001CuCAI,Get_Article,0.0737,the error: 3004 on the questions On Demand is showing,bot.business_answer.presentation,Generic,d4e2af59-b644-4409-a874-7cbfb94e9743,,
+Direct,0.418,0Xd1l00000001DgCAI,Undefined_Word,0.0055,i am having an error creating a spot,business.product.undefined_word,Business,12267fae-2dd9-4c7d-81d2-fae9c458c5ce,,product
+Start,0.418,0Xd1l00000001CuCAI,Get_Article,0.0055,i am having an error creating a spot,bot.business_answer.presentation,Generic,12267fae-2dd9-4c7d-81d2-fae9c458c5ce,,
+Direct,0.6434,0Xd1l00000001DqCAI,Disambig_Schedule,0.5278,help with a schedule,business.schedule.disambig,Generic,dbf4f56e-3499-4603-bc9e-58f0e8bf97f0,,Disambiguation
+Direct,0.9983,0Xd1l00000001DeCAI,Export_XML,0.9977,help me export a product schedule,business.product.export_xml,Business,244615ad-cb38-40c7-9c49-c0bd135571b8,,product
+Start,0.9983,0Xd1l00000001CuCAI,Get_Article,0.9977,help me export a product schedule,bot.business_answer.presentation,Generic,244615ad-cb38-40c7-9c49-c0bd135571b8,,
+Direct,0.9984,0Xd1l00000001DYCAY,More_than_5,0.0164,why can't I open more than 5 groups for product,business.product.more_than_5,Business,209b991a-1a5b-4469-9d5f-4dfc35b3814d,,product
+Direct,0.99,0Xd1l00000001DlCAI,Error_Flash,0.977,what is the flash error,business.npower.error.flash,Business,806c818f-b727-4cc2-be33-caaef2d603b4,,NPOWER
+Direct,0.4131,0Xd1l00000001DhCAI,Error_800004005,0.0184,why is there a 3004 error,business.product.error.800004005,Business,be94d0d4-0aa3-4f35-811f-bdeb6a65bfb8,,product
+Direct,0.6623,0Xd1l00000001DnCAI,Error_3004,0.0737,the error: 3004 on the questions On Demand is showing,business.product.error.3004,Business,d4e2af59-b644-4409-a874-7cbfb94e9743,,Company product
+Direct,0.4016,0Xd1l00000001DhCAI,Error_800004005,0.0184,the error 10004 is occurring,business.product.error.800004005,Business,0e96c7c1-f5f9-4dd4-8878-e069be0d150f,,product
+Start,0.4016,0Xd1l00000001CuCAI,Get_Article,0.0184,the error 10004 is occurring,bot.business_answer.presentation,Generic,0e96c7c1-f5f9-4dd4-8878-e069be0d150f,,
+,0.4016,0Xd1l00000001D2CAI,Escalation_Flow,0.0184,the error 10004 is occurring,bot.escalation,Generic,0e96c7c1-f5f9-4dd4-8878-e069be0d150f,,
+,0.7661,0Xd1l00000001D2CAI,Escalation_Flow,0.0737,what is the 10004 error on questions portal,bot.escalation,Generic,d10e4098-707b-4c7a-b7b4-63338c7affc6,,

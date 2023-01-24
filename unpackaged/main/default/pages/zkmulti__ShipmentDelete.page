@@ -1,0 +1,143 @@
+<apex:page tabStyle="zkmulti__MCShipment__c" standardController="zkmulti__MCShipment__c" extensions="zkmulti.ShipmentDeleteController" lightningStylesheets="true" standardStylesheets="false"  action="{! init }" docType="html-5.0">
+<apex:slds />
+<apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+    <apex:includeLightning />
+
+    <div id="sfSpiner">
+        <div class="slds-scope slds-is-relative">
+
+            <div class="slds-page-header" style="padding: 3rem 1.5rem;">
+                <div class="slds-grid">
+                    <div class="slds-col slds-has-flexi-truncate">
+                        <div class="slds-media slds-no-space slds-grow">
+                            <div class="slds-media__body" style="text-align: center ;">
+                                <p class="slds-text-title--caps slds-line-height--reset">
+                                    Please wait...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightning">
+    </div>
+
+    <script>
+        var myUserContext = "{!$User.UITheme}";
+        var namespace = 'zkmulti';
+        
+        var params = {	
+            namespace: namespace,
+            recordId: "{! MCShipment__c.Id }"
+        };
+        
+        $Lightning.use(namespace + ":MCShipmentDeleteLtngOutApp", function() {
+            $Lightning.createComponent(namespace + ":MCShipmentDeleteComponent",
+                params,
+                "lightning",
+                function(cmp) {
+                    console.log('loaded complete');
+                    document.getElementById('sfSpiner').style.display = 'none';
+                    $A.eventService.addHandler({ "event": namespace + ":proxyEvent", "handler" : vfProxyEventFunction});
+                }
+            );
+        });
+
+        var vfProxyEventFunction = function(event){
+            var eventName = event.getParam("eventName");
+            var eventData = event.getParam("data");
+            var myExternalEvent = $A.get(eventName);
+
+            console.log('vfProxyEventFunction', myExternalEvent, eventName, eventData);
+
+            if (!$A.util.isUndefined(myExternalEvent)) {
+                myExternalEvent.setParams(eventData);
+                console.log('event fire: ' + eventName);
+                myExternalEvent.fire();
+            }
+            else {
+                console.error('event not found: ' + eventName);
+            }
+        };
+
+    </script>
+
+</apex:outputPanel>
+<apex:outputPanel rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+  <c:Loading id="LoadingControl"/>
+  <apex:sectionHeader title="Modify/Cancel Shipment" />
+	<apex:form >
+
+	  <apex:commandLink action="{!backToPreviousPage}" value="Back to Previous Page"/>
+
+	  <apex:pageBlock >
+
+		<!-- Error Messages -->
+		<!-- Custom Component: c:MessageListDisplay -->
+		<c:MessageListDisplay id="packageDeleteMsg" msgList="{!MessageList}"/>
+		
+		
+		<!-- Delete Shipment Section -->
+		<apex:outputPanel rendered="{!DeleteShipmentAllowed}">
+		<apex:pageBlockSection collapsible="false" columns="1" title="Cancel Shipment">
+		  
+		  <!-- Description -->
+		  This will cancel the entire shipment from the shipping carrier. The shipment will be marked as <b>Shipment Deleted</b> in the Shipment record. <br/>
+		  <b>Note:</b> This will not delete the Shipment record from Salesforce. You can delete the Shipment record by pressing the <b>Delete</b> button on the Shipment record.
+		  <p/>
+		  
+		  <apex:pageBlockSectionItem >
+			<apex:outputLabel value="Tracking Number"/>
+			<apex:outputText value="{!TrackingNumber}"/>
+		  </apex:pageBlockSectionItem>
+		  
+		  <apex:pageBlockSectionItem >
+			<apex:outputLabel value="Yes, I want to cancel this shipment"/>
+			<apex:inputCheckbox value="{!confirmShipmentDelete}" disabled="{!PackageDeleteDisabled}"/>
+		  </apex:pageBlockSectionItem>
+		  
+		  <apex:pageBlockSectionItem >
+			<apex:outputLabel value=""/>
+			<apex:commandButton action="{!shipmentDelete}" value="Cancel Shipment" disabled="{!PackageDeleteDisabled}" onclick="IsLoading();"/>
+		  </apex:pageBlockSectionItem>
+		
+		</apex:pageBlockSection>
+		</apex:outputPanel>
+
+        <!-- Delete Packages Section -->
+        <apex:outputPanel rendered="{!DeletePackagesAllowed}">
+            <apex:pageBlockSection columns="1" collapsible="false" title="Cancel Packages">
+
+              <!-- Description -->
+              This will cancel the selected shipment package from FedEx. The shipment package will be marked as <b>Deleted from Shipment</b> in the Shipment Package related list. <br/>
+              <b>Note:</b> This will not delete the Shipment Package record from Salesforce. The Shipment Package record will be deleted when the associated Shipment record is deleted.
+              <p/>
+              
+              <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Select Package"/>
+                <apex:selectRadio value="{!SelectedShipmentPkg}" layout="pageDirection">
+                  <apex:actionSupport event="onclick" rerender="packageDeleteMsg" onsubmit="IsLoading();" oncomplete="FinishLoading();"/>
+                  <apex:selectOptions value="{!ShipmentPkgOptions}"/>
+                </apex:selectRadio>
+              </apex:pageBlockSectionItem>         
+            
+              <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Yes, I want to cancel this package"/>
+                <apex:inputCheckbox value="{!confirmPackageDelete}" disabled="{!PackageDeleteDisabled}"/>
+              </apex:pageBlockSectionItem>
+              
+              <apex:pageBlockSectionItem >
+                <apex:outputLabel value=""/>
+                <apex:commandButton action="{!packageDelete}" value="Cancel Package" disabled="{!PackageDeleteDisabled}" onclick="IsLoading();"/>
+              </apex:pageBlockSectionItem>
+              
+            </apex:pageBlockSection>
+        </apex:outputPanel>
+			  
+	  </apex:pageBlock>
+	</apex:form>
+</apex:outputPanel>
+</apex:page>

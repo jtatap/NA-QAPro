@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Einstein Bot Chat Session --></help>
+        <label><!-- Bot Chat Session --></label>
+        <name>ebotdata__Bot_Session__c</name>
+        <relationshipLabel><!-- Bot Chat Logs --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- EEI Filling Type --></label>
+        <name>zkmulti__EEIFillingType__c</name>
+        <picklistValues>
+            <masterLabel>Shipper filed</masterLabel>
+            <translation><!-- Shipper filed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS filed</masterLabel>
+            <translation><!-- UPS filed --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

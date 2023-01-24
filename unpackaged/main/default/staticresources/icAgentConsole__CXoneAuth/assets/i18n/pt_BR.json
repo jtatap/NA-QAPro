@@ -1,0 +1,7 @@
+{
+    "usernameRequired": "O nome de usuário é necessário",
+    "usernameIsNotValid": "Nome de usuário não é válido",
+    "username": "Nome do usuário",
+    "password": "Senha",
+    "signIn": "Entrar"
+}

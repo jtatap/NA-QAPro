@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Einstein_Bot_Escalation_Successful__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Boolean value to represent if there is a successful escalation from the Einstein Bot</description>
+    <externalId>false</externalId>
+    <label>Einstein Bot Escalation Successful</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

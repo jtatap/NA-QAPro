@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__NegativePattern__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Pattern for false positives (order numbers, tracking numbers, etc).</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Pattern for false positives (order numbers, tracking numbers, etc).</inlineHelpText>
+    <label>Negative Pattern</label>
+    <type>Checkbox</type>
+</CustomField>

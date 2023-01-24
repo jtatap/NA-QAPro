@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Up to 3 lines maximum. Each line must be no more than 35 characters long. --></help>
+        <label><!-- Ultimate Consignee Street --></label>
+        <name>zkmulti__UltimateConsigneeStreet__c</name>
+    </CustomFieldTranslation>

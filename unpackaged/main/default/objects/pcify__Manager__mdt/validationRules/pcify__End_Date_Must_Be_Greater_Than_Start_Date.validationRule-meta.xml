@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__End_Date_Must_Be_Greater_Than_Start_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>pcify__BatchStartDate__c &gt; pcify__BatchEndDate__c</errorConditionFormula>
+    <errorMessage>The Audit End Date must be GREATER than the Audit Start Date!</errorMessage>
+</ValidationRule>

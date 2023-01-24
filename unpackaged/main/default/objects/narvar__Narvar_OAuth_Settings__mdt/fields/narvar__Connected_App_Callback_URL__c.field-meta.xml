@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>narvar__Connected_App_Callback_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The callback URL used by Narvar to authorize their Narvar Customer Service Platform API</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>This value needs to match the Callback URL field in the connected app named, Narvar Customer Service Platform API</inlineHelpText>
+    <label>Connected App Callback URL</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

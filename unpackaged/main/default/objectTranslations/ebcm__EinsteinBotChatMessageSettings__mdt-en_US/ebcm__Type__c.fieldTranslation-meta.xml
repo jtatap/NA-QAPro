@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>ebcm__Type__c</name>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation><!-- Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carousel</masterLabel>
+            <translation><!-- Carousel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form</masterLabel>
+            <translation><!-- Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation><!-- Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Menu</masterLabel>
+            <translation><!-- Menu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MiniCard</masterLabel>
+            <translation><!-- MiniCard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RadioGroup</masterLabel>
+            <translation><!-- RadioGroup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slider</masterLabel>
+            <translation><!-- Slider --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

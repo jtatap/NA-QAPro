@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Asendia Account Other --></help>
+        <label><!-- Carrier Account Other --></label>
+        <name>zkmulti__Carrier_Account_Other__c</name>
+    </CustomFieldTranslation>

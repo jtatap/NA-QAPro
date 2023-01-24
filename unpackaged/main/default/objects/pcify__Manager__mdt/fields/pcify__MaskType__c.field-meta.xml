@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__MaskType__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>&quot;FullMask&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>DEPRECATED field - use DetectionPattern.MaskType instead.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>DEPRECATED field - use DetectionPattern.MaskType instead.</inlineHelpText>
+    <label>MaskType [DEPRECATED]</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FullMask</fullName>
+                <default>true</default>
+                <label>FullMask</label>
+            </value>
+            <value>
+                <fullName>Last4</fullName>
+                <default>false</default>
+                <label>Last4</label>
+            </value>
+            <value>
+                <fullName>First6andLast4</fullName>
+                <default>false</default>
+                <label>First6andLast4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

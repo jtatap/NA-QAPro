@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Live chat Button Id --></help>
+        <label><!-- Chat Button Id --></label>
+        <name>ebotdata__Chat_Button_Id__c</name>
+    </CustomFieldTranslation>

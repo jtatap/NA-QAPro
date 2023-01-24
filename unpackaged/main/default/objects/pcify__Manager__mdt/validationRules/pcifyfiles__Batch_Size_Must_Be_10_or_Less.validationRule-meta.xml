@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcifyfiles__Batch_Size_Must_Be_10_or_Less</fullName>
+    <active>true</active>
+    <description>Batch size for Attachments and ContentVersion must be 10 or less</description>
+    <errorConditionFormula>(MasterLabel = &#39;Attachment&#39; 
+|| MasterLabel = &#39;ContentVersion&#39;)
+&amp;&amp; pcify__BatchSize__c &gt; 10</errorConditionFormula>
+    <errorDisplayField>pcify__BatchSize__c</errorDisplayField>
+    <errorMessage>Batch Size for Attachments and ContentVersion must be 10 or less.</errorMessage>
+</ValidationRule>

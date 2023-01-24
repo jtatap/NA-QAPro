@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Source --></label>
+        <name>csmrgp__Source__c</name>
+        <picklistValues>
+            <masterLabel>Automerge</masterLabel>
+            <translation><!-- Automerge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Case Utility Bar</masterLabel>
+            <translation><!-- Duplicate Case Utility Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Detector</masterLabel>
+            <translation><!-- Duplicate Detector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merge</masterLabel>
+            <translation><!-- Merge --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

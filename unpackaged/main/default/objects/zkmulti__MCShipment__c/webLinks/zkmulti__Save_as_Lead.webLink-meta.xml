@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zkmulti__Save_as_Lead</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Save as Lead</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!$ObjectType.Lead}/e?retURL=/{!zkmulti__MCShipment__c.Id}&amp;lea3={!zkmulti__MCShipment__c.zkmulti__Recipient_Company__c}&amp;lea8={!zkmulti__MCShipment__c.zkmulti__Recipient_Phone__c}&amp;lea16street={!zkmulti__MCShipment__c.zkmulti__Recipient_Street__c}&amp;lea16city={!zkmulti__MCShipment__c.zkmulti__Recipient_City__c}&amp;lea16state={!zkmulti__MCShipment__c.zkmulti__Recipient_State_Province__c}&amp;lea16zip={!zkmulti__MCShipment__c.zkmulti__Recipient_Zip_Postal_Code__c}&amp;lea16country={!zkmulti__MCShipment__c.zkmulti__Recipient_Country__c}&amp;lea11={!zkmulti__MCShipment__c.zkmulti__Recipient_Email__c}&amp;name_lastlea2={!zkmulti__MCShipment__c.zkmulti__Recipient_Name__c}</url>
+</WebLink>

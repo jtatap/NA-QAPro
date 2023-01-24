@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zkmulti__Save_as_Account</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Save as Account</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!$ObjectType.Account}/e?retURL=/{!zkmulti__MCShipment__c.Id}&amp;acc2={!zkmulti__MCShipment__c.zkmulti__Recipient_Company__c}&amp;acc10={!zkmulti__MCShipment__c.zkmulti__Recipient_Phone__c}&amp;acc18street={!zkmulti__MCShipment__c.zkmulti__Recipient_Street__c}&amp;acc18city={!zkmulti__MCShipment__c.zkmulti__Recipient_City__c}&amp;acc18state={!zkmulti__MCShipment__c.zkmulti__Recipient_State_Province__c}&amp;acc18zip={!zkmulti__MCShipment__c.zkmulti__Recipient_Zip_Postal_Code__c}&amp;acc18country={!zkmulti__MCShipment__c.zkmulti__Recipient_Country__c}</url>
+</WebLink>

@@ -1,0 +1,66 @@
+<apex:page standardController="zkmulti__MultiPackageShipment__c" extensions="zkmulti.RemoteHandler" lightningStylesheets="true" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Import the Design System style sheet -->
+  <apex:slds />
+	<apex:variable var="prod" value="{!URLFOR($Resource.zkmulti__zkApp)}" />
+	<apex:variable var="prodVendor" value="{!URLFOR($Resource.zkmulti__zkAppVendor)}" />
+
+	<apex:variable var="dev" value="https://localhost:3001" />
+	<apex:variable var="hostApp" value="{!IF(isDevMod, dev, prod)}" />
+	<apex:variable var="hostVendor" value="{!IF(isDevMod, dev, prodVendor)}" />
+
+	<apex:stylesheet value="{!hostVendor + '/vendor.bundle.css'}"/>
+	<apex:stylesheet value="{!hostApp + '/main.bundle.css'}"/>
+	<apex:includeScript value="{!hostVendor + '/vendor.bundle.js'}" />
+	<apex:includeScript value="{!hostApp + '/main.bundle.js'}" />
+
+</head>
+<body>
+	<script>
+		(function() {
+			'strict mode';
+			angular
+				.module('app')
+				.constant('config', {
+					hostMain: "{!hostApp}",
+					host: "{!hostVendor}",
+					isDevMode: "{!isDevMod}",
+					UrlPathPrefix: "{!$Site.Prefix}",
+					object: '{!JSENCODE(sobjectJSON)}',
+					api: {
+						Session_ID: '{!$Api.Session_ID}'
+					},
+					pages: {
+						CommercialInvoice: '{!URLFOR($Action.zkmulti__CommercialInvoice__c.New)}',
+						ProFormaInvoice: '{!URLFOR($Action.zkmulti__ProFormaInvoice__c.New)}',
+					},
+					user: {
+						id: '{!JSENCODE($User.Id)}',
+						email: '{!JSENCODE($User.Email)}',
+						firstname: '{!JSENCODE($User.FirstName)}',
+						lastname: '{!JSENCODE($User.LastName)}'
+					},
+				})
+				.constant('setting', {
+				});
+		})();
+	</script>
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds-scope">
+	<div ng-app="app" class="zkapplication" ng-strict-di="true" ng-cloak="true">
+		<app>
+			<consolidation-wizard></consolidation-wizard>
+		</app>
+	</div>
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+</html>
+</apex:page>

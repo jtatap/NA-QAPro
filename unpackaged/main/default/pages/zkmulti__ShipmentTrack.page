@@ -1,0 +1,349 @@
+<apex:page controller="zkmulti.ShipmentTrack" showHeader="false" lightningStylesheets="true" standardStylesheets="false" sidebar="false" docType="html-5.0" action="{!init}" >
+
+<!-- <apex:slds /> -->
+<apex:stylesheet value="{!URLFOR($Resource.zkmulti__SLDSStyle)}"/>
+
+<style>
+
+	* {
+	  box-sizing: border-box;
+	}
+	html {
+	  height: 100% !important;
+	}
+	body {
+	  font-family: 'Salesforce Sans',Arial,sans-serif;
+	  min-height: 100% !important;
+	  height: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.big-img {
+		width: 3rem !important;
+		height: 3rem !important;
+	}
+	/* Style the header */
+	header {
+	  background-color: {!PrimaryColor};
+	  background: url("data:image/png;base64,{!backgroundBase64}");
+	  height: 5em;
+	  padding: 20px;
+	  padding-left: 25%;
+	  padding-right: 25%;
+	  font-size: 35px;
+	  color: white;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+
+	/* Container for flexboxes */
+	section {
+	  display: -webkit-flex;
+	  display: flex;
+	  padding-left: {!IF(IsEnableUpsellSkyscraper, '10%', '25%')};
+	  padding-top: 15px;
+	  padding-right: {!IF(IsEnableUpsellSkyscraper, '10%', '25%')};
+	  background-color: #F8F8F8;
+	  padding-bottom: 20px;
+	  min-height: calc(100% - 227px);
+	}
+
+	/* Style the navigation menu */
+	nav {
+	  -webkit-flex: 1;
+	  -ms-flex: 1;
+	  flex: 1;
+	  background: #ccc;
+	  padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	/* Style the content */
+	article {
+	  -webkit-flex: 1;
+	  -ms-flex: 1;
+	  flex: 1;
+	  background-color: white;
+	  /*padding-top: 10px;*/
+	  padding-bottom: 10px;
+	  min-height: 100%
+	  margin: -4em 0 -2em 0;
+	}
+
+	/* Style the footer */
+	footer {
+	  bottom: 0;
+	  left: 0;
+	  background-color: {!SecondaryColor};
+	  padding: 10px;
+	  padding-left: 25%;
+	  padding-right: 25%;
+	  color: white;
+	  height: 4em;
+	  position: relative;
+	}
+
+	.lnk-button {
+	  background-color: {!PrimaryColor} !important;
+	  border: none;
+	  border-radius: 3px;
+	  color: white !important;
+	  padding: 10px 25px;
+	  text-align: center;
+	  text-decoration: none !important;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer !important;
+	}
+
+	/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+	@media (max-width: 600px) {
+	  section {
+	    -webkit-flex-direction: column;
+	    flex-direction: column;
+	  }
+	}
+
+	.timeline {
+	  list-style-type: none;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 0;
+	}
+
+	.li {
+	  transition: all 200ms ease-in;
+	}
+
+	.timestamp {
+	  margin-bottom: 20px;
+	  padding: 0px 40px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  font-weight: 100;
+	}
+
+	.status {
+	  padding: 0px 40px;
+	  display: flex;
+	  justify-content: center;
+	  border-top: 2px solid #D6DCE0;
+	  position: relative;
+	  transition: all 200ms ease-in;
+	}
+	.status h4 {
+	  font-weight: 100;
+	}
+	.status:before {
+	  content: "";
+	  width: 40px;
+	  height: 40px;
+	  background-color: white;
+	  border-radius: 25px;
+	  border: 1px solid #ddd;
+	  position: absolute;
+	  top: -25px;
+	  left: 35%;
+	  transition: all 200ms ease-in;
+	}
+
+	.li.complete .status {
+	  border-top: 2px solid #66DC71;
+	}
+	.li.complete .status:before {
+	  background-color: #66DC71;
+	  border: none;
+	  transition: all 200ms ease-in;
+	}
+	.li.complete .status h4 {
+	  /*color: #66DC71;*/
+	}
+
+	@media (min-device-width: 320px) and (max-device-width: 700px) {
+	  .timeline {
+	    list-style-type: none;
+	    display: block;
+	  }
+
+	  .li {
+	    transition: all 200ms ease-in;
+	    display: flex;
+	    width: inherit;
+	  }
+
+	  .timestamp {
+	    width: 100px;
+	  }
+
+	  .status:before {
+	    left: -8%;
+	    top: 30%;
+	    transition: all 200ms ease-in;
+	  }
+	}
+
+	.primary-color {
+		background-color: {!PrimaryColor} !important;
+	}
+
+	.primary-border-color {
+		border-color: {!PrimaryColor} !important;
+	}
+
+</style>
+
+<apex:outputPanel layout="block" rendered="{!isError}">
+	{!errorMessage}
+</apex:outputPanel>
+
+<apex:outputPanel layout="block" rendered="{!NOT(isError)}">
+	<apex:outputText escape="false" value="{!htmlJsCode}"/>
+	
+	<header>
+		<logo>
+			<img src="data:image/png;base64,{!logoBase64}"></img>
+		</logo>
+		<a style="float: right" href="{!ButtonUrl}" class="lnk-button">{!buttonText}</a>
+	</header>
+
+	<section>
+		<article>
+		<div style="display: flex;">
+			<div style="flex: {!IF(IsEnableUpsellSkyscraper, '50%;', '100%;')}">
+				<div style="padding: 8px; color: white; text-align: center; background-color: {!SecondaryColor}">{!trackingNumber} Shipment</div>
+
+				<div style="font-size: 25px; text-align: center;padding-top: 10px;">{!trackingStatus}</div>
+				<div style="font-size: 10px; text-align: center;padding-top: 3px;"><apex:outputPanel rendered="{!IsRenderDeliveryDate}"> Delivery Date: {!DeliveryDate}</apex:outputPanel></div>
+
+				<div class="slds-m-top_small slds-m-bottom--small">
+					<div class="slds-progress">
+
+						<ol class="slds-progress__list">
+							<apex:repeat value="{!stages}" var="stage">
+								<li class="slds-progress__item  {! IF(stage.complete, 'slds-is-completed', '')}  {! IF(stage.active, 'slds-is-active', '') } ">
+									<button style="box-shadow: none; {! IF(NOT(OR(stage.complete, stage.active)), 'border: 0px', '')}" class="{! IF(OR(stage.complete, stage.active), 'primary-border-color', '')}  slds-button slds-progress__marker big-img {! IF(stage.complete, 'slds-button_icon slds-button_icon slds-progress__marker_icon', '')}" title="{!stage.name}">
+										<apex:outputPanel layout="block" rendered="{!stage.complete}">
+											<apex:outputPanel rendered="{!AND(stage.name == 'In Transit', OR(isException, isCancelled))}">
+												<svg style="margin-top: -4px; margin-left: -4px; fill: {!IF(AND(stage.name == 'In Transit', OR(isException, isCancelled)), 'red', PrimaryColor) }" class="slds-button__icon slds-icon_large" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink"
+														xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#error')}"
+													></use>
+												</svg>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!OR(NOT(stage.name == 'In Transit'), OR(AND(stage.name == 'In Transit', AND(NOT(isException), NOT(isCancelled)))))}">
+												<svg style="margin-top: -4px; margin-left: -4px; fill: {!IF(AND(stage.name == 'In Transit', OR(isException, isCancelled)), 'red', PrimaryColor) }" class="slds-button__icon slds-icon_large" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink"
+														xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#success')}"
+													></use>
+												</svg>
+											</apex:outputPanel>
+										</apex:outputPanel>
+										<apex:outputPanel rendered="{!AND(stage.name == 'Delivered', isExceptionDelivered)}">
+											<svg style="margin-top: -4px; margin-left: -4px; fill: {!IF(AND(stage.name == 'Delivered', isExceptionDelivered), 'red', PrimaryColor) }" class="slds-button__icon slds-icon_large" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink"
+													xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#error')}"
+												></use>
+											</svg>
+										</apex:outputPanel>
+										<span class="slds-assistive-text">{!stage.name}</span>
+									</button>
+								</li>
+							</apex:repeat>
+						</ol>
+						<div class="slds-grid slds-p-top--small" style="margin-left: -5px; margin-right: -8px;">
+							<div class="slds-col " style="width: 4%;"><div>Picked up</div></div>
+							<div class="slds-col " style="text-align: center;width: 5%;">
+								<apex:outputPanel rendered="{!isException}" layout="block">Exception</apex:outputPanel>
+								<apex:outputPanel rendered="{!isCancelled}" layout="block">Cancelled</apex:outputPanel>
+								<apex:outputPanel rendered="{!AND(NOT(isCancelled), NOT(isException))}" layout="block">In Transit</apex:outputPanel>
+							</div>
+							<div class="slds-col " style="text-align: center;width: 15%;"><div>Out for Delivery</div></div>
+							<div class="slds-col " style="text-align: right;width: 1%;" rendered="{!NOT(isExceptionDelivered)}"><div>{!IF(isExceptionDelivered, 'Exception', 'Delivered')}</div></div>
+							
+						</div>
+						<div style="top:33%" class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{!progressValue}" role="progressbar">
+							<span class="slds-progress-bar__value primary-color" style="width:{!progressValue}%">
+								<span class="slds-assistive-text">Progress: {!progressValue}%</span>
+							</span>
+						</div> 
+					</div>  
+				</div>
+
+				<apex:outputPanel rendered="{!isRenderOrderDetails}">
+					<div style="padding-top: 10px;">
+						<div style="border-top: 1px solid #8080802e; font-size: 18px; text-align: center;padding-top: 10px;">Order Details</div>
+
+						<table style="width: 96%;" class="slds-m-around--medium">
+							<tr style="font-size: 13px;">
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;"></th>
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;">Quantity</th>
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;">Price</th>
+							</tr>
+							<apex:repeat value="{!orderDetails}" var="orderDetail">
+								<tr style="font-size: 12px;">
+									<td style="padding-bottom: 10px;padding-top: 10px; width: 150px;"><apex:image style="width: 100px; margin-left: 15px;" url="{!orderDetail.imageUrl}"/> </td>
+									<td style="padding-bottom: 10px;padding-top: 10px;">{!orderDetail.qty}</td>
+									<td style="padding-bottom: 10px;padding-top: 10px;">{!orderDetail.PriceFormated}</td>
+								</tr>
+							</apex:repeat>
+						</table>
+					</div>
+				</apex:outputPanel>
+
+				<apex:outputPanel rendered="{!isRenderTravelHistory}">
+					<div style="padding-top: 10px;">
+						<div style="border-top: 1px solid #8080802e; font-size: 18px; text-align: center;padding-top: 10px;">Travel History</div>
+
+						<table style="width: 96%;" class="slds-m-around--medium">
+							<tr style="font-size: 13px;">
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;">Date/Time</th>
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;">Activity</th>
+								<th style="border-bottom: 1px solid #8080802e;text-align: left;padding-bottom: 8px;">Location</th>
+							</tr>
+							<apex:repeat value="{!histories}" var="history">
+								<tr style="font-size: 12px;">
+									<td style="padding-bottom: 10px;padding-top: 10px;">{!history.zkmulti__Date_Time__c}</td>
+									<td style="padding-bottom: 10px;padding-top: 10px;">{!history.zkmulti__Message__c}</td>
+									<td style="padding-bottom: 10px;padding-top: 10px;">{!history.zkmulti__Address__c}</td>
+								</tr>
+							</apex:repeat>
+						</table>
+					</div>
+				</apex:outputPanel>
+			</div>
+			<apex:outputPanel rendered="{!IsEnableUpsellSkyscraper}" style="width: 15px; background-color: #F8F8F8">
+				
+			</apex:outputPanel>
+			<apex:outputPanel rendered="{!IsEnableUpsellSkyscraper}" style="flex: 15%">
+				<div style="padding: 8px; color: white; text-align: center; background-color: {!SecondaryColor}">{!SkyscraperTitle}</div>
+
+				<apex:outputPanel layout="block" rendered="{!isSkyscraperImageURL}" style="text-align: center;padding-top: 10px;">
+					<a target="_blank" href="{!SkyscraperURL}"><apex:image url="{!SkyscraperImageURL}"/></a>
+				</apex:outputPanel>
+				<apex:outputPanel layout="block" rendered="{!NOT(isSkyscraperImageURL)}" style="text-align: center;padding-top: 10px;">
+					<a target="_blank" href="{!SkyscraperURL}">
+						<img src="data:image/png;base64,{!SkyscraperImageBase64}"></img>
+					</a>
+				</apex:outputPanel>
+			</apex:outputPanel>
+		</div>
+		</article>
+	</section>
+
+	<footer>
+		<p><pre>{!FooterText}</pre></p>
+	</footer>
+</apex:outputPanel>
+
+
+</apex:page>

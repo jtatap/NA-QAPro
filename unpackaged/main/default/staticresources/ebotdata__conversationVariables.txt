@@ -1,0 +1,32 @@
+<bot>
+    <conversationVariables>
+        <dataType>Number</dataType>
+        <developerName>currentConfidenceForUtterance</developerName>
+        <label>currentConfidenceForUtterance</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>currentDialogId</developerName>
+        <label>currentDialogId</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>currentDialogName</developerName>
+        <label>currentDialogName</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Number</dataType>
+        <developerName>currentThresholdHigh</developerName>
+        <label>currentThresholdHigh</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>currentUtterance</developerName>
+        <label>currentUtterance</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>liveAgentSessionId</developerName>
+        <label>liveAgentSessionId</label>
+    </conversationVariables>
+</bot>

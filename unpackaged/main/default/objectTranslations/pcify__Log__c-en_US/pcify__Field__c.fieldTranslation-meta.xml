@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Salesforce Field which was flagged for PII by PCIFY. --></help>
+        <label><!-- Field --></label>
+        <name>pcify__Field__c</name>
+    </CustomFieldTranslation>

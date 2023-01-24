@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Pattern for false positives (order numbers, tracking numbers, etc). --></help>
+        <label><!-- Negative Pattern --></label>
+        <name>pcify__NegativePattern__c</name>
+    </CustomFieldTranslation>

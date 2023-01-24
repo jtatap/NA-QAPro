@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Indicates the EEI Shipper sub option --></help>
+        <label><!-- EEI Shipper --></label>
+        <name>zkmulti__EEIShipper__c</name>
+        <picklistValues>
+            <masterLabel>Requires the Exemption Legend</masterLabel>
+            <translation><!-- Requires the Exemption Legend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires the ITN</masterLabel>
+            <translation><!-- Requires the ITN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires the post departure filing citation</masterLabel>
+            <translation><!-- Requires the post departure filing citation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

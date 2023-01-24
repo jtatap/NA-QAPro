@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>User Printer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Printer Setting --></label>
+            <section>Printer Setting</section>
+        </sections>
+        <sections>
+            <label><!-- Scale Setting --></label>
+            <section>Scale Setting</section>
+        </sections>
+        <sections>
+            <label><!-- Tray Setting --></label>
+            <section>Tray Setting</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

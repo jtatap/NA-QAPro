@@ -18,7 +18,8 @@ public class PrivacyEmailHandler {
         for (OrgWideEmailAddress owa : owaList) {
             this.owaMap.put(owa.DisplayName, owa);
         }
-
+        System.debug('Constants.privacyContactGenericRecordSettingName @21: ' + Constants.privacyContactGenericRecordSettingName);
+		System.debug('GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName) @21: ' + GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName));
         GenericRecords__c genericContactRecord = GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName);
         this.genericContactId = genericContactRecord.recordId__c;
 

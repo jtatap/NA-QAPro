@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Einstein_Bot_Escalation_Requested__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Boolean value to represent if the user talking to the bot requests an agent escalation</description>
+    <externalId>false</externalId>
+    <label>DO NOT USE - Escalation Requested</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

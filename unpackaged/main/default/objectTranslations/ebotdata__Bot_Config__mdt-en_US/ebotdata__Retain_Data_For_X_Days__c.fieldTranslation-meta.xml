@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Retain Data For X Days --></label>
+        <name>ebotdata__Retain_Data_For_X_Days__c</name>
+    </CustomFieldTranslation>

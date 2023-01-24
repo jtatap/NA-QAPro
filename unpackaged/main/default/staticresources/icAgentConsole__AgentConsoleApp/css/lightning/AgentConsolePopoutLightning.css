@@ -1,0 +1,191 @@
+﻿@charset 'UTF-8';
+
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-Light.woff2) format("woff2"),url(fonts/SalesforceSans-Light.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-LightItalic.woff2) format("woff2"),url(fonts/SalesforceSans-LightItalic.woff) format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-Regular.woff2) format("woff2"),url(fonts/SalesforceSans-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-Italic.woff2) format("woff2"),url(fonts/SalesforceSans-Italic.woff) format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-Bold.woff2) format("woff2"),url(fonts/SalesforceSans-Bold.woff) format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url(fonts/SalesforceSans-BoldItalic.woff2) format("woff2"),url(fonts/SalesforceSans-BoldItalic.woff) format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+.agentConsolePopout, .agentConsolePopout .skillListGrid, .agentConsolePopout .agentListGrid,
+.agentConsolePopout .modalDialogPanel, .agentConsolePopout .modalDialogPanel .ui-widget-content,
+.agentConsolePopout input, .agentConsolePopout textarea, .agentConsolePopout .defaultSearchText, .agentConsolePopout .contactHistory .searchPanel .txtDiv .watermark,
+.agentConsolePopout .dispComboText, .agentConsolePopout .secDispComboText, .agentConsolePopout .contentPanel .contactsRootPanel .ChatPnl .contactResultControl .contactResultPanel,
+.agentConsolePopout .contentPanel .contactsRootPanel .contactResultControl .contactResultPanel, .agentConsolePopout .emailPnl .quickReplyDiv, .agentConsolePopout .chatMessageEditor .quickReplyDiv,
+.agentConsolePopout .emailPnl .quickReplyDiv .qSubDiv .searchTextInput, .agentConsolePopout .chatMessageEditor .quickReplyDiv .qSubDiv .searchTextInput,
+.DialogPanelFontStyle, .DialogPanel .placeHolderText, .DialogPanelURLTxt, .DialogPanelButton, .agentConsolePopout .addPlaceHolderColor, .agentConsolePopout .addTextColor,
+.agentConsolePopout .contentPanel .contactsRootPanel .contactResultControl .contactResultPanel .noResult, .agentConsolePopout .mailViewAttachments a.enabled,
+.agentConsolePopout .emailPnl .mailAddressDiv .fromDateDiv
+ {
+    color: rgb(84, 105, 141);
+}
+
+        .agentConsolePopout, .agentConsolePopout input, .agentConsolePopout .ui-widget-content,
+        .agentConsolePopout .agentStateControl .agentStatePanel .cStatePanel .stateDesc,
+        .agentConsolePopout .dialPadPanel .dialPanel .dialElementBg, .agentConsolePopout .agentStateControl .agentStatePanel .menu .menuItem,
+        .agentConsolePopout .defaultSearchText, .agentConsolePopout .agentStateControl .agentStatePanel .menu .desc, .agentConsolePopout input,
+        .agentConsolePopout .txtNotes, .agentConsolePopout .notesTxt, .agentConsolePopout .ui-widget, .agentConsolePopout table,
+        .agentConsolePopout tr, .agentConsolePopout td, .agentConsolePopout th, .datepickerDlg .ui-widget, .datepickerDlg table,
+        .datepickerDlg tr, .datepickerDlg td, .datepickerDlg th {
+            font-family: Salesforce Sans;
+        }
+
+    .agentConsolePopout .bgHeaderGradient {
+        background: rgb(0, 57, 107);
+    }
+
+    .agentConsolePopout .modalDialogHeader {
+        background-color: rgb(84, 105, 141);
+    }
+
+    .DialogPanelBG {
+        background-color: #777777;
+        background: -webkit-linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141));
+        background: -moz-linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141));
+        background: -ms-linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141));
+        background: -o-linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141));
+        background: linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141));
+        -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=rgb(84, 105, 141), endColorstr=rgb(84, 105, 141), GradientType=1)';
+        filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='rgb(84, 105, 141)', EndColorStr='rgb(84, 105, 141)', GradientType=0);
+    }
+
+    .agentConsolePopout .footer .divOptionSelected {
+        background: rgb(0, 57, 107);
+    }
+
+    .agentConsolePopout .optionPanel {
+        background: rgba(0, 57, 107, 0.9);
+    }
+
+    .agentConsolePopout .ui-state-default.slick-header-column.slick-header-column-sorted {
+        background: -webkit-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -moz-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -ms-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -o-linear-gradient(#f7f9fb, #f7f9fb);
+        background: linear-gradient(#f7f9fb, #f7f9fb);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f9fb, endColorstr=#f7f9fb, GradientType=1)';
+        filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f7f9fb', EndColorStr='#f7f9fb', GradientType=0);
+        border-bottom-style: solid;
+        border-bottom-color: #1589ee;
+        border-bottom-width: 2px;
+    }
+
+    .agentConsolePopout .slick-header-column {
+        background: -webkit-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -moz-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -ms-linear-gradient(#f7f9fb, #f7f9fb);
+        background: -o-linear-gradient(#f7f9fb, #f7f9fb);
+        background: linear-gradient(#f7f9fb, #f7f9fb);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f9fb, endColorstr=#f7f9fb, GradientType=1)';
+        filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f7f9fb', EndColorStr='#f7f9fb', GradientType=0);
+    }
+
+    .agentConsolePopout .slick-column-name {
+        color: rgb(22, 50, 92);
+        font-weight: 400;
+    }
+
+    .agentConsolePopout .footer .divQueuePanelSelected {
+        padding-top: 7px !important;
+        padding-left: 0px !important;
+        border-left: 1px #CCCCCC solid;
+        border-top: 1px #CCCCCC solid;
+        width: 164px;
+        height: 27px;
+    }
+
+    .agentConsolePopout .footer .divQueuePanel {
+        padding-top: 9px;
+        float: left;
+        overflow: hidden;
+        width: 173px;
+    }
+
+    .agentConsolePopout .contentPanel .contactsRootPanel .contactResultControl .contactResultPanel .hdrSelectedLeft {
+        background: rgb(84, 105, 141);
+        background-image: linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141)) !important;
+    }
+
+    .agentConsolePopout .contentPanel .contactsRootPanel .contactResultControl .contactResultPanel .hdrSelectedRight {
+        background: rgb(84, 105, 141);
+        background-image: linear-gradient(rgb(84, 105, 141), rgb(84, 105, 141)) !important;
+    }
+
+    .agentConsolePopout .emailPnl .mailAddressDiv .fromDateDiv .dateDiv {
+        float: right;
+        margin-right: 11px;
+        font-size: 11px;        
+        margin-left: 2px;
+    }
+
+    .agentConsolePopout .popupDiv .msgDiv .eMsg {
+        color: #FF0000;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .DialogPanelFontStyle {
+        font-size: 10px;
+        font-family: 'Salesforce Sans';
+    }
+
+.agentConsolePopout .mailViewAttachments a.disabled {
+    cursor: default;
+    color: #788294;
+}
+.agentConsolePopout .mailViewAttachments a.enabled:hover {
+    color: #015ba7;
+}
+
+.emailSearch::-webkit-input-placeholder{
+   color: rgb(84, 105, 141);
+}
+
+.emailSearch:-moz-placeholder { /* Firefox 18- */
+   color: rgb(84, 105, 141);  
+}
+
+.emailSearch::-moz-placeholder {  /* Firefox 19+ */
+   color: rgb(84, 105, 141);  
+}
+
+.emailSearch:-ms-input-placeholder {  /* IE 10+*/
+   color: rgb(84, 105, 141); 
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Business_Metric_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Information about the business metric for the dialog/intent</description>
+    <externalId>false</externalId>
+    <label>Business Metric Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start</fullName>
+                <default>false</default>
+                <label>Start</label>
+            </value>
+            <value>
+                <fullName>End</fullName>
+                <default>false</default>
+                <label>End</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Escalation Start</fullName>
+                <default>false</default>
+                <label>Escalation Start</label>
+            </value>
+            <value>
+                <fullName>Escalation End</fullName>
+                <default>false</default>
+                <label>Escalation End</label>
+            </value>
+            <value>
+                <fullName>Offered Followup Question</fullName>
+                <default>false</default>
+                <label>Offered Followup Question</label>
+            </value>
+            <value>
+                <fullName>Followup - Yes Response</fullName>
+                <default>false</default>
+                <label>Followup - Yes Response</label>
+            </value>
+            <value>
+                <fullName>Followup - No Response</fullName>
+                <default>false</default>
+                <label>Followup - No Response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

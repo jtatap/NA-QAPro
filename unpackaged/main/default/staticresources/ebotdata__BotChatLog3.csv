@@ -1,0 +1,120 @@
+ebotdata__Business_Metric_Type__c,ebotdata__Current_Confidence_For_Utterance__c,ebotdata__Current_Dialog_Id__c,ebotdata__Current_Dialog_Name__c,ebotdata__Current_Threshold_High__c,ebotdata__Current_Utterance__c,ebotdata__Intent_Name__c,ebotdata__Intent_Type__c,ebotdata__Live_Agent_Session_Id__c,ebotdata__Successful_Resolution__c,ebotdata__Topic_Name__c
+,,0Xd1l00000001ChCAI,Confused,,im having trouble selecting item,bot.fallback,Generic,2755d59b-b599-4423-8b28-1463b15a4bac,,
+Start,0.9929,0Xd1l00000001CuCAI,Get_Article,0.678,unable to get to gtc,bot.business_answer.presentation,Generic,6ab087df-fd43-4eef-be41-2f179f5c2d2b,,
+,0.9854,0Xd1l00000001D2CAI,Escalation_Flow,0.9838,i need help for the dictionary,bot.escalation,Generic,e1b26a69-1f8f-42b7-b136-cc8407f4eb4d,,
+,0.5101,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,I can't select on Company,bot.escalation,Generic,fcfe3b2b-9dd7-4b5d-90e9-8c47fc41e53a,,
+Direct,0.999,0Xd1l00000001DTCAY,Secondary_Monitor,0.3215,I need help to make a selection for questions desktop,business.desktop.secondary_monitor,Business,d25c5a78-97e4-4079-b67f-5f4b5354d8d5,,questions Desktop
+Start,0.999,0Xd1l00000001CuCAI,Get_Article,0.3215,I need help to make a selection for questions desktop,bot.business_answer.presentation,Generic,d25c5a78-97e4-4079-b67f-5f4b5354d8d5,,
+,0.999,0Xd1l00000001D2CAI,Escalation_Flow,0.3215,I need help to make a selection for questions desktop,bot.escalation,Generic,d25c5a78-97e4-4079-b67f-5f4b5354d8d5,,
+Direct,0.2961,0Xd1l00000001DhCAI,Error_800004005,0.0438,i see an error,business.product.error.800004005,Business,52eb2912-d9d9-4175-a5ec-021a46299c24,,product
+Start,0.2961,0Xd1l00000001CuCAI,Get_Article,0.0438,i see an error,bot.business_answer.presentation,Generic,52eb2912-d9d9-4175-a5ec-021a46299c24,,
+Direct,0.9328,0Xd1l00000001CsCAI,EVIP,0.8223,i can't find evip,business.questions.evip,Business,2e72b55e-094f-4e03-8059-8d621bb62d02,,questions
+Start,0.5994,0Xd1l00000001CuCAI,Get_Article,0.1396,why can't i login to questions,bot.business_answer.presentation,Generic,3bd4169a-b5c3-4402-aa7c-26d97dc6261f,,
+Direct,0.9697,0Xd1l00000001CtCAI,Password_Reset,0.361,why can't I reset my password,business.questions.password_reset,Business,f87902c0-d89f-481b-9b5b-122519b46bce,,questions
+,,0Xd1l00000001ChCAI,Confused,,this screen is blank,bot.fallback,Generic,6e8ff75e-538d-4d90-94cd-01a5a0fc97ce,,
+,,0Xd1l00000001ChCAI,Confused,,the screen is white,bot.fallback,Generic,6e8ff75e-538d-4d90-94cd-01a5a0fc97ce,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,the screen is white,bot.offer_escalation,Generic,6e8ff75e-538d-4d90-94cd-01a5a0fc97ce,,
+,,0Xd1l00000001ChCAI,Confused,,I see a blank screen on the desktop,bot.fallback,Generic,6cc33f1d-eb78-45a0-9702-c55a51361e71,,
+Direct,0.9721,0Xd1l00000001DOCAY,Crash_On_Launch,0.6355,interface to office isn't loading,business.desktop.crash_on_launch,Business,3481c137-56fe-4bba-b24f-5c26580d8ac9,,questions Desktop
+Start,0.9721,0Xd1l00000001CuCAI,Get_Article,0.6355,interface to office isn't loading,bot.business_answer.presentation,Generic,3481c137-56fe-4bba-b24f-5c26580d8ac9,,
+Start,0.9328,0Xd1l00000001CuCAI,Get_Article,0.8223,i can't find evip,bot.business_answer.presentation,Generic,2e72b55e-094f-4e03-8059-8d621bb62d02,,
+,0.9328,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,i can't find evip,bot.escalation,Generic,2e72b55e-094f-4e03-8059-8d621bb62d02,,
+Direct,0.3207,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,dbdate is corrupt in questions,business.desktop.error.switch_to,Business,8887c435-4c17-4f28-9901-9706850e0f74,,questions Desktop
+Start,0.3207,0Xd1l00000001CuCAI,Get_Article,0.0222,dbdate is corrupt in questions,bot.business_answer.presentation,Generic,8887c435-4c17-4f28-9901-9706850e0f74,,
+,,0Xd1l00000001ChCAI,Confused,,looking for Company VIP,bot.fallback,Generic,1aabe3d4-48d2-4430-abec-8d71f7c9fe3b,,
+Direct,0.5446,0Xd1l00000001CkCAI,Questions_Portal,0.1396,can someone help me connect to questions,business.questions.not_connecting.ie,Business,1aabe3d4-48d2-4430-abec-8d71f7c9fe3b,,questions
+Start,0.5446,0Xd1l00000001CuCAI,Get_Article,0.1396,can someone help me connect to questions,bot.business_answer.presentation,Generic,1aabe3d4-48d2-4430-abec-8d71f7c9fe3b,,
+Direct,0.6949,0Xd1l00000001DNCAY,dbdata,0.1338,why is Company questions Desktop missing some current data,business.desktop.dbdata,Business,5e84f796-0046-480c-8cc7-23a4ee53db64,,questions Desktop
+Direct,0.9974,0Xd1l00000001DLCAY,Error_8004ade9,0.963,why am I getting error 8004ade9 in questions Desktop,business.desktop.error.8004ade9,Business,d5c82e46-192e-4a22-94b5-2b00a16f1bf7,,questions Desktop
+Start,0.9974,0Xd1l00000001CuCAI,Get_Article,0.963,why am I getting error 8004ade9 in questions Desktop,bot.business_answer.presentation,Generic,d5c82e46-192e-4a22-94b5-2b00a16f1bf7,,
+Direct,0.9771,0Xd1l00000001DLCAY,Error_8004ade9,0.963,there is a red x in questions,business.desktop.error.8004ade9,Business,be17a577-99f2-40d3-b437-1eb9163b8214,,questions Desktop
+Start,0.9771,0Xd1l00000001CuCAI,Get_Article,0.963,there is a red x in questions,bot.business_answer.presentation,Generic,be17a577-99f2-40d3-b437-1eb9163b8214,,
+,0.5446,0Xd1l00000001D2CAI,Escalation_Flow,0.1396,can someone help me connect to questions,bot.escalation,Generic,1aabe3d4-48d2-4430-abec-8d71f7c9fe3b,,
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,011b6335-d8dc-4981-9048-18c97b37a96e,,questions
+Direct,0.7903,0Xd1l00000001DOCAY,Crash_On_Launch,0.6355,how do I load questions,business.desktop.crash_on_launch,Business,6cc33f1d-eb78-45a0-9702-c55a51361e71,,questions Desktop
+Start,0.7903,0Xd1l00000001CuCAI,Get_Article,0.6355,how do I load questions,bot.business_answer.presentation,Generic,6cc33f1d-eb78-45a0-9702-c55a51361e71,,
+,0.7903,0Xd1l00000001D2CAI,Escalation_Flow,0.6355,how do I load questions,bot.escalation,Generic,6cc33f1d-eb78-45a0-9702-c55a51361e71,,
+,0.9721,0Xd1l00000001D2CAI,Escalation_Flow,0.6355,interface to office isn't loading,bot.escalation,Generic,3481c137-56fe-4bba-b24f-5c26580d8ac9,,
+Direct,0.8587,0Xd1l00000001CsCAI,EVIP,0.8223,not finding evip,business.questions.evip,Business,4867a13f-f6d3-4b90-87c4-ee1d50f6698f,,questions
+Start,0.8587,0Xd1l00000001CuCAI,Get_Article,0.8223,not finding evip,bot.business_answer.presentation,Generic,4867a13f-f6d3-4b90-87c4-ee1d50f6698f,,
+Start,0.9991,0Xd1l00000001CuCAI,Get_Article,0.9973,I get the 800a03ec error in Company questions,bot.business_answer.presentation,Generic,53f584c7-3be4-402f-bd7f-2ba7c306c555,,
+Direct,0.9987,0Xd1l00000001DQCAY,Error_800a03ec,0.9973,I see the error 800a03ec on the report,business.desktop.error.800a03ec,Business,014813a9-ad5d-439d-b704-673c78fc2b08,,questions Desktop
+Start,0.9987,0Xd1l00000001CuCAI,Get_Article,0.9973,I see the error 800a03ec on the report,bot.business_answer.presentation,Generic,014813a9-ad5d-439d-b704-673c78fc2b08,,
+,0.9987,0Xd1l00000001D2CAI,Escalation_Flow,0.9973,I see the error 800a03ec on the report,bot.escalation,Generic,014813a9-ad5d-439d-b704-673c78fc2b08,,
+Direct,0.9835,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,"please help for error message ""switch to & retry"" in questions",business.desktop.error.switch_to,Business,27a80124-b085-4a9b-8e5d-dac2783588d3,,questions Desktop
+Start,0.9835,0Xd1l00000001CuCAI,Get_Article,0.0222,"please help for error message ""switch to & retry"" in questions",bot.business_answer.presentation,Generic,27a80124-b085-4a9b-8e5d-dac2783588d3,,
+,0.9835,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,"please help for error message ""switch to & retry"" in questions",bot.escalation,Generic,27a80124-b085-4a9b-8e5d-dac2783588d3,,
+,0.2961,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,i see an error,bot.escalation,Generic,52eb2912-d9d9-4175-a5ec-021a46299c24,,
+,0.8587,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,not finding evip,bot.escalation,Generic,4867a13f-f6d3-4b90-87c4-ee1d50f6698f,,
+Direct,0.5994,0Xd1l00000001CkCAI,Questions_Portal,0.1396,why can't i login to questions,business.questions.not_connecting.ie,Business,3bd4169a-b5c3-4402-aa7c-26d97dc6261f,,questions
+,0.5994,0Xd1l00000001D2CAI,Escalation_Flow,0.1396,why can't i login to questions,bot.escalation,Generic,3bd4169a-b5c3-4402-aa7c-26d97dc6261f,,
+Start,0.6949,0Xd1l00000001CuCAI,Get_Article,0.1338,why is Company questions Desktop missing some current data,bot.business_answer.presentation,Generic,5e84f796-0046-480c-8cc7-23a4ee53db64,,
+,0.6949,0Xd1l00000001D2CAI,Escalation_Flow,0.1338,why is Company questions Desktop missing some current data,bot.escalation,Generic,5e84f796-0046-480c-8cc7-23a4ee53db64,,
+Direct,0.9991,0Xd1l00000001DQCAY,Error_800a03ec,0.9973,I get the 800a03ec error in Company questions,business.desktop.error.800a03ec,Business,53f584c7-3be4-402f-bd7f-2ba7c306c555,,questions Desktop
+,0.9991,0Xd1l00000001D2CAI,Escalation_Flow,0.9973,I get the 800a03ec error in Company questions,bot.escalation,Generic,53f584c7-3be4-402f-bd7f-2ba7c306c555,,
+Direct,0.9972,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,there is a switch to error in Company Interface to Office,business.desktop.error.switch_to,Business,aef4d75d-3fd8-409f-a423-8509c555819f,,questions Desktop
+Start,0.9972,0Xd1l00000001CuCAI,Get_Article,0.0222,there is a switch to error in Company Interface to Office,bot.business_answer.presentation,Generic,aef4d75d-3fd8-409f-a423-8509c555819f,,
+,,0Xd1l00000001ChCAI,Confused,,trouble to select an intems numbers on desktop,bot.fallback,Generic,2755d59b-b599-4423-8b28-1463b15a4bac,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,trouble to select an intems numbers on desktop,bot.offer_escalation,Generic,2755d59b-b599-4423-8b28-1463b15a4bac,,
+,,0Xd1l00000001ChCAI,Confused,,can not find the ok button,bot.fallback,Generic,3a83116e-03e0-4291-b8fb-97fcfaa92aa9,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,where can I find the OK buttons in Company,bot.offer_escalation,Generic,3a83116e-03e0-4291-b8fb-97fcfaa92aa9,,
+Direct,0.5101,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,I can't select on Company,business.desktop.error.switch_to,Business,fcfe3b2b-9dd7-4b5d-90e9-8c47fc41e53a,,questions Desktop
+Start,0.5101,0Xd1l00000001CuCAI,Get_Article,0.0222,I can't select on Company,bot.business_answer.presentation,Generic,fcfe3b2b-9dd7-4b5d-90e9-8c47fc41e53a,,
+,,0Xd1l00000001ChCAI,Confused,,getting an npower error,bot.fallback,Generic,6ab087df-fd43-4eef-be41-2f179f5c2d2b,,
+Direct,0.9929,0Xd1l00000001DJCAY,Access_Issues,0.678,unable to get to gtc,business.gtc.access_issues,Business,6ab087df-fd43-4eef-be41-2f179f5c2d2b,,Global Track Complete
+,0.9929,0Xd1l00000001D2CAI,Escalation_Flow,0.678,unable to get to gtc,bot.escalation,Generic,6ab087df-fd43-4eef-be41-2f179f5c2d2b,,
+Direct,0.9951,0Xd1l00000001DJCAY,Access_Issues,0.678,having problems with global track complete gtc,business.gtc.access_issues,Business,81a9918a-92d6-433c-8378-a680b68568c7,,Global Track Complete
+,0.9951,0Xd1l00000001D2CAI,Escalation_Flow,0.678,having problems with global track complete gtc,bot.escalation,Generic,81a9918a-92d6-433c-8378-a680b68568c7,,
+Direct,0.9854,0Xd1l00000001DkCAI,Dictionary,0.9838,i need help for the dictionary,business.product.dictionary,Business,e1b26a69-1f8f-42b7-b136-cc8407f4eb4d,,product
+Start,0.9854,0Xd1l00000001CuCAI,Get_Article,0.9838,i need help for the dictionary,bot.business_answer.presentation,Generic,e1b26a69-1f8f-42b7-b136-cc8407f4eb4d,,
+Start,0.9951,0Xd1l00000001CuCAI,Get_Article,0.678,having problems with global track complete gtc,bot.business_answer.presentation,Generic,81a9918a-92d6-433c-8378-a680b68568c7,,
+Direct,0.9951,0Xd1l00000001DkCAI,Dictionary,0.9838,product dictionary isn't working for me,business.product.dictionary,Business,4cd7fee9-2973-464c-bf25-a807995e46b5,,product
+Start,0.9951,0Xd1l00000001CuCAI,Get_Article,0.9838,product dictionary isn't working for me,bot.business_answer.presentation,Generic,4cd7fee9-2973-464c-bf25-a807995e46b5,,
+Direct,0.9926,0Xd1l00000001DjCAI,Error_55,0.9897,im having an issue in product range,business.product.error.55,Business,4299a3a2-db00-47cc-a7b1-9ceea7d66065,,product
+Start,0.9926,0Xd1l00000001CuCAI,Get_Article,0.9897,im having an issue in product range,bot.business_answer.presentation,Generic,4299a3a2-db00-47cc-a7b1-9ceea7d66065,,
+,0.9926,0Xd1l00000001D2CAI,Escalation_Flow,0.9897,im having an issue in product range,bot.escalation,Generic,4299a3a2-db00-47cc-a7b1-9ceea7d66065,,
+Direct,0.8474,0Xd1l00000001DhCAI,Error_800004005,0.0438,error 55 on product page,business.product.error.800004005,Business,d7e1de61-4f0c-42a3-ae5e-6b7ba13ec3c6,,product
+Start,0.8474,0Xd1l00000001CuCAI,Get_Article,0.0438,error 55 on product page,bot.business_answer.presentation,Generic,d7e1de61-4f0c-42a3-ae5e-6b7ba13ec3c6,,
+,0.8474,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,error 55 on product page,bot.escalation,Generic,d7e1de61-4f0c-42a3-ae5e-6b7ba13ec3c6,,
+,0.9951,0Xd1l00000001D2CAI,Escalation_Flow,0.9838,product dictionary isn't working for me,bot.escalation,Generic,4cd7fee9-2973-464c-bf25-a807995e46b5,,
+Direct,0.4885,0Xd1l00000001DhCAI,Error_800004005,0.0438,what is the 800004005 error mean,business.product.error.800004005,Business,d1645179-84d2-4c73-85e1-9d1ebcd91c30,,product
+Start,0.4885,0Xd1l00000001CuCAI,Get_Article,0.0438,what is the 800004005 error mean,bot.business_answer.presentation,Generic,d1645179-84d2-4c73-85e1-9d1ebcd91c30,,
+,0.4885,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,what is the 800004005 error mean,bot.escalation,Generic,d1645179-84d2-4c73-85e1-9d1ebcd91c30,,
+Direct,0.8474,0Xd1l00000001DhCAI,Error_800004005,0.0438,error 55 on product page,business.product.error.800004005,Business,018333c4-8f4d-4f1d-abcb-14e8d6b0da77,,product
+Start,0.8474,0Xd1l00000001CuCAI,Get_Article,0.0438,error 55 on product page,bot.business_answer.presentation,Generic,018333c4-8f4d-4f1d-abcb-14e8d6b0da77,,
+,,0Xd1l00000001ChCAI,Confused,,80040DC2 error is in product,bot.fallback,Generic,69a3ea18-2be1-4ff0-9fc1-67a539708d87,,
+Direct,0.9989,0Xd1l00000001DiCAI,Error_80040dc2,0.997,error #80040dc2 did not open in database,business.product.error.80040dc2,Business,69a3ea18-2be1-4ff0-9fc1-67a539708d87,,product
+,,0Xd1l00000001ChCAI,Confused,,help for the undefined word error,bot.fallback,Generic,2feb8a78-955f-405d-8722-06302d44a92e,,
+,,0Xd1l00000001ChCAI,Confused,,there is an error when I refresh a database,bot.fallback,Generic,2feb8a78-955f-405d-8722-06302d44a92e,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,there is an error when I refresh a database,bot.offer_escalation,Generic,2feb8a78-955f-405d-8722-06302d44a92e,,
+Direct,0.9973,0Xd1l00000001DlCAI,Error_Flash,0.9811,what is the flash error,business.npower.error.flash,Business,b1571d8c-7f69-4589-b3e0-8fc45dab5320,,NPOWER
+Start,0.9973,0Xd1l00000001CuCAI,Get_Article,0.9811,what is the flash error,bot.business_answer.presentation,Generic,b1571d8c-7f69-4589-b3e0-8fc45dab5320,,
+,0.9973,0Xd1l00000001D2CAI,Escalation_Flow,0.9811,what is the flash error,bot.escalation,Generic,b1571d8c-7f69-4589-b3e0-8fc45dab5320,,
+,0.8474,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,error 55 on product page,bot.escalation,Generic,018333c4-8f4d-4f1d-abcb-14e8d6b0da77,,
+,,0Xd1l00000001ChCAI,Confused,,#800004005 is showing,bot.fallback,Generic,d1645179-84d2-4c73-85e1-9d1ebcd91c30,,
+Start,0.9989,0Xd1l00000001CuCAI,Get_Article,0.997,error #80040dc2 did not open in database,bot.business_answer.presentation,Generic,69a3ea18-2be1-4ff0-9fc1-67a539708d87,,
+,0.9989,0Xd1l00000001D2CAI,Escalation_Flow,0.997,error #80040dc2 did not open in database,bot.escalation,Generic,69a3ea18-2be1-4ff0-9fc1-67a539708d87,,
+,0.9771,0Xd1l00000001D2CAI,Escalation_Flow,0.963,there is a red x in questions,bot.escalation,Generic,be17a577-99f2-40d3-b437-1eb9163b8214,,
+,0.9972,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,there is a switch to error in Company Interface to Office,bot.escalation,Generic,aef4d75d-3fd8-409f-a423-8509c555819f,,
+,,0Xd1l00000001ChCAI,Confused,,where can I find the OK buttons in Company,bot.fallback,Generic,3a83116e-03e0-4291-b8fb-97fcfaa92aa9,,
+Direct,0.5365,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.2637,why am I getting a blank screen,business.blank_screen.disambig,Generic,d2d7ad11-ef14-4c74-a556-c296f899b980,,Disambiguation
+,0.3207,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,dbdate is corrupt in questions,bot.escalation,Generic,8887c435-4c17-4f28-9901-9706850e0f74,,
+,0.9974,0Xd1l00000001D2CAI,Escalation_Flow,0.963,why am I getting error 8004ade9 in questions Desktop,bot.escalation,Generic,d5c82e46-192e-4a22-94b5-2b00a16f1bf7,,
+Direct,0.9966,0Xd1l00000001DlCAI,Error_Flash,0.9811,there is a chrome flash issue,business.npower.error.flash,Business,d7186a54-b995-459a-b67b-79bf4cdffd22,,NPOWER
+Start,0.9966,0Xd1l00000001CuCAI,Get_Article,0.9811,there is a chrome flash issue,bot.business_answer.presentation,Generic,d7186a54-b995-459a-b67b-79bf4cdffd22,,
+,0.3589,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,the error 10004 is occurring,bot.escalation,Generic,7a43fd43-939f-4f9c-94bb-dd6370d4114b,,
+Start,0.9964,0Xd1l00000001CuCAI,Get_Article,0.6503,what is the 10004 error on questions portal,bot.business_answer.presentation,Generic,f8908784-69f0-4e16-aa0f-028c499088cf,,
+,0.3587,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,why is there a 3004 error,bot.escalation,Generic,fa0abeae-f4ce-476d-a1e7-3fb3dc992c0c,,
+Direct,0.3589,0Xd1l00000001DhCAI,Error_800004005,0.0438,the error 10004 is occurring,business.product.error.800004005,Business,7a43fd43-939f-4f9c-94bb-dd6370d4114b,,product
+Direct,0.9863,0Xd1l00000001DWCAY,Product_Access_Problem,0.9427,there is a product error showing up,business.product.access_problem,Business,d5e59933-0a99-4d38-8ac5-f7f1f180a049,,product
+Start,0.9863,0Xd1l00000001CuCAI,Get_Article,0.9427,there is a product error showing up,bot.business_answer.presentation,Generic,d5e59933-0a99-4d38-8ac5-f7f1f180a049,,
+,0.9863,0Xd1l00000001D2CAI,Escalation_Flow,0.9427,there is a product error showing up,bot.escalation,Generic,d5e59933-0a99-4d38-8ac5-f7f1f180a049,,
+,0.9966,0Xd1l00000001D2CAI,Escalation_Flow,0.9811,there is a chrome flash issue,bot.escalation,Generic,d7186a54-b995-459a-b67b-79bf4cdffd22,,
+,0.9964,0Xd1l00000001D2CAI,Escalation_Flow,0.6503,what is the 10004 error on questions portal,bot.escalation,Generic,f8908784-69f0-4e16-aa0f-028c499088cf,,
+,0.9041,0Xd1l00000001D2CAI,Escalation_Flow,0.6503,the error: 3004 on the questions On Demand is showing,bot.escalation,Generic,38fec9e4-921d-4c4e-871c-17cc7fb16b2f,,
+Direct,0.9964,0Xd1l00000001DnCAI,Error_3004,0.6503,what is the 10004 error on questions portal,business.product.error.3004,Business,f8908784-69f0-4e16-aa0f-028c499088cf,,Company product
+Start,0.3589,0Xd1l00000001CuCAI,Get_Article,0.0438,the error 10004 is occurring,bot.business_answer.presentation,Generic,7a43fd43-939f-4f9c-94bb-dd6370d4114b,,
+Direct,0.3587,0Xd1l00000001DhCAI,Error_800004005,0.0438,why is there a 3004 error,business.product.error.800004005,Business,fa0abeae-f4ce-476d-a1e7-3fb3dc992c0c,,product
+Start,0.3587,0Xd1l00000001CuCAI,Get_Article,0.0438,why is there a 3004 error,bot.business_answer.presentation,Generic,fa0abeae-f4ce-476d-a1e7-3fb3dc992c0c,,
+Direct,0.9041,0Xd1l00000001DnCAI,Error_3004,0.6503,the error: 3004 on the questions On Demand is showing,business.product.error.3004,Business,38fec9e4-921d-4c4e-871c-17cc7fb16b2f,,Company product
+Start,0.9041,0Xd1l00000001CuCAI,Get_Article,0.6503,the error: 3004 on the questions On Demand is showing,bot.business_answer.presentation,Generic,38fec9e4-921d-4c4e-871c-17cc7fb16b2f,,

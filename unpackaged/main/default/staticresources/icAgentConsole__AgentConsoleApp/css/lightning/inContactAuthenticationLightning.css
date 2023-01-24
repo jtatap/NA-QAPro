@@ -1,0 +1,104 @@
+﻿@charset 'UTF-8';
+
+.icAgentconsole .loginPanel .label {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.icAgentconsole .errormessage {
+    color: #FFFFFF;
+}
+
+.icAgentconsole .forceRelatedListCardDesktop {
+    background-color: #f5f6fa !important;
+    color: rgb(22, 50, 92);
+    margin: 0 0 1rem 0;
+    border-radius: .25rem;
+    overflow: hidden;
+    border: 1px solid rgb(216, 221, 230);
+    padding: 1.5%;
+    width: 30%;
+    margin: 10% auto;
+}
+
+.icAgentconsole .loginBtn {
+    margin: 2% auto;
+    width: 80px;
+    padding-bottom: 2%;
+}
+
+.icAgentconsole .pageHeaderLarge {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icAgentconsole .loginContainer .header {
+    margin-bottom: 6%;
+}
+
+    .icAgentconsole .loginContainer .header .floating {
+        margin-bottom: 2px;
+        background: #f5f6fa;
+        height: 72px;
+        padding: 0px 15px 0px 10px;
+        position: absolute !important;
+        z-index: 0 !important;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+.icAgentconsole .title {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    .icAgentconsole .title .primary {
+        font-size: 18px;
+    }
+
+.icAgentconsole .slds-form-element {
+    padding: 3%;
+}
+
+.icAgentconsole .slds-form-element__label {
+    font-size: .85rem;
+}
+
+.icAgentconsole .loginContainer .message-panel {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    margin-top: 80px;
+}
+
+    .icAgentconsole .loginContainer .message-panel .msg-container {
+        width: 94%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .icAgentconsole .loginContainer .message-panel .error, .icAgentconsole .loginContainer .message-panel .fatal {
+        background-color: #c23934;
+        color: #ffffff;
+    }
+
+    .icAgentconsole .loginContainer .message-panel .msg-container .error, .icAgentconsole .loginContainer .message-panel .msg-container .fatal {
+        background-image: url("../images/lightning/error.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+
+.icAgentconsole .loginContainer .close_icn {
+    float: right;
+    cursor: pointer;
+    padding:0px;
+    padding-right: 10px;
+    padding-top: 0px;    
+}

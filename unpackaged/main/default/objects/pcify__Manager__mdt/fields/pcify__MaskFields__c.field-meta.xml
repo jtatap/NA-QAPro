@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__MaskFields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enter a list of comma-delimited TEXT-only field API names.
+Example: Description,CustomTextField__c</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Enter a list of comma-delimited TEXT-only field API names.
+Example: Description,CustomTextField__c</inlineHelpText>
+    <label>DetectionFields</label>
+    <length>131072</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,63 @@
+.icAgentconsole .slds-text-title--caps {
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #54698d;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+    cursor: pointer;
+}
+
+.icAgentconsole .link {
+    padding: 1%;
+}
+
+.icAgentconsole #divObjectList {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.icAgentconsole th.headerSortUp {
+    background-image: url("css/images/sort-asc.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+.icAgentconsole th.headerSortDown {
+    background-image: url("css/images/sort-desc.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+.icAgentconsole .pageHeaderLarge {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icAgentconsole .header {
+    margin-bottom: 78px;
+}
+
+    .icAgentconsole .header .floating {
+        margin-bottom: 2px;
+        background: #f5f6fa;
+        height: 72px;
+        padding: 0px 15px 0px 10px;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        position: absolute;
+    }
+
+.icAgentconsole .title {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    .icAgentconsole .title .primary {
+        font-size: 18px;
+    }
+
+    .icAgentconsole .title .secondary {
+        font-size: 12px;
+    }

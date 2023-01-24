@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcifyfiles__Cannot_Update_Attachments_or_Content</fullName>
+    <active>true</active>
+    <description>Update/Masking is not supported for Attachments or Content.</description>
+    <errorConditionFormula>(MasterLabel = &#39;Attachment&#39; 
+|| MasterLabel = &#39;ContentVersion&#39;)
+&amp;&amp; ISPICKVAL(pcify__AuditAction__c, &#39;Update&#39;)</errorConditionFormula>
+    <errorDisplayField>pcify__AuditAction__c</errorDisplayField>
+    <errorMessage>Update/Masking is not supported for Attachments or Content.</errorMessage>
+</ValidationRule>

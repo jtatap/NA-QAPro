@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set to true when a Chat Log with Escalation End Metric is created --></help>
+        <label><!-- Escalation End Reached --></label>
+        <name>ebotdata__Escalation_End_Reached__c</name>
+    </CustomFieldTranslation>

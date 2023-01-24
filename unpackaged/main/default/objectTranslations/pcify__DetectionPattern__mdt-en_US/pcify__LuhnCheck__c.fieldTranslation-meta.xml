@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- *If TRUE, this Detection Pattern will verify that detected credit card numbers are valid according to the Luhn Algorithm.
+*If you only want RegEx without credit card number validation, then set this checkbox to false. --></help>
+        <label><!-- LuhnCheck --></label>
+        <name>pcify__LuhnCheck__c</name>
+    </CustomFieldTranslation>

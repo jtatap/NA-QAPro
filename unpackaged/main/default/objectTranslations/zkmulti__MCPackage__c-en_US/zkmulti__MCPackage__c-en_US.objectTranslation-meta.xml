@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Package Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Declared/Carriage Value --></label>
+            <section>Declared/Carriage Value</section>
+        </sections>
+        <sections>
+            <label><!-- Dimensions --></label>
+            <section>Dimensions</section>
+        </sections>
+        <sections>
+            <label><!-- Freight Details --></label>
+            <section>Freight Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Packaging Type --></label>
+            <section>Packaging Type</section>
+        </sections>
+        <sections>
+            <label><!-- Qty --></label>
+            <section>Qty</section>
+        </sections>
+        <sections>
+            <label><!-- References --></label>
+            <section>References</section>
+        </sections>
+        <sections>
+            <label><!-- Special Service - HazMat --></label>
+            <section>Special Service - HazMat</section>
+        </sections>
+        <sections>
+            <label><!-- Special Service - Lithium Batteries/Cells --></label>
+            <section>Special Service - Lithium Batteries/Cells</section>
+        </sections>
+        <sections>
+            <label><!-- Special Service - -  COD --></label>
+            <section>Special Service -- COD</section>
+        </sections>
+        <sections>
+            <label><!-- Special Services --></label>
+            <section>Special Services</section>
+        </sections>
+        <sections>
+            <label><!-- Speical Service - -  Dry Ice --></label>
+            <section>Speical Service -- Dry Ice</section>
+        </sections>
+        <sections>
+            <label><!-- Tracking Information --></label>
+            <section>Tracking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Weight --></label>
+            <section>Weight</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

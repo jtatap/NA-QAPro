@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#061E53</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Credit Card Number Detection for Salesforce</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>PCIFY</label>
+    <navType>Standard</navType>
+    <tabs>pcify__App_Configuration</tabs>
+    <tabs>pcify__Analytics</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>pcify__Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>pcify__PCIfy_UtilityBar</utilityBar>
+</CustomApplication>

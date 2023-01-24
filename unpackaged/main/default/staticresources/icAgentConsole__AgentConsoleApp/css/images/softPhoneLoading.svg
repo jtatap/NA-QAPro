@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="cylon-svg injected-svg" x="0px" y="0px" viewBox="0 0 62 9" width="100px" height="15px" style="enable-background:new 0 0 62 9;" xml:space="preserve" data-src="cylon.svg" role="img" focusable="false">
+ <style type="text/css">
+	.cylon-svg .cylon-dot {
+		-webkit-animation-direction: normal;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-direction: normal;
+		-moz-animation-duration: 2s;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		-o-animation-direction: normal;
+		-o-animation-duration: 2s;
+		-o-animation-iteration-count: infinite;
+		-o-animation-timing-function: linear;
+		animation-direction: normal;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	.cylon-svg .cylon-dot.delay-0s {
+		-webkit-animation-delay: 0s;
+		-moz-animation-delay: 0s;
+		-o-animation-delay: 0s;
+		animation-delay: 0s;
+	}
+	.cylon-svg .cylon-dot.delay-1s {
+		-webkit-animation-delay: -1s;
+		-moz-animation-delay: -1s;
+		-o-animation-delay: -1s;
+		animation-delay: -1s;
+	}
+	@keyframes cylon-1 {
+		0%,100%,0%,20%,80%,100% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		10%,90% {
+   r: 3.5;
+			fill: #F98B00
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(1) {
+		-webkit-animation-name: cylon-1;
+		-moz-animation-name: cylon-1;
+		-o-animation-name: cylon-1;
+		animation-name: cylon-1;
+	}
+	@keyframes cylon-2 {
+		0%,100%,5%,25%,75%,95% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		15%,85% {
+   r: 3.5;
+			fill: #F98B00
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(2) {
+		-webkit-animation-name: cylon-2;
+		-moz-animation-name: cylon-2;
+		-o-animation-name: cylon-2;
+		animation-name: cylon-2;
+	}
+	@keyframes cylon-3 {
+		0%,100%,10%,30%,70%,90% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		20%,80% {
+   r: 3.5;
+			fill: #F98B00
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(3) {
+		-webkit-animation-name: cylon-3;
+		-moz-animation-name: cylon-3;
+		-o-animation-name: cylon-3;
+		animation-name: cylon-3;
+	}
+	@keyframes cylon-4 {
+		0%,100%,15%,35%,65%,85% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		25%,75% {
+   r: 3.5;
+			fill: #F98B00
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(4) {
+		-webkit-animation-name: cylon-4;
+		-moz-animation-name: cylon-4;
+		-o-animation-name: cylon-4;
+		animation-name: cylon-4;
+	}
+	@keyframes cylon-5 {
+		0%,100%,10%,30%,70%,90% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		20%,80% {
+   r: 3.5;
+			fill: #F98B00
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(5) {
+		-webkit-animation-name: cylon-5;
+		-moz-animation-name: cylon-5;
+		-o-animation-name: cylon-5;
+		animation-name: cylon-5;
+	}
+	@keyframes cylon-6 {
+		0%,100%,5%,25%,75%,95% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		15%,85% {
+      r: 3.5;
+			fill: #F98B00;
+		}
+	}
+	.cylon-svg .cylon-dot:nth-child(6) {
+		-webkit-animation-name: cylon-6;
+		-moz-animation-name: cylon-6;
+		-o-animation-name: cylon-6;
+		animation-name: cylon-6;
+	}
+	@keyframes cylon-7 {
+		0%,100%,0%,20%,80%,100% {
+			r: 2;
+			fill: #e2e2e2
+		}
+
+		10%,90% {
+			r: 3.5;
+			fill: #F98B00
+		}
+	}
+	
+	.cylon-svg .cylon-dot:nth-child(7) {
+		-webkit-animation-name: cylon-7;
+		-moz-animation-name: cylon-7;
+		-o-animation-name: cylon-7;
+		animation-name: cylon-7;
+	}
+ </style>
+ <g>
+  <circle class="cylon-dot delay-0s" cx="4.466" cy="4.5" r="4"></circle>
+  <circle class="cylon-dot delay-0s" cx="13.311" cy="4.5" r="3"></circle>
+  <circle class="cylon-dot delay-0s" cx="22.155" cy="4.5" r="2.561"></circle>
+  <circle class="cylon-dot delay-0s" cx="31" cy="4.5" r="2"></circle>
+  <circle class="cylon-dot delay-1s" cx="39.845" cy="4.5" r="2.561"></circle>
+  <circle class="cylon-dot delay-1s" cx="48.689" cy="4.5" r="3"></circle>
+  <circle class="cylon-dot delay-1s" cx="57.534" cy="4.5" r="4"></circle>
+ </g>
+</svg>

@@ -1,0 +1,47 @@
+<apex:page controller="zkmulti.CustomCarrierLabelController" applyHtmlTag="false" renderAs="pdf"  applyBodyTag="false"  showHeader="false" standardStylesheets="false" docType="html-5.0">
+	<html>
+		<head>
+			<style >
+			body {
+				display: inline;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+			}
+
+			@page{
+				size: 4in 6in; 
+				margin-top: 0in; 
+				margin-left: 0in; 
+				margin-right: 0cm; 
+				margin-bottom: 0cm;
+				padding: 0cm;
+			}
+			</style>
+		</head>
+
+		<body>
+
+			<div style="margin-top: 20px; margin-left: 100px">
+				<div style="font-size: 20px"><b>{!senderCompany}</b></div>
+				<div>{!senderStreet}</div>
+				<div>{!SenderAddress}</div>
+				<div>{!senderCountry}</div>
+			</div>
+			<div style="margin-left: 5%; border: 1px solid black; display: block; height: 0px; width: 85%; margin-top: 20px;"></div>
+
+			<div style="margin-top: 20px; margin-left: 30px">
+				<div style=""><b>{!recipientName}</b></div>
+				<div style=""><b>{!recipientCompany}</b></div>
+				<div>{!recipientStreet}</div>
+				<div>{!recipientAddress}</div>
+				<div>{!recipientCountry}</div>
+			</div>
+
+			<div style="margin-left: 5%; border: 1px solid black; display: block; height: 0px; width: 85%; margin-top: 20px;"></div>
+			<div style="text-align: center; margin-top: 20px;"><img src="{! barCodeUrl }" style="width: 250px; height: 130px;"></img></div>
+			<div style="text-align: center; margin-top: 20px;"><img src="{! qrCodeUrl }" style="width: 150px; height: 150px;" ></img></div>
+		</body>
+	</html>
+</apex:page>

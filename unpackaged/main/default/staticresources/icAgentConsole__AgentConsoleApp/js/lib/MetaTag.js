@@ -1,0 +1,1 @@
+try{var meta=document.createElement("meta");meta.httpEquiv="X-UA-Compatible",meta.content="IE=edge";var firstElement=document.getElementsByTagName("head")[0].firstChild;document.getElementsByTagName("head")[0].insertBefore(meta,firstElement)}catch(ex){}

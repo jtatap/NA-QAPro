@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Manager Setting Layout</layout>
+        <sections>
+            <label><!-- Audit Settings --></label>
+            <section>Audit Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detection Settings --></label>
+            <section>Detection Settings</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You can only Report or Delete EmailMessages after they have been created. Update is supported only on EmailMessages whose Status is Draft or before they have been created. --></errorMessage>
+        <name>pcify__EmailMessages_Cannot_Be_Updated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Audit End Date must be GREATER than the Audit Start Date! --></errorMessage>
+        <name>pcify__End_Date_Must_Be_Greater_Than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Batch Size for Attachments and ContentVersion must be 10 or less. --></errorMessage>
+        <name>pcifyfiles__Batch_Size_Must_Be_10_or_Less</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Update/Masking is not supported for Attachments or Content. --></errorMessage>
+        <name>pcifyfiles__Cannot_Update_Attachments_or_Content</name>
+    </validationRules>
+</CustomObjectTranslation>

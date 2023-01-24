@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mode of Transport --></label>
+        <name>zkmulti__ModeOfTransport__c</name>
+        <picklistValues>
+            <masterLabel>Air</masterLabel>
+            <translation><!-- Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air Containerized</masterLabel>
+            <translation><!-- Air Containerized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Transport Installations</masterLabel>
+            <translation><!-- Fixed Transport Installations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passenger Handcarried</masterLabel>
+            <translation><!-- Passenger Handcarried --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pedestrian</masterLabel>
+            <translation><!-- Pedestrian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail Containerized</masterLabel>
+            <translation><!-- Rail Containerized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road Other</masterLabel>
+            <translation><!-- Road Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea Barge</masterLabel>
+            <translation><!-- Sea Barge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea Containerized</masterLabel>
+            <translation><!-- Sea Containerized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea Non-containerized</masterLabel>
+            <translation><!-- Sea Non-containerized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck</masterLabel>
+            <translation><!-- Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Containerized</masterLabel>
+            <translation><!-- Truck Containerized --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

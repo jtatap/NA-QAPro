@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__All</fullName>
+    <columns>NAME</columns>
+    <columns>pcify__Record__c</columns>
+    <columns>pcify__Category__c</columns>
+    <columns>pcify__Pattern__c</columns>
+    <columns>pcify__Large_Description__c</columns>
+    <columns>pcify__Field__c</columns>
+    <columns>pcify__Object__c</columns>
+    <columns>pcify__Origin__c</columns>
+    <columns>pcify__Timestamp__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

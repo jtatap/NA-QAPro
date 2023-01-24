@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FF914D</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Manage Aeon2 licenses, users, effort groups, and settings</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Aeon2 Admin</label>
+    <navType>Standard</navType>
+    <tabs>aeon2__UsersAndLicenses</tabs>
+    <tabs>aeon2__EffortGroups</tabs>
+    <tabs>aeon2__Day__c</tabs>
+    <tabs>aeon2__Log__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>aeon2__Aeon2_Admin_UtilityBar</utilityBar>
+</CustomApplication>

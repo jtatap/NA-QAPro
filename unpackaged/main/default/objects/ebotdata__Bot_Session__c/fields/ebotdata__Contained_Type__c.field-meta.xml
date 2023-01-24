@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Contained_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ebotdata__Outcome__c = &quot;Case Deflection&quot; &amp;&amp; ebotdata__Self_Served_Dialog_Reached__c = true, &quot;Flow Completed&quot;, IF(ebotdata__Outcome__c = &quot;Case Deflection&quot; &amp;&amp; ebotdata__Self_Served_Dialog_Reached__c = false, &quot;Flow Not Completed&quot;, NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Deflection Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

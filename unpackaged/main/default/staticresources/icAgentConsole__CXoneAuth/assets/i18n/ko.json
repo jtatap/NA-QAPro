@@ -1,0 +1,8 @@
+{
+    "ok": "확인",
+    "usernameRequired": "사용자 이름 필수",
+    "usernameIsNotValid": "사용자 이름이 올바르지 않습니다",
+    "username": "사용자 이름",
+    "password": "암호",
+    "signIn": "로그인"
+}

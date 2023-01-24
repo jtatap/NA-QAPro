@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Visitor Message Count --></help>
+        <label><!-- Visitor Message Count --></label>
+        <name>ebotdata__Visitor_Message_Count__c</name>
+    </CustomFieldTranslation>

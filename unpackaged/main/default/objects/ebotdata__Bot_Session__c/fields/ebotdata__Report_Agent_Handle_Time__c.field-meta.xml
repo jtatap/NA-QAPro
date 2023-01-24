@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Report_Agent_Handle_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+ebotdata__Agent_Handle_Time__c &gt; 0 &amp;&amp; ebotdata__Outcome__c ==&quot;Attempted to Escalate&quot; &amp;&amp; TEXT(ebotdata__Einstein_Bot_Escalation__c)== &quot;Successful&quot; ,
+
+
+ebotdata__Live_Chat_Transcript__r.ChatDuration - ebotdata__Agent_Wait_Time__c - ebotdata__Einstein_Bot_Duration__c ,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Report Agent Handle Time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

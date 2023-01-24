@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Chatbot_Case_Created__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(&#39;Outcome&#39; = &quot;Attempted to Escalate&quot; &amp;&amp; NOT(ISBLANK(&#39;CaseId&#39;)), &quot;Case Created&quot;, IF(&#39;Outcome&#39; != &quot;Attempted to Escalate&quot; &amp;&amp;(ISBLANK(&#39;CaseId&#39;)), &quot;No Case Created&quot;, NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Chatbot Case Created</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

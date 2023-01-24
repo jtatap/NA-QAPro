@@ -1,0 +1,17 @@
+<apex:page standardController="zkmulti__MCShipmate_Preference__c"  extensions="zkmulti.PreferenceDeleteController" lightningStylesheets="true" standardStylesheets="false" tabStyle="zkmulti__MCShipmate_Preference__c" action="{! init }" sidebar="false" docType="html-5.0">
+<apex:slds />
+<apex:form >
+	<apex:commandLink action="{! backToPreviousPage }" value="Back to Previous Page"/>
+	<p/>
+	 <apex:pageBlock >        
+        <!-- Delete/Cancel section -->
+        <apex:pageBlockSection collapsible="false" columns="1" title="Delete">
+        	<apex:pageBlockSectionItem >
+        		<apex:commandButton action="{! doDeletePreferenceRecord }" value="Delete" disabled="{! deleteDisabled }" onclick="IsLoading();"/>
+            	<apex:commandButton action="{! backToPreviousPage }" value="Cancel" disabled="{! deleteDisabled }" onclick="IsLoading();"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+
+	</apex:pageBlock>
+</apex:form>
+</apex:page>

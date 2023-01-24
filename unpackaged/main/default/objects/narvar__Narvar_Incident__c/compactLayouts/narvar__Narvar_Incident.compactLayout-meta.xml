@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>narvar__Narvar_Incident</fullName>
+    <fields>narvar__Subject__c</fields>
+    <fields>narvar__Custom_Type__c</fields>
+    <fields>narvar__Contact_Name__c</fields>
+    <fields>narvar__Carrier_Name__c</fields>
+    <fields>Name</fields>
+    <label>Narvar Incident</label>
+</CompactLayout>

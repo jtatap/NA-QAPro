@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Einstein Bot Escalation Outcome --></help>
+        <label><!-- Einstein Bot Escalation --></label>
+        <name>ebotdata__Einstein_Bot_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Case Already Created</masterLabel>
+            <translation><!-- Case Already Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Chat</masterLabel>
+            <translation><!-- Missed Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Agents Available</masterLabel>
+            <translation><!-- No Agents Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful</masterLabel>
+            <translation><!-- Successful --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

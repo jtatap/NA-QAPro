@@ -1,0 +1,33 @@
+<apex:page showHeader="false">
+<!--  
+** Bot Reporting Package - Post Install Page.
+** Author : Shantanu Srivastava(shantanu.srivastava@neuraflash.com)
+** This page will automatically be presented once the package has been installed and will be used to trigger test data creation
+-->
+<apex:slds />
+<style>
+body {background: aliceblue;}
+</style>
+    <apex:includeLightning />
+
+    <div id="BotReportingComponent" />
+
+    <script>
+        $Lightning.use("ebotdata:BotReportingPostInstallApp", function() {
+        //$Lightning.use("c:BotReportingPostInstallApp", function() {
+            $Lightning.createComponent("ebotdata:BotReportingPostInstallComp",
+            //$Lightning.createComponent("c:BotReportingPostInstallComp",
+            {
+                //Pass parameters to your lightning component here
+            },
+            "BotReportingComponent",
+            function(cmp) {
+                console.log('>> BotReportingComponent Component created on page');
+            });
+        });	
+    </script>
+    
+    <div id="footer" style="float: right;padding-top: 10%;padding-right: 2%;">
+       <p> © 2019 NeuraFlash, LLC </p>
+    </div>
+</apex:page>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Exemption Legend --></label>
+        <name>zkmulti__ExemptionLegend__c</name>
+        <picklistValues>
+            <masterLabel>30.2(d)(2)</masterLabel>
+            <translation><!-- 30.2(d)(2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.26(a)</masterLabel>
+            <translation><!-- 30.26(a) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.36</masterLabel>
+            <translation><!-- 30.36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(a)</masterLabel>
+            <translation><!-- 30.37(a) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(b)</masterLabel>
+            <translation><!-- 30.37(b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(c)</masterLabel>
+            <translation><!-- 30.37(c) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(d)</masterLabel>
+            <translation><!-- 30.37(d) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(f)</masterLabel>
+            <translation><!-- 30.37(f) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(h)</masterLabel>
+            <translation><!-- 30.37(h) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(i)</masterLabel>
+            <translation><!-- 30.37(i) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(j)</masterLabel>
+            <translation><!-- 30.37(j) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(k)</masterLabel>
+            <translation><!-- 30.37(k) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(l)</masterLabel>
+            <translation><!-- 30.37(l) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(m)</masterLabel>
+            <translation><!-- 30.37(m) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(n)</masterLabel>
+            <translation><!-- 30.37(n) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(o)</masterLabel>
+            <translation><!-- 30.37(o) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(p)</masterLabel>
+            <translation><!-- 30.37(p) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(q)</masterLabel>
+            <translation><!-- 30.37(q) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(r)</masterLabel>
+            <translation><!-- 30.37(r) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(s)</masterLabel>
+            <translation><!-- 30.37(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(t)</masterLabel>
+            <translation><!-- 30.37(t) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(u)</masterLabel>
+            <translation><!-- 30.37(u) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(x)</masterLabel>
+            <translation><!-- 30.37(x) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(1)</masterLabel>
+            <translation><!-- 30.37(y)(1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(2)</masterLabel>
+            <translation><!-- 30.37(y)(2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(3)</masterLabel>
+            <translation><!-- 30.37(y)(3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(4)</masterLabel>
+            <translation><!-- 30.37(y)(4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(5)</masterLabel>
+            <translation><!-- 30.37(y)(5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.37(y)(6)</masterLabel>
+            <translation><!-- 30.37(y)(6) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.39</masterLabel>
+            <translation><!-- 30.39 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.40(a)</masterLabel>
+            <translation><!-- 30.40(a) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.40(b)</masterLabel>
+            <translation><!-- 30.40(b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.40(c)</masterLabel>
+            <translation><!-- 30.40(c) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.40(d)</masterLabel>
+            <translation><!-- 30.40(d) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30.8(b)</masterLabel>
+            <translation><!-- 30.8(b) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

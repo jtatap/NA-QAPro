@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__FalsePositive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Record has been flagged as a False Positive.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Record has been flagged as a False Positive.</inlineHelpText>
+    <label>False Positive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

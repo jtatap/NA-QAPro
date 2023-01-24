@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__ConfidenceRating__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Confidence Rating for PCIFY Detection Event.</description>
+    <externalId>false</externalId>
+    <formula>IF(pcify__PatternMatch__c == TRUE &amp;&amp; pcify__LuhnValid__c == TRUE, &#39;High&#39;,
+IF(pcify__PatternMatch__c == TRUE &amp;&amp; pcify__LuhnValid__c == FALSE, &#39;Medium&#39;,
+IF(pcify__FalsePositive__c == TRUE, &#39;Medium&#39;,
+&#39;&#39;
+)))</formula>
+    <inlineHelpText>Confidence Rating for PCIFY Detection Event.</inlineHelpText>
+    <label>Confidence Rating</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

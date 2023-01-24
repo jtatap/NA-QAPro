@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Action to perform when credit card is detected. Update will mask the number. Report will generate a PCIFY Log. Detection supports only Update or Report. --></help>
+        <label><!-- DetectionAction --></label>
+        <name>pcify__DetectionAction__c</name>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation><!-- Update --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Multi Package Shipment Layout</layout>
+        <sections>
+            <label><!-- Bliing --></label>
+            <section>Bliing</section>
+        </sections>
+        <sections>
+            <label><!-- Consolidation Info --></label>
+            <section>Consolidation Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recipient --></label>
+            <section>Recipient</section>
+        </sections>
+        <sections>
+            <label><!-- Referenced Standard Objects --></label>
+            <section>Referenced Standard Objects</section>
+        </sections>
+        <sections>
+            <label><!-- Sender --></label>
+            <section>Sender</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Consolidation --></label>
+        <name>zkmulti__Consolidation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi Package --></label>
+        <name>zkmulti__MultiPackage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outbound And Return --></label>
+        <name>zkmulti__Outbound_And_Return</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Cancel_Consolidation --></label>
+        <name>zkmulti__Cancel_Consolidation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Labels_and_Documents --></label>
+        <name>zkmulti__Print_Labels_and_Documents</name>
+    </webLinks>
+</CustomObjectTranslation>

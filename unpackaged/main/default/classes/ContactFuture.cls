@@ -205,6 +205,8 @@ public without sharing class ContactFuture {
             
             //Create new Account list to insert
             Account acc = new Account();
+            System.debug('cas @208: ' + cas);
+            System.debug('cas.Supplied_Last_Name__c @209: ' + cas.Supplied_Last_Name__c);
             String accName = (String.isBlank(cas.Supplied_Last_Name__c)?cas.SuppliedName:cas.Supplied_First_Name__c+' '+cas.Supplied_Last_Name__c);
             if(accName !=Null){
                 acc.Name = accName;

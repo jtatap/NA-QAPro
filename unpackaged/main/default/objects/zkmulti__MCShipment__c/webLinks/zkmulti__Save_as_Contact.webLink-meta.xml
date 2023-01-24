@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zkmulti__Save_as_Contact</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Save as Contact</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!$ObjectType.Contact}/e?retURL=/{!zkmulti__MCShipment__c.Id}&amp;con10={!zkmulti__MCShipment__c.zkmulti__Recipient_Phone__c}&amp;con19street={!zkmulti__MCShipment__c.zkmulti__Recipient_Street__c}&amp;con19city={!zkmulti__MCShipment__c.zkmulti__Recipient_City__c}&amp;con19state={!zkmulti__MCShipment__c.zkmulti__Recipient_State_Province__c}&amp;con19zip={!zkmulti__MCShipment__c.zkmulti__Recipient_Zip_Postal_Code__c}&amp;con19country={!zkmulti__MCShipment__c.zkmulti__Recipient_Country__c}&amp;name_lastcon2={!zkmulti__MCShipment__c.zkmulti__Recipient_Name__c}&amp;con4_lkid={!zkmulti__MCShipment__c.zkmulti__Recipient_AccountId__c}&amp;con15={!zkmulti__MCShipment__c.zkmulti__Recipient_Email__c}</url>
+</WebLink>

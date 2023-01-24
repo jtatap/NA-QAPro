@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Collect &amp; Log data from Einstein Bot Conversation</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>NeuraFlash Einstein Bot Report Metadata</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>ebotdata__Insights_Validation</tabs>
+    <tabs>standard-LiveAgentSession</tabs>
+    <tabs>standard-LiveChatTranscript</tabs>
+    <tabs>ebotdata__Bot_Session__c</tabs>
+    <tabs>ebotdata__Bot_Metrics__c</tabs>
+    <tabs>ebotdata__Instructions</tabs>
+    <tabs>ebotdata__Bot_Chat_Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>ebotdata__NeuraFlash_Einstein_Bot_Report_Metadata_UtilityBar</utilityBar>
+</CustomApplication>

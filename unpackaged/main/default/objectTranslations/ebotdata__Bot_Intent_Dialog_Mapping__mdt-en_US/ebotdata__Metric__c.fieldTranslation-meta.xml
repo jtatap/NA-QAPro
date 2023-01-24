@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Metric Type for this Dialog --></help>
+        <label><!-- Metric --></label>
+        <name>ebotdata__Metric__c</name>
+        <picklistValues>
+            <masterLabel>Business Direct</masterLabel>
+            <translation><!-- Business Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business End</masterLabel>
+            <translation><!-- Business End --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Start</masterLabel>
+            <translation><!-- Business Start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation End</masterLabel>
+            <translation><!-- Escalation End --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation Start</masterLabel>
+            <translation><!-- Escalation Start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Followup - No Response</masterLabel>
+            <translation><!-- Followup - No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Followup - Yes Response</masterLabel>
+            <translation><!-- Followup - Yes Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offered Followup Question</masterLabel>
+            <translation><!-- Offered Followup Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Topic</masterLabel>
+            <translation><!-- Topic --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

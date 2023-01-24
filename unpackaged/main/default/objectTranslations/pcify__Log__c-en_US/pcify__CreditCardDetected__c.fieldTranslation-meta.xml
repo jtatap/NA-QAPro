@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- TRUE if a credit card number was detected. --></help>
+        <label><!-- Credit Card Detected --></label>
+        <name>pcify__CreditCardDetected__c</name>
+    </CustomFieldTranslation>

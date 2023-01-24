@@ -1,0 +1,149 @@
+.agentConsole .cComboBox {
+    border: 1px solid #CCCCCC;    
+    font-size: 11px;
+    position: absolute;
+}
+
+.agentConsole .roundBorder{
+    border-radius: 10px 10px 10px 10px;    
+}
+
+.agentConsole .halfRoundBorder{
+    border-radius: 10px 10px 0px 0px;    
+}
+
+.agentConsole .cComboBox .txtDiv
+{
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    height: 22px;
+    min-width: 25px;
+    /*width: #px;*/
+}
+
+.agentConsole .cComboBox .txtDiv:focus {
+    outline: none !important;
+}
+
+.agentConsole .cComboBox .txtDiv .txtSpn {
+    margin-left: 5px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.agentConsole .cComboBox .iconDiv{
+    border-radius: 0 10px 10px 0;        
+    float: left;
+    height: 22px;
+    width: 21px;
+}
+
+.agentConsole .cComboBox .iconDiv .icon{
+    /*background: url("images/arrow-down.png") no-repeat scroll 0 0 transparent;*/
+    height: 10px;
+    margin-left: 3px;
+    margin-top: 7px;
+    width: 14px;
+}
+
+.agentConsole .cComboBox .menu {
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    display: none;    
+    min-width: 25px;
+    position: fixed;
+    top: 23px;
+    z-index: 9999;
+    /*width: #px;*/
+}
+
+.agentConsole .cComboBox .menu .itemDiv {
+    min-width: 25px;
+    /*width: #px;*/
+}
+
+.agentConsole .cComboBox .menu .item {
+    height: 18px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+
+
+/*Popout*/
+
+.agentConsolePopout .cComboBox {
+    border: 1px solid #CCCCCC;    
+    font-size: 11px;
+    position: absolute;
+}
+
+.agentConsolePopout .roundBorder{
+    border-radius: 10px 10px 10px 10px;    
+}
+
+.agentConsolePopout .emailSortOrderCombo .roundBorder{
+    border-radius: 5px 5px 5px 5px;    
+}
+
+.agentConsolePopout .emailSortOrderCombo .halfRoundBorder{
+    border-radius: 5px 5px 0px 0px;    
+}
+.agentConsolePopout .halfRoundBorder{
+    border-radius: 10px 10px 0px 0px;    
+}
+
+.agentConsolePopout .cComboBox .txtDiv
+{
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    height: 22px;
+    min-width: 25px;
+    /*width: #px;*/
+}
+
+.agentConsolePopout .cComboBox .txtDiv .txtSpn {
+    margin-left: 5px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.agentConsolePopout .cComboBox .iconDiv{
+    border-radius: 0 10px 10px 0;        
+    float: left;
+    height: 22px;
+    width: 21px;
+}
+
+.agentConsolePopout .cComboBox .iconDiv .icon{
+    background: url("images/arrow-down.png") no-repeat scroll 0 0 transparent;
+    height: 10px;
+    margin-left: 3px;
+    margin-top: 7px;
+    width: 14px;
+}
+
+.agentConsolePopout .cComboBox .menu {
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    display: none;    
+    min-width: 25px;
+    position: fixed;
+    top: 23px;
+    z-index: 9999;
+    /*width: #px;*/
+}
+
+.agentConsolePopout .cComboBox .menu .itemDiv {
+    min-width: 25px;
+    cursor: pointer;
+    /*width: #px;*/
+}
+
+.agentConsolePopout .cComboBox .menu .item {
+    height: 18px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 4px;
+    cursor: pointer;
+}

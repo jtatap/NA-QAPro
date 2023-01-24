@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>EEI Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department of State/ Directorate of Defense Trade Control Information --></label>
+            <section>Department of State/ Directorate of Defense Trade Control Information</section>
+        </sections>
+        <sections>
+            <label><!-- Export Information --></label>
+            <section>Export Information</section>
+        </sections>
+        <sections>
+            <label><!-- Forwarding Agent --></label>
+            <section>Forwarding Agent</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- In Bond Code --></label>
+            <section>In Bond Code</section>
+        </sections>
+        <sections>
+            <label><!-- Licensing Information --></label>
+            <section>Licensing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Transportation Information --></label>
+            <section>Transportation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ultimate Consignee --></label>
+            <section>Ultimate Consignee</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Please select option --></errorMessage>
+        <name>zkmulti__CheckUltimate_Consignee_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select option --></errorMessage>
+        <name>zkmulti__Requires_the_Exemption_Legend_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill field --></errorMessage>
+        <name>zkmulti__Requires_the_ITN_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose option --></errorMessage>
+        <name>zkmulti__Shipper_filed_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;UPS filled&apos; option is not supported. --></errorMessage>
+        <name>zkmulti__filed_check</name>
+    </validationRules>
+</CustomObjectTranslation>

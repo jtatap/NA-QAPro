@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>[PCIFY] Report Audit Completed</name>
+    <style>none</style>
+    <subject>Your PCIFY Report Audit has completed!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

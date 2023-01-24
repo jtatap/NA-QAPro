@@ -1,0 +1,120 @@
+﻿@charset 'UTF-8';
+
+.icAgentconsole .pageHeaderLarge {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icAgentconsole .header {
+    margin-bottom: 6%;
+}
+
+    .icAgentconsole .header .floating {
+        margin-bottom: 2px;
+        background: #f5f6fa;
+        height: 72px;
+        padding: 0px 15px 0px 10px;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        top: 0px;
+        left:0px;
+    }
+
+.icAgentconsole .title {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    .icAgentconsole .title .primary {
+        font-size: 18px;
+    }
+
+
+.icAgentconsole .keys {
+    width: 75px;
+    font-weight: bold;
+}
+
+.icAgentconsole .values {
+    padding: 2px;
+}
+
+.icAgentconsole .keyValue {
+    padding-bottom: 4px;
+}
+
+.icAgentconsole .homeTab .tertiaryPalette {
+    background-color: #1797c0;
+}
+
+.icAgentconsole .homeTab .bPageBlock {
+    border-top-color: transparent;
+}
+
+.icAgentconsole #emailAttachmentLink .image {
+    float: left;
+    padding-right: 5px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.icAgentconsole #emailAttachmentLink {
+    display: block;
+    padding: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icAgentconsole .emailmetaData {
+    word-wrap: break-word;
+    padding-top: 20px;
+}
+
+.icAgentconsole .emailDetails td {
+    padding-top: 2%;
+    vertical-align: top;
+}
+
+.icAgentconsole h3 .header-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icAgentconsole .forceRelatedListCardDesktop {
+    background-color: rgb(244, 246, 249);
+    color: rgb(22, 50, 92);
+    margin: 0 0 1rem 0;
+    border-radius: .25rem;
+    overflow: hidden;
+    border: 1px solid rgb(216, 221, 230);
+    padding: 1.5%;
+}
+
+.icAgentconsole .attachments {
+    margin-left: 6%;
+}
+
+.icAgentconsole .scrollContainer {
+    padding: 0px 0px 8px 14px;
+    width: 492px;
+}
+
+.icAgentconsole .emailContainer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(216, 221, 230);
+    box-shadow: 5px 5px 6px 2px rgb(216,221,230);
+    width: 615px;
+}
+
+.icAgentconsole .transcriptError {
+    padding-top: 20px;
+    text-align: center;
+}

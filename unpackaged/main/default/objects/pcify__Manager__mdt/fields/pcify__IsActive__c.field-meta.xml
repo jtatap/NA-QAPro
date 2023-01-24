@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__IsActive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>To Activate, you MUST either install the PCIFY Extension Package for this object, or write your own Apex Trigger to call PCIFY Managed Classes.  Please contact PCIFY support for details.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>To Activate, you MUST either install the PCIFY Extension Package for this object, or write your own Apex Trigger to call PCIFY Managed Classes.  Please contact PCIFY support for details.</inlineHelpText>
+    <label>IsActive</label>
+    <type>Checkbox</type>
+</CustomField>

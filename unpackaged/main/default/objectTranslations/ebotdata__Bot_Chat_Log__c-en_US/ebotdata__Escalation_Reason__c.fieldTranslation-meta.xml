@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Escalation By Design / Not By Design --></help>
+        <label><!-- Escalation Reason --></label>
+        <name>ebotdata__Escalation_Reason__c</name>
+    </CustomFieldTranslation>

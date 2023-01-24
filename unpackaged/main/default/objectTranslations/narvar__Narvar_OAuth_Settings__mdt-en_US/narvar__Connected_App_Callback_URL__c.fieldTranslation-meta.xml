@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This value needs to match the Callback URL field in the connected app named, Narvar Customer Service Platform API --></help>
+        <label><!-- Connected App Callback URL --></label>
+        <name>narvar__Connected_App_Callback_URL__c</name>
+    </CustomFieldTranslation>

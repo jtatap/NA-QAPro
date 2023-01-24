@@ -1,0 +1,196 @@
+
+
+/* ---------- Custom Scroll theme --------------------------------------------------------------------- */
+
+.agentConsole .mCustomScrollBox > .mCSB_scrollTools {
+	background: #FFFFFF;	
+	border: 0px solid #9D9D9D;
+	opacity: 1;
+	width: 13px;
+	z-index: 1; 
+}				
+
+
+.agentConsole .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 17px 0;
+}
+.agentConsole .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	width: 14px;
+	border-radius: 0px;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_buttonUp {
+	background-position: -85px 2px;
+	border: 1px solid #A2A2A2;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_buttonDown {
+	background-position: -85px -9px;
+	border: 1px solid #A2A2A2;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_draggerRail {
+	background: #FFFFFF;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_draggerContainer {
+	background: #FFFFFF;
+	border-right: 1px solid #A1A1A1;
+	border-left: 1px solid #A1A1A1;
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+	background:#A1A1A1;			
+}
+				
+.agentConsole .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background:#A1A1A1;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background:#D0D0D0;
+	height: 100%;
+	margin: -1px 1px;
+	text-align: center;
+	width: 7px;
+	border:1px solid #A1A1A1;
+	border-radius:0px;
+}
+		
+.agentConsole .mCSB_scrollTools .mCSB_buttonDown {
+	margin-top: -34px;
+	top: 100%;
+}
+
+.agentConsole .mCSB_scrollTools .mCSB_buttonUp, .agentConsole .mCSB_scrollTools .mCSB_buttonDown, .agentConsole .mCSB_scrollTools .mCSB_buttonLeft, .agentConsole .mCSB_scrollTools .mCSB_buttonRight {  
+    background-image: url("images/mCSB_buttonsNew.png");
+    background-repeat: no-repeat;
+    opacity: 0.74;
+}
+
+.agentConsole .mCSB_scrollTools .mCSB_buttonUp:hover, .mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover{
+    opacity: 1;
+}
+
+.agentConsole .mCSB_container {
+  margin-right: 0px;  
+}
+
+/*Popout*/
+
+
+
+/* ---------- Custom Scroll theme --------------------------------------------------------------------- */
+
+.agentConsolePopout .mCustomScrollBox > .mCSB_scrollTools, .ui-dialog .mCustomScrollBox > .mCSB_scrollTools {
+    background: #FFFFFF;
+    border: 0px solid #9D9D9D;
+    opacity: 1;
+    width: 13px;
+    z-index: 1;
+}				
+
+
+.agentConsolePopout .mCSB_scrollTools a + .mCSB_draggerContainer, .ui-dialog .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 17px 0;
+}
+.agentConsolePopout .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .ui-dialog .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 14px;
+    border-radius: 0px;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_buttonUp, .ui-dialog .mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -85px 2px;
+    border: 1px solid #A2A2A2;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_buttonDown, .ui-dialog .mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -85px -9px;
+    border: 1px solid #A2A2A2;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_draggerRail, .ui-dialog .mCSB_scrollTools .mCSB_draggerRail {
+    background: #FFFFFF;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_draggerContainer, .ui-dialog .mCSB_scrollTools .mCSB_draggerContainer {
+    background: #FFFFFF;
+    border-right: 1px solid #A1A1A1;
+    border-left: 1px solid #A1A1A1;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .ui-dialog .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #A1A1A1;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .ui-dialog .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: #A1A1A1;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .ui-dialog .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #D0D0D0;
+    height: 100%;
+    margin: -1px 1px;
+    text-align: center;
+    width: 7px;
+    border: 1px solid #A1A1A1;
+    border-radius: 0px;
+}
+.agentConsolePopout .mCSB_scrollTools .mCSB_buttonDown, .ui-dialog .mCSB_scrollTools .mCSB_buttonDown {
+        margin-top: -34px;
+        top: 100%;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_buttonUp, .ui-dialog .mCSB_scrollTools .mCSB_buttonUp, .agentConsolePopout .mCSB_scrollTools .mCSB_buttonDown, .ui-dialog .mCSB_scrollTools .mCSB_buttonDown, .agentConsolePopout .mCSB_scrollTools .mCSB_buttonLeft, .ui-dialog .mCSB_scrollTools .mCSB_buttonLeft, .agentConsolePopout .mCSB_scrollTools .mCSB_buttonRight, .ui-dialog .mCSB_scrollTools .mCSB_buttonRight {  
+    background-image: url("images/mCSB_buttonsNew.png");
+    background-repeat: no-repeat;
+    opacity: 0.74;
+}
+
+.agentConsolePopout .mCSB_scrollTools .mCSB_buttonUp:hover, .ui-dialog .mCSB_scrollTools .mCSB_buttonUp:hover, .mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover {
+        opacity: 1;
+}
+
+.agentConsolePopout .mCSB_container, .ui-dialog .mCSB_container {
+    margin-right: 0px;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Sold-To / Importer of Records Account (if not same as consignee) --></help>
+        <label><!-- Sold-To/Importer Account --></label>
+        <name>zkmulti__ImporterAccount__c</name>
+        <relationshipLabel><!-- Requested Shipment Documents --></relationshipLabel>
+    </CustomFieldTranslation>

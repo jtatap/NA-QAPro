@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebcm__Details</fullName>
+    <columns>MasterLabel</columns>
+    <columns>ebcm__Community_URL__c</columns>
+    <columns>ebcm__isActive__c</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <filterScope>Everything</filterScope>
+    <label>Details</label>
+</ListView>

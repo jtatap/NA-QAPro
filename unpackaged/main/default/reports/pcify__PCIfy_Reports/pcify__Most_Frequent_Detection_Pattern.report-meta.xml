@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Field__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Pattern__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Object__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__LogType__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>pcify__Log__c.pcify__Pattern__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Most Frequent Detection Patterns</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$pcify__Log__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>pcify__Log__c.pcify__Timestamp__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

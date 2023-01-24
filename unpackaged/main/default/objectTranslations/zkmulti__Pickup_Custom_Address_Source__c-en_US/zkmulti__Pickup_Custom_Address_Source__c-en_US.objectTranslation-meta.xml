@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Pickup Custom Address Source Layout</layout>
+        <sections>
+            <label><!-- Automation settings --></label>
+            <section>Automation settings</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Address Source --></label>
+            <section>Custom Address Source</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Error Handler --></label>
+            <section>Error Handler</section>
+        </sections>
+        <sections>
+            <label><!-- Pickup Date/Time --></label>
+            <section>Pickup Date/Time</section>
+        </sections>
+        <sections>
+            <label><!-- Pickup Information &amp; Location --></label>
+            <section>Pickup Information &amp; Location</section>
+        </sections>
+        <sections>
+            <label><!-- Reference Number --></label>
+            <section>Reference Number</section>
+        </sections>
+        <sections>
+            <label><!-- Shipments --></label>
+            <section>Shipments</section>
+        </sections>
+        <sections>
+            <label><!-- Special Information --></label>
+            <section>Special Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

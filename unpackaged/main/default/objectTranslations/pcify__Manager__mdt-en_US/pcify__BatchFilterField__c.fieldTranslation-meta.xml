@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When scheduling an Audit, you need to specify which Date/Time field to query with - i.e. CreatedDate, LastModifiedDate, or another Date/Time field. --></help>
+        <label><!-- AuditDateField --></label>
+        <name>pcify__BatchFilterField__c</name>
+    </CustomFieldTranslation>

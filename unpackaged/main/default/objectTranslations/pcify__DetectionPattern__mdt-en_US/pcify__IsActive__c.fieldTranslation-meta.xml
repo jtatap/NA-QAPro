@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If unchecked this DetectionPattern will not be used to match credit card numbers or other PII. --></help>
+        <label><!-- IsActive --></label>
+        <name>pcify__IsActive__c</name>
+    </CustomFieldTranslation>

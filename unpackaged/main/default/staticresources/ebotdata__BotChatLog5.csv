@@ -1,0 +1,120 @@
+ebotdata__Business_Metric_Type__c,ebotdata__Current_Confidence_For_Utterance__c,ebotdata__Current_Dialog_Id__c,ebotdata__Current_Dialog_Name__c,ebotdata__Current_Threshold_High__c,ebotdata__Current_Utterance__c,ebotdata__Intent_Name__c,ebotdata__Intent_Type__c,ebotdata__Live_Agent_Session_Id__c,ebotdata__Successful_Resolution__c,ebotdata__Topic_Name__c
+Direct,0.9992,0Xd1l00000001DLCAY,Error_8004ade9,0.9943,why am I getting error 8004ade9 in questions Desktop,business.desktop.error.8004ade9,Business,81a6ce6a-b720-4a30-9829-469f5926ee33,,questions Desktop
+Start,0.9992,0Xd1l00000001CuCAI,Get_Article,0.9943,why am I getting error 8004ade9 in questions Desktop,bot.business_answer.presentation,Generic,81a6ce6a-b720-4a30-9829-469f5926ee33,,
+,0.9992,0Xd1l00000001D2CAI,Escalation_Flow,0.9943,why am I getting error 8004ade9 in questions Desktop,bot.escalation,Generic,81a6ce6a-b720-4a30-9829-469f5926ee33,,
+,0.9989,0Xd1l00000001D2CAI,Escalation_Flow,0.9984,I see the error 800a03ec on the report,bot.escalation,Generic,bc06afcd-f4c6-4b16-8090-1b50dc5f6f79,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9981,I want to figure out whether it is possible to add schedule to schedule,bot.escalation,Generic,fe750ade-e6ff-4de5-a6af-2d086f14317b,,
+Direct,1,0Xd1l00000001DnCAI,Error_3004,0.0737,I get 3004 runtime error when rendering report in AOD,business.product.error.3004,Business,8ba812ae-155b-4c7d-b94d-5da39d270186,,Company product
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.0737,I get 3004 runtime error when rendering report in AOD,bot.business_answer.presentation,Generic,8ba812ae-155b-4c7d-b94d-5da39d270186,,
+,0.9985,0Xd1l00000001D2CAI,Escalation_Flow,0.0233,"please help for error message ""switch to & retry"" in questions",bot.escalation,Generic,6dc602b9-5556-4c2d-8e89-2bc1ec4d72cb,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.0164,how to open more than five report groups in a product,bot.business_answer.presentation,Generic,c17d570d-7ead-46ad-b87c-c453c8924d56,,
+Start,0.6425,0Xd1l00000001CuCAI,Get_Article,0.0055,asd;fljk;alksdf,bot.business_answer.presentation,Generic,9db89753-8fa7-440a-bc0a-630f9eb674a1,,
+,,0Xd1l00000001ChCAI,Confused,,can I get a beer,bot.fallback,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,,0Xd1l00000001ChCAI,Confused,,I can't wait to go to cadillac cantina,bot.fallback,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,,0Xd1l00000001ChCAI,Confused,,I want a cookie,bot.fallback,Generic,4325e1a7-cc9f-47dc-9362-704bd9dbb11c,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I want a cookie,bot.offer_escalation,Generic,4325e1a7-cc9f-47dc-9362-704bd9dbb11c,,
+,0.6863,0Xd1l00000001D2CAI,Escalation_Flow,0.0055,file edit view insert format,bot.escalation,Generic,ce605a92-f039-44a8-bb12-450b67e980be,,
+Direct,0.9673,0Xd1l00000001CkCAI,Questions_Portal,0.061,why can't i login to questions,business.questions.not_connecting.ie,Business,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,questions
+Start,0.9673,0Xd1l00000001CuCAI,Get_Article,0.061,why can't i login to questions,bot.business_answer.presentation,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+Direct,0.6863,0Xd1l00000001DgCAI,Undefined_Word,0.0055,file edit view insert format,business.product.undefined_word,Business,ce605a92-f039-44a8-bb12-450b67e980be,,product
+Direct,0.8854,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.5793,why am I getting a blank screen,business.blank_screen.disambig,Generic,b4722d43-be4c-4f2c-b806-3717c304c38b,,Disambiguation
+Direct,0.541,0Xd1l00000001CkCAI,Questions_Portal,0.061,dbdata is corrupt in questions,business.questions.not_connecting.ie,Business,15b6c312-5b3a-4f61-a4f5-8bfa8973f640,,questions
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.0737,I get 3004 runtime error when rendering report in AOD,bot.escalation,Generic,8ba812ae-155b-4c7d-b94d-5da39d270186,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9977,what can I do to export a schedule using product,bot.business_answer.presentation,Generic,ae4b4a09-9a69-43d4-981e-ac00b2e918d7,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9977,what can I do to export a schedule using product,bot.escalation,Generic,ae4b4a09-9a69-43d4-981e-ac00b2e918d7,,
+Direct,0.9973,0Xd1l00000001DLCAY,Error_8004ade9,0.9943,there is a red x in questions,business.desktop.error.8004ade9,Business,21124d25-c8fb-46b5-ba47-3444bdad4ac7,,questions Desktop
+Direct,1,0Xd1l00000001DeCAI,Export_XML,0.9977,what can I do to export a schedule using product,business.product.export_xml,Business,ae4b4a09-9a69-43d4-981e-ac00b2e918d7,,product
+Direct,1,0Xd1l00000001DYCAY,More_than_5,0.0164,how to open more than five report groups in a product,business.product.more_than_5,Business,c17d570d-7ead-46ad-b87c-c453c8924d56,,product
+Direct,1,0Xd1l00000001DZCAY,Research_Window,0.9877,window for research report isn't opening,business.product.research_window,Business,10361526-8f07-4459-a3aa-46730301eaf7,,product
+,,0Xd1l00000001ChCAI,Confused,,i can't find evip,bot.fallback,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,looking for Company VIP,bot.offer_escalation,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,why can't I reset my password,bot.offer_escalation,Generic,e4debb19-ce6b-452c-8b23-d8f4a599b7ab,,
+,,0Xd1l00000001ChCAI,Confused,,I see a blank screen on the desktop,bot.fallback,Generic,2e4def58-1014-4320-9fa9-080a565a2056,,
+Direct,0.9185,0Xd1l00000001DSCAY,Error_Switch_To,0.0233,how do I load questions,business.desktop.error.switch_to,Business,2e4def58-1014-4320-9fa9-080a565a2056,,questions Desktop
+Start,0.9185,0Xd1l00000001CuCAI,Get_Article,0.0233,how do I load questions,bot.business_answer.presentation,Generic,2e4def58-1014-4320-9fa9-080a565a2056,,
+Direct,0.9948,0Xd1l00000001DOCAY,Crash_On_Launch,0.9359,interface to office isn't loading,business.desktop.crash_on_launch,Business,8a2f6a29-f488-44a8-9605-75663014ad72,,questions Desktop
+Start,0.9948,0Xd1l00000001CuCAI,Get_Article,0.9359,interface to office isn't loading,bot.business_answer.presentation,Generic,8a2f6a29-f488-44a8-9605-75663014ad72,,
+,0.9948,0Xd1l00000001D2CAI,Escalation_Flow,0.9359,interface to office isn't loading,bot.escalation,Generic,8a2f6a29-f488-44a8-9605-75663014ad72,,
+Direct,0.9983,0Xd1l00000001DSCAY,Error_Switch_To,0.0233,there is a switch to error in Company Interface to Office,business.desktop.error.switch_to,Business,f15a82be-2021-4cbf-9628-f2899cdfd5ac,,questions Desktop
+,,0Xd1l00000001ChCAI,Confused,,where can I find the OK buttons in Company,bot.fallback,Generic,1e6bb011-fdb4-4422-b400-dbfa14ccafc5,,
+,0.5439,0Xd1l00000001D2CAI,Escalation_Flow,0.0233,I can't select on Company,bot.escalation,Generic,89631bed-1324-4fe6-84cb-f8f5805c14b7,,
+,,0Xd1l00000001ChCAI,Confused,,can not find the ok button,bot.fallback,Generic,1e6bb011-fdb4-4422-b400-dbfa14ccafc5,,
+Direct,0.9185,0Xd1l00000001DSCAY,Error_Switch_To,0.0233,how do I load questions,business.desktop.error.switch_to,Business,679d9322-f349-4a2b-a28a-9e668b5f1033,,questions Desktop
+Start,0.9185,0Xd1l00000001CuCAI,Get_Article,0.0233,how do I load questions,bot.business_answer.presentation,Generic,679d9322-f349-4a2b-a28a-9e668b5f1033,,
+Start,0.541,0Xd1l00000001CuCAI,Get_Article,0.061,dbdata is corrupt in questions,bot.business_answer.presentation,Generic,15b6c312-5b3a-4f61-a4f5-8bfa8973f640,,
+Direct,0.9303,0Xd1l00000001DNCAY,dbdata,0.7589,why is Company questions Desktop missing some current data,business.desktop.dbdata,Business,14cf06be-db41-461e-a2b8-6a6a1e2daf26,,questions Desktop
+Direct,0.9994,0Xd1l00000001DQCAY,Error_800a03ec,0.9984,I get the 800a03ec error in Company questions,business.desktop.error.800a03ec,Business,4c0fae80-bb79-4591-9bbd-335c379cbc35,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.6622,not able to open project,bot.business_answer.presentation,Generic,a40c370b-69b4-48d7-b790-5ebaaa6b891b,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.6622,not able to open project,bot.escalation,Generic,a40c370b-69b4-48d7-b790-5ebaaa6b891b,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.977,I am seeing text replaced by the flash player,bot.business_answer.presentation,Generic,f3ad5e65-1a26-4161-8f96-78f9585e2ae6,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.977,I am seeing text replaced by the flash player,bot.escalation,Generic,f3ad5e65-1a26-4161-8f96-78f9585e2ae6,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I want a taco,bot.offer_escalation,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,0.7026,0Xd1l00000001D9CAI,Frustration,0.4891,is it 2019 yet?,bot.frustration,Generic,f6b8d89d-59aa-4f92-a04c-87578d662458,,
+,0.7026,0Xd1l00000001D0CAI,Offer_to_Escalate,0.4891,is it 2019 yet?,bot.offer_escalation,Generic,f6b8d89d-59aa-4f92-a04c-87578d662458,,
+Direct,1,0Xd1l00000001DqCAI,Disambig_Schedule,0.5278,I'm having trouble with my schedule,business.schedule.disambig,Generic,a662c970-f03a-4c6e-a87b-cddd0928bd61,,Disambiguation
+,,0Xd1l00000001ChCAI,Confused,,not finding evip,bot.fallback,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,not finding evip,bot.offer_escalation,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+Direct,1,0Xd1l00000001DmCAI,Error_10004,0.7798,10004 when rendering report,business.product.error.10004,Business,0205403d-f7fe-4822-86cd-b7590b578187,,Company product
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.7798,10004 when rendering report,bot.business_answer.presentation,Generic,0205403d-f7fe-4822-86cd-b7590b578187,,
+,0.9673,0Xd1l00000001D2CAI,Escalation_Flow,0.061,why can't i login to questions,bot.escalation,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+,0.9185,0Xd1l00000001D2CAI,Escalation_Flow,0.0233,how do I load questions,bot.escalation,Generic,679d9322-f349-4a2b-a28a-9e668b5f1033,,
+Start,0.9973,0Xd1l00000001CuCAI,Get_Article,0.9943,there is a red x in questions,bot.business_answer.presentation,Generic,21124d25-c8fb-46b5-ba47-3444bdad4ac7,,
+,0.9973,0Xd1l00000001D2CAI,Escalation_Flow,0.9943,there is a red x in questions,bot.escalation,Generic,21124d25-c8fb-46b5-ba47-3444bdad4ac7,,
+Direct,0.8097,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.5793,the screen is white,business.blank_screen.disambig,Generic,65e569f0-7411-402c-b83a-2a9c89171a7c,,Disambiguation
+Start,0.9994,0Xd1l00000001CuCAI,Get_Article,0.9984,I get the 800a03ec error in Company questions,bot.business_answer.presentation,Generic,4c0fae80-bb79-4591-9bbd-335c379cbc35,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9877,window for research report isn't opening,bot.business_answer.presentation,Generic,10361526-8f07-4459-a3aa-46730301eaf7,,
+,0.2375,0Xd1l00000001D2CAI,Escalation_Flow,0.0092,where is the delli,bot.escalation,Generic,e3fb75ca-d89b-4fc4-83c7-778267a6d7ec,,
+,0.9994,0Xd1l00000001D2CAI,Escalation_Flow,0.9984,I get the 800a03ec error in Company questions,bot.escalation,Generic,4c0fae80-bb79-4591-9bbd-335c379cbc35,,
+Direct,0.9989,0Xd1l00000001DQCAY,Error_800a03ec,0.9984,I see the error 800a03ec on the report,business.desktop.error.800a03ec,Business,bc06afcd-f4c6-4b16-8090-1b50dc5f6f79,,questions Desktop
+Start,0.9989,0Xd1l00000001CuCAI,Get_Article,0.9984,I see the error 800a03ec on the report,bot.business_answer.presentation,Generic,bc06afcd-f4c6-4b16-8090-1b50dc5f6f79,,
+Direct,0.9985,0Xd1l00000001DSCAY,Error_Switch_To,0.0233,"please help for error message ""switch to & retry"" in questions",business.desktop.error.switch_to,Business,6dc602b9-5556-4c2d-8e89-2bc1ec4d72cb,,questions Desktop
+Start,0.9983,0Xd1l00000001CuCAI,Get_Article,0.0233,there is a switch to error in Company Interface to Office,bot.business_answer.presentation,Generic,f15a82be-2021-4cbf-9628-f2899cdfd5ac,,
+,0.9983,0Xd1l00000001D2CAI,Escalation_Flow,0.0233,there is a switch to error in Company Interface to Office,bot.escalation,Generic,f15a82be-2021-4cbf-9628-f2899cdfd5ac,,
+Direct,1,0Xd1l00000001DXCAY,Simple_Product,0.9866,There is lacking reach and frequency in product,business.product.simple_product,Business,eb670cff-f0c7-4874-896d-0506b68c4e1e,,product
+Direct,0.2375,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.0092,where is the delli,business.product.cannot_enter_data,Business,e3fb75ca-d89b-4fc4-83c7-778267a6d7ec,,product
+Start,0.2375,0Xd1l00000001CuCAI,Get_Article,0.0092,where is the delli,bot.business_answer.presentation,Generic,e3fb75ca-d89b-4fc4-83c7-778267a6d7ec,,
+,,0Xd1l00000001ChCAI,Confused,,this isn't fun anymore,bot.fallback,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I can't wait to go to cadillac cantina,bot.offer_escalation,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,0.7026,0Xd1l00000001D9CAI,Frustration,0.4891,is it 2019 yet?,bot.frustration,Generic,c0b0665a-3cbe-4ec0-ac0d-3c4423db7cee,,
+Direct,0.9284,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.0092,im having trouble selecting item,business.product.cannot_enter_data,Business,ca58d6b7-62fc-41ba-a612-c7043c6b23cf,,product
+Start,0.9284,0Xd1l00000001CuCAI,Get_Article,0.0092,im having trouble selecting item,bot.business_answer.presentation,Generic,ca58d6b7-62fc-41ba-a612-c7043c6b23cf,,
+,0.9284,0Xd1l00000001D2CAI,Escalation_Flow,0.0092,im having trouble selecting item,bot.escalation,Generic,ca58d6b7-62fc-41ba-a612-c7043c6b23cf,,
+,0.7026,0Xd1l00000001D0CAI,Offer_to_Escalate,0.4891,is it 2019 yet?,bot.offer_escalation,Generic,c0b0665a-3cbe-4ec0-ac0d-3c4423db7cee,,
+,0.7026,0Xd1l00000001D9CAI,Frustration,0.4891,is it 2019 yet?,bot.frustration,Generic,c0b0665a-3cbe-4ec0-ac0d-3c4423db7cee,,
+,0.7026,0Xd1l00000001D0CAI,Offer_to_Escalate,0.4891,is it 2019 yet?,bot.offer_escalation,Generic,c0b0665a-3cbe-4ec0-ac0d-3c4423db7cee,,
+,,0Xd1l00000001ChCAI,Confused,,when will the snow start,bot.fallback,Generic,4325e1a7-cc9f-47dc-9362-704bd9dbb11c,,
+Start,0.6863,0Xd1l00000001CuCAI,Get_Article,0.0055,file edit view insert format,bot.business_answer.presentation,Generic,ce605a92-f039-44a8-bb12-450b67e980be,,
+,,0Xd1l00000001ChCAI,Confused,,looking for Company VIP,bot.fallback,Generic,ea042720-9d30-40e3-a71e-e863e7fbcf9a,,
+Start,0.8174,0Xd1l00000001CuCAI,Get_Article,0.061,can someone help me connect to questions,bot.business_answer.presentation,Generic,4927f292-9f65-4835-9b2f-30d3a7abe9ca,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,where can I find the OK buttons in Company,bot.offer_escalation,Generic,1e6bb011-fdb4-4422-b400-dbfa14ccafc5,,
+Direct,0.5439,0Xd1l00000001DSCAY,Error_Switch_To,0.0233,I can't select on Company,business.desktop.error.switch_to,Business,89631bed-1324-4fe6-84cb-f8f5805c14b7,,questions Desktop
+Start,0.5439,0Xd1l00000001CuCAI,Get_Article,0.0233,I can't select on Company,bot.business_answer.presentation,Generic,89631bed-1324-4fe6-84cb-f8f5805c14b7,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.0092,not able to enter spot in a product web,bot.business_answer.presentation,Generic,74f58e52-a38c-481e-997f-696fe21a0688,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.0092,not able to enter spot in a product web,bot.escalation,Generic,74f58e52-a38c-481e-997f-696fe21a0688,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9866,There is lacking reach and frequency in product,bot.business_answer.presentation,Generic,eb670cff-f0c7-4874-896d-0506b68c4e1e,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9866,There is lacking reach and frequency in product,bot.escalation,Generic,eb670cff-f0c7-4874-896d-0506b68c4e1e,,
+Direct,0.6425,0Xd1l00000001DgCAI,Undefined_Word,0.0055,asd;fljk;alksdf,business.product.undefined_word,Business,9db89753-8fa7-440a-bc0a-630f9eb674a1,,product
+,0.6425,0Xd1l00000001D2CAI,Escalation_Flow,0.0055,asd;fljk;alksdf,bot.escalation,Generic,9db89753-8fa7-440a-bc0a-630f9eb674a1,,
+,0.8174,0Xd1l00000001D2CAI,Escalation_Flow,0.061,can someone help me connect to questions,bot.escalation,Generic,4927f292-9f65-4835-9b2f-30d3a7abe9ca,,
+,,0Xd1l00000001ChCAI,Confused,,why can't I reset my password,bot.fallback,Generic,e4debb19-ce6b-452c-8b23-d8f4a599b7ab,,
+Direct,1,0Xd1l00000001DfCAI,Add_schedule,0.9981,I want to figure out whether it is possible to add schedule to schedule,business.product.add_schedule,Business,fe750ade-e6ff-4de5-a6af-2d086f14317b,,product
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9981,I want to figure out whether it is possible to add schedule to schedule,bot.business_answer.presentation,Generic,fe750ade-e6ff-4de5-a6af-2d086f14317b,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,can I get a beer,bot.offer_escalation,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+,,0Xd1l00000001ChCAI,Confused,,I can't wait to go to cadillac cantina,bot.fallback,Generic,c0b0665a-3cbe-4ec0-ac0d-3c4423db7cee,,
+Direct,0.7459,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.5793,this screen is blank,business.blank_screen.disambig,Generic,f60b0682-e0a4-49a4-beca-cc6877b2c87c,,Disambiguation
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9877,window for research report isn't opening,bot.escalation,Generic,10361526-8f07-4459-a3aa-46730301eaf7,,
+,0.9185,0Xd1l00000001D2CAI,Escalation_Flow,0.0233,how do I load questions,bot.escalation,Generic,2e4def58-1014-4320-9fa9-080a565a2056,,
+,0.541,0Xd1l00000001D2CAI,Escalation_Flow,0.061,dbdata is corrupt in questions,bot.escalation,Generic,15b6c312-5b3a-4f61-a4f5-8bfa8973f640,,
+Start,0.9303,0Xd1l00000001CuCAI,Get_Article,0.7589,why is Company questions Desktop missing some current data,bot.business_answer.presentation,Generic,14cf06be-db41-461e-a2b8-6a6a1e2daf26,,
+,0.9303,0Xd1l00000001D2CAI,Escalation_Flow,0.7589,why is Company questions Desktop missing some current data,bot.escalation,Generic,14cf06be-db41-461e-a2b8-6a6a1e2daf26,,
+Start,0.9985,0Xd1l00000001CuCAI,Get_Article,0.0233,"please help for error message ""switch to & retry"" in questions",bot.business_answer.presentation,Generic,6dc602b9-5556-4c2d-8e89-2bc1ec4d72cb,,
+Direct,1,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.0092,not able to enter spot in a product web,business.product.cannot_enter_data,Business,74f58e52-a38c-481e-997f-696fe21a0688,,product
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.0164,how to open more than five report groups in a product,bot.escalation,Generic,c17d570d-7ead-46ad-b87c-c453c8924d56,,
+,,0Xd1l00000001ChCAI,Confused,,I want a taco,bot.fallback,Generic,5852737b-4303-40e0-8a36-4dc061d2191c,,
+Direct,0.8174,0Xd1l00000001CkCAI,Questions_Portal,0.061,can someone help me connect to questions,business.questions.not_connecting.ie,Business,4927f292-9f65-4835-9b2f-30d3a7abe9ca,,questions
+,,0Xd1l00000001ChCAI,Confused,,can you help me change my password,bot.fallback,Generic,e4debb19-ce6b-452c-8b23-d8f4a599b7ab,,
+,,0Xd1l00000001ChCAI,Confused,,trouble to select an intems numbers on desktop,bot.fallback,Generic,376028b6-f64f-4913-acfe-e5ee9c610fc3,,
+Direct,1,0Xd1l00000001DlCAI,Error_Flash,0.977,I am seeing text replaced by the flash player,business.npower.error.flash,Business,f3ad5e65-1a26-4161-8f96-78f9585e2ae6,,NPOWER
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.7798,10004 when rendering report,bot.escalation,Generic,0205403d-f7fe-4822-86cd-b7590b578187,,
+Direct,1,0Xd1l00000001DWCAY,Product_Access_Problem,0.6622,not able to open project,business.product.access_problem,Business,a40c370b-69b4-48d7-b790-5ebaaa6b891b,,product
+,,0Xd1l00000001ChCAI,Confused,,I want a cookie,bot.fallback,Generic,ce605a92-f039-44a8-bb12-450b67e980be,,

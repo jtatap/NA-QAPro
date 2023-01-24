@@ -2,12 +2,35 @@
 public class A1TrackerAPIPointsTest {
     static Map<String, String> responseHeaders = new Map<String, String>();
     static void testDatasetup(){
+                Account genAcc = new Account();
+        genAcc.Name = 'generic Account' + Math.random();
+        insert genAcc;
+        
+        Contact genCon = new Contact();
+        genCon.email = 'foo@example.com';
+        genCon.lastName = 'generic contact ' + Math.random();
+        genCon.AccountId = genAcc.id;
+        genCon.Brand_Id__c='9';
+        insert genCon;
+		
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = genCon.Id
+        );
+        insert genRec;
+
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = genAcc.Id
+        );
+        insert genRecAcct;
         Contact con = new Contact(FirstName='Test',LastName='User',Brand_Id__c='2', LoyaltyID__c='123456789',Email='testUser@nomail.com');
         insert con;
         System.debug(con.Id);
         Case cas = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id);
         insert cas;
         System.debug('Case contact '+cas.ContactId+'--'+cas.Contact.Brand_Id__c);
+        
     }
 
     @isTest

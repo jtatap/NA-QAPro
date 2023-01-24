@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__With_Details</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ebotdata__Einstein_Bot_Escalation__c</columns>
+    <columns>ebotdata__Einstein_Bot_Duration__c</columns>
+    <columns>ebotdata__Live_Chat_Transcript__c</columns>
+    <columns>ebotdata__Self_Served_Dialog_Reached__c</columns>
+    <columns>ebotdata__Business_Dialog_Reached__c</columns>
+    <columns>Brand__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>With Details</label>
+</ListView>

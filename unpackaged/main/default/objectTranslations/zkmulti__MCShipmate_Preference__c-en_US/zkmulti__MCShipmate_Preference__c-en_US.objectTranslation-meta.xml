@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Preference Layout</layout>
+        <sections>
+            <label><!-- Billing Address --></label>
+            <section>Billing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Carrier Account --></label>
+            <section>Carrier Account</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Default Sender Details --></label>
+            <section>Default Sender Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Defaults --></label>
+            <section>Other Defaults</section>
+        </sections>
+        <sections>
+            <label><!-- Printers and Scales --></label>
+            <section>Printers and Scales</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Address --></label>
+            <section>Shipping Address</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- CloseFedExShipDay --></label>
+        <name>zkmulti__CloseFedExShipDay</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloseFedExSmartPostShipDay --></label>
+        <name>zkmulti__CloseFedExSmartPostShipDay</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EndiciaAccountStatusBuyPostage --></label>
+        <name>zkmulti__EndiciaAccountStatusBuyPostage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FedExSetupSignatureAndLetterHead --></label>
+        <name>zkmulti__FedExSetupSignatureAndLetterHead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Get_SCAN_Form --></label>
+        <name>zkmulti__Get_SCAN_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Printers --></label>
+        <name>zkmulti__Manage_Printers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RegisterFedExUserButton --></label>
+        <name>zkmulti__RegisterFedExUserButton</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubscribeFedExAccountButton --></label>
+        <name>zkmulti__SubscribeFedExAccountButton</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_License --></label>
+        <name>zkmulti__Update_License</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Version_Capture --></label>
+        <name>zkmulti__Version_Capture</name>
+    </webLinks>
+</CustomObjectTranslation>

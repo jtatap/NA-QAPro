@@ -1,0 +1,142 @@
+<apex:page standardController="zkmulti__MCShipmate_Preference__c" recordSetVar="Preference" extensions="zkmulti.UpdateLicenseController" lightningStylesheets="true" standardStylesheets="false" action="{! init }" docType="html-5.0">
+<apex:slds />
+<apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+    <apex:includeLightning />
+
+    <div id="sfSpiner">
+        <div class="slds-scope slds-is-relative">
+
+            <div class="slds-page-header" style="padding: 3rem 1.5rem;">
+                <div class="slds-grid">
+                    <div class="slds-col slds-has-flexi-truncate">
+                        <div class="slds-media slds-no-space slds-grow">
+                            <div class="slds-media__body" style="text-align: center ;">
+                                <p class="slds-text-title--caps slds-line-height--reset">
+                                    Please wait...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightning">
+    </div>
+
+    <script>
+        var myUserContext = "{!$User.UITheme}";
+        var namespace = 'zkmulti';
+        
+        var params = {	
+            namespace: namespace
+        };
+        
+        $Lightning.use(namespace + ":MCUpdateLicenseLtngOutApp", function() {
+            $Lightning.createComponent(namespace + ":MCUpdateLicenseComponent",
+                params,
+                "lightning",
+                function(cmp) {
+                    console.log('loaded complete');
+                    document.getElementById('sfSpiner').style.display = 'none';
+                    $A.eventService.addHandler({ "event": namespace + ":proxyEvent", "handler" : vfProxyEventFunction});
+                }
+            );
+        });
+
+        var vfProxyEventFunction = function(event){
+            var eventName = event.getParam("eventName");
+            var eventData = event.getParam("data");
+            var myExternalEvent = $A.get(eventName);
+
+            console.log('vfProxyEventFunction', myExternalEvent, eventName, eventData);
+
+            if (!$A.util.isUndefined(myExternalEvent)) {
+                myExternalEvent.setParams(eventData);
+                console.log('event fire: ' + eventName);
+                myExternalEvent.fire();
+            }
+            else {
+                console.error('event not found: ' + eventName);
+            }
+        };
+
+    </script>
+
+</apex:outputPanel>
+
+<apex:outputPanel rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+	<apex:includeScript value="{!URLFOR($Resource.zkmulti__jQuery, '/jquery/jquery-1.4.2.js')}"  />
+	<style>
+		.lightboxWizard {       
+			display: none;
+			background: #FFFFFF;
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: 1000;
+		} 
+	</style>
+	<apex:form id="formId">
+		<script>
+
+			$j = jQuery.noConflict();
+
+			function IsLoading() {
+				$j('.lightboxWizard').show();
+			};
+
+			function IsLoadingComplete() {
+				$j('.lightboxWizard').hide();
+			};
+
+		</script>
+
+		<apex:commandLink action="{! doCancel }" value="Back to Previous Page" rendered="{! isPreviousPage }"/>
+		
+
+		<apex:pageBlock mode="detail">
+	    
+	    	<c:MessageListDisplay id="MessageList" msgList="{! messageList }"/>			
+			
+	        <!-- pageBlockButtons -->
+	        <apex:pageBlockButtons >            
+	            <apex:commandButton action="{! doCancel }" immediate="true" value="Cancel"/>
+	        </apex:pageBlockButtons>
+
+	        <apex:pageBlock id="passBlock" title="License Information">
+	        	<apex:pageBlockSection columns="1"> 
+	        		<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Carriers Created" />
+						<apex:outputText value="{0,number,####0}">
+				            <apex:param value="{! carriersCreated }" />
+				        </apex:outputText>
+					</apex:pageBlockSectionItem>
+		        	<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Carriers Allowed" />
+						<apex:outputText value="{0,number,####0}">
+				            <apex:param value="{! carriersAllowed }" />
+				        </apex:outputText>
+					</apex:pageBlockSectionItem>
+				</apex:pageBlockSection>
+
+				<apex:pageBlockSection columns="1">
+		        	<apex:pageBlockSectionItem helpText="Please contact sales@zenkraft.com to update license">
+						<apex:outputLabel value="" />
+						<apex:commandButton action="{! doUpdateLicense }" value="Update License" reRender="formId" onclick="IsLoading();" oncomplete="IsLoadingComplete();" />		
+					</apex:pageBlockSectionItem>
+				</apex:pageBlockSection> 
+
+	        </apex:pageBlock>
+
+	    </apex:pageBlock>
+	    <div class="lightboxWizard">
+		</div>
+	</apex:form>
+</apex:outputPanel>
+</apex:page>

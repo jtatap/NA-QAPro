@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Mobile Shipment Layout</layout>
+        <sections>
+            <label><!-- General Shipment Details --></label>
+            <section>General Shipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Published Rates --></label>
+            <section>Published Rates</section>
+        </sections>
+        <sections>
+            <label><!-- Recipient (Sender for Return Shipments) --></label>
+            <section>Recipient (Sender for Return Shipments)</section>
+        </sections>
+        <sections>
+            <label><!-- Save Recipient --></label>
+            <section>Save Recipient</section>
+        </sections>
+        <sections>
+            <label><!-- Sender (Recipient for Return Shipments) --></label>
+            <section>Sender (Recipient for Return Shipments)</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment Details --></label>
+            <section>Shipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment State --></label>
+            <section>Shipment State</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shipment Layout</layout>
+        <sections>
+            <label><!-- General Shipment Details --></label>
+            <section>General Shipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notifications --></label>
+            <section>Notifications</section>
+        </sections>
+        <sections>
+            <label><!-- Published Rates --></label>
+            <section>Published Rates</section>
+        </sections>
+        <sections>
+            <label><!-- Recipient (Sender for Return Shipments) --></label>
+            <section>Recipient (Sender for Return Shipments)</section>
+        </sections>
+        <sections>
+            <label><!-- Referenced Standard Objects --></label>
+            <section>Referenced Standard Objects</section>
+        </sections>
+        <sections>
+            <label><!-- Return Shipment --></label>
+            <section>Return Shipment</section>
+        </sections>
+        <sections>
+            <label><!-- Save Recipient --></label>
+            <section>Save Recipient</section>
+        </sections>
+        <sections>
+            <label><!-- Sender (Recipient for Return Shipments) --></label>
+            <section>Sender (Recipient for Return Shipments)</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment Info --></label>
+            <section>Shipment Info</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment State --></label>
+            <section>Shipment State</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Bulk_Print --></label>
+        <name>zkmulti__Bulk_Print</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Draft --></label>
+        <name>zkmulti__Edit_Draft</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Label --></label>
+        <name>zkmulti__Email_Label</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Label_v2 --></label>
+        <name>zkmulti__Email_Label_v2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Printers --></label>
+        <name>zkmulti__Manage_Printers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Schedulers --></label>
+        <name>zkmulti__Manage_Schedulers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Modify_Cancel_Shipment --></label>
+        <name>zkmulti__Modify_Cancel_Shipment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Checkpoint --></label>
+        <name>zkmulti__New_Checkpoint</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Pickup --></label>
+        <name>zkmulti__New_Pickup</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- POD --></label>
+        <name>zkmulti__POD</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Labels --></label>
+        <name>zkmulti__Print_Labels</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Printable_Summary --></label>
+        <name>zkmulti__Printable_Summary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Save_as_Account --></label>
+        <name>zkmulti__Save_as_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Save_as_Contact --></label>
+        <name>zkmulti__Save_as_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Save_as_Lead --></label>
+        <name>zkmulti__Save_as_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_Tracking --></label>
+        <name>zkmulti__Schedule_Tracking</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Track_Shipment --></label>
+        <name>zkmulti__Track_Shipment</name>
+    </webLinks>
+</CustomObjectTranslation>

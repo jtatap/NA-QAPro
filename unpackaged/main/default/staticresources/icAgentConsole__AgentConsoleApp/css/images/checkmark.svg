@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="7px" viewBox="0 0 8 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="checkmark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="check" fill="#3E3E3C" fill-rule="nonzero">
+            <path d="M7.85882353,1.0229741 C7.67058824,0.812447786 7.38823529,0.812447786 7.2,1.0229741 L3.05882353,5.65455305 L0.8,3.23350042 C0.611764706,3.0229741 0.329411765,3.0229741 0.141176471,3.23350042 C-0.0470588235,3.44402673 -0.0470588235,3.75981621 0.141176471,3.97034252 L2.77647059,6.70718463 C2.87058824,6.81244779 2.96470588,6.86507937 3.10588235,6.86507937 C3.24705882,6.86507937 3.34117647,6.81244779 3.43529412,6.70718463 L7.85882353,1.75981621 C8.04705882,1.54928989 8.04705882,1.23350042 7.85882353,1.0229741 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

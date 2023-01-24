@@ -92,6 +92,41 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>aeon2__Aeon2Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>csmrgp__Case_Merge_Premium</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>csmrgp__Case_Merge_Premium_LEX</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>ebcm__UI_Enhancer</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>ebotdata__NeuraFlash_Einstein_Bot_Reporting</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>narvar__Narvar_Track</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>pcify__PCIfy</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__LightningSales</application>
         <default>false</default>
         <visible>false</visible>
@@ -173,6 +208,11 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>zkmulti__Multi_Carrier_Shipmate</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -2821,6 +2861,81 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__Notification__c.sf_scm__DataId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__Notification__c.sf_scm__Secondary_Data_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__Notification__c.sf_scm__SentAt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__Enabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__FieldName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__FromValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__ObjectType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__Operator__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__ToValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__PushSubscription__c.sf_scm__UserId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__UserNotification__c.sf_scm__ReadAt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__UserNotification__c.sf_scm__Read__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__UserNotification__c.sf_scm__SentAt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__UserNotification__c.sf_scm__Sent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_scm__UserNotification__c.sf_scm__UserId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Case-Custom Case Layout</layout>
     </layoutAssignments>
@@ -3407,6 +3522,325 @@
     <layoutAssignments>
         <layout>WorkAccess-Access Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__Day__c-aeon2__Work Day Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__EffortGroupAction__c-aeon2__Effort Group Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__EffortGroupDayAction__c-aeon2__Effort Group Day Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__EffortGroupUser__c-aeon2__Effort Group User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__EffortGroup__c-aeon2__Effort Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>aeon2__Log__c-aeon2__Work Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>csmrgp__Duplicate_Case__c-csmrgp__Duplicate Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>csmrgp__Duplicate_Group__c-csmrgp__Duplicate Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>csmrgp__Potential_Duplicate__c-csmrgp__Potential Duplicate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebcm__Dynamic_Payload__c-ebcm__Dynamic Payload Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebcm__EinsteinBotChatMessageSettings__mdt-ebcm__EinsteinBotChatMessageSetting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebcm__Log__c-ebcm__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebcm__UI_Enhancer_Configuration__mdt-ebcm__UI Enhancer Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Chat_Log__c-ebotdata__Bot Chat Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Config__mdt-ebotdata__Bot Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Deploy_Date__mdt-ebotdata__Bot Deploy Date Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Intent_Dialog_Mapping__mdt-ebotdata__Bot Intent Dialog Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Metrics__c-ebotdata__Bot Metrics Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Bot_Session__c-ebotdata__Bot Session Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ebotdata__Log__c-ebotdata__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__AggregateLink__c-et4ae5__Aggregate Link Level Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Inactive Send Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Active Send Layout</layout>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Active</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Inactive Send Layout</layout>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Inactive</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Business_Unit__c-et4ae5__Business Unit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Campaign_Member_Configuration__c-et4ae5__Campaign Member Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Configuration__c-et4ae5__Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Email_Linkage__c-et4ae5__Email Linkage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__IndividualEmailResult__c-et4ae5__Individual Email Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__IndividualLink__c-et4ae5__Individual Link Level Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Journey__c-et4ae5__Journey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__MCOAuthClientDetail__mdt-et4ae5__MC OAuth Client Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__MC_CDC_Journey__c-et4ae5__MC CDC Journey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Mobile Send Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Queued Mobile Send Layout</layout>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__Queued_SMS_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Mobile Send Layout</layout>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__SMS_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSJunction__c-et4ae5__SMS Junction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Queued_Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Trackable_Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendJunction__c-et4ae5__Send Junction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SupportRequest__c-et4ae5__Support Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Triggered_Send_Execution__c-et4ae5__Triggered Send Execution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__UEBU__c-et4ae5__User Enabled Business Unit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__abTest__c-et4ae5__AB Test Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>icAgentConsole__icAgentConfigInternal__mdt-icAgentConsole__Agent App Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>icAgentConsole__incAgentConfigEntity__c-icAgentConsole__Agent Configuration Entity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>icAgentConsole__incAgentConfigField__c-icAgentConsole__Agent Configuration Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>icAgentConsole__incAgentConfiguration__c-icAgentConsole__Agent Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>icAgentConsole__incPresenceStatusMapping__c-icAgentConsole__OmniChannel Presence Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>narvar__Narvar_Incident__c-narvar__Narvar Incident Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>narvar__Narvar_OAuth_Settings__mdt-narvar__Narvar OAuth Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>pcify__DetectionPattern__mdt-pcify__DetectionPattern Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>pcify__Log__c-pcify__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>pcify__Manager__mdt-pcify__Manager Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>pcifyfiles__SecureAttachmentSettings__mdt-pcifyfiles__SecureAttachment Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_scm__Notification__c-sf_scm__Notification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_scm__PushSubscription__c-sf_scm__PushSubscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_scm__UserNotification__c-sf_scm__UserNotification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__CommercialInvoice__c-zkmulti__FedEx Commercial Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__DangerousGoodsDetails__c-zkmulti__FedEx Dangerous Goods Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Detail_Field__c-zkmulti__Detail Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__EEIForm__c-zkmulti__EEI Form Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__ExportDetails__c-zkmulti__FedEx Export Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__FedExSmartPostDetails__c-zkmulti__FedEx SmartPost Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__HazMatCommodity__c-zkmulti__FedEx HazMat Commodity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__HazMatContainer__c-zkmulti__FedEx HazMat Container Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__HazMatDetails__c-zkmulti__FedEx HazMat Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCBulk_Shipment_Status__c-zkmulti__Bulk Shipment Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCBulk_Shipment__c-zkmulti__Bulk Shipment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCCheckpoint__c-zkmulti__Checkpoint Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCCustom_Address_Source_Field__c-zkmulti__Custom Address Source Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCCustom_Address_Source_Package__c-zkmulti__Custom Address Source Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCCustom_Address_Source__c-zkmulti__Custom Address Source Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCCustoms_Item__c-zkmulti__Customs Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCPackageCheckpoint__c-zkmulti__Package Checkpoint Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCPackage__c-zkmulti__Package Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCPickup__c-zkmulti__Multi Carrier Pickup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCQueued_Customs_Item__c-zkmulti__Queued Customs Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCQueued_Package__c-zkmulti__Queued Package Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCQueued_Shipment_Special_Services__c-zkmulti__Queued Shipment Special Services Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCQueued_Shipment_Status__c-zkmulti__Queued Shipment Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCQueued_Shipment__c-zkmulti__Queued Shipment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCShipmate_Preference__c-zkmulti__Preference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCShipmentInfo__c-zkmulti__Shipment Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCShipment_Special_Services__c-zkmulti__Shipment Special Services Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCShipment__c-zkmulti__Shipment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MCUser_Printer__c-zkmulti__User Printer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MultiPackageShipment__c-zkmulti__Multi Package Shipment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MultiPackageShipment__c-zkmulti__Multi Package Shipment Layout</layout>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__Consolidation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MultiPackageShipment__c-zkmulti__Multi Package Shipment Layout</layout>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__MultiPackage</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__MultiPackageShipment__c-zkmulti__Multi Package Shipment Layout</layout>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__Outbound_And_Return</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__NaftaCo__c-zkmulti__FedEx NAFTA CO Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__PermissionSetting__c-zkmulti__Restriction Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Pickup_Custom_Address_Source__c-zkmulti__Pickup Custom Address Source Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__PrintHistory__c-zkmulti__Print History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__ProFormaInvoice__c-zkmulti__FedEx Pro Forma Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__RequestedShipmentDocuments__c-zkmulti__Requested Shipment Documents Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Shipmate_Preference_Info__c-zkmulti__Shipment Parameter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Shipment_Field__c-zkmulti__Shipment Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Shipment_Status__c-zkmulti__Shipment Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zkmulti__Visibility_Suite__c-zkmulti__Visibility Suite Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -3568,6 +4002,172 @@
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Active</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Inactive</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__Queued_SMS_Definition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__SMS_Definition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Queued_Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Trackable_Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__Consolidation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__MultiPackage</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>zkmulti__MultiPackageShipment__c.zkmulti__Outbound_And_Return</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>aeon2__Day__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>aeon2__EffortGroups</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>aeon2__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>aeon2__UsersAndLicenses</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>csmrgp__Case_Merge_Premium</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>csmrgp__Case_Merge_Premium_Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>csmrgp__Duplicate_Group__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>csmrgp__Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>csmrgp__Setup_Wizard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebcm__Dynamic_Payload__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebcm__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebotdata__Bot_Chat_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebotdata__Bot_Metrics__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebotdata__Bot_Session__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebotdata__Insights_Validation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ebotdata__Instructions</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__ExactTargetPhoenix</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__SMSDefinition__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__SendDefinition__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__Send_Analytics</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>icAgentConsole__incAgentConfiguration__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>narvar__Narvar_Incident__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>narvar__Narvar_Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>narvar__Narvar_Setup_VF</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>pcify__Analytics</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>pcify__App_Configuration</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>pcify__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>pcifyfiles__API_Credentials</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>pcifyfiles__Audit</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Case</tab>
         <visibility>Hidden</visibility>
@@ -3986,6 +4586,54 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-report</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__DG_HazMat</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCBulk_Shipment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCCustom_Address_Source__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCCustoms_Item__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCPackage__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCPickup__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCShipmate_Preference__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MCShipment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__MultiPackageShipment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__Pickup_Custom_Address_Source__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__ShippingForms</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zkmulti__Zenkraft_Settings</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <userLicense>Guest User License</userLicense>

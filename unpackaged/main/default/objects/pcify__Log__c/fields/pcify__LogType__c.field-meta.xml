@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__LogType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of PCIFY Log</description>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS(pcify__Category__c, &#39;Mask&#39;) &amp;&amp; !CONTAINS(pcify__Category__c, &#39;Audit&#39;) , &#39;Mask&#39;,
+IF( CONTAINS(pcify__Category__c, &#39;Report&#39;) &amp;&amp; !CONTAINS(pcify__Category__c, &#39;Audit&#39;), &#39;Report&#39;,
+IF( CONTAINS(pcify__Category__c, &#39;Delete&#39;) &amp;&amp; !CONTAINS(pcify__Category__c, &#39;Audit&#39;), &#39;Delete&#39;,
+IF( CONTAINS(pcify__Category__c, &#39;Debug&#39;), &#39;Debug&#39;,
+&#39;Debug&#39;
+))))</formula>
+    <inlineHelpText>Type of PCIFY Log</inlineHelpText>
+    <label>Log Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

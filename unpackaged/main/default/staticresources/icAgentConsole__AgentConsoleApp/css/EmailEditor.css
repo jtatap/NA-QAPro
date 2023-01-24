@@ -1,0 +1,28 @@
+﻿.mce-content-body ul {
+	list-style-position: inside;
+}
+
+.mce-content-body li.left{
+	text-align: left;
+}
+
+.mce-content-body li.center{
+	text-align: center;
+}
+
+.mce-content-body li.right{
+	text-align: right;
+}
+
+.mce-content-body li.justify{
+	text-align: justify;
+}
+
+.mce-content-body li div{
+	display: inline;
+}
+
+.mce-content-body p {
+    padding: 0 !important;
+    margin: 2px 0 !important;
+}

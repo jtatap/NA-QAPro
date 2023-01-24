@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebotdata__Live_Chat_Transcript__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Live Chat Transcript</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Live Chat Transcript</inlineHelpText>
+    <label>Live Chat Transcript</label>
+    <referenceTo>LiveChatTranscript</referenceTo>
+    <relationshipLabel>Einstein Bot Chat Session</relationshipLabel>
+    <relationshipName>Einstein_Bot_Chat_Session</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

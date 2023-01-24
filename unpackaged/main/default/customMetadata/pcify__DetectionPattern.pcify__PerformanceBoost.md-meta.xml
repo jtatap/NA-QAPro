@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CREDITCARD</label>
+    <protected>false</protected>
+    <values>
+        <field>pcify__CreditCardPattern__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>pcify__Description__c</field>
+        <value xsi:type="xsd:string">Speed up PCIFY processing time with a single generic Detection Pattern.  Simply activate this pattern, and deactivate the patterns you don&#39;t need.</value>
+    </values>
+    <values>
+        <field>pcify__IsActive__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>pcify__LuhnCheck__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>pcify__MaskCharacter__c</field>
+        <value xsi:type="xsd:string">*</value>
+    </values>
+    <values>
+        <field>pcify__MaskType__c</field>
+        <value xsi:type="xsd:string">FullMask</value>
+    </values>
+    <values>
+        <field>pcify__NegativePattern__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>pcify__PartialMatch__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>pcify__Pattern__c</field>
+        <value xsi:type="xsd:string">\b(3[47]\d{2}([ *-]?)(?!(\d)\3{5}|123456|234567|345678)\d{6}\2(?!(\d)\4{4})\d{5}|((4\d|5[1-5]|65)\d{2}|6011)([ *-]?)(?!(\d)\8{3}|1234|3456|5678)\d{4}\7(?!(\d)\9{3})\d{4}\7\d{4})\b</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used only for ZPLII and EPL labels. Default value is 203 dpi --></help>
+        <label><!-- Default Image Resolution --></label>
+        <name>zkmulti__DefaultImageResolution__c</name>
+    </CustomFieldTranslation>

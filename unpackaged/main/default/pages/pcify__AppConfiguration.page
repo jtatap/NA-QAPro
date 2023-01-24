@@ -1,0 +1,554 @@
+<apex:page controller="pcify.AppConfigurationController" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+
+<head>
+    <title>PCIFY Home</title>
+    <apex:stylesheet value="{!URLFOR($Resource.pcify__slds275, 'styles/salesforce-lightning-design-system.css')}" />
+    <apex:includeScript value="/support/console/42.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/42.0/apex.js"/>
+    <apex:includeScript value="/soap/ajax/42.0/connection.js"/>
+    <script src="{!URLFOR($Resource.jquery)}"></script>
+    <script src="{!URLFOR($Resource.appconfigurationjs)}"></script>
+</head>    
+
+<body>    
+<style type="text/css">
+
+    .tooltip {
+        position: absolute;
+        width: 360px;
+        bottom: 150%;
+        left: 50%; 
+        margin-left: 20px;
+    }
+
+    .hide-tooltip {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+        display: none;
+    }
+
+    .toast {
+        height: 4rem;
+    }
+
+/*    #detectionStatusIcon {
+        width: 18.5px;
+    }*/
+
+</style>
+    <!-- REQUIRED SLDS WRAPPER -->
+    <div class="slds">    
+
+        <!-- MASTHEAD -->
+        <div class="slds-grid slds-grid--align-spread">  
+            <div class="slds-text-body--regular slds-p-around--large slds-p-left--medium slds-col">
+                <dl class="slds-badge">
+                    <dt>
+                        <svg class="slds-button__icon slds-button__icon_medium" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#chevronright')}" />
+                        </svg>
+                        Configure PCIFY: <b>Setup > Custom Metadata Types > Manager > Manage Records</b>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+        <!-- / MASTHEAD -->    
+
+        <!-- TOAST -->
+        <div id="toast" class="hide"></div>
+        <!-- /TOAST -->
+
+        <!-- TAB NAV -->
+        <div class="slds-tabs_default">
+            <ul class="slds-tabs_default__nav" role="tablist">
+                <li id="tab-1-li" class="slds-tabs_default__item slds-active" title="Manager Settings" role="presentation">
+                    <a class="slds-tabs_default__link" href="javascript:void(0)" role="tab" tabindex="0" id="tab-1-label">Manager Settings</a>
+                </li>
+                <li id="tab-2-li" class="slds-tabs_default__item" title="Detection Patterns" role="presentation">
+                    <a class="slds-tabs_default__link" href="javascript:void(0)" role="tab" tabindex="-1" id="tab-2-label">Detection Patterns</a>
+                </li>
+            </ul>
+        <!-- MANAGER SETTINGS -->
+        <div id="tab-1-content" class="slds-tabs_default__content" role="tabpanel">
+        <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-bot">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.slds260, 'icons/standard-sprite/svg/symbols.svg#survey')}" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2>
+                            <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="[object Object]">
+                            <span class="slds-text-heading_small">Manager Settings</span>
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="slds-no-flex">
+                    <button id="refreshBtn" class="slds-button slds-button_icon slds-notify__close">
+                        <svg class="slds-button__icon slds-button__icon_medium" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#refresh')}" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- CARD BODY -->
+            <div class="slds-card__body">
+                <div class="slds-grid slds-p-top--medium">    
+                    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                        <thead>
+                            <tr class="slds-text-title--caps">
+                                <th scope="col">
+                                    <div class="slds-truncate">Object
+                                        <button id="objInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="objHelp">
+                                        <div class="slds-popover__body">Click object name to configure its Manager Setting</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="">Detection Status
+                                        <button id="statusInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="statusHelp">
+                                        <div class="slds-popover__body">Enable other objects by following the PCIFY User Guide</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="">Detection Fields
+                                    <button id="fieldsInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="fieldsHelp">
+                                        <div class="slds-popover__body">Configure new fields in the Manager Settings</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate">Detection Action
+                                        <button id="actionInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="actionHelp">
+                                        <div class="slds-popover__body">Action for new records</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate">Audit Action
+                                        <button id="maskInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="maskHelp">
+                                        <div class="slds-popover__body">Action for auditing existing records</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="">Credit Cards Detected
+                                    <button id="ccInfoBtn" class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#info')}" />
+                                        </svg>
+                                    </button></div>
+                                    <div class="slds-popover slds-popover slds-nubbin_bottom-left tooltip hide-tooltip" role="tooltip" id="ccHelp">
+                                        <div class="slds-popover__body">See the Analytics Tab for details</div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Action"></div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="manager_settings"></tbody>
+                    </table>
+
+                    <!-- ALERT -->
+                    <div id="alert" class="hide"></div>
+                    <!-- / ALERT -->
+                </div>
+            </div>
+            <!-- / CARD BODY --> 
+        </article>   
+        </div>
+        <!-- / MANAGER SETTINGS -->
+
+        <!-- DETECTION PATTERNS -->
+        <div id="tab-2-content" class="slds-tabs_default__content slds-hide" role="tabpanel">
+        <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-bot">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.slds260, 'icons/standard-sprite/svg/symbols.svg#calibration')}" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2>
+                            <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="[object Object]">
+                            <span class="slds-text-heading_small">Detection Patterns</span>
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="slds-no-flex">
+                    <button id="refreshBtn" class="slds-button slds-button_icon slds-notify__close">
+                        <svg class="slds-button__icon slds-button__icon_medium" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#refresh')}" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- CARD BODY -->
+            <div class="slds-card__body">
+                <div class="slds-grid slds-p-top--medium">    
+                    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                        <thead>
+                            <tr class="slds-text-title--caps">
+                                <th scope="col">
+                                    <div class="slds-truncate">Pattern Name
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="">Status
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="">Mask Type
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate">Mask Character
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate">Pattern Type
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="patterns"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- / CARD BODY --> 
+        </article>   
+        </div>
+        <!-- / DETECTION PATTERNS -->
+
+        </div>
+        <!-- / TAB NAV -->
+
+        <!-- WELCOME MAT -->
+        <div id="welcomeMat" class="slds-hide">
+            <c:WelcomeMat />
+        </div>
+        <!-- / WELCOME MAT -->
+
+    </div>
+    <!-- / REQUIRED SLDS WRAPPER -->    
+
+<script type="text/javascript">
+    const sessionId = '{!$Api.Session_ID}';
+    sforce.connection.sessionId = sessionId;
+    Visualforce.remoting.timeout = 120000;
+
+    let vf_context = {
+        remote_UpdateSetting : '{!$RemoteAction.AppConfigurationController.updateManagerSetting}',
+        remote_ExecuteBatch  : '{!$RemoteAction.AppConfigurationController.executeBatch}',
+        remote_DeleteLogs    : '{!$RemoteAction.AppConfigurationController.deleteLogs}',
+        remote_CreateLog     : '{!$RemoteAction.AppConfigurationController.createLog}',
+    };
+
+    function printManagerSettings() {
+        let managerSettings = [];
+        managerSettings = getManagerSettings();
+        $('.counter').html(`<div>${managerSettings.size}</div>`);
+        $('#manager_settings').html(managerSettings.map( function(item) {
+            const isActive = (item.pcify__IsActive__c === 'true');
+            const status = isActive ? 'Online' : 'Offline';
+            const statusIcon = isActive ? 'check' : 'priority';
+            const iconClass = isActive ? 'following' : 'priority';
+            const btnLabel = isActive ? 'Off' : 'On';
+            const totalcards = getCreditCardsMaskedByObject(item.MasterLabel);
+            const turnOnIcon = isActive ? 'close' : 'power';
+            return `<tr>
+                <td data-label="Object">
+                    <div class="slds-truncate"><a onclick="navigateToSetting('${item.MasterLabel}');">${item.MasterLabel}</a></div>
+                </td>
+                <td data-label="Trigger">
+                    <div class="slds-truncate">
+                        <span class="slds-icon_container slds-icon_container_circle slds-icon-action-${iconClass}">
+                        <svg id="detectionStatusIcon" class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/action-sprite/svg/symbols.svg#${statusIcon}')}" />
+                        </svg>
+                        </span>
+                        ${status}
+                    </div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${item.pcify__MaskFields__c}</div>
+                </td>
+                <td data-label="Action">
+                    <div class="slds-truncate">${item.pcify__DetectionAction__c}</div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${item.pcify__AuditAction__c}</div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${totalcards}</div>
+                </td>
+                <td data-label="Action">
+                    <div class="slds-button-group" role="group">
+                      <button id="editBtn" class="slds-button slds-button_neutral" onclick="updateManagerSetting('${item.MasterLabel}','${item.pcify__IsActive__c}');">Turn ${btnLabel}
+                          <svg class="slds-button__icon slds-button__icon_right" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#${turnOnIcon}')}" />
+                          </svg>
+                      </button>
+                      <button id="executeBtn" class="slds-button slds-button_neutral" onclick="executeBatch('${item.MasterLabel}');">Run Audit
+                          <svg class="slds-button__icon slds-button__icon_right" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#connected_apps')}" />
+                          </svg>
+                      </button>
+                    </div>
+                </td>
+            </tr>`;
+        }));
+    }
+
+    function printDetectionPatterns() {
+        let patterns = [];
+        patterns = getPatterns();
+        $('.counter').html(`<div>${patterns.size}</div>`);
+        $('#patterns').html(patterns.map( function(item) {
+            const isActive = (item.pcify__IsActive__c === 'true');
+            const status = isActive ? 'Online' : 'Offline';
+            const statusIcon = isActive ? 'check' : 'priority';
+            const iconClass = isActive ? 'following' : 'priority';
+            const patternType = (item.pcify__NegativePattern__c === 'true') ? 'Negative Pattern' : 'Positive Pattern';
+            return `<tr>
+                <td data-label="Batch">
+                    <div class="slds-truncate"><a onclick="navigateToPattern('${item.MasterLabel}');">${item.MasterLabel}</a></div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">
+                        <span class="slds-icon_container slds-icon_container_circle slds-icon-action-${iconClass}">
+                        <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.slds260, 'icons/action-sprite/svg/symbols.svg#${statusIcon}')}" />
+                        </svg>
+                        </span>
+                        ${status}
+                    </div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${item.pcify__MaskType__c}</div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${item.pcify__MaskCharacter__c}</div>
+                </td>
+                <td data-label="Batch">
+                    <div class="slds-truncate">${patternType}</div>
+                </td>
+            </tr>`;
+        }));
+    }
+
+    function printAlert(mainMsg, subMsg, icon) {
+        $('#alert').html( 
+            `<div class="demo-only slds-is-relative" style="height: 4.5rem;">
+                <div class="slds-notification-container">
+                    <section class="slds-notification" role="dialog" aria-labelledby="noti77" aria-describedby="dialog-body-id-15">
+                        <div class="slds-notification__body" id="dialog-body-id-15">
+                            <a class="slds-notification__target slds-media" href="javascript:void(0);">
+                                <span class="slds-icon_container slds-icon-utility slds-m-right_x-small">
+                                    <svg class="slds-icon slds-icon-text-default slds-icon--small" aria-hidden="true">
+                                        <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#${icon}')}" />
+                                    </svg>
+                                </span>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-text-heading--small slds-m-bottom--xx-small" id="noti77">${mainMsg}</h2>
+                                    <p>${subMsg}</p>
+                                </div>
+                            </a>
+                            <button id="alert_closeBtn" class="slds-button slds-button_icon slds-button--icon-container slds-notification__close">
+                                <svg class="slds-button__icon" aria-hidden="true">
+                                    <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#close')}" />
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>`
+            );
+    }
+
+    function printToast(message, confirmLabel) {
+        $('#toast').html(
+            `<div class="toast">
+                <div class="slds-notify_container slds-is-relative">
+                    <div class="slds-notify slds-notify_toast slds-theme_warning" role="alert">
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_small slds-no-flex slds-align-top">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#warning')}" />
+                            </svg>
+                        </span>
+                        <div class="slds-notify__content">
+                            <h2 class="slds-text-heading_small ">${message}</h2>
+                            <div class="slds-grid slds-grid_align-center">
+                            <button id="toast_confirmBtn" class="slds-button slds-button_icon slds-button_icon-inverse" title="Confirm">
+                            ${confirmLabel}
+                            </button>
+                            </div>
+                        </div>
+                        <button id="toast_closeBtn" class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close">
+                            <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.slds260, 'icons/utility-sprite/svg/symbols.svg#close')}" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>`
+            );
+    }
+
+    function updateManagerSetting(objectName,active) {
+        Visualforce.remoting.Manager.invokeAction(
+            vf_context['remote_UpdateSetting'],
+            objectName,
+            active,
+            function(result, event) {
+                if (event.status) {
+                    const status = (active === 'true') ? 'off' : 'on';
+                    const icon = (active == 'true') ? 'hide' : 'preview';
+                    printAlert(`Detection turned <b>${status}</b> for ${objectName}s`, '', icon);
+                    console.log('result: ', result);
+                } else if (event.type === 'exception') {
+                    console.error('responseErrors exception: ', event.message);
+                } else {
+                    console.error('responseErrors: ', event.message);
+                }
+            },
+            {escape: false}
+        );
+    }
+
+    $('body').on('click', '#tab-2-label', function() {
+        $('#tab-2-content').removeClass('slds-hide');
+        $('#tab-1-content').hide();
+        $('#tab-1-li').removeClass('slds-active');
+        $('#tab-2-li').addClass('slds-active');
+    });
+
+    $('body').on('click', '#tab-1-label', function() {
+        $('#tab-2-content').addClass('slds-hide');
+        $('#tab-1-content').show();
+        $('#tab-2-li').removeClass('slds-active');
+        $('#tab-1-li').addClass('slds-active');
+    });
+
+    $('body').on('click', '#executeBtn', function() {
+        $('#alert').removeClass('hide');
+        printAlert('Audit Job Scheduled', 'You will receive an email when it&#39;s done!', 'check');
+    });
+
+    $('body').on('click', '#alert_closeBtn', function() {
+        $('#alert').hide();
+        refresh();
+    });
+
+    $('body').on('click', '#refreshBtn', function() {
+        refresh();
+    });
+
+    $('body').on('mouseover', '#ccInfoBtn', function() {
+        $('#ccHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#ccInfoBtn', function() {
+        $('#ccHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('mouseover', '#maskInfoBtn', function() {
+        $('#maskHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#maskInfoBtn', function() {
+        $('#maskHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('mouseover', '#fieldsInfoBtn', function() {
+        $('#fieldsHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#fieldsInfoBtn', function() {
+        $('#fieldsHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('mouseover', '#statusInfoBtn', function() {
+        $('#statusHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#statusInfoBtn', function() {
+        $('#statusHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('mouseover', '#objInfoBtn', function() {
+        $('#objHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#objInfoBtn', function() {
+        $('#objHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('mouseover', '#actionInfoBtn', function() {
+        $('#actionHelp').removeClass('hide-tooltip');
+    });
+
+    $('body').on('mouseout', '#actionInfoBtn', function() {
+        $('#actionHelp').addClass('hide-tooltip');
+    });
+
+    $('body').on('click', '#welcomeMat_closeBtn', function() {
+        $('#welcomeMat').hide();
+        // log that we've already shown the welcome mat once
+        createLog('WelcomeMat');
+    });
+
+    $(document).ready( function() {
+        printManagerSettings();
+        printDetectionPatterns();
+
+        if (isFirstInstall()) {
+            $('#welcomeMat').removeClass('slds-hide');
+        } 
+    });
+
+
+</script>
+
+</body>
+</html>
+</apex:page>

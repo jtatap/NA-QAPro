@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set this property to store the inContact script variables in Salesforce user object custom field, when the contact is in progress. --></help>
+        <label><!-- Store Script Variables --></label>
+        <name>icAgentConsole__StoreScriptVariables__c</name>
+    </CustomFieldTranslation>

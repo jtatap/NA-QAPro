@@ -1,0 +1,8 @@
+{
+    "ok": "确定",
+    "usernameRequired": "必须提供用户名",
+    "usernameIsNotValid": "用户名无效",
+    "username": "用户名",
+    "password": "密码",
+    "signIn": "签到"
+}

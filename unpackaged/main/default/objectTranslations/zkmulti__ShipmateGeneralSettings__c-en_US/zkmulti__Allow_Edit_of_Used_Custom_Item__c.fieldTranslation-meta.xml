@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Allow Edit of Used Custom Item --></label>
+        <name>zkmulti__Allow_Edit_of_Used_Custom_Item__c</name>
+    </CustomFieldTranslation>

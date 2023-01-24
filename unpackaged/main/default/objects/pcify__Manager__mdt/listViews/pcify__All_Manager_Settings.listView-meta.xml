@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__All_Manager_Settings</fullName>
+    <columns>MasterLabel</columns>
+    <columns>pcify__IsActive__c</columns>
+    <columns>pcify__MaskFields__c</columns>
+    <columns>pcify__DetectionAction__c</columns>
+    <columns>pcify__AuditAction__c</columns>
+    <columns>pcify__BatchStartDate__c</columns>
+    <columns>pcify__BatchEndDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>[DEPRECATED]</label>
+</ListView>

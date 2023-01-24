@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__MaskType__c</fullName>
+    <defaultValue>&quot;FullMask&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Full Mask: all credit card number characters are masked 
+**************** 
+Last4: all credit card number characters are masked but the last 4 characters 
+************1234 
+First6andLast4: all credit card number characters are masked by the first 6 and the last 4 characters 
+123456******1234</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Full Mask: all credit card number characters are masked 
+Last4: all credit card number characters are masked but the last 4 characters 
+First6andLast4: all credit card number characters are masked by the first 6 and the last 4 characters</inlineHelpText>
+    <label>MaskType</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FullMask</fullName>
+                <default>true</default>
+                <label>FullMask</label>
+            </value>
+            <value>
+                <fullName>Last4</fullName>
+                <default>false</default>
+                <label>Last4</label>
+            </value>
+            <value>
+                <fullName>First6andLast4</fullName>
+                <default>false</default>
+                <label>First6andLast4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

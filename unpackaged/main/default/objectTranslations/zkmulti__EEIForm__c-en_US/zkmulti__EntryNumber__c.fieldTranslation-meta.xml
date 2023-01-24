@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Import Entry Number when the export transaction is used as proof of export for import transactions (examples: In Bond, Temporary Import Bond or Drawbacks)
+
+Conditionally Required for SED forms when In Bond Code value is other than 70 (&quot;Not In Bond&quot;) --></help>
+        <label><!-- Entry Number --></label>
+        <name>zkmulti__EntryNumber__c</name>
+    </CustomFieldTranslation>

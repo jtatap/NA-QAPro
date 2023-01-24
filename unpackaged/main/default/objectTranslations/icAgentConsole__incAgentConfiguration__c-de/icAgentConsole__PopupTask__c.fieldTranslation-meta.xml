@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set this property to pop an activity from inContact agent console app, after call is disconnected --></help>
+        <label><!-- Popup Task --></label>
+        <name>icAgentConsole__PopupTask__c</name>
+    </CustomFieldTranslation>

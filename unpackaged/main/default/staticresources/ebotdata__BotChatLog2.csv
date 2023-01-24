@@ -1,0 +1,420 @@
+ebotdata__Business_Metric_Type__c,ebotdata__Current_Confidence_For_Utterance__c,ebotdata__Current_Dialog_Id__c,ebotdata__Current_Dialog_Name__c,ebotdata__Current_Threshold_High__c,ebotdata__Current_Utterance__c,ebotdata__Intent_Name__c,ebotdata__Intent_Type__c,ebotdata__Live_Agent_Session_Id__c,ebotdata__Successful_Resolution__c,ebotdata__Topic_Name__c
+,1,0Xd1l00000001ChCAI,Confused,0.8465,hi there,bot.fallback,Generic,02997096-4f7d-45de-9928-e5039864b552,,
+Direct,0.5994,0Xd1l00000001CkCAI,Questions_Portal,0.1396,why can't i login to Questions,business.questions.not_connecting.ie,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+Start,0.9721,0Xd1l00000001CuCAI,Get_Article,0.6355,interface to office isn't loading,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9721,0Xd1l00000001D2CAI,Escalation_Flow,0.6355,interface to office isn't loading,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,trouble to select an intems numbers on desktop,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.5101,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,I can't select on nielsen,business.desktop.error.switch_to,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Start,0.5101,0Xd1l00000001CuCAI,Get_Article,0.0222,I can't select on nielsen,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9986,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,"help ""Cannot open more than 5 research report groups""",bot.escalation,Generic,52c933d1-acba-4b0b-8746-5584bb72f890,,
+,,0Xd1l00000001ChCAI,Confused,,getting an npower error,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,getting an npower error,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9929,0Xd1l00000001DJCAY,Access_Issues,0.678,unable to get to gtc,business.gtc.access_issues,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Global Track Complete
+Start,0.9929,0Xd1l00000001CuCAI,Get_Article,0.678,unable to get to gtc,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9929,0Xd1l00000001D2CAI,Escalation_Flow,0.678,unable to get to gtc,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9951,0Xd1l00000001DJCAY,Access_Issues,0.678,having problems with global track complete gtc,business.gtc.access_issues,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Global Track Complete
+Start,0.9951,0Xd1l00000001CuCAI,Get_Article,0.678,having problems with global track complete gtc,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9951,0Xd1l00000001D2CAI,Escalation_Flow,0.678,having problems with global track complete gtc,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9909,0Xd1l00000001DLCAY,Error_8004ade9,0.963,I see failed to open database error in Questions,business.desktop.error.8004ade9,Business,02997096-4f7d-45de-9928-e5039864b552,,questions Desktop
+Start,0.9909,0Xd1l00000001CuCAI,Get_Article,0.963,I see failed to open database error in Questions,bot.business_answer.presentation,Generic,02997096-4f7d-45de-9928-e5039864b552,,
+Direct,1,0Xd1l00000001DMCAY,Blank_Screen,0.9953,i see an empty screen in AD,business.desktop.blank_screen,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9427,not able to open project,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.9951,0Xd1l00000001D2CAI,Escalation_Flow,0.0149,window for research report isn't opening,bot.escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,,0Xd1l00000001ChCAI,Confused,,this screen is blank,bot.fallback,Generic,02deb478-5a28-470a-9b3d-5fc5f4a68285,,
+,,0Xd1l00000001ChCAI,Confused,,the screen is white,bot.fallback,Generic,9a08a55d-f8ee-45b1-bce4-d10a6923e4f0,,
+,0.9938,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,where do I find the latest book,bot.escalation,Generic,97b75d26-ae36-46ce-8d44-958608a5bb9a,,
+Start,0.2429,0Xd1l00000001CuCAI,Get_Article,0.1396,Questions,bot.business_answer.presentation,Generic,0c17a7bd-e720-41c7-90e3-ad731fac1942,,
+Direct,0.8728,0Xd1l00000001DJCAY,Access_Issues,0.678,i am not able to access projects in GTC,business.gtc.access_issues,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Global Track Complete
+,0.9911,0Xd1l00000001D2CAI,Escalation_Flow,0.9897,I see problem with Nitro range while trying to modify selections in Nitro Range,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,0.9979,0Xd1l00000001CuCAI,Get_Article,0.9811,I am seeing text replaced by the flash player,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.9979,0Xd1l00000001D2CAI,Escalation_Flow,0.9811,I am seeing text replaced by the flash player,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,0.9972,0Xd1l00000001CuCAI,Get_Article,0.0222,there is a switch to error in Nielsen Interface to Office,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9985,0Xd1l00000001DeCAI,Export_XML,0.9981,help me export a product schedule,business.product.export_xml,Business,fee4d1cd-1b2e-4e63-a90d-4380d676e80a,,Tapscan
+Start,0.9985,0Xd1l00000001CuCAI,Get_Article,0.9981,help me export a product schedule,bot.business_answer.presentation,Generic,fee4d1cd-1b2e-4e63-a90d-4380d676e80a,,
+,,0Xd1l00000001ChCAI,Confused,,help me with the frequency/reach,bot.fallback,Generic,10b202e1-76c2-4a15-8863-831bbcaf9137,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,there is no frequency or reach,bot.offer_escalation,Generic,10b202e1-76c2-4a15-8863-831bbcaf9137,,
+,,0Xd1l00000001ChCAI,Confused,,getting a blank screen,bot.fallback,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,,0Xd1l00000001ChCAI,Confused,,getting a blank screen,bot.fallback,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.5446,0Xd1l00000001D2CAI,Escalation_Flow,0.1396,can someone help me connect to Questions,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,questions
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,,bot.escalation,Generic,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,
+Start,0.9854,0Xd1l00000001CuCAI,Get_Article,0.9838,i need help for the dictionary,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9854,0Xd1l00000001D2CAI,Escalation_Flow,0.9838,i need help for the dictionary,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9951,0Xd1l00000001CuCAI,Get_Article,0.9838,nitro dictionary isn't working for me,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9951,0Xd1l00000001D2CAI,Escalation_Flow,0.9838,nitro dictionary isn't working for me,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,there is no frequency or reach,bot.fallback,Generic,10b202e1-76c2-4a15-8863-831bbcaf9137,,
+Direct,0.9635,0Xd1l00000001CsCAI,EVIP,0.8223,how do I access the local station ratings,business.questions.evip,Business,51bf0189-0823-47b4-a183-52f5d62e44ca,,questions
+Start,0.9635,0Xd1l00000001CuCAI,Get_Article,0.8223,how do I access the local station ratings,bot.business_answer.presentation,Generic,51bf0189-0823-47b4-a183-52f5d62e44ca,,
+,0.9635,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,how do I access the local station ratings,bot.escalation,Generic,51bf0189-0823-47b4-a183-52f5d62e44ca,,
+,0.2429,0Xd1l00000001ClCAI,Follow_Up_EScheduley,0.1396,Questions,bot.follow-up,Generic,0c17a7bd-e720-41c7-90e3-ad731fac1942,,
+,,0Xd1l00000001ChCAI,Confused,,looking for Nielsen VIP,bot.fallback,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Start,0.5994,0Xd1l00000001CuCAI,Get_Article,0.1396,why can't i login to Questions,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+,0.5994,0Xd1l00000001D2CAI,Escalation_Flow,0.1396,why can't i login to Questions,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.361,can you help me change my password,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Start,0.995,0Xd1l00000001CuCAI,Get_Article,0.9925,why can't I open more than 5 groups for product,bot.business_answer.presentation,Generic,3950f657-b0dd-4260-8592-c13eda6143a4,,
+Start,0.9977,0Xd1l00000001CuCAI,Get_Article,0.1338,data doesnt seem updated in Nielsen ITO,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.9991,0Xd1l00000001D2CAI,Escalation_Flow,0.997,I am facing database not opened error when trying to select a database in Nitro,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.9963,0Xd1l00000001DnCAI,Error_3004,0.6503,I get 3004 runtime error when rendering report in AOD,business.product.error.3004,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nielsen OnDemand
+Start,0.9963,0Xd1l00000001CuCAI,Get_Article,0.6503,I get 3004 runtime error when rendering report in AOD,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,0.9977,0Xd1l00000001CuCAI,Get_Article,0.9966,can't enter Data on the tapascan web,bot.business_answer.presentation,Generic,187b10eb-ebef-4a00-be87-4bfc8f523802,,
+Direct,0.9986,0Xd1l00000001DYCAY,More_than_5,0.9925,"help ""Cannot open more than 5 research report groups""",business.product.more_than_5,Business,52c933d1-acba-4b0b-8746-5584bb72f890,,Tapscan
+Direct,0.9854,0Xd1l00000001DkCAI,Dictionary,0.9838,i need help for the dictionary,business.nitro.dictionary,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Direct,0.9951,0Xd1l00000001DkCAI,Dictionary,0.9838,nitro dictionary isn't working for me,business.nitro.dictionary,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Direct,0.9926,0Xd1l00000001DjCAI,Error_55,0.9897,im having an issue in nitro range,business.nitro.error.55,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Start,0.9926,0Xd1l00000001CuCAI,Get_Article,0.9897,im having an issue in nitro range,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9926,0Xd1l00000001D2CAI,Escalation_Flow,0.9897,im having an issue in nitro range,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.8474,0Xd1l00000001DhCAI,Error_800004005,0.0438,error 55 on nitro page,business.nitro.error.800004005,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Start,0.8474,0Xd1l00000001CuCAI,Get_Article,0.0438,error 55 on nitro page,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,there is an error opening the project,bot.fallback,Generic,61f2385d-91a9-4513-9e88-a25fd6d3d3eb,,
+Direct,0.9938,0Xd1l00000001CsCAI,EVIP,0.8223,where do I find the latest book,business.questions.evip,Business,97b75d26-ae36-46ce-8d44-958608a5bb9a,,questions
+,0.9963,0Xd1l00000001D2CAI,Escalation_Flow,0.6503,I get 3004 runtime error when rendering report in AOD,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,I'm having trouble with my schedule,bot.fallback,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I'm having trouble with my schedule,bot.offer_escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,I want to figure out whether it is possible to add schedule to schedule,bot.fallback,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,1,0Xd1l00000001ChCAI,Confused,0.8465,hello,bot.fallback,Generic,3950f657-b0dd-4260-8592-c13eda6143a4,,
+Direct,0.9328,0Xd1l00000001CsCAI,EVIP,0.8223,i can't find evip,business.questions.evip,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+Start,0.9328,0Xd1l00000001CuCAI,Get_Article,0.8223,i can't find evip,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+,0.9328,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,i can't find evip,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.5365,0Xd1l00000001DOCAY,Crash_On_Launch,0.2637,,business.desktop.crash_on_launch,Business,02deb478-5a28-470a-9b3d-5fc5f4a68285,,questions Desktop
+,0.5365,0Xd1l00000001D2CAI,Escalation_Flow,0.2637,,bot.escalation,Generic,02deb478-5a28-470a-9b3d-5fc5f4a68285,,
+Start,0.9991,0Xd1l00000001CuCAI,Get_Article,0.9973,I get the 800a03ec error in Nielsen Questions,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9835,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,"please help for error message ""switch to & retry"" in Questions",bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.995,0Xd1l00000001DYCAY,More_than_5,0.9925,why can't I open more than 5 groups for product,business.product.more_than_5,Business,3950f657-b0dd-4260-8592-c13eda6143a4,,Tapscan
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,can you help me change my password,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+,0.9977,0Xd1l00000001D2CAI,Escalation_Flow,0.9966,can't enter Data on the tapascan web,bot.escalation,Generic,187b10eb-ebef-4a00-be87-4bfc8f523802,,
+,0.9984,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,how to open more than five report groups in a product,bot.escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,the screen is white,bot.offer_escalation,Generic,9a08a55d-f8ee-45b1-bce4-d10a6923e4f0,,
+,0.3207,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,dbdate is corrupt in Questions,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9771,0Xd1l00000001CuCAI,Get_Article,0.963,there is a red x in Questions,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9771,0Xd1l00000001DLCAY,Error_8004ade9,0.963,there is a red x in Questions,business.desktop.error.8004ade9,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Direct,0.9987,0Xd1l00000001DQCAY,Error_800a03ec,0.9973,I see the error 800a03ec on the report,business.desktop.error.800a03ec,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+,,0Xd1l00000001ChCAI,Confused,,what are the steps to add the schedule,bot.fallback,Generic,f17d40af-fb5a-4fc1-abc7-b3d41277d006,,
+Direct,0.5446,0Xd1l00000001CkCAI,Questions_Portal,0.1396,can someone help me connect to Questions,business.questions.not_connecting.ie,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.361,can you help me change my password,bot.business_answer.presentation,Generic,1de954cb-ce50-45b6-9211-8fb0264f26c8,,
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,can you help me change my password,bot.escalation,Generic,1de954cb-ce50-45b6-9211-8fb0264f26c8,,
+Direct,0.995,0Xd1l00000001DYCAY,More_than_5,0.9925,why can't I open more than 5 groups for product,business.product.more_than_5,Business,afc24b6a-825e-4f94-8167-687ce26c6c52,,Tapscan
+Start,0.995,0Xd1l00000001CuCAI,Get_Article,0.9925,why can't I open more than 5 groups for product,bot.business_answer.presentation,Generic,afc24b6a-825e-4f94-8167-687ce26c6c52,,
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.361,,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.6949,0Xd1l00000001DNCAY,dbdate,0.1338,why is Nielsen Questions Desktop missing some current data,business.desktop.dbdate,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+,0.6949,0Xd1l00000001D2CAI,Escalation_Flow,0.1338,why is Nielsen Questions Desktop missing some current data,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.7903,0Xd1l00000001DOCAY,Crash_On_Launch,0.6355,how do I load Questions,business.desktop.crash_on_launch,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+,0.7903,0Xd1l00000001D2CAI,Escalation_Flow,0.6355,how do I load Questions,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9835,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,"please help for error message ""switch to & retry"" in Questions",business.desktop.error.switch_to,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Start,0.9835,0Xd1l00000001CuCAI,Get_Article,0.0222,"please help for error message ""switch to & retry"" in Questions",bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,1,0Xd1l00000001DWCAY,Product_Access_Problem,0.9427,not able to open project,business.product.access_problem,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,OneLight
+Direct,0.9984,0Xd1l00000001DYCAY,More_than_5,0.9925,how to open more than five report groups in a product,business.product.more_than_5,Business,db2ebe83-3404-434a-927a-68239eb7dca7,,Tapscan
+Start,0.5446,0Xd1l00000001CuCAI,Get_Article,0.1396,can someone help me connect to Questions,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Start,0.5365,0Xd1l00000001CuCAI,Get_Article,0.2637,,bot.business_answer.presentation,Generic,02deb478-5a28-470a-9b3d-5fc5f4a68285,,
+,0.9974,0Xd1l00000001D2CAI,Escalation_Flow,0.963,why am I getting error 8004ade9 in Questions Desktop,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9771,0Xd1l00000001D2CAI,Escalation_Flow,0.963,there is a red x in Questions,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.5451,0Xd1l00000001CuCAI,Get_Article,0.0438,Can you help me with error 800004005?,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.9991,0Xd1l00000001D2CAI,Escalation_Flow,0.9966,receiving undefined Word in command error message while refreshing a report,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.9938,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,where do I find the latest book,bot.escalation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+Start,0.9226,0Xd1l00000001CuCAI,Get_Article,0.361,,bot.business_answer.presentation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,0.9226,0Xd1l00000001D2CAI,Escalation_Flow,0.361,,bot.escalation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,0.9226,0Xd1l00000001ChCAI,Confused,0.361,,bot.fallback,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9953,i see an empty screen in AD,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Direct,0.9817,0Xd1l00000001DOCAY,Crash_On_Launch,0.6355,Nielsen ITO will not load,business.desktop.crash_on_launch,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+Direct,0.9889,0Xd1l00000001DLCAY,Error_8004ade9,0.963,There is failed to open database in Questions,business.desktop.error.8004ade9,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9973,I see error 800a03ec with report in Interface to Office,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.995,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,why can't I open more than 5 groups for product,bot.escalation,Generic,3950f657-b0dd-4260-8592-c13eda6143a4,,
+,0.9985,0Xd1l00000001D2CAI,Escalation_Flow,0.9981,help me export a product schedule,bot.escalation,Generic,fee4d1cd-1b2e-4e63-a90d-4380d676e80a,,
+,0.9974,0Xd1l00000001D2CAI,Escalation_Flow,0.0149,the research report window won't open,bot.escalation,Generic,03febc3d-4cec-4759-98e9-2d697f355a2c,,
+Direct,0.9974,0Xd1l00000001DZCAY,Research_Window,0.0149,the research report window won't open,business.product.research_window,Business,03febc3d-4cec-4759-98e9-2d697f355a2c,,Tapscan
+Start,0.9974,0Xd1l00000001CuCAI,Get_Article,0.0149,the research report window won't open,bot.business_answer.presentation,Generic,03febc3d-4cec-4759-98e9-2d697f355a2c,,
+Start,0.9938,0Xd1l00000001CuCAI,Get_Article,0.8223,where do I find the latest book,bot.business_answer.presentation,Generic,51bf0189-0823-47b4-a183-52f5d62e44ca,,
+,0.9938,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,where do I find the latest book,bot.escalation,Generic,51bf0189-0823-47b4-a183-52f5d62e44ca,,
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.6355,Nielsen ITO will not load,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Start,0.9889,0Xd1l00000001CuCAI,Get_Article,0.963,There is failed to open database in Questions,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.5395,0Xd1l00000001D2CAI,Escalation_Flow,0.0149,how do I generate a report,bot.escalation,Generic,66aef0b7-0fab-4188-a988-861a58111450,,
+Direct,0.9938,0Xd1l00000001CsCAI,EVIP,0.8223,where do I find the latest book,business.questions.evip,Business,51bf0189-0823-47b4-a183-52f5d62e44ca,,questions
+Start,0.9697,0Xd1l00000001CuCAI,Get_Article,0.361,why can't I reset my password,bot.business_answer.presentation,Generic,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,
+Direct,0.5365,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.2637,why am I getting a blank screen,business.blank_screen.disambig,Generic,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,Disambiguation
+Direct,0.9929,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,"I see error message ""switch to"" on Questions",business.desktop.error.switch_to,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+Start,0.9929,0Xd1l00000001CuCAI,Get_Article,0.0222,"I see error message ""switch to"" on Questions",bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.9929,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,"I see error message ""switch to"" on Questions",bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,,0Xd1l00000001D2CAI,Escalation_Flow,,,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Direct,0.9972,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,there is a switch to error in Nielsen Interface to Office,business.desktop.error.switch_to,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+,0.9972,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,there is a switch to error in Nielsen Interface to Office,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,can not find the ok button,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,can not find the ok button,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.5451,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,Can you help me with error 800004005?,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.9991,0Xd1l00000001DiCAI,Error_80040dc2,0.997,I am facing database not opened error when trying to select a database in Nitro,business.nitro.error.80040dc2,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9427,not able to open project,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,this screen is blank,bot.fallback,Generic,9a08a55d-f8ee-45b1-bce4-d10a6923e4f0,,
+Direct,0.9991,0Xd1l00000001DQCAY,Error_800a03ec,0.9973,I get the 800a03ec error in Nielsen Questions,business.desktop.error.800a03ec,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Direct,0.9974,0Xd1l00000001DLCAY,Error_8004ade9,0.963,why am I getting error 8004ade9 in Questions Desktop,business.desktop.error.8004ade9,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Start,0.9974,0Xd1l00000001CuCAI,Get_Article,0.963,why am I getting error 8004ade9 in Questions Desktop,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9987,0Xd1l00000001CuCAI,Get_Article,0.9973,I see the error 800a03ec on the report,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9635,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,how do I access the local station ratings,bot.escalation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+Direct,0.9226,0Xd1l00000001CtCAI,Password_Reset,0.361,I need assistance to reset my password,business.questions.password_reset,Business,e11cf05a-d698-4fcf-af94-85997fd611be,,questions
+Direct,0.9911,0Xd1l00000001DjCAI,Error_55,0.9897,I see problem with Nitro range while trying to modify selections in Nitro Range,business.nitro.error.55,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+Start,0.9911,0Xd1l00000001CuCAI,Get_Article,0.9897,I see problem with Nitro range while trying to modify selections in Nitro Range,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.9991,0Xd1l00000001DgCAI,Undefined_Word,0.9966,receiving undefined Word in command error message while refreshing a report,business.nitro.undefined_word,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+Start,0.9991,0Xd1l00000001CuCAI,Get_Article,0.9966,receiving undefined Word in command error message while refreshing a report,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,figure out whether it is possible to add schedule to schedule,bot.fallback,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,0.9982,0Xd1l00000001D2CAI,Escalation_Flow,0.9966,not able to enter spot in a product web,bot.escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,trouble to select an intems numbers on desktop,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,where can I find the OK buttons in nielsen,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.5101,0Xd1l00000001D2CAI,Escalation_Flow,0.0222,I can't select on nielsen,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9987,I am getting missing item on AD,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9987,I am getting missing item on AD,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Direct,1,0Xd1l00000001DTCAY,Secondary_Monitor,0.3215,I am receiving Desktop monitor moving selections dialog in Questions,business.desktop.secondary_monitor,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,questions Desktop
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.3215,I am receiving Desktop monitor moving selections dialog in Questions,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,0.9991,0Xd1l00000001CuCAI,Get_Article,0.997,I am facing database not opened error when trying to select a database in Nitro,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,10004 when rendering report,bot.offer_escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.3207,0Xd1l00000001DSCAY,Error_Switch_To,0.0222,dbdate is corrupt in Questions,business.desktop.error.switch_to,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Start,0.6949,0Xd1l00000001CuCAI,Get_Article,0.1338,why is Nielsen Questions Desktop missing some current data,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9987,0Xd1l00000001D2CAI,Escalation_Flow,0.9973,I see the error 800a03ec on the report,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I want to figure out whether it is possible to add schedule to schedule,bot.offer_escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.9991,0Xd1l00000001D2CAI,Escalation_Flow,0.9981,what can I do to export a schedule using product,bot.escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Start,0.9984,0Xd1l00000001CuCAI,Get_Article,0.9925,how to open more than five report groups in a product,bot.business_answer.presentation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Direct,0.9951,0Xd1l00000001DZCAY,Research_Window,0.0149,window for research report isn't opening,business.product.research_window,Business,db2ebe83-3404-434a-927a-68239eb7dca7,,Tapscan
+Start,0.8587,0Xd1l00000001CuCAI,Get_Article,0.8223,not finding evip,bot.business_answer.presentation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.2961,0Xd1l00000001DhCAI,Error_800004005,0.0438,i see an error,business.nitro.error.800004005,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,how do I add schedule to the schedule,bot.offer_escalation,Generic,4602bafe-627a-46c4-9e5d-f97677052e5c,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,figure out whether it is possible to add schedule to schedule,bot.offer_escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Direct,0.9982,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.9966,not able to enter spot in a product web,business.product.cannot_enter_data,Business,db2ebe83-3404-434a-927a-68239eb7dca7,,Tapscan
+Start,0.9982,0Xd1l00000001CuCAI,Get_Article,0.9966,not able to enter spot in a product web,bot.business_answer.presentation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Start,0.9951,0Xd1l00000001CuCAI,Get_Article,0.0149,window for research report isn't opening,bot.business_answer.presentation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,0.9991,0Xd1l00000001D2CAI,Escalation_Flow,0.9973,I get the 800a03ec error in Nielsen Questions,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,where can I find the OK buttons in nielsen,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.999,0Xd1l00000001DTCAY,Secondary_Monitor,0.3215,I need help to make a selection for Questions desktop,business.desktop.secondary_monitor,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+Start,0.999,0Xd1l00000001CuCAI,Get_Article,0.3215,I need help to make a selection for Questions desktop,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.2961,0Xd1l00000001CuCAI,Get_Article,0.0438,i see an error,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9938,0Xd1l00000001CsCAI,EVIP,0.8223,where do I find the latest book,business.questions.evip,Business,e11cf05a-d698-4fcf-af94-85997fd611be,,questions
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.6355,Nielsen ITO will not load,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,,0Xd1l00000001ChCAI,Confused,,10004 when rendering report,bot.fallback,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.9977,0Xd1l00000001DNCAY,dbdate,0.1338,data doesnt seem updated in Nielsen ITO,business.desktop.dbdate,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+,0.9977,0Xd1l00000001D2CAI,Escalation_Flow,0.1338,data doesnt seem updated in Nielsen ITO,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.361,,bot.business_answer.presentation,Generic,1de954cb-ce50-45b6-9211-8fb0264f26c8,,
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,,bot.escalation,Generic,1de954cb-ce50-45b6-9211-8fb0264f26c8,,
+Start,0.8728,0Xd1l00000001CuCAI,Get_Article,0.678,i am not able to access projects in GTC,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9985,There is lacking reach and frequency in product,bot.business_answer.presentation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9985,There is lacking reach and frequency in product,bot.escalation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+,0.2961,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,i see an error,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,what is needed to find OK on Questions Desktop,bot.offer_escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Start,0.9817,0Xd1l00000001CuCAI,Get_Article,0.361,,bot.business_answer.presentation,Generic,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,
+Start,0.9938,0Xd1l00000001CuCAI,Get_Article,0.8223,where do I find the latest book,bot.business_answer.presentation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+Direct,0.9635,0Xd1l00000001CsCAI,EVIP,0.8223,how do I access the local station ratings,business.questions.evip,Business,e11cf05a-d698-4fcf-af94-85997fd611be,,questions
+Start,0.9635,0Xd1l00000001CuCAI,Get_Article,0.8223,how do I access the local station ratings,bot.business_answer.presentation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,,0Xd1l00000001ChCAI,Confused,,what is needed to find OK on Questions Desktop,bot.fallback,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Direct,0.5107,0Xd1l00000001DhCAI,Error_800004005,0.0438,got an error,business.nitro.error.800004005,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+Start,0.5107,0Xd1l00000001CuCAI,Get_Article,0.0438,got an error,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Direct,0.989,0Xd1l00000001DkCAI,Dictionary,0.9838,need urgent support about Nitro dictionary,business.nitro.dictionary,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+Start,0.989,0Xd1l00000001CuCAI,Get_Article,0.9838,need urgent support about Nitro dictionary,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,0.989,0Xd1l00000001D2CAI,Escalation_Flow,0.9838,need urgent support about Nitro dictionary,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,I see a blank screen on the desktop,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,i am having an error creating a spot,bot.offer_escalation,Generic,61f2385d-91a9-4513-9e88-a25fd6d3d3eb,,
+,0.9909,0Xd1l00000001ClCAI,Follow_Up_EScheduley,0.963,I see failed to open database error in Questions,bot.follow-up,Generic,02997096-4f7d-45de-9928-e5039864b552,,
+Direct,0.9226,0Xd1l00000001CtCAI,Password_Reset,0.361,I need assistance to reset my password,business.questions.password_reset,Business,e11cf05a-d698-4fcf-af94-85997fd611be,,questions
+Direct,0.5451,0Xd1l00000001DhCAI,Error_800004005,0.0438,Can you help me with error 800004005?,business.nitro.error.800004005,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,Nitro
+Direct,0.9979,0Xd1l00000001DlCAI,Error_Flash,0.9811,I am seeing text replaced by the flash player,business.npower.error.flash,Business,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,NPOWER
+Direct,0.9991,0Xd1l00000001DeCAI,Export_XML,0.9981,what can I do to export a schedule using product,business.product.export_xml,Business,db2ebe83-3404-434a-927a-68239eb7dca7,,Tapscan
+Start,0.9991,0Xd1l00000001CuCAI,Get_Article,0.9981,what can I do to export a schedule using product,bot.business_answer.presentation,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Direct,1,0Xd1l00000001DXCAY,Simple_Product,0.9985,There is lacking reach and frequency in product,business.product.simple_product,Business,db2ebe83-3404-434a-927a-68239eb7dca7,,Tapscan
+,0.8587,0Xd1l00000001D2CAI,Escalation_Flow,0.8223,not finding evip,bot.escalation,Generic,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,1de954cb-ce50-45b6-9211-8fb0264f26c8,,questions
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,1de954cb-ce50-45b6-9211-8fb0264f26c8,,questions
+Direct,0.9817,0Xd1l00000001CtCAI,Password_Reset,0.361,can you help me change my password,business.questions.password_reset,Business,539f62bc-9e39-4830-afb5-9f796b573889,,questions
+,0.9817,0Xd1l00000001D2CAI,Escalation_Flow,0.361,,bot.escalation,Generic,539f62bc-9e39-4830-afb5-9f796b573889,,
+,0.5107,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,got an error,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,I want to figure out whether it is possible to add schedule to schedule,bot.fallback,Generic,db2ebe83-3404-434a-927a-68239eb7dca7,,
+Direct,0.8587,0Xd1l00000001CsCAI,EVIP,0.8223,not finding evip,business.questions.evip,Business,8e482cc8-4bf8-41e6-91a1-0b4df472eb4a,,questions
+Direct,0.9697,0Xd1l00000001CtCAI,Password_Reset,0.361,why can't I reset my password,business.questions.password_reset,Business,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,questions
+,0.9697,0Xd1l00000001D2CAI,Escalation_Flow,0.361,why can't I reset my password,bot.escalation,Generic,faa30ec4-6f77-4a56-937d-906ce8e63dd1,,
+,,0Xd1l00000001ChCAI,Confused,,how do I add schedule to the schedule,bot.fallback,Generic,4602bafe-627a-46c4-9e5d-f97677052e5c,,
+,,0Xd1l00000001ChCAI,Confused,,help me enter product Data,bot.fallback,Generic,187b10eb-ebef-4a00-be87-4bfc8f523802,,
+Direct,0.9977,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.9966,can't enter Data on the tapascan web,business.product.cannot_enter_data,Business,187b10eb-ebef-4a00-be87-4bfc8f523802,,Tapscan
+Direct,0.2429,0Xd1l00000001CkCAI,Questions_Portal,0.1396,Questions,business.questions.not_connecting.ie,Business,0c17a7bd-e720-41c7-90e3-ad731fac1942,,questions
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,getting a blank screen,bot.offer_escalation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9953,i see an empty screen in AD,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+,0.9889,0Xd1l00000001D2CAI,Escalation_Flow,0.963,There is failed to open database in Questions,bot.escalation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Direct,1,0Xd1l00000001DQCAY,Error_800a03ec,0.9973,I see error 800a03ec with report in Interface to Office,business.desktop.error.800a03ec,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9973,I see error 800a03ec with report in Interface to Office,bot.business_answer.presentation,Generic,bebb40d5-7d6b-4611-bbc5-446e568daa78,,
+Start,0.9226,0Xd1l00000001CuCAI,Get_Article,0.361,I need assistance to reset my password,bot.business_answer.presentation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,0.9226,0Xd1l00000001D2CAI,Escalation_Flow,0.361,I need assistance to reset my password,bot.escalation,Generic,e11cf05a-d698-4fcf-af94-85997fd611be,,
+,,0Xd1l00000001ChCAI,Confused,,what is needed to find OK on Questions Desktop,bot.fallback,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.3215,I am receiving Desktop monitor moving selections dialog in Questions,bot.business_answer.presentation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+Start,0.7903,0Xd1l00000001CuCAI,Get_Article,0.6355,how do I load Questions,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,im having trouble selecting item,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,im having trouble selecting item,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.999,0Xd1l00000001D2CAI,Escalation_Flow,0.3215,I need help to make a selection for Questions desktop,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,1,0Xd1l00000001DPCAY,Item_Numbers,0.9987,I am getting missing item on AD,business.desktop.item_numbers,Business,bebb40d5-7d6b-4611-bbc5-446e568daa78,,questions Desktop
+Start,0.9938,0Xd1l00000001CuCAI,Get_Article,0.8223,where do I find the latest book,bot.business_answer.presentation,Generic,97b75d26-ae36-46ce-8d44-958608a5bb9a,,
+Start,0.3207,0Xd1l00000001CuCAI,Get_Article,0.0222,dbdate is corrupt in Questions,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.5365,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.2637,why am I getting a blank screen,business.blank_screen.disambig,Generic,02deb478-5a28-470a-9b3d-5fc5f4a68285,,Disambiguation
+Direct,0.9721,0Xd1l00000001DOCAY,Crash_On_Launch,0.6355,interface to office isn't loading,business.desktop.crash_on_launch,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,questions Desktop
+,0.8728,0Xd1l00000001D2CAI,Escalation_Flow,0.678,i am not able to access projects in GTC,bot.escalation,Generic,f6e4c9e6-956f-46c2-838e-84bcac0c9b7a,,
+,,0Xd1l00000001ChCAI,Confused,,i am having an error creating a spot,bot.fallback,Generic,61f2385d-91a9-4513-9e88-a25fd6d3d3eb,,
+Start,0.9986,0Xd1l00000001CuCAI,Get_Article,0.9925,"help ""Cannot open more than 5 research report groups""",bot.business_answer.presentation,Generic,52c933d1-acba-4b0b-8746-5584bb72f890,,
+Direct,0.5395,0Xd1l00000001DZCAY,Research_Window,0.0149,how do I generate a report,business.product.research_window,Business,66aef0b7-0fab-4188-a988-861a58111450,,Tapscan
+Start,0.5395,0Xd1l00000001CuCAI,Get_Article,0.0149,how do I generate a report,bot.business_answer.presentation,Generic,66aef0b7-0fab-4188-a988-861a58111450,,
+,,0Xd1l00000001ChCAI,Confused,,help with a schedule,bot.fallback,Generic,4602bafe-627a-46c4-9e5d-f97677052e5c,,
+,,0Xd1l00000001ChCAI,Confused,,show me how to create a schedule,bot.fallback,Generic,afc24b6a-825e-4f94-8167-687ce26c6c52,,
+,0.995,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,why can't I open more than 5 groups for product,bot.escalation,Generic,afc24b6a-825e-4f94-8167-687ce26c6c52,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.1169,I am facing Nitro Error 800004005,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,0.9973,0Xd1l00000001DlCAI,Error_Flash,0.9811,what is the flash error,business.npower.error.flash,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,NPOWER
+Start,0.9985,0Xd1l00000001CuCAI,Get_Article,0.9981,help me export a product schedule,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9985,0Xd1l00000001D2CAI,Escalation_Flow,0.9981,help me export a product schedule,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.7961,0Xd1l00000000BOCAY,Get_Article,0.0125,how do I find the VIP books,bot.business_answer.presentation,Generic,3dec5993-21e1-497f-aac5-cad009458c5d,,
+,0.7961,0Xd1l00000000C2CAI,Escalation_Flow,0.0125,how do I find the VIP books,bot.escalation,Generic,3dec5993-21e1-497f-aac5-cad009458c5d,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9162,I need help with the latest VIP,bot.business_answer.presentation,Generic,d03c180d-7f54-46ec-b5df-345b0c596eea,,
+,0.3589,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,the error 10004 is occurring,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9162,I need help with the latest VIP,bot.escalation,Generic,d03c180d-7f54-46ec-b5df-345b0c596eea,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9499,access Nielsen Questions,bot.business_answer.presentation,Generic,d03c180d-7f54-46ec-b5df-345b0c596eea,,
+Start,0.9785,0Xd1l00000001CuCAI,Get_Article,0.0523,receive error message switch to on Nielsen Questions Desktop,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,0.9785,0Xd1l00000001D2CAI,Escalation_Flow,0.0523,receive error message switch to on Nielsen Questions Desktop,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DRCAY,Missing_Ok_Button,0.7766,how to find OK button on Questions,business.desktop.missing_ok_button,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,help with a schedule,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,help me enter product Data,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,help me enter product Data,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.995,0Xd1l00000001CuCAI,Get_Article,0.9925,why can't I open more than 5 groups for product,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9986,0Xd1l00000001DYCAY,More_than_5,0.9925,"help ""Cannot open more than 5 research report groups""",business.product.more_than_5,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+Direct,0.9974,0Xd1l00000001DZCAY,Research_Window,0.0149,the research report window won't open,business.product.research_window,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+,,0Xd1l00000001ChCAI,Confused,,I want to figure out whether it is possible to add schedule to schedule,bot.fallback,Generic,aa2f5e23-31be-433b-b455-496fdae8c0f0,,
+Direct,0.9041,0Xd1l00000001DnCAI,Error_3004,0.6503,the error: 3004 on the Questions On Demand is showing,business.product.error.3004,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nielsen OnDemand
+,0.9863,0Xd1l00000001D2CAI,Escalation_Flow,0.9427,there is a Product error showing up,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9974,0Xd1l00000001CuCAI,Get_Article,0.0149,the research report window won't open,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,there is an error when I refresh a database,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.3587,0Xd1l00000001CuCAI,Get_Article,0.0438,why is there a 3004 error,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,there is no frequency or reach,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.4885,0Xd1l00000001DhCAI,Error_800004005,0.0438,what is the 800004005 error mean,business.nitro.error.800004005,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Start,0.4885,0Xd1l00000001CuCAI,Get_Article,0.0438,what is the 800004005 error mean,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,how do I add schedule to the schedule,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9977,0Xd1l00000001D2CAI,Escalation_Flow,0.9966,can't enter Data on the tapascan web,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,there is no frequency or reach,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9856,i see empty screen in Nielsen Questions desktop,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Start,0.9973,0Xd1l00000001CuCAI,Get_Article,0.9811,what is the flash error,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9966,0Xd1l00000001CuCAI,Get_Article,0.9811,there is a chrome flash issue,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9966,0Xd1l00000001D2CAI,Escalation_Flow,0.9811,there is a chrome flash issue,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.3587,0Xd1l00000001DhCAI,Error_800004005,0.0438,why is there a 3004 error,business.nitro.error.800004005,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+,0.3587,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,why is there a 3004 error,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,what are the steps to add the schedule,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,#800004005 is showing,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,80040DC2 error is in Nitro,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,help for the undefined word error,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.8446,0Xd1l000000017fCAA,More_than_5,0.0125,Where's the rating for my market,business.product.more_than_5,Business,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,Tapscan
+Direct,1,0Xd1l00000001CtCAI,Password_Reset,0.5578,help me update the pass word,business.questions.password_reset,Business,d03c180d-7f54-46ec-b5df-345b0c596eea,,questions
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.8739,can't start ITO,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DpCAI,Disambig_Blank_Screen,0.718,only seeing a screen that is blank,business.blank_screen.disambig,Generic,11921193-5733-45f0-9707-7388b73b6607,,Disambiguation
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.2349,data does not seem current in Nielsen Interface to Office,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.2349,data does not seem current in Nielsen Interface to Office,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DPCAY,Item_Numbers,0.9733,I am receiving report missing item in Nielsen Questions Desktop,business.desktop.item_numbers,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9733,I am receiving report missing item in Nielsen Questions Desktop,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.5358,Npower text replaced with Flash,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.7192,Nielsen Error Message 10004,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,0.994,0Xd1l00000001DWCAY,Product_Access_Problem,0.8622,I am seeing Product error when opening project,business.product.access_problem,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,OneLight
+Direct,1,0Xd1l00000001DqCAI,Disambig_Schedule,0.5098,help with entering a spot,business.schedule.disambig,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,Disambiguation
+Direct,0.3589,0Xd1l00000001DhCAI,Error_800004005,0.0438,the error 10004 is occurring,business.nitro.error.800004005,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+Start,0.3589,0Xd1l00000001CuCAI,Get_Article,0.0438,the error 10004 is occurring,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9964,0Xd1l00000001CuCAI,Get_Article,0.6503,what is the 10004 error on Questions portal,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,how do I add schedule to the schedule,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9985,0Xd1l00000001DeCAI,Export_XML,0.9981,help me export a product schedule,business.product.export_xml,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+,,0Xd1l00000001ChCAI,Confused,,80040DC2 error is in Nitro,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,help for the undefined word error,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,there is an error when I refresh a database,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,I'm having trouble with my schedule,bot.fallback,Generic,aa2f5e23-31be-433b-b455-496fdae8c0f0,,
+Direct,1,0Xd1l00000001DjCAI,Error_55,0.967,I get error in Nitro ranges while modifying selections in Nitro Range,business.nitro.error.55,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nitro
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.967,I get error in Nitro ranges while modifying selections in Nitro Range,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.967,I get error in Nitro ranges while modifying selections in Nitro Range,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,1,0Xd1l00000001DLCAY,Error_8004ade9,0.8265,Unable to access database in AD,business.desktop.error.8004ade9,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+Direct,1,0Xd1l00000001DQCAY,Error_800a03ec,0.9858,getting 800a03ec error on Questions,business.desktop.error.800a03ec,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9858,getting 800a03ec error on Questions,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9858,getting 800a03ec error on Questions,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.7766,how to find OK button on Questions,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DTCAY,Secondary_Monitor,0.9822,cannot make selections on Nielsen,business.desktop.secondary_monitor,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+,,0Xd1l00000001ChCAI,Confused,,help with a schedule,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9986,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,"help ""Cannot open more than 5 research report groups""",bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,what is needed to find OK on Questions Desktop,bot.fallback,Generic,566e376d-1a33-4a83-8753-13245e55a729,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9733,I am receiving report missing item in Nielsen Questions Desktop,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,,0Xd1l00000001ChCAI,Confused,,doesn't work i'm getting an error,bot.fallback,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,,0Xd1l00000001D2CAI,Escalation_Flow,,doesn't work i'm getting an error,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DJCAY,Access_Issues,0.9488,issue accessing GTC,business.gtc.access_issues,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Global Track Complete
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9488,issue accessing GTC,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9704,I get 3004 issue when trying to run Questions on Demand report,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,0.4885,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,what is the 800004005 error mean,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,help me with the frequency/reach,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,1,0Xd1l00000001CsCAI,EVIP,0.9162,I need help with the latest VIP,business.questions.evip,Business,d03c180d-7f54-46ec-b5df-345b0c596eea,,questions
+Direct,1,0Xd1l00000001CkCAI,Questions_Portal,0.9499,access Nielsen Questions,business.questions.not_connecting.ie,Business,d03c180d-7f54-46ec-b5df-345b0c596eea,,questions
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.8265,Unable to access database in AD,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9822,cannot make selections on Nielsen,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DrCAI,Error,0.789,got an error,business.error.disambig,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,Disambiguation
+Direct,1,0Xd1l00000001DrCAI,Error,0.789,error,business.error.disambig,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,Disambiguation
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9392,Need help associating a dictionary,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,0.9964,0Xd1l00000001DnCAI,Error_3004,0.6503,what is the 10004 error on Questions portal,business.product.error.3004,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nielsen OnDemand
+,0.9041,0Xd1l00000001D2CAI,Escalation_Flow,0.6503,the error: 3004 on the Questions On Demand is showing,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9863,0Xd1l00000001DWCAY,Product_Access_Problem,0.9427,there is a Product error showing up,business.product.access_problem,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,OneLight
+Start,0.9863,0Xd1l00000001CuCAI,Get_Article,0.9427,there is a Product error showing up,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,there is an error opening the project,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.5395,0Xd1l00000001DZCAY,Research_Window,0.0149,how do I generate a report,business.product.research_window,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+Start,0.5395,0Xd1l00000001CuCAI,Get_Article,0.0149,how do I generate a report,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9974,0Xd1l00000001D2CAI,Escalation_Flow,0.0149,the research report window won't open,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,help me with the frequency/reach,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.7214,0Xd1l000000017fCAA,More_than_5,0.0125,I need help with the latest VIP,business.product.more_than_5,Business,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,Tapscan
+Start,0.7214,0Xd1l00000000BOCAY,Get_Article,0.0125,I need help with the latest VIP,bot.business_answer.presentation,Generic,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,
+Direct,1,0Xd1l00000001DNCAY,dbdate,0.2349,data does not seem current in Nielsen Interface to Office,business.desktop.dbdate,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+,,0Xd1l00000001ChCAI,Confused,,business.error.disambig,bot.fallback,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9488,issue accessing GTC,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,1,0Xd1l00000001DhCAI,Error_800004005,0.1169,I am facing Nitro Error 800004005,business.nitro.error.800004005,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nitro
+Direct,1,0Xd1l00000001DgCAI,Undefined_Word,0.9772,I receive undefined Word in command message,business.nitro.undefined_word,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nitro
+Direct,1,0Xd1l00000001DlCAI,Error_Flash,0.5358,Npower text replaced with Flash,business.npower.error.flash,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,NPOWER
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.5358,Npower text replaced with Flash,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Direct,1,0Xd1l00000001DnCAI,Error_3004,0.9704,I get 3004 issue when trying to run Questions on Demand report,business.product.error.3004,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nielsen OnDemand
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9704,I get 3004 issue when trying to run Questions on Demand report,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Start,0.994,0Xd1l00000001CuCAI,Get_Article,0.8622,I am seeing Product error when opening project,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,0.994,0Xd1l00000001D2CAI,Escalation_Flow,0.8622,I am seeing Product error when opening project,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,#800004005 is showing,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9989,0Xd1l00000001DiCAI,Error_80040dc2,0.997,error #80040dc2 did not open in database,business.nitro.error.80040dc2,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Nitro
+,0.9964,0Xd1l00000001D2CAI,Escalation_Flow,0.6503,what is the 10004 error on Questions portal,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.995,0Xd1l00000001DYCAY,More_than_5,0.9925,why can't I open more than 5 groups for product,business.product.more_than_5,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+,0.995,0Xd1l00000001D2CAI,Escalation_Flow,0.9925,why can't I open more than 5 groups for product,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.7961,0Xd1l000000017fCAA,More_than_5,0.0125,how do I find the VIP books,business.product.more_than_5,Business,3dec5993-21e1-497f-aac5-cad009458c5d,,Tapscan
+,0.8446,0Xd1l00000000C2CAI,Escalation_Flow,0.0125,Where's the rating for my market,bot.escalation,Generic,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,
+Start,0.9041,0Xd1l00000001CuCAI,Get_Article,0.6503,the error: 3004 on the Questions On Demand is showing,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,what are the steps to add the schedule,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,show me how to create a schedule,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.5395,0Xd1l00000001D2CAI,Escalation_Flow,0.0149,how do I generate a report,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,1,0Xd1l00000001DiCAI,Error_80040dc2,0.9139,"I see Error: ""80040dC2 database not opened"" when trying to select a database in Nitro",business.nitro.error.80040dc2,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nitro
+Direct,1,0Xd1l00000001DmCAI,Error_10004,0.7192,Nielsen Error Message 10004,business.product.error.10004,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nielsen OnDemand
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.7192,Nielsen Error Message 10004,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,0.8474,0Xd1l00000001D2CAI,Escalation_Flow,0.0438,error 55 on nitro page,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,10004 when rendering report,bot.fallback,Generic,7add94cf-e4a5-4bd5-98be-9834e24934c9,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,I want to figure out whether it is possible to add schedule to schedule,bot.offer_escalation,Generic,aa2f5e23-31be-433b-b455-496fdae8c0f0,,
+Direct,1,0Xd1l00000001DrCAI,Error,0.789,keep getting an error,business.error.disambig,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,Disambiguation
+,,0Xd1l00000001ChCAI,Confused,,800004005,bot.fallback,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,0.7214,0Xd1l00000000C2CAI,Escalation_Flow,0.0125,I need help with the latest VIP,bot.escalation,Generic,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9499,access Nielsen Questions,bot.escalation,Generic,d03c180d-7f54-46ec-b5df-345b0c596eea,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.8739,can't start ITO,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,0.9785,0Xd1l00000001DSCAY,Error_Switch_To,0.0523,receive error message switch to on Nielsen Questions Desktop,business.desktop.error.switch_to,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9822,cannot make selections on Nielsen,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DrCAI,Error,0.789,I was trying to use the application but got an error,business.error.disambig,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,Disambiguation
+,,0Xd1l00000001D2CAI,Escalation_Flow,,800004005,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Start,0.8446,0Xd1l00000000BOCAY,Get_Article,0.0125,Where's the rating for my market,bot.business_answer.presentation,Generic,4a34c5d4-c72a-4ad5-808e-5d00e79682ff,,
+Start,0.9989,0Xd1l00000001CuCAI,Get_Article,0.997,error #80040dc2 did not open in database,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,0.9989,0Xd1l00000001D2CAI,Escalation_Flow,0.997,error #80040dc2 did not open in database,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,there is an error opening the project,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,i am having an error creating a spot,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001D0CAI,Offer_to_Escalate,,show me how to create a schedule,bot.offer_escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Start,0.9986,0Xd1l00000001CuCAI,Get_Article,0.9925,"help ""Cannot open more than 5 research report groups""",bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+,,0Xd1l00000001ChCAI,Confused,,doesn't work i'm getting an error,bot.fallback,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.1169,I am facing Nitro Error 800004005,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,0.9973,0Xd1l00000001D2CAI,Escalation_Flow,0.9811,what is the flash error,bot.escalation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9966,0Xd1l00000001DlCAI,Error_Flash,0.9811,there is a chrome flash issue,business.npower.error.flash,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,NPOWER
+,,0Xd1l00000001ChCAI,Confused,,i am having an error creating a spot,bot.fallback,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,0.9977,0Xd1l00000001DcCAI,Cannot_Enter_Data,0.9966,can't enter Data on the tapascan web,business.product.cannot_enter_data,Business,e2d63897-989e-48ca-b2fe-113a0956db57,,Tapscan
+Start,0.9977,0Xd1l00000001CuCAI,Get_Article,0.9966,can't enter Data on the tapascan web,bot.business_answer.presentation,Generic,e2d63897-989e-48ca-b2fe-113a0956db57,,
+Direct,1,0Xd1l00000001DMCAY,Blank_Screen,0.9856,i see empty screen in Nielsen Questions desktop,business.desktop.blank_screen,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9856,i see empty screen in Nielsen Questions desktop,bot.escalation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DOCAY,Crash_On_Launch,0.8739,can't start ITO,business.desktop.crash_on_launch,Business,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,questions Desktop
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.8265,Unable to access database in AD,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.7766,how to find OK button on Questions,bot.business_answer.presentation,Generic,1d0b65cc-9d29-48db-b23f-2fc5980951ee,,
+Direct,1,0Xd1l00000001DkCAI,Dictionary,0.9392,Need help associating a dictionary,business.nitro.dictionary,Business,91d15761-c4dd-4daa-9a10-e159e4218606,,Nitro
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9392,Need help associating a dictionary,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9139,"I see Error: ""80040dC2 database not opened"" when trying to select a database in Nitro",bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9139,"I see Error: ""80040dC2 database not opened"" when trying to select a database in Nitro",bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+Start,1,0Xd1l00000001CuCAI,Get_Article,0.9772,I receive undefined Word in command message,bot.business_answer.presentation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,
+,1,0Xd1l00000001D2CAI,Escalation_Flow,0.9772,I receive undefined Word in command message,bot.escalation,Generic,91d15761-c4dd-4daa-9a10-e159e4218606,,

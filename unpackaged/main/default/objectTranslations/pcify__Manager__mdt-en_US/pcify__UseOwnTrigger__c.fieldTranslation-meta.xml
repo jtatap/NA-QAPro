@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If selected, PCIFY will not execute managed package triggers.  You will need to write your own custom trigger and call PCIFY managed classes. --></help>
+        <label><!-- Use Custom Trigger --></label>
+        <name>pcify__UseOwnTrigger__c</name>
+    </CustomFieldTranslation>

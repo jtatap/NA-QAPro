@@ -1,0 +1,20 @@
+<bot>
+    <botSteps>
+        <botInvocation>
+            <invocationActionName>ebotdata__BotChatLogSession</invocationActionName>
+            <invocationActionType>apex</invocationActionType>
+            <invocationMappings>
+                <parameterName>liveAgentSessionId</parameterName>
+                <type>Input</type>
+                <variableName>ChatKey</variableName>
+                <variableType>ContextVariable</variableType>
+            </invocationMappings>
+            <invocationMappings>
+                <parameterName>botName</parameterName>
+                <type>Input</type>
+                <value>&lt;Please Enter Your Bot Name&gt;</value>
+            </invocationMappings>
+        </botInvocation>
+        <type>Invocation</type>
+    </botSteps>
+</bot>

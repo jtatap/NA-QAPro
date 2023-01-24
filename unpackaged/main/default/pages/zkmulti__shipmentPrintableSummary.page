@@ -1,0 +1,98 @@
+<apex:page renderAs="pdf" standardController="zkmulti__MCShipment__c" standardStylesheets="false" extensions="zkmulti.ShipmentPrintableSummaryController">
+<!--   -->
+<head>
+</head>
+        
+    <!-- Shipment Number -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Shipment Number</b></div>
+        <span style="font-size:10pt;">{!Shipment.Name}</span><br/>
+    <br/>
+     
+    
+    <!-- Ship From/To -->
+    <table border="0" width="100%">
+      <tr>
+        <td>
+          <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>{!SenderSectionTitle}</b></div>
+            <span style="font-size:10pt;">{!Shipment.Sender_Name__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_Email__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_Company__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_Phone__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_Street__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_City__c}, {!Shipment.Sender_State_Province__c} {!Shipment.Sender_Zip_Postal_Code__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Sender_Country__c}</span><br/>
+        </td>
+        <td >
+          <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>{!RecipientSectionTitle}</b></div>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Name__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Email__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Company__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Phone__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Street__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_City__c}, {!Shipment.Recipient_State_Province__c} {!Shipment.Recipient_Zip_Postal_Code__c}</span><br/>
+            <span style="font-size:10pt;">{!Shipment.Recipient_Country__c}</span><br/>
+        </td>
+     </tr>
+    </table>
+    <br/>
+    
+    
+    <!-- Estimated Charges -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Estimated Charges</b></div>
+        <span style="font-size:10pt;">Total Base Charges: {!Shipment.TotalBaseCharge__c}</span> <br/>
+        <span style="font-size:10pt;">Total Net Charge: {!Shipment.TotalNetCharge__c}</span> <br/>
+    <br/>
+    
+    
+    <!-- Shipment Information -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Shipment Information</b> </div>
+        <span style="font-size:10pt;">Tracking Number: {!Shipment.Tracking_Number__c}</span> <br/>
+    <br/>
+    
+    
+    <!-- Package Information -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Package Information</b></div>
+        <span style="font-size:10pt;">Package Type: {!shipment.Package_Type__c}</span><br/>
+        <span style="font-size:10pt;">Number of Packages: {!NumberOfPackages}</span><br/> 
+        <span style="font-size:10pt;">Total Weight: {!TotalWeight}</span><br/>
+        <span style="font-size:10pt;">Total Declared Value: {!TotalDeclaredValue}</span><br/>
+    <br/>
+    
+    
+    <!-- Special Services -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Special Services</b></div>
+        <span style="font-size:10pt;">{!SpecialServicesList}</span><br/>
+    <br/>
+    
+    
+    <!-- Billing Information -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Billing Information</b></div>
+        <span style="font-size:10pt;">Bill Transportation To: {!shipment.Payment_Type__c}</span><br/>
+    <br/>
+    
+    <!-- Reference Information -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Shipment Reference Information</b></div>
+        <apex:outputPanel style="font-size:10pt;" rendered="{! shipment.Reference1_Value__c != null}">
+            {! shipment.Reference1_Type__c } : {! shipment.Reference1_Value__c}
+        </apex:outputPanel><br/>
+        <apex:outputPanel style="font-size:10pt;" rendered="{! shipment.Reference2_Value__c != null}">
+            {! shipment.Reference2_Type__c } : {! shipment.Reference2_Value__c}
+        </apex:outputPanel><br/>
+        <apex:outputPanel style="font-size:10pt;" rendered="{! shipment.Reference3_Value__c != null}">
+            {! shipment.Reference3_Type__c } : {! shipment.Reference3_Value__c}
+        </apex:outputPanel>       
+    <br/> 
+    
+    <!-- Shipment Notes -->
+    <div style="background-color:#644117; font-size:10pt; width:100%; color:#ffffff; padding:5px; margin:0px;"><b>Shipment Notes</b></div>
+        {!Shipment.Shipment_Notes__c}<br/>
+    <br/>
+    
+    <!-- disclaimer -->
+    <p style="color:gray; font-size:9pt;">
+      The estimated shipping charge may be different than the actual
+      charges for your shipment. Differences may occur based on actual 
+      weight, dimensions, and other factors. 
+    </p>
+
+</apex:page>

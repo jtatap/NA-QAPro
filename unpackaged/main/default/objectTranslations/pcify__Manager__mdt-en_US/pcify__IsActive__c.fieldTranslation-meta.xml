@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- To Activate, you MUST either install the PCIFY Extension Package for this object, or write your own Apex Trigger to call PCIFY Managed Classes.  Please contact PCIFY support for details. --></help>
+        <label><!-- IsActive --></label>
+        <name>pcify__IsActive__c</name>
+    </CustomFieldTranslation>

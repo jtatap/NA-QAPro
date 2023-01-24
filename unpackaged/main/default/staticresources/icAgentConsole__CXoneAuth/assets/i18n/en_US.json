@@ -1,0 +1,14 @@
+{
+    "ssoLoginInfo": "Login with your company's Single Sign On",
+    "ok": "OK",
+    "signIn": "Sign In",
+    "companySignIn": "Company Sign In",
+    "or": "or",
+    "centralLoginInfo": "Login with your username and password",
+    "usernameRequired": "Username is required",
+    "usernameIsNotValid": "Username is not valid",
+    "username": "Username",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "forgotPwd": "Forgot Password"
+}

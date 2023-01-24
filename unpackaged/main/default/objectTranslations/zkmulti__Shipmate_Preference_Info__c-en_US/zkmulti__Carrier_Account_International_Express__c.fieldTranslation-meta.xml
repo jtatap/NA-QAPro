@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Asendia Account International Express --></help>
+        <label><!-- Carrier Account International Express --></label>
+        <name>zkmulti__Carrier_Account_International_Express__c</name>
+    </CustomFieldTranslation>

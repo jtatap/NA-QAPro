@@ -1,0 +1,253 @@
+﻿@charset 'UTF-8';
+
+html body.sfdcBody {
+    padding: 0px !important;
+}
+
+.icAgentconsole .label-disable {
+    color: #9a9a9a;
+}
+
+.icAgentconsole .check-box {
+    position: absolute;
+    padding-top: 3px;
+}
+
+.icAgentconsole .sf-header {
+    margin-top: 6px;
+}
+
+.icAgentconsole .setting-icn {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    background-color: rgb(245, 246, 250);
+}
+
+.icAgentconsole .header {
+    margin-bottom: 78px;
+}
+
+    .icAgentconsole .header .floating {
+        margin-bottom: 2px;
+        background: #f5f6fa;
+        height: 72px;
+        padding: 0px 15px 0px 10px;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        top: 0px;
+    }
+
+.icAgentconsole .title {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    .icAgentconsole .title .primary {
+        font-size: 18px;
+    }
+
+    .icAgentconsole .title .secondary {
+        font-size: 12px;
+    }
+
+.icAgentconsole .config-action {
+    padding-top: 28px;
+    padding-right: 20px;
+    float: right;
+}
+
+.icAgentconsole .entity-table, .icAgentconsole .border-space {
+    margin-top: 12px;
+    margin-bottom: 2%;
+    border: 1px solid #d7d7d7;
+}
+
+    .icAgentconsole .entity-table tr {
+        height: 50px;
+    }
+
+.icAgentconsole .check-box {
+    padding-top: 0px;
+}
+
+.icAgentconsole .header .title-panel .config-action {
+    margin: 0 auto;
+}
+
+.icAgentconsole .remove-border {
+    border: none !important;
+    border-color: transparent !important;
+    border-style: none !important;
+    background: #ffffff !important;
+}
+
+.icAgentconsole .message-panel {
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    margin-top: 80px;
+}
+
+    .icAgentconsole .message-panel .msg-container {
+        width: 94%;
+        margin: 0 auto;
+        padding-left: 1%;
+        text-align: center;
+    }
+
+    .icAgentconsole .message-panel .confirm {
+        background-color: #04844b;
+        color: #ffffff;
+    }
+
+    .icAgentconsole .message-panel .error, .icAgentconsole .message-panel .fatal {
+        background-color: #c23934;
+        color: #ffffff;
+    }
+
+    .icAgentconsole .message-panel .info {
+        background-color: #54698d;
+        color: #ffffff;
+    }
+
+    .icAgentconsole .message-panel .warning {
+        background-color: #ffb75d;
+        color: #16325c;
+    }
+
+
+    .icAgentconsole .message-panel .msg-container .confirm {
+        background-image: url("../images/lightning/confirm.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    .icAgentconsole .message-panel .msg-container .error, .icAgentconsole .message-panel .msg-container .fatal {
+        background-image: url("../images/lightning/error.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    .icAgentconsole .message-panel .msg-container .info {
+        background-image: url("../images/lightning/info.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    .icAgentconsole .message-panel .msg-container .warning {
+        background-image: url("../images/lightning/warning.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+.icAgentconsole .content {
+    padding: 10px 20px 0 20px;
+}
+
+.icAgentconsole .slds-icon-standard-account {
+    background-color: rgb(127, 141, 225);
+}
+
+.icAgentconsole .info-panel {
+    background: #54698d;
+    border: none;
+    border-radius: 0px;
+}
+
+    .icAgentconsole .info-panel td {
+        color: #ffffff !important;
+    }
+
+        .icAgentconsole .info-panel td img {
+            width: 50px;
+            height: 25px;
+            background: transparent;
+        }
+
+
+.icAgentconsole .selectCodes {
+    width: 96%;
+}
+
+.icAgentconsole .close_icn {
+    padding: 7px;
+    float: right;
+    cursor: pointer;
+}
+
+.icAgentconsole .agentSyncStateUn .slds-form-element__row {
+    width: 80%;
+}
+
+.icAgentconsole .agentSyncStateUn .slds-form-element__row select {
+    width: 100%;
+}
+
+.icAgentconsole .agentSyncStateUn .codesList {
+    width: 35%;
+}
+
+.icAgentconsole .agentSyncStateUn .mapsTo {
+    width: 15%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+.icAgentconsole .addPresenceMappingBtn {
+    margin-left: 5px;
+}
+
+.icAgentconsole .addPresenceMappingBtn img {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    width: 17px;
+    vertical-align: middle;
+}
+
+.icAgentconsole .presence-mapping-table {
+    margin-top: 5px;
+    width: 82%;
+    max-width: 830px;
+}
+
+.icAgentconsole .presence-mapping-table .remove-mapping-btn {
+    padding-left: 2%;
+    width: 15%;
+}
+
+.icAgentconsole .agentSyncStateUn .codesList .slds-form-element__row {
+    width: 96%;
+}
+
+.icAgentconsole .cxone-routing {
+    padding: 10px;
+}
+
+.icAgentconsole .cxone-routing .slds-form-element__row {
+    padding-top: 10px;
+}
+
+.icAgentconsole .cxone-routing .slds-form-element__row .toggle-pwd-icon {
+    background-image: url(../images/ico_visible_norm.png);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 6px;
+    bottom: 6px;
+}
+
+.icAgentconsole .cxone-routing .slds-form-element__row .toggle-pwd-icon.show-pwd {
+    background-image: url(../images/ico_invisible_norm.png);
+}
+
+.icAgentconsole .cxone-routing .slds-form-element .enable-cxone-routing {
+    font-weight: bold;
+}

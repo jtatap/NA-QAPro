@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Time difference from when the e-bot call to action is clicked and the e-bot accepts the chat request --></help>
+        <label><!-- Bot Invocation Time --></label>
+        <name>ebotdata__Bot_Invocation_Time__c</name>
+    </CustomFieldTranslation>

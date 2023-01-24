@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- if multiple, different hazmat/chemicals are contained within one box in a package --></help>
+        <label><!-- All Packed HazMat In One Package --></label>
+        <name>zkmulti__AllPackedHaZmatInOnePackage__c</name>
+    </CustomFieldTranslation>

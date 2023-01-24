@@ -1,0 +1,23 @@
+<apex:page standardController="zkmulti__MCCustom_Address_Source_Package__c" tabStyle="zkmulti__MCCustom_Address_Source_Package__c" extensions="zkmulti.CustomAddressSourcePackageCtrl" lightningStylesheets="true" standardStylesheets="false" action="{! init }" docType="html-5.0">	
+<apex:slds />
+	<!-- Form -->
+    <apex:form >
+    
+		<apex:commandLink action="{!cancel}" value="Back to Previous Page"/>
+		
+		<apex:pageBlock mode="detail">
+		
+			<!-- pageBlockButtons -->
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            
+            <!--  Info Message -->
+			<apex:pageMessage title="Info:" summary="Custom Address Source Package records cannot be created due to the complexities involved during creation. If you would like to create the record, it is recommended you edit corresponding Custom Address Source object." severity="info" strength="1" rendered="{! MCCustom_Address_Source_Package__c.Id == null }"/>
+
+			<apex:pageMessage title="Info:" summary="Custom Address Source Package records cannot be edited due to the complexities involved during creation. If you would like to edit the record, it is recommended you edit corresponding Custom Address Source object." severity="info" strength="1" rendered="{! MCCustom_Address_Source_Package__c.Id != null }"/>
+			
+		</apex:pageBlock>
+	
+	</apex:form>
+</apex:page>

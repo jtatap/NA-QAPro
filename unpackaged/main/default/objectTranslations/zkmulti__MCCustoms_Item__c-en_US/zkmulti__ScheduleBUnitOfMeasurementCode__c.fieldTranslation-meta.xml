@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Schedule B Unit Of Measurement --></label>
+        <name>zkmulti__ScheduleBUnitOfMeasurementCode__c</name>
+        <picklistValues>
+            <masterLabel>Barrels</masterLabel>
+            <translation><!-- Barrels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carat</masterLabel>
+            <translation><!-- Carat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clean Yield Kilogram</masterLabel>
+            <translation><!-- Clean Yield Kilogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Kilogram</masterLabel>
+            <translation><!-- Content Kilogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Ton</masterLabel>
+            <translation><!-- Content Ton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cubic Meters</masterLabel>
+            <translation><!-- Cubic Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curie</masterLabel>
+            <translation><!-- Curie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dozen</masterLabel>
+            <translation><!-- Dozen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dozen Pairs</masterLabel>
+            <translation><!-- Dozen Pairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dozen Pieces</masterLabel>
+            <translation><!-- Dozen Pieces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiber Meter</masterLabel>
+            <translation><!-- Fiber Meter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gram</masterLabel>
+            <translation><!-- Gram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gross</masterLabel>
+            <translation><!-- Gross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gross Containers</masterLabel>
+            <translation><!-- Gross Containers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hundred</masterLabel>
+            <translation><!-- Hundred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilogram</masterLabel>
+            <translation><!-- Kilogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilogram Total Sugars</masterLabel>
+            <translation><!-- Kilogram Total Sugars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liter</masterLabel>
+            <translation><!-- Liter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meter</masterLabel>
+            <translation><!-- Meter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millicurie</masterLabel>
+            <translation><!-- Millicurie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Quantity required</masterLabel>
+            <translation><!-- No Quantity required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pack</masterLabel>
+            <translation><!-- Pack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pairs</masterLabel>
+            <translation><!-- Pairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pieces</masterLabel>
+            <translation><!-- Pieces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof Liter</masterLabel>
+            <translation><!-- Proof Liter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Running Bales</masterLabel>
+            <translation><!-- Running Bales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square</masterLabel>
+            <translation><!-- Square --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Centimeters</masterLabel>
+            <translation><!-- Square Centimeters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Meters</masterLabel>
+            <translation><!-- Square Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thousand Cubic Meters</masterLabel>
+            <translation><!-- Thousand Cubic Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thousands</masterLabel>
+            <translation><!-- Thousands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ton</masterLabel>
+            <translation><!-- Ton --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

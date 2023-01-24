@@ -1,0 +1,7 @@
+{
+    "usernameRequired": "Le nom d'utilisateur est requis",
+    "usernameIsNotValid": "Le nom d'utilisateur n'est pas valide",
+    "username": "Nombre de usuario",
+    "password": "Mot de passe",
+    "signIn": "Ouvrir la Session"
+}

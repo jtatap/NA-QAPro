@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enable scanning of PDF and TIFF attachments and files via OCR API --></help>
+        <label><!-- Enable Files API --></label>
+        <name>pcifyfiles__EnableFilesAPI__c</name>
+    </CustomFieldTranslation>

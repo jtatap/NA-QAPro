@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tracking Stage --></label>
+        <name>zkmulti__Tracking_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Transit</masterLabel>
+            <translation><!-- In Transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation><!-- Out for Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picked Up</masterLabel>
+            <translation><!-- Picked Up --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

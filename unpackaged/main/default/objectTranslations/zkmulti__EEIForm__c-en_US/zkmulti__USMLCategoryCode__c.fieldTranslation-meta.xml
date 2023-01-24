@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Digit numeric code (e.g. 01-18, 20 or 21). Indicates the U.S. Munitions List (USML) category article, service or related technical data as it applies to the article reported. --></help>
+        <label><!-- USML Category Code --></label>
+        <name>zkmulti__USMLCategoryCode__c</name>
+    </CustomFieldTranslation>

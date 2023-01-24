@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__IsActive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If unchecked this DetectionPattern will not be used to match credit card numbers or other PII.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If unchecked this DetectionPattern will not be used to match credit card numbers or other PII.</inlineHelpText>
+    <label>IsActive</label>
+    <type>Checkbox</type>
+</CustomField>

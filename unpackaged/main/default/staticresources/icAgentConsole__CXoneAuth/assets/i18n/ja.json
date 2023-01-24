@@ -1,0 +1,7 @@
+{
+    "usernameRequired": "ユーザ名は必須です",
+    "usernameIsNotValid": "ユーザーネームが無効です",
+    "username": "ユーザ名",
+    "password": "パスワード",
+    "signIn": "サインイン"
+}

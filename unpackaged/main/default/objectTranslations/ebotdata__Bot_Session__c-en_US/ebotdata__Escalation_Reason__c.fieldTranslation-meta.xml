@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Escalation Reason --></label>
+        <name>ebotdata__Escalation_Reason__c</name>
+        <picklistValues>
+            <masterLabel>By Design</masterLabel>
+            <translation><!-- By Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not By Design</masterLabel>
+            <translation><!-- Not By Design --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

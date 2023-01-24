@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Presence/Absent indicator. Certification by the U.S. exporter that the exporter is an eligible party to participate in the defense trade --></help>
+        <label><!-- Eligible Party --></label>
+        <name>zkmulti__EligibleParty__c</name>
+    </CustomFieldTranslation>

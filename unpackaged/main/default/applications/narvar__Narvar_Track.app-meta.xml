@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>narvar__Details</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>narvar__X35695749e488671b1eafe52f30be66ced0e</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Tracking status look-up and incident help for customer service agents.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Narvar Track</label>
+    <navType>Standard</navType>
+    <tabs>standard-Case</tabs>
+    <tabs>narvar__Narvar_Incident__c</tabs>
+    <tabs>narvar__Narvar_Setup_VF</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>narvar__Narvar_Track_UtilityBar</utilityBar>
+</CustomApplication>

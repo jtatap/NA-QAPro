@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The export monetary amount allowed per license. Required for a licensable product when the EEI form is selected --></help>
+        <label><!-- License Line Value --></label>
+        <name>zkmulti__LicenseLineValue__c</name>
+    </CustomFieldTranslation>

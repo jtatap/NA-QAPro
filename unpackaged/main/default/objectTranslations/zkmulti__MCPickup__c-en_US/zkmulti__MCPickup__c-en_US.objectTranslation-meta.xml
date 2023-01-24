@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Multi Carrier Pickup Layout</layout>
+        <sections>
+            <label><!-- Charges --></label>
+            <section>Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Packages --></label>
+            <section>Packages</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Reference Number --></label>
+            <section>Payment and Reference Number</section>
+        </sections>
+        <sections>
+            <label><!-- Pickup Date and Time --></label>
+            <section>Pickup Date and Time</section>
+        </sections>
+        <sections>
+            <label><!-- Pickup Information &amp; Location --></label>
+            <section>Pickup Information &amp; Location</section>
+        </sections>
+        <sections>
+            <label><!-- Special Information --></label>
+            <section>Special Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Cancel_Pickup --></label>
+        <name>zkmulti__Cancel_Pickup</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Check_Pickup_Status --></label>
+        <name>zkmulti__Check_Pickup_Status</name>
+    </webLinks>
+</CustomObjectTranslation>

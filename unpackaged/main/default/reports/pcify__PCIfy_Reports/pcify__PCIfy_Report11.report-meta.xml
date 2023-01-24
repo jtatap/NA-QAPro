@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Summary__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Category__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Timestamp__c</field>
+    </columns>
+    <columns>
+        <field>pcify__Log__c.pcify__Record__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>pcify__Log__c.pcify__CreditCardsDetected__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>pcify__Log__c.pcify__Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Record Masked</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>pcify__Log__c.pcify__Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Record Reported</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>pcify__Log__c.pcify__Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Record Deleted</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>pcify__Log__c.pcify__Object__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PCIFY Cards Detected Today</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$pcify__Log__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

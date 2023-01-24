@@ -1,0 +1,102 @@
+﻿@charset 'UTF-8';
+
+.icAgentconsole .loginPanel {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.icAgentconsole .loginContainer .errormessage {
+    position: absolute;
+}
+
+.icAgentconsole .slds-form-element {
+    padding: 2%;
+}
+
+.icAgentconsole .slds-form-element__label {
+    padding-top: 1%;
+    display: block;
+    padding-bottom: 1%;
+    float: left;
+    width: 100px;
+}
+
+.icAgentconsole .loginBtn {
+    margin: 2% auto;
+    width: 80px;
+    height: 25px;
+}
+
+.icAgentconsole .loginContainer .header .title-panel {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.icAgentconsole .loginContainer .content {
+    padding: 40px 0px 20px 40px;
+}
+
+.icAgentconsole .loginContainer .header {
+    margin-top: 60px;
+    margin-bottom: 0px !important;
+}
+
+.icAgentconsole .loginContainer .alertIconClassic {
+    height: 20px;
+    width: 20px;
+}
+
+.icAgentconsole .loginContainer .message {
+    margin-bottom: 6px;
+}
+
+.icAgentconsole .message-panel .msg-container {
+    width: 96%;
+    margin: 0 auto;
+    padding-left: 1%;
+    text-align: left;
+}
+
+    .icAgentconsole .loginContainer .message-panel .msg-container h2 img {
+        padding-top: 0px;
+    }
+
+    .icAgentconsole .message-panel .msg-container h2 {
+        font-weight: normal;
+    }
+
+        .icAgentconsole .message-panel .msg-container h2 .messageTxt {
+            position: absolute;
+        }
+
+        .icAgentconsole .loginContainer .message-panel .msg-container h2 span {
+            padding-top: 4px;
+            padding-left: 7px;
+        }
+
+.icAgentconsole .message-panel .error, .icAgentconsole .message-panel .fatal {
+    background-color: rgb(255, 255, 204);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #C00;
+    padding: 1px;
+}
+
+.icAgentconsole .loginContainer .message-panel .msg-container .error, .icAgentconsole .message-panel .msg-container .fatal {
+    background-image: url("../images/error.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.icAgentconsole .close_icn {
+    padding: 7px;
+    float: right;
+    cursor: pointer;
+}
+
+.icAgentconsole .loginContainer .message-panel .msg-container {
+    padding: 5px;
+}

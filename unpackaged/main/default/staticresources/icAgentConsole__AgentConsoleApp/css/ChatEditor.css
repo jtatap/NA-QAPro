@@ -1,0 +1,33 @@
+﻿p {
+    margin: 2px !important;
+}
+
+body {
+    padding: 0px !important;
+    margin: 2px;
+    font-size: 8pt;
+    overflow-y: scroll;
+    height: 46px;
+    min-height: 46px !important;
+    background-color: white;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.mce-container-body mce-flow-layout {
+    margin-right: -2px;
+}
+
+.messageDiv p {
+    margin: 0px;
+}
+
+.chatlink {
+    height: 25px;
+    margin-top: -5px;
+}
+
+a {
+    color: -webkit-link !important;
+    text-decoration: underline !important;
+}

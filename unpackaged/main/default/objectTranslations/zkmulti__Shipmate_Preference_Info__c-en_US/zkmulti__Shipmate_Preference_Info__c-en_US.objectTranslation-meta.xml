@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Shipment Parameter Layout</layout>
+        <sections>
+            <label><!-- Amazon MWS --></label>
+            <section>Amazon MWS</section>
+        </sections>
+        <sections>
+            <label><!-- CDL --></label>
+            <section>CDL</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Endicia Preference --></label>
+            <section>Endicia Preference</section>
+        </sections>
+        <sections>
+            <label><!-- FTP Location --></label>
+            <section>FTP Location</section>
+        </sections>
+        <sections>
+            <label><!-- FedEx Options --></label>
+            <section>FedEx Options</section>
+        </sections>
+        <sections>
+            <label><!-- FedEx SmartPost --></label>
+            <section>FedEx SmartPost</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

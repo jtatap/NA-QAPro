@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Shipment Info Layout</layout>
+        <sections>
+            <label><!-- Alternate Address --></label>
+            <section>Alternate Address</section>
+        </sections>
+        <sections>
+            <label><!-- Bill Duties/Taxes To --></label>
+            <section>Bill Duties/Taxes To</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DateTimes --></label>
+            <section>DateTimes</section>
+        </sections>
+        <sections>
+            <label><!-- Freight --></label>
+            <section>Freight</section>
+        </sections>
+        <sections>
+            <label><!-- Freight Density Information --></label>
+            <section>Freight Density Information</section>
+        </sections>
+        <sections>
+            <label><!-- International Information --></label>
+            <section>International Information</section>
+        </sections>
+        <sections>
+            <label><!-- Label Information --></label>
+            <section>Label Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Package Informartion --></label>
+            <section>Package Informartion</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Identification Number (TIN) Information --></label>
+            <section>Tax Identification Number (TIN) Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tracking Information --></label>
+            <section>Tracking Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

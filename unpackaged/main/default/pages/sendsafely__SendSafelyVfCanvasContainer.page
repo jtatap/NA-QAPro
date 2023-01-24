@@ -1,0 +1,15 @@
+<apex:page showHeader="false" standardController="Case">
+
+<script>
+    function handleCanvasError (){
+        //console.log("Canvas VF Page - Canvas app failed to load");
+    }
+    
+    function handleCanvasLoad (){
+        //console.log("Canvas VF Page - Canvas app loaded");
+    }
+</script>
+    
+<apex:canvasApp applicationName="SendSafely Canvas Application" namespacePrefix="sendsafely" width="100%" height="200px" scrolling="no" onCanvasAppError="handleCanvasError()" onCanvasAppLoad="handleCanvasLoad()"/>
+
+</apex:page>

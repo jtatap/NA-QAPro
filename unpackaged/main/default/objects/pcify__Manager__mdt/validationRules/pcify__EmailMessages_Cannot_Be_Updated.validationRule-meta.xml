@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pcify__EmailMessages_Cannot_Be_Updated</fullName>
+    <active>true</active>
+    <description>You can only Report or Delete EmailMessages after they have been created. Update is supported only on EmailMessages whose Status is Draft or before they have been created.</description>
+    <errorConditionFormula>MasterLabel = &#39;EmailMessage&#39; 
+&amp;&amp; ISPICKVAL(pcify__AuditAction__c, &#39;Update&#39;)</errorConditionFormula>
+    <errorDisplayField>pcify__AuditAction__c</errorDisplayField>
+    <errorMessage>You can only Report or Delete EmailMessages after they have been created. Update is supported only on EmailMessages whose Status is Draft or before they have been created.</errorMessage>
+</ValidationRule>
