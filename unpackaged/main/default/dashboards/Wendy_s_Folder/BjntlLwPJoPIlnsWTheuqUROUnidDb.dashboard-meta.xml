@@ -355,7 +355,7 @@
                 </groupingSortProperties>
                 <header>Outbound Emails by Hour</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Copy_of_Agent_Emails_Sent_Hourly_Today</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_Agent_Emails_Sent_Hourly_Today</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -432,7 +432,7 @@
                 </groupingSortProperties>
                 <header>True Case Productivity</header>
                 <legendPosition>Right</legendPosition>
-                <report>TRUE_Dashboard/TRUE_Case_Completion_by_State</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/TRUE_Case_Completion_by_State</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -590,7 +590,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>TRUE Case Completion</header>
-                <report>TRUE_Dashboard/TRUE_Case_Completion_by_State</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/TRUE_Case_Completion_by_State</report>
                 <title>Cases moved to a new Status</title>
             </dashboardComponent>
             <rowIndex>38</rowIndex>
@@ -665,7 +665,7 @@
                 </groupingSortProperties>
                 <header>TRUE Outbound Emails by Hour</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/TRUE_Agent_Email_Sent_by_Hour_Today</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/TRUE_Agent_Email_Sent_by_Hour_Today</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

@@ -296,7 +296,7 @@
                 <header>Level Three Reason Codes</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>5</maxValuesDisplayed>
-                <report>PVH_Reason_Code_Reports/Level_Three_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_Three_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -592,7 +592,7 @@
                 </groupingSortProperties>
                 <header>Orders: Shipping</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Level_Three/Orders_Shipping</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_Three/Orders_Shipping</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>

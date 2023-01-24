@@ -138,7 +138,7 @@
                 <indicatorLowColor>#008080</indicatorLowColor>
                 <indicatorMiddleColor>#008080</indicatorMiddleColor>
                 <metricLabel>Opens</metricLabel>
-                <report>Daily_KPI_Dashboard/zQueue_Opens</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/zQueue_Opens</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -251,7 +251,7 @@
                 </groupingSortProperties>
                 <header>Outbound Emails by the Hour</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Copy_of_Agent_Emails_Sent_Hourly_Today</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_Agent_Emails_Sent_Hourly_Today</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -280,7 +280,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>Opens</metricLabel>
-                <report>Daily_KPI_Dashboard/TRUE_zQueue_Opens</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/TRUE_zQueue_Opens</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
@@ -574,7 +574,7 @@
                 </groupingSortProperties>
                 <header>Chat Bouncebacks (Today)</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Copy_of_Chat_Bouncebacks</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_Chat_Bouncebacks</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>

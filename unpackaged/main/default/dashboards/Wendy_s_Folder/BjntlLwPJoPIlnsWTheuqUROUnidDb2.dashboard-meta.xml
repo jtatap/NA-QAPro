@@ -117,7 +117,7 @@
                 </groupingSortProperties>
                 <header>Outbound Emails</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/Email_Activity_by_Agent_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_Activity_by_Agent_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -359,7 +359,7 @@
                 </groupingSortProperties>
                 <header>Outbound Emails by Hour</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Agent_Email_Sent_by_Hour_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Agent_Email_Sent_by_Hour_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -395,7 +395,7 @@
                 </groupingSortProperties>
                 <header>True Work Day</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -436,7 +436,7 @@
                 </groupingSortProperties>
                 <header>True Case Productivity</header>
                 <legendPosition>Right</legendPosition>
-                <report>TRUE_Dashboard/True_Case_Productivity_Yesterday</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Case_Productivity_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -472,7 +472,7 @@
                 </groupingSortProperties>
                 <header>True Outbound Emails</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>TRUE_Dashboard/True_Outbound_Emails_Yesterday</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Outbound_Emails_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -500,7 +500,7 @@
                 <indicatorHighColor>#C23734</indicatorHighColor>
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>38</rowIndex>
@@ -569,7 +569,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>True Case Productivity</header>
-                <report>TRUE_Dashboard/True_Case_Productivity_Yesterday</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Case_Productivity_Yesterday</report>
                 <title>Cases moved to a new Status</title>
             </dashboardComponent>
             <rowIndex>38</rowIndex>
@@ -614,7 +614,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>True Work Day</header>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
             </dashboardComponent>
             <rowIndex>42</rowIndex>
             <rowSpan>10</rowSpan>
@@ -651,7 +651,7 @@
                 </groupingSortProperties>
                 <header>True Outbound Emails by Hour</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/TRUE_Agent_Email_Sent_by_Hour_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/TRUE_Agent_Email_Sent_by_Hour_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

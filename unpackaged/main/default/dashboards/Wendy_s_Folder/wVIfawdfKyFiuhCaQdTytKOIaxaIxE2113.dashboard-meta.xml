@@ -123,7 +123,7 @@
                 </groupingSortProperties>
                 <header>All Retail Reason Codes</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/All_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/All_Retail_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -166,7 +166,7 @@
                 </groupingSortProperties>
                 <header>Calvin Klein Retail</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/Calvin_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Calvin_Retail_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -209,7 +209,7 @@
                 </groupingSortProperties>
                 <header>Tommy Hilfiger Retail</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/Tommy_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Tommy_Retail_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -252,7 +252,7 @@
                 </groupingSortProperties>
                 <header>Van Heusen Retail</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/Van_Heusen_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Van_Heusen_Retail_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -301,7 +301,7 @@
                 </groupingSortProperties>
                 <header>All Retail- Level Two Reason Codes</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>PVH_Reason_Code_Reports/All_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/All_Retail_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -349,7 +349,7 @@
                 </groupingSortProperties>
                 <header>Calvin Retail- Level Two</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>PVH_Reason_Code_Reports/Calvin_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Calvin_Retail_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -397,7 +397,7 @@
                 </groupingSortProperties>
                 <header>Tommy Hilfiger- Level Two</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>PVH_Reason_Code_Reports/Tommy_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Tommy_Retail_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -445,7 +445,7 @@
                 </groupingSortProperties>
                 <header>Van Heusen- Level Two</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>PVH_Reason_Code_Reports/Van_Heusen_Retail_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Van_Heusen_Retail_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

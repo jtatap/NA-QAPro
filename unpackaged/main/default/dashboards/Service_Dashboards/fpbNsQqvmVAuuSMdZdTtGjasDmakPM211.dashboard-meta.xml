@@ -52,7 +52,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>w/Email Message Date</metricLabel>
-                <report>Daily_KPI_Dashboard/Email_Activity_by_Agent</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_Activity_by_Agent</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -225,7 +225,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Agent (Today)</header>
-                <report>Daily_KPI_Dashboard/Email_AHT</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_AHT</report>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>
@@ -257,7 +257,7 @@
                 </groupingSortProperties>
                 <header>Email Activity by Agent</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/Email_Activity_by_Agent</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_Activity_by_Agent</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -299,7 +299,7 @@
                 </groupingSortProperties>
                 <header>Work Day Effort by Agent</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/Work_Day_Effort_by_Agent</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Work_Day_Effort_by_Agent</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>

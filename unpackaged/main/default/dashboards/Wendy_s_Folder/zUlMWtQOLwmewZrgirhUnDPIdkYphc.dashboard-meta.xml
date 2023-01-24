@@ -65,7 +65,7 @@
                 <indicatorHighColor>#007575</indicatorHighColor>
                 <indicatorLowColor>#007575</indicatorLowColor>
                 <indicatorMiddleColor>#007575</indicatorMiddleColor>
-                <report>TRUE_Dashboard/TRUE_New_Case_Count</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/TRUE_New_Case_Count</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -102,7 +102,7 @@
                 </groupingSortProperties>
                 <header>New Email Backlog</header>
                 <legendPosition>Right</legendPosition>
-                <report>TRUE_Dashboard/TRUE_New_Case_Count</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/TRUE_New_Case_Count</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -167,7 +167,7 @@
                 <indicatorHighColor>#007570</indicatorHighColor>
                 <indicatorLowColor>#007575</indicatorLowColor>
                 <indicatorMiddleColor>#007575</indicatorMiddleColor>
-                <report>TRUE_Dashboard/True_Cases_with_Email_Activity_Today</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity_Today</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
@@ -244,7 +244,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>TRUE Email AHT- Today</header>
-                <report>Daily_KPI_Dashboard/TRUE_Aeon2_AHT</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/TRUE_Aeon2_AHT</report>
             </dashboardComponent>
             <rowIndex>10</rowIndex>
             <rowSpan>9</rowSpan>
@@ -330,7 +330,7 @@
                 </groupingSortProperties>
                 <header>Work Day Effort by Agent (Today)</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Effort_by_Agent</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Effort_by_Agent</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>

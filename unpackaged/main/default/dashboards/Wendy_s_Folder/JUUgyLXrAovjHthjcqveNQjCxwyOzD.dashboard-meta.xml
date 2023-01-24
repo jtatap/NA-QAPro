@@ -307,7 +307,7 @@
                 </groupingSortProperties>
                 <header>TRUE Outbound Emails by Day</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
+                <report>TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -364,7 +364,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Outbound Emails by Agent</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
+                <report>TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
                 <title>(Last 7 Days)</title>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -391,7 +391,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
+                <report>TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>12</rowIndex>

@@ -162,7 +162,7 @@
                 </groupingSortProperties>
                 <header>Calvin Klein</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/Calvin_eComm_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Calvin_eComm_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -205,7 +205,7 @@
                 </groupingSortProperties>
                 <header>Heritage</header>
                 <legendPosition>Right</legendPosition>
-                <report>PVH_Reason_Code_Reports/Heritage_eComm_Reason_Codes</report>
+                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Heritage_eComm_Reason_Codes</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>

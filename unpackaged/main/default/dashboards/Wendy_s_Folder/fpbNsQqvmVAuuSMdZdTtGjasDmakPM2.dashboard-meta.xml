@@ -27,7 +27,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>w/Case Last Modified Date</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Resolved_Cases1</report>
+                <report>Daily_KPI_Dashboard/Resolved_Cases1</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -85,7 +85,7 @@
                 </groupingSortProperties>
                 <header>Resolved Cases (Today)</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Resolved_Cases_Today</report>
+                <report>Daily_KPI_Dashboard/Resolved_Cases_Today</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -135,7 +135,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Full Resolution Time (Fiscal Week)</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_Resolution_Time</report>
+                <report>Daily_KPI_Dashboard/Copy_of_Resolution_Time</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>8</rowSpan>
@@ -159,7 +159,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>All Time</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/zQueue_Opens</report>
+                <report>Daily_KPI_Dashboard/zQueue_Opens</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -185,7 +185,7 @@
                 <indicatorLowColor>#008080</indicatorLowColor>
                 <indicatorMiddleColor>#008080</indicatorMiddleColor>
                 <metricLabel>Fiscal Week</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_First_Reply_Time</report>
+                <report>Daily_KPI_Dashboard/Copy_of_First_Reply_Time</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -304,7 +304,7 @@
                 </groupingSortProperties>
                 <header>Agent Case Work (Today)</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Case_Status_Today</report>
+                <report>Daily_KPI_Dashboard/Case_Status_Today</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -346,7 +346,7 @@
                 </groupingSortProperties>
                 <header>Agent zQueue</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/zQueue_Opens</report>
+                <report>Daily_KPI_Dashboard/zQueue_Opens</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -388,7 +388,7 @@
                 </groupingSortProperties>
                 <header>Agent zQueue</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/zQueue_Opens</report>
+                <report>Daily_KPI_Dashboard/zQueue_Opens</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

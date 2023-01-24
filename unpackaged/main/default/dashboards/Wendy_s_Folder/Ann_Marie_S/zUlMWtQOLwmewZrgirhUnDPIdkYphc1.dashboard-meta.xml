@@ -36,7 +36,7 @@
                 <header>Backlog Status</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>TRUE_Dashboard/True_Backlog_Status</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Backlog_Status</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -137,7 +137,7 @@
                 </groupingSortProperties>
                 <header>Outbound Emails by Day</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -200,7 +200,7 @@
                 </groupingSortProperties>
                 <header>Cases placed into Resolved (Today)</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/True_Resolved_Cases_Today</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Resolved_Cases_Today</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -292,7 +292,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email Outbound (Last 7 Days)</header>
-                <report>TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/True_Cases_with_Email_Activity1</report>
                 <title>w/ Email Message Date</title>
             </dashboardComponent>
             <rowIndex>10</rowIndex>
@@ -371,7 +371,7 @@
                 </groupingSortProperties>
                 <header>True Work Day Report- Yesterday</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Report_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>

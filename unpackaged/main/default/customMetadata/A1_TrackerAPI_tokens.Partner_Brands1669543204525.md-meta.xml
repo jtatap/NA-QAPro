@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>access_key__c</field>
-        <value xsi:type="xsd:string">$2a$10$/EEFBAYnNs6P5ilI3036pOzJygdc4Kn9rj3D8ZxIrUVCKS1EpvLRK</value>
+        <value xsi:type="xsd:string">$2a$10$DSNf46Ls888Ns6cWQQwXDuMvzQw3a1Msa/GqLMRgccX4TavNbVGtS</value>
     </values>
     <values>
         <field>access_token__c</field>
@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>key_expires_at__c</field>
-        <value xsi:type="xsd:dateTime">2023-01-24T08:00:07.000Z</value>
+        <value xsi:type="xsd:dateTime">2023-01-25T11:00:05.000Z</value>
     </values>
     <values>
         <field>token_expires_at__c</field>

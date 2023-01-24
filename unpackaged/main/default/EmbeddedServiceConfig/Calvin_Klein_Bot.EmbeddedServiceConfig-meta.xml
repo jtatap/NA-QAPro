@@ -5,7 +5,7 @@
     <deploymentType>Web</deploymentType>
     <embeddedServiceCustomComponents>
         <componentBundleType>LightningComponentBundle</componentBundleType>
-        <customComponent>einsteinBotChatMessage</customComponent>
+        <customComponent>ebcm__einsteinBotChatMessage</customComponent>
         <customComponentType>LA_PlainTextChatMessage</customComponentType>
     </embeddedServiceCustomComponents>
     <embeddedServiceCustomLabels>

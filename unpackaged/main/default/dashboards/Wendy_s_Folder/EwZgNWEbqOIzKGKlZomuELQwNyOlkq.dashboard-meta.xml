@@ -186,7 +186,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>All Case Verticals</metricLabel>
-                <report>Daily_KPI_Dashboard/Yesterday_Outbound_Emails1</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Yesterday_Outbound_Emails1</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -390,7 +390,7 @@
                 </groupingSortProperties>
                 <header>PVH Work Day (Yesterday)</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Work_Day_Effort_by_Agent_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Work_Day_Effort_by_Agent_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -627,7 +627,7 @@
                 </groupingSortProperties>
                 <header>True Work Day (Yesterday)</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/True_Work_Day_Effort_by_Agent_Yesterday</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/True_Work_Day_Effort_by_Agent_Yesterday</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>

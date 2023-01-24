@@ -164,7 +164,7 @@
                 </groupingSortProperties>
                 <header>My Case Work</header>
                 <legendPosition>Right</legendPosition>
-                <report>Daily_KPI_Dashboard/Case_Work_Dynamic</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Case_Work_Dynamic</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -202,7 +202,7 @@
                 </groupingSortProperties>
                 <header>My Resolved Case Work</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Daily_KPI_Dashboard/Case_History_Resolved</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Case_History_Resolved</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

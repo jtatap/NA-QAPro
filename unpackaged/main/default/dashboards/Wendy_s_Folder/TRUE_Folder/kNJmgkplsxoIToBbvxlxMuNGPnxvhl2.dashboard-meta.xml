@@ -79,7 +79,7 @@
                 <header>True Backlog Status</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Backlog_Status</report>
+                <report>TRUE_Dashboard/True_Backlog_Status</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>false</showTotal>
                 <showValues>true</showValues>
@@ -121,7 +121,7 @@
                 </groupingSortProperties>
                 <header>True Backlog Status</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Backlog_Status</report>
+                <report>TRUE_Dashboard/True_Backlog_Status</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -163,7 +163,7 @@
                 </groupingSortProperties>
                 <header>True Backlog Status</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/True_Backlog_Status</report>
+                <report>TRUE_Dashboard/True_Backlog_Status</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
