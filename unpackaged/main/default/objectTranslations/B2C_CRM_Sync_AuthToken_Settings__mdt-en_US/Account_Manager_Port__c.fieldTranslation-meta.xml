@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the http-port that will be used when rendering the Account Manager audienceUrl. --></help>
+        <label><!-- Account Manager Port --></label>
+        <name>Account_Manager_Port__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... describes if the JWT Certificate associated to the default B2C Client ID for a B2C Instance has been validated. --></help>
+        <label><!-- Is JWT Certificate Verified --></label>
+        <name>Is_JWT_Certificate_Verified__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,120 @@
+html,
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.embeddedServiceSidebar.sidebarMaximized {
+    background:none !important;
+}
+.helpButtonDisabled {
+    visibility: hidden;
+}
+.embeddedServiceSidebarHeader .headerText {
+    font-size: 16px !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+    background-color: #00174f!important;
+    font-family: FuturaStdBook, Arial, sans-serif!important;
+    min-width: 20em;
+    border-radius: 10px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    bottom:;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #00174f
+}
+
+.embeddedServiceSidebarFormField .uiInput .uiLabel-left {
+    display: inline-block;
+    font-size: 14px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message {
+    color: #fff
+}
+
+.embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+html.mobile .embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+#dialogTextTitle {
+    display: none
+}
+
+.extendedHeader .embeddedServiceLiveAgentStateWaitingHeader .backgroundPattern {
+    background-image: none!important
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton,
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton {
+    min-width: 42px!important;
+    width: auto!important
+}
+
+.embeddedServiceHelpButton .uiButton .helpButtonLabel,
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton .minimizedText {
+    display: none!important
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedImage {
+    margin-right: 0!important
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+    padding: 0!important
+}
+
+.embeddedServiceLiveAgentStateChatAvatar .avatar {
+    display: none!important
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon::before {
+    font-family: embeddedserviceiconfont;
+    font-size: 1.25em;
+    content: attr(data-icon);
+    speak: none;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+html.mobile .embeddedServiceSidebar.modalContainer {
+    z-index: 1100
+}
+
+.embeddedServiceLiveAgentStateChatHeader .content {
+    justify-content: flex-start!important;
+    height: 156px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message,
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName {
+    display: block!important;
+    font-size: 14px!important
+}
+
+.embeddedServiceSidebarExtendedHeader .backgroundPattern {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important
+}
+
+.embeddedServiceSidebarDialogState #dialogTextBody {
+    font-size: 14px!important
+}
+.embeddedServiceHelpButton .helpButton {
+    bottom:0 !important;
+}

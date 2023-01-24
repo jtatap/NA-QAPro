@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opening_Total_Chat__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Proper_Greeting_with__c , &quot;Pass&quot;) || ISPICKVAL(  Proper_Greeting_with__c  , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(  Proper_Spelling_of_Customer_Name__c   , &quot;Pass&quot;) || ISPICKVAL(  Proper_Spelling_of_Customer_Name__c   , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(  Thanking_Customer__c   , &quot;Pass&quot;) || ISPICKVAL(    Thanking_Customer__c   , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL( Apologize_to_Customer__c  , &quot;Pass&quot;)  ||  ISPICKVAL(  Apologize_to_Customer__c , &quot;N/A&quot;)  , 1, 0) ) / 4</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opening Total % (Chat)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

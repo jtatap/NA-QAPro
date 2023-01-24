@@ -1,0 +1,391 @@
+<aura:component controller ='ReasonCodeButtonController' implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+     
+   
+    <lightning:workspaceAPI aura:id="workspace"/>
+   
+    <!-- call doInit function on component load -->  
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+   
+    <!--<aura:dependency resource="markup://force:editRecord" type="EVENT" />-->
+   <aura:handler event="force:refreshView" value="this" action="{!c.isRefreshed}" /> 
+
+    <aura:dependency resource="markup://force:navigateToURL" type="EVENT"/>
+    <aura:dependency resource="markup://force:navigateToSObject" type="EVENT"/>
+    
+    <!-- aura attributes-->  
+    <aura:attribute name="listControllingValues" type="list" default="[]" description="to store controller field values"/>
+    <aura:attribute name="listDependingValues" type="list" default="['--- None ---']" description="to store dependent field values"/>
+    <aura:attribute name="listSubDependingValues" type="list" default="['--- None ---']" description="to store dependent field values"/>
+    <aura:attribute name="listProSubCatValues" type="list" default="['--- None ---']" description="to store dependent field values"/>
+     <aura:attribute name="listthirdPartyVendorValues" type="list" default="['--- None ---']" description="to store dependent field values"/>
+    <aura:attribute name="option" type="list" default="['--- None ---']" description="to store productCategory field values"/>
+    
+    
+    <aura:attribute name="depnedentFieldMap" type="map" description="map to store dependent values with controlling value"/>
+    <aura:attribute name="subDepnedentFieldMap" type="map" description="map to store sub dependent values with controlling value"/>
+    <aura:attribute name="producsubtCategoryValueMap"  type="map"/>
+    <aura:attribute name="thirdPartyValueMap"  type="map"/>
+    <aura:attribute name="bDisabledDependentFld" type="boolean" default="true"/> 
+    <aura:attribute name="bDisabledSubDependentFld" type="boolean" default="true"/> 
+    
+   
+    <aura:attribute name="objDetail" type="case" default="{'sobjectType' : 'case'}"/>
+    <aura:attribute name="controllingFieldAPI" type="string" default="Reason_Code__c" description="store field API name of Controller field"/>
+    <aura:attribute name="dependingFieldAPI" type="string" default="Reason_Code_Details__c" description="store field API name of dependent field"/>
+    <aura:attribute name="subDependingFieldAPI" type="string" default="Reason_Sub_detail__c" description="store field API name of sub dependent field"/>
+     <aura:attribute name="productCatFieldAPI" type="string" default="Reason_Code_Product_Category__c" description="store field API name of Product Category"/>
+     <aura:attribute name="productSubCatFieldAPI" type="string" default="Reason_Code_Product_Sub_Categories_Widge__c" description="store field API name of Product Sub Category"/>
+    <aura:attribute name="thirdPartyVendorAPI" type="string" default="Third_Party_Vendors__c" description="store field API name of Third Party Vendor"/>
+    
+    
+    <aura:attribute name="dateofServiceIssueatt"   type="date"/>
+    <aura:attribute name="storeNumberatt"  type="string" />
+    <aura:attribute name="districtNumberatt"  type="string"/>
+    <aura:attribute name="manufactureratt"  type="string" />
+    <aura:attribute name="productCategoryatt"  type="string"/>
+    <aura:attribute name="skuStyleNumberatt"  type="string"/>
+    <aura:attribute name="manufacturerValue"  type="string" />
+    <aura:attribute name="productCategoryValue"  type="string"/>
+    <aura:attribute name="updateAccountInfoReasonatt"  type="string"/>
+     <aura:attribute name="updateAccountInfoReason"  type="string"/>
+    <aura:attribute name="producsubtCategoryatt"  type="string"/>
+    <aura:attribute name="producsubtCategoryValue"  type="string"/>
+    <aura:attribute name="thirdPartyVendoratt"  type="string"/>
+    <aura:attribute name="thirdParrtyValue"  type="string"/>
+    
+    
+    <aura:attribute name="recordId"  type="string"  />
+    <aura:attribute name="fieldsArray" 
+                    type="String[]" 
+                    default="['Reason_Code__c','Reason_Code_Details__c','Reason_Sub_detail__c','ZdPVHStoreNumber__c','ZdPVHDistrictNumber__c','ZdPVHDateofServiceIssue__c']" 
+                    />
+    
+    <aura:attribute name="isclicked" type="boolean" default="false"/>
+    <aura:attribute name="isparent" type="boolean" default="false"/>
+    <aura:attribute name="ischild" type="boolean" default="false"/>
+    <aura:attribute name="isRequired" type="boolean" default="false"/>
+    <aura:attribute name="isRequired1" type="boolean" default="false"/>
+    <aura:attribute name="isNotRequired" type="boolean" default="false"/>
+    <aura:attribute name="isSubmitted" type="boolean" default="false"/>
+    <aura:attribute name="isEdit" type="boolean" default="true"/>
+    <aura:attribute name="isAccInfoReason" type="boolean" default="false"/>
+    <aura:attribute name="isRequiredProduct" type="boolean" default="false"/>
+    <aura:attribute name="isProCatSelecting" type="boolean" default="false"/>
+    <aura:attribute name="isProCatSubSelected" type="boolean" default="false"/> 
+     <aura:attribute name="isRequiredManufacturer" type="boolean" default="false"/>
+    <aura:attribute name="isReSubNull" type="boolean" default="false"/>
+    
+    <aura:attribute name="fields" type="Object" />
+    <aura:attribute name="isbutton" type="boolean" default="false"/>
+    
+    <aura:attribute name="grandParentValue"  type="string"/>
+    <aura:attribute name="caseRecord" type="Object"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+   <!-- <aura:attribute name="recordId" type="String"/> -->
+
+  <aura:attribute name="options1" type="List" default="[
+    {'label': 'Corporate', 'value': 'Corporate'},
+    {'label': 'Loyalty',   'value': 'Loyalty'},
+    {'label': 'Payment',   'value': 'Payment'}
+    ]"/>
+   <aura:attribute name="options2" type="List" default="[
+    {'label': 'Marketing', 'value': 'Marketing'},
+    {'label': 'Service',   'value': 'Service'},
+    {'label': 'Returns',   'value': 'Returns'}
+    ]"/>
+    <aura:attribute name="options3" type="List" default="[
+    {'label': 'Technical', 'value': 'Technical'},
+    {'label': 'Product',   'value': 'Product'},
+    {'label': 'Orders',    'value': 'Orders'}
+    ]"/>
+    <aura:attribute name="options4" type="List" default="[
+    {'label': 'Sales',     'value': 'Sales'}
+    ]"/>
+  <aura:attribute name="value" type="String" default=""/>
+    
+  <!-- <force:recordData aura:id="recordLoader"
+                recordId="{!v.recordId}"
+                fields="Reason_Code__c,Reason_Code_Details__c,Reason_Sub_detail__c,ZdPVHStoreNumber__c,ZdPVHDistrictNumber__c,ZdPVHDateofServiceIssue__c"
+                targetFields="{!v.caseRecord}"
+                targetError="{!v.recordLoadError}"
+                recordUpdated="{!c.recordLoaded}"       
+    />-->
+    
+    
+    
+    
+ <!--<aura:if isTrue="{!v.isSubmitted}">
+    <lightning:card >
+                <div>	
+                    <lightning:recordForm aura:id="recordViewForm" 
+                                          objectApiName="Case"
+                                          columns="2"
+                                          fields="{!v.fieldsArray}"
+                                          recordId="{!v.recordId}"
+                                          mode="view"
+                                          />   
+                     </div>
+                <center>
+             <lightning:button label="Go Back" variant="Brand" onclick="{!c.isRefreshed}"/>
+                </center>
+   </lightning:card> -->
+   <!--mode="readonly"-->
+<!--<aura:set attribute="else">-->
+  <article class="slds-tile">  
+<div class="slds-box slds-theme_default"> 
+  <aura:if isTrue="{!v.isEdit}">
+     <!--   <div style="padding-top:1px;">-->
+  <force:recordData aura:id="recordLoader"
+                        recordId="{!v.recordId }"
+                        layoutType="FULL"
+                        fields="Reason_Code__c,Reason_Code_Details__c,Reason_Sub_detail__c,Third_Party_Vendors__c,ZdPVHStoreNumber__c,ZdPVHDistrictNumber__c,ZdPVHDateofServiceIssue__c,Reason_Code_Manufacturers__c,Reason_Code_Product_Category__c,Reason_Code_Product_Sub_Categories_Widge__c,ZdPVHUpdateAccountInfoReason__c,Sku_Style_Number__c"
+                        mode="VIEW"
+                        targetFields="{!v.fields}"
+                        targetError="{!v.error}" 
+                        recordUpdated="{!c.recordLoaded}"/>
+     
+ 
+
+ <lightning:recordviewform recordId = "{!v.recordId}" objectApiName="Case" >
+          <div  class="slds-box" >
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                     <lightning:outputField aura:id="ReCode" fieldName="Reason_Code__c" /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+               <aura:if isTrue="{!not(empty(v.fields.Reason_Code_Details__c)) }">         
+                     <lightning:outputField  fieldName="Reason_Code_Details__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+             </aura:if>                   
+              <aura:if isTrue="{!not(empty(v.fields.Reason_Sub_detail__c)) }">
+                        <lightning:outputfield  fieldName="Reason_Sub_detail__c"/><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+               </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.Reason_Code_Product_Category__c)) }">
+                        <lightning:outputField  fieldName="Reason_Code_Product_Category__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.Reason_Code_Product_Sub_Categories_Widge__c)) }">
+                        <lightning:outputField  fieldName="Reason_Code_Product_Sub_Categories_Widge__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.Third_Party_Vendors__c)) }">
+                        <lightning:outputField  fieldName="Third_Party_Vendors__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+              </aura:if> 
+              <aura:if isTrue="{!not(empty(v.fields.Reason_Code_Manufacturers__c)) }">
+                        <lightning:outputField  fieldName="Reason_Code_Manufacturers__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.Sku_Style_Number__c)) }">
+                        <lightning:outputField  fieldName="Sku_Style_Number__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+              </aura:if>
+               <aura:if isTrue="{!not(empty(v.fields.ZdPVHStoreNumber__c)) }">  
+                   <lightning:outputField  fieldName="ZdPVHStoreNumber__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                 </aura:if>
+            <aura:if isTrue="{!not(empty(v.fields.ZdPVHDistrictNumber__c)) }">
+                        <lightning:outputfield  fieldName="ZdPVHDistrictNumber__c"/><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.ZdPVHDateofServiceIssue__c)) }">
+                        <lightning:outputField  fieldName="ZdPVHDateofServiceIssue__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
+                </aura:if>
+              <aura:if isTrue="{!not(empty(v.fields.ZdPVHUpdateAccountInfoReason__c)) }">
+                        <lightning:outputField  fieldName="ZdPVHUpdateAccountInfoReason__c"  />
+                </aura:if>
+                    </div>
+              </div>
+              <center style="padding-top:1px;">
+              <lightning:button label="Edit" variant="Brand" onclick="{!c.handleEdited}"/>
+             </center>
+               </div>
+       </lightning:recordviewform>
+          
+       
+        
+   <!--</div>-->
+      
+  <aura:set attribute="else">
+  <div style="padding-left:1px;">  
+      <lightning:radioGroup aura:id="radioGrp" name="radioButtonGroupRequired"
+                            options="{!v.options1}"
+                            value="{!v.value}"
+                            type="button"
+                            onchange="{!c.handleClick}"
+                           
+                              />
+     
+     
+      <lightning:radioGroup aura:id="radioGrp" name="radioButtonGroupRequired"
+                            options="{!v.options2}"
+                            value="{!v.value}"
+                            type="button"
+                            onchange="{!c.handleClick}"
+                            
+                              />
+     
+      
+     <lightning:radioGroup aura:id="radioGrp" name="radioButtonGroupRequired"
+                            options="{!v.options3}"
+                            value="{!v.value}"
+                            type="button"
+                            onchange="{!c.handleClick}"
+                        
+                              />
+  
+      <lightning:radioGroup aura:id="radioGrp" name="radioButtonGroupRequired"
+                            options="{!v.options4}"
+                            value="{!v.value}"
+                            type="button"
+                            onchange="{!c.handleClick}"
+           
+                            
+                              />
+      </div>
+   <aura:if isTrue="{!v.isclicked}">
+   <!-- <lightning:select name="grandParentFld" aura:id="grandParentField"
+                          value="{!v.objDetail.Reason_Code__c}"
+                          label="Reason Code"
+                          >
+            <aura:iteration items="{!v.grandParentValue}" var="val">
+                <option value="{!val}">{!val}</option>
+            </aura:iteration>
+        </lightning:select>-->
+    <!-- <ui:inputText aura:id="reasonCode" label="Reason Code"
+                        value="{!v.grandParentValue}"
+                        />-->
+       
+       <lightning:select name="dependentFld" aura:id="parentField"
+                          value="{!v.objDetail.Reason_Code_Details__c}"
+                          label="Reason Code Details"
+                          disabled="{!v.bDisabledDependentFld}"
+                          onchange="{!c.onSubControllerFieldChange}">
+            <aura:iteration items="{!v.listDependingValues}" var="val">
+                <option value="{!val}">{!val}</option>
+            </aura:iteration>
+        </lightning:select>
+      </aura:if>
+      
+    <aura:if isTrue="{!v.ischild}">
+          <lightning:select name="subDependentFld" aura:id="childField"
+                          value="{!v.objDetail.Reason_Sub_detail__c}"
+                          label="Reason Sub detail"
+                          disabled="{!v.bDisabledSubDependentFld}"
+                          onchange="{!c.onSubDependentFieldChange}">
+            <aura:iteration items="{!v.listSubDependingValues}" var="val">
+                <option value="{!val}">{!val}</option>
+            </aura:iteration>
+        </lightning:select>
+    </aura:if> 
+      
+      <aura:if isTrue= "{!v.isRequiredProduct}">
+       <label class="slds-form-element__label" for="select-01">Product Category</label>
+                 <ui:inputSelect  aura:id="productCategory" class="slds-select" change="{!c.onProCatChange}">
+                                 
+                            </ui:inputSelect>
+       </aura:if> 
+      <aura:if isTrue= "{!v.isProCatSelecting}">
+      <!-- <label class="slds-form-element__label" for="select-01">Product Sub Category</label>
+                 <ui:inputSelect  aura:id="productSubCategory" class="slds-select" change="{!c.onProSubCatChange}">
+                     <aura:iteration items="{!v.listProSubCatValues}" var="subCat">
+             <ui:inputSelectOption text="{!subCat}" label="{!subCat}"/>
+        </aura:iteration>
+                            </ui:inputSelect>-->
+          
+          <lightning:select aura:id="productSubCategory" name="select" 
+                              label="Product Sub Category" 
+                              onchange="{!c.onProSubCatChange}" 
+                              >
+           <aura:iteration items="{!v.listProSubCatValues}" var="subCat">
+                   <option value="{!subCat}" text="{!subCat}"></option>
+             </aura:iteration>
+            </lightning:select>
+           
+          </aura:if>
+     <aura:if isTrue= "{!v.isProCatSubSelected}">    
+     <!--<label class="slds-form-element__label" for="select-01">Third Party Vendors</label>
+                 <ui:inputSelect  aura:id="thirdPartyVendors" class="slds-select" change="{!c.onthirdPartyChange}">
+                  <aura:iteration items="{!v.listthirdPartyVendorValues}" var="thirdPartyVen">
+                      <ui:inputSelectOption text="{!thirdPartyVen}" label="{!thirdPartyVen}"/>
+              </aura:iteration>   
+                            </ui:inputSelect> -->
+         
+         <lightning:select aura:id="thirdPartyVendors" name="select" 
+                              label="Third Party Vendors" 
+                              required="true" onchange="{!c.onthirdPartyChange}" 
+                              messageWhenValueMissing="Please Enter Third Party Vendor">
+           <aura:iteration items="{!v.listthirdPartyVendorValues}" var="thirdPartyVen">
+                   <option value="{!thirdPartyVen}" text="{!thirdPartyVen}"></option>
+             </aura:iteration>
+            </lightning:select>
+     </aura:if> 
+          
+    <aura:if isTrue= "{!v.isRequiredManufacturer}">
+            <label class="slds-form-element__label" for="select-01">Manufacturer</label>
+                  <ui:inputSelect  aura:id="manufacturer" class="slds-select"  required="true" change="{!c.onManufacturerChange}">
+               
+        </ui:inputSelect>
+              
+
+       <!-- <ui:inputNumber aura:id="skuNumber" label="SKU/Style Number"
+                        value="{!v.objDetail.Sku_Style_Number__c}"
+                        class="slds-input"  required="true" />-->
+        <lightning:input aura:id="skuNumber" type="text" label="SKU/Style Number"
+                        value="{!v.objDetail.Sku_Style_Number__c}"
+                      />
+        
+       
+     </aura:if>
+      
+   
+  
+     
+    <aura:if isTrue="{!or(v.isRequired,v.isRequired1)}">  
+      <!--<lightning:input type="text" 
+                       name="input1" 
+                       label="Store Number" 
+                       value="{!v.storeNumber}" 
+                       required="true"
+                       messageWhenValueMissing="Please provide Store Number"
+                       />-->
+      <lightning:input aura:id="storeNumber" type="number" label="Store Number"
+                        value="{!v.objDetail.ZdPVHStoreNumber__c}"
+                        required="true" messageWhenValueMissing="Please Enter Store Number"/>
+      <lightning:input aura:id="districtNumber" type="number" label="District Number"
+                        value="{!v.objDetail.ZdPVHDistrictNumber__c}"
+                        messageWhenValueMissing="Please Enter District Number"  required="true"
+                        />
+      </aura:if>
+     <aura:if isTrue= "{!v.isRequired1}">
+         
+         <lightning:input aura:id="dateofServiceIssue" type="date" name="startDate"
+                          label="Date of Service Issue" value="{!v.objDetail.ZdPVHDateofServiceIssue__c}"
+                          messageWhenValueMissing="Please Select Date Of Service Issue" required="true" />
+         
+     
+       
+      </aura:if>
+    <aura:if isTrue= "{!v.isAccInfoReason}">
+        
+    
+        <lightning:input aura:id="updateAccInfoReason" type="text" label="Update Account Info Reason"
+                        value="{!v.objDetail.ZdPVHUpdateAccountInfoReason__c}"
+                        messageWhenValueMissing="Please Enter Update Account Info Reason"  required="true"
+                        />
+      </aura:if>
+      
+      
+     <aura:if isTrue="{!v.ischild}"> 
+      <div style="padding-top:1px;">
+        <center>
+             <lightning:button label="Save" variant="Brand" onclick="{!c.handleSubmit}"/>
+             <lightning:button label="Cancel" variant="Brand" onclick="{!c.isCancel}"/>
+         </center>
+      </div> 
+      </aura:if> 
+       
+   
+      
+ </aura:set>
+       </aura:if> 
+ </div>
+    </article>
+    <aura:if isTrue="{!not(empty(v.recordLoadError))}">
+    <div class="recordLoadError">
+        {!v.recordLoadError}
+    </div>
+    </aura:if>
+
+    
+</aura:component>

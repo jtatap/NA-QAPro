@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents a description or summary of how the specified B2C Client ID is used by B2C Commerce or the Salesforce Platform. --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </CustomFieldTranslation>

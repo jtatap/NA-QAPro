@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Interpayment Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>^636\d{1}[\s\-]*\d{4,5}[\s\-]*\d{4,5}[\s\-]*\d{4,5}$
+636\d{1}[\s\-]*\d{4,5}[\s\-]*\d{4,5}[\s\-]*\d{4,5}
+^636\d{1}[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}$
+636\d{1}[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}
+^636\{16,19}$
+636\d{16,19}</pattern>
+    <priority>8</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

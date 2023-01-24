@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Order Assistance</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">If you are attempting to place an order right now, please call us at 1-888-TOMMY4U or chat with us at the link at the bottom right of your screen.</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">If you would like to place an order, please call us at 1-800-866-6922.</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">If you are attempting to place an order right now, please call us at 1-888-TOMMY4U or chat with us at the link at the bottom right of your screen.</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Sales</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Order Assistance</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Deflect</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Orders: Requesting order placed on their behalf</value>
+    </values>
+</CustomMetadata>

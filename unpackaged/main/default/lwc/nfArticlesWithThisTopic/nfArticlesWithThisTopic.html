@@ -1,0 +1,17 @@
+<!--
+  @description       : Display KAV titles as per sort order mentioned in the record
+  @author            : chayan.batabyal@neuraflash.com
+  @last modified on  : 07-28-2021
+  @last modified by  : chayan.batabyal@neuraflash.com
+-->
+<template>
+    <lightning-layout multiple-rows if:true={displayArticles}>
+        <lightning-layout-item class="layoutItem slds-p-around_small slds-text-heading_medium" size="12"
+            for:each={articlesToDisplay} for:item="eachArticle" key={eachArticle.Id}>
+            <a style={anchorStyle} href={eachArticle.UrlName}
+                title={eachArticle.Title} target="_self" key={eachArticle.Id}>
+                {eachArticle.Title}
+            </a>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

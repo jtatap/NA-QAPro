@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Purchase Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Online - calvinklein.com</fullName>
+                <default>false</default>
+                <label>Online - calvinklein.com</label>
+            </value>
+            <value>
+                <fullName>Online - tommy.com</fullName>
+                <default>false</default>
+                <label>Online - tommy.com</label>
+            </value>
+            <value>
+                <fullName>Online - vanheusen.com</fullName>
+                <default>false</default>
+                <label>Online - vanheusen.com</label>
+            </value>
+            <value>
+                <fullName>Online - styleBureau.com</fullName>
+                <default>false</default>
+                <label>Online - styleBureau.com</label>
+            </value>
+            <value>
+                <fullName>Online - izod.com</fullName>
+                <default>false</default>
+                <label>Online - izod.com</label>
+            </value>
+            <value>
+                <fullName>Online - trueandco.com</fullName>
+                <default>false</default>
+                <label>Online - trueandco.com</label>
+            </value>
+            <value>
+                <fullName>Online - speedo.com</fullName>
+                <default>false</default>
+                <label>Online - speedo.com</label>
+            </value>
+            <value>
+                <fullName>Calvin Klein store</fullName>
+                <default>false</default>
+                <label>Calvin Klein store</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger store</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger store</label>
+            </value>
+            <value>
+                <fullName>Van Heusen store</fullName>
+                <default>false</default>
+                <label>Van Heusen store</label>
+            </value>
+            <value>
+                <fullName>Other Retailer</fullName>
+                <default>false</default>
+                <label>Other Retailer</label>
+            </value>
+            <value>
+                <fullName>Online-CalvinKlein Canada</fullName>
+                <default>false</default>
+                <label>Online-CalvinKlein Canada</label>
+            </value>
+            <value>
+                <fullName>Online-Warner&#39;s</fullName>
+                <default>false</default>
+                <label>Online-Warner&#39;s</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

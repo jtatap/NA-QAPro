@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Identity Verification - Email template out to customer, with 2 buttons. One that says &quot;Yes I have submitted the request. The other says &quot;No I did not submit this request. Add text saying if you do not respond within 15 days this request will be closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>D1 SFSC send automated validation email</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Action Required: {{{Case.Brand__c}}} Identity Verification {{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

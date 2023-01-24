@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Obtain Credit Card Information via Chat or E-mail. Check if answer is &quot;Yes.&quot; --></help>
+        <label><!-- Obtain Credit Card Information --></label>
+        <name>Obtain_Credit_Card_Info__c</name>
+    </CustomFieldTranslation>

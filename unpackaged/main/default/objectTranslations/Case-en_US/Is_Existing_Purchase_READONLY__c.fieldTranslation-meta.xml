@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Is Existing Purchase --></label>
+        <name>Is_Existing_Purchase_READONLY__c</name>
+    </CustomFieldTranslation>

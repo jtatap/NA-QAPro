@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>LiveChatTranscript.WaitTime:SUM/RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Average Speed of Answer</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Chat ASA</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(LiveChatTranscript.ChatDuration:SUM/RowCount)/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Average Handle Time</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Chat AHT</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_98630912</developerName>
+        <masterLabel>Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>LiveChatTranscript$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Iateaka Lizardo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lexi Newton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lydia Balogh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kia Bowers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billie McDowell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ana Dawson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Payal Trivedi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angelica Colon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlette Mayers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Breanna Harris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Porscha Dillard-Morton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erin Neary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Faith Ortiz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roniesha Scott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiana Parker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nina Tripodi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jentaura Cobb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Giunta</sourceValue>
+            </sourceValues>
+            <value>Group 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kimberly Rivas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kareemah Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shannon Lombardi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Salgado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Veronica Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Carmody</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Lugo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amanda Myers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristen Kalapick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Arlene Abreu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicoletta Pantelyat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frank Portuesi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lailah Chavez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bridget Mastrorilli</sourceValue>
+            </sourceValues>
+            <value>Group 2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Courtney McGuire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jenna Martemucci</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathrina Giles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stefany Berni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zachary Pavlocak</sourceValue>
+            </sourceValues>
+            <value>Group 0</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>LiveChatTranscript$Owner</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Case</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$Originating_Queue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalWeek</dateGranularity>
+        <field>LiveChatTranscript$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_98630912</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Chat AHT (Seasoned vs. New)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <endDate>2023-01-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2023-01-24</startDate>
+    </timeFrameFilter>
+</Report>

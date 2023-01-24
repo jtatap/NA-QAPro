@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_67329058</developerName>
+        <masterLabel>Brand Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ebotdata__Bot_Session__c.Brand__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>IZOD</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen</sourceValue>
+            </sourceValues>
+            <value>Heritage</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ebotdata__Bot_Session__c.Brand__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ebotdata__Bot_Session__c.ebotdata__Chat_Channel__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ebotdata__Bot_Session__c.ebotdata__Visitor_Message_Count__c</field>
+    </columns>
+    <columns>
+        <field>ebotdata__Bot_Session__c.ebotdata__Outcome__c</field>
+    </columns>
+    <columns>
+        <field>ebotdata__Bot_Session__c.ebotdata__Einstein_Bot_Escalation__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_67329058</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>S9. Total Volume</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ebotdata__Bot_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Cancel Order Request</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">{ &quot;message&quot;:[&quot;&lt;b&gt;Please Note:&lt;/b&gt; If you need to cancel or edit your online order, we offer a 30-minute grace period upon order confirmation. You can cancel your order on your order confirmation email or on your account page. Your order will be processed after 30 minutes. All attempts to cancel or edit an order after this period will not be validated. &lt;br/&gt;&lt;br/&gt;To cancel or edit an order within the 30 minute window, please call us at 1.800.376.0528 or chat with us at the link at the bottom right of your screen.&quot;], &quot;fields&quot;: [ { &quot;fieldLabel&quot;: &quot;Order Number&quot;, &quot;fieldName&quot;: &quot;Order_Number__c&quot;, &quot;fieldType&quot;: &quot;STRING&quot;}] }</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">{ &quot;fields&quot;: [ { &quot;fieldLabel&quot;: &quot;Order Number&quot;, &quot;fieldName&quot;: &quot;Order_Number__c&quot;, &quot;fieldType&quot;: &quot;STRING&quot;}] }</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">{ &quot;message&quot;:[&quot;&lt;b&gt;Please Note:&lt;/b&gt; If you need to cancel or edit your online order, we offer a 30-minute grace period upon order confirmation. You can cancel your order on your order confirmation email or on your account page. Your order will be processed after 30 minutes. All attempts to cancel or edit an order after this period will not be validated. &lt;br/&gt;&lt;br/&gt;To cancel or edit an order within the 30 minute window, please call us at 1.800.376.0528.&quot;], &quot;fields&quot;: [ { &quot;fieldLabel&quot;: &quot;Order Number&quot;, &quot;fieldName&quot;: &quot;Order_Number__c&quot;, &quot;fieldType&quot;: &quot;STRING&quot;}] }</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Order_Status_CK_CA</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Cancel Order Request</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Submit</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Orders: Requesting order be cancelled</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Non-Defective Returns Van Heusen</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Non-Defective Returns Van Heusen</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

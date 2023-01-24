@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Address_Reason_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Email Address Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Verification Success : Email Update</fullName>
+                <default>false</default>
+                <label>Verification Success : Email Update</label>
+            </value>
+            <value>
+                <fullName>Verification Success : Unable to Update in SC</fullName>
+                <default>false</default>
+                <label>Verification Success : Unable to Update in SC</label>
+            </value>
+            <value>
+                <fullName>Verification Declined : No Email Update</fullName>
+                <default>false</default>
+                <label>Verification Declined : No Email Update</label>
+            </value>
+            <value>
+                <fullName>Verification Failure : No Customer&#39;s response</fullName>
+                <default>false</default>
+                <label>Verification Failure : No Customer&#39;s response</label>
+            </value>
+            <value>
+                <fullName>Verfication Success: login email is already in use</fullName>
+                <default>false</default>
+                <label>Verfication Success: login email is already in use</label>
+            </value>
+            <value>
+                <fullName>Verification Success : R2R update</fullName>
+                <default>false</default>
+                <label>Verification Success : R2R update</label>
+            </value>
+            <value>
+                <fullName>Verification Declined: No personal data update</fullName>
+                <default>false</default>
+                <label>Verification Declined: No personal data update</label>
+            </value>
+            <value>
+                <fullName>Verification Failure: No customer response</fullName>
+                <default>false</default>
+                <label>Verification Failure: No customer response</label>
+            </value>
+            <value>
+                <fullName>Verification Success: Do Not Sell/ Share Approved</fullName>
+                <default>false</default>
+                <label>Verification Success: Do Not Sell/ Share Approved</label>
+            </value>
+            <value>
+                <fullName>Verification Declined: No Advertising Opt Out</fullName>
+                <default>false</default>
+                <label>Verification Declined: No Advertising Opt Out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

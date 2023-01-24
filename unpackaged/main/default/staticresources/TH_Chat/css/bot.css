@@ -1,0 +1,417 @@
+	@font-face {
+ 	  	font-family: "FuturaStdBook";
+  		src: url("../fonts/futurastd-book-woff-data.woff") format("woff");
+	}
+.chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    font-family: FuturaStdBook !important;
+}
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before {
+  background-color: #02194c !important;
+  color: #fff !important;
+}
+
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+  background-color: #02194c !important;
+    color: #fff !important;
+  opacity: 1 !important;
+}
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus:hover {
+  background-color: #02194c !important;
+  color: #fff !important;
+  opacity: 1;
+}
+
+.chat-content.agent .chatMessageContent a:link, .chat-content.agent .chatMessageContent a:visited, .chat-content.agent .chatMessageContent a:hover, .chat-content.agent .chatMessageContent a:active {
+  color: #5491ff !important;
+}
+
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] a:link {
+    color: #fff !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+  background-color: #fff !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+background: #02194c !important;
+}
+
+/* chat bubble height */
+.chat-content[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    min-height: 0px;
+}
+
+.embeddedServiceSidebarDialogState .dialogButton {
+    background: #02194c !important;
+
+}
+.embeddedServiceSidebarDialogState .dialogButton:hover {
+    background: #4e5e82 !important;
+}
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background: #4e5e82 !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+    background-color: #00174f;
+    font-family: "FuturaStdBook", sans-serif;
+}
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #00174f;
+}
+
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+        font: FuturaStdBook important!;
+}
+
+
+html,
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.embeddedServiceSidebar.sidebarMaximized {
+    background:none !important;
+}
+.helpButtonDisabled {
+    visibility: hidden;
+}
+
+.embeddedServiceSidebarHeader .headerText {
+    font-size: 16px !important;
+}
+
+.embeddedServiceHelpButton .helpButton {
+    bottom: 0px !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton .messageContent {
+    justify-content: normal !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #00174f
+}
+
+.embeddedServiceSidebarFormField .uiInput .uiLabel-left {
+    display: inline-block;
+    font-size: 14px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message {
+    color: #fff
+}
+
+.embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+html.mobile .embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+.extendedHeader .embeddedServiceLiveAgentStateWaitingHeader .backgroundPattern {
+    background-image: none!important
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedImage {
+    margin-right: 0!important
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+    padding: 0!important
+}
+
+.embeddedServiceIcon{
+    font-family: embeddedserviceiconfont;
+    font-size: 1.25em;
+    content: url("../img/FLAG_32x32.svg") !important;
+    speak: none;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.embeddedServiceIcon svg {
+    display: none !important;
+}
+html.mobile .embeddedServiceSidebar.modalContainer {
+    z-index: 1100
+}
+
+.embeddedServiceLiveAgentStateChatHeader .content {
+    justify-content: flex-start!important;
+    height: 156px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message,
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName {
+    display: block!important;
+    font-size: 14px!important
+}
+
+.embeddedServiceSidebarExtendedHeader .backgroundPattern {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important
+}
+
+.embeddedServiceSidebarDialogState #dialogTextBody {
+    font-size: 14px!important
+}
+
+/* cta/minimized */
+.embeddedServiceHelpButton .helpButton .uiButton,
+.embeddedServiceSidebarMinimizedDefaultUI {
+    background-color: #00174f!important;
+    font-family: FuturaStdBook, Arial, sans-serif!important;
+    min-width: 0px !important;
+    max-width: none !important;
+    width: 260px !important;
+    border-radius: 30px !important;
+    /*bottom: 12px !important; */
+    height: 35px !important;
+}
+
+/* chat content buttons (yes, no, etc.) */
+.embeddedServiceLiveAgentStateChatButtonMessage.agent .chatContent {
+    margin: 0px !important;
+    max-width: none !important;
+}
+
+.embeddedServiceLiveAgentStateChatButtonItem {
+    border-radius: 15px !important;
+    min-width: 65px !important;
+}
+
+
+/* adding logo to all minimized tabs */
+.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent .minimizedText::before {
+    content: url("../img/FLAG_32x32.svg") !important;
+}
+
+/* Hide logo from chat header */
+body > div.modalContainer.sidebarMaximized.layout-docked.embeddedServiceSidebar > div > embeddedservice-chat-header > header > img {
+    display: none;
+    width: 0px;
+}
+
+/* TH minimized chat, hide icon from embeddedServiceIcon */
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon {
+    display: none;
+}
+
+/* hide old chat icon in minimized chat */
+.embeddedServiceSidebarMinimizedDefaultUI > button > div > div > span > svg {
+    display: none;
+}
+
+/* TH icon in initial minimized chat */
+.uiButton.helpButtonEnabled > embeddedServiceIcon {
+    content: url("../img/FLAG_32x32.svg");
+}
+
+/* hide old chat icon in initial minimized chat */
+body > div.embeddedServiceHelpButton > div > button > span.embeddedServiceIcon {
+    display:block !important;
+}
+
+/* styling for "cancel chat" button while connecting */
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+
+/* styling for "Go Back" button when ending Chat */
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #4e5e82 !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* styling for "Save Transcript" button when chat has ended */
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+    margin-top: 8px;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* remove TH logo when connecting */
+.waitingImage {
+    display: none;
+    height: 0px !important;
+}
+
+/* avatar change */
+.embeddedServiceLiveAgentStateChatAvatar .avatar {
+    background-image:url("../img/FLAG_32x32.svg") !important;
+}
+
+/* chat bubble background */
+.agent.chat-content[c-pvhChatMessageSnapinTommy_pvhChatMessageSnapinTommy] {
+    background-color: white !important;
+}
+
+
+
+/* chat background color */
+.embeddedServiceLiveAgentStateChat .messageArea {
+    background-color: #f4f4f4 !important;
+    margin-bottom: 2px !important;
+    border-bottom: 2px solid #02194c;
+}
+
+.embeddedServiceLiveAgentStateChat .messageArea .chatMessage {
+    background-color: #f4f4f4 !important;
+}
+
+
+
+/* mobile styling */
+@media screen and (max-device-width: 480px) {
+    .chatFrameParent {
+        bottom: 49px !important;
+    }
+    .embeddedServiceHelpButton .helpButton {
+        top: 0px;
+      }
+    
+      .embeddedServiceSidebarMinimizedDefaultUI .minimizedText > .helpButtonLabel {
+        display: none;
+      }
+    
+      .embeddedServiceHelpButton .helpButton button.uiButton,
+    .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
+        background-color: #00174f !important;
+        border-radius: 100% !important;
+        top: 0px !important;
+        min-width: 0px !important;
+        width: 44px !important;
+        height: 44px !important;
+        padding: 0px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom:49px !important;
+        box-shadow: 0px 3px 3px grey !important;
+      }
+      .embeddedServiceHelpButton .helpButton .embeddedServiceIcon {
+          position: relative !important;
+          display: inline-block !important;
+          margin: -1px 0px 0px 0px !important;
+          content: none !important;
+          width: 20px;
+          height: 15px;
+          background-color: white;
+      }
+    
+      .embeddedServiceHelpButton .helpButton .embeddedServiceIcon::before {
+          position: absolute;
+          content: "" !important;
+          right: 0px;
+          bottom: -4px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid white;
+          border-left: 8px solid transparent;
+      }
+    
+      #helpButtonSpan {
+        display: none;
+      }
+    
+      .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content {
+        height: 44px !important;
+        width: 44px !important;
+      }
+    
+      .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent {
+        position: relative;
+        margin: 11px 4px 0px 0px !important;
+        content: none !important;
+        width: 20px;
+        height: 15px;
+        background-color: white;
+        flex-grow: 0 !important;
+      }
+      .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent .minimizedText::before {
+           content: none !important;
+      }
+
+      .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+        position: absolute;
+        content: none !important;
+        right: 0px;
+        bottom: -4px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid white;
+        border-left: 8px solid transparent;
+        align-self: auto;
+      }
+    
+      .embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon {
+        display: none !important;
+      }
+    
+      .embeddedServiceSidebarMinimizedDefaultUI .message {
+        display: none !important;
+      }
+    
+    
+      .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+          position: absolute !important;
+          content: "" !important;
+          right: 0px;
+          bottom: -5px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid white !important;
+          border-left: 8px solid transparent !important;
+      }
+    }
+
+/* Minicard Styles */
+.containerDiv[ebcm-einsteinBotMiniCardContainer_einsteinBotMiniCardContainer] {
+    box-shadow: none !important;
+    border: none !important;
+}
+.slds-m-around_none.minicard-title-text {
+    font-size: 12px;
+    text-align: left;
+}

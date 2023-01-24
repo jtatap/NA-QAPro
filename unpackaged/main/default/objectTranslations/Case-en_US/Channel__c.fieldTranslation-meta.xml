@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Amazon.com</masterLabel>
+            <translation><!-- Amazon.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calvin Klein Store</masterLabel>
+            <translation><!-- Calvin Klein Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordstrom</masterLabel>
+            <translation><!-- Nordstrom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - CalvinKlein.com</masterLabel>
+            <translation><!-- Online - CalvinKlein.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - Izod.com</masterLabel>
+            <translation><!-- Online - Izod.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - Tommy.com</masterLabel>
+            <translation><!-- Online - Tommy.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - speedo.com</masterLabel>
+            <translation><!-- Online - speedo.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - styleBureau.com</masterLabel>
+            <translation><!-- Online - styleBureau.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - vanheusen.com</masterLabel>
+            <translation><!-- Online - vanheusen.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online -True&amp;co.com</masterLabel>
+            <translation><!-- Online -True&amp;co.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online-CalvinKlein Canada</masterLabel>
+            <translation><!-- Online-CalvinKlein Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online-Olga</masterLabel>
+            <translation><!-- Online-Olga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online-Warner&#39;s</masterLabel>
+            <translation><!-- Online-Warner&apos;s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Retailer</masterLabel>
+            <translation><!-- Other Retailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speedo.com</masterLabel>
+            <translation><!-- Speedo.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Hilfiger Store</masterLabel>
+            <translation><!-- Tommy Hilfiger Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Van Heusen | IZOD Company Store</masterLabel>
+            <translation><!-- Van Heusen | IZOD Company Store --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

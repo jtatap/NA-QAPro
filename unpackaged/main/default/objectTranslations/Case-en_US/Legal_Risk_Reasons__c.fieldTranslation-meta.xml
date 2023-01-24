@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Legal/Risk Reasons --></label>
+        <name>Legal_Risk_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Incident Reports</masterLabel>
+            <translation><!-- Incident Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Claims</masterLabel>
+            <translation><!-- Risk Claims --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

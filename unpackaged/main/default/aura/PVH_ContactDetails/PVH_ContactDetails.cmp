@@ -1,0 +1,38 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="oSelectedContactEvent" event="c:SearchAllSelectionEvt" action="{!c.handleComponentEvent}"/>
+     <aura:attribute name="selectedId" type="String" />
+     <aura:attribute name="recordId"  type="string"  />
+    <aura:attribute name="recordError" type="String" />
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    
+    <lightning:card variant="Narrow" title="Contact Details" 
+                    iconName="standard:contact">
+        <div style="padding:1rem;padding-top :0.2rem">
+            <c:ContactLookup 
+                             objectAPIName="contact"
+                             aura:id="contact"
+                             label=""
+                             returnFields="['Name','Email','Brand_Lookup_Search__c','LoyaltyID__c']"
+                             queryFields="['Name','Email','Brand_Lookup_Search__c','LoyaltyID__c']"
+                             selectedId="{!v.selectedId}"
+                             maxResults="5"
+                             filter="CreatedDate > 1900-01-01T00:00:01Z" /> 
+              <div style="padding-top:1rem;">
+        <center>
+            <lightning:button label="Confirm" onclick="{!c.updateRecord}" variant="brand"/> 
+          </center>
+      </div> 
+             
+            <force:recordData aura:id="recordHandler"
+                        fields="['Id','ContactId']"
+                        recordId="{!v.recordId}"
+                        targetRecord="{!v.record}"
+                        targetError = "{!v.recordError}"
+                        targetFields ="{!v.simpleRecord}"
+                        mode="EDIT" />
+            
+        </div> 
+    </lightning:card>
+    
+</aura:component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <description>Parent brand</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Add associated Brand here.</inlineHelpText>
+    <label>Brand</label>
+    <referenceTo>Webform_Brands__mdt</referenceTo>
+    <relationshipLabel>Brand Form - Brand Channels</relationshipLabel>
+    <relationshipName>Brand_Channels</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

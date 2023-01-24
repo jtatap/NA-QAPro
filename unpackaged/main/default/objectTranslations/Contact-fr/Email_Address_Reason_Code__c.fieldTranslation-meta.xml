@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Email Address Reason Code --></label>
+        <name>Email_Address_Reason_Code__c</name>
+        <picklistValues>
+            <masterLabel>Verfication Success: login email is already in use</masterLabel>
+            <translation><!-- Verfication Success: login email is already in use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Declined : No Email Update</masterLabel>
+            <translation><!-- Verification Declined : No Email Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Declined: No Advertising Opt Out</masterLabel>
+            <translation><!-- Verification Declined: No Advertising Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Declined: No personal data update</masterLabel>
+            <translation><!-- Verification Declined: No personal data update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Failure : No Customer&#39;s response</masterLabel>
+            <translation><!-- Verification Failure : No Customer&apos;s response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Failure: No customer response</masterLabel>
+            <translation><!-- Verification Failure: No customer response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Success : Email Update</masterLabel>
+            <translation><!-- Verification Success : Email Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Success : R2R update</masterLabel>
+            <translation><!-- Verification Success : R2R update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Success : Unable to Update in SC</masterLabel>
+            <translation><!-- Verification Success : Unable to Update in SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Success: Do Not Sell/ Share Approved</masterLabel>
+            <translation><!-- Verification Success: Do Not Sell/ Share Approved --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

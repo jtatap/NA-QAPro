@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- #^# separated list of conditions that need to be checked during record creation. E.g. agentStateId:2#^#outStateId:0 --></help>
+        <label><!-- Contain-conditions In Response&apos;s Records --></label>
+        <name>Contain_conditions_In_Response_s_Records__c</name>
+    </CustomFieldTranslation>

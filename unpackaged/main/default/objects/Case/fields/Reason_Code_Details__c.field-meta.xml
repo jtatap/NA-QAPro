@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Code_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Code Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Code__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accepted Forms of Payment</fullName>
+                <default>false</default>
+                <label>Accepted Forms of Payment</label>
+            </value>
+            <value>
+                <fullName>Account Information (Member ID)</fullName>
+                <default>false</default>
+                <label>Account Information (Member ID)</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Account Issue (Godzilla, Dummy Account)</fullName>
+                <default>false</default>
+                <label>Account Issue (Godzilla, Dummy Account)</label>
+            </value>
+            <value>
+                <fullName>Account Issue (Loyalty Flag)</fullName>
+                <default>false</default>
+                <label>Account Issue (Loyalty Flag)</label>
+            </value>
+            <value>
+                <fullName>Account Merge</fullName>
+                <default>false</default>
+                <label>Account Merge</label>
+            </value>
+            <value>
+                <fullName>Account Registration Error</fullName>
+                <default>false</default>
+                <label>Account Registration Error</label>
+            </value>
+            <value>
+                <fullName>Adaptive</fullName>
+                <default>false</default>
+                <label>Adaptive</label>
+            </value>
+            <value>
+                <fullName>Address Error</fullName>
+                <default>false</default>
+                <label>Address Error</label>
+            </value>
+            <value>
+                <fullName>Associate Discount</fullName>
+                <default>false</default>
+                <label>Associate Discount</label>
+            </value>
+            <value>
+                <fullName>Authorization Hold</fullName>
+                <default>false</default>
+                <label>Authorization Hold</label>
+            </value>
+            <value>
+                <fullName>Balance Confirmation (Points/Rewards)</fullName>
+                <default>false</default>
+                <label>Balance Confirmation (Points/Rewards)</label>
+            </value>
+            <value>
+                <fullName>BBB Complaint</fullName>
+                <default>false</default>
+                <label>BBB Complaint</label>
+            </value>
+            <value>
+                <fullName>Black Friday Complaint</fullName>
+                <default>false</default>
+                <label>Black Friday Complaint</label>
+            </value>
+            <value>
+                <fullName>Brand Protection</fullName>
+                <default>false</default>
+                <label>Brand Protection</label>
+            </value>
+            <value>
+                <fullName>Bulk Buyer Warning</fullName>
+                <default>false</default>
+                <label>Bulk Buyer Warning</label>
+            </value>
+            <value>
+                <fullName>Business Solicitation</fullName>
+                <default>false</default>
+                <label>Business Solicitation</label>
+            </value>
+            <value>
+                <fullName>Call/Chat Disconnect</fullName>
+                <default>false</default>
+                <label>Call/Chat Disconnect</label>
+            </value>
+            <value>
+                <fullName>Cancelled Item</fullName>
+                <default>false</default>
+                <label>Cancelled Item</label>
+            </value>
+            <value>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+                <label>Cancelled Order</label>
+            </value>
+            <value>
+                <fullName>Cancel Order Request</fullName>
+                <default>false</default>
+                <label>Cancel Order Request</label>
+            </value>
+            <value>
+                <fullName>Care Instructions</fullName>
+                <default>false</default>
+                <label>Care Instructions</label>
+            </value>
+            <value>
+                <fullName>Check Complaint</fullName>
+                <default>false</default>
+                <label>Check Complaint</label>
+            </value>
+            <value>
+                <fullName>Check Inventory/Restock Inquiry</fullName>
+                <default>false</default>
+                <label>Check Inventory/Restock Inquiry</label>
+            </value>
+            <value>
+                <fullName>Check-out Error (Non-Fraud/Payment)</fullName>
+                <default>false</default>
+                <label>Check-out Error (Non-Fraud/Payment)</label>
+            </value>
+            <value>
+                <fullName>Claim Status</fullName>
+                <default>false</default>
+                <label>Claim Status</label>
+            </value>
+            <value>
+                <fullName>Contest/Sweepstakes</fullName>
+                <default>false</default>
+                <label>Contest/Sweepstakes</label>
+            </value>
+            <value>
+                <fullName>Corporate Outfitters Request</fullName>
+                <default>false</default>
+                <label>Corporate Outfitters Request</label>
+            </value>
+            <value>
+                <fullName>Corporate Responsibility</fullName>
+                <default>false</default>
+                <label>Corporate Responsibility</label>
+            </value>
+            <value>
+                <fullName>Corp Social Responsibility</fullName>
+                <default>false</default>
+                <label>Corp Social Responsibility</label>
+            </value>
+            <value>
+                <fullName>Counterfeit Merchandise</fullName>
+                <default>false</default>
+                <label>Counterfeit Merchandise</label>
+            </value>
+            <value>
+                <fullName>Country/State Error</fullName>
+                <default>false</default>
+                <label>Country/State Error</label>
+            </value>
+            <value>
+                <fullName>Coupon Request</fullName>
+                <default>false</default>
+                <label>Coupon Request</label>
+            </value>
+            <value>
+                <fullName>Covet Diamond Request</fullName>
+                <default>false</default>
+                <label>Covet Diamond Request</label>
+            </value>
+            <value>
+                <fullName>COVID-19 Customer Feedback</fullName>
+                <default>false</default>
+                <label>COVID-19 Customer Feedback</label>
+            </value>
+            <value>
+                <fullName>COVID-19 Store Feedback</fullName>
+                <default>false</default>
+                <label>COVID-19 Store Feedback</label>
+            </value>
+            <value>
+                <fullName>Create Return (FEDEX)</fullName>
+                <default>false</default>
+                <label>Create Return (FEDEX)</label>
+            </value>
+            <value>
+                <fullName>Create Return (NARVAR)</fullName>
+                <default>false</default>
+                <label>Create Return (NARVAR)</label>
+            </value>
+            <value>
+                <fullName>CSAT Reply</fullName>
+                <default>false</default>
+                <label>CSAT Reply</label>
+            </value>
+            <value>
+                <fullName>Customer Accident</fullName>
+                <default>false</default>
+                <label>Customer Accident</label>
+            </value>
+            <value>
+                <fullName>CyberSource/Forter Decline</fullName>
+                <default>false</default>
+                <label>CyberSource/Forter Decline</label>
+            </value>
+            <value>
+                <fullName>Defective Merchandise</fullName>
+                <default>false</default>
+                <label>Defective Merchandise</label>
+            </value>
+            <value>
+                <fullName>Discount Inquiry (First Responder)</fullName>
+                <default>false</default>
+                <label>Discount Inquiry (First Responder)</label>
+            </value>
+            <value>
+                <fullName>Discount Inquiry (Senior, Military, Student)</fullName>
+                <default>false</default>
+                <label>Discount Inquiry (Senior, Military, Student)</label>
+            </value>
+            <value>
+                <fullName>Disqualification Inquiry</fullName>
+                <default>false</default>
+                <label>Disqualification Inquiry</label>
+            </value>
+            <value>
+                <fullName>Donation Request</fullName>
+                <default>false</default>
+                <label>Donation Request</label>
+            </value>
+            <value>
+                <fullName>Double Charge</fullName>
+                <default>false</default>
+                <label>Double Charge</label>
+            </value>
+            <value>
+                <fullName>Duty/Taxes Inquiry</fullName>
+                <default>false</default>
+                <label>Duty/Taxes Inquiry</label>
+            </value>
+            <value>
+                <fullName>eBay</fullName>
+                <default>false</default>
+                <label>eBay</label>
+            </value>
+            <value>
+                <fullName>Edit Account Information</fullName>
+                <default>false</default>
+                <label>Edit Account Information</label>
+            </value>
+            <value>
+                <fullName>Edit Order</fullName>
+                <default>false</default>
+                <label>Edit Order</label>
+            </value>
+            <value>
+                <fullName>Employment/Internship Inquiries</fullName>
+                <default>false</default>
+                <label>Employment/Internship Inquiries</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>Executive Escalation</fullName>
+                <default>false</default>
+                <label>Executive Escalation</label>
+            </value>
+            <value>
+                <fullName>Existing Reward Question</fullName>
+                <default>false</default>
+                <label>Existing Reward Question</label>
+            </value>
+            <value>
+                <fullName>Expired Reward Extension</fullName>
+                <default>false</default>
+                <label>Expired Reward Extension</label>
+            </value>
+            <value>
+                <fullName>Explore Page</fullName>
+                <default>false</default>
+                <label>Explore Page</label>
+            </value>
+            <value>
+                <fullName>Front Desk Transfer</fullName>
+                <default>false</default>
+                <label>Front Desk Transfer</label>
+            </value>
+            <value>
+                <fullName>GC/MC Balance</fullName>
+                <default>false</default>
+                <label>GC/MC Balance</label>
+            </value>
+            <value>
+                <fullName>GDPR/CCPA</fullName>
+                <default>false</default>
+                <label>GDPR/CCPA</label>
+            </value>
+            <value>
+                <fullName>General Company Inquiry</fullName>
+                <default>false</default>
+                <label>General Company Inquiry</label>
+            </value>
+            <value>
+                <fullName>Gift Card Replacement</fullName>
+                <default>false</default>
+                <label>Gift Card Replacement</label>
+            </value>
+            <value>
+                <fullName>Gift Card Request</fullName>
+                <default>false</default>
+                <label>Gift Card Request</label>
+            </value>
+            <value>
+                <fullName>Good Service</fullName>
+                <default>false</default>
+                <label>Good Service</label>
+            </value>
+            <value>
+                <fullName>How to Return</fullName>
+                <default>false</default>
+                <label>How to Return</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Incorrect Refund</fullName>
+                <default>false</default>
+                <label>Incorrect Refund</label>
+            </value>
+            <value>
+                <fullName>In Store Registration Issue</fullName>
+                <default>false</default>
+                <label>In Store Registration Issue</label>
+            </value>
+            <value>
+                <fullName>International Payment</fullName>
+                <default>false</default>
+                <label>International Payment</label>
+            </value>
+            <value>
+                <fullName>International Transfer</fullName>
+                <default>false</default>
+                <label>International Transfer</label>
+            </value>
+            <value>
+                <fullName>Issue Points</fullName>
+                <default>false</default>
+                <label>Issue Points</label>
+            </value>
+            <value>
+                <fullName>Item(s) Damaged</fullName>
+                <default>false</default>
+                <label>Item(s) Damaged</label>
+            </value>
+            <value>
+                <fullName>Klarna</fullName>
+                <default>false</default>
+                <label>Klarna</label>
+            </value>
+            <value>
+                <fullName>Language Change Request</fullName>
+                <default>false</default>
+                <label>Language Change Request</label>
+            </value>
+            <value>
+                <fullName>Language Transfer</fullName>
+                <default>false</default>
+                <label>Language Transfer</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Licensing</fullName>
+                <default>false</default>
+                <label>Licensing</label>
+            </value>
+            <value>
+                <fullName>Locate Product</fullName>
+                <default>false</default>
+                <label>Locate Product</label>
+            </value>
+            <value>
+                <fullName>Locked Out</fullName>
+                <default>false</default>
+                <label>Locked Out</label>
+            </value>
+            <value>
+                <fullName>Loyalty Member ID (Preferred Merge Error)</fullName>
+                <default>false</default>
+                <label>Loyalty Member ID (Preferred Merge Error)</label>
+            </value>
+            <value>
+                <fullName>Manual Reward Redemption</fullName>
+                <default>false</default>
+                <label>Manual Reward Redemption</label>
+            </value>
+            <value>
+                <fullName>Marketing Complaints</fullName>
+                <default>false</default>
+                <label>Marketing Complaints</label>
+            </value>
+            <value>
+                <fullName>Merchandise Credit</fullName>
+                <default>false</default>
+                <label>Merchandise Credit</label>
+            </value>
+            <value>
+                <fullName>Mis-Ship</fullName>
+                <default>false</default>
+                <label>Mis-Ship</label>
+            </value>
+            <value>
+                <fullName>Modeling Scam</fullName>
+                <default>false</default>
+                <label>Modeling Scam</label>
+            </value>
+            <value>
+                <fullName>Model Inquiry</fullName>
+                <default>false</default>
+                <label>Model Inquiry</label>
+            </value>
+            <value>
+                <fullName>Narvar Error</fullName>
+                <default>false</default>
+                <label>Narvar Error</label>
+            </value>
+            <value>
+                <fullName>No Notes</fullName>
+                <default>false</default>
+                <label>No Notes</label>
+            </value>
+            <value>
+                <fullName>No Reply</fullName>
+                <default>false</default>
+                <label>No Reply</label>
+            </value>
+            <value>
+                <fullName>Not Receiving Email</fullName>
+                <default>false</default>
+                <label>Not Receiving Email</label>
+            </value>
+            <value>
+                <fullName>Not Receiving Password Reset Email</fullName>
+                <default>false</default>
+                <label>Not Receiving Password Reset Email</label>
+            </value>
+            <value>
+                <fullName>OptIN Request</fullName>
+                <default>false</default>
+                <label>OptIN Request</label>
+            </value>
+            <value>
+                <fullName>Order Confirmation Email</fullName>
+                <default>false</default>
+                <label>Order Confirmation Email</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Password Reset Issue</fullName>
+                <default>false</default>
+                <label>Password Reset Issue</label>
+            </value>
+            <value>
+                <fullName>Password Reset Request</fullName>
+                <default>false</default>
+                <label>Password Reset Request</label>
+            </value>
+            <value>
+                <fullName>Payment Error</fullName>
+                <default>false</default>
+                <label>Payment Error</label>
+            </value>
+            <value>
+                <fullName>Payment Fraud</fullName>
+                <default>false</default>
+                <label>Payment Fraud</label>
+            </value>
+            <value>
+                <fullName>PayPal Authorization</fullName>
+                <default>false</default>
+                <label>PayPal Authorization</label>
+            </value>
+            <value>
+                <fullName>PayPal Authorization Void</fullName>
+                <default>false</default>
+                <label>PayPal Authorization Void</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>PI/PD Removal Request</fullName>
+                <default>false</default>
+                <label>PI/PD Removal Request</label>
+            </value>
+            <value>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+                <label>Place Order</label>
+            </value>
+            <value>
+                <fullName>Point Balance</fullName>
+                <default>false</default>
+                <label>Point Balance</label>
+            </value>
+            <value>
+                <fullName>Poor Service</fullName>
+                <default>false</default>
+                <label>Poor Service</label>
+            </value>
+            <value>
+                <fullName>Possible Fraud</fullName>
+                <default>false</default>
+                <label>Possible Fraud</label>
+            </value>
+            <value>
+                <fullName>Post Void</fullName>
+                <default>false</default>
+                <label>Post Void</label>
+            </value>
+            <value>
+                <fullName>Prank/Scam</fullName>
+                <default>false</default>
+                <label>Prank/Scam</label>
+            </value>
+            <value>
+                <fullName>Preorder Cancellation</fullName>
+                <default>false</default>
+                <label>Preorder Cancellation</label>
+            </value>
+            <value>
+                <fullName>Preorder Inquiry</fullName>
+                <default>false</default>
+                <label>Preorder Inquiry</label>
+            </value>
+            <value>
+                <fullName>Price Adjustment</fullName>
+                <default>false</default>
+                <label>Price Adjustment</label>
+            </value>
+            <value>
+                <fullName>Price Dispute</fullName>
+                <default>false</default>
+                <label>Price Dispute</label>
+            </value>
+            <value>
+                <fullName>Processing Time/ Released to Fulfillment</fullName>
+                <default>false</default>
+                <label>Processing Time/ Released to Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Product Inquiry</fullName>
+                <default>false</default>
+                <label>Product Inquiry</label>
+            </value>
+            <value>
+                <fullName>Product Repair</fullName>
+                <default>false</default>
+                <label>Product Repair</label>
+            </value>
+            <value>
+                <fullName>Program Removal Request</fullName>
+                <default>false</default>
+                <label>Program Removal Request</label>
+            </value>
+            <value>
+                <fullName>Program SignUp</fullName>
+                <default>false</default>
+                <label>Program SignUp</label>
+            </value>
+            <value>
+                <fullName>Promo Code Question</fullName>
+                <default>false</default>
+                <label>Promo Code Question</label>
+            </value>
+            <value>
+                <fullName>Promotional Website Question</fullName>
+                <default>false</default>
+                <label>Promotional Website Question</label>
+            </value>
+            <value>
+                <fullName>Promotion Code Error</fullName>
+                <default>false</default>
+                <label>Promotion Code Error</label>
+            </value>
+            <value>
+                <fullName>Purchase Gift Card</fullName>
+                <default>false</default>
+                <label>Purchase Gift Card</label>
+            </value>
+            <value>
+                <fullName>PVH Tool Preferred Points</fullName>
+                <default>false</default>
+                <label>PVH Tool Preferred Points</label>
+            </value>
+            <value>
+                <fullName>Receipt Lookup</fullName>
+                <default>false</default>
+                <label>Receipt Lookup</label>
+            </value>
+            <value>
+                <fullName>Refund Failure</fullName>
+                <default>false</default>
+                <label>Refund Failure</label>
+            </value>
+            <value>
+                <fullName>Refund Status</fullName>
+                <default>false</default>
+                <label>Refund Status</label>
+            </value>
+            <value>
+                <fullName>Register Account Online</fullName>
+                <default>false</default>
+                <label>Register Account Online</label>
+            </value>
+            <value>
+                <fullName>Replacement Parts Inquiry</fullName>
+                <default>false</default>
+                <label>Replacement Parts Inquiry</label>
+            </value>
+            <value>
+                <fullName>Request W2</fullName>
+                <default>false</default>
+                <label>Request W2</label>
+            </value>
+            <value>
+                <fullName>Return Instructions</fullName>
+                <default>false</default>
+                <label>Return Instructions</label>
+            </value>
+            <value>
+                <fullName>Return Policy Inquiry</fullName>
+                <default>false</default>
+                <label>Return Policy Inquiry</label>
+            </value>
+            <value>
+                <fullName>Reward Extension</fullName>
+                <default>false</default>
+                <label>Reward Extension</label>
+            </value>
+            <value>
+                <fullName>Reward Redemption Issue</fullName>
+                <default>false</default>
+                <label>Reward Redemption Issue</label>
+            </value>
+            <value>
+                <fullName>Risk</fullName>
+                <default>false</default>
+                <label>Risk</label>
+            </value>
+            <value>
+                <fullName>Security Tag</fullName>
+                <default>false</default>
+                <label>Security Tag</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Shoprunner Error</fullName>
+                <default>false</default>
+                <label>Shoprunner Error</label>
+            </value>
+            <value>
+                <fullName>Short Ship</fullName>
+                <default>false</default>
+                <label>Short Ship</label>
+            </value>
+            <value>
+                <fullName>Sizing Feedback</fullName>
+                <default>false</default>
+                <label>Sizing Feedback</label>
+            </value>
+            <value>
+                <fullName>Sizing Question</fullName>
+                <default>false</default>
+                <label>Sizing Question</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Speedo Business Request</fullName>
+                <default>false</default>
+                <label>Speedo Business Request</label>
+            </value>
+            <value>
+                <fullName>Split Payment</fullName>
+                <default>false</default>
+                <label>Split Payment</label>
+            </value>
+            <value>
+                <fullName>Sponsorship &amp; Collaboration</fullName>
+                <default>false</default>
+                <label>Sponsorship &amp; Collaboration</label>
+            </value>
+            <value>
+                <fullName>Sticker Request</fullName>
+                <default>false</default>
+                <label>Sticker Request</label>
+            </value>
+            <value>
+                <fullName>Store Closing Complaint</fullName>
+                <default>false</default>
+                <label>Store Closing Complaint</label>
+            </value>
+            <value>
+                <fullName>Store Information (Location, Phone, &amp; Hours)</fullName>
+                <default>false</default>
+                <label>Store Information (Location, Phone, &amp; Hours)</label>
+            </value>
+            <value>
+                <fullName>Store Warning</fullName>
+                <default>false</default>
+                <label>Store Warning</label>
+            </value>
+            <value>
+                <fullName>Suggestion</fullName>
+                <default>false</default>
+                <label>Suggestion</label>
+            </value>
+            <value>
+                <fullName>Tax Exempt</fullName>
+                <default>false</default>
+                <label>Tax Exempt</label>
+            </value>
+            <value>
+                <fullName>TH Data Protection – Japan</fullName>
+                <default>false</default>
+                <label>TH Data Protection – Japan</label>
+            </value>
+            <value>
+                <fullName>Tommy Harmonization</fullName>
+                <default>false</default>
+                <label>Tommy Harmonization</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger Club</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger Club</label>
+            </value>
+            <value>
+                <fullName>Track It Issue</fullName>
+                <default>false</default>
+                <label>Track It Issue</label>
+            </value>
+            <value>
+                <fullName>Track Return Shipment</fullName>
+                <default>false</default>
+                <label>Track Return Shipment</label>
+            </value>
+            <value>
+                <fullName>Unable to Place Order</fullName>
+                <default>false</default>
+                <label>Unable to Place Order</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe</fullName>
+                <default>false</default>
+                <label>Unsubscribe</label>
+            </value>
+            <value>
+                <fullName>Virtual Giftcard</fullName>
+                <default>false</default>
+                <label>Virtual Giftcard</label>
+            </value>
+            <value>
+                <fullName>Warners/Olga Inquiry</fullName>
+                <default>false</default>
+                <label>Warners/Olga Inquiry</label>
+            </value>
+            <value>
+                <fullName>Website Issue</fullName>
+                <default>false</default>
+                <label>Website Issue</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Accounting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Associate Discount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>BBB Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Black Friday Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Brand Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Business Solicitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Call/Chat Disconnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Check Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Claim Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corporate Outfitters Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corporate Responsibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corp Social Responsibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>COVID-19 Customer Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>COVID-19 Store Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>CSAT Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Customer Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Donation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Employment/Internship Inquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Executive Escalation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Front Desk Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>GDPR/CCPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>General Company Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Gift Card Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Human Resources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>International Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Language Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Licensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Marketing Complaints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Modeling Scam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Model Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>No Notes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>No Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>PI/PD Removal Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Prank/Scam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Request W2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Spam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Speedo Business Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Sponsorship &amp; Collaboration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Sticker Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Store Closing Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Store Information (Location, Phone, &amp; Hours)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Store Warning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>TH Data Protection – Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Warners/Olga Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Wrong Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Account Information (Member ID)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Account Issue (Godzilla, Dummy Account)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Account Issue (Loyalty Flag)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Account Merge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Balance Confirmation (Points/Rewards)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Bulk Buyer Warning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Disqualification Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Edit Account Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Existing Reward Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Expired Reward Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>In Store Registration Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Issue Points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Locked Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Manual Reward Redemption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Password Reset Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Point Balance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Program Removal Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Program SignUp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Register Account Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Reward Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Reward Redemption Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Tommy Hilfiger Club</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Contest/Sweepstakes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Coupon Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Discount Inquiry (First Responder)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Discount Inquiry (Senior, Military, Student)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>eBay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Explore Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Language Change Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Not Receiving Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Not Receiving Password Reset Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>OptIN Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Promo Code Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Promotional Website Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Unsubscribe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Cancelled Item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Cancelled Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Cancel Order Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>CyberSource/Forter Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Edit Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Item(s) Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Mis-Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Order Confirmation Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Preorder Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Preorder Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Processing Time/ Released to Fulfillment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Short Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orders</controllingFieldValue>
+            <valueName>Virtual Giftcard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Accepted Forms of Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Authorization Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Double Charge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Duty/Taxes Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>International Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Klarna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Payment Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>PayPal Authorization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Price Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Price Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Split Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Tax Exempt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Adaptive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Care Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Check Inventory/Restock Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Counterfeit Merchandise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Defective Merchandise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Locate Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Product Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Product Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Replacement Parts Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Return Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Security Tag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Sizing Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Sizing Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Tommy Harmonization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Create Return (FEDEX)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Create Return (NARVAR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>How to Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Incorrect Refund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Merchandise Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Refund Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Refund Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Return Policy Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Track Return Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>GC/MC Balance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Place Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Possible Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Post Void</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Purchase Gift Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Receipt Lookup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Unable to Place Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Good Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Poor Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Account Registration Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Address Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Check-out Error (Non-Fraud/Payment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Country/State Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Covet Diamond Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Gift Card Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Loyalty Member ID (Preferred Merge Error)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Narvar Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Password Reset Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Payment Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>PayPal Authorization Void</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Promotion Code Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>PVH Tool Preferred Points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Shoprunner Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Track It Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Website Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Third Party Vendors --></label>
+        <name>Third_Party_Vendors__c</name>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costco</masterLabel>
+            <translation><!-- Costco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dick&#39;s Sporting Goods</masterLabel>
+            <translation><!-- Dick&apos;s Sporting Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elsmore Swim Shop</masterLabel>
+            <translation><!-- Elsmore Swim Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Swim Shop</masterLabel>
+            <translation><!-- Men&apos;s Swim Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Outlet</masterLabel>
+            <translation><!-- Swim Outlet --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

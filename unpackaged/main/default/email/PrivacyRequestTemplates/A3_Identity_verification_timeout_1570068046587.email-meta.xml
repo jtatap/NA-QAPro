@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Identity verification timeout</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>A3 - Identity verification timeout</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Case Closed: {{{Case.Brand__c}}} Personal Data Request - {{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

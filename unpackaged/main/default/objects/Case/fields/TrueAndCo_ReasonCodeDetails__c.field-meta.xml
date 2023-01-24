@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrueAndCo_ReasonCodeDetails__c</fullName>
+    <externalId>false</externalId>
+    <label>TrueAndCo_ReasonCodeDetails</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TrueAndCo_ReasonCodes__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add Promo Code</fullName>
+                <default>false</default>
+                <label>Add Promo Code</label>
+            </value>
+            <value>
+                <fullName>Address Change Request</fullName>
+                <default>false</default>
+                <label>Address Change Request</label>
+            </value>
+            <value>
+                <fullName>Address Validation</fullName>
+                <default>false</default>
+                <label>Address Validation</label>
+            </value>
+            <value>
+                <fullName>Admin Issue</fullName>
+                <default>false</default>
+                <label>Admin Issue</label>
+            </value>
+            <value>
+                <fullName>Amazon Partnership</fullName>
+                <default>false</default>
+                <label>Amazon Partnership</label>
+            </value>
+            <value>
+                <fullName>Authorization Hold</fullName>
+                <default>false</default>
+                <label>Authorization Hold</label>
+            </value>
+            <value>
+                <fullName>Availability</fullName>
+                <default>false</default>
+                <label>Availability</label>
+            </value>
+            <value>
+                <fullName>BBB Complaint</fullName>
+                <default>false</default>
+                <label>BBB Complaint</label>
+            </value>
+            <value>
+                <fullName>Business Solicitation</fullName>
+                <default>false</default>
+                <label>Business Solicitation</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request</fullName>
+                <default>false</default>
+                <label>Cancellation Request</label>
+            </value>
+            <value>
+                <fullName>Cancel Request</fullName>
+                <default>false</default>
+                <label>Cancel Request</label>
+            </value>
+            <value>
+                <fullName>Care Instructions</fullName>
+                <default>false</default>
+                <label>Care Instructions</label>
+            </value>
+            <value>
+                <fullName>Catalog Subscribe Request</fullName>
+                <default>false</default>
+                <label>Catalog Subscribe Request</label>
+            </value>
+            <value>
+                <fullName>Catalog Unsubscribe Request</fullName>
+                <default>false</default>
+                <label>Catalog Unsubscribe Request</label>
+            </value>
+            <value>
+                <fullName>Chemical Questions</fullName>
+                <default>false</default>
+                <label>Chemical Questions</label>
+            </value>
+            <value>
+                <fullName>Color/Style</fullName>
+                <default>false</default>
+                <label>Color/Style</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Consultation</fullName>
+                <default>false</default>
+                <label>Consultation</label>
+            </value>
+            <value>
+                <fullName>Corporate Info Request</fullName>
+                <default>false</default>
+                <label>Corporate Info Request</label>
+            </value>
+            <value>
+                <fullName>Corporate Responsibility</fullName>
+                <default>false</default>
+                <label>Corporate Responsibility</label>
+            </value>
+            <value>
+                <fullName>Defective</fullName>
+                <default>false</default>
+                <label>Defective</label>
+            </value>
+            <value>
+                <fullName>Delayed Reconciliation</fullName>
+                <default>false</default>
+                <label>Delayed Reconciliation</label>
+            </value>
+            <value>
+                <fullName>Delete Account</fullName>
+                <default>false</default>
+                <label>Delete Account</label>
+            </value>
+            <value>
+                <fullName>Delivered Not Received</fullName>
+                <default>false</default>
+                <label>Delivered Not Received</label>
+            </value>
+            <value>
+                <fullName>Double Charge</fullName>
+                <default>false</default>
+                <label>Double Charge</label>
+            </value>
+            <value>
+                <fullName>Email Errors</fullName>
+                <default>false</default>
+                <label>Email Errors</label>
+            </value>
+            <value>
+                <fullName>Email Unsubscribe Request</fullName>
+                <default>false</default>
+                <label>Email Unsubscribe Request</label>
+            </value>
+            <value>
+                <fullName>Exchanged Not Received</fullName>
+                <default>false</default>
+                <label>Exchanged Not Received</label>
+            </value>
+            <value>
+                <fullName>Exchanges</fullName>
+                <default>false</default>
+                <label>Exchanges</label>
+            </value>
+            <value>
+                <fullName>Extra Pad Request</fullName>
+                <default>false</default>
+                <label>Extra Pad Request</label>
+            </value>
+            <value>
+                <fullName>Fabric Content</fullName>
+                <default>false</default>
+                <label>Fabric Content</label>
+            </value>
+            <value>
+                <fullName>Feedback/Suggestion</fullName>
+                <default>false</default>
+                <label>Feedback/Suggestion</label>
+            </value>
+            <value>
+                <fullName>Final Sale</fullName>
+                <default>false</default>
+                <label>Final Sale</label>
+            </value>
+            <value>
+                <fullName>Fit/Sizing Question</fullName>
+                <default>false</default>
+                <label>Fit/Sizing Question</label>
+            </value>
+            <value>
+                <fullName>Fulfill Cancel</fullName>
+                <default>false</default>
+                <label>Fulfill Cancel</label>
+            </value>
+            <value>
+                <fullName>GDPA/CCPA (Data Removal)</fullName>
+                <default>false</default>
+                <label>GDPA/CCPA (Data Removal)</label>
+            </value>
+            <value>
+                <fullName>Gift Card Balance</fullName>
+                <default>false</default>
+                <label>Gift Card Balance</label>
+            </value>
+            <value>
+                <fullName>Gift Card Redemption</fullName>
+                <default>false</default>
+                <label>Gift Card Redemption</label>
+            </value>
+            <value>
+                <fullName>Guest Checkout Return</fullName>
+                <default>false</default>
+                <label>Guest Checkout Return</label>
+            </value>
+            <value>
+                <fullName>HR Inquiry</fullName>
+                <default>false</default>
+                <label>HR Inquiry</label>
+            </value>
+            <value>
+                <fullName>Instructions</fullName>
+                <default>false</default>
+                <label>Instructions</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>International Inquiry (APO/FPO/DPO)</fullName>
+                <default>false</default>
+                <label>International Inquiry (APO/FPO/DPO)</label>
+            </value>
+            <value>
+                <fullName>Invalid Address</fullName>
+                <default>false</default>
+                <label>Invalid Address</label>
+            </value>
+            <value>
+                <fullName>Item Change Request</fullName>
+                <default>false</default>
+                <label>Item Change Request</label>
+            </value>
+            <value>
+                <fullName>Landing Page Unavailable</fullName>
+                <default>false</default>
+                <label>Landing Page Unavailable</label>
+            </value>
+            <value>
+                <fullName>Login Error</fullName>
+                <default>false</default>
+                <label>Login Error</label>
+            </value>
+            <value>
+                <fullName>Login Info</fullName>
+                <default>false</default>
+                <label>Login Info</label>
+            </value>
+            <value>
+                <fullName>Lost Package</fullName>
+                <default>false</default>
+                <label>Lost Package</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Marketing Feedback</fullName>
+                <default>false</default>
+                <label>Marketing Feedback</label>
+            </value>
+            <value>
+                <fullName>Marketing Inquiry</fullName>
+                <default>false</default>
+                <label>Marketing Inquiry</label>
+            </value>
+            <value>
+                <fullName>Marketing Response</fullName>
+                <default>false</default>
+                <label>Marketing Response</label>
+            </value>
+            <value>
+                <fullName>Mastectomy Question</fullName>
+                <default>false</default>
+                <label>Mastectomy Question</label>
+            </value>
+            <value>
+                <fullName>Mis-ship Item</fullName>
+                <default>false</default>
+                <label>Mis-ship Item</label>
+            </value>
+            <value>
+                <fullName>Mis-ship Order</fullName>
+                <default>false</default>
+                <label>Mis-ship Order</label>
+            </value>
+            <value>
+                <fullName>Missing Item</fullName>
+                <default>false</default>
+                <label>Missing Item</label>
+            </value>
+            <value>
+                <fullName>Modeling Inquiry</fullName>
+                <default>false</default>
+                <label>Modeling Inquiry</label>
+            </value>
+            <value>
+                <fullName>No Reply</fullName>
+                <default>false</default>
+                <label>No Reply</label>
+            </value>
+            <value>
+                <fullName>No Top 3</fullName>
+                <default>false</default>
+                <label>No Top 3</label>
+            </value>
+            <value>
+                <fullName>No Tracking</fullName>
+                <default>false</default>
+                <label>No Tracking</label>
+            </value>
+            <value>
+                <fullName>Order Accommodation</fullName>
+                <default>false</default>
+                <label>Order Accommodation</label>
+            </value>
+            <value>
+                <fullName>Order Confirmation Not Received</fullName>
+                <default>false</default>
+                <label>Order Confirmation Not Received</label>
+            </value>
+            <value>
+                <fullName>Order Issue</fullName>
+                <default>false</default>
+                <label>Order Issue</label>
+            </value>
+            <value>
+                <fullName>Order Status</fullName>
+                <default>false</default>
+                <label>Order Status</label>
+            </value>
+            <value>
+                <fullName>Out of Size Range</fullName>
+                <default>false</default>
+                <label>Out of Size Range</label>
+            </value>
+            <value>
+                <fullName>Payment Declined</fullName>
+                <default>false</default>
+                <label>Payment Declined</label>
+            </value>
+            <value>
+                <fullName>Payment Dispute</fullName>
+                <default>false</default>
+                <label>Payment Dispute</label>
+            </value>
+            <value>
+                <fullName>PDP</fullName>
+                <default>false</default>
+                <label>PDP</label>
+            </value>
+            <value>
+                <fullName>Phone Order</fullName>
+                <default>false</default>
+                <label>Phone Order</label>
+            </value>
+            <value>
+                <fullName>Policy Inquiry</fullName>
+                <default>false</default>
+                <label>Policy Inquiry</label>
+            </value>
+            <value>
+                <fullName>Possible Fraud</fullName>
+                <default>false</default>
+                <label>Possible Fraud</label>
+            </value>
+            <value>
+                <fullName>Pre-authorization</fullName>
+                <default>false</default>
+                <label>Pre-authorization</label>
+            </value>
+            <value>
+                <fullName>Pre-Order Bugs</fullName>
+                <default>false</default>
+                <label>Pre-Order Bugs</label>
+            </value>
+            <value>
+                <fullName>Pre-sale Inquiry</fullName>
+                <default>false</default>
+                <label>Pre-sale Inquiry</label>
+            </value>
+            <value>
+                <fullName>Pre-sale Order Status</fullName>
+                <default>false</default>
+                <label>Pre-sale Order Status</label>
+            </value>
+            <value>
+                <fullName>Price Adjustment</fullName>
+                <default>false</default>
+                <label>Price Adjustment</label>
+            </value>
+            <value>
+                <fullName>Product Inquiry</fullName>
+                <default>false</default>
+                <label>Product Inquiry</label>
+            </value>
+            <value>
+                <fullName>Promo Code Errors</fullName>
+                <default>false</default>
+                <label>Promo Code Errors</label>
+            </value>
+            <value>
+                <fullName>PR Request</fullName>
+                <default>false</default>
+                <label>PR Request</label>
+            </value>
+            <value>
+                <fullName>Purchase Policy</fullName>
+                <default>false</default>
+                <label>Purchase Policy</label>
+            </value>
+            <value>
+                <fullName>Quiz Questions</fullName>
+                <default>false</default>
+                <label>Quiz Questions</label>
+            </value>
+            <value>
+                <fullName>Received Damaged</fullName>
+                <default>false</default>
+                <label>Received Damaged</label>
+            </value>
+            <value>
+                <fullName>Received Wrong Size</fullName>
+                <default>false</default>
+                <label>Received Wrong Size</label>
+            </value>
+            <value>
+                <fullName>Recommendation</fullName>
+                <default>false</default>
+                <label>Recommendation</label>
+            </value>
+            <value>
+                <fullName>Referral Abuse</fullName>
+                <default>false</default>
+                <label>Referral Abuse</label>
+            </value>
+            <value>
+                <fullName>Referrals</fullName>
+                <default>false</default>
+                <label>Referrals</label>
+            </value>
+            <value>
+                <fullName>Refund Status</fullName>
+                <default>false</default>
+                <label>Refund Status</label>
+            </value>
+            <value>
+                <fullName>Remove Billing Info</fullName>
+                <default>false</default>
+                <label>Remove Billing Info</label>
+            </value>
+            <value>
+                <fullName>Request Credit</fullName>
+                <default>false</default>
+                <label>Request Credit</label>
+            </value>
+            <value>
+                <fullName>Retail Inquiry</fullName>
+                <default>false</default>
+                <label>Retail Inquiry</label>
+            </value>
+            <value>
+                <fullName>Return/Exchange Status</fullName>
+                <default>false</default>
+                <label>Return/Exchange Status</label>
+            </value>
+            <value>
+                <fullName>Returned to Sender</fullName>
+                <default>false</default>
+                <label>Returned to Sender</label>
+            </value>
+            <value>
+                <fullName>Return Extension</fullName>
+                <default>false</default>
+                <label>Return Extension</label>
+            </value>
+            <value>
+                <fullName>Return Label Question</fullName>
+                <default>false</default>
+                <label>Return Label Question</label>
+            </value>
+            <value>
+                <fullName>Return Label Request</fullName>
+                <default>false</default>
+                <label>Return Label Request</label>
+            </value>
+            <value>
+                <fullName>Returns</fullName>
+                <default>false</default>
+                <label>Returns</label>
+            </value>
+            <value>
+                <fullName>Sale/Promo Inquiry</fullName>
+                <default>false</default>
+                <label>Sale/Promo Inquiry</label>
+            </value>
+            <value>
+                <fullName>Scholarship Inquiry</fullName>
+                <default>false</default>
+                <label>Scholarship Inquiry</label>
+            </value>
+            <value>
+                <fullName>Secondary Return</fullName>
+                <default>false</default>
+                <label>Secondary Return</label>
+            </value>
+            <value>
+                <fullName>Shipping Accommodation</fullName>
+                <default>false</default>
+                <label>Shipping Accommodation</label>
+            </value>
+            <value>
+                <fullName>Shipping Policy Inquiry</fullName>
+                <default>false</default>
+                <label>Shipping Policy Inquiry</label>
+            </value>
+            <value>
+                <fullName>Shopping Cart</fullName>
+                <default>false</default>
+                <label>Shopping Cart</label>
+            </value>
+            <value>
+                <fullName>Sizing Inquiry</fullName>
+                <default>false</default>
+                <label>Sizing Inquiry</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <label>Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Store Credit</fullName>
+                <default>false</default>
+                <label>Store Credit</label>
+            </value>
+            <value>
+                <fullName>Stuck in Placed/Submitted</fullName>
+                <default>false</default>
+                <label>Stuck in Placed/Submitted</label>
+            </value>
+            <value>
+                <fullName>Tag Issue</fullName>
+                <default>false</default>
+                <label>Tag Issue</label>
+            </value>
+            <value>
+                <fullName>Tags</fullName>
+                <default>false</default>
+                <label>Tags</label>
+            </value>
+            <value>
+                <fullName>Track Return/Exchange</fullName>
+                <default>false</default>
+                <label>Track Return/Exchange</label>
+            </value>
+            <value>
+                <fullName>Track Shipment</fullName>
+                <default>false</default>
+                <label>Track Shipment</label>
+            </value>
+            <value>
+                <fullName>True EveryBody</fullName>
+                <default>false</default>
+                <label>True EveryBody</label>
+            </value>
+            <value>
+                <fullName>Update Account Info</fullName>
+                <default>false</default>
+                <label>Update Account Info</label>
+            </value>
+            <value>
+                <fullName>Update Fit Info</fullName>
+                <default>false</default>
+                <label>Update Fit Info</label>
+            </value>
+            <value>
+                <fullName>Website Issue</fullName>
+                <default>false</default>
+                <label>Website Issue</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Catalog Unsubscribe Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Email Unsubscribe Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>GDPA/CCPA (Data Removal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Login Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Store Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Update Account Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Authorization Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Double Charge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Gift Card Balance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Payment Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Price Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Request Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Amazon Partnership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>BBB Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Business Solicitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Chemical Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corporate Info Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corporate Responsibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Marketing Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Marketing Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Marketing Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Modeling Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>No Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>PR Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Retail Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Scholarship Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Social Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Spam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Sponsorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fit</controllingFieldValue>
+            <valueName>Color/Style</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fit</controllingFieldValue>
+            <valueName>Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fit</controllingFieldValue>
+            <valueName>Fit/Sizing Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fit</controllingFieldValue>
+            <valueName>Out of Size Range</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fit</controllingFieldValue>
+            <valueName>Recommendation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Admin Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Cancellation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Delivered Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Fulfill Cancel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Gift Card Redemption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Item Change Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Missing Item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Order Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Order Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Possible Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Promo Code Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Purchase Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Received Wrong Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Stuck in Placed/Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Care Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Defective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Extra Pad Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Fabric Content</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Feedback/Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Mastectomy Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Product Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Sizing Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Tag Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>True EveryBody</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Cancel Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Exchanged Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Final Sale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Guest Checkout Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Policy Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Refund Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Return/Exchange Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Return Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Return Label Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Return Label Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Secondary Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange</controllingFieldValue>
+            <valueName>Track Return/Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>International Inquiry (APO/FPO/DPO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Invalid Address</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Lost Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Mis-ship Item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Mis-ship Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>No Tracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Received Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Returned to Sender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Shipping Policy Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Track Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Email Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Login Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Order Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>PDP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Shopping Cart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical</controllingFieldValue>
+            <valueName>Website Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

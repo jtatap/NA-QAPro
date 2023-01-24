@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Code_Product_Sub_Categories__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Code Product Sub-Categories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Sub_detail__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bath Products</fullName>
+                <default>false</default>
+                <label>Bath Products</label>
+            </value>
+            <value>
+                <fullName>Bedding Products</fullName>
+                <default>false</default>
+                <label>Bedding Products</label>
+            </value>
+            <value>
+                <fullName>Belts</fullName>
+                <default>false</default>
+                <label>Belts</label>
+            </value>
+            <value>
+                <fullName>Coats/Jackets</fullName>
+                <default>false</default>
+                <label>Coats/Jackets</label>
+            </value>
+            <value>
+                <fullName>Cold Weather</fullName>
+                <default>false</default>
+                <label>Cold Weather</label>
+            </value>
+            <value>
+                <fullName>Décor/Accessories</fullName>
+                <default>false</default>
+                <label>Décor/Accessories</label>
+            </value>
+            <value>
+                <fullName>Dinnerware</fullName>
+                <default>false</default>
+                <label>Dinnerware</label>
+            </value>
+            <value>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+                <label>Eyewear</label>
+            </value>
+            <value>
+                <fullName>Formal Wear</fullName>
+                <default>false</default>
+                <label>Formal Wear</label>
+            </value>
+            <value>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+                <label>Furniture</label>
+            </value>
+            <value>
+                <fullName>Goggles</fullName>
+                <default>false</default>
+                <label>Goggles</label>
+            </value>
+            <value>
+                <fullName>Handbags</fullName>
+                <default>false</default>
+                <label>Handbags</label>
+            </value>
+            <value>
+                <fullName>Jewelry</fullName>
+                <default>false</default>
+                <label>Jewelry</label>
+            </value>
+            <value>
+                <fullName>Kids Footwear</fullName>
+                <default>false</default>
+                <label>Kids Footwear</label>
+            </value>
+            <value>
+                <fullName>Mens Footwear</fullName>
+                <default>false</default>
+                <label>Mens Footwear</label>
+            </value>
+            <value>
+                <fullName>Mens Suiting</fullName>
+                <default>false</default>
+                <label>Mens Suiting</label>
+            </value>
+            <value>
+                <fullName>Men’s Underwear</fullName>
+                <default>false</default>
+                <label>Men’s Underwear</label>
+            </value>
+            <value>
+                <fullName>Overcoats</fullName>
+                <default>false</default>
+                <label>Overcoats</label>
+            </value>
+            <value>
+                <fullName>Rugs</fullName>
+                <default>false</default>
+                <label>Rugs</label>
+            </value>
+            <value>
+                <fullName>Slippers</fullName>
+                <default>false</default>
+                <label>Slippers</label>
+            </value>
+            <value>
+                <fullName>Small Goods</fullName>
+                <default>false</default>
+                <label>Small Goods</label>
+            </value>
+            <value>
+                <fullName>Socks/Tights</fullName>
+                <default>false</default>
+                <label>Socks/Tights</label>
+            </value>
+            <value>
+                <fullName>Swim Caps</fullName>
+                <default>false</default>
+                <label>Swim Caps</label>
+            </value>
+            <value>
+                <fullName>Swim Shoes</fullName>
+                <default>false</default>
+                <label>Swim Shoes</label>
+            </value>
+            <value>
+                <fullName>Swimwear Type - Elite/LZR Competition</fullName>
+                <default>false</default>
+                <label>Swimwear Type - Elite/LZR Competition</label>
+            </value>
+            <value>
+                <fullName>Swimwear Type - General Swimwear</fullName>
+                <default>false</default>
+                <label>Swimwear Type - General Swimwear</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Amazon</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Amazon</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Costco</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Costco</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Dick’s Sporting Goods</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Dick’s Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Elsmore Swim Shop</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Elsmore Swim Shop</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Men’s Swim Shop</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Men’s Swim Shop</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Other</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Other</label>
+            </value>
+            <value>
+                <fullName>Third-Party Vendor - Swim Outlet</fullName>
+                <default>false</default>
+                <label>Third-Party Vendor-Swim Outlet</label>
+            </value>
+            <value>
+                <fullName>Tie/Neckwear</fullName>
+                <default>false</default>
+                <label>Tie/Neckwear</label>
+            </value>
+            <value>
+                <fullName>Umbrella</fullName>
+                <default>false</default>
+                <label>Umbrella</label>
+            </value>
+            <value>
+                <fullName>Wallets</fullName>
+                <default>false</default>
+                <label>Wallets</label>
+            </value>
+            <value>
+                <fullName>Watches</fullName>
+                <default>false</default>
+                <label>Watches</label>
+            </value>
+            <value>
+                <fullName>Womens Footwear</fullName>
+                <default>false</default>
+                <label>Womens Footwear</label>
+            </value>
+            <value>
+                <fullName>Womens Suiting</fullName>
+                <default>false</default>
+                <label>Womens Suiting</label>
+            </value>
+            <value>
+                <fullName>Women’s Underwear</fullName>
+                <default>false</default>
+                <label>Women’s Underwear</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Outerwear</controllingFieldValue>
+            <valueName>Coats/Jackets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outerwear</controllingFieldValue>
+            <valueName>Overcoats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suiting/Formal Wear</controllingFieldValue>
+            <valueName>Formal Wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suiting/Formal Wear</controllingFieldValue>
+            <valueName>Mens Suiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suiting/Formal Wear</controllingFieldValue>
+            <valueName>Womens Suiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Footwear</controllingFieldValue>
+            <valueName>Kids Footwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Footwear</controllingFieldValue>
+            <valueName>Mens Footwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Footwear</controllingFieldValue>
+            <valueName>Slippers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Footwear</controllingFieldValue>
+            <valueName>Swim Shoes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Footwear</controllingFieldValue>
+            <valueName>Womens Footwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Swimwear Type - Elite/LZR Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Swimwear Type - General Swimwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Amazon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Costco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Dick’s Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Elsmore Swim Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Men’s Swim Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimwear</controllingFieldValue>
+            <valueName>Third-Party Vendor - Swim Outlet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Bath Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Bedding Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Décor/Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Dinnerware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Products</controllingFieldValue>
+            <valueName>Rugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Men’s Underwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Women’s Underwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Belts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Cold Weather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Eyewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Handbags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Jewelry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Small Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Socks/Tights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Swim Caps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Tie/Neckwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Umbrella</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Wallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InStore eComm Return</controllingFieldValue>
+            <valueName>Watches</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

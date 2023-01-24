@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Category__c</fullName>
+    <description>This field is used to store Product Category</description>
+    <externalId>false</externalId>
+    <label>Product Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Swimwear</fullName>
+                <default>false</default>
+                <label>Women&#39;s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Competition Swimwear</fullName>
+                <default>false</default>
+                <label>Women&#39;s Competition Swimwear</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Activewear</fullName>
+                <default>false</default>
+                <label>Women&#39;s Activewear</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Footwear</fullName>
+                <default>false</default>
+                <label>Women&#39;s Footwear</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Swimwear</fullName>
+                <default>false</default>
+                <label>Men&#39;s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Competition Swimwear</fullName>
+                <default>false</default>
+                <label>Men&#39;s Competition Swimwear</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Activewear</fullName>
+                <default>false</default>
+                <label>Men&#39;s Activewear</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Footwear</fullName>
+                <default>false</default>
+                <label>Men&#39;s Footwear</label>
+            </value>
+            <value>
+                <fullName>Girl&#39;s Swimwear</fullName>
+                <default>false</default>
+                <label>Girl&#39;s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Boy&#39;s Swimwear</fullName>
+                <default>false</default>
+                <label>Boy&#39;s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Kid&#39;s Footwear</fullName>
+                <default>false</default>
+                <label>Kid&#39;s Footwear</label>
+            </value>
+            <value>
+                <fullName>Goggles</fullName>
+                <default>false</default>
+                <label>Goggles</label>
+            </value>
+            <value>
+                <fullName>Gear</fullName>
+                <default>false</default>
+                <label>Gear</label>
+            </value>
+            <value>
+                <fullName>Bra &amp; Underwear Collection</fullName>
+                <default>false</default>
+                <label>Bra &amp; Underwear Collection</label>
+            </value>
+            <value>
+                <fullName>Bra</fullName>
+                <default>false</default>
+                <label>Bra</label>
+            </value>
+            <value>
+                <fullName>Underwear</fullName>
+                <default>false</default>
+                <label>Underwear</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Apparel</fullName>
+                <default>false</default>
+                <label>Women&#39;s Apparel</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Accessories</fullName>
+                <default>false</default>
+                <label>Women&#39;s Accessories</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Underwear</fullName>
+                <default>false</default>
+                <label>Women&#39;s Underwear</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Apparel</fullName>
+                <default>false</default>
+                <label>Men&#39;s Apparel</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Accessories</fullName>
+                <default>false</default>
+                <label>Men&#39;s Accessories</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Underwear</fullName>
+                <default>false</default>
+                <label>Men&#39;s Underwear</label>
+            </value>
+            <value>
+                <fullName>Boy&#39;s Apparel</fullName>
+                <default>false</default>
+                <label>Boy&#39;s Apparel</label>
+            </value>
+            <value>
+                <fullName>Girl&#39;s Apparel</fullName>
+                <default>false</default>
+                <label>Girl&#39;s Apparel</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Collections</fullName>
+                <default>false</default>
+                <label>Women&#39;s Collections</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Collections</fullName>
+                <default>false</default>
+                <label>Men&#39;s Collections</label>
+            </value>
+            <value>
+                <fullName>Boy&#39;s Apparel &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Boy&#39;s Apparel &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Girl&#39;s Apparel &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Girl&#39;s Apparel &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Tommy Adaptive Boys</fullName>
+                <default>false</default>
+                <label>Tommy Adaptive Boys</label>
+            </value>
+            <value>
+                <fullName>Tommy Adaptive Girls</fullName>
+                <default>false</default>
+                <label>Tommy Adaptive Girls</label>
+            </value>
+            <value>
+                <fullName>Tommy Adaptive Men</fullName>
+                <default>false</default>
+                <label>Tommy Adaptive Men</label>
+            </value>
+            <value>
+                <fullName>Tommy Adaptive Women</fullName>
+                <default>false</default>
+                <label>Tommy Adaptive Women</label>
+            </value>
+            <value>
+                <fullName>Boys Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Boys Swimwear</label>
+            </value>
+            <value>
+                <fullName>Boy’s Apparel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Boy’s Apparel</label>
+            </value>
+            <value>
+                <fullName>Boy’s Apparel &amp; Accessories</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Boy’s Apparel &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Girls Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Girls Swimwear</label>
+            </value>
+            <value>
+                <fullName>Girl’s Apparel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Girl’s Apparel</label>
+            </value>
+            <value>
+                <fullName>Girl’s Apparel &amp; Accessories</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Girl’s Apparel &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Kids Footwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kids Footwear</label>
+            </value>
+            <value>
+                <fullName>Men’s Accessories</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Accessories</label>
+            </value>
+            <value>
+                <fullName>Men’s Activewear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Activewear</label>
+            </value>
+            <value>
+                <fullName>Men’s Apparel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Apparel</label>
+            </value>
+            <value>
+                <fullName>Men’s Collections</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Collections</label>
+            </value>
+            <value>
+                <fullName>Men’s Competition Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Competition Swimwear</label>
+            </value>
+            <value>
+                <fullName>Men’s Footwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Footwear</label>
+            </value>
+            <value>
+                <fullName>Men’s Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Men’s Underwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Men’s Underwear</label>
+            </value>
+            <value>
+                <fullName>Women’s Accessories</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Accessories</label>
+            </value>
+            <value>
+                <fullName>Women’s Activewear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Activewear</label>
+            </value>
+            <value>
+                <fullName>Women’s Apparel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Apparel</label>
+            </value>
+            <value>
+                <fullName>Women’s Collections</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Collections</label>
+            </value>
+            <value>
+                <fullName>Women’s Competition Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Competition Swimwear</label>
+            </value>
+            <value>
+                <fullName>Women’s Footwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Footwear</label>
+            </value>
+            <value>
+                <fullName>Women’s Swimwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Swimwear</label>
+            </value>
+            <value>
+                <fullName>Women’s Underwear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Women’s Underwear</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

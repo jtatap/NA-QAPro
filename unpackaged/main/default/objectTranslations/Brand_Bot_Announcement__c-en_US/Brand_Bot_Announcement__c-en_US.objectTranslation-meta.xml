@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand Bot Announcement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brand Bot Announcements</value>
+    </caseValues>
+    
+    
+    
+    
+    <layouts>
+        <layout>Brand Bot Announcement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Announcement End Date must be the same day, or after, the Announcement Start Date --></errorMessage>
+        <name>End_Date_Must_Be_On_Or_After_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your announcement&apos;s start and end date must be either today, or sometime in the future. --></errorMessage>
+        <name>Start_Ahd_End_Dates_Cannot_Be_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both your announcement start date and end date must be either today, or sometime in the future. --></errorMessage>
+        <name>Start_And_End_Dates_Cannot_Be_Past</name>
+    </validationRules>
+</CustomObjectTranslation>

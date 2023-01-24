@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zQueue_PVH_CSR_Tester_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>zQueue PVH CSR Tester</label>
+    <queue>zQueue_PVH_CSR_Tester</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

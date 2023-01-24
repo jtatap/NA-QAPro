@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason Code Product Sub-Categories --></label>
+        <name>Reason_Code_Product_Sub_Categories_Widge__c</name>
+        <picklistValues>
+            <masterLabel>Bath Products</masterLabel>
+            <translation><!-- Bath Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedding Products</masterLabel>
+            <translation><!-- Bedding Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belts</masterLabel>
+            <translation><!-- Belts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coats/Jackets</masterLabel>
+            <translation><!-- Coats/Jackets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Weather</masterLabel>
+            <translation><!-- Cold Weather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinnerware</masterLabel>
+            <translation><!-- Dinnerware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Décor/Accessories</masterLabel>
+            <translation><!-- Décor/Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite/LZR Competition</masterLabel>
+            <translation><!-- Elite/LZR Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyewear</masterLabel>
+            <translation><!-- Eyewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formal Wear</masterLabel>
+            <translation><!-- Formal Wear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furniture</masterLabel>
+            <translation><!-- Furniture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Swimwear</masterLabel>
+            <translation><!-- General Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goggles</masterLabel>
+            <translation><!-- Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handbags</masterLabel>
+            <translation><!-- Handbags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jewelry</masterLabel>
+            <translation><!-- Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids Footwear</masterLabel>
+            <translation><!-- Kids Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mens Footwear</masterLabel>
+            <translation><!-- Mens Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mens Suiting</masterLabel>
+            <translation><!-- Mens Suiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men’s Underwear</masterLabel>
+            <translation><!-- Men’s Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overcoats</masterLabel>
+            <translation><!-- Overcoats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rugs</masterLabel>
+            <translation><!-- Rugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slippers</masterLabel>
+            <translation><!-- Slippers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Goods</masterLabel>
+            <translation><!-- Small Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Socks/Tights</masterLabel>
+            <translation><!-- Socks/Tights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Caps</masterLabel>
+            <translation><!-- Swim Caps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Shoes</masterLabel>
+            <translation><!-- Swim Shoes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tie/Neckwear</masterLabel>
+            <translation><!-- Tie/Neckwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Umbrella</masterLabel>
+            <translation><!-- Umbrella --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallets</masterLabel>
+            <translation><!-- Wallets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches</masterLabel>
+            <translation><!-- Watches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Womens Footwear</masterLabel>
+            <translation><!-- Womens Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Womens Suiting</masterLabel>
+            <translation><!-- Womens Suiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women’s Underwear</masterLabel>
+            <translation><!-- Women’s Underwear --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

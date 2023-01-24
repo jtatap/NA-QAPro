@@ -1,0 +1,111 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><meta content="text/html; charset=utf-8"><meta content="Word.Document" name="ProgId"><meta content="Microsoft Word 15" name="Generator"><meta content="Microsoft Word 15" name="Originator">
+<style type="text/css"><!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:Sylfaen;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">Dear {{{Case.Dear_Valued_Customer__c}}},</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">Thank you for contacting the Customer Experience Team at True&amp;Co.</span><br />
+&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">We apologize for the size discrepancy. The DD and E are the same size; DD is listed in American sizing and E is in European sizing.</span><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span><br />
+&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">We decided to switch all of our products to American sizing to avoid customer confusion going forward.</span><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span><br />
+&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">If the item does not fit to your satisfaction and you wish to return it, simply complete the return form in your account and use the pre-paid shipping label that was included in your order.</span><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span><br />
+&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
+color:black;mso-color-alt:windowtext">Thank you for contacting True&amp;Co. Please let us know if you have additional questions or concerns.</span></p>
+</body>
+</html>

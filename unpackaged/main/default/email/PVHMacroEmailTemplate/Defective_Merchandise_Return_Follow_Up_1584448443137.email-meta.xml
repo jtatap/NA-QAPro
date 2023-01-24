@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Defective Merchandise Return Follow Up</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Defective Merchandise Return Follow Up</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(aeon2__Log__c.aeon2__Total__c:SUM- aeon2__Log__c.aeon2__Idle__c:SUM)/RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Handle Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_20999152</developerName>
+        <masterLabel>Case Vertical</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chat</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_83883251</developerName>
+        <masterLabel>Channel #1</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Channel__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CalvinKlein.us</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CalvinKlein.ca</sourceValue>
+            </sourceValues>
+            <value>CK eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy.com</sourceValue>
+            </sourceValues>
+            <value>TH eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VanHeusen.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Izod.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>styleBureau.com</sourceValue>
+            </sourceValues>
+            <value>HRTG eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SpeedoUSA.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedo.com</sourceValue>
+            </sourceValues>
+            <value>SP eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>trueandco.com</sourceValue>
+            </sourceValues>
+            <value>True eComm</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_33099850</developerName>
+        <masterLabel>Channel #2</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Channel_READONLY__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CalvinKlein.ca</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CalvinKlein.us</sourceValue>
+            </sourceValues>
+            <value>Calvin Klein eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy.com</sourceValue>
+            </sourceValues>
+            <value>Tommy Hilfiger eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Speedo.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SpeedoUSA.com</sourceValue>
+            </sourceValues>
+            <value>Speedo USA eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Izod.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VanHeusen.com</sourceValue>
+            </sourceValues>
+            <value>Heritage eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Van Heusen | IZOD Company Store</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen Retail</sourceValue>
+            </sourceValues>
+            <value>Van Heusen Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>trueandco.com</sourceValue>
+            </sourceValues>
+            <value>True eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Calvin Klein Retail</sourceValue>
+            </sourceValues>
+            <value>Calvin Klein Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy Hilfiger Retail</sourceValue>
+            </sourceValues>
+            <value>Tommy Hilfiger Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Other Retailer</sourceValue>
+            </sourceValues>
+            <value>Wholesale</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>Line</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FK_$aeon2__Day__c.aeon2__Date__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>aeon2__Log__c.aeon2__Total__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>aeon2__Log__c.aeon2__Idle__c</field>
+    </columns>
+    <columns>
+        <field>Case.Comments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.Duplicate_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Privacy,Survey Follow Up Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.Data_Owner_Request,Case.Privacy_Request,Case.Privacy_Request_Read_Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUSTENT_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>brooke,brayan,alicia,ashley christian,ivy,kelly,elizabeth sellers,joanna,christine manley,brandan,elvira,fatimah,gregory,lorraine,reba,ronald</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Email,Phone,Web,Chat</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_CUSTENT_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$aeon2__Day__c.aeon2__Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New Laptop Study - All agents</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$aeon2__Log__c@aeon2__Log__c.aeon2__Day__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_$aeon2__Day__c.aeon2__Date__c</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

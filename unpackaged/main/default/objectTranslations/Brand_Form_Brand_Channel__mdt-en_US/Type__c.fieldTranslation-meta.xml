@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ECOM:  For any web-based commerce channel
+
+RETAIL:  For retail location channels
+
+OTHER RETAILER:  For wholesale location channels
+
+SINGLE:  For any brand that is supported by one channel --></help>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>ECom</masterLabel>
+            <translation><!-- ECom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Retailer</masterLabel>
+            <translation><!-- Other Retailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

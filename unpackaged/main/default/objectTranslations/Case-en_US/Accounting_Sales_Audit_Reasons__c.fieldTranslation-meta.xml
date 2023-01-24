@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Accounting/Sales Audit Reasons --></label>
+        <name>Accounting_Sales_Audit_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Confirm Mailing Address</masterLabel>
+            <translation><!-- Confirm Mailing Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund Failure (IDOC)</masterLabel>
+            <translation><!-- Refund Failure (IDOC) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

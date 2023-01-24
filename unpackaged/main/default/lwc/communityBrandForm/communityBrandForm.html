@@ -1,0 +1,72 @@
+<!--
+  @description       : Brand form - used in community
+  @author            :
+  @last modified on  : 08-30-2021
+  @last modified by  : chayan.batabyal@neuraflash.com
+-->
+<template>
+	<div class="brand-form-header slds-text-align_center" if:true={brandHeader.show}>
+		<img src={brandHeader.image} alt={brandHeader.title}/>
+	</div>
+	<div class="brand-form" if:false={caseGenerated}>
+		<div class="brand-form-container slds-p-horizontal_medium">
+			<div class="slds-grid slds-wrap" if:true={formReadyToDisplay}>
+				<div role="alert" class="slds-col slds-size_1-of-1 slds-m-vertical_xx-large header-alert">
+					<lightning-formatted-rich-text value={headerAlert}></lightning-formatted-rich-text>
+					<!-- The Styling of Link is handled from Brand_Form_Alert custom label using inline css -->
+				</div>
+				<template for:each={Fields} for:item="field">
+					<div class="slds-col slds-size_1-of-1 field-container" key={field.key}>
+						<c-nf-form-input field={field}
+										onoptionchange={handlePicklistChange}
+										onfieldaddition={handleFieldAddition}
+										brand-info={formConfig.brand}
+										selected-channel-type={selectedChannelType}>
+						</c-nf-form-input>
+					</div>
+				</template>
+				<div class="bottomSection">
+					<div class="slds-col slds-size_1-of-1">
+						<div>
+							<lightning-formatted-rich-text value={fileUploadLabel} class="theField"></lightning-formatted-rich-text>
+						</div>
+						<div>
+							<lightning-file-upload name="fileUploader"
+													onuploadfinished={handleUploadFinished}
+													multiple
+													disabled={maxFilesReached}
+													record-id={formConfig.userId}
+													class="form-input-file theField attachMessage slds-m-bottom_none"
+													label="attach files">
+							</lightning-file-upload>
+						</div>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-p-around_small slds-p-top_none" if:true={showAttachments}>
+						<section>
+							<header>Attachments</header>
+							<template for:each={filesToAttach} for:item="file" for:index="index">
+								<div key={file.key} class="slds-m-around_small">
+									<lightning-button-icon icon-name="utility:close" onclick={removeFile} variant="bare"
+										alternative-text="Delete attachment" title="Delete attachment"
+										name="Delete attachement" data-index={index} class="slds-m-horizontal_small">
+									</lightning-button-icon>
+									<span>{file.name}</span>
+								</div>
+							</template>
+						</section>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+						<button onclick={submitForm}
+							class="slds-button slds-button_neutral theButton slds-m-top_large slds-p-horizontal_large slds-p-vertical_xx-small">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+			<lightning-spinner variant="brand" size="large" if:true={spinner} class="slds-is-fixed"></lightning-spinner>
+		</div>
+	</div>
+	<div class="brand-success-message theField" if:true={caseGenerated}>
+		<lightning-formatted-rich-text value={caseSuccessMessage}></lightning-formatted-rich-text>
+	</div>
+</template>

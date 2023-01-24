@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason Code Manufacturers --></label>
+        <name>Reason_Code_Manufacturers__c</name>
+        <picklistValues>
+            <masterLabel>Accessory Network</masterLabel>
+            <translation><!-- Accessory Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Essentials</masterLabel>
+            <translation><!-- American Essentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCNY</masterLabel>
+            <translation><!-- BCNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic Resources (VH Socks)</masterLabel>
+            <translation><!-- Basic Resources (VH Socks) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COTY</masterLabel>
+            <translation><!-- COTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calvin Klein Sportswear</masterLabel>
+            <translation><!-- Calvin Klein Sportswear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ClearVision Optical</masterLabel>
+            <translation><!-- ClearVision Optical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Leather</masterLabel>
+            <translation><!-- Customer Leather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cutie Pie Baby (100364)</masterLabel>
+            <translation><!-- Cutie Pie Baby (100364) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delta Galil</masterLabel>
+            <translation><!-- Delta Galil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estee</masterLabel>
+            <translation><!-- Estee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishman &amp; Tobin (477)</masterLabel>
+            <translation><!-- Fishman &amp; Tobin (477) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fletcher</masterLabel>
+            <translation><!-- Fletcher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G-III Apparel Group (54163)</masterLabel>
+            <translation><!-- G-III Apparel Group (54163) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Brands Group</masterLabel>
+            <translation><!-- Global Brands Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harbor Footwear</masterLabel>
+            <translation><!-- Harbor Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himatsingka (33699)</masterLabel>
+            <translation><!-- Himatsingka (33699) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Wholesale</masterLabel>
+            <translation><!-- Internal Wholesale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jimlar</masterLabel>
+            <translation><!-- Jimlar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kayser-Roth Corp.</masterLabel>
+            <translation><!-- Kayser-Roth Corp. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids Headquarters</masterLabel>
+            <translation><!-- Kids Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF Home</masterLabel>
+            <translation><!-- LF Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marc Fisher</masterLabel>
+            <translation><!-- Marc Fisher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon (77169)</masterLabel>
+            <translation><!-- Marchon (77169) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marcraft</masterLabel>
+            <translation><!-- Marcraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max Leather</masterLabel>
+            <translation><!-- Max Leather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Movado</masterLabel>
+            <translation><!-- Movado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nourison</masterLabel>
+            <translation><!-- Nourison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVH Corp (36543)</masterLabel>
+            <translation><!-- PVH Corp (36543) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacific Coast Feather (19648)</masterLabel>
+            <translation><!-- Pacific Coast Feather (19648) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peerless</masterLabel>
+            <translation><!-- Peerless --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Randa</masterLabel>
+            <translation><!-- Randa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Product</masterLabel>
+            <translation><!-- Retail Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ricardo Beverly Hills</masterLabel>
+            <translation><!-- Ricardo Beverly Hills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S Goldberg &amp; Co (73639)</masterLabel>
+            <translation><!-- S Goldberg &amp; Co (73639) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S Rothschild &amp; Co (72803)</masterLabel>
+            <translation><!-- S Rothschild &amp; Co (72803) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG Footwear</masterLabel>
+            <translation><!-- SG Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safilo Group</masterLabel>
+            <translation><!-- Safilo Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springs Industries (15582)</masterLabel>
+            <translation><!-- Springs Industries (15582) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swatch</masterLabel>
+            <translation><!-- Swatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimwear Anywhere</masterLabel>
+            <translation><!-- Swimwear Anywhere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Weather Co</masterLabel>
+            <translation><!-- The Weather Co --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Hilfiger Sportswear (77806)</masterLabel>
+            <translation><!-- Tommy Hilfiger Sportswear (77806) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vandale Industries</masterLabel>
+            <translation><!-- Vandale Industries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Form Submission</masterLabel>
+            <translation><!-- Web Form Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WestPoint Home Inc</masterLabel>
+            <translation><!-- WestPoint Home Inc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z-3</masterLabel>
+            <translation><!-- Z-3 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

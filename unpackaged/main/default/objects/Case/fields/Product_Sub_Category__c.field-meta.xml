@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Sub-Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bikinis &amp; Separates</fullName>
+                <default>false</default>
+                <label>Bikinis &amp; Separates</label>
+            </value>
+            <value>
+                <fullName>One Piece Swimsuits</fullName>
+                <default>false</default>
+                <label>One Piece Swimsuits</label>
+            </value>
+            <value>
+                <fullName>Rash Guards</fullName>
+                <default>false</default>
+                <label>Rash Guards</label>
+            </value>
+            <value>
+                <fullName>Swim Bottoms</fullName>
+                <default>false</default>
+                <label>Swim Bottoms</label>
+            </value>
+            <value>
+                <fullName>Tankinis</fullName>
+                <default>false</default>
+                <label>Tankinis</label>
+            </value>
+            <value>
+                <fullName>Triathlon &amp; Wetsuits</fullName>
+                <default>false</default>
+                <label>Triathlon &amp; Wetsuits</label>
+            </value>
+            <value>
+                <fullName>Elite Technical Swimsuits</fullName>
+                <default>false</default>
+                <label>Elite Technical Swimsuits</label>
+            </value>
+            <value>
+                <fullName>Parkas</fullName>
+                <default>false</default>
+                <label>Parkas</label>
+            </value>
+            <value>
+                <fullName>Racing &amp; Practice Swimsuits</fullName>
+                <default>false</default>
+                <label>Racing &amp; Practice Swimsuits</label>
+            </value>
+            <value>
+                <fullName>Team Apparel</fullName>
+                <default>false</default>
+                <label>Team Apparel</label>
+            </value>
+            <value>
+                <fullName>Jackets</fullName>
+                <default>false</default>
+                <label>Jackets</label>
+            </value>
+            <value>
+                <fullName>Joggers</fullName>
+                <default>false</default>
+                <label>Joggers</label>
+            </value>
+            <value>
+                <fullName>Pants &amp; Leggings</fullName>
+                <default>false</default>
+                <label>Pants &amp; Leggings</label>
+            </value>
+            <value>
+                <fullName>Shorts</fullName>
+                <default>false</default>
+                <label>Shorts</label>
+            </value>
+            <value>
+                <fullName>Swim Tees</fullName>
+                <default>false</default>
+                <label>Swim Tees</label>
+            </value>
+            <value>
+                <fullName>Flip-flop</fullName>
+                <default>false</default>
+                <label>Flip-flop</label>
+            </value>
+            <value>
+                <fullName>Water Shoe</fullName>
+                <default>false</default>
+                <label>Water Shoe</label>
+            </value>
+            <value>
+                <fullName>Briefs</fullName>
+                <default>false</default>
+                <label>Briefs</label>
+            </value>
+            <value>
+                <fullName>Jammers</fullName>
+                <default>false</default>
+                <label>Jammers</label>
+            </value>
+            <value>
+                <fullName>Square Legs</fullName>
+                <default>false</default>
+                <label>Square Legs</label>
+            </value>
+            <value>
+                <fullName>Swim Trunks &amp; Boardshorts</fullName>
+                <default>false</default>
+                <label>Swim Trunks &amp; Boardshorts</label>
+            </value>
+            <value>
+                <fullName>Team Warmups</fullName>
+                <default>false</default>
+                <label>Team Warmups</label>
+            </value>
+            <value>
+                <fullName>Tops &amp; Tanks</fullName>
+                <default>false</default>
+                <label>Tops &amp; Tanks</label>
+            </value>
+            <value>
+                <fullName>Begin To Swim</fullName>
+                <default>false</default>
+                <label>Begin To Swim</label>
+            </value>
+            <value>
+                <fullName>One- Piece Suits</fullName>
+                <default>false</default>
+                <label>One- Piece Suits</label>
+            </value>
+            <value>
+                <fullName>Board shorts</fullName>
+                <default>false</default>
+                <label>Board shorts</label>
+            </value>
+            <value>
+                <fullName>Volleys</fullName>
+                <default>false</default>
+                <label>Volleys</label>
+            </value>
+            <value>
+                <fullName>Adult Goggles</fullName>
+                <default>false</default>
+                <label>Adult Goggles</label>
+            </value>
+            <value>
+                <fullName>Elite Goggles</fullName>
+                <default>false</default>
+                <label>Elite Goggles</label>
+            </value>
+            <value>
+                <fullName>Jr. Goggles</fullName>
+                <default>false</default>
+                <label>Jr. Goggles</label>
+            </value>
+            <value>
+                <fullName>Kids Goggles</fullName>
+                <default>false</default>
+                <label>Kids Goggles</label>
+            </value>
+            <value>
+                <fullName>Masks</fullName>
+                <default>false</default>
+                <label>Masks</label>
+            </value>
+            <value>
+                <fullName>Optical Goggles</fullName>
+                <default>false</default>
+                <label>Optical Goggles</label>
+            </value>
+            <value>
+                <fullName>Straps and Cases</fullName>
+                <default>false</default>
+                <label>Straps and Cases</label>
+            </value>
+            <value>
+                <fullName>Arm Bands</fullName>
+                <default>false</default>
+                <label>Arm Bands</label>
+            </value>
+            <value>
+                <fullName>Bags &amp; Backpacks</fullName>
+                <default>false</default>
+                <label>Bags &amp; Backpacks</label>
+            </value>
+            <value>
+                <fullName>Ear Plugs</fullName>
+                <default>false</default>
+                <label>Ear Plugs</label>
+            </value>
+            <value>
+                <fullName>Fins</fullName>
+                <default>false</default>
+                <label>Fins</label>
+            </value>
+            <value>
+                <fullName>Nose Clips</fullName>
+                <default>false</default>
+                <label>Nose Clips</label>
+            </value>
+            <value>
+                <fullName>Snorkeling</fullName>
+                <default>false</default>
+                <label>Snorkeling</label>
+            </value>
+            <value>
+                <fullName>Swim Caps</fullName>
+                <default>false</default>
+                <label>Swim Caps</label>
+            </value>
+            <value>
+                <fullName>Towels</fullName>
+                <default>false</default>
+                <label>Towels</label>
+            </value>
+            <value>
+                <fullName>Training Gear</fullName>
+                <default>false</default>
+                <label>Training Gear</label>
+            </value>
+            <value>
+                <fullName>Bikini</fullName>
+                <default>false</default>
+                <label>Bikini</label>
+            </value>
+            <value>
+                <fullName>Boyshort</fullName>
+                <default>false</default>
+                <label>Boyshort</label>
+            </value>
+            <value>
+                <fullName>Hipster</fullName>
+                <default>false</default>
+                <label>Hipster</label>
+            </value>
+            <value>
+                <fullName>Socks</fullName>
+                <default>false</default>
+                <label>Socks</label>
+            </value>
+            <value>
+                <fullName>Thong</fullName>
+                <default>false</default>
+                <label>Thong</label>
+            </value>
+            <value>
+                <fullName>Tights</fullName>
+                <default>false</default>
+                <label>Tights</label>
+            </value>
+            <value>
+                <fullName>Balconette</fullName>
+                <default>false</default>
+                <label>Balconette</label>
+            </value>
+            <value>
+                <fullName>Bralette</fullName>
+                <default>false</default>
+                <label>Bralette</label>
+            </value>
+            <value>
+                <fullName>Racerback</fullName>
+                <default>false</default>
+                <label>Racerback</label>
+            </value>
+            <value>
+                <fullName>Strapless</fullName>
+                <default>false</default>
+                <label>Strapless</label>
+            </value>
+            <value>
+                <fullName>T-Shirt</fullName>
+                <default>false</default>
+                <label>T-Shirt</label>
+            </value>
+            <value>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+                <label>Wireless</label>
+            </value>
+            <value>
+                <fullName>Activewear</fullName>
+                <default>false</default>
+                <label>Activewear</label>
+            </value>
+            <value>
+                <fullName>Coats &amp; Jackets</fullName>
+                <default>false</default>
+                <label>Coats &amp; Jackets</label>
+            </value>
+            <value>
+                <fullName>Dresses</fullName>
+                <default>false</default>
+                <label>Dresses</label>
+            </value>
+            <value>
+                <fullName>Jeans</fullName>
+                <default>false</default>
+                <label>Jeans</label>
+            </value>
+            <value>
+                <fullName>Pants</fullName>
+                <default>false</default>
+                <label>Pants</label>
+            </value>
+            <value>
+                <fullName>Shirts &amp; Blouses</fullName>
+                <default>false</default>
+                <label>Shirts &amp; Blouses</label>
+            </value>
+            <value>
+                <fullName>Skirts</fullName>
+                <default>false</default>
+                <label>Skirts</label>
+            </value>
+            <value>
+                <fullName>Suiting &amp; Blazers</fullName>
+                <default>false</default>
+                <label>Suiting &amp; Blazers</label>
+            </value>
+            <value>
+                <fullName>Sweaters</fullName>
+                <default>false</default>
+                <label>Sweaters</label>
+            </value>
+            <value>
+                <fullName>Sweatshirts &amp; Hoodies</fullName>
+                <default>false</default>
+                <label>Sweatshirts &amp; Hoodies</label>
+            </value>
+            <value>
+                <fullName>Swim</fullName>
+                <default>false</default>
+                <label>Swim</label>
+            </value>
+            <value>
+                <fullName>Tees &amp; Tanks</fullName>
+                <default>false</default>
+                <label>Tees &amp; Tanks</label>
+            </value>
+            <value>
+                <fullName>Belts</fullName>
+                <default>false</default>
+                <label>Belts</label>
+            </value>
+            <value>
+                <fullName>Fragrance</fullName>
+                <default>false</default>
+                <label>Fragrance</label>
+            </value>
+            <value>
+                <fullName>Handbags</fullName>
+                <default>false</default>
+                <label>Handbags</label>
+            </value>
+            <value>
+                <fullName>Hats &amp; Scarves</fullName>
+                <default>false</default>
+                <label>Hats &amp; Scarves</label>
+            </value>
+            <value>
+                <fullName>Hosiery</fullName>
+                <default>false</default>
+                <label>Hosiery</label>
+            </value>
+            <value>
+                <fullName>Shoes</fullName>
+                <default>false</default>
+                <label>Shoes</label>
+            </value>
+            <value>
+                <fullName>Sunglasses</fullName>
+                <default>false</default>
+                <label>Sunglasses</label>
+            </value>
+            <value>
+                <fullName>Wallets</fullName>
+                <default>false</default>
+                <label>Wallets</label>
+            </value>
+            <value>
+                <fullName>Watches &amp; Jewelry</fullName>
+                <default>false</default>
+                <label>Watches &amp; Jewelry</label>
+            </value>
+            <value>
+                <fullName>Bodysuits</fullName>
+                <default>false</default>
+                <label>Bodysuits</label>
+            </value>
+            <value>
+                <fullName>Bras</fullName>
+                <default>false</default>
+                <label>Bras</label>
+            </value>
+            <value>
+                <fullName>Panties</fullName>
+                <default>false</default>
+                <label>Panties</label>
+            </value>
+            <value>
+                <fullName>Sleepwear &amp; Loungewear</fullName>
+                <default>false</default>
+                <label>Sleepwear &amp; Loungewear</label>
+            </value>
+            <value>
+                <fullName>#MYCALVINS Custom</fullName>
+                <default>false</default>
+                <label>#MYCALVINS Custom</label>
+            </value>
+            <value>
+                <fullName>Casual Shirts</fullName>
+                <default>false</default>
+                <label>Casual Shirts</label>
+            </value>
+            <value>
+                <fullName>Dress Shirts</fullName>
+                <default>false</default>
+                <label>Dress Shirts</label>
+            </value>
+            <value>
+                <fullName>Polos</fullName>
+                <default>false</default>
+                <label>Polos</label>
+            </value>
+            <value>
+                <fullName>T-Shirts</fullName>
+                <default>false</default>
+                <label>T-Shirts</label>
+            </value>
+            <value>
+                <fullName>Backpacks</fullName>
+                <default>false</default>
+                <label>Backpacks</label>
+            </value>
+            <value>
+                <fullName>Bags</fullName>
+                <default>false</default>
+                <label>Bags</label>
+            </value>
+            <value>
+                <fullName>Ties</fullName>
+                <default>false</default>
+                <label>Ties</label>
+            </value>
+            <value>
+                <fullName>Boxer Briefs</fullName>
+                <default>false</default>
+                <label>Boxer Briefs</label>
+            </value>
+            <value>
+                <fullName>Boxers</fullName>
+                <default>false</default>
+                <label>Boxers</label>
+            </value>
+            <value>
+                <fullName>Jock Straps</fullName>
+                <default>false</default>
+                <label>Jock Straps</label>
+            </value>
+            <value>
+                <fullName>Thongs</fullName>
+                <default>false</default>
+                <label>Thongs</label>
+            </value>
+            <value>
+                <fullName>Trunks</fullName>
+                <default>false</default>
+                <label>Trunks</label>
+            </value>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Bottoms</fullName>
+                <default>false</default>
+                <label>Bottoms</label>
+            </value>
+            <value>
+                <fullName>Loungewear</fullName>
+                <default>false</default>
+                <label>Loungewear</label>
+            </value>
+            <value>
+                <fullName>Outerwear</fullName>
+                <default>false</default>
+                <label>Outerwear</label>
+            </value>
+            <value>
+                <fullName>Tops</fullName>
+                <default>false</default>
+                <label>Tops</label>
+            </value>
+            <value>
+                <fullName>Underwear</fullName>
+                <default>false</default>
+                <label>Underwear</label>
+            </value>
+            <value>
+                <fullName>Bath</fullName>
+                <default>false</default>
+                <label>Bath</label>
+            </value>
+            <value>
+                <fullName>Bedding</fullName>
+                <default>false</default>
+                <label>Bedding</label>
+            </value>
+            <value>
+                <fullName>Décor</fullName>
+                <default>false</default>
+                <label>Décor</label>
+            </value>
+            <value>
+                <fullName>Dining</fullName>
+                <default>false</default>
+                <label>Dining</label>
+            </value>
+            <value>
+                <fullName>Rugs</fullName>
+                <default>false</default>
+                <label>Rugs</label>
+            </value>
+            <value>
+                <fullName>Blouses</fullName>
+                <default>false</default>
+                <label>Blouses</label>
+            </value>
+            <value>
+                <fullName>Golf</fullName>
+                <default>false</default>
+                <label>Golf</label>
+            </value>
+            <value>
+                <fullName>Jackets &amp; Outerwear</fullName>
+                <default>false</default>
+                <label>Jackets &amp; Outerwear</label>
+            </value>
+            <value>
+                <fullName>Knits &amp; Active</fullName>
+                <default>false</default>
+                <label>Knits &amp; Active</label>
+            </value>
+            <value>
+                <fullName>Skirts &amp; Dresses</fullName>
+                <default>false</default>
+                <label>Skirts &amp; Dresses</label>
+            </value>
+            <value>
+                <fullName>Tees &amp; Camis</fullName>
+                <default>false</default>
+                <label>Tees &amp; Camis</label>
+            </value>
+            <value>
+                <fullName>Golf &amp; Active</fullName>
+                <default>false</default>
+                <label>Golf &amp; Active</label>
+            </value>
+            <value>
+                <fullName>Polos &amp; Tees</fullName>
+                <default>false</default>
+                <label>Polos &amp; Tees</label>
+            </value>
+            <value>
+                <fullName>Suits &amp; Jackets</fullName>
+                <default>false</default>
+                <label>Suits &amp; Jackets</label>
+            </value>
+            <value>
+                <fullName>Sweatshirts &amp; Fleece</fullName>
+                <default>false</default>
+                <label>Sweatshirts &amp; Fleece</label>
+            </value>
+            <value>
+                <fullName>Hats, Gloves &amp; Scarves</fullName>
+                <default>false</default>
+                <label>Hats, Gloves &amp; Scarves</label>
+            </value>
+            <value>
+                <fullName>Watches &amp; Suit Accessories</fullName>
+                <default>false</default>
+                <label>Watches &amp; Suit Accessories</label>
+            </value>
+            <value>
+                <fullName>Dresses &amp; Skirts</fullName>
+                <default>false</default>
+                <label>Dresses &amp; Skirts</label>
+            </value>
+            <value>
+                <fullName>Hoodies &amp; Sweatshirts</fullName>
+                <default>false</default>
+                <label>Hoodies &amp; Sweatshirts</label>
+            </value>
+            <value>
+                <fullName>Streetwear</fullName>
+                <default>false</default>
+                <label>Streetwear</label>
+            </value>
+            <value>
+                <fullName>Swimwear</fullName>
+                <default>false</default>
+                <label>Swimwear</label>
+            </value>
+            <value>
+                <fullName>Tops &amp; Shirts</fullName>
+                <default>false</default>
+                <label>Tops &amp; Shirts</label>
+            </value>
+            <value>
+                <fullName>T-Shirts &amp; Polos</fullName>
+                <default>false</default>
+                <label>T-Shirts &amp; Polos</label>
+            </value>
+            <value>
+                <fullName>Luggage</fullName>
+                <default>false</default>
+                <label>Luggage</label>
+            </value>
+            <value>
+                <fullName>Wallets &amp; Keychains</fullName>
+                <default>false</default>
+                <label>Wallets &amp; Keychains</label>
+            </value>
+            <value>
+                <fullName>Tommy Sport</fullName>
+                <default>false</default>
+                <label>Tommy Sport</label>
+            </value>
+            <value>
+                <fullName>Tommy Jeans</fullName>
+                <default>false</default>
+                <label>Tommy Jeans</label>
+            </value>
+            <value>
+                <fullName>TommyXZendaya</fullName>
+                <default>false</default>
+                <label>TommyXZendaya</label>
+            </value>
+            <value>
+                <fullName>Hilfiger Collection</fullName>
+                <default>false</default>
+                <label>Hilfiger Collection</label>
+            </value>
+            <value>
+                <fullName>Suits &amp; Blazers</fullName>
+                <default>false</default>
+                <label>Suits &amp; Blazers</label>
+            </value>
+            <value>
+                <fullName>Tailored</fullName>
+                <default>false</default>
+                <label>Tailored</label>
+            </value>
+            <value>
+                <fullName>Ties &amp; Pocket Squares</fullName>
+                <default>false</default>
+                <label>Ties &amp; Pocket Squares</label>
+            </value>
+            <value>
+                <fullName>TommyXMercedes</fullName>
+                <default>false</default>
+                <label>TommyXMercedes</label>
+            </value>
+            <value>
+                <fullName>TommyXLewis</fullName>
+                <default>false</default>
+                <label>TommyXLewis</label>
+            </value>
+            <value>
+                <fullName>Shirts</fullName>
+                <default>false</default>
+                <label>Shirts</label>
+            </value>
+            <value>
+                <fullName>Shoes &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Shoes &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Sweaters &amp; Fleece</fullName>
+                <default>false</default>
+                <label>Sweaters &amp; Fleece</label>
+            </value>
+            <value>
+                <fullName>Underwear &amp; Lounge</fullName>
+                <default>false</default>
+                <label>Underwear &amp; Lounge</label>
+            </value>
+            <value>
+                <fullName>T-Shirts, Polos &amp; Shirts</fullName>
+                <default>false</default>
+                <label>T-Shirts, Polos &amp; Shirts</label>
+            </value>
+            <value>
+                <fullName>Pants, Jeans &amp; Shorts</fullName>
+                <default>false</default>
+                <label>Pants, Jeans &amp; Shorts</label>
+            </value>
+            <value>
+                <fullName>Shorts &amp; Swimwear</fullName>
+                <default>false</default>
+                <label>Shorts &amp; Swimwear</label>
+            </value>
+            <value>
+                <fullName>Pants &amp; Jeans</fullName>
+                <default>false</default>
+                <label>Pants &amp; Jeans</label>
+            </value>
+            <value>
+                <fullName>True Body</fullName>
+                <default>false</default>
+                <label>True Body</label>
+            </value>
+            <value>
+                <fullName>True Everyday</fullName>
+                <default>false</default>
+                <label>True Everyday</label>
+            </value>
+            <value>
+                <fullName>True Lingerie</fullName>
+                <default>false</default>
+                <label>True Lingerie</label>
+            </value>
+            <value>
+                <fullName>True Weekend</fullName>
+                <default>false</default>
+                <label>True Weekend</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Socks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Belts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Fragrance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Hats &amp; Scarves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Shoes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Sunglasses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Wallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Watches &amp; Jewelry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <valueName>Backpacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <valueName>Bags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <valueName>Ties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Hats, Gloves &amp; Scarves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <valueName>Watches &amp; Suit Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Accessories</controllingFieldValue>
+            <valueName>Ties &amp; Pocket Squares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Swimwear</controllingFieldValue>
+            <valueName>Briefs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Underwear</controllingFieldValue>
+            <valueName>Sleepwear &amp; Loungewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Underwear</controllingFieldValue>
+            <valueName>#MYCALVINS Custom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>T-Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <valueName>Boxer Briefs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <valueName>Boxers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <valueName>Jock Straps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <valueName>Thongs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Underwear</controllingFieldValue>
+            <valueName>Trunks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Suiting &amp; Blazers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Swim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Baby</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Bottoms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Loungewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <valueName>Outerwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <valueName>Tops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <valueName>Underwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Activewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Dresses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Collections</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Collections</controllingFieldValue>
+            <valueName>Tommy Sport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Collections</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Collections</controllingFieldValue>
+            <valueName>Tommy Jeans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Collections</controllingFieldValue>
+            <valueName>TommyXZendaya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Collections</controllingFieldValue>
+            <valueName>Hilfiger Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Collections</controllingFieldValue>
+            <valueName>TommyXMercedes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Collections</controllingFieldValue>
+            <valueName>TommyXLewis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Boys</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Coats &amp; Jackets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Swimwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Boys</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <valueName>Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Shoes &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Boys</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <valueName>Sweaters &amp; Fleece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Underwear &amp; Lounge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>T-Shirts, Polos &amp; Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Apparel &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <valueName>Dresses &amp; Skirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Boys</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>T-Shirts &amp; Polos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Boys</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <valueName>Pants, Jeans &amp; Shorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Girls</controllingFieldValue>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Shirts &amp; Blouses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <valueName>Bikinis &amp; Separates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Rash Guards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <valueName>Tankinis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <valueName>Begin To Swim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Girl&#39;s Swimwear</controllingFieldValue>
+            <valueName>One- Piece Suits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <valueName>Shorts &amp; Swimwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Men</controllingFieldValue>
+            <valueName>Pants &amp; Jeans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Swim Tees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Swimwear</controllingFieldValue>
+            <valueName>Jammers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <valueName>Board shorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boy&#39;s Swimwear</controllingFieldValue>
+            <valueName>Volleys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Adaptive Women</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Sweatshirts &amp; Fleece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kid&#39;s Footwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Footwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Footwear</controllingFieldValue>
+            <valueName>Flip-flop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kid&#39;s Footwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Footwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Footwear</controllingFieldValue>
+            <valueName>Water Shoe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Adult Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Elite Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Jr. Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Kids Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Masks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Optical Goggles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goggles</controllingFieldValue>
+            <valueName>Straps and Cases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Arm Bands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Bags &amp; Backpacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Ear Plugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Fins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Nose Clips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Snorkeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Swim Caps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Towels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear</controllingFieldValue>
+            <valueName>Training Gear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra &amp; Underwear Collection</controllingFieldValue>
+            <valueName>True Body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra &amp; Underwear Collection</controllingFieldValue>
+            <valueName>True Everyday</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra &amp; Underwear Collection</controllingFieldValue>
+            <valueName>True Lingerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra &amp; Underwear Collection</controllingFieldValue>
+            <valueName>True Weekend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>Balconette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>Bralette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>Racerback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>Strapless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>T-Shirt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bra</controllingFieldValue>
+            <valueName>Wireless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Bikini</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Boyshort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Hipster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Thong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Underwear</controllingFieldValue>
+            <valueName>Tights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Jackets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Shorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Jeans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Pants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Skirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Sweaters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Sweatshirts &amp; Hoodies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Tees &amp; Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Blouses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Golf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Jackets &amp; Outerwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Knits &amp; Active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Skirts &amp; Dresses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Tees &amp; Camis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Streetwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Apparel</controllingFieldValue>
+            <valueName>Tops &amp; Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Handbags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Hosiery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Luggage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Accessories</controllingFieldValue>
+            <valueName>Wallets &amp; Keychains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home</controllingFieldValue>
+            <valueName>Bath</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home</controllingFieldValue>
+            <valueName>Bedding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home</controllingFieldValue>
+            <valueName>Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home</controllingFieldValue>
+            <valueName>Dining</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home</controllingFieldValue>
+            <valueName>Rugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <valueName>One Piece Swimsuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <valueName>Swim Bottoms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Swimwear</controllingFieldValue>
+            <valueName>Triathlon &amp; Wetsuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Competition Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Competition Swimwear</controllingFieldValue>
+            <valueName>Elite Technical Swimsuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Competition Swimwear</controllingFieldValue>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Competition Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Parkas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Competition Swimwear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Competition Swimwear</controllingFieldValue>
+            <valueName>Racing &amp; Practice Swimsuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Competition Swimwear</controllingFieldValue>
+            <valueName>Team Apparel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Joggers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Pants &amp; Leggings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Activewear</controllingFieldValue>
+            <controllingFieldValue>Men&#39;s Activewear</controllingFieldValue>
+            <valueName>Tops &amp; Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Swimwear</controllingFieldValue>
+            <valueName>Square Legs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Swimwear</controllingFieldValue>
+            <valueName>Swim Trunks &amp; Boardshorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Competition Swimwear</controllingFieldValue>
+            <valueName>Team Warmups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Underwear</controllingFieldValue>
+            <valueName>Bodysuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Underwear</controllingFieldValue>
+            <valueName>Bras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&#39;s Underwear</controllingFieldValue>
+            <valueName>Panties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Casual Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Dress Shirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Polos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Golf &amp; Active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Polos &amp; Tees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Suits &amp; Jackets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Hoodies &amp; Sweatshirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&#39;s Apparel</controllingFieldValue>
+            <valueName>Tailored</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

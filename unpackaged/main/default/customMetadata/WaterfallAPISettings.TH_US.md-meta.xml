@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TH_US</label>
+    <protected>false</protected>
+    <values>
+        <field>AuthKey__c</field>
+        <value xsi:type="xsd:string">f886e770-8182-4bcd-a5eb-edb830fc3ce6</value>
+    </values>
+    <values>
+        <field>BrandId__c</field>
+        <value xsi:type="xsd:string">1</value>
+    </values>
+    <values>
+        <field>ChargeItOptinFlowId__c</field>
+        <value xsi:type="xsd:string">5ea8954d76473525e2837a53</value>
+    </values>
+    <values>
+        <field>Country__c</field>
+        <value xsi:type="xsd:string">US</value>
+    </values>
+    <values>
+        <field>PrefCenterOptinFlowId__c</field>
+        <value xsi:type="xsd:string">5ea89658105657443244bb28</value>
+    </values>
+    <values>
+        <field>WfShortCode__c</field>
+        <value xsi:type="xsd:string">59519118e4b0f9950efc04ee</value>
+    </values>
+</CustomMetadata>

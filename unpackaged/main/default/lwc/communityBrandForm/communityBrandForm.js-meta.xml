@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>
+            lightning__AppPage
+        </target>
+        <target>
+            lightning__RecordPage
+        </target>
+        <target>
+            lightning__HomePage
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+        <target>
+            lightningCommunity__Default
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Default">
+            <property label="Margin for small-width(>=481px) screen" name="smallMargin" type="String" default="5%" />
+            <property label="Margin for medium-width(>=768px) screen" name="mediumMargin" type="String" default="0 12%" />
+            <property label="Margin for large-width(>=1023px) screen" name="largeMargin" type="String" default="0 32%" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

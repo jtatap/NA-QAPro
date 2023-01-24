@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Status_Change_to_New_Again</fullName>
+    <active>true</active>
+    <description>This validation rule restricts the CSR to change the Status to New From any other Status</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+    OR(
+    ISPICKVAL(PRIORVALUE(Status),&quot;Open&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;Identity Verified&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;Data Request Processed&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;Pending&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;On-Hold&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;Resolved&quot;),
+    ISPICKVAL(PRIORVALUE(Status),&quot;Closed&quot;)
+    ),
+ISPICKVAL(Status, &quot;New&quot;),
+NOT(ISBLANK(csmrgp__Merged_Date_Time__c )),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;PVHIntegrationAPIUser&quot;
+)</errorConditionFormula>
+    <errorMessage>You are unable to manually mark this ticket as New. Please set to the proper status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Instapayment Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>^63[789]\d{1}[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}$
+63[789]\d{1}[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}
+^63[789]\d{13}$
+63[789]\d{13}</pattern>
+    <priority>7</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

@@ -1,0 +1,18 @@
+.THIS .err{
+    padding-top: 100px;
+}
+.THIS.err1{
+    padding-top: 100px;
+}
+.THIS .btn {
+    margin-top: 10px;
+    background-color:gray;
+    color: white;
+    border-radius:8px;
+    width: 200px;
+}
+
+.THIS .btn:hover	 {
+    background-color:#002ead;
+      transition: 0.7s;
+}

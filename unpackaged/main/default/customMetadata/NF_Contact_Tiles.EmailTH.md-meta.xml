@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EmailTH</label>
+    <protected>false</protected>
+    <values>
+        <field>Action__c</field>
+        <value xsi:type="xsd:string">OpenLink</value>
+    </values>
+    <values>
+        <field>ButtonClass__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ComponentKey__c</field>
+        <value xsi:type="xsd:string">TH</value>
+    </values>
+    <values>
+        <field>HTML_Content__c</field>
+        <value xsi:type="xsd:string">&lt;div class=&quot;slds-grid slds-gutters&quot;&gt;
+
+&lt;div class=&quot;slds-col slds-size_1-of-3&quot;&gt;
+&lt;div class=&quot;slds-p-top_medium&quot; style=&quot;text-align:center;height: 100%;&quot;&gt;
+&lt;img src=&quot;/sfsites/c/resource/nf_emaillogo&quot; style=&quot;width: 70px;height: 70px;vertical-align: middle;&quot; class=&quot;slds-m-top_medium&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;slds-col slds-size_2-of-3&quot;&gt;
+
+&lt;div class=&quot;slds-text-heading_medium&quot; style=&quot;font-weight:700;&quot;&gt;Email&lt;/div&gt;
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+Anytime – we typically respond within 48 hours.
+&lt;b&gt;&amp;nbsp;&lt;/b&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+&lt;u&gt;Send us an Email&lt;/u&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;</value>
+    </values>
+    <values>
+        <field>LinkToOpen__c</field>
+        <value xsi:type="xsd:string">https://projectdev-pvhservicecloud.cs78.force.com/tommy/s/brand-form</value>
+    </values>
+    <values>
+        <field>SortOrder__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

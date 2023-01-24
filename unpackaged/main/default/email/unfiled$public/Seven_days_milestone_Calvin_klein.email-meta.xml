@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Calvin_Klein</letterhead>
+    <name>Seven days milestone Calvin klein</name>
+    <style>freeForm</style>
+    <subject>Your {!Case.Brand__c} Request Has Closed, case# {!Case.CaseNumber} {!Case.Thread_Id}</subject>
+    <textOnly>It has been 7 days since we have heard from you regarding your request {!Case.CaseNumber}.  At this time, {!Case.Brand__c} Customer Service is considering your case to be closed.  If you wish to resume your case at another time, reply to this message and a Customer Service Representative will be glad to assist you.
+
+
+{!Case.Last_Case_Comment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

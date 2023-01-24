@@ -1,0 +1,117 @@
+<template>
+    <lightning-record-edit-form  object-api-name="Case" 
+        onload={showSpinner} 
+        onsubmit={testMethod} 
+        onsuccess={handleSuccess} 
+        record-type-id={recordTypeId}>
+        <template if:true={isLoading}>
+            <lightning-spinner
+                variant="brand"
+                size="large">
+            </lightning-spinner>
+        </template>
+        <template if:false={caseCreatedSuccessfully}>
+            <div>
+                <p class="slds-text-heading_small instructions">{instructions}</p>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small firstNameLabel">{firstNameLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" variant="label-hidden" field-name="Supplied_First_Name__c"
+                    required></lightning-input-field>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small">{lastNameLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" variant="label-hidden" field-name="Supplied_Last_Name__c" required>
+                </lightning-input-field>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small">{emailLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" variant="label-hidden" field-name="SuppliedEmail" required>
+                </lightning-input-field>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small">{descriptionLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" variant="label-hidden" field-name="Description" required>
+                </lightning-input-field>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small">{brandLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" variant="label-hidden" field-name="Brand__c" required>
+                </lightning-input-field>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-heading_small">{businessGroupLabel}</p>
+                </div>
+                <lightning-input-field class="slds-m-top_medium" onchange={businessGroupUpdated} variant="label-hidden"
+                    field-name="Business_Group__c" required>
+                </lightning-input-field>
+            </div>
+            <template for:each={fieldsToShow} for:item="field">
+                <div key={field.fieldName} class="slds-var-m-top_medium">
+                    <div class="slds-var-m-bottom_small">
+                        <p class="slds-text-heading_small">{field.labelToDisplay}</p>
+                    </div>
+                    <template if:true={field.required}>
+                        <lightning-input-field class="slds-m-top_medium" key={field.fieldName} field-name={field.fieldName}
+                            variant="label-hidden" required>
+                        </lightning-input-field>
+                        </template>
+                    <template if:false={field.required}>
+                        <lightning-input-field class="slds-m-top_medium" key={field.fieldName} field-name={field.fieldName}
+                            variant="label-hidden">
+                        </lightning-input-field>
+                    </template>
+                </div>
+                </template>
+                <template if:false={caseCreatedSuccessfully}>
+                    <div class="slds-var-m-top_large slds-var-m-bottom_large">
+                        {attachmentsInstructions}
+                    </div>
+                    <div class="slds-var-m-top_large slds-var-m-bottom_large">
+                        <template for:each={filesUploaded} for:item="file" for:index="index">
+                            <div style="width: auto; " key={file.Title} class="slds-var-m-top_medium">
+                                <lightning-icon size="medium" icon-name="doctype:attachment" alternative-text="Event" title="Event">
+                                </lightning-icon>
+                                <span style="vertical-align:middle;"> {file.Title}</span>
+                                <div style="float: right;" class="slds-text-link_reset" data-id={index} onclick={removeFile}>
+                                    <lightning-icon size="small" icon-name="utility:delete" alternative-text="Event" title="Event">
+                                    </lightning-icon>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="slds-var-m-top_large slds-var-m-bottom_large" style="text-align: center;">
+                        <template if:false={maxFilesUploaded}>
+                            <lightning-input type="file" label="" onchange={handleFileChanges} multiple>
+                            </lightning-input>
+                        </template>
+                        <template if:true={maxFilesUploaded}>
+                            <span class="slds-text-color_weak">{maxFilesInsertedLabel}</span>
+                        </template>
+                    </div>
+                </template>
+                <template if:false={caseCreatedSuccessfully}>
+                    <div class="slds-var-m-top_large" style="text-align: center;">
+                        <lightning-button variant="brand" type="submit" label="Submit">
+                        </lightning-button>
+                    </div>
+                </template>
+        </template>
+    </lightning-record-edit-form>
+    <template if:true={caseCreatedSuccessfully}>
+        <div class="slds-var-m-top_medium" style="text-align: center;">
+            <lightning-formatted-rich-text value={thankyouMessage}></lightning-formatted-rich-text>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tile Component Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tile Component Settings</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Contact Tile Layout</layout>
+        <sections>
+            <label><!-- Action and Sort Ordeer --></label>
+            <section>Action and Sort Ordeer</section>
+        </sections>
+        <sections>
+            <label><!-- Button Press --></label>
+            <section>Button Press</section>
+        </sections>
+        <sections>
+            <label><!-- Component Key --></label>
+            <section>Component Key</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- HTML --></label>
+            <section>HTML</section>
+        </sections>
+        <sections>
+            <label><!-- Link Open --></label>
+            <section>Link Open</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

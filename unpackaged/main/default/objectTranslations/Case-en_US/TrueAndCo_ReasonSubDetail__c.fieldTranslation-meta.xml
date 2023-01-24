@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- TrueAndCo_ReasonSubDetail --></label>
+        <name>TrueAndCo_ReasonSubDetail__c</name>
+        <picklistValues>
+            <masterLabel>Address Line Issue</masterLabel>
+            <translation><!-- Address Line Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken Clasp</masterLabel>
+            <translation><!-- Broken Clasp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken Hyperlink</masterLabel>
+            <translation><!-- Broken Hyperlink --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Browser Issues/Clear Cache</masterLabel>
+            <translation><!-- Browser Issues/Clear Cache --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check Inventory</masterLabel>
+            <translation><!-- Check Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkout Error</masterLabel>
+            <translation><!-- Checkout Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Bleeding</masterLabel>
+            <translation><!-- Color Bleeding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Link Not Working</masterLabel>
+            <translation><!-- Email Link Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabric Stretching</masterLabel>
+            <translation><!-- Fabric Stretching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabric Torn</masterLabel>
+            <translation><!-- Fabric Torn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit Quiz No Match</masterLabel>
+            <translation><!-- Fit Quiz No Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Card Error</masterLabel>
+            <translation><!-- Gift Card Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Description</masterLabel>
+            <translation><!-- Incorrect Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Image</masterLabel>
+            <translation><!-- Incorrect Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Items Advertised</masterLabel>
+            <translation><!-- Incorrect Items Advertised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Pricing</masterLabel>
+            <translation><!-- Incorrect Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login Issue</masterLabel>
+            <translation><!-- Login Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing Issue</masterLabel>
+            <translation><!-- Manufacturing Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Rolling</masterLabel>
+            <translation><!-- Material Rolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Cancellation</masterLabel>
+            <translation><!-- Order Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PayPal Error</masterLabel>
+            <translation><!-- PayPal Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus/Extended Sizing</masterLabel>
+            <translation><!-- Plus/Extended Sizing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promo Code Error</masterLabel>
+            <translation><!-- Promo Code Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion Not Working</masterLabel>
+            <translation><!-- Promotion Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Code Error</masterLabel>
+            <translation><!-- Referral Code Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reorder</masterLabel>
+            <translation><!-- Reorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restock Inquiry</masterLabel>
+            <translation><!-- Restock Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return/Exchange Error</masterLabel>
+            <translation><!-- Return/Exchange Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Split Seam</masterLabel>
+            <translation><!-- Split Seam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stitching</masterLabel>
+            <translation><!-- Stitching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straps</masterLabel>
+            <translation><!-- Straps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwire Issue</masterLabel>
+            <translation><!-- Underwire Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrinkled/Bent Pads</masterLabel>
+            <translation><!-- Wrinkled/Bent Pads --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nice InContact API Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Nice InContact API Configs</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Nice InContact API Config Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- As &quot;Create Records&quot; is checked, please enter an attribute name to look for during record creation. --></errorMessage>
+        <name>Attribute_name_required_to_create_record</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;Contain-conditions In Response&apos;s Records&quot; and &quot;Specific Ids&quot; fields can only be filled when the &quot;Create Records&quot; checkbox is checked. --></errorMessage>
+        <name>No_Record_to_create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- As &quot;Delete Obsolete Records&quot; or &quot;Create Records&quot; is checked, please select a value. --></errorMessage>
+        <name>Object_Name_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value should be between 1 and 120000 (both values inclusive). --></errorMessage>
+        <name>Validate_Timeout</name>
+    </validationRules>
+</CustomObjectTranslation>

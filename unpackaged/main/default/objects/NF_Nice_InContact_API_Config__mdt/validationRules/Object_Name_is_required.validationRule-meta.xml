@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Object_Name_is_required</fullName>
+    <active>true</active>
+    <description>As &quot;Delete Obsolete Records&quot; or &quot;Create Records&quot; is checked, selecting an object name is mandatory.</description>
+    <errorConditionFormula>(Delete_Obsolete_Records__c || Create_Records__c) &amp;&amp; ISPICKVAL(Object_to_Create__c, &#39;&#39;)</errorConditionFormula>
+    <errorDisplayField>Object_to_Create__c</errorDisplayField>
+    <errorMessage>As &quot;Delete Obsolete Records&quot; or &quot;Create Records&quot; is checked, please select a value.</errorMessage>
+</ValidationRule>

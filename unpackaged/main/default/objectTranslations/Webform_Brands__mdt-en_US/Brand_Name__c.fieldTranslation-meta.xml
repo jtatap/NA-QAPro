@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Brand_Name --></label>
+        <name>Brand_Name__c</name>
+        <picklistValues>
+            <masterLabel>Calvin Klein</masterLabel>
+            <translation><!-- Calvin Klein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calvin Klein - CA</masterLabel>
+            <translation><!-- Calvin Klein - CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IZOD</masterLabel>
+            <translation><!-- IZOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Olga</masterLabel>
+            <translation><!-- Olga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Hilfiger</masterLabel>
+            <translation><!-- Tommy Hilfiger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True&amp;Co.</masterLabel>
+            <translation><!-- True&amp;Co. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Van Heusen</masterLabel>
+            <translation><!-- Van Heusen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warner</masterLabel>
+            <translation><!-- Warner --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

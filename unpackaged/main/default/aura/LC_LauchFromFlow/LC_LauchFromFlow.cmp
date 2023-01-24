@@ -1,0 +1,9 @@
+<aura:component implements="force:hasRecordId,lightning:availableForFlowScreens" >
+    <aura:attribute name="launchComp" type="Boolean" default="false"/>
+    <lightning:button label="Back" onclick="{!c.update}"/>
+    
+    <aura:if isTrue="{!v.launchComp}">
+        <c:LC_updateEmail/>
+    </aura:if>
+	
+</aura:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Yes Perfect match - &gt; CSR requests report from internal data owners - SURVEY/ADVOCACY PROGRAM ONLY</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>A5 - Perfect Match</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Action Required: {{{Case.Brand__c}}} Personal Data Access Request</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

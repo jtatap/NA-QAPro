@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Model Inquiry</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">Thank you for your interest in becoming a model for Calvin Klein.
+All modeling requests must be submitted through a modeling agency/agent.
+&lt;br/&gt;&lt;br/&gt;
+Calvin Klein is unable to supply information on agencies/agents to contact.</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:type="xsd:string">Thank you for your interest in becoming a model for Calvin Klein.
+All modeling requests must be submitted through a modeling agency/agent.
+&lt;br/&gt;&lt;br/&gt;
+Calvin Klein is unable to supply information on agencies/agents to contact.</value>
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">Thank you for your interest in becoming a model for Calvin Klein.
+All modeling requests must be submitted through a modeling agency/agent.
+&lt;br/&gt;&lt;br/&gt;
+Calvin Klein is unable to supply information on agencies/agents to contact.</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">Thank you for your interest in becoming a model for Calvin Klein.
+All modeling requests must be submitted through a modeling agency/agent.
+&lt;br/&gt;&lt;br/&gt;
+Calvin Klein is unable to supply information on agencies/agents to contact.</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Company_Information_CK</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Model Inquiry</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">7.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Block</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Corporate: Request to Model for Brand</value>
+    </values>
+</CustomMetadata>

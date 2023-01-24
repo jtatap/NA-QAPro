@@ -1,0 +1,105 @@
+<template>
+    <div class="footer">        
+        <div class="global-footer">
+            <template if:true={iscovidinfovisible}>
+            <div class="covid-footer" style="display: block;">
+                COVID-19 Information 
+                <a href={covidURL} target="_blank">View here
+                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> for Calvin Klein on COVID-19 </span>
+                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> for Covid-19 information </span>
+                </a>
+            </div>
+            </template>
+            <div class="mobileFooter footer-links clearfix">
+               <div class="minMaxWidth">
+                    <template if:true={renderFooter}>
+                        <template for:each={mapHeaderToItems} for:item="mapKey" for:index="index">
+                            <div class="footer-links-col expand" key={mapKey.key}>
+                                <lightning-icon icon-name="utility:chevrondown" data-index={index} size="x-small" class="iconClass"></lightning-icon>
+                                <h5 onclick={dropdownClicked} data-index={index} data-expand="false">{mapKey.key}</h5>
+                                <template for:each={mapKey.value} for:item="record">
+                                    <div key={record.Value} data-parent={index}>
+                                        <a if:true={record.NewTab} href={record.Value} target="_blank" class="footer-link" aria-describedby="audioeye_new_window_message">{record.Label}</a> 
+                                        <template if:false={record.NewTab}>
+                                            <a if:false={record.isNotURL} href={record.Value} class="footer-link">{record.Label}</a> 
+                                            <span if:true={record.isNotURL} class="footer-link">{record.Label} <span class="desktop">{record.Value}</span></span>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+               </div>
+            </div>
+
+            <div class="desktopFooter">
+                <div class="autoMargin slds-col--padded">
+                    <div class="grid-container">
+                        <template if:true={renderFooter} for:each={mapHeaderToItems} for:item="mapKey" for:index="index">
+                            <div class="listDesign footer-links-col expand footer-links" key={mapKey.key}>
+                                <div class="footer-links-col">
+                                    <lightning-icon icon-name="utility:chevrondown" data-index={index} size="x-small" class="iconClass"></lightning-icon>
+                                    <h5 onclick={dropdownClicked} data-index={index} data-expand="false">{mapKey.key}</h5>
+                                    <template for:each={mapKey.value} for:item="record">
+                                        <span key={record.Value} data-parent={index}>
+                                            <div>
+                                                <a if:true={record.NewTab} href={record.Value} target="_blank" class="footer-link">{record.Label}</a> 
+                                                <template if:false={record.NewTab}>
+                                                    <a if:false={record.isNotURL} href={record.Value} class="footer-link">{record.Label}</a> 
+                                                    <span if:true={record.isNotURL} class="footer-link">{record.Label} <span class="desktop">{record.Value}</span></span>
+                                                </template>
+                                            </div>
+                                        </span>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal autoMargin">
+                <div class="minMaxWidth">
+                    <svg width="190px" height="29px" viewBox="0 0 190 29" version="1.1" xmlns="http://www.w3.org/2000/svg" labelledby="logoTitle" role="img" class="footer-logo">
+                        <title class="logoTitle">Calvin Klein</title>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-733.000000, -317.000000)" fill="#000000">
+                                <g transform="translate(733.000000, 317.000000)">
+                                <path d="M81.85,5.45h-3V2h3Zm0,23.06h-3V8.88h3Z"></path>
+                                <path d="M88.34,28.51H85.4V8.88h2.94v3.29A6.26,6.26,0,0,1,94.5,8.43c5.49,0,8.06,4,8.06,9V28.51h-3v-11c0-3.69-2-6.27-5.56-6.27s-5.68,2.65-5.68,6.42Z"></path>
+                                <path d="M119.7,15.68l-3.55,4v8.84H112.9V.52h3.25V15.45L129.29.52h3.88L121.94,13.18l11.23,15.33h-3.73Z"></path>
+                                <path d="M137.8,28.51h-3V0h3Z"></path>
+                                <path d="M150.6,29a9.9,9.9,0,0,1-10-10.26,9.93,9.93,0,0,1,9.93-10.27c5.74,0,10,4.6,9.89,11H143.58a7.2,7.2,0,0,0,13.63,2.76h2.95A9.61,9.61,0,0,1,150.6,29Zm-6.83-12.13h13.47a6.66,6.66,0,0,0-6.71-5.67A6.85,6.85,0,0,0,143.77,16.83Z"></path>
+                                <path d="M166.28,5.45h-3V2h3Zm0,23.06h-3V8.88h3Z"></path>
+                                <path d="M172.77,28.51h-3V8.88h3v3.29c.37-1.09,2.09-3.74,6.16-3.74,5.49,0,8.06,4,8.06,9V28.51h-3v-11c0-3.69-2-6.27-5.57-6.27s-5.67,2.65-5.67,6.42Z"></path>
+                                <path d="M3.36,14.56C3.36,21.09,8.06,26,14.22,26a10.36,10.36,0,0,0,9.48-5.3H27C26.13,23.36,22.24,29,14.22,29S0,22.88,0,14.52A14.09,14.09,0,0,1,14.22,0c8,0,11.91,5.52,12.8,8.39H23.66a10.46,10.46,0,0,0-9.44-5.37C8.06,3.06,3.36,8,3.36,14.56Z"></path>
+                                <path d="M38.63,29a10,10,0,0,1-10-10.26,10,10,0,0,1,10-10.27,7.61,7.61,0,0,1,7.13,4.15V8.88h3V28.51h-3V24.82A7.61,7.61,0,0,1,38.63,29ZM45.8,18.7c0-4.22-3-7.47-7.06-7.47s-7.09,3.21-7.09,7.47,3,7.46,7.09,7.46S45.8,22.92,45.8,18.7Z"></path>
+                                <path d="M55.24,28.51h-3V0h3Z"></path>
+                                <polygon points="66.96 25.49 73.19 8.88 76.44 8.88 68.83 28.52 65.09 28.52 57.48 8.88 60.73 8.88 66.96 25.49"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="legal-links clearfix">
+                        <template if:true={renderFooter}>
+                            <template for:each={mapCopyrightItemsToValue} for:item="eachKey">
+                                <template key={eachKey.key} for:each={eachKey.value} for:item="eachRecord">
+                                    <template if:true={eachRecord.NewTab}>
+                                        <a key={eachRecord.Value} href={eachRecord.Value} target="_blank" style="color:rgba(0,0,0,0.6);">{eachRecord.Label}</a> 
+                                    </template>
+                                    <template if:false={eachRecord.NewTab}>
+                                        <a key={eachRecord.Value} href={eachRecord.Value} style="color:rgba(0,0,0,0.6);">{eachRecord.Label}</a> 
+                                    </template>
+                                    <span key={eachKey.key} class="divider">|</span>
+                                </template>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="webid-copyright">
+                        <span>Copyright © 2022 Calvin Klein. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

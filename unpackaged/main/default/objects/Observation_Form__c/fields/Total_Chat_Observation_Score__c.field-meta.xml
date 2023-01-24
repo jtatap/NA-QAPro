@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Chat_Observation_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( RecordType.DeveloperName = &quot;Chat_Observation_Form&quot;,( Opening_Total_Chat__c + Structure_Total_Chat__c + Etiquette_Total__c + Handling_Skills_Total_Chat__c + Procedures_Total_Chat__c + Closing_Total_Chat__c ) / 6, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Chat Observation Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

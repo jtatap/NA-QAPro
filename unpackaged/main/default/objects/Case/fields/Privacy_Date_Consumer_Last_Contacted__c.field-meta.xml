@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Privacy_Date_Consumer_Last_Contacted__c</fullName>
+    <description>The date where the consumer was contacted for additional information. After some hours, configured in custom settings, the case will be closed if the consumer does not respond.</description>
+    <externalId>false</externalId>
+    <label>Privacy Date Consumer Last Contacted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email out to data owners, please delete this consumer from our records. Email out must have vendor name/application name embedded into email. Need 2 buttons - one that’s says I have deleted the data, 1 to say no data found. Please note that we will not close this ticket until we receive a response. Please reply as soon as possible. Note that we will be sending reminder emails every 5 days?</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>D3 -Yes, Perfect Match -&gt; CSR alerts data owners to delete records</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Action Required:  {{{Case.Brand__c}}} Personal Data Deletion Request_{{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

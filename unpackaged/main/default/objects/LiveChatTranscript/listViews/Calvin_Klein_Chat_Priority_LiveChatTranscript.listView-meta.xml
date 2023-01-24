@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calvin_Klein_Chat_Priority_LiveChatTranscript</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Calvin Klein Chat Priority</label>
+    <queue>Calvin_Klein_Chat_Priority</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

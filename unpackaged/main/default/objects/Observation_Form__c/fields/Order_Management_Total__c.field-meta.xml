@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Management_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Offer_to_Place_Order__c , &quot;Pass&quot;) || ISPICKVAL(  Offer_to_Place_Order__c  , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(  Ask_for_Purchase_Order_Number__c , &quot;Pass&quot;) || ISPICKVAL( Ask_for_Purchase_Order_Number__c , &quot;N/A&quot;) , 1, 0)) / 2</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Order Management Total %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

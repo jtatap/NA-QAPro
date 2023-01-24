@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolving_Privacy_Cases_Needs_Resolution</fullName>
+    <active>true</active>
+    <description>Resolving a Privacy Case Requires a Resolution Code to be populated as well.</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Status,&quot;Resolved&quot;),
+        ISPICKVAL(Status,&quot;Closed&quot;)
+        ),
+
+    ISBLANK(TEXT(Resolution_Code__c)),
+
+    OR(
+        $RecordType.DeveloperName = &quot;Privacy_Request&quot;,
+        $RecordType.DeveloperName = &quot;Data_Owner_Request&quot;,
+        $RecordType.DeveloperName = &quot;Privacy_Request_Read_Only&quot;
+        ),
+    
+    Supervisor_Data_Validation_Override__c = FALSE
+
+)</errorConditionFormula>
+    <errorDisplayField>Resolution_Code__c</errorDisplayField>
+    <errorMessage>Resolving a Privacy Case Requires a Resolution Code to be populated as well.</errorMessage>
+</ValidationRule>

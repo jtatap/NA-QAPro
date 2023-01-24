@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Access Data Attached  - UPDATE FOR SEND SAFELY</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>A6 - Access Data Attached</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>{{{Case.Brand__c}}} Personal Data Access Request - Secure Link Enclosed</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

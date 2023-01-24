@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MlDomain xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>PVH Generic Intents</label>
+    <mlIntents>
+        <developerName>bot_contactRequest_start</developerName>
+        <label>bot_contactRequest_start</label>
+        <mlIntentUtterances>
+            <utterance>live</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Liveagent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Representatives</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Operator needed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you connect me with your assistant please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Phone number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>humans</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Contact number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Connect with operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to talk to customer executive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to speak to an advisor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to speak your consultant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to contact one of the agents</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can i have human to talk to ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you tell me the length of this skort?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>chat with representatives</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>connect me to a juman</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>connect me to a representativ</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Connect with the managers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Connected with operators</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Contact by email</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>contact me the technical support operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>contact me with the operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>contact me with the technical support operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Corporate email</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>csutoemr service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Cusromer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customber Service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer serive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service executive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer support</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi need customer support</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Human a</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Human asesor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>humans</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>humen</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need a support</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need an operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need assisntant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need contact your representatives in Ukraine</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need cust9omer suuport</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to spaeak to a persin</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to speak to an executive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to speak with some one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to tslk with manager</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m trying to call you but I&#39;m not succeeding</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live ageny</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live agetn</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live asisstant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live ass</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live caht</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live chart</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live chst</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live helo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need human assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need human being</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Need life chart</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Need managers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representatitve</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representativ</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Representatives</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak to advisor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak to ahuman</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Speak to someome</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak with advisor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to an agemt</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to some one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to support</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk with peson</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak to a human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to speak to a live person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me a person now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak to someone</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i don&#39;t want to talk to a bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me a live human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live chat with a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>talk to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>let me talk to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to talk to a human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>human now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>agent now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell a person my issues</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need help from a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>talk to a rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>rep now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me to a live rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need a person to assist me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need a human to assist me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get in touch with a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I get someone to call me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get a person to call me back</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can someone call me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can someone email me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to talk to a rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>give me a rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>give me a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me to someone now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me to a rep now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;m tired of this, get me to a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get me to a representative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live chat rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>a living breathing person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need further assistance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need more help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live assistance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>help from a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>aid from a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>representative to help with my issue</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please get me to a rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Manager</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Operator</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>complaint</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>live agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Need help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Supervisor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Want agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Agent please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer care</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ask for agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Representaive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Contact agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>represetatice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>represenative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Human resource</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rude associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>talk to a human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>operator please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ask for an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>associate please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>connect to agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Agent assistants</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Request an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>talke to a human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer services</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Ask for an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Agent available</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;d like an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Name of a manager</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Transfer to agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer complaint</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need a represative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>chat with associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Asking for an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need a real agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Yes I need an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service rep</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>transfer to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Agent for assistance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer care please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service pls</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>operator help please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to an associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need a supervisor!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>waiting for a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Live customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Need customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Chat with a associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Yes customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service asap</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Help customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Chat with an associate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Connect me to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer human service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service clerk</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service email</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service phone</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer representative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer care assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service agaent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Customer service agents</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is there a human there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Transfer me to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Talk to customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Contact customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>customer service please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>billing customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>speak to customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Phone number for a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I speak to a human</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Chat with customer service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Connect to an agent please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>put me through to an agent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi can u help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Livechat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>opertor</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Sales representative</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shopping help</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bot_frustration_start</developerName>
+        <label>bot_frustration_start</label>
+        <mlIntentUtterances>
+            <utterance>annoying</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you broken?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>argh</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>asshat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>asshole</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bastard</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bot can&#39;t do anything</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bullshit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>crap</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>disappointed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ew</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exasperated</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>frustrate</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>frustrated</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>fuck</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>fuck this shit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>grrrrr</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>help dammit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>horrible</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am frustrated</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I didn&#39;t get the answer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I don&#39;t like you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I hate talking to you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i hate this bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m angry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m angry at you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m fed up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m going to complain</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m highly offended by this</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m mad</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m so annoyed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m upset</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>idiot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>irked</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>jackass</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>jerk</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>just help me damnit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nitwit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>not happy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>not helpful</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>pig</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>pissed off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>pissing me off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>robots are the worst</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sigh</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>so annoyed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>SOB</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sod</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>stinks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sucks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>talk to your manager</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terrible</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terrible customer experience</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>that won&#39;t work for me!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the worst</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this didn&#39;t help at all</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is annoying</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is bad</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is dumb</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is frustrating</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is shit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is stupid</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is trash</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is worthless</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>twit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ugh</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ugh!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>unhappy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>upset</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>waste of time</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is your problem?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why can&#39;t you help me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why don&#39;t you know anything?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>worthless</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are dumb</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are not helpful</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are stupid</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you can&#39;t help me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you suck</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you&#39;re hopeless</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you&#39;re not helpful</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>your mom</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bot_outOfScope_start</developerName>
+        <label>bot_outOfScope_start</label>
+        <mlIntentUtterances>
+            <utterance>My account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to delete my account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>login</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to reset my password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>close account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Reset my password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Registration</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to reset my password but I do not get the email to do it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to reset my password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to reset my password.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need invoice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need an invoice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can&#39;t sign in</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I sign out of my account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How can I get my member id</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>forgot password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Change password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cant login</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i reorder an item through my order history?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Price adjustment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Checkout issues</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when i send the garment to the shoppin cart, the discount does not appear</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I order them from Thailand ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can&#39;t complete request</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>We are unable to process your request at this time. Please try again later or call us (866-214-6694) to join the Preferred Loyalty Program.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>two products but it doesn&#39;t give me a 40 percent discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I cant proceed my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello, I wanted to place an order, but could not, writes that what&#39;s wrong with the card</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>change payment method</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can&#39;t complete order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>military discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>employee discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you offer military discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do i use my employee discount online</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>use employee discount online</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Teacher discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where can I add the employee discount when checking out?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Promo code issue</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Military discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to order shoes and polo but does not give me a 40% discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received two emails with 10% discounts for my next purchase, but I do not know how to apply it on this order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I got a 20% discount by email</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you give students discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>job application</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Gift card</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Gift card balance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>giftcard</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Reset password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Password reset</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>invoice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>MEMBER ID</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Delete account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to speak with your assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I forgot my password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Forgot my password</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Delete my account</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Payment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>credit cards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>payment problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>place an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>payment method</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>price match</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Price</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Prices</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Reward</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>points</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>loyalty program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Reward points</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>missing rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rewards points</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hilfiger Club</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Redeem rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My reward</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday reward</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>welcome offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rewards program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When do my loyalty program rewards expire?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Preferred loyalty program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>extend reward expiry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday gift</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday bonus</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off welcome offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>missing reward</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Loyalty points</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>join the hilfiger club</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I didn?t get the 20% off welcome offer on my first purchase!! Can I get it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can`t use my reward, my Member ID and email combination is not recognized.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello there i want to extend reward expiry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i have info about code: CKCOVET</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where is my rewards?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When does my reward expire?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when do my rewards expire</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Welcome code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rewards point</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Rewards balance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Reward program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Redeem reward</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Loyalty Rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Loyalty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I did not receive a birthday present</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello, I did not receive points for the last order (</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>size chart</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Size guide</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>about size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>find store</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Curbside Pickup</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Store hours</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>outOfScope</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+</MlDomain>

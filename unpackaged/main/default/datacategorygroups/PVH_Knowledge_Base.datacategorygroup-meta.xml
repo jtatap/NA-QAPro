@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Calvin Klein Internal</label>
+                <name>Calvin_Klein_Internal</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Calvin CA - FAQs</label>
+                    <name>Calvin_CA_FAQs</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Payment CK CA</label>
+                        <name>Payment_CK_CA</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Your Account CK CA</label>
+                        <name>Your_Account_CK_CA</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Product Care CK CA</label>
+                        <name>Product_Care_CK_CA</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Online Store Information CK CA</label>
+                        <name>Online_Store_Information_CK_CA</name>
+                    </dataCategory>
+                    <label>Calvin CA - Additional Help Topics</label>
+                    <name>Calvin_CA_Additional_Help_Topics</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin CA - Preferred Loyalty Program</label>
+                    <name>Calvin_CA_Preferred_Loyalty_Program</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin CA - Shipping</label>
+                    <name>Calvin_CA_Shipping</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin CA - Returns</label>
+                    <name>Calvin_CA_Returns</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin CA - Your Order Details</label>
+                    <name>Calvin_CA_Your_Order_Details</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin - FAQs</label>
+                    <name>Calvin_FAQs</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Payment CK</label>
+                        <name>Payment_CK</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Your Account CK</label>
+                        <name>Your_Account_CK</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Product Care CK</label>
+                        <name>Product_Care_CK</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Gift Services CK</label>
+                        <name>Gift_Services_CK</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Online Store Information CK</label>
+                        <name>Online_Store_Information_CK</name>
+                    </dataCategory>
+                    <label>Calvin - Additional Help Topics</label>
+                    <name>Calvin_Additional_Help_Topics</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin - Preferred Loyalty Program</label>
+                    <name>Calvin_Preferred_Loyalty_Program</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin - Shipping</label>
+                    <name>Calvin_Shipping</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin - Returns</label>
+                    <name>Calvin_Returns</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Calvin - Your Order Details</label>
+                    <name>Calvin_Your_Order_Details</name>
+                </dataCategory>
+                <label>Calvin Klein External</label>
+                <name>Calvin_Klein_External</name>
+            </dataCategory>
+            <label>Calvin Klein</label>
+            <name>Calvin_Klein</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Tommy Internal</label>
+                <name>Tommy_Internal</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Tommy - Your Order Details</label>
+                    <name>Tommy_Your_Order_Details</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Tommy - Shipping</label>
+                    <name>Tommy_Shipping</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Tommy - Returns</label>
+                    <name>Tommy_Returns</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Tommy - FAQs</label>
+                    <name>Tommy_FAQs</name>
+                </dataCategory>
+                <label>Tommy External</label>
+                <name>Tommy_External</name>
+            </dataCategory>
+            <label>Tommy Hilfiger</label>
+            <name>Tommy_Hilfiger</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Company Information</label>
+                <name>Company_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Orders &amp; Returns</label>
+                <name>Orders_Returns</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Ordering &amp; Payment</label>
+                    <name>Ordering_Payment</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Returns &amp; Exchanges</label>
+                    <name>Returns_Exchanges</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Shipping &amp; Tracking</label>
+                    <name>Shipping_Tracking</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>About Try Before You Buy</label>
+                    <name>About_Try_Before_You_Buy</name>
+                </dataCategory>
+                <label>Ordering &amp; Returns</label>
+                <name>Ordering_Returns</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Sales &amp; Promotions</label>
+                    <name>Sales_Promotions</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Referral Program</label>
+                    <name>Referral_Program</name>
+                </dataCategory>
+                <label>Referrals, Sales &amp; Promotions</label>
+                <name>Referrals_Sales_Promotions</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Account Information</label>
+                    <name>Account_Information_Sub</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Personal Shop &amp; Recommendations</label>
+                    <name>Personal_Shop_Recommendations</name>
+                </dataCategory>
+                <label>Account Information</label>
+                <name>Account_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Fit Basics</label>
+                    <name>Fit_Basics</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Products &amp; Availability</label>
+                    <name>Products_Availability</name>
+                </dataCategory>
+                <label>Fit &amp; Products</label>
+                <name>Fit_Products</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Bra Awareness</label>
+                    <name>Bra_Awareness</name>
+                </dataCategory>
+                <label>Lingerie Basics</label>
+                <name>Lingerie_Basics</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Change Your Catalog Mailing Preferences</label>
+                    <name>Change_Your_Catalog_Mailing_Preferences</name>
+                </dataCategory>
+                <label>Catalog Mailing List</label>
+                <name>Catalog_Mailing_List</name>
+            </dataCategory>
+            <label>External Knowledge Base (True&amp;Co)</label>
+            <name>External_Knowledge_Base_True_Co</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Contacts</label>
+                <name>Contacts</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Department Policies &amp; Procedures</label>
+                <name>Department_Policies_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Discounts</label>
+                <name>Discounts</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ecomm Policies &amp; Procedures</label>
+                <name>Ecomm_Policies_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Loyalty Programs</label>
+                <name>Loyalty_Programs</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Marketing</label>
+                <name>Marketing</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Product Information</label>
+                <name>Product_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Retail Policies &amp; Procedures</label>
+                <name>Retail_Policies_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <label>TUG Product Information</label>
+                <name>TUG_Product_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Wholesale Policies &amp; Procedures</label>
+                <name>Wholesale_Policies_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Contact List</label>
+                    <name>Contact_List</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Corporate Discounts &amp; Policies</label>
+                    <name>Corporate_Discounts_Policies</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Department Policies and Procedures</label>
+                    <name>Department_Policies_and_Procedures</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>FAQ</label>
+                    <name>FAQ</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Fraud Management</label>
+                    <name>Fraud_Management</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Training Documents</label>
+                    <name>Training_Documents</name>
+                </dataCategory>
+                <label>PVH</label>
+                <name>PVH</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Contacts</label>
+                    <name>ContactsTC</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Marketing</label>
+                    <name>MarketingTC</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Online Policies &amp; Procedures</label>
+                    <name>Online_Policies_Procedures</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Product Care</label>
+                    <name>Product_Care</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Product Information</label>
+                    <name>Product_InformationTC</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Reports</label>
+                    <name>ReportsTC</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Wholesale Policies &amp; Procedures</label>
+                    <name>Wholesale_Policies_ProceduresTC</name>
+                </dataCategory>
+                <label>True&amp;Co</label>
+                <name>True_Co</name>
+            </dataCategory>
+            <label>Internal Knowledge Base</label>
+            <name>Internal_Knowledge_Base</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>PVH Knowledge Base</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... describes the last authorization request payload delivered to the B2C Commerce Account Manager. --></help>
+        <label><!-- Integration Payload --></label>
+        <name>Integration_Payload__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Calvin Klein Community</container>
+    <containerType>Network</containerType>
+    <label>Tile Menu</label>
+    <navigationMenuItem>
+        <label>Where is my order?</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.calvinklein.us/TrackYourOrderView?catalogId=12101&amp;langId=-1&amp;storeId=10751</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>FAQs</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/topic/0TO6w0000008XxjGAE</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Store Locator</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.calvinklein.us/en/store-locator</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Size Guide</label>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.calvinklein.us/en/customerservice/women-size-guide</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

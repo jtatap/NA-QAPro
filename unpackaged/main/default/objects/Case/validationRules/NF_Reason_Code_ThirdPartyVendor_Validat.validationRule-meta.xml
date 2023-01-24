@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Reason_Code_ThirdPartyVendor_Validat</fullName>
+    <active>false</active>
+    <description>Checks the Defective Merchandise&#39; and Swimwear scenario</description>
+    <errorConditionFormula>AND( 
+    OR(
+        ISPICKVAL(Reason_Code_Details__c, &#39;Defective Merchandise&#39;),
+        ISPICKVAL(Reason_Code_Details__c,&#39;Care Instructions&#39; ),
+        ISPICKVAL(Reason_Code_Details__c,&#39;Counterfeit Merchandise&#39;) ,
+        ISPICKVAL(Reason_Code_Details__c,&#39;Product Inquiry&#39;) ,
+        ISPICKVAL(Reason_Code_Details__c,&#39;Product Repair&#39;) ,
+        ISPICKVAL(Reason_Code_Details__c,&#39;Sizing Feedback&#39;) ,
+        ISPICKVAL(Reason_Code_Details__c,&#39;Sizing Question&#39;)
+        ) ,
+    ISPICKVAL(Reason_Code_Product_Category__c, &#39;Swimwear&#39;),
+    AND(
+    OR(
+        ISPICKVAL(Reason_Code_Product_Sub_Categories_Widge__c, &#39;Elite/LZR Competition&#39;),
+        ISPICKVAL(Reason_Code_Product_Sub_Categories_Widge__c, &#39;General Swimwear&#39;)
+        ),
+    ISBLANK(TEXT(Third_Party_Vendors__c))
+    ),
+    
+    Supervisor_Data_Validation_Override__c = FALSE
+)</errorConditionFormula>
+    <errorDisplayField>ZdPVHThirdPartyVendor__c</errorDisplayField>
+    <errorMessage>Please enter a valid Third party Vendors</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type of Request --></label>
+        <name>Type_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Access My Data</masterLabel>
+            <translation><!-- Access My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertising/Sharing Opt-Out</masterLabel>
+            <translation><!-- Advertising/Sharing Opt-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete My Data</masterLabel>
+            <translation><!-- Delete My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rectify My Data</masterLabel>
+            <translation><!-- Rectify My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe</masterLabel>
+            <translation><!-- Unsubscribe --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

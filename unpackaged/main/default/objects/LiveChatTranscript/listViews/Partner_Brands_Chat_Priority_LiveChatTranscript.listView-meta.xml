@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Brands_Chat_Priority_LiveChatTranscript</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Partner Brands Chat Priority</label>
+    <queue>Partner_Brands_Chat_Priority</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

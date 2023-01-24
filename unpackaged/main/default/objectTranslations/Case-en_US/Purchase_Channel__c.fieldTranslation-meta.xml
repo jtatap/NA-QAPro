@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Purchase Channel --></label>
+        <name>Purchase_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Calvin Klein store</masterLabel>
+            <translation><!-- Calvin Klein store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - calvinklein.com</masterLabel>
+            <translation><!-- Online - calvinklein.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - izod.com</masterLabel>
+            <translation><!-- Online - izod.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - speedo.com</masterLabel>
+            <translation><!-- Online - speedo.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - styleBureau.com</masterLabel>
+            <translation><!-- Online - styleBureau.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - tommy.com</masterLabel>
+            <translation><!-- Online - tommy.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - trueandco.com</masterLabel>
+            <translation><!-- Online - trueandco.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online - vanheusen.com</masterLabel>
+            <translation><!-- Online - vanheusen.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online-CalvinKlein Canada</masterLabel>
+            <translation><!-- Online-CalvinKlein Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online-Warner&#39;s</masterLabel>
+            <translation><!-- Online-Warner&apos;s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Retailer</masterLabel>
+            <translation><!-- Other Retailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Hilfiger store</masterLabel>
+            <translation><!-- Tommy Hilfiger store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Van Heusen store</masterLabel>
+            <translation><!-- Van Heusen store --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

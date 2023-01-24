@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Stores the exception type</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>System.DmlException</fullName>
+                <default>false</default>
+                <label>System.DmlException</label>
+            </value>
+            <value>
+                <fullName>System.QueryException</fullName>
+                <default>false</default>
+                <label>System.QueryException</label>
+            </value>
+            <value>
+                <fullName>System.NullPointerException</fullName>
+                <default>false</default>
+                <label>System.NullPointerException</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>API INFO</masterLabel>
+            <translation><!-- API INFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEBUG</masterLabel>
+            <translation><!-- DEBUG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERROR</masterLabel>
+            <translation><!-- ERROR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXCEPTION</masterLabel>
+            <translation><!-- EXCEPTION --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

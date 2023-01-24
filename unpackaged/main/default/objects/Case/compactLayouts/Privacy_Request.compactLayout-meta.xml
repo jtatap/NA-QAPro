@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Privacy_Request</fullName>
+    <fields>CaseNumber</fields>
+    <fields>Brand_Lookup_Search__c</fields>
+    <fields>Type</fields>
+    <fields>Sub_Type__c</fields>
+    <fields>Days_Until_Due__c</fields>
+    <fields>CreatedDate</fields>
+    <fields>ParentId</fields>
+    <label>Privacy Request</label>
+</CompactLayout>

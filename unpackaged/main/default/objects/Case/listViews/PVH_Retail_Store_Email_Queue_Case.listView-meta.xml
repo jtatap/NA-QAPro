@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PVH_Retail_Store_Email_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>Store Contact Queue</label>
+    <queue>PVH_Retail_Store_Email_Queue</queue>
+    <sharedTo>
+        <group>Tier_1_CSR_CCPA</group>
+        <group>Tier_1_CSR_PVH</group>
+        <group>Tier_1_CSR_Wholesale</group>
+        <role>PVH_Corp</role>
+        <role>Supervisor_Tier_3_CSR</role>
+        <role>Tier_I_CSR_Privacy</role>
+        <roleAndSubordinates>Tier_I_CSR_Privacy</roleAndSubordinates>
+    </sharedTo>
+</ListView>

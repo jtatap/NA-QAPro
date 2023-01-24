@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Dankort Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>^5019[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}$
+5019[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}
+5019\d{12}</pattern>
+    <priority>3</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

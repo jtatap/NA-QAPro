@@ -1,0 +1,104 @@
+.THIS .btn-color {
+    font-size: 13px;
+   cursor: pointer;
+   height: 30px;
+   width: 75px; 
+    
+}
+.THIS .grp1{
+   height: 30px;
+   width: 200px; 
+    
+}
+.THIS .radioss:hover {
+    background: #4BCCFA   no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+}
+.THIS .btn-color:hover {
+    background: #4BCCFA   no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+    font-weight: bold;
+}
+.THIS .btn-color:target {
+ background: #8C9192 ;
+}
+.THIS .changeColor {
+background-color:yellow;
+
+}
+
+.THIS .uiButton.colorChange {
+    background: #8C9192   no-repeat;
+}
+
+.THIS .textColor{
+    color: blue;
+}
+
+.THIS .btn-blue {
+   font-size: 13px;
+   cursor: pointer;
+   height: 30px;
+   width: 75px; 
+  }
+
+.THIS .btn-blue:hover {
+    background: #0070d2 no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+    font-weight: bold;
+}
+
+
+.THIS .layout {
+    width:50%;
+    display:inline-block;
+   
+}
+
+.THIS .btn-red {
+   font-size: 13px;
+   cursor: pointer;
+   height: 30px;
+   width: 75px; 
+  }
+
+.THIS .btn-red:hover {
+    background: #da1636 no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+    font-weight: bold;
+}
+
+.THIS .btn-green {
+   font-size: 13px;
+   cursor: pointer;
+   height: 30px;
+   width: 75px; 
+   
+  }
+
+.THIS .btn-green:hover {
+    background: #14e66f no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+    font-weight: bold;
+}
+.THIS .btn-orange {
+   font-size: 13px;
+   cursor: pointer;
+   height: 30px;
+   width: 75px; 
+  }
+
+.THIS .btn-orange:hover {
+    background: #ef8b34 no-repeat;
+    outline-color: transparent;
+    box-shadow: 0 1px 3px #FFFFFF;
+    font-weight: bold;
+}
+.THIS .removeRed  {
+    display: none;
+}

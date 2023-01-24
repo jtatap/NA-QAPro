@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Maestro Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>^(5[0678]\d{2}|(63[09][40])|6[189]\d{2})[\s\-]*\d{4,5}[\s\-]*\d{4,5}[\s\-]*\d{4,5}$
+(5[0678]\d{2}|(63[09][40])|6[189]\d{2})[\s\-]*\d{4,5}[\s\-]*\d{4,5}[\s\-]*\d{4,5}
+^(5[0678]\d{2}|(63[09][40])|6[189]\d{2})[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}$
+(5[0678]\d{2}|(63[09][40])|6[189]\d{2})[\s\-]*\d{4}[\s\-]*\d{4}[\s\-]*\d{4}
+^(5[0678]\d{2}|(63[09][40])|6[189]\d{2})\d{8,15}$
+(5[0678]\d{2}|(63[09][40])|6[189]\d{2})\d{8,15}
+^(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}$
+(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}</pattern>
+    <priority>5</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

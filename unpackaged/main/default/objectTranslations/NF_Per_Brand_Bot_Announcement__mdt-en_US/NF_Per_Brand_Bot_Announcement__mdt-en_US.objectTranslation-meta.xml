@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NF Per-Brand Bot Announcement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NF Per-Brand Bot Announcements</value>
+    </caseValues>
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Announcement end date must be ON or AFTER announcement start date --></errorMessage>
+        <name>End_Date_Must_Be_On_Or_After_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

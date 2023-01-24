@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_edit_closed_cases</fullName>
+    <active>true</active>
+    <description>You cannot edit Cases that are in a Closed Status.</description>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL(Status, &quot;Closed&quot;),ISPICKVAL(PRIORVALUE(Status), &quot;Closed&quot;)), 
+NOT(ISCHANGED( Follow_up_Case__c )),
+ISBLANK(csmrgp__Merged_Date_Time__c ),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;PVHIntegrationAPIUser&quot;,
+$Profile.Name &lt;&gt; &quot;Ops/Quality&quot;,
+$Profile.Name &lt;&gt; &quot;Tier III CSR/Supervisor&quot;
+)</errorConditionFormula>
+    <errorMessage>You cannot edit Cases that are already in a Closed Status.</errorMessage>
+</ValidationRule>

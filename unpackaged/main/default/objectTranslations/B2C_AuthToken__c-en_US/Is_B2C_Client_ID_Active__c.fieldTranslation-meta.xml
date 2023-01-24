@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... describes if the parent B2C Client ID is active and can be used to request authToken from the B2C Commerce Account Manager. --></help>
+        <label><!-- Is B2C Client ID Active --></label>
+        <name>Is_B2C_Client_ID_Active__c</name>
+    </CustomFieldTranslation>

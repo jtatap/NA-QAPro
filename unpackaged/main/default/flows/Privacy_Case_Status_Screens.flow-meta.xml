@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assignment_set_Processing</name>
+        <label>Assignment set Processing</label>
+        <locationX>1243</locationX>
+        <locationY>576</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Processing Request</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Case_Resolved_User_Data_Deleted</name>
+        <label>Case Resolved - User Data Deleted</label>
+        <locationX>1659</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Resolved</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Resolution_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>User Data Deleted</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Case_Pending</name>
+        <label>Set Case Pending</label>
+        <locationX>1369</locationX>
+        <locationY>195</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Processing_Request_Perfect_Match</name>
+        <label>Set Processing Request (Perfect Match)</label>
+        <locationX>1170</locationX>
+        <locationY>787</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Perfect_Match_Found__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Processing Request</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Resolved</name>
+        <label>Set Resolved</label>
+        <locationX>1322</locationX>
+        <locationY>393</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Resolved</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Resolution_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Data Not Found</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Resolved_User_Data_Provided</name>
+        <label>Set Resolved - User Data Provided</label>
+        <locationX>1554</locationX>
+        <locationY>141</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Resolved</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Resolution_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>User Data Provided</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Resolved_w_data_found</name>
+        <label>Set Resolved w/data found (Access)</label>
+        <locationX>1002</locationX>
+        <locationY>1050</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Resolved</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Resolution_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>User Data Provided</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Status_Pending</name>
+        <label>Set Status Pending</label>
+        <locationX>1087</locationX>
+        <locationY>922</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Status.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>choice_PerfectMatch</name>
+        <choiceText>Perfect Match</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Perfect Match</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceNoMatch</name>
+        <choiceText>No Match</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No Match</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choicePossibleMatch</name>
+        <choiceText>Possible Match</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>PossibleMatch</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ResolveCaseStatusBoolean</name>
+        <choiceText>Resolve Case</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ResolveDataDeleted</name>
+        <choiceText>Resolve - Data Deleted</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Resolve Data Deleted</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ResolveDataNotFound</name>
+        <choiceText>Resolve - Data Not Found</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data Not Found</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ResolveDataProvided</name>
+        <choiceText>Resolve - Data Provided</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Resolve Data Provided</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>SendBackToDataOwner</name>
+        <choiceText>Send Back to Data Owner</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data Owner Pending</stringValue>
+        </value>
+    </choices>
+    <constants>
+        <name>AccessMyDataSubType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Access My Data</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>choicePerfectMatch</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>PerfectMatch</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>DataOwnerRequestSubType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data Owner Request</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>DeleteMyDataSubType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Delete My Data</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Case_Action_Choice</name>
+        <label>Case Action Choice</label>
+        <locationX>885</locationX>
+        <locationY>108</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_Back_to_Data_Owner</name>
+            <conditionLogic>1 OR 2</conditionLogic>
+            <conditions>
+                <leftValueReference>Case_Action_Access</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>SendBackToDataOwner</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Case_Action_Delete</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>SendBackToDataOwner</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Case_Pending</targetReference>
+            </connector>
+            <label>Send Back to Data Owner</label>
+        </rules>
+        <rules>
+            <name>Resolved_Data_Not_Found</name>
+            <conditionLogic>1 OR 2</conditionLogic>
+            <conditions>
+                <leftValueReference>Case_Action_Access</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ResolveDataNotFound</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Case_Action_Delete</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ResolveDataNotFound</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Resolved</targetReference>
+            </connector>
+            <label>Resolved - Data Not Found</label>
+        </rules>
+        <rules>
+            <name>Resolved_Data_Provided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Case_Action_Access</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ResolveDataProvided</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Resolved_User_Data_Provided</targetReference>
+            </connector>
+            <label>Resolved - Data Provided</label>
+        </rules>
+        <rules>
+            <name>Resolved_Data_Deleted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Case_Action_Delete</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ResolveDataDeleted</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Resolved_User_Data_Deleted</targetReference>
+            </connector>
+            <label>Resolved - Data Deleted</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckCaseStatus</name>
+        <label>Check Case Status</label>
+        <locationX>397</locationX>
+        <locationY>268</locationY>
+        <defaultConnector>
+            <targetReference>Default</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>sts_Open</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ReviewMatch</targetReference>
+            </connector>
+            <label>Open</label>
+        </rules>
+        <rules>
+            <name>Review_Response_Data_Owner</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ReviewResponse</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Parent_Case_Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AccessMyDataSubType</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Parent_Case_Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DeleteMyDataSubType</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Child_Case_Delete_or_Access_My_Data</targetReference>
+            </connector>
+            <label>Review Response - Data Owner</label>
+        </rules>
+        <rules>
+            <name>sts_ReviewResponse</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ReviewResponse</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ReviewChildrenResponses</targetReference>
+            </connector>
+            <label>Review Response</label>
+        </rules>
+        <rules>
+            <name>Processing_Request</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Processing Request</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Access My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Delete My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WaitingOnDataOwnerResponse</targetReference>
+            </connector>
+            <label>Processing Request</label>
+        </rules>
+        <rules>
+            <name>Pending</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Access My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Delete My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WaitingOnConsumerResponse</targetReference>
+            </connector>
+            <label>Pending</label>
+        </rules>
+        <rules>
+            <name>Data_Owner_Response</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Processing Request</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Data Owner Request</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WaitingOnDataOwnerResponse</targetReference>
+            </connector>
+            <label>Data Owner Response</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Review_Match_Type</name>
+        <label>Review Match Type</label>
+        <locationX>1013</locationX>
+        <locationY>422</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Resolved</name>
+            <conditionLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>IdentityMatchType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choiceNoMatch</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Country_of_Residence__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>United States of America (USA)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Country_of_Residence__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Canada</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Country_of_Residence__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Mexico</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Delete My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Access My Data</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Resolved</targetReference>
+            </connector>
+            <label>Resolved</label>
+        </rules>
+        <rules>
+            <name>Processing_Request_delete_in_NA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IdentityMatchType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choiceNoMatch</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_set_Processing</targetReference>
+            </connector>
+            <label>Processing Request (delete in NA)</label>
+        </rules>
+        <rules>
+            <name>Processing_Request_Perfect_Match</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IdentityMatchType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choice_PerfectMatch</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Processing_Request_Perfect_Match</targetReference>
+            </connector>
+            <label>Processing Request (Perfect Match)</label>
+        </rules>
+        <rules>
+            <name>Possible_Match</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IdentityMatchType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choicePossibleMatch</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Status_Pending</targetReference>
+            </connector>
+            <label>Possible Match</label>
+        </rules>
+    </decisions>
+    <description>Send to Consumer clicked</description>
+    <interviewLabel>Privacy Case Status Screens {!$Flow.CurrentDateTime} Record:{!recordId}</interviewLabel>
+    <label>Privacy Case Status Screens</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Case_Status</name>
+        <label>Get Case Status</label>
+        <locationX>297</locationX>
+        <locationY>355</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CheckCaseStatus</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Status</queriedFields>
+        <queriedFields>Type</queriedFields>
+        <queriedFields>Brand__c</queriedFields>
+        <queriedFields>Country_of_Residence__c</queriedFields>
+        <queriedFields>State_of_Residence__c</queriedFields>
+        <queriedFields>Parent_Case_Sub_Type__c</queriedFields>
+        <queriedFields>Sub_Type__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>1493</locationX>
+        <locationY>692</locationY>
+        <inputReference>Get_Case_Status</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Child_Case_Delete_or_Access_My_Data</name>
+        <label>Child Case - Delete or Access My Data</label>
+        <locationX>690</locationX>
+        <locationY>106</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Case_Action_Choice</targetReference>
+        </connector>
+        <fields>
+            <name>AR_ReviewResponse_Tip</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: black; font-family: Calibri; font-size: 12px;&quot;&gt;Tool Tip:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Review responses from data owners&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;If a reply is required, first send correspondence to data owner, the click Send Back to Data Owner button&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>ReviewResponse</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Access My Data</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Case_Action_Access</name>
+            <choiceReferences>SendBackToDataOwner</choiceReferences>
+            <choiceReferences>ResolveDataNotFound</choiceReferences>
+            <choiceReferences>ResolveDataProvided</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Case Action</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Parent_Case_Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>AccessMyDataSubType</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Case_Action_Delete</name>
+            <choiceReferences>SendBackToDataOwner</choiceReferences>
+            <choiceReferences>ResolveDataNotFound</choiceReferences>
+            <choiceReferences>ResolveDataDeleted</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Case Action</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Parent_Case_Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>DeleteMyDataSubType</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>No actions to take</description>
+        <name>Default</name>
+        <label>Default</label>
+        <locationX>650</locationX>
+        <locationY>866</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>ReviewChildrenResponses</name>
+        <label>ReviewChildrenResponses</label>
+        <locationX>758</locationX>
+        <locationY>664</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Set_Resolved_w_data_found</targetReference>
+        </connector>
+        <fields>
+            <name>AR_ReviewRespons_Tip</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: black; font-family: Calibri; font-size: 12px;&quot;&gt;Tool Tip:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Generate consumer data report&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Consolidate all reports if required&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Upload report to Send Safely and generate link&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Send consumer template with Send Safely link &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Click Resolve Case button&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>ReviewResponse</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Access My Data</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>CaseResolution</name>
+            <choiceReferences>ResolveCaseStatusBoolean</choiceReferences>
+            <dataType>Boolean</dataType>
+            <fieldText>Case Resolution</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ReviewMatch</name>
+        <label>Review Match</label>
+        <locationX>877</locationX>
+        <locationY>364</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Review_Match_Type</targetReference>
+        </connector>
+        <fields>
+            <name>DR_OpenStatus_Tip</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: black; font-family: Calibri; font-size: 12px;&quot;&gt;Tool Tip&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Search Brand’s Consumer Database&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;If Perfect match, first add customer ID and loyalty ID to Additional Details form, then click Perfect Match button&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;If Possible Match, first send template, then click Possible Match button&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;i style=&quot;font-size: 12px; font-family: Calibri; color: black;&quot;&gt;Note: Always check for previous consumer interactions&lt;/i&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Status</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Open</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Delete My Data</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Case_Status.Sub_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Access My Data</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>IdentityMatchType</name>
+            <choiceReferences>choicePossibleMatch</choiceReferences>
+            <choiceReferences>choiceNoMatch</choiceReferences>
+            <choiceReferences>choice_PerfectMatch</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Identity Match Type</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>WaitingOnConsumerResponse</name>
+        <label>WaitingOnConsumerResponse</label>
+        <locationX>415</locationX>
+        <locationY>37</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>PendingStatusContent</name>
+            <fieldText>&lt;p&gt;Tool Tip&lt;b&gt;: &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;color: black; font-size: 12px;&quot;&gt;Waiting on consumer response&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;color: black; font-size: 12px;&quot;&gt;No action required at this time&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>WaitingOnDataOwnerResponse</name>
+        <label>WaitingOnDataOwnerResponse</label>
+        <locationX>50</locationX>
+        <locationY>254</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ProcessingRequestStatusContent</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: black; font-size: 12px;&quot;&gt;﻿Tool Tip&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;color: black; font-size: 12px;&quot;&gt;Waiting on data owner response&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;color: black; font-size: 12px;&quot;&gt;No action required at this time&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>111</locationX>
+        <locationY>336</locationY>
+        <connector>
+            <targetReference>Get_Case_Status</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Case currently being worked on.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

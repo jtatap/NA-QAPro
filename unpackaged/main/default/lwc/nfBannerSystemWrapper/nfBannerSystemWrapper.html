@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : Luis Rocha
+  @group             : 
+  @last modified on  : 06-16-2021
+  @last modified by  : Luis Rocha
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   06-14-2021   Luis Rocha   Initial Version
+-->
+<template>
+    <template for:each={filteredMessages} for:item="option">
+        <div key={option.Id} style={messageStyle}>
+            <img src={option.ImageFile__c}>
+            <lightning-formatted-rich-text value={option.Message__c}></lightning-formatted-rich-text>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The max time for which apex should wait for the response.
+Min: 1, Max: 120000, Default: 10000 --></help>
+        <label><!-- Request Timeout(in ms) --></label>
+        <name>Request_Timeout__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Brand Name --></label>
+        <name>Brand_Name__c</name>
+        <picklistValues>
+            <masterLabel>calvinklein</masterLabel>
+            <translation><!-- calvinklein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>izod</masterLabel>
+            <translation><!-- izod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>olga</masterLabel>
+            <translation><!-- olga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pvh</masterLabel>
+            <translation><!-- pvh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>speedo</masterLabel>
+            <translation><!-- speedo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>stylebureau</masterLabel>
+            <translation><!-- stylebureau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tommy</masterLabel>
+            <translation><!-- tommy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>trueandco</masterLabel>
+            <translation><!-- trueandco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vanheusen</masterLabel>
+            <translation><!-- vanheusen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>warners</masterLabel>
+            <translation><!-- warners --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand Form - Help Topics</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brand Form - Help Topics</value>
+    </caseValues>
+    
+    
+    
+    
+    <layouts>
+        <layout>Brand Form - Help Topics Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Topic Information --></label>
+            <section>Topic Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

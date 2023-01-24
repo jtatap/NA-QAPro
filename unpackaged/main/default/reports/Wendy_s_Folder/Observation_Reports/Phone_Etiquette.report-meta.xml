@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Observation_Form__c.Tone_and_Warmth__c</field>
+    </columns>
+    <columns>
+        <field>Observation_Form__c.Empathy__c</field>
+    </columns>
+    <columns>
+        <field>Observation_Form__c.Apology__c</field>
+    </columns>
+    <columns>
+        <field>Observation_Form__c.Verbal_Nods__c</field>
+    </columns>
+    <columns>
+        <field>Observation_Form__c.Use_of_Positive_Words__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Observation_Form__c.Phone_Observation_Form</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Observation_Form__c.Phone_Etiquette_Total__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Phone Etiquette</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Observation_Form__c@Observation_Form__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Observation_Form__c.Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

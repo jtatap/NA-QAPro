@@ -1,0 +1,4 @@
+.THIS .logoContainer {
+background-image: t('url(' + brandLogoImage  + ')');
+
+}

@@ -1,0 +1,192 @@
+.THIS .listDesign{
+    padding: 10px;
+    min-width: 290px;
+    min-height: 175px;
+}
+.THIS .grid-container {
+  display: grid;
+  grid-template-columns:33% 33% 33%;/* 460px 470px 450px;*/
+  grid-gap: 18px;
+}
+.THIS .grid-container > div {
+    width: auto; /* 430px*/
+    height: auto;
+    min-height: 175px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    /*padding-left: 24px;*/
+}
+.THIS .expandDiv{
+    display:none;
+}
+.THIS.headerDesignInfo{
+    width:910px;
+    height:40px;
+    text-align:center;
+    padding:10px;
+    margin:auto;
+    color:white;
+}
+.THIS .headerList {
+   display:flex;
+}
+.THIS .autoMargin {
+    margin:auto;
+    width: 97%;
+ }
+.THIS.outerContainerStyle {
+    display: flex;
+    justify-content: center;
+}
+.THIS .Header-grid-container a {
+    text-decoration: none;
+   /* color: black;
+    font-size: 13px;*/
+   
+}
+.THIS.dividerLineDesign {
+    margin: 55px 31px;
+}
+.THIS .subTopicDesign{
+    margin: 15px 0 15px 0;
+}
+.THIS .subTopicDesign a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;    
+}
+.THIS .listStyleDesign{
+    padding-left: 1px;
+}
+.THIS .helpHeader {
+    
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000000;
+}
+.THIS .topicLine{
+    margin: 10px 10px 10px 0;
+}
+.THIS .navTopicDesign {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display:flex;
+}
+.THIS .navTopicDesign  a{
+    text-decoration: none; 
+}
+.THIS.topicBoxDesign {
+    display: flex;
+    flex-wrap: wrap;
+}
+.THIS .Fontweight5{
+    font-weight: 500;
+}
+.THIS .Fontweight7{
+    font-weight: 700;
+}
+.THIS .FontSizeInfo{
+    font-size: 17px; 
+}
+.THIS .elseDisplay{
+    border :solid 1px lightgray;
+    max-width:815px;
+    width:auto;
+    height:40px;
+    margin:auto;
+    text-align: center;
+}
+.THIS .chatDesign{
+    background-color: black;
+    color: white;
+    width: 126px;
+    height: 39px;
+    font-size: 14px;
+}
+.THIS .chatDesign:hover{
+    background-color: white;
+    color: black; 
+    width: 126px;
+    height: 39px;
+}
+.THIS .listItemDesign {
+  font-size: 11px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  color: black;
+  padding: 10px;
+}
+.THIS .listItemDesign1{
+    color: black;
+}
+.THIS .headerSwitch{
+    display:none;
+}
+.THIS .headerSwitch2{
+    display:block;
+}
+.THIS .showElement{
+    display:block;
+}
+.THIS .rightAlign{
+    text-align: right;
+}
+.THIS .marginLAuto {
+    padding-top: 7px;
+    margin-left: auto;
+    /* padding-left: 26px; */
+    padding-right: 15px;
+}
+@media (max-width: 770.98px) {
+    .THIS .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+    .THIS .grid-container > div {
+        width: auto;
+        height: auto;
+        min-height: 52px;
+        min-width: 300px;
+        border-radius: 3px;
+        background-color: #ffffff;
+      
+      }
+    .THIS .expandDiv{
+        display:block;
+     }
+    .THIS .showElement{
+        display:none;
+    }
+    .THIS .hideElement{
+        display:none;
+    }
+    .THIS .listDesign{
+        padding: 14px 5px 10px 10px;
+        min-width: 260px;
+        min-height: 52px;
+        padding-top: 14px;
+    }
+    .THIS .headerSwitch{
+        display:block;
+    }
+    .THIS .headerSwitch2{
+        display:none;
+    }
+    .THIS.headerDesignInfo{
+        width:auto;
+        min-width: 310px;
+        height:40px;
+        text-align:center;
+        padding:10px;
+        margin:auto;
+        color:white;
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Channel__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Case__r.Channel__c, 
+&quot;ECommerce&quot;, &quot;ecommerce&quot;, 
+&quot;Online - CalvinKlein.com&quot;, &quot;Online - CalvinKlein.com&quot;,
+&quot;Calvin Klein Store&quot;, &quot;Calvin Klein Store&quot;,
+&quot;Van Heusen Store&quot;, &quot;Van Heusen Store&quot;,
+&quot;Online - IZOD.com&quot;, &quot;Online - IZOD.com&quot;,
+&quot;Online - styleBureau.com&quot;, &quot;Online - styleBureau.com&quot;,
+&quot;Online -True&amp;co.com&quot;, &quot;Online -True&amp;co.com&quot;,
+&quot;Online-CalvinKlein Canada&quot;, &quot;Online-CalvinKlein Canada&quot;,
+&quot;Tommy Hilfiger Store&quot;, &quot;Tommy Hilfiger Store&quot;,
+&quot;Online - speedo.com&quot;, &quot;Online speedo.com&quot;,
+&quot;Speedo.com&quot;, &quot;Speedo.com&quot;,
+&quot;Online - Tommy.com&quot;, &quot;Online - Tommy.com&quot;,
+&quot;Online - vanheusen.com,&quot;, &quot;Online vanheusen.com&quot;,
+&quot;Online-Warner&#39;s&quot;, &quot;Online-Warner&#39;s&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>zQueue Charles Orens</name>
+    <queueMembers>
+        <users>
+            <user>charlesorens@pvh.com</user>
+            <user>dimitri.savelieff@magnet360.com.pvh</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Backlog</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives Modify permissions on Case Scenario object for record maintenance.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Case Scenarios - Modify PSG</label>
+    <permissionSets>Case_Scenarios_Modify_All</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

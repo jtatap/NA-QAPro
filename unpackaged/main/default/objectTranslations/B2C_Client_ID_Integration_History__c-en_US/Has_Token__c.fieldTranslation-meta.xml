@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... describes if an authToken was provided in the response by the B2C Commerce Account Manager. --></help>
+        <label><!-- Has Token --></label>
+        <name>Has_Token__c</name>
+    </CustomFieldTranslation>

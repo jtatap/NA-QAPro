@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Sub-Type --></label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access My Data</masterLabel>
+            <translation><!-- Access My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Balance</masterLabel>
+            <translation><!-- Account Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adding Points</masterLabel>
+            <translation><!-- Adding Points --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Availability Questions</masterLabel>
+            <translation><!-- Availability Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Order</masterLabel>
+            <translation><!-- Cancel Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Care Instructions</masterLabel>
+            <translation><!-- Care Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creating Return Label</masterLabel>
+            <translation><!-- Creating Return Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Owner Request</masterLabel>
+            <translation><!-- Data Owner Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete My Data</masterLabel>
+            <translation><!-- Delete My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Sell/Share</masterLabel>
+            <translation><!-- Do Not Sell/Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Existing Order</masterLabel>
+            <translation><!-- Edit Existing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing/Damaged Product</masterLabel>
+            <translation><!-- Missing/Damaged Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Reset</masterLabel>
+            <translation><!-- Password Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privacy Email</masterLabel>
+            <translation><!-- Privacy Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem Placing Order</masterLabel>
+            <translation><!-- Problem Placing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem Receiving</masterLabel>
+            <translation><!-- Problem Receiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Feedback</masterLabel>
+            <translation><!-- Product Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Questions</masterLabel>
+            <translation><!-- Program Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality Concerns</masterLabel>
+            <translation><!-- Quality Concerns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rectify My Data</masterLabel>
+            <translation><!-- Rectify My Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redeeming Rewards</masterLabel>
+            <translation><!-- Redeeming Rewards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Policy</masterLabel>
+            <translation><!-- Return Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Status</masterLabel>
+            <translation><!-- Return Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returning Order</masterLabel>
+            <translation><!-- Returning Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing Up</masterLabel>
+            <translation><!-- Signing Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sizing Questions</masterLabel>
+            <translation><!-- Sizing Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracking Order Shipment</masterLabel>
+            <translation><!-- Tracking Order Shipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracking Return</masterLabel>
+            <translation><!-- Tracking Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe</masterLabel>
+            <translation><!-- Unsubscribe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Information</masterLabel>
+            <translation><!-- Update Information --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

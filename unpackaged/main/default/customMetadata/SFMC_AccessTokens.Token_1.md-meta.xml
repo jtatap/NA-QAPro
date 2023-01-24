@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Token_1</label>
+    <protected>false</protected>
+    <values>
+        <field>Access_Token__c</field>
+        <value xsi:type="xsd:string">eyJhbGciOiJIUzI1NiIsImtpZCI6IjQiLCJ2ZXIiOiIxIiwidHlwIjoiSldUIn0.eyJhY2Nlc3NfdG9rZW4iOiJaOENuZHlQV25oOExPSENmazVxRkpHelEiLCJjbGllbnRfaWQiOiJ4NjVmd3M0eGt6MGlrNm4yMWdyYnM2dXgiLCJlaWQiOjEwMDAyNDk5MSwic3RhY2tfa2V5IjoiUzEwIiwicGxhdGZvcm1fdmVyc2lvbiI6MiwiY2xpZW50X3R5cGUiOiJTZXJ2ZXJUb1NlcnZlciIsInBpZCI6MzYxfQ.8OPGmqKtROatIioExCGZkBfQyzqPK6yhzTuPETEa4PI.4ux2Hjjqu4hvyw5OA0CZ0nP9ShzBzabCf49Df1mUkV0p0VvyBFztagWqBhDfYmSytBE2oCePqBRFs56opjsv2jqxJTHlps4WEOAWF8eW4xwqkMtHXvA1mihGrVC-RMPKeyvWLT0zzQ1DH5BHeJBNr9CBfRVw53xJfIoIn</value>
+    </values>
+    <values>
+        <field>Expires_At__c</field>
+        <value xsi:type="xsd:dateTime">2023-01-24T06:34:00.000Z</value>
+    </values>
+    <values>
+        <field>Expires_In__c</field>
+        <value xsi:type="xsd:double">1079.0</value>
+    </values>
+</CustomMetadata>

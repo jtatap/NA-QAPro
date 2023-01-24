@@ -1,0 +1,336 @@
+<!--
+ @Lightning Component:       BrandForm
+ @JIRA:        				 NASSC-25, NASSC-354
+ @description: 				 Custom Lightning Component to show Brand Form.
+ -->
+
+<aura:component controller="BrandFormApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:registerEvent name="appBrandNameEvent" type="c:appBrandNameEvent"/>
+
+    <aura:attribute name="progress" type="Integer" default="0"/>
+    <aura:attribute name="fileArray" type="Object"/>
+    <!-- aura attributes-->
+    <aura:attribute name="listControllingValues" type="list" default="[]" description="to store controller field values"/>
+    <aura:attribute name="listDependingValues" type="list" default="[]" description="to store dependent field values"/>
+    <aura:attribute name="depnedentFieldMap" type="map" description="map to store dependent values with controlling value"/>
+    <aura:attribute name="bDisabledDependentFld" type="boolean" default="true"/>
+
+    <aura:attribute name="brandName" type="String"/>
+    <aura:attribute name="caseSourceCountry" type="String"/>
+    <aura:attribute name="reachList" type="List"/>
+    <aura:attribute name="TeamList" type="String[]"/>
+    <aura:attribute name="purchaseList" type="String[]"/>
+    <aura:attribute name="helpList" type="List"/>
+  
+
+    <aura:attribute name="isRemoveFilesDisplay" type="boolean" default="false"/>
+    <aura:attribute name="isMessage" type="boolean" default="false"/>
+    <aura:attribute name="isMessageCA" type="boolean" default="false"/>
+    <aura:attribute name="isQuestion" type="boolean" default="false"/>
+    <aura:attribute name="isTrueNCo" type="boolean" default="false"/>
+    <aura:attribute name="isFinished" type="boolean" default="false"/>
+    <aura:attribute name="isExistingPurchase" type="boolean" default="false"/>
+    <aura:attribute name="isOrder" type="boolean" default="false"/>
+    <aura:attribute name="isReturns" type="boolean" default="false"/>
+    <aura:attribute name="isShipping" type="boolean" default="false"/>
+    <aura:attribute name="isAmazon" type="boolean" default="false"/>
+    
+    
+
+    <aura:attribute name="isSpecificOrder" type="boolean" default="false"/>
+    <aura:attribute name="ticketid" type="String"/>
+    <aura:attribute name="orderNumberMaxLength" type="Integer" default="8"/>
+    <aura:attribute name="successMessage" type="String"/>
+    
+    <aura:attribute name="isUrlUS" type="boolean" default="false"/>
+    <aura:attribute name="isUrlCA" type="boolean" default="false"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- <aura:attribute name="newCase" type="Case" default="{ 'sobjectType': 'Case', 'Name': '','Is_Existing_Purchase__c':'No','Product_Category__c':'Women\'s Underwear'}"/> -->
+    <aura:attribute name="newCase" type="Case" default="{ 'sobjectType': 'Case', 'Name': ''}"/>
+
+    <!-- create 2 aura handler with waiting and donewaiting events-->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+
+    <aura:attribute name="parentId" type="Id" default="0016F000024nYzwQAE"/>
+    <!--    <aura:attribute name="fileName" type="String[]"/>-->
+    <aura:attribute name="NoFilesSelected" type="String" default="No Files Selected"/>
+	<!-- Order Status Delay Message -->
+    <aura:attribute name="OrderStatusLink" type="String" default=""/>
+    <aura:attribute name="fileToBeUploaded" type="Object[]"/>
+    <ltng:require styles="{!$Resource.multilineToastCSS}"/>
+
+    <aura:attribute name="files" type="ContentDocument[]"/>
+    <aura:attribute name="recordId" type="string"/>
+    <aura:attribute name="multiple" type="Boolean" default="true"/>
+    <aura:attribute name="disabled" type="Boolean" default="false"/>
+    <aura:attribute name="fileCountLimit" type="Integer" default="5" />
+
+    <aura:if isTrue="{!v.brandName=='2'}">
+        <ltng:require styles="{!$Resource.CKStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='1'}">
+        <ltng:require styles="{!$Resource.tommyStyles}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='10'}">
+        <ltng:require styles="{!$Resource.OlgaStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='4'}">
+        <ltng:require styles="{!$Resource.izodStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='5'}">
+        <ltng:require styles="{!$Resource.VHStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='84'}">
+        <ltng:require styles="{!$Resource.SBStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='7'}">
+        <ltng:require styles="{!$Resource.SpeedoStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='83'}">
+        <ltng:require styles="{!$Resource.WarnerStyle}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.brandName=='11'}">
+        <ltng:require styles="{!$Resource.TCStyle}"/>
+    </aura:if>
+
+    <!-- <aura:attribute name="myRecordId" type="String" description="Record to which the files should be attached" default="50018000009OmD2"/> -->
+    <!--loading spinner start... style=Brand Medium (blue dots)-->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!-- Loading spinner end-->
+
+    <aura:if isTrue="{!!v.isFinished}">
+        <div class="row">
+            <div class="slds-grid slds-wrap slds-grid_align-center">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-3 slds-large-size_1-of-3">
+
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-3 slds-large-size_1-of-3">
+                    <div class="slds-box slds-box_small">
+                      <div >
+                         <aura:if isTrue="{!v.brandName=='1'}">
+                           Due to a delay within the UPS network we are experiencing delivery times that may be longer than normal. If you received a shipping notification, your package has shipped but tracking information may not display at this time. Please continue to refresh your order tracking page as shipping statuses update periodically. We apologize for any inconvenience and appreciate your patience.
+                        </aura:if>
+                        <aura:if isTrue="{!v.brandName=='4'}">
+                           Please tell us more about your inquiry using the form below and click to submit your information.
+                         </aura:if>
+                         <aura:if isTrue="{!or(v.brandName=='5',v.brandName=='7')}">
+                           Please tell us more about your inquiry using the form below and click to submit your information.
+                        </aura:if>
+                         <aura:if isTrue="{!or(v.brandName=='81',v.brandName=='9')}">
+                           Please tell us more about your inquiry using the form below and click to submit your information.
+                        </aura:if>
+                          <aura:if isTrue="{!and(v.brandName=='2',v.isUrlCA)}">
+                           Due to a delay within the UPS network we are experiencing delivery times that may be longer than normal. If you received a shipping notification, your package has shipped but tracking information may not display at this time. Please continue to refresh your order tracking page as shipping statuses update periodically. We apologize for any inconvenience and appreciate your patience. 
+                        </aura:if>
+                         <aura:if isTrue="{!and(v.brandName=='2',v.isUrlUS)}">
+                           Due to a delay within the UPS network we are experiencing delivery times that may be longer than normal. If you received a shipping notification, your package has shipped but tracking information may not display at this time. Please continue to refresh your order tracking page as shipping statuses update periodically. We apologize for any inconvenience and appreciate your patience.
+                        </aura:if>
+                         </div>
+                        <br>
+                        </br>
+              <!--Added Order Delay Message -->
+                            <!--<div class="slds-m-top_xx-small slds-text-body_medium slds-text-color_error">
+                                Due to COVID-19 safety procedures in our warehouses, orders and return refunds may be delayed. 
+                                We are committed to the safety of our associates and the satisfaction of our customers, and we are doing everything possible to ensure both.
+                                <br/>
+                                <br/>
+								Checking your order status online will provide the most up to date information.
+                                <aura:if isTrue="{!v.brandName=='1'}">
+        						<lightning:formattedUrl value="https://usa.tommy.com/TrackYourOrderView?catalogId=10551&amp;langId=-1&amp;storeId=10151" label="Click here to track your order."/>
+                                <br/><br/> </aura:if>
+                                <aura:if isTrue="{!and(v.brandName=='2',v.isUrlUS)}">
+                                <lightning:formattedUrl value="https://www.calvinklein.us/TrackYourOrderView?catalogId=12101&amp;langId=-1&amp;storeId=10751" label="Click here to track your order."/>
+                                <br/><br/>
+                                </aura:if>
+                                <aura:if isTrue="{!and(v.brandName=='2',v.isUrlCA)}">
+                                <lightning:formattedUrl value="https://tracking.eshopworld.com/ckl" label="Click here to track your order."/>
+                                <br/><br/>
+                                </aura:if>
+                                <aura:if isTrue="{!v.brandName=='4'}">
+                                <lightning:formattedUrl value="https://izod.partnerbrands.com/webapp/wcs/stores/servlet/TrackYourOrderView?catalogId=15801&amp;storeId=12501&amp;langId=-1" label="Click here to track your order."/>
+                                <br/><br/> </aura:if>
+                                <aura:if isTrue="{!v.brandName=='5'}">
+                                <lightning:formattedUrl value="https://vanheusen.partnerbrands.com/webapp/wcs/stores/servlet/TrackYourOrderView?catalogId=15802&amp;storeId=12501&amp;langId=-1" label="Click here to track your order."/>
+                                <br/><br/> </aura:if>
+                                <aura:if isTrue="{!v.brandName=='7'}">
+        						<lightning:formattedUrl value="https://www.speedousa.com/TrackYourOrderView?catalogId=14651&amp;langId=-1&amp;storeId=11351" label="Click here to track your order."/>
+                                <br/><br/> </aura:if>
+                                <aura:if isTrue="{!v.brandName=='11'}"> <br/>
+                                <lightning:formattedUrl value="https://trueandco.com/orders" label="Click here to track your order."/>
+                                <br/><br/> </aura:if>
+                                You will also be notified via email when your order ships or if your return refund is processed. 
+                                We appreciate your patience at this time. 
+                                <br/>
+                                <br/>
+                        </div>-->
+ 
+                        
+                        <lightning:input name="firstname" class="theField" aura:id="firstname" label="First Name" required="true" pattern="^[a-zA-Z]+([-' ][a-zA-Z]+)*$" messageWhenPatternMismatch="Please Provide Valid First Name" minlength="2" messageWhenTooShort="First Name must be minimum 2 characters"/>
+                        <lightning:input name="lastname" class="theField" aura:id="lastname" label="Last Name" required="true" pattern="^[a-zA-Z]+([-' ][a-zA-Z]+)*$" messageWhenPatternMismatch="Please Provide Valid Last Name" minlength="2" messageWhenTooShort="Last Name must be minimum 2 characters"/>
+                        <lightning:input type="email" class="theField" name="emailaddress" aura:id="email" label="Email Address" value="{!v.newCase.SuppliedEmail}" required="true"/>
+                        <lightning:input name="phonenumber" class="theField" aura:id="phone" label="Phone Number" value="{!v.newCase.SuppliedPhone}" pattern="^\+?(?:[0-9\-] ?){6,15}[0-9]$" messageWhenPatternMismatch="You have entered invalid phone number"/>
+
+                        <aura:if isTrue="{!v.isQuestion}">
+
+                            <lightning:select name="reach" class="theField" aura:id="reach" label="Which team are you attempting to reach?" value="{!v.newCase.Channel__c}" onchange="{!c.handleOnChangeReachList}" required="true">
+                                <option value="">--- Select Option ---</option>
+                                <aura:iteration items="{!v.reachList}" var="val">
+                                    <option value="{!val.value}" selected="{!val.selected}" text="{!val.label}"/>
+                                </aura:iteration>
+                            </lightning:select>
+
+                        </aura:if>
+
+                        <aura:if isTrue="{!v.isMessage}">
+                            <!--<p class="justifyText slds-m-top_small slds-m-bottom_small theField"><b>Please Note:</b> If you need to cancel or edit your online order, we offer a 30-minute grace period upon order confirmation. You can cancel your order on your order confirmation email or on your account page. Please note your order will be processed after 30 minutes. All attempts to cancel or edit an order after this period will not be validated. </p>-->
+                            <div class="justifyText slds-m-top_small slds-m-bottom_small theField">
+                                <lightning:formattedRichText value="{!$Label.c.ChannelMessage_US}"></lightning:formattedRichText>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.isMessageCA}">
+                            <!-- <p class="justifyText slds-m-top_small slds-m-bottom_small theField"><b>Please Note:</b> If you need to cancel or edit your online order, we offer a 30-minute grace period upon order confirmation. You can cancel your order on your order confirmation email or on your account page. Please note your order will be processed after 30 minutes. All attempts to cancel or edit an order after this period will not be validated.At this time, if you checkout as a Guest, you are unable to cancel or edit your order. </p>-->
+                            <div class="justifyText slds-m-top_small slds-m-bottom_small theField">
+                                <lightning:formattedRichText value="{!$Label.c.ChannelMessage_CA}"></lightning:formattedRichText>
+                            </div>
+                        </aura:if>
+
+
+                        <!-- <aura:if isTrue="{! or(v.isMessage,v.isMessageCA)}">
+                       
+                        <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{8}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 8 Digits" maxlength="8" />
+                        </aura:if>
+                        
+                       
+                        <aura:if  isTrue="{!v.brandName == '84'}" >
+                            <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{8}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 8 Digits" maxlength="8" />
+                        </aura:if>
+
+                        <aura:if  isTrue="{!v.brandName =='11'}" >
+                            <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{7}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 7 Digits" maxlength="7" />
+                        </aura:if>		-->
+                        
+                       <!--<aura:if  isTrue="{!v.brandName !='11'}">-->
+                        <lightning:select name="purchase" class="theField" aura:id="purchase" label="Are you contacting us about an existing purchase?" value="{!v.newCase.Is_Existing_Purchase__c}" required="true" onchange="{!c.handleExistingPurchase}">
+                            <option value="">--- Select Option ---</option>
+                            <aura:iteration items="{!v.purchaseList}" var="val">
+                                <option value="{!val}" selected="{!val.selected}"> {!val} </option>
+                                <!-- <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}"/> -->
+                            </aura:iteration>
+                        </lightning:select>
+                      <!--  </aura:if>-->
+                       
+                        <!-- START - CONDITIONALLY Display Order Number -->
+                        <!-- Display ORDER NUMBER only when CHANNEL is .com / .ca AND Existing Purchase is YES -->
+                        <aura:if isTrue="{! and(or(v.isMessage,v.isMessageCA),v.isExistingPurchase,or(v.brandName !='10',v.brandName !='83'))}">
+                            <!--<aura:if isTrue="{!v.isExistingPurchase}" > -->
+                            <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{8}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 8 Digits" maxlength="8"/>
+                        </aura:if>
+
+                        <!--Always Display ORDER NUMBER when Brand is StyleBureau or AND Existing Purchase is YES. ORDER NUMBER = EXACTLY 8 Digit-->
+                        <aura:if isTrue="{! and(v.brandName =='84',v.isExistingPurchase)}">
+                            <!--<aura:if isTrue="{!v.isExistingPurchase}" > -->
+                            <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{8}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 8 Digits" maxlength="8"/>
+                        </aura:if>
+
+                        <!--Always Display ORDER NUMBER when Brand is True&Co or AND Existing Purchase is YES. ORDER NUMBER = EXACTLY 8 Digit-->
+                       <aura:if isTrue="{!and(v.brandName =='11',v.isExistingPurchase)}">
+                           <!--<aura:if isTrue="{!v.isExistingPurchase}" >-->
+                           <!-- <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" pattern="[0-9]{7}" messageWhenPatternMismatch="Invalid: Order Number Should be of Exactly 7 Digits" maxlength="7"/>-->
+                            <lightning:input type="text" class="theField" name="orderNumber" aura:id="orderNumber" label="Order Number" value="{!v.newCase.Order_Number__c}" maxlength="21"/>
+                        </aura:if>
+                        <!-- END - CONDITIONALLY Display Order Number -->
+                     
+                        <aura:if  isTrue="{!v.brandName =='11'}" >
+                         <aura:if isTrue="{!v.isTrueNCo}">
+                        <lightning:select name="team" class="theField" aura:id="team" label="Where did you make the purchase ?" value="{!v.newCase.Channel__c}" required="true" onchange="{!c.handlePurchaseTeam}">
+                            <option value="">--- Select Option ---</option>
+                            <aura:iteration items="{!v.TeamList}" var="val">
+                                <option value="{!val.value}" selected="{!val.selected}" text="{!val.label}"/>
+                                <!-- <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}"/> -->
+                            </aura:iteration>
+                        </lightning:select>
+                        </aura:if>
+                        </aura:if>
+                        <lightning:select name="help" class="theField" aura:id="help" label="What can we help you with?" value="{!v.newCase.Type}" required="true" onchange="{!c.setMessage}">
+                            <option value="">--- Select Option ---</option>
+                            <aura:iteration items="{!v.helpList}" var="val">
+                                <option value="{!val.value}" selected="{!val.selected}" text="{!val.label}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                      <aura:if isTrue="{!v.brandName =='11'}">
+                           <aura:if isTrue="{!and(v.isAmazon,v.isOrder)}">
+                               <b>Please Note:</b> If your order was placed with Amazon you must contact that company directly.
+                           </aura:if>
+                      </aura:if>
+                       
+                      <aura:if isTrue="{!v.brandName =='11'}">  
+                           <aura:if isTrue="{! and(v.isAmazon,v.isShipping)}">
+                               <b>Please Note:</b>If your order was placed with Amazon you must contact that company directly.
+                           </aura:if>
+                        </aura:if>
+                      <aura:if isTrue="{!v.brandName =='11'}">  
+                            <aura:if isTrue="{!and(v.isAmazon,v.isReturns)}">
+                               <b>Please Note:</b>If you are attempting to return or exchange an order that was placed with Amazon you must contact that company directly.
+                           </aura:if>
+                       </aura:if>
+
+<!--                        <aura:if isTrue="{!v.brandName =='1'}">-->
+<!--                            <div class="slds-m-top_x-small slds-m-bottom_x-small">-->
+<!--                                <lightning:input class="theField" type="checkbox" name="tommyAdaptive" aura:id="tommyAdaptive" label="Please check the box if you are contacting us about Tommy Adaptive" value="{!v.newCase.Tommy_Adaptive__c}" onchange="{!c.handleCheckBoxChange}"/>-->
+<!--                            </div>-->
+<!--                        </aura:if>-->
+
+                        <lightning:textarea name="message" class="theField" aura:id="message" label="Message" value="{!v.newCase.Description}" required="true" maxlength="32000"/>
+
+
+                        <p class="theField">Attach Files (up to 5 files)</p>
+                        <lightning:fileUpload class="justifyText theField attachMessage" label="{!$Label.c.Message_UploadFiles}" multiple="{!v.multiple}"
+                                              recordId="{!v.recordId}"
+                                              disabled="{!v.disabled}"
+                                              onuploadfinished="{!c.uploadFinished}"/>
+
+                        <aura:if isTrue="{!v.isRemoveFilesDisplay}">
+                            <ul class="slds-has-dividers_top-space slds-border_bottom">
+                                <aura:iteration items="{!v.files}" var="f" indexVar="i">
+                                    <li class="slds-item slds-text-body_medium slds-text-color_error theFileName">
+                                        <button class="slds-button slds-button_icon" name="{!f.Id}" id="{!f.Id}" data-index="{!i}" title="{!'Remove Attachment '+f.Title}" onclick="{!c.deleteFile}">
+                                            <lightning:icon iconName="utility:remove_link" variant="error" size="x-small" />
+                                        </button>
+                                        <span>{!f.Title}</span>
+                                    </li>
+                                </aura:iteration>
+                            </ul>
+                        </aura:if>
+
+                        <aura:if isTrue="{!!v.isRemoveFilesDisplay}">
+                            <div class="slds-m-top_xx-small slds-text-body_medium slds-text-color_error theFileName">
+                                {!v.NoFilesSelected}
+                            </div>
+                        </aura:if>
+
+                        <div class="slds-align_absolute-center">
+                            <lightning:button class="theButton slds-m-top_large slds-p-left_large slds-p-right_large slds-p-top_xx-small slds-p-bottom_xx-small" label="{!$Label.c.Label_SubmitButton}" onclick="{! c.handleSubmit}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-3 slds-large-size_1-of-3">
+
+                </div>
+            </div>
+        </div>
+        <aura:set attribute="else">
+            <c:BrandFormResult ticketid="{!v.ticketid}" messageToShow="{!v.successMessage}"/>
+        </aura:set>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zQueue_Courtney_McGuire_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>zQueue Courtney McGuire</label>
+    <queue>zQueue_Courtney_McGuire</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

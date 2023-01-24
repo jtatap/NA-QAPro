@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Email Interests --></label>
+        <name>Email_Interests__c</name>
+        <picklistValues>
+            <masterLabel>Anchor / Specialty Stores</masterLabel>
+            <translation><!-- Anchor / Specialty Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Stores</masterLabel>
+            <translation><!-- Company Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mens</masterLabel>
+            <translation><!-- Mens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy.com</masterLabel>
+            <translation><!-- Tommy.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Womens</masterLabel>
+            <translation><!-- Womens --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Other_Retail_Channel__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, this Additional Details entry will NOT display when a Other Retail Brand Channel is chosen.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>When checked, this Additional Details entry will NOT display when a Other Retail Brand Channel is chosen.</inlineHelpText>
+    <label>No Other Retail Channel</label>
+    <type>Checkbox</type>
+</CustomField>

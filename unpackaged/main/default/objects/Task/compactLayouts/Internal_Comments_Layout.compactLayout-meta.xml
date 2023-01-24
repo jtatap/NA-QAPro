@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Comments_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>Internal_Comments__c</fields>
+    <fields>MC_GC_Number__c</fields>
+    <fields>Total_Value__c</fields>
+    <fields>WhatId</fields>
+    <label>Internal Comments Layout</label>
+</CompactLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>Tier 1 CSR CCPA</groups>
+    <groups>Tier 1 CSR PVH</groups>
+    <groups>Tier 1 CSR Wholesale</groups>
+    <groups>Tier 1 CSR Wholesale [OLD]</groups>
+    <label>PVH CS Admins</label>
+    <loginAccess>false</loginAccess>
+    <permissionSets>Manage Knowledge</permissionSets>
+    <permissionSets>Manage Public List Views</permissionSets>
+    <permissionSets>Manage Surveys</permissionSets>
+    <permissionSets>Omni-Channel Supervisor</permissionSets>
+    <permissionSets>Manage Brands</permissionSets>
+    <permissionSets>Manage Data Owners</permissionSets>
+    <permissionSets>CS Super User</permissionSets>
+    <profiles>Ops/Quality</profiles>
+    <profiles>Tier II CSR</profiles>
+    <profiles>Tier III CSR/Supervisor</profiles>
+    <profiles>Tier I CSR CCPA</profiles>
+    <profiles>Tier I CSR PVH</profiles>
+    <profiles>Tier I CSR Wholesale</profiles>
+    <profiles>Tier I CSR Wholesale [OLD]</profiles>
+    <roles>PVH Corp Operations/Quality</roles>
+    <roles>CS Lead</roles>
+</DelegateGroup>

@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MlDomain xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>PVH Social Intents</label>
+    <mlIntents>
+        <developerName>social_bot_direct</developerName>
+        <label>social_bot_direct</label>
+        <mlIntentUtterances>
+            <utterance>are you a bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>who are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you an assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you real</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a person</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am i talking to a bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this is a bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is this a bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what am I talking to</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is this a bot i&#39;m talking to</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>robot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a robot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a chatter bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a chat bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>autobot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am i talking to a chat bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you an automated bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am I talking to a human?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a bot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a chatbot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you a human?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a person?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a real live person? Or are you a robot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a real thing?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a robot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you a virtual assistant?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you alive?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you conscious?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you evil?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you good or evil?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you intelligent?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you real?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you smart?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you help?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell if you are real or not?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell if you are real?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me if you are a person or a robot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you think?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you dream?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you know what you are?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you know you are a robot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can you help?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is this a live agent?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about who you are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about yourself</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me are you a real person?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me are you a robot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me are you human?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me what you are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Tell me what you are!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me what you think you are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What are you thinking about?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your intentions?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What created you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what do you think you are?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is a bot?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is AI?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is your nature?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is your true form?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are you from?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are you right now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where did you come from?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where do they keep you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where do you live</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where do you think you are?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>who are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Who created you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>who is your maker?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>who put you here?</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>social_bye_direct</developerName>
+        <label>social_bye_direct</label>
+        <mlIntentUtterances>
+            <utterance>bye</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good bye</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good night</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>goodbye</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>goodnight</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Have a good night</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>later</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>see you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>see yah</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>see you later</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>byeeee</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bai</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>byeyah</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>adios</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>au revoir</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get out of here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>close chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>close this out</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bye now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good bye to you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;m done here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>have a good one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>adieu</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bye bye</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bye bye for now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bye for now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>c u</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>c u later</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you be quiet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you shut up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cheerio</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ciao</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>end chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>farewell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get out of this chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good bye for now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good bye now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Goodby!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>got to go</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>have a nice day</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I don&#39;t want to talk to you anymore</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I gotta go</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have to go</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have to leave</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to elave</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>leave chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>leaving</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>leaving this conversation now, bye!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>let me leave already</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>night night!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>night!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ok I&#39;m going to go now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ok I&#39;m leaving now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sayonara</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>see ya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>see you for now!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>so long</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>stop chat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ta-ta</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>that&#39;s my cue to leave</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>we&#39;ll talk later</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>social_hello_direct</developerName>
+        <label>social_hello_direct</label>
+        <mlIntentUtterances>
+            <utterance>I have a question</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hola!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hola buenas tardes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>heloo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Good morning!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Good Day</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello??</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello???</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello..</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello&#39;</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello)</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello}</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello@</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hellooo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Helloooo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>HELLOW</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Helo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hey Tommy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hey!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hey?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi
+ Hi</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi  good morning</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi ,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi :)</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi :0</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi all</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi everyone</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi good afternoon,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi good day</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>HI good morning</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi Good night</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi how are u</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi how are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi how are you ?/</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi I hv a few questions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi my dear friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi!)</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi. I have a question.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi. Quick question for ya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi. There</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi]</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hii</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hii anyone there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hii..</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hiii</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hiiii</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>himan</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How are you ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are you today?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have no other questions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good afternoon</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good evening</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Good evening, I have a question</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good morning</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello how is u doing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello, are you there?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi how are you doing tonight</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>You there?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how&#39;s it going</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hola</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey there bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>heya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>heyo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good evenin</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi hi</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>echo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi to you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hai</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hihi</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ello  govenor!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ahoy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ahoy matey!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>aloha</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bonjour</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>buenas noches</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>buenos dias</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cia</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>g&#39;day</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>G&#39;day!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good morning vietnam!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>goodday</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greeting bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greeting Mr. Pearson</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings and salutations</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings earthling</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings friend!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Greetings from Earth</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings mr. bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greetings Ms. Pearson</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Greetings Virtual Assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hai ya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello darkness my old friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello dear friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello from the other side</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello good ole chap</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello good ole chum</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello how are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello how are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello miss</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello mister</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello Mr. Bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello Mr. Bot friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello Mr. Pearson Virtual Assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello Mr. Robot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello Ms. Bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello my better half</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello my dear</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello Pearson</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello sunshine</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello there how are you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello there how&#39;s it going</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello there!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello virtual assistant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello virtual friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello!!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hellooooo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Here&#39;s Johny!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey hey hey</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey Mr. Bot!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey you!!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hey, howdy, hi</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi bae</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi boo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi honey</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi how&#39;s it going</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi hows it going</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi mister</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi my bestest friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi there how are you?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi there how&#39;s it going</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi there!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi thre</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi to the best bot ever</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi to the best robot ever</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi ya Mr. Bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hi-ya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>HI!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hiiiiii</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hiya</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hiya friend!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are things</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are things?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are you doing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how are you today</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do you do?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how goes it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how is your day going?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Howdy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>howdy dooo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>howdy partner</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>howdy-doody</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I come in peace!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m Batman</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>It&#39;s a pleasure to meet you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>it&#39;s nice to meet you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>look at what the cat dragged in</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>look who it is</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>morning!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>namaste</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ni hao</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ola</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sup</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sup homeslice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how you really feel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>there he is</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>there she is</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>there you are!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>well, hello</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s cracking</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s going on</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s going on with you today</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s happening</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s kickin</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s new</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s new?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s the craic</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s up Pearson</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s up?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why hello there</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>yo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>yo!</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>social_thanks_direct</developerName>
+        <label>social_thanks_direct</label>
+        <mlIntentUtterances>
+            <utterance>thats it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thank you all set</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thank you very much.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>that?s all! Thank you!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>That&#39;s all for now</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>That&#39;s all I needed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>That&#39;s all. Thanks.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thats all,Thank.you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cheers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>great thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I appreciate it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nice thank you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ok thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>okay thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>sure</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terrific</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank you so much</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank you very much</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanx</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thx</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tnx</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>welcome</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>YOU ARE WELCOME</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you helped a lot thank you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you&#39;re welcome</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks, man</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks a lot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks a ton</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>really, thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you helped a lot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you helped me out today</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i really appreciate it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks a million</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>great job</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>amazing service!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>amazing! thank you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>appreciate it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>appreciate it!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>appreciate the help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Awesome,thank you!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>danke</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>excellent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>glad you could help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>good! thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>gracias</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>great</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>great!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>greatly appreciated</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can&#39;t thank you enough</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I cannot thank you enough</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I truly appreciate it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>many thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>many thanks to you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>much appreciated</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>much obliged</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nice</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>no other help needed, thank you so much!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>super</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>super!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>superb</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank ya very much</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank ya!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank you for your consideration</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank you for your service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thank youu :)</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks :)</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks a bunch</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks bot!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for correcting this problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for helping me with this problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for resolving my issue</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for resolving my problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for the help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks for your service</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks friend</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks so much</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks so much, appreciate all the help</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks to ya!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks to you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks very much to you!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thanks.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>that&#39;s very kind of you</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thnx</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thumbs up!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tu</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>You are an awesome bot</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are awesome, thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are the best</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you are the man</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you da best</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you helped me a lot today, thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you helped resolve my issue, thank you!!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you solved my issues, thank you!!</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you&#39;re great</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>you&#39;re the best</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>all good</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>thanks, I&#39;m good</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>no</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nope</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nothing else</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>nothing more</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Nothing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m all set</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>all set</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+</MlDomain>

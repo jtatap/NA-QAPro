@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Should be true if the response&apos;s body verification is needed. --></help>
+        <label><!-- Check Response Body --></label>
+        <name>Check_Response_Body__c</name>
+    </CustomFieldTranslation>

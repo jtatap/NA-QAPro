@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(Case.Total_Active_Time__c:SUM/CASE_NUMBER:UNIQUE)/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Active Time</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CASE_NUMBER:UNIQUE/(Case.Total_Active_Time__c:SUM/60/60)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cases Per Hour</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57374510</developerName>
+        <masterLabel>Agent Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alexis Rios</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Alexis Rios</sourceValue>
+            </sourceValues>
+            <value>Alexis Rios</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Boyd</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Alicia Boyd</sourceValue>
+            </sourceValues>
+            <value>Alicia Boyd</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrew R</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Andrew Rojas</sourceValue>
+            </sourceValues>
+            <value>Andrew Rojas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brianna McDougal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Brianna McDougal</sourceValue>
+            </sourceValues>
+            <value>Brianna McDougal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chanta Thompson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Chanta Thompson</sourceValue>
+            </sourceValues>
+            <value>Chanta Thompson</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elizabeth Sellers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Elizabeth Sellers</sourceValue>
+            </sourceValues>
+            <value>Elizabeth Sellers</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elvira Tsague</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Elvira Tsague</sourceValue>
+            </sourceValues>
+            <value>Elvira Tsague</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fatimah McAllister</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Fatimah McAllister</sourceValue>
+            </sourceValues>
+            <value>Fatimah McAllister</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inah N.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Inah Nomorosa</sourceValue>
+            </sourceValues>
+            <value>Inah Nomorosa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ivy Delgado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Ivy Delgado</sourceValue>
+            </sourceValues>
+            <value>Ivy Delgado</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jessica Bensinger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Jessica Bensinger</sourceValue>
+            </sourceValues>
+            <value>Jessica Bensinger</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jessica F.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Jessica Fludd</sourceValue>
+            </sourceValues>
+            <value>Jessica Fludd</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Joanna Sibala</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Joanna Sibala</sourceValue>
+            </sourceValues>
+            <value>Joanna Sibala</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mina Aamer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Mina Aamer</sourceValue>
+            </sourceValues>
+            <value>Mina Aamer</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>zQueue Lorraine Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lorraine Johnson</sourceValue>
+            </sourceValues>
+            <value>Lorraine Johnson</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Emily Brogan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Emily Brogan</sourceValue>
+            </sourceValues>
+            <value>Emily Brogan</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Case.First_Contact_Resolution__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <description>For the KPI Dashboard.</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Duplicate_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL.STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Avinash,Blair,Braj,CSAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>EMAIL.MESSAGE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.First_Contact_Resolution__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FCR TRUE Email</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseEmail</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>EMAIL.MESSAGE_DATE</dateColumn>
+        <endDate>2020-07-20</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-07-20</startDate>
+    </timeFrameFilter>
+</Report>

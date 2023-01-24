@@ -1,0 +1,38 @@
+/***
+ *     ██████  █████  ██████  ██████ 
+ *    ██      ██   ██ ██   ██ ██   ██ 
+ *    ██      ███████ ██████  ██   ██ 
+ *    ██      ██   ██ ██   ██ ██   ██ 
+ *     ██████ ██   ██ ██   ██ ██████  
+ */
+ .NF_card {
+	position: relative;
+	background-color: #fff;
+	color: rgba(12, 11, 8, .75);
+	width: 100%;
+	transition: box-shadow .2s cubic-bezier(.15, 0, .15, 0);
+	cursor: pointer;
+	overflow: hidden
+}
+
+.NF_card:active,
+.NF_card:hover {
+	box-shadow: 0 .8rem .8rem 0 rgba(12, 11, 8, .2);
+	transform: translateY(-.2rem);
+	transition: .2s
+}
+
+.nfTileDynamicPadding{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+@media (min-width:  768px) and (max-width: 1024px){
+	.nfTileDynamicPadding{
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+}

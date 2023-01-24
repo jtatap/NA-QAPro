@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the date / time that a given authToken was manually invalidated. --></help>
+        <label><!-- Invalidation Date --></label>
+        <name>Invalidation_Date__c</name>
+    </CustomFieldTranslation>

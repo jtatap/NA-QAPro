@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calvin_Klein_Ecomm_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Calvin Klein Ecomm</label>
+    <queue>Calvin_Klein_Ecomm</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

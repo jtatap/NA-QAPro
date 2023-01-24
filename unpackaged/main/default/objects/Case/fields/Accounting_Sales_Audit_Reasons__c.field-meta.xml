@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Sales_Audit_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Accounting/Sales Audit Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business_Group__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Confirm Mailing Address</fullName>
+                <default>false</default>
+                <label>Confirm Mailing Address</label>
+            </value>
+            <value>
+                <fullName>Refund Failure (IDOC)</fullName>
+                <default>false</default>
+                <label>Refund Failure (IDOC)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Corporate - Accounting</controllingFieldValue>
+            <controllingFieldValue>Corporate - Sales Audit</controllingFieldValue>
+            <valueName>Confirm Mailing Address</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate - Accounting</controllingFieldValue>
+            <controllingFieldValue>Corporate - Sales Audit</controllingFieldValue>
+            <valueName>Refund Failure (IDOC)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

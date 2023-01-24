@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template out to consumer - Your data has been deleted. If you have any questions please reply back to this email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>D5 - CSR alerts consumer that there is not record to be deleted</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Case Closed: {{{Case.Brand__c}}} Personal Data Deletion Request {{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,89 @@
+<aura:component controller="ContactCheck" implements="force:lightningQuickAction,force:hasRecordId" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="CaseId" type="String" default=""/>
+    <aura:attribute name="ContactId" type="String"/>
+    
+    <aura:attribute name="NewContactId" type="String"/>
+    <aura:attribute name="thisCon" type ="Contact" />
+    <aura:attribute name="con" type ="Contact[]" />
+    <aura:attribute name ="col" type="List"/>
+    <aura:attribute name="eCommNotConnected" type="Boolean" default="false"/>
+    <aura:attribute name="otherECommContact" type="Boolean" default="false"/>
+    <aura:attribute name="msg" type="String"/>
+    <aura:attribute name="ContactExist" type ="Boolean" default="false"/>
+    <aura:attribute name="msg1" type="String"/>
+    <aura:attribute name="launchFlow" type="Boolean" default="true"/>
+    <aura:attribute name="value" type="List"/>
+    <lightning:flow aura:id="flowId" onstatuschange="{!c.handleStatusChange}"/>
+  
+    <aura:if isTrue="{!v.launchFlow}">
+        <aura:if isTrue="{!v.ContactExist}">
+            <aura:if isTrue="{!v.eCommNotConnected}">
+                <aura:if isTrue="{!v.otherECommContact}">
+                    <lightning:card class="crd">
+                        <div style="font-weight: bold; font-size:120%;">
+                            <p>REVIEW: This customer record is flagged and has the same email address as a registered online account with the following details</p>
+                            <p>  </p>
+                        </div>    
+                        <div class="datTab" style="color:Black; font-size:95%; font-family: courier;">
+                            <lightning:dataTable keyField="id" data="{!v.con}" columns="{!v.col}" hideCheckboxColumn="true"
+                                                 columnWidthsMode="auto"/>
+                            
+                        </div>
+                        <lightning:recordViewForm recordId="{!v.NewContactId}" objectApiName="Contact">
+                            <lightning:outputField fieldName="Ecomm_Connected__c" />
+                        </lightning:recordViewForm> 
+                        <div style="font-weight: bold; font-size:120%; padding-top:around-small">
+                            <p>  </p>
+                            <p>To link the contact record with the above contact, select the option below </p>
+                            
+                        </div>    
+                        <lightning:button class="reg"  label="Re-associate the Contact to Initiate OOBO" onclick="{!c.confirm}"/>    
+                        <p>{!v.msg}</p>
+                    </lightning:card>
+                    
+                    <lightning:card class="crd">
+                        <div  style="font-weight: bold; font-size:120%;">
+                            
+                            <p> To order as guest, select below.This will not merge the contact
+                            </p>
+                        </div>
+                        <lightning:button class="anon" label="Order for Guest" onclick="{!c.anonymous}"/>
+                    </lightning:card>
+                    <aura:set attribute="else">
+                        <lightning:card>
+                            <div style="font-weight: bold; font-size:120%; margin-top: around-large;">
+                                <p> Click below to check out as guest </p>
+                                <p> </p>
+                                <p>  </p>
+                            </div>
+                            <lightning:button class="anon" label="Order for Guest" onclick="{!c.anonymous}"/>
+                        </lightning:card> 
+                    </aura:set>    
+                </aura:if>
+                <aura:set attribute="else">
+                    <lightning:card>
+                        <div style="font-weight: bold; font-size:120%;">
+                            <p> This contact record is confirmed to have an online account. </p>
+                            <p> Proceed to Order on Behalf Of (OOBO) </p>
+                        </div>    
+                    </lightning:card>
+                    <lightning:card>
+                        <div style="font-weight: bold; font-size:120%;">
+                            Please choose the option to continue.<p></p>
+                            <p> </p>
+                        </div>    
+                        <lightning:button class="reg" label="Order for Existing" onclick="{!c.registered}"/>
+                        <lightning:button class="anon" label="Order for Guest" onclick="{!c.anonymous}"/>
+                    </lightning:card>
+                </aura:set>
+            </aura:if>
+            <aura:set attribute="else">
+                <div class="err" style="font-weight: bold; font-size:120%;">
+                    {!v.msg1}
+                </div>
+            </aura:set>    
+        </aura:if>
+    </aura:if>
+    
+</aura:component>

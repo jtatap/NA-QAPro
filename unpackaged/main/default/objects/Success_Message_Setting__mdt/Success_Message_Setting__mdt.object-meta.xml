@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom metadata is used to configure success message based on specific brand for Brand Forms.
+Please provide the custom success message and put &lt;ticketid&gt; where ever you need to keep Ticket Number</description>
+    <label>Success Message Setting</label>
+    <pluralLabel>Success Message Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Ops_Quality_Access_to_All</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Ops/Quality will have read only access to ALL Observation Forms</description>
+        <label>Ops/Quality Access to All</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Email &amp; Web Observation Form - True &amp; Co,Chat Observation Form,Phone Observation Form,Email &amp; Web Observation Form</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_III_Access_to_All</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Tier III will have read only access to ALL Observation Forms</description>
+        <label>Tier III Access to All</label>
+        <sharedTo>
+            <role>Supervisor_Tier_3_CSR</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Email &amp; Web Observation Form - True &amp; Co,Chat Observation Form,Phone Observation Form,Email &amp; Web Observation Form</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_III_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Read Only Permissions to all Observation Forms</description>
+        <label>Tier III Read Only</label>
+        <sharedTo>
+            <role>Supervisor_Tier_3_CSR</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Email &amp; Web Observation Form - True &amp; Co,Chat Observation Form,Phone Observation Form,Email &amp; Web Observation Form</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

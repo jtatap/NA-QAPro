@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>NF Banner System</masterLabel>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property label="Where is this component placed?" name="homeOrTopic" type="String" datasource="home,topic,article,custompage" default="home" />
+            <property label="Record Id" name="recordId" type="String" default="{!recordId}" />
+            <property label="Topic Id" name="topicId" type="String" default="{!recordId}" />
+            <property label="Style CSS" name="messageStyle" type="String" />
+            <property label="Page Key (For future use)" name="pageKey" type="String" default="home" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Boy&#39;s Apparel</masterLabel>
+            <translation><!-- Boy&apos;s Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boy&#39;s Apparel &amp; Accessories</masterLabel>
+            <translation><!-- Boy&apos;s Apparel &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boy&#39;s Swimwear</masterLabel>
+            <translation><!-- Boy&apos;s Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bra</masterLabel>
+            <translation><!-- Bra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bra &amp; Underwear Collection</masterLabel>
+            <translation><!-- Bra &amp; Underwear Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gear</masterLabel>
+            <translation><!-- Gear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Girl&#39;s Apparel</masterLabel>
+            <translation><!-- Girl&apos;s Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Girl&#39;s Apparel &amp; Accessories</masterLabel>
+            <translation><!-- Girl&apos;s Apparel &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Girl&#39;s Swimwear</masterLabel>
+            <translation><!-- Girl&apos;s Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goggles</masterLabel>
+            <translation><!-- Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kid&#39;s Footwear</masterLabel>
+            <translation><!-- Kid&apos;s Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Accessories</masterLabel>
+            <translation><!-- Men&apos;s Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Activewear</masterLabel>
+            <translation><!-- Men&apos;s Activewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Apparel</masterLabel>
+            <translation><!-- Men&apos;s Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Collections</masterLabel>
+            <translation><!-- Men&apos;s Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Competition Swimwear</masterLabel>
+            <translation><!-- Men&apos;s Competition Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Footwear</masterLabel>
+            <translation><!-- Men&apos;s Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Swimwear</masterLabel>
+            <translation><!-- Men&apos;s Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Men&#39;s Underwear</masterLabel>
+            <translation><!-- Men&apos;s Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Adaptive Boys</masterLabel>
+            <translation><!-- Tommy Adaptive Boys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Adaptive Girls</masterLabel>
+            <translation><!-- Tommy Adaptive Girls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Adaptive Men</masterLabel>
+            <translation><!-- Tommy Adaptive Men --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Adaptive Women</masterLabel>
+            <translation><!-- Tommy Adaptive Women --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwear</masterLabel>
+            <translation><!-- Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Accessories</masterLabel>
+            <translation><!-- Women&apos;s Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Activewear</masterLabel>
+            <translation><!-- Women&apos;s Activewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Apparel</masterLabel>
+            <translation><!-- Women&apos;s Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Collections</masterLabel>
+            <translation><!-- Women&apos;s Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Competition Swimwear</masterLabel>
+            <translation><!-- Women&apos;s Competition Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Footwear</masterLabel>
+            <translation><!-- Women&apos;s Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Swimwear</masterLabel>
+            <translation><!-- Women&apos;s Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women&#39;s Underwear</masterLabel>
+            <translation><!-- Women&apos;s Underwear --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

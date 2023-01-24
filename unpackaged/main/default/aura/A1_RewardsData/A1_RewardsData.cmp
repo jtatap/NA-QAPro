@@ -1,0 +1,107 @@
+<aura:component controller="A1_RewardsDataApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="numRecords" type="Integer" default="0"/>
+    <aura:attribute name="rewardWrapper" type="object[]"/>
+    <aura:attribute name="pointWrapper" type="object[]"/>
+     <aura:attribute name="pointWrapperObject" type="object"/>
+    <aura:attribute type="Object[]" name="rewtList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <lightning:overlayLibrary aura:id="overlayRewardsDetail"/>
+    <!-- handling event -->
+    <aura:handler event="c:A1_PointEvent" action="{!c.handleApplicationEvent}"/>
+
+	<!--spinner -->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    
+    <!-- showing spinner -->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    
+    <div class="customFont slds-text-title_bold">
+    <lightning:icon iconName="standard:reward" alternativeText="Reward" />
+    Rewards ({!v.numRecords})
+    </div>
+    
+    <!--
+    <lightning:datatable data="{! v.rewtList }" 
+                         columns="{! v.mycolumns }" 
+                         keyField="id"
+                         hideCheckboxColumn="true"/>
+
+	-->
+    <aura:if isTrue="{!not(empty(v.rewardWrapper))}">
+    <!-- custom code to show table -->
+     <div class="slds-p-around--medium slds-scrollable_x slds-scrollable_y">
+         <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Reward ID</div>
+                </th>
+                
+                <th scope="col">
+                    <div class="slds-truncate" title="desc">Description</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Transaction ID</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="status">Status</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="status">Expiry Date</div>
+                </th>
+            </tr>
+        </thead>
+             
+            <tbody>
+            <aura:iteration items="{!v.rewardWrapper}" var="con" indexVar="ind">
+                <tr>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.rewardType}">{!con.rewardId}</div>
+                    </th>
+                    
+                    
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.description}">{!con.description}</div>
+                    </th>
+                    
+                    <aura:if isTrue="{!(empty(con.transactionId))}">
+                        <th scope="row">
+                            <div class="slds-truncate" title="{!con.transactionId}">{!con.transactionId}</div>
+                        </th>
+                        <aura:set attribute="else">
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!con.transactionId}"><a href="javascript:void(0)" onclick="{!c.handleClick}" id="{!ind}">
+                                    {!con.transactionId}</a></div>
+                            </th>
+                        </aura:set>
+                    </aura:if> 
+                    
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.status}">{!con.status}</div>
+                    </th>
+                    
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.expiryDate}">{!con.expireDate}</div>
+                    </th>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+  </div>
+      <aura:set attribute="else">
+          <div class="slds-m-top_xx-small slds-align_absolute-center">No Records Found</div>
+    </aura:set>
+  </aura:if> 
+</aura:component>

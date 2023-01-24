@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>FLAG_32x32</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="17.28" height="11.52"></rect>
+    </defs>
+    <g id="FLAG_32x32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#00174F" cx="16" cy="16" r="16"></circle>
+            <g id="T-Flag-H_FC_DIAP_OUTL" transform="translate(7.360000, 10.240000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(-87.040000, 0.000000)">
+                        <polyline id="Fill-7" fill="#FFFFFE" points="77.89088 0.31152 79.7827733 0.31152 75.7264 5.47344 75.7264 11.2453867 74.1567467 11.2453867 74.1567467 5.45824 70.1003733 0.31152 71.9922667 0.31152 74.9248533 4.07909333 77.89088 0.31152"></polyline>
+                        <g id="Group-18" stroke-width="1" fill="none" transform="translate(86.986667, 0.000000)">
+                            <polygon id="Fill-17" fill="#FFFFFE" points="0.02928 11.4592 17.4079467 11.4592 17.4079467 0.0277866667 0.02928 0.0277866667"></polygon>
+                        </g>
+                        <polygon id="Fill-19" fill="#C52038" points="95.7123733 8.51242667 104.12 8.51242667 104.12 3.02725333 95.7123733 3.02725333"></polygon>
+                        <polygon id="Fill-20" fill="#FFFFFE" points="87.30576 8.51141333 95.7123733 8.51141333 95.7123733 3.04245333 87.30576 3.04245333"></polygon>
+                        <polygon id="Fill-21" fill="#002540" points="87.3037333 3.03434667 104.12 3.03434667 104.12 0.312533333 87.3037333 0.312533333"></polygon>
+                        <polygon id="Fill-22" fill="#002540" points="87.3037333 11.2312 104.12 11.2312 104.12 8.49621333 87.3037333 8.49621333"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Data Owner Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Request has been sent to the Data Owner&lt;/p&gt;</info>
+        <picklistValueName>Pending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Please review the response. If additional information is requested, email the Data Owner and set the case status to Pending. &lt;/p&gt;</info>
+        <picklistValueName>ReviewResponse</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Data_Owner_Request</recordTypeName>
+</PathAssistant>

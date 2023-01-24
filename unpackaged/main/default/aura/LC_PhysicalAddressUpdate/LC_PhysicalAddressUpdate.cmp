@@ -1,0 +1,52 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId">
+	    
+    <aura:attribute name="caseRecord" type="Object"/>
+    <aura:attribute name="caseRecordLoadError" type="String" />
+    
+    <aura:attribute name="contactRecord" type="Object"/>
+    <aura:attribute name="contactRecordLoadError" type="String" />
+    
+    <aura:attribute name="recordId"  type="string"  /> 
+    <aura:attribute name="caseContactId" type="String" />
+    
+    <aura:attribute name="isCaseDetailsLoaded" type="Boolean" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    
+    <lightning:flow aura:id="flowId"/>
+    
+    <force:recordData aura:id="caseRecordLoader"
+                      recordId="{!v.recordId}"
+                      fields="CaseNumber, ContactId"
+                      targetFields="{!v.caseRecord}"
+                      targetError="{!v.caseRecordLoadError}"
+                      recordUpdated="{!c.handleCaseRecordUpdated}"
+                      />
+    <force:recordData aura:id="contactRecordHandler"
+                      recordId="{!v.caseContactId}"
+                      fields="Id, FirstName, LastName, Email, Ecomm_Connected__c"
+                      targetFields="{!v.contactRecord}"
+                      targetError="{!v.contactRecordLoadError}"
+                      recordUpdated="{!c.handleContactRecordUpdated}"/>
+    <aura:if isTrue="{!v.isCaseDetailsLoaded}">
+        <div class="comp-container">
+            <div class="slds-form--compound">
+                <div>
+					<aura:if isTrue="{! empty(v.caseContactId)}">
+                    	<div class="error-msg">
+                            Please associate the contact with case.
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{! and (not(empty(v.caseContactId)),  !v.contactRecord.Ecomm_Connected__c)}">
+                    	<div class="error-msg">
+                            Please associate Ecom-connected contact with case.
+                        </div>
+                    </aura:if>
+                </div>
+                <aura:if isTrue="{!v.isLoading}">
+                    <lightning:spinner alternativeText="Loading" size="small" />
+                </aura:if>
+            </div>
+        </div>
+    </aura:if>
+    
+</aura:component>

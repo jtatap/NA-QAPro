@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is the topic id, this is needed if we choose the choice to display this in topic pages. --></help>
+        <label><!-- Topic Id --></label>
+        <name>TopicId__c</name>
+    </CustomFieldTranslation>

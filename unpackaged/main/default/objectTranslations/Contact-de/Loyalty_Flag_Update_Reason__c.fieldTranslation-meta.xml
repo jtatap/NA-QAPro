@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Loyalty Flag Update Reason --></label>
+        <name>Loyalty_Flag_Update_Reason__c</name>
+        <picklistValues>
+            <masterLabel>RC11-Loyalty Membership Terminated BB</masterLabel>
+            <translation><!-- RC11-Loyalty Membership Terminated BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied</masterLabel>
+            <translation><!-- Request Denied --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

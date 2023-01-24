@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PR/Social Media --></label>
+        <name>PR_Social_Media__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Escalation</masterLabel>
+            <translation><!-- Corporate Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint (AZND)</masterLabel>
+            <translation><!-- Customer Complaint (AZND) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint (Asia)</masterLabel>
+            <translation><!-- Customer Complaint (Asia) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint (CA)</masterLabel>
+            <translation><!-- Customer Complaint (CA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint (EU)</masterLabel>
+            <translation><!-- Customer Complaint (EU) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint (US)</masterLabel>
+            <translation><!-- Customer Complaint (US) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations  Inquirie</masterLabel>
+            <translation><!-- Public Relations  Inquirie --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

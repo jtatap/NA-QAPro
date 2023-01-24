@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Community --></label>
+        <name>Community__c</name>
+        <picklistValues>
+            <masterLabel>Calvin Klein - CA</masterLabel>
+            <translation><!-- Calvin Klein - CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calvin Klein Community</masterLabel>
+            <translation><!-- Calvin Klein Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Hilfiger</masterLabel>
+            <translation><!-- Tommy Hilfiger --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

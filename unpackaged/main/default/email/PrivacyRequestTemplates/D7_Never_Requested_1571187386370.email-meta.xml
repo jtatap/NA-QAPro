@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>&quot;Customer responds &quot;&quot;No I did not submit this request&quot;&quot;  Email template out to customer, Thank you for your response. We will not delete your data. Data protection language &quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>D7 - Never Requested</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Case Closed: {{{Case.Brand__c}}} Personal Data Deletion Request - {{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<!--
+  @description       : Contact Tiles, meant to be used in a community, contrlled by NF_Contact_Tiles__mdt
+  @author            : Luis Rocha
+  @group             : 
+  @last modified on  : 06-14-2021
+  @last modified by  : Luis Rocha
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   06-03-2021   Luis Rocha   Initial Version
+-->
+<template>
+    <div style={maxWidthClass}>
+        <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+        <template if:true={loaded}>
+            <div class="slds-grid slds-wrap">
+                <template for:each={retrievedTileData} for:item="tile">
+                    <div key={tile.id} class={columnClass}>
+                        <div class="NF_card " data-arg1={tile.Action__c} data-buttonclass={tile.ButtonClass__c}
+                            data-linktoopen={tile.LinkToOpen__c} onclick={openSalesforceChat} style={tileStyle}>
+                            <div class={innerPaddingClass}>
+                                <lightning-formatted-rich-text value={tile.HTML_Content__c}>
+                                </lightning-formatted-rich-text>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

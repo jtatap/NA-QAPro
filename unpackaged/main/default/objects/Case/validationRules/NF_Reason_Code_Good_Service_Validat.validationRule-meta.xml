@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Reason_Code_Good_Service_Validat</fullName>
+    <active>false</active>
+    <description>This validation rule checks that if Case Scenario is set to good service that a district number and store number is added.</description>
+    <errorConditionFormula>AND(
+    NFCaseScenario__r.Name = &quot;Corporate: Reporting Good Service&quot;,
+    OR(
+        ISBLANK(ZdPVHStoreNumber__c),
+        ISBLANK(ZdPVHDistrictNumber__c)
+        ),
+    Supervisor_Data_Validation_Override__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid Store Number and District Number</errorMessage>
+</ValidationRule>

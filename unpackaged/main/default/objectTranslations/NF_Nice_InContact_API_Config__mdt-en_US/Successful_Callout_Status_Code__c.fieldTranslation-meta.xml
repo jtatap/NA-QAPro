@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please enter the status code of a successful callout of this type. E.g. 200 --></help>
+        <label><!-- Successful Callout Status Code --></label>
+        <name>Successful_Callout_Status_Code__c</name>
+    </CustomFieldTranslation>

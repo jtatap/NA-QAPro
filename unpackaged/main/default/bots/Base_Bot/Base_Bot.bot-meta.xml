@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Base Bot</label>
+        <mlIntents>
+            <developerName>bot_api_ping</developerName>
+            <label>bot_api_ping</label>
+            <mlIntentUtterances>
+                <utterance>ping</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_carousel_template</developerName>
+            <label>bot_carousel_template</label>
+            <mlIntentUtterances>
+                <utterance>carousel</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_contact_request_start</developerName>
+            <label>bot_contact_request_start</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Generic_Intents.bot_contactRequest_start</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_escalation_start</developerName>
+            <label>bot_escalation_start</label>
+            <mlIntentUtterances>
+                <utterance>bot_escalation_start</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_fallback_start</developerName>
+            <label>bot_fallback_start</label>
+            <mlIntentUtterances>
+                <utterance>bot_fallback_start</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>fallback start</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_followup_start</developerName>
+            <label>bot_followup_start</label>
+            <mlIntentUtterances>
+                <utterance>bot_followup_start</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_formCard_template</developerName>
+            <label>bot_formCard_template</label>
+            <mlIntentUtterances>
+                <utterance>form</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_frustration_start</developerName>
+            <label>bot_frustration_start</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Generic_Intents.bot_frustration_start</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_knowledge_start</developerName>
+            <label>bot_knowledge_start</label>
+            <mlIntentUtterances>
+                <utterance>knowledge</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_miniButtons_template</developerName>
+            <label>bot_miniButtons_template</label>
+            <mlIntentUtterances>
+                <utterance>buttons</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_offerEscalation_start</developerName>
+            <label>bot_offerEscalation_start</label>
+            <mlIntentUtterances>
+                <utterance>bot_offerEscalation_start</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_oos_start</developerName>
+            <label>bot_oos_start</label>
+        </mlIntents>
+        <mlIntents>
+            <description>Construct and present expandable minicards to the user, separated by order number</description>
+            <developerName>bot_orderStatus_presentShipments</developerName>
+            <label>bot_orderStatus_presentShipments</label>
+            <mlIntentUtterances>
+                <utterance>orderStatus_v2</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_orderStatus_start</developerName>
+            <label>bot_orderStatus_start</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_orderStatus_start</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_outOfScope_start</developerName>
+            <label>bot_outOfScope_start</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Generic_Intents.bot_outOfScope_start</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_outOf_scope</developerName>
+            <label>bot_outOf_scope</label>
+            <mlIntentUtterances>
+                <utterance>pizza</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>mobile</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>get me a pizza</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>repair my mobile</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>what&#39;s the weather</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>is it going to rain</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_returns_start</developerName>
+            <label>bot_returns_start</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_returns_start</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bot_video_template</developerName>
+            <label>bot_video_template</label>
+            <mlIntentUtterances>
+                <utterance>video</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_cancelChangeOrder_direct</developerName>
+            <label>bus_cancelChangeOrder_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_cancelChangeOrder_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_covid19_direct</developerName>
+            <label>bus_covid19_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_covid19_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_currentPromos_direct</developerName>
+            <label>bus_currentPromos_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_currentPromos_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_deliveryIssues_direct</developerName>
+            <label>bus_deliveryIssues_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_deliveryIssues_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_productQuestion_direct</developerName>
+            <label>bus_productQuestion_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_productQuestion_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>bus_shipping_direct</developerName>
+            <label>bus_shipping_direct</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Business_Intents.bus_shipping_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Confused</developerName>
+            <label>Confused</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Send_Chat_To_Brand_Queue</developerName>
+            <label>Send Chat To Brand Queue</label>
+            <mlIntentUtterances>
+                <utterance>123test</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>social</developerName>
+            <label>social_chatbot</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Social_Intents.social_bot_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>social_bye</developerName>
+            <label>social_bye</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Social_Intents.social_bye_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>social_generic</developerName>
+            <label>social_generic</label>
+            <mlIntentUtterances>
+                <utterance>Generic</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>social_hello</developerName>
+            <label>social_hello</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Social_Intents.social_hello_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>social_thanks</developerName>
+            <label>social_thanks</label>
+            <relatedMlIntents>
+                <relatedMlIntent>PVH_Social_Intents.social_thanks_direct</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Transfer_To_Agent</developerName>
+            <label>Transfer To Agent</label>
+            <mlIntentUtterances>
+                <utterance>test123</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Welcome</developerName>
+            <label>Welcome</label>
+        </mlIntents>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Additional_Order_Related_Options</developerName>
+            <extractionType>Value</extractionType>
+            <label>Additional Order Related Options</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Address</developerName>
+            <extractionType>Value</extractionType>
+            <label>Address</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Email</developerName>
+            <extractionRegex>^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>Email</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <description>Order Number (set to 8 or 10 digits long)</description>
+            <developerName>Order_Number</developerName>
+            <extractionRegex>[0-9]{10}|[0-9]{8}|Don&#39;t know it</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>Order Number</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>placeholder</developerName>
+            <extractionType>Value</extractionType>
+            <label>placeholder</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Return_Questions</developerName>
+            <extractionType>Value</extractionType>
+            <label>Return Questions</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Return_Question_Response</developerName>
+            <extractionType>Value</extractionType>
+            <label>Return Question Response</label>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>i have a question about my return</terms>
+                </synonymGroups>
+                <value>I have a question about my return</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>return policy</terms>
+                </synonymGroups>
+                <value>Return policy</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>return an item</terms>
+                </synonymGroups>
+                <value>Return an item</value>
+            </mlSlotClassValues>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>User_Has_Questions_About_Order</developerName>
+            <extractionType>Value</extractionType>
+            <label>User Has Questions About Order</label>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>thanks</terms>
+                    <terms>no thanks</terms>
+                    <terms>none thanks</terms>
+                    <terms>no</terms>
+                    <terms>none</terms>
+                </synonymGroups>
+                <value>None, thanks</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>i need further help with my order</terms>
+                    <terms>further help</terms>
+                    <terms>more help</terms>
+                    <terms>agent</terms>
+                    <terms>more</terms>
+                    <terms>help</terms>
+                </synonymGroups>
+                <value>I need further help with my order</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>estimated shipping times</terms>
+                    <terms>estimate</terms>
+                    <terms>shipping</terms>
+                    <terms>estimated shipping</terms>
+                    <terms>ship times</terms>
+                    <terms>shipping times</terms>
+                </synonymGroups>
+                <value>Estimated shipping times</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <synonymGroups>
+                    <languages>en_US</languages>
+                    <terms>cancel or change my order</terms>
+                    <terms>cancel</terms>
+                    <terms>change</terms>
+                    <terms>cancel order</terms>
+                    <terms>change order</terms>
+                </synonymGroups>
+                <value>Cancel or change my order</value>
+            </mlSlotClassValues>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Welcome_Menu</developerName>
+            <extractionType>Value</extractionType>
+            <label>Welcome Menu</label>
+            <mlSlotClassValues>
+                <value>Something Else</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <value>Returns</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <value>Product Questions</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <value>Shipping Policies</value>
+            </mlSlotClassValues>
+            <mlSlotClassValues>
+                <value>Order Status</value>
+            </mlSlotClassValues>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Yes_No_Response</developerName>
+            <extractionRegex>Yes|No</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>Yes No Response</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <description>5-digit US ZIP code</description>
+            <developerName>ZIP_Code</developerName>
+            <extractionRegex>^\d{5}$</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>ZIP Code</label>
+        </mlSlotClasses>
+        <name>Base_Bot</name>
+    </botMlDomain>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ChatKey</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Text</dataType>
+        <developerName>ChatKey</developerName>
+        <label>Chat Key</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ContactId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.LiveChatVisitorId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.Id</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <label>Routable Id</label>
+    </contextVariables>
+    <conversationChannelProviders>
+        <agentRequired>false</agentRequired>
+        <chatButtonName>Digital_Assistant_Bot</chatButtonName>
+    </conversationChannelProviders>
+    <label>Digital Assistant</label>
+    <logPrivateConversationData>true</logPrivateConversationData>
+    <richContentEnabled>false</richContentEnabled>
+</Bot>

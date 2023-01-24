@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Calvin_Klein</letterhead>
+    <name>Calvin Klein Canada Wholesale-Retail Auto-Response</name>
+    <style>freeForm</style>
+    <subject>Thank you for contacting Calvin Klein Customer Service Case #{!Case.CaseNumber}</subject>
+    <textOnly>Thanks for contacting Calvin Klein Customer Service.
+
+This is automated note to let you know that we have received your request ({!Case.CaseNumber}).
+
+A personal response from our customer service specialists will follow shortly. Please be patient as all emails are handled in the order in which they are received
+
+Please Note: If you need to cancel or edit your order, we offer a 30-minute grace period upon order confirmation. You can cancel your order on your order confirmation email or on your account page. Please note your order will be processed after 30 minutes. All attempts to cancel or edit an order after this period will not be validated.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

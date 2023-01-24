@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Day_After_Resolved_Date__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for Case List View &quot;Observation Form to Fill Out.&quot;</description>
+    <externalId>false</externalId>
+    <label>3rd Day After Resolved Date</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Party_Vendors__c</fullName>
+    <externalId>false</externalId>
+    <label>Third Party Vendors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Code_Product_Sub_Categories_Widge__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amazon</fullName>
+                <default>false</default>
+                <label>Amazon</label>
+            </value>
+            <value>
+                <fullName>Costco</fullName>
+                <default>false</default>
+                <label>Costco</label>
+            </value>
+            <value>
+                <fullName>Dick&#39;s Sporting Goods</fullName>
+                <default>false</default>
+                <label>Dick&#39;s Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Elsmore Swim Shop</fullName>
+                <default>false</default>
+                <label>Elsmore Swim Shop</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Swim Shop</fullName>
+                <default>false</default>
+                <label>Men&#39;s Swim Shop</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Swim Outlet</fullName>
+                <default>false</default>
+                <label>Swim Outlet</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Amazon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Costco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Dick&#39;s Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Elsmore Swim Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Men&#39;s Swim Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elite/LZR Competition</controllingFieldValue>
+            <controllingFieldValue>General Swimwear</controllingFieldValue>
+            <valueName>Swim Outlet</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Calvin Klein - Retail Field (Stores)</fullName>
+        <default>false</default>
+        <label>Calvin Klein - Retail Field (Stores)</label>
+    </customValue>
+    <customValue>
+        <fullName>Calvin Klein - Retail Operations</fullName>
+        <default>false</default>
+        <label>Calvin Klein - Retail Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Calvin Klein - Wholesale</fullName>
+        <default>false</default>
+        <label>Calvin Klein - Wholesale</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - Accounting</fullName>
+        <default>false</default>
+        <label>Corporate - Accounting</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - HR</fullName>
+        <default>false</default>
+        <label>Corporate - HR</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - Internal Audit-XBR/Fraud Investigations</fullName>
+        <default>false</default>
+        <label>Corporate - Internal Audit-XBR/Fraud Investigations</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - Legal/Risk</fullName>
+        <default>false</default>
+        <label>Corporate - Legal/Risk</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - Loss Prevention</fullName>
+        <default>false</default>
+        <label>Corporate - Loss Prevention</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - PR/Social Media</fullName>
+        <default>false</default>
+        <label>Corporate - PR/Social Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate - Sales Audit</fullName>
+        <default>false</default>
+        <label>Corporate - Sales Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Heritage - Wholesale</fullName>
+        <default>false</default>
+        <label>Heritage - Wholesale</label>
+    </customValue>
+    <customValue>
+        <fullName>PVH ANZD</fullName>
+        <default>false</default>
+        <label>PVH ANZD</label>
+    </customValue>
+    <customValue>
+        <fullName>PVH Asia</fullName>
+        <default>false</default>
+        <label>PVH Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>PVH Europe</fullName>
+        <default>false</default>
+        <label>PVH Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Tommy Hilfiger - Retail Field (Stores)</fullName>
+        <default>false</default>
+        <label>Tommy Hilfiger - Retail Field (Stores)</label>
+    </customValue>
+    <customValue>
+        <fullName>Tommy Hilfiger - Retail Operations</fullName>
+        <default>false</default>
+        <label>Tommy Hilfiger - Retail Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Tommy Hilfiger - Wholesale</fullName>
+        <default>false</default>
+        <label>Tommy Hilfiger - Wholesale</label>
+    </customValue>
+    <customValue>
+        <fullName>TUG</fullName>
+        <default>false</default>
+        <label>TUG</label>
+    </customValue>
+    <description>This is used for the corporate brand form.</description>
+    <masterLabel>Case Business Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

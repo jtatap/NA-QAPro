@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The Data Owner&#39;s Contact Record</description>
+    <externalId>false</externalId>
+    <label>Data Owner</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Privacy Requests</relationshipLabel>
+    <relationshipName>PrivacyRequests</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Retail Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Ops_Quality_Group</publicGroup>
+            <publicGroup>PVH_Corp_Operations_Quality</publicGroup>
+            <publicGroup>Tier_1_CSR_Wholesale_OLD</publicGroup>
+        </publicGroups>
+        <users>
+            <user>kareemahdavis@pvh.com</user>
+            <user>kimberlyrivas@pvh.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Email</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

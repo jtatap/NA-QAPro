@@ -1,0 +1,23 @@
+<!--
+*****************************************************************************************
+* @Description: Lightning Component to display "Merge Loyalty Accounts" button
+* @Author	  : Rounak P
+* @Date		  : 25 Feb 2020
+* @JIRA		  : NASSC-1472
+*
+*****************************************************************************************
+-->
+<aura:component controller="A1_MergeLoyaltyAccApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="isCaseRecord" type="boolean" />
+    <aura:attribute name="isLoyaltyApplicable" type="boolean" />
+    <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+      
+    <aura:if isTrue="{! and(v.isCaseRecord,v.isLoyaltyApplicable)}">
+        <div class="slds-box slds-theme_default">
+            <lightning:button class="slds-align_absolute-center slds-m-top_small slds-m-bottom_small" variant="brand" label="Merge Loyalty Accounts" title="merge" onclick="{! c.handleMergeLoyalty }" />
+        </div>
+    </aura:if>
+</aura:component>

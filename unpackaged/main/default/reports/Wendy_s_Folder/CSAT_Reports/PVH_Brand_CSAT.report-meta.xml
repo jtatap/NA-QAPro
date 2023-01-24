@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SurveyQuestionResponse.NumberValue:AVG / 5</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>CSAT</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.Case_Age_in_Days__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Case Age (Days)</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_44595246</developerName>
+        <masterLabel>Brand Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case$Brand_Lookup_Search__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Calvin Klein</sourceValue>
+            </sourceValues>
+            <value>Calvin Klein</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy</sourceValue>
+            </sourceValues>
+            <value>Tommy Hilfiger</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Heritage Brands</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Izod</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IZOD.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Brands</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Style Bureau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen.com</sourceValue>
+            </sourceValues>
+            <value>Heritage</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>True&amp;Co</sourceValue>
+            </sourceValues>
+            <value>True&amp;Co.</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Speedo USA</sourceValue>
+            </sourceValues>
+            <value>SpeedoUSA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Olga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Warner&#39;s</sourceValue>
+            </sourceValues>
+            <value>Olga&amp;Warner&#39;s</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_91127568</developerName>
+        <masterLabel>Channel Name #2</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case$Channel_READONLY__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Calvin Klein Retail</sourceValue>
+            </sourceValues>
+            <value>Calvin Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CalvinKlein.ca</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CalvinKlein.us</sourceValue>
+            </sourceValues>
+            <value>Calvin eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy.com</sourceValue>
+            </sourceValues>
+            <value>Tommy eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy Hilfiger Retail</sourceValue>
+            </sourceValues>
+            <value>Tommy Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Izod.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>styleBureau.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VanHeusen.com</sourceValue>
+            </sourceValues>
+            <value>Heritage eComm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Van Heusen | IZOD Company Store</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen Retail</sourceValue>
+            </sourceValues>
+            <value>Heritage Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Speedo.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SpeedoUSA.com</sourceValue>
+            </sourceValues>
+            <value>Speedo eComm</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_54480031</developerName>
+        <masterLabel>tommy</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case$Brand__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Case$Brand_Lookup_Search__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Case$Channel_READONLY__c</field>
+    </columns>
+    <columns>
+        <field>Case$Channel__c</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Survey_Invitations__r.SurveyResponses.SurveyQuestionResponses$ResponseValue</field>
+    </columns>
+    <columns>
+        <field>Case.Survey_Invitations__r.SurveyResponses$Id</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.Survey_Invitations__r.SurveyResponses.SurveyQuestionResponses$Question</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>How was your overall experience?</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Survey_Invitations__r$Survey</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CSAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Survey_Invitations__r$ResponseStatus</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>C</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,1,2,4,5,7,8,9,81,83,84,11,10,100,82</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Channel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,CalvinKlein.us,Online - CalvinKlein.com,Calvin Klein Retail,Tommy.com,Online - Tommy.com,Tommy Hilfiger Retail,SpeedoUSA.com,Other Retailer,VanHeusen.com,Online - vanheusen.com,Izod.com,Online - Izod.com,styleBureau.com,trueandco.com,CalvinKlein.ca,Speedo.com,Warner.com,Van Heusen | IZOD Company Store</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_44595246</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Brand_Lookup_Search__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PVH Brand CSAT</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CSAT_Results__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Survey_Invitations__r$CreatedDate</dateColumn>
+        <endDate>2023-01-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2023-01-24</startDate>
+    </timeFrameFilter>
+</Report>

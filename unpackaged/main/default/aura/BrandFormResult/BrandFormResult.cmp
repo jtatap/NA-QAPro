@@ -1,0 +1,57 @@
+<aura:component >
+    <aura:attribute name="ticketid" type="String" />
+    <aura:attribute name="messageToShow" type="String" />
+    <aura:attribute name="finalMessage" type="String" />
+    <aura:attribute name="brandName" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!v.brandName=='2'}">
+        <ltng:require styles="{!$Resource.CKStyle}"/>
+	</aura:if>
+     <aura:if isTrue="{!v.brandName=='1'}">
+        <ltng:require styles="{!$Resource.tommyStyles}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='10'}">
+        <ltng:require styles="{!$Resource.OlgaStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='4'}">
+        <ltng:require styles="{!$Resource.izodStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='5'}">
+        <ltng:require styles="{!$Resource.VHStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='84'}">
+        <ltng:require styles="{!$Resource.SBStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='7'}">
+        <ltng:require styles="{!$Resource.SpeedoStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='83'}">
+        <ltng:require styles="{!$Resource.WarnerStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandName=='11'}">
+        <ltng:require styles="{!$Resource.TCStyle}"/>
+	</aura:if>
+    
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-8">
+           
+        </div>
+        <div class="slds-col slds-size_6-of-8">
+            
+            
+            <div>
+ 
+                <div class="theField slds-text-body_regular slds-m-top_small slds-text-align_center">
+ 
+                    <lightning:formattedRichText value="{!v.finalMessage}"></lightning:formattedRichText>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="slds-col slds-size_1-of-8">
+           
+        </div>
+    </div>
+</aura:component>

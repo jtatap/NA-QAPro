@@ -1,0 +1,9 @@
+<design:component >
+    <design:attribute name="ColorDesign" label="Color" datasource="#02194C;,#333333;" required="true" />
+    <design:attribute name="Header" label="Header"  default ="What can we do to help?" />
+    <design:attribute name="articalDisplayed" label="Artical Displayed" default="5" required="true" min="1" max="15"/>
+    <design:attribute name="communityUrl" label="community  Url" description="Link for topic page" default="https://holidaydev-pvhservicecloud.cs198.force.com/tommy/" required="true" />
+    <design:attribute name="communityArticleUrl" label="Community Article Url" default="https://holidaydev-pvhservicecloud.cs198.force.com/tommy/article/" required="true" />
+    <design:attribute name="NoTopicsMessage" label="No Topics Message" default ="There are no topics to display." />
+
+</design:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advertising_Opt_out_Date__c</fullName>
+    <description>GCT-772 :This field is marked with Date indicating the customers opt-out in Do Not Sell/Share</description>
+    <externalId>false</externalId>
+    <label>Advertising Opt-out Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

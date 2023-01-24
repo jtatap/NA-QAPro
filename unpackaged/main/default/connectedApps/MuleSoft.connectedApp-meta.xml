@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>venkat.penukonda@magnet360.com</contactEmail>
+    <label>MuleSoft</label>
+    <oauthConfig>
+        <callbackUrl>https://test.salesforce.com</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxQnSvMbwS1C8tWk6iMp3VNpu6l..eULKDhiY36QrPNxRsD2Fk.D4oi1UUHYR</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>PVHIntegrationAPIUser</profileName>
+</ConnectedApp>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason Sub-detail --></label>
+        <name>Reason_Sub_detail__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activewear</masterLabel>
+            <translation><!-- Activewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertisement Feedback</masterLabel>
+            <translation><!-- Advertisement Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Behavior</masterLabel>
+            <translation><!-- Associate Behavior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bags/Wallets</masterLabel>
+            <translation><!-- Bags/Wallets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bottoms</masterLabel>
+            <translation><!-- Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canadian Return Policy</masterLabel>
+            <translation><!-- Canadian Return Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier Claim</masterLabel>
+            <translation><!-- Carrier Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkout/Cart</masterLabel>
+            <translation><!-- Checkout/Cart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color</masterLabel>
+            <translation><!-- Color --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cosmetic Products</masterLabel>
+            <translation><!-- Cosmetic Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Injury</masterLabel>
+            <translation><!-- Customer Injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Profiling</masterLabel>
+            <translation><!-- Customer Profiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged Package</masterLabel>
+            <translation><!-- Damaged Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead Hyperlink</masterLabel>
+            <translation><!-- Dead Hyperlink --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered Not Received</masterLabel>
+            <translation><!-- Delivered Not Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dress Shirts</masterLabel>
+            <translation><!-- Dress Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dresses/Skirts</masterLabel>
+            <translation><!-- Dresses/Skirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editorial Feedback</masterLabel>
+            <translation><!-- Editorial Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Opportunities</masterLabel>
+            <translation><!-- Employment Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Verification</masterLabel>
+            <translation><!-- Employment Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Shipping Delays</masterLabel>
+            <translation><!-- Express Shipping Delays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fashion Event Request</masterLabel>
+            <translation><!-- Fashion Event Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation><!-- Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Sale Inquiry</masterLabel>
+            <translation><!-- Final Sale Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit &amp; Sizing Question</masterLabel>
+            <translation><!-- Fit &amp; Sizing Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footwear</masterLabel>
+            <translation><!-- Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fragrances</masterLabel>
+            <translation><!-- Fragrances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Sponsorship</masterLabel>
+            <translation><!-- General Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Return/Exchange</masterLabel>
+            <translation><!-- Gift Return/Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Products</masterLabel>
+            <translation><!-- Home Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image Error</masterLabel>
+            <translation><!-- Image Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InStore PayPal Return</masterLabel>
+            <translation><!-- InStore PayPal Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InStore eComm Return</masterLabel>
+            <translation><!-- InStore eComm Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Order</masterLabel>
+            <translation><!-- Incorrect Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infant</masterLabel>
+            <translation><!-- Infant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Shipping</masterLabel>
+            <translation><!-- International Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internship</masterLabel>
+            <translation><!-- Internship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item</masterLabel>
+            <translation><!-- Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeans/Denim</masterLabel>
+            <translation><!-- Jeans/Denim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Return</masterLabel>
+            <translation><!-- Late Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing Request</masterLabel>
+            <translation><!-- Licensing Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Package</masterLabel>
+            <translation><!-- Lost Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luggage</masterLabel>
+            <translation><!-- Luggage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Response Request</masterLabel>
+            <translation><!-- Media Response Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Model Inquiry</masterLabel>
+            <translation><!-- Model Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modeling Inquiry</masterLabel>
+            <translation><!-- Modeling Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Receipt/Original Form of Payment</masterLabel>
+            <translation><!-- No Receipt/Original Form of Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Ship Confirmation Email</masterLabel>
+            <translation><!-- No Ship Confirmation Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR Inquiry</masterLabel>
+            <translation><!-- PR Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packaging Concern</masterLabel>
+            <translation><!-- Packaging Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Description</masterLabel>
+            <translation><!-- Product Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Page</masterLabel>
+            <translation><!-- Product Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Question</masterLabel>
+            <translation><!-- Product Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resend Virtual Giftcard</masterLabel>
+            <translation><!-- Resend Virtual Giftcard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Fee</masterLabel>
+            <translation><!-- Return Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return to Sender</masterLabel>
+            <translation><!-- Return to Sender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Question</masterLabel>
+            <translation><!-- Sample Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship From Store Item/Order Cancellation</masterLabel>
+            <translation><!-- Ship From Store Item/Order Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship From Store Order Delays</masterLabel>
+            <translation><!-- Ship From Store Order Delays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipment Policy</masterLabel>
+            <translation><!-- Shipment Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirts/Tops/Blouses/Polos</masterLabel>
+            <translation><!-- Shirts/Tops/Blouses/Polos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoprunner Question</masterLabel>
+            <translation><!-- Shoprunner Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size</masterLabel>
+            <translation><!-- Size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Sponsorship</masterLabel>
+            <translation><!-- Social Media Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Split Shipment</masterLabel>
+            <translation><!-- Split Shipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Accommodation</masterLabel>
+            <translation><!-- Store Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Environment</masterLabel>
+            <translation><!-- Store Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Marketing</masterLabel>
+            <translation><!-- Store Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Policy</masterLabel>
+            <translation><!-- Store Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suiting/Formal Wear</masterLabel>
+            <translation><!-- Suiting/Formal Wear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweaters/Wovens</masterLabel>
+            <translation><!-- Sweaters/Wovens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimwear</masterLabel>
+            <translation><!-- Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tops</masterLabel>
+            <translation><!-- Tops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Track Shipment</masterLabel>
+            <translation><!-- Track Shipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwear</masterLabel>
+            <translation><!-- Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Account Info Reason</masterLabel>
+            <translation><!-- Update Account Info Reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Giftcard Inquiry</masterLabel>
+            <translation><!-- Virtual Giftcard Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Giftcard Purchase</masterLabel>
+            <translation><!-- Virtual Giftcard Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches/Jewelry</masterLabel>
+            <translation><!-- Watches/Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Address</masterLabel>
+            <translation><!-- Wrong Address --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

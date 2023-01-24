@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Original_Expired_Date</fullName>
+        <field>OriginalExpireDate__c</field>
+        <formula>IF( AND (NOT(ISBLANK(ExpireDate__c )),ISCHANGED(ExpireDate__c )), PRIORVALUE( ExpireDate__c),ExpireDate__c )</formula>
+        <name>Original Expired Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Prior Val of ExpireDate</fullName>
+        <actions>
+            <name>Original_Expired_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Used to get the Previous value of ExpireDate</description>
+        <formula>True</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

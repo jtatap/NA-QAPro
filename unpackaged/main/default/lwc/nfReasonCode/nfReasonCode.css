@@ -1,0 +1,18 @@
+.reasonCodeButton{
+    width: 100%;
+}
+
+.backgroundInverse {
+    position: relative;
+    background-color: #16325c;
+    height: 80px;
+}
+
+.slds-spinner_container  {
+    background-color: rgba(0, 0, 0, 0.10);
+    margin-top: 200px;
+    margin-bottom: 200px; 
+}
+.nfReasonButton .slds-button {
+    width: 100%;
+}

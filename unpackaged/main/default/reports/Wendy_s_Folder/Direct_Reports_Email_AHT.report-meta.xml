@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aggregates>
+        <calculatedFormula>(B1#aeon2__Log__c.aeon2__Total__c:SUM-B1#aeon2__Log__c.aeon2__Idle__c:SUM)/B1#RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Record Count</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>true</isCrossBlock>
+        <masterLabel>Average Handle Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>User</joinTable>
+        </blockInfo>
+        <columns>
+            <field>User.ManagedUsers$Name</field>
+        </columns>
+        <format>Summary</format>
+        <name>Users with Managers block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Users_with_Managers__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>User$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <aggregateReferences>
+                <aggregate>FORMULA1</aggregate>
+            </aggregateReferences>
+            <blockId>B1</blockId>
+            <joinTable>u2</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>CHILD_NAME</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>aeon2__Log__c.aeon2__Total__c</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>aeon2__Log__c.aeon2__Idle__c</field>
+        </columns>
+        <format>Summary</format>
+        <name>Work Days with Work Logs and Cas block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntityCustomEntity$aeon2__Day__c$aeon2__Log__c@aeon2__Log__c.aeon2__Case__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>aeon2__Day__c.aeon2__Date__c</dateColumn>
+            <interval>LAST_FISCALWEEK</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>User</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Direct Reports Email AHT</name>
+    <reportType>Users_with_Managers__c</reportType>
+    <showDetails>false</showDetails>
+</Report>

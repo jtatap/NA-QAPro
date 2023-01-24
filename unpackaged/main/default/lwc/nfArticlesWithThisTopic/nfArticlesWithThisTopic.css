@@ -1,0 +1,18 @@
+.layoutItem{
+    display: flex;
+}
+.layoutItem a{
+    text-decoration: none;
+    color: black;
+}
+.layoutItem.layoutItem a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width .3s cubic-bezier(0.42,0,0.58,1);
+}
+.layoutItem.layoutItem a:hover::after {
+    width: 100%;
+}

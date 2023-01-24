@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global">
+	<aura:attribute name="brandname" type="String" description="Store the name of brand"
+                    default="Tommy Hilfiger"/>
+	<aura:attribute name="smallMargin" type="String" default="5%"/>
+	<aura:attribute name="mediumMargin" type="String" default="0 12%"/>
+	<aura:attribute name="largeMargin" type="String" default="0 32%"/>
+	<c:communityBrandForm brandname="{!v.brandname}"
+                          smallMargin="{!v.smallMargin}"
+                          mediumMargin="{!v.mediumMargin}"
+                          largeMargin="{!v.largeMargin}">
+    </c:communityBrandForm>
+</aura:component>

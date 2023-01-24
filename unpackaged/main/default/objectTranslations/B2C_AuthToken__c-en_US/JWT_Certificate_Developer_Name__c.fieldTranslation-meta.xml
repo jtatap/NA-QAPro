@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the Developer Name of the certificate that signs / mints the JWTs presented to the B2C Commerce Account Manager. --></help>
+        <label><!-- JWT Certificate Developer Name --></label>
+        <name>JWT_Certificate_Developer_Name__c</name>
+    </CustomFieldTranslation>

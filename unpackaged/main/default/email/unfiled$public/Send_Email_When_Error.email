@@ -1,0 +1,8 @@
+An Apex Error/Exception occured. Please find below details:
+
+Source System: {!ErrorLog__c.SourceSystem__c}
+Message:           {!ErrorLog__c.Message__c}
+StackTrace:        {!ErrorLog__c.StackTrace__c}  
+
+Please find below Link for Error Log record in Salesforce.
+{!ErrorLog__c.Link}

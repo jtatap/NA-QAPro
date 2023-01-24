@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Etiquette_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Tone_and_Warmth__c , &quot;Pass&quot;) || ISPICKVAL(   Tone_and_Warmth__c   , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(   Empathy__c , &quot;Pass&quot;) || ISPICKVAL(  Empathy__c , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(  Apology__c , &quot;Pass&quot;) || ISPICKVAL( Apology__c , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL(  Verbal_Nods__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Verbal_Nods__c , &quot;N/A&quot;), 1, 0) +  IF( ISPICKVAL(  Use_of_Positive_Words__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Use_of_Positive_Words__c , &quot;N/A&quot;)  , 1, 0)) / 5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Phone Etiquette Total %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

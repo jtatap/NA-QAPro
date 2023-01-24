@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, this Additional Details entry will NOT display when a ECom Brand Channel is chosen. --></help>
+        <label><!-- No ECom/Single Channel --></label>
+        <name>No_ECom_Single_Channel__c</name>
+    </CustomFieldTranslation>

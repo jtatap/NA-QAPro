@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Internal Comment</fullName>
+        <default>false</default>
+        <label>Internal Comment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound Call</fullName>
+        <default>false</default>
+        <label>Outbound Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supervisor Call</fullName>
+        <default>false</default>
+        <label>Supervisor Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MC/GC Issuance</fullName>
+        <default>false</default>
+        <label>MC/GC Issuance</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,94 @@
+<template>
+    <div class="slds-size_12-of-12 slds-m-top_small containerDiv">
+        
+        <div class="slds-align--absolute-center">
+            <lightning-formatted-rich-text  value="Log View" class="headerText"></lightning-formatted-rich-text>
+        </div>
+        <lightning-layout horizontal-align="center" class="filterContainer">
+            <lightning-layout-item padding="around-small">
+                <div class="custom-box">
+                    <template if:true={loglevels.data}>
+                        <lightning-combobox
+                                name="loglevel"
+                                label="Log Level"
+                                value={value}
+                                placeholder="Select Log Level"
+                                options={loglevels.data.values}
+                                onchange={handleChange} 
+                                class="inputElem">
+                        </lightning-combobox>
+                    </template>
+                </div>
+            </lightning-layout-item>
+            <template if:true={isException}>
+                <lightning-layout-item padding="around-small">
+                    <div class="custom-box typeFilter">
+                        <template if:true={exceptionTypePicklistValues}>
+                            <lightning-combobox name="type"
+                                                label="Exception Type"
+                                                value={value}
+                                                options={exceptionTypePicklistValues}
+                                                onchange={handleChange}>
+                            </lightning-combobox>
+                        </template>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <div class="custom-box">
+                        <span onkeypress={keycheck}> 
+                            <lightning-input 
+                                        name="classname"
+                                        type="text"
+                                        label="Apex Class" 
+                                        placeholder="Type class name here..."
+                                        value={classname}>
+                            </lightning-input>
+                        </span>
+                    </div>
+                </lightning-layout-item>
+            </template>
+                <lightning-layout-item padding="around-small">
+                    <div class="custom-box">
+                        <lightning-input 
+                                type="date" 
+                                data-id="fromlogdate"
+                                name="fromlogdate" 
+                                label="Log Date" 
+                                value={selectedFromDate}
+                                onchange={handleChange}
+                                class="inputElem">
+                        </lightning-input>
+                    </div>
+                </lightning-layout-item>
+                <template if:true={showRange}>
+                    <lightning-layout-item padding="around-small">
+                        <div class="custom-box">
+                            <lightning-input 
+                                    type="date" 
+                                    data-id="tologdate"
+                                    name="tologdate" 
+                                    label="To" 
+                                    value={selectedToDate}
+                                    onchange={handleChange}
+                                    class="inputElem">
+                            </lightning-input>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            <lightning-layout-item padding="around-small">
+                <div class="custom-box">
+                    <lightning-input 
+                            type="toggle" 
+                            label="Select Date Range" 
+                            name="dateRange"
+                            onchange={handleToggle}
+                            class="inputElem">
+                    </lightning-input>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="logTable">
+            <c-datatable-component></c-datatable-component>
+        </div>
+    </div>
+</template>

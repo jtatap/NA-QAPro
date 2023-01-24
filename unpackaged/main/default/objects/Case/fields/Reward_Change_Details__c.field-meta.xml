@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reward_Change_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Reward Change Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reward_Change_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Disqualification</fullName>
+                <default>false</default>
+                <label>Disqualification</label>
+            </value>
+            <value>
+                <fullName>Store Processed Manual Accommodation</fullName>
+                <default>false</default>
+                <label>Store Processed Manual Accommodation</label>
+            </value>
+            <value>
+                <fullName>Online Transaction Manual Accommodation</fullName>
+                <default>false</default>
+                <label>Online Transaction Manual Accommodation</label>
+            </value>
+            <value>
+                <fullName>Customer Distance</fullName>
+                <default>false</default>
+                <label>Customer Distance</label>
+            </value>
+            <value>
+                <fullName>Customer Sick</fullName>
+                <default>false</default>
+                <label>Customer Sick</label>
+            </value>
+            <value>
+                <fullName>Customer Traveling</fullName>
+                <default>false</default>
+                <label>Customer Traveling</label>
+            </value>
+            <value>
+                <fullName>Outside of Country</fullName>
+                <default>false</default>
+                <label>Outside of Country</label>
+            </value>
+            <value>
+                <fullName>Did Not Receive Email</fullName>
+                <default>false</default>
+                <label>Did Not Receive Email</label>
+            </value>
+            <value>
+                <fullName>Customer Accommodation</fullName>
+                <default>false</default>
+                <label>Customer Accommodation</label>
+            </value>
+            <value>
+                <fullName>Unable to Extend</fullName>
+                <default>false</default>
+                <label>Unable to Extend</label>
+            </value>
+            <value>
+                <fullName>Gift Card Accommodation</fullName>
+                <default>false</default>
+                <label>Gift Card Accommodation</label>
+            </value>
+            <value>
+                <fullName>Adding Transaction</fullName>
+                <default>false</default>
+                <label>Adding Transaction</label>
+            </value>
+            <value>
+                <fullName>Beyond Extension Period</fullName>
+                <default>false</default>
+                <label>Beyond Extension Period</label>
+            </value>
+            <value>
+                <fullName>Signup Bonus Points Issue</fullName>
+                <default>false</default>
+                <label>Signup Bonus Points Issue</label>
+            </value>
+            <value>
+                <fullName>Double Points Promo</fullName>
+                <default>false</default>
+                <label>Double Points Promo</label>
+            </value>
+            <value>
+                <fullName>Triple Points Promo</fullName>
+                <default>false</default>
+                <label>Triple Points Promo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Expire</controllingFieldValue>
+            <valueName>Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Expire</controllingFieldValue>
+            <valueName>Disqualification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Expire</controllingFieldValue>
+            <controllingFieldValue>Redeem</controllingFieldValue>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redeem</controllingFieldValue>
+            <valueName>Store Processed Manual Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redeem</controllingFieldValue>
+            <valueName>Online Transaction Manual Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Customer Distance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Customer Sick</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Customer Traveling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Outside of Country</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Did Not Receive Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Customer Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extend</controllingFieldValue>
+            <valueName>Unable to Extend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Gift Card Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Adding Transaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Beyond Extension Period</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Signup Bonus Points Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Double Points Promo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AccommodationPoints</controllingFieldValue>
+            <valueName>Triple Points Promo</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

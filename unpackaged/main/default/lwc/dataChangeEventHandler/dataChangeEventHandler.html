@@ -1,0 +1,30 @@
+<template>
+    <div class="custom-box">
+        <lightning-layout horizontal-align="space" class="notificationPanel">
+            <lightning-layout-item padding="horizontal-small">
+                <div class="notificationText">Total Records: {totalRecords}</div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <div class="slds-form-element">
+                    <label class="slds-checkbox_toggle slds-grid">
+                        <span class="slds-form-element__label slds-m-bottom_none notificationText">
+                            Real-time Notifications
+                        </span>
+                        <input 
+                            type="checkbox" 
+                            data-id="toggleSubscription"
+                            name="checkbox-toggle-16" 
+                            value="checkbox-toggle-16" 
+                            aria-describedby="checkbox-toggle-16" 
+                            onchange={handleToggle}/>
+                        <span id="checkbox-toggle-16" class="slds-checkbox_faux_container" aria-live="assertive">
+                            <span class="slds-checkbox_faux customToggle"></span>
+                            <span class="slds-checkbox_on subscriptionText">Subscribed</span>
+                            <span class="slds-checkbox_off subscriptionText">Unsubscribed</span>
+                        </span>
+                    </label>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_ECom_Single_Channel__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, this Additional Details entry will NOT display when a ECom Brand Channel is chosen.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>When checked, this Additional Details entry will NOT display when a ECom Brand Channel is chosen.</inlineHelpText>
+    <label>No ECom/Single Channel</label>
+    <type>Checkbox</type>
+</CustomField>

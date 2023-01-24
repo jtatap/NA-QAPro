@@ -1,0 +1,44 @@
+<aura:component controller="getContact" implements="force:lightningquickactionwithoutheader,force:hasRecordId,lightning:availableForFlowScreens" >
+    
+    <aura:attribute name ="con" type="Contact" />
+    <aura:attribute name="returnVariable" type="Map" default="{ a: 'label1', b: 'label2' }" />
+    <aura:attribute name ="ContactId" type="String" default="0032g00000Sp1rqAAB"/>
+    <aura:attribute name ="Proceed" type="Boolean" default = "false"/>
+    <aura:attribute name ="oldMailId" type ="String" />
+    <aura:attribute name ="newMailId" type ="String" />
+    <aura:attribute name ="mailExists" type ="Boolean" />
+    <aura:attribute name ="showTemplate" type ="Boolean" />
+    <aura:attribute name ="msg1" type = "String" default=""/>
+    <aura:attribute name ="msg" type = "String" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="isLoading" type="Boolean" default="false" />
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium" >CSR Email Update</h4>
+    </div>
+    <div style="color:Black; font-size:130%;">{!v.msg1}</div>
+    
+    <aura:if isTrue="{!v.Proceed}">
+    <div class="crd">
+         <div style="color:Black;font-weight: bold; font-size:130%;">
+        <lightning:input class="inpt"  label="Enter New Email Address" value = "{!v.newMailId}" maxlength="100" /> 
+          </div>   
+        <p></p>
+        
+            <lightning:button class="btn" label="Submit" onclick="{!c.submit}"/>
+        <aura:if isTrue="{!v.isLoading}">
+            <div class="spin">
+               
+            <lightning:spinner alternativeText="Loading"  />
+                </div>
+                </aura:if>
+         <p></p>
+        
+    </div>
+         <p></p>
+    
+    <div style="color:Black;font-weight: bold; font-size:130%;margin-top: around-large"> 
+         <p></p>
+        {!v.msg}</div>
+        
+     </aura:if>
+</aura:component>

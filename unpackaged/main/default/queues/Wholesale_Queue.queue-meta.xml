@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Wholesale Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Brands</publicGroup>
+            <publicGroup>Wholesale</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Wholesale</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

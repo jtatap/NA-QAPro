@@ -1,0 +1,119 @@
+.theField{
+	font-family: Proxima Nova Regular;
+	font-size: 16px;	
+	color: #696969;
+	
+}
+
+.theFileName{
+	font-family: Proxima Nova Regular;
+	font-size: 16px;
+}
+
+
+.slds-form-element {
+	position: relative;
+	min-width: 0;
+	margin-bottom: 25px;
+}
+
+.slds-box {
+	border-radius: 0rem;
+	border: 0px;
+}
+
+.slds-input {
+	border-radius:0px;
+	height: 40px;
+}
+
+.slds-select {
+	border-radius:0px;
+	height: 40px;
+}
+
+.slds-textarea {
+	border-radius:0px;
+	
+}
+
+.slds-form-element__label
+{
+	overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    display: inline-block;
+    color: #696969;
+    font-size: 16px;
+    padding-right: .5rem;
+    padding-top: .25rem;
+    margin-bottom: 10px;
+
+}
+
+.attachMessage {
+	margin: 20px 0;
+}
+
+span.slds-file-selector__button {
+	font-size: 16px;
+}
+
+.theField.attachMessage .slds-file-selector.slds-file-selector_files,.theField.attachMessage .slds-file-selector__dropzone,.theField.attachMessage .slds-file-selector__dropzone>slot{
+	width: 100%;
+}
+
+
+.theField.attachMessage .slds-file-selector__button.slds-button.slds-button_neutral{
+	width: 50%;
+	height:40px;
+	max-height:40px;
+}
+
+.theField.attachMessage .slds-file-selector__text.slds-medium-show{
+	margin: auto;
+}
+
+.logoContainer {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 99;
+	cursor: pointer;
+	position: relative;
+	max-width: 350px;
+	max-height: 30px;
+	display: block;
+	outline: 0;
+	height: 90px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (max-width:400px) {
+	.logoContainer {
+		max-width: 270px;
+	}
+}
+
+.theButton {  
+	font-family: Proxima Nova Regular;
+    height: 50px;
+    line-height: 48px;
+    box-sizing: border-box;
+    font-size: 16px !important;
+    font-weight: 500;
+    padding: 0;
+    background: #000;
+    width: 200px;
+    border-radius: 2px;
+	color: #fff;
+	font-style: condensed;
+	
+ 
+} 
+.theButton:hover,.slds-button_neutral:focus {
+    background: #000 !important;
+	color: #fff;
+}
+	

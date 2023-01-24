@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Case__r.Brand__c,
+&quot;1&quot;, &quot;Tommy Hilfiger&quot;,
+&quot;2&quot;, &quot;Calvin Klein&quot;,
+&quot;4&quot;, &quot;IZOD&quot;,
+&quot;5&quot;, &quot;Van Heusen&quot;,
+&quot;7&quot;, &quot;Speedo Usa&quot;,
+&quot;8&quot;, &quot;Heritage Ecom&quot;,
+&quot;9&quot;, &quot;Partner Brands&quot;,
+&quot;81&quot;, &quot;IZOD.com&quot;,
+&quot;83&quot;, &quot;Warner&quot;,
+&quot;84&quot;, &quot;Style Bureau&quot;,
+&quot;11&quot;, &quot;True&amp;Co&quot;,
+&quot;10&quot;, &quot;Olga&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Brand</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

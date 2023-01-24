@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Purpose of this MDT is to store the access tokens returned by 360 API, so that tokens can be reused for data api calls.</description>
+    <label>A1_C360API_Tokens</label>
+    <pluralLabel>A1_C360API_Tokens</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

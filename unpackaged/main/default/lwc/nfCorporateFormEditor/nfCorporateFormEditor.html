@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-box slds-var-m-top_medium">
+        <lightning-input type="search" label="Filter" onchange={filter}></lightning-input>
+    </div>
+    <lightning-dual-listbox name="Fields"
+    label=" "
+    source-label="Available"
+    selected-label="Selected"
+    field-level-help="This controls which fields to display. Note some 
+    fields are not able to be removed as they are required for case creation"
+    options={options}
+    required-options={requiredOptions}
+    onchange={updateSelectedValues}
+    value={values}></lightning-dual-listbox>
+    <div class="slds-var-m-top_medium" >
+        <template for:each={selectedOptionsToSave} for:item="field">
+            {field.required}
+            <div class="slds-box slds-var-m-top_small" key={field.name}>
+                <h1>{field.label}</h1>
+                <lightning-input name={field.name} onchange={updateFreeFormColum} type="text" value={field.label}
+                    label="This is the name that will be displayed to the users"></lightning-input>
+                <div class="slds-var-m-top_medium">
+                    <template if:false={field.required}>
+                        <lightning-input value={field.required} name={field.name} onchange={updateRequired} type="checkbox"
+                        label="Mark as required"></lightning-input>
+                    </template>
+                    <template if:true={field.required}>
+                        <lightning-input value={field.required} name={field.name} onchange={updateRequired} type="checkbox"
+                            label="Mark as required" checked></lightning-input>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </div>
+    <template if:true={areDetailsVisible}>
+        <div class="slds-p-around_x-large">
+            This section is used to debug the CSV, Can be disabled in the Settings on the page.
+            {csv}
+        </div>
+    </template>
+    <button class="slds-button perfectButton slds-button_stretch" onclick={updateCSV}>Update
+        Fields</button>
+</template>

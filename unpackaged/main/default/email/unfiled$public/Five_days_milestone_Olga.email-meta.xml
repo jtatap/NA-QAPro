@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Olga</letterhead>
+    <name>Five days milestone Olga</name>
+    <style>freeForm</style>
+    <subject>Gentle Reminder (Since 5 days Your Request is Pending) case# {!Case.CaseNumber}</subject>
+    <textOnly>This email is to remind you that request {!Case.CaseNumber} has been pending for 5 days and awaits your response. We look forward to assisting you and hope to hear from you soon.
+
+
+{!Case.Last_Case_Comment}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Observation Form Complete --></label>
+        <name>Observation_Form_Complete__c</name>
+    </CustomFieldTranslation>

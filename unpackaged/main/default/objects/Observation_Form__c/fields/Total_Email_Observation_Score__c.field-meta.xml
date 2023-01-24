@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Email_Observation_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(RecordType.DeveloperName = &quot;Email_Observation_Form&quot;, RecordType.DeveloperName = &quot;Email_Observation_Form_True_Co&quot;), (Opening_Total_Email__c + Structure_Total_Email__c + Etiquette_Total__c + Handling_Skills_Total__c + Procedures_Total_Email__c + Closing_Total_Email__c) /6, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Email Observation Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

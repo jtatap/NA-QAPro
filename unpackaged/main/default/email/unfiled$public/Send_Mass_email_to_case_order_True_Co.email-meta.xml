@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send Mass email to case order True&amp;Co</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>True_Co</letterhead>
+    <name>Send Mass email to case order True&amp;Co</name>
+    <style>freeForm</style>
+    <subject>{!Case.Type_READONLY__c} Inquiry - Case {!Case.CaseNumber} {!Case.Thread_Id}</subject>
+    <textOnly>Dear {!Case.Valued_Customer__c},
+
+Thank you for reaching out to us. 
+
+Over the past couple of months, we’ve implemented social distancing and enhanced sanitation measures at our distribution centers. As a result, we’re unfortunately experiencing significant shipping delays. Please allow additional time for order shipping and returns processing (10-15 business days).
+
+We’re working hard to get your order to you as quickly and safely as possible. Check on the status of your order at any time by clicking here: https://trueandco.com/orders
+
+Additionally, our return policy has been updated and extended from 30 to 60 days effective March 12, 2020. For more information please click here: https://trueandco.com/our-response-to-covid-19
+
+Our Customer Experience team is also receiving a high volume of inquiries, which is why it’s taking longer for us to get back to you than usual. If you need additional assistance with your order inquiry, please respond to this email.
+
+We’re sorry for the delay and we appreciate your patience as we focus on the health and safety of our employees.
+
+Kind Regards,
+{!Case.Brand__c} Customer Service
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

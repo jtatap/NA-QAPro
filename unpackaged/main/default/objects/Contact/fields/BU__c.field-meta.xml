@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BU__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Brand_Id__c),
+&quot;1&quot;,&quot;TH&quot;,
+&quot;2&quot;,&quot;CK&quot;,
+&quot;4&quot;,&quot;IZ&quot;,
+&quot;5&quot;,&quot;VH&quot;,
+&quot;6&quot;,&quot;HT&quot;,
+&quot;7&quot;,&quot;SX&quot;,
+&quot;81&quot;,&quot;IZE&quot;,
+&quot;82&quot;,&quot;VHE&quot;,
+&quot;83&quot;,&quot;WRE&quot;,
+&quot;84&quot;,&quot;SB&quot;,
+&quot;8&quot;,&quot;HTE&quot;,
+&quot;9&quot;,&quot;PBE&quot;,
+&quot;10&quot;,&quot;OG&quot;,
+&quot;11&quot;,&quot;T&amp;C&quot;,
+&quot;NONE&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chat</fullName>
+        <default>false</default>
+        <label>Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 11</fullName>
+        <default>false</default>
+        <label>Email - 11</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 1</fullName>
+        <default>false</default>
+        <label>Email - 1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 2</fullName>
+        <default>false</default>
+        <label>Email - 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 4</fullName>
+        <default>false</default>
+        <label>Email - 4</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5</fullName>
+        <default>false</default>
+        <label>Email - 5</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 7</fullName>
+        <default>false</default>
+        <label>Email - 7</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 8</fullName>
+        <default>false</default>
+        <label>Email - 8</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 9</fullName>
+        <default>false</default>
+        <label>Email - 9</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 81</fullName>
+        <default>false</default>
+        <label>Email - 81</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 83</fullName>
+        <default>false</default>
+        <label>Email - 83</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 84</fullName>
+        <default>false</default>
+        <label>Email - 84</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 10</fullName>
+        <default>false</default>
+        <label>Email - 10</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 100</fullName>
+        <default>false</default>
+        <label>Email - 100</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 82</fullName>
+        <default>false</default>
+        <label>Email - 82</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 11 - E</fullName>
+        <default>false</default>
+        <label>Email - 11 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 1 - E</fullName>
+        <default>false</default>
+        <label>Email - 1 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 1 - R</fullName>
+        <default>false</default>
+        <label>Email - 1 - R</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 2 - E</fullName>
+        <default>false</default>
+        <label>Email - 2 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 2 - R</fullName>
+        <default>false</default>
+        <label>Email - 2 - R</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 4 - E</fullName>
+        <default>false</default>
+        <label>Email - 4 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 4 - R</fullName>
+        <default>false</default>
+        <label>Email - 4 - R</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5 - E</fullName>
+        <default>false</default>
+        <label>Email - 5 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5 - R</fullName>
+        <default>false</default>
+        <label>Email - 5 - R</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5 - W</fullName>
+        <default>false</default>
+        <label>Email - 5 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5 - RS</fullName>
+        <default>false</default>
+        <label>Email - 5 - RS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 5 - I</fullName>
+        <default>false</default>
+        <label>Email - 5 - I</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 7 - E</fullName>
+        <default>false</default>
+        <label>Email - 7 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 7 - W</fullName>
+        <default>false</default>
+        <label>Email - 7 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 8 - W</fullName>
+        <default>false</default>
+        <label>Email - 8 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 9 - W</fullName>
+        <default>false</default>
+        <label>Email - 9 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 81 - E</fullName>
+        <default>false</default>
+        <label>Email - 81 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 83 - W</fullName>
+        <default>false</default>
+        <label>Email - 83 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 84 - E</fullName>
+        <default>false</default>
+        <label>Email - 84 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 10 - W</fullName>
+        <default>false</default>
+        <label>Email - 10 - W</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 100 - E</fullName>
+        <default>false</default>
+        <label>Email - 100 - E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - 82 - E</fullName>
+        <default>false</default>
+        <label>Email - 82 - E</label>
+    </standardValue>
+</StandardValueSet>

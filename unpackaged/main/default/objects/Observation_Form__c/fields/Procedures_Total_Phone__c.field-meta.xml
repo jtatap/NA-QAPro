@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procedures_Total_Phone__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Proper_Resolution_and_Provided_Options__c , &quot;Pass&quot;) || ISPICKVAL(   Proper_Resolution_and_Provided_Options__c   , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(   Detailed_Explanation__c , &quot;Pass&quot;) || ISPICKVAL(  Detailed_Explanation__c   , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(  Proper_Ticket_Coding__c , &quot;Pass&quot;) || ISPICKVAL( Proper_Ticket_Coding__c , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL(  Proper_Ticket_Note_Taking__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Proper_Ticket_Note_Taking__c , &quot;N/A&quot;), 1, 0) +  IF( ISPICKVAL(  Proper_PVH__c , &quot;Pass&quot;)  ||  ISPICKVAL(     Proper_PVH__c , &quot;N/A&quot;)  , 1, 0)) / 5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Procedures Total % (Phone)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

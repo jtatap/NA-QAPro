@@ -1,0 +1,9 @@
+<!--
+ - Created by apoorvrajput on 10/13/20.
+ -->
+
+<aura:component controller ="NF_GetRelatedCaseController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:handler name="init" value="{!this}" action = "{!c.doInit}"/>
+    <lightning:workspaceAPI aura:id="workspace" />
+</aura:component>

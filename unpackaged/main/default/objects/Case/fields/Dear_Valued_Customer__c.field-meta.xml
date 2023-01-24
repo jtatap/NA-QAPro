@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dear_Valued_Customer__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Contact.FirstName!=NULL , LEFT(Contact.FirstName,1) + LOWER(RIGHT(Contact.FirstName,LEN(Contact.FirstName)-1)),&#39;Valued Customer&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

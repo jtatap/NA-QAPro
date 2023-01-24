@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SurveyQuestionResponse.NumberValue:AVG / 5</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>CSAT</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_71602970</developerName>
+        <masterLabel>Brand Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SurveyResponse$CreatedBy</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Calvin Klein Community Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Izod Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedo Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>styleBureau Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tommy Hilfiger Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Warners Site Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Olga Site Guest User</sourceValue>
+            </sourceValues>
+            <value>PVH</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>True&amp;Co Site Guest User</sourceValue>
+            </sourceValues>
+            <value>TRUE</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>SurveyResponse$CreatedDate</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>SurveyResponse$CompletionDateTime</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SurveyResponse$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse$Id</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse.SurveyQuestionResponses$Question</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse.SurveyQuestionResponses$ResponseValue</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse.SurveyQuestionResponses$Question</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>How was your overall experience?</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse$Survey</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CSAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>True</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>SurveyResponse$CompletionDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>FiscalWeek</dateGranularity>
+        <field>SurveyResponse$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2020 v. 2021 CSAT %</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_Responses__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse$CompletionDateTime</dateColumn>
+        <endDate>2023-01-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2023-01-24</startDate>
+    </timeFrameFilter>
+</Report>

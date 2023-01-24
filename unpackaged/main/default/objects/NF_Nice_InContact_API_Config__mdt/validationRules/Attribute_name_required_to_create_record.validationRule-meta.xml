@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute_name_required_to_create_record</fullName>
+    <active>true</active>
+    <description>As &quot;Create Records&quot; is checked, attribute name to look for during record creation is mandatory.</description>
+    <errorConditionFormula>Create_Records__c &amp;&amp; ISBLANK(Attribute_Name_to_search_in_response__c)</errorConditionFormula>
+    <errorDisplayField>Attribute_Name_to_search_in_response__c</errorDisplayField>
+    <errorMessage>As &quot;Create Records&quot; is checked, please enter an attribute name to look for during record creation.</errorMessage>
+</ValidationRule>

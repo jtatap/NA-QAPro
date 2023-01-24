@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the customer-facing label / name for the B2C Client ID. --></help>
+        <label><!-- B2C Client ID Label --></label>
+        <name>B2C_Client_ID_Label__c</name>
+    </CustomFieldTranslation>

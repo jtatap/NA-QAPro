@@ -1,0 +1,81 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="ticketid" type="String" />
+    <aura:attribute name="successMessage" type="String"/>
+    <aura:attribute name="regards" type="String"/>
+    <aura:attribute name="finalMessage" type="String" />
+    <aura:attribute name="brandNames" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!v.brandNames=='2'}">
+        <ltng:require styles="{!$Resource.CKStyle}"/>
+	</aura:if>
+     <aura:if isTrue="{!v.brandNames=='1'}">
+        <ltng:require styles="{!$Resource.tommyStyles}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='10'}">
+        <ltng:require styles="{!$Resource.OlgaStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='4'}">
+        <ltng:require styles="{!$Resource.izodStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='5'}">
+        <ltng:require styles="{!$Resource.VHStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='84'}">	
+        <ltng:require styles="{!$Resource.SBStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='7'}">
+        <ltng:require styles="{!$Resource.SpeedoStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='83'}">
+        <ltng:require styles="{!$Resource.WarnerStyle}"/>
+	</aura:if>
+    <aura:if isTrue="{!v.brandNames=='11'}">
+        <ltng:require styles="{!$Resource.TCStyle}"/>
+	</aura:if>
+    
+    
+    
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_0-of-8">
+           
+        </div>
+        <div class="slds-col slds-size_6-of-8">
+            
+            <!--
+            <div class="slds-box slds-theme_success">
+                <div class="slds-text-heading_medium slds-text-align_center slds-text-title_bold">
+                Your request ticket [{!v.ticketid}] has been successfully created.
+                </div>
+                
+                <div class="slds-text-body_regular slds-m-top_small">
+                    Unsubscribe requests may take up to three to five business days.  A request to access or delete Personal Data may take several weeks. We appreciate your patience.
+                </div>
+                
+            </div>
+            -->
+            
+                <!--
+                <div class="slds-text-heading_medium slds-text-align_center slds-text-title_bold">
+                Thank you. 
+                </div>
+                -->
+                
+                <div class="theField slds-text-body_regular slds-m-top_medium slds-text-align_left">
+                   <lightning:formattedRichText value="{!v.finalMessage}"></lightning:formattedRichText>
+                </div>
+                 
+                                              
+			    <div class="theField slds-text-body_regular slds-m-top_medium slds-text-align_left slds-m-bottom_large">
+                    <p>Regards,</p>
+                    <p>{!v.regards}</p>	
+                </div>
+                
+            </div>
+      
+        <div class="slds-col slds-size_1-of-8">
+           
+        </div>
+    </div>
+</aura:component>

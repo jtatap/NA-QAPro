@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Resolution Code --></label>
+        <name>Resolution_Code__c</name>
+        <picklistValues>
+            <masterLabel>Data Not Found</masterLabel>
+            <translation><!-- Data Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response to follow-up</masterLabel>
+            <translation><!-- No Response to follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected Request</masterLabel>
+            <translation><!-- Rejected Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Data Corrected</masterLabel>
+            <translation><!-- User Data Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Data Deleted</masterLabel>
+            <translation><!-- User Data Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Data Provided</masterLabel>
+            <translation><!-- User Data Provided --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

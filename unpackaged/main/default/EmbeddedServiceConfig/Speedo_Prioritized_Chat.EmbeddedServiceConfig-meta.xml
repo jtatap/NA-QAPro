@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areGuestUsersAllowed>false</areGuestUsersAllowed>
+    <deploymentFeature>LiveAgent</deploymentFeature>
+    <deploymentType>Web</deploymentType>
+    <embeddedServiceCustomComponents>
+        <componentBundleType>AuraDefinitionBundle</componentBundleType>
+        <customComponent>pvhPrechatUISnapin</customComponent>
+        <customComponentType>LA_Prechat</customComponentType>
+    </embeddedServiceCustomComponents>
+    <embeddedServiceCustomComponents>
+        <componentBundleType>LightningComponentBundle</componentBundleType>
+        <customComponent>pvhChatMessageSnapinSpeedo</customComponent>
+        <customComponentType>LA_PlainTextChatMessage</customComponentType>
+    </embeddedServiceCustomComponents>
+    <isEnabled>true</isEnabled>
+    <masterLabel>Speedo Prioritized Chat</masterLabel>
+    <shouldHideAuthDialog>false</shouldHideAuthDialog>
+    <site>Speedo</site>
+</EmbeddedServiceConfig>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... when checked, retrieved B2C AuthTokens will be persisted and audited for future re-use. --></help>
+        <label><!-- Persist B2C AuthTokens --></label>
+        <name>Persist_B2C_AuthTokens__c</name>
+    </CustomFieldTranslation>

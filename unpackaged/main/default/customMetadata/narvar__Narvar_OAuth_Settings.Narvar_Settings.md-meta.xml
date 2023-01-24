@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Narvar Settings</label>
+    <protected>false</protected>
+    <values>
+        <field>narvar__Client_ID__c</field>
+        <value xsi:type="xsd:string">3MVG9hq7jmfCuKffRsiRSjzlJqF2PZsXniIWW1QVgxN6ud7NQ01eKP6c3avaTiEcnUYjAh0zuXMS2WAKR9rJN-BAD</value>
+    </values>
+    <values>
+        <field>narvar__Connected_App_Callback_URL__c</field>
+        <value xsi:type="xsd:string">https://csp-api.narvar.com/salesforce/auth/callback</value>
+    </values>
+    <values>
+        <field>narvar__Connected_App_Name__c</field>
+        <value xsi:type="xsd:string">Narvar Customer Service Platform API</value>
+    </values>
+</CustomMetadata>

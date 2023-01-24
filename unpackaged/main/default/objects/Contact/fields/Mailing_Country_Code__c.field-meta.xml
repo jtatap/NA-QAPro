@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_Country_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( MailingCountry ,
+&quot;Canada&quot;,&quot;CA&quot;,
+&quot;CA&quot;,&quot;CA&quot;,
+&quot;CANADA&quot;,&quot;CA&quot;,
+&quot;CAN&quot;,&quot;CA&quot;,
+&quot;UNITED STATES&quot;,&quot;US&quot;,
+&quot;United States&quot;,&quot;US&quot;,
+&quot;united states&quot;,&quot;US&quot;,
+&quot;USA&quot;,&quot;US&quot;,
+&quot;usa&quot;,&quot;US&quot;,
+&quot;Usa&quot;,&quot;US&quot;,
+&quot;US&quot;,&quot;US&quot;,
+&quot;canada&quot;,&quot;CA&quot;,
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mailing Country Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

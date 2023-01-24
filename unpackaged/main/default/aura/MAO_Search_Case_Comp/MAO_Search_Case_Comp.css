@@ -1,0 +1,58 @@
+.THIS .search-container{
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.THIS .sByOid-con-container, .THIS .sByContact-con-container {
+    min-height : 260px;
+}
+.THIS .sByFreeForm-con-container {
+    min-height : 260px;
+}
+.THIS.comp-container{
+    position:relative
+}
+.THIS .or-seperator {
+    text-align : center;
+    font-weight: bold;
+    font-size : 13px;
+}
+.THIS .freeFormErrorMessage-section {
+    color : red;
+    text-align : center;
+    font-size : 12px;
+}
+.THIS .o-id-search-btn {
+    align-self : end;
+    text-align: center;
+}
+.THIS .oid-search-container{
+    display : block;
+}
+.THIS .oid-search-container div + div {
+    margin-top : 10px;
+}
+.THIS .look-extrafileds-container, .THIS .contact-extrafileds-container {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    justify-content: space-between;
+}
+.THIS .val-item {
+	align-self: center;
+    /*flex: 0 150px;*/
+    overflow-wrap: anywhere;
+    /*text-align: end;*/
+}
+.THIS .field-label {
+    /*max-width : 100px;*/
+}
+.THIS .search-by-onum-container {
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+.THIS .slds-card
+{
+    position: inherit;
+}

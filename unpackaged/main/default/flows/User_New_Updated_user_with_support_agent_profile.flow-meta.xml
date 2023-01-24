@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>Triggers the &quot;User: Assign/Remove Case Scenarios &amp; Einstein PSGs&quot; flow when a support agent user is created/updated with an appropriate Profile.</description>
+    <environments>Default</environments>
+    <interviewLabel>User: New/Updated user with support agent profile {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User: New/Updated user with support agent profile</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Remove_Case_Scenarios_Einstein_PSGs</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+{!$Record.IsActive} = TRUE,
+OR(
+{!$Record.Profile.Name} = &#39;Ops/Quality&#39;,
+{!$Record.Profile.Name} = &#39;Tier 1 TEMP&#39;,
+{!$Record.Profile.Name} = &#39;Tier I CSR CCPA&#39;,
+{!$Record.Profile.Name} = &#39;Tier I CSR PVH&#39;,
+{!$Record.Profile.Name} = &#39;Tier I CSR Wholesale&#39;,
+{!$Record.Profile.Name} = &#39;Tier II CSR&#39;,
+{!$Record.Profile.Name} = &#39;Tier III CSR/Supervisor&#39;,
+{!$Record.Profile.Name} = &#39;System Administrator&#39;
+))</filterFormula>
+        <object>User</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Assign_Remove_Case_Scenarios_Einstein_PSGs</name>
+        <label>Assign/Remove Case Scenarios &amp; Einstein PSGs</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <flowName>User_Assign_Remove_Case_Scenarios_Einstein_PSGs</flowName>
+        <inputAssignments>
+            <name>varModifyPSGDeveloperName</name>
+            <value>
+                <stringValue>Case_Scenarios_Modify_PSG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varPermissionSetGroupDeveloperName</name>
+            <value>
+                <stringValue>Case_Scenarios_Read_PSG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varPermSetGroupAction</name>
+            <value>
+                <stringValue>Add</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varUserId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varUserProfileName</name>
+            <value>
+                <elementReference>$Record.Profile.Name</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

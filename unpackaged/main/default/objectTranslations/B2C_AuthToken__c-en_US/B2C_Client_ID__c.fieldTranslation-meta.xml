@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the B2C Client ID used to request an authToken from the B2C Commerce Account Manager. --></help>
+        <label><!-- B2C Client ID --></label>
+        <name>B2C_Client_ID__c</name>
+        <relationshipLabel><!-- B2C AuthTokens --></relationshipLabel>
+    </CustomFieldTranslation>

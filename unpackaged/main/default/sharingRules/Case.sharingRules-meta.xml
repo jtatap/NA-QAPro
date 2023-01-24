@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CCPA_Read_Write_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CCPA Read/Write Access</label>
+        <sharedTo>
+            <group>Tier_1_CSR_CCPA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Privacy Request - Read Only,Data Owner Request,Privacy Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ops_Quality_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Can READ Case IF 3rd Day After Resolved Date is TRUE</description>
+        <label>Ops/Quality Access</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>X3rd_Day_After_Resolved_Date__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Support_Case_Ops_Quality_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Support Case Ops/Quality Access</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Zendesk True &amp; Co,Support Case - Read Only,Zendesk PVH,Support Case</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Support_Case_Tier_III</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Support Case Tier III</label>
+        <sharedTo>
+            <role>Supervisor_Tier_3_CSR</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Zendesk True &amp; Co,Support Case - Read Only,Zendesk PVH,Support Case</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Support_Tier_I_PVH_CSR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Support Tier I PVH CSR</label>
+        <sharedTo>
+            <group>Tier_1_CSR_PVH</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Case - Read Only,Support Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Channel__c</field>
+            <operation>notEqual</operation>
+            <value>Other Retailer</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_1_CSR_Wholesale</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier 1 CSR Wholesale - Support</label>
+        <sharedTo>
+            <group>Tier_1_CSR_Wholesale_OLD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Case - Read Only,Support Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>notEqual</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_1_CSR_Wholesale_Support</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Support case and brand not equal to True&amp;co</description>
+        <label>Tier 1 CSR Wholesale - Support</label>
+        <sharedTo>
+            <group>Tier_1_CSR_Wholesale_OLD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Case - Read Only,Support Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>notEqual</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_1_PVH_and</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Tier 1 PVH CCPA Read Only</label>
+        <sharedTo>
+            <group>Tier_1_CSR_PVH</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Privacy Request - Read Only,Privacy Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>notEqual</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_1_Wholesale</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Tier 1 Wholesale</label>
+        <sharedTo>
+            <group>Tier_1_CSR_Wholesale_OLD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Privacy Request - Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>notEqual</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tier_I_Support_PVH</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier I Support PVH</label>
+        <sharedTo>
+            <group>Tier_1_CSR_PVH</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Case - Read Only,Support Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Channel__c</field>
+            <operation>notEqual</operation>
+            <value>Other Retailer</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>True_and_Co_View</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>True and Co View</label>
+        <sharedTo>
+            <group>Tier_1_CSR_Wholesale</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Privacy Request - Read Only,Privacy Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Temp_User_Access_to_Tier_1_CSR_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Temp User Access to Tier 1 CSR Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>Tier_1_TEMP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>Tier_1_CSR</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

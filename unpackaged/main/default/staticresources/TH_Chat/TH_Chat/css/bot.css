@@ -1,0 +1,211 @@
+
+h2[embeddedService-chatHeader_chatHeader]::before {
+    		content: "Tommy Hilfiger "
+	}
+
+
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+    background-color: #00174f;
+    font-family: "FuturaStdBook", sans-serif;
+}
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #00174f;
+}
+
+html,
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.embeddedServiceSidebar.sidebarMaximized {
+    background:none !important;
+}
+.helpButtonDisabled {
+    visibility: hidden;
+}
+
+.embeddedServiceSidebarHeader .headerText {
+    font-size: 16px !important;
+}
+
+.embeddedServiceHelpButton .helpButton {
+    bottom: 0px !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton,
+.sidebarHeader.minimizedContainer.helpButton {
+    background-color: #00174f!important;
+    font-family: FuturaStdBook, Arial, sans-serif!important;
+    min-width: 260px;
+    border-radius: 30px !important;
+    bottom: 12px;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton .messageContent {
+    justify-content: normal !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #00174f
+}
+
+.embeddedServiceSidebarFormField .uiInput .uiLabel-left {
+    display: inline-block;
+    font-size: 14px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message {
+    color: #fff
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage .chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    font-family: FuturaStdBook, Arial, sans-serif!important;
+}
+
+.embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+html.mobile .embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+.extendedHeader .embeddedServiceLiveAgentStateWaitingHeader .backgroundPattern {
+    background-image: none!important
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton,
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton {
+    width: auto!important
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedImage {
+    margin-right: 0!important
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+    padding: 0!important
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon::before {
+    font-family: embeddedserviceiconfont;
+    font-size: 1.25em;
+    content: url("../img/FLAG_32x32.svg") !important;
+    speak: none;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+html.mobile .embeddedServiceSidebar.modalContainer {
+    z-index: 1100
+}
+
+.embeddedServiceLiveAgentStateChatHeader .content {
+    justify-content: flex-start!important;
+    height: 156px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message,
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName {
+    display: block!important;
+    font-size: 14px!important
+}
+
+.embeddedServiceSidebarExtendedHeader .backgroundPattern {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important
+}
+
+.embeddedServiceSidebarDialogState #dialogTextBody {
+    font-size: 14px!important
+}
+
+/* Hide logo from chat header */
+body > div.modalContainer.sidebarMaximized.layout-docked.embeddedServiceSidebar > div > embeddedservice-chat-header > header > img {
+    display: none;
+    width: 0px;
+}
+
+/* TH icon in minimized chat */
+body > div.modalContainer.sidebarMinimized.layout-docked.embeddedServiceSidebar > button > div > div > span {
+    content: url("../img/FLAG_32x32.svg");
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* hide old chat icon in minimized chat */
+body > div.modalContainer.sidebarMinimized.layout-docked.embeddedServiceSidebar > button > div > div > span > svg {
+    display: none;
+    /*height: 0;*/
+}
+
+/* TH icon in initial minimized chat */
+.uiButton.helpButtonEnabled > embeddedServiceIcon {
+    content: url("../img/FLAG_32x32.svg");
+}
+
+/* hide old chat icon in initial minimized chat */
+body > div.embeddedServiceHelpButton > div > button > span.embeddedServiceIcon {
+    display:none
+}
+
+/* styling for "cancel chat" button while connecting */
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* styling for "Go Back" button when ending Chat */
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* styling for "Save Transcript" button when chat has ended */
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+    margin-top: 8px;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* remove TH logo when connecting */
+.waitingImage {
+    display: none;
+    height: 0px !important;
+}
+
+/* avatar change */
+.embeddedServiceLiveAgentStateChatAvatar .avatar {
+    background-image:url("../img/FLAG_32x32.svg") !important;
+}

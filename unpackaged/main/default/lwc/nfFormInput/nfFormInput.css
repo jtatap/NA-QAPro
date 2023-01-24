@@ -1,0 +1,10 @@
+.required-symbol{
+	color:red;
+}
+.form-picklist-error{
+	border-width: 2px;
+	border-color:rgb(197,57,52);
+}
+.add-radio{
+	margin-right: 10px;
+}

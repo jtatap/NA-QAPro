@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Damage</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">Please copy and paste these fields into the message and fill out as much information as you can so this can be resolved for you as quickly as possible:
+&lt;br/&gt;&lt;br/&gt;
+RN and Style # (found on inseam tag)
+&lt;br/&gt;&lt;br/&gt;
+Size and Color
+&lt;br/&gt;&lt;br/&gt;
+Proof of purchase
+&lt;br/&gt;&lt;br/&gt;
+Full picture with of product
+&lt;br/&gt;&lt;br/&gt;
+Picture of defect
+&lt;br/&gt;&lt;br/&gt;</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:type="xsd:string">Please copy and paste these fields into the message and fill out as much information as you can so this can be resolved for you as quickly as possible:
+&lt;br/&gt;&lt;br/&gt;
+RN and Style # (found on inseam tag)
+&lt;br/&gt;&lt;br/&gt;
+Size and Color
+&lt;br/&gt;&lt;br/&gt;
+Proof of purchase
+&lt;br/&gt;&lt;br/&gt;
+Full picture with of product
+&lt;br/&gt;&lt;br/&gt;
+Picture of defect
+&lt;br/&gt;&lt;br/&gt;</value>
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">Please copy and paste these fields into the message and fill out as much information as you can so this can be resolved for you as quickly as possible:
+&lt;br/&gt;&lt;br/&gt;
+RN and Style # (found on inseam tag)
+&lt;br/&gt;&lt;br/&gt;
+Size and Color
+&lt;br/&gt;&lt;br/&gt;
+Proof of purchase
+&lt;br/&gt;&lt;br/&gt;
+Full picture with of product
+&lt;br/&gt;&lt;br/&gt;
+Picture of defect
+&lt;br/&gt;&lt;br/&gt;</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">Please copy and paste these fields into the message and fill out as much information as you can so this can be resolved for you as quickly as possible:
+&lt;br/&gt;&lt;br/&gt;
+RN and Style # (found on inseam tag)
+&lt;br/&gt;&lt;br/&gt;
+Size and Color
+&lt;br/&gt;&lt;br/&gt;
+Address, phone number, full name
+&lt;br/&gt;&lt;br/&gt;
+Proof of purchase
+&lt;br/&gt;&lt;br/&gt;
+Where purchase was made
+&lt;br/&gt;&lt;br/&gt;
+When purchase was made
+&lt;br/&gt;&lt;br/&gt;
+Full picture with of product
+&lt;br/&gt;&lt;br/&gt;
+Picture of defect
+&lt;br/&gt;&lt;br/&gt;
+12 digit number listed underneath the bar code found on the hand tag, packing slip, package/box (if available)</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Product_Information</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Damage</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Deflect</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Product: Claims Product is ripped, torn, or developed hole</value>
+    </values>
+</CustomMetadata>

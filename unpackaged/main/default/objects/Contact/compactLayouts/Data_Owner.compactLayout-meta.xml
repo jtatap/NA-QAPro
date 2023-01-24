@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Owner</fullName>
+    <fields>AccountId</fields>
+    <fields>Name</fields>
+    <fields>Email</fields>
+    <fields>System_Type__c</fields>
+    <label>Data Owner</label>
+</CompactLayout>

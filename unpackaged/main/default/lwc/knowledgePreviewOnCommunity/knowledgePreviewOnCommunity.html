@@ -1,0 +1,15 @@
+<template>
+  <div class="article-column  slds-text-longform selfServiceArticleLayout" >
+    <h1 style="font-size: 2.5rem !important;"> 
+    {header}
+    </h1>
+
+    <div class="slds-p-left_none">
+      <lightning-icon class="slds-icon-utility-clock"></lightning-icon>
+    </div>
+    <lightning-formatted-rich-text 
+          value={content}
+      ></lightning-formatted-rich-text>
+  </div>
+ 
+</template>

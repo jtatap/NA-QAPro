@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Zeta Callout Response --></label>
+        <name>Zeta_Callout_Response__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Email Deliverability Status --></label>
+        <name>EmailDeliverabilityStatus__c</name>
+        <picklistValues>
+            <masterLabel>bounce</masterLabel>
+            <translation><!-- bounce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>deleted</masterLabel>
+            <translation><!-- deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>held</masterLabel>
+            <translation><!-- held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>normal</masterLabel>
+            <translation><!-- normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unsub</masterLabel>
+            <translation><!-- unsub --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

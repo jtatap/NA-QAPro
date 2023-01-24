@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valued_Customer__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( 
+    OR(
+		AND (
+		      ContactId != NULL,
+			  OR(
+				  CONTAINS(Contact.FirstName, &#39;UNKNOWN&#39;),
+				  CONTAINS(Contact.FirstName, &#39;unknown&#39;),
+				  CONTAINS(Contact.FirstName, &#39;Unknown&#39;)
+				),
+			  OR(
+				  CONTAINS(Contact.LastName, &#39;UNKNOWN&#39;),
+				  CONTAINS(Contact.LastName, &#39;unknown&#39;),
+				  CONTAINS(Contact.LastName, &#39;Unknown&#39;)
+				)
+        ),
+		   
+	               
+                         
+        AND(
+
+             ContactId != NULL,                         
+			OR(
+                NOT(CONTAINS( Contact.FirstName , &#39;UNKNOWN&#39;)),
+                NOT(CONTAINS(Contact.FirstName, &#39;unknown&#39;)),
+				NOT(CONTAINS(Contact.FirstName, &#39;Unknown&#39;))
+               ),
+
+            OR(
+			    CONTAINS(Contact.LastName, &#39;UNKNOWN&#39;),
+				CONTAINS(Contact.LastName, &#39;unknown&#39;),
+				CONTAINS(Contact.LastName, &#39;Unknown&#39;)
+			   )
+
+
+        ),
+
+         AND(
+                          
+             ContactId != NULL, 
+
+            OR(
+                         
+               CONTAINS( Contact.FirstName , &#39;UNKNOWN&#39;),
+               CONTAINS(Contact.FirstName, &#39;unknown&#39;),
+			   CONTAINS(Contact.FirstName, &#39;Unknown&#39;)
+              ),
+
+            OR(
+				NOT(CONTAINS(Contact.LastName, &#39;UNKNOWN&#39;)),
+				NOT(CONTAINS(Contact.LastName, &#39;unknown&#39;)),
+				NOT(CONTAINS(Contact.LastName, &#39;Unknown&#39;))
+		       )
+
+
+            ),
+        AND(
+                          
+             ContactId != NULL, 
+
+            OR(
+                         
+               Contact.FirstName = NULL
+               
+              ),
+
+            OR(
+				CONTAINS(Contact.LastName, &#39;UNKNOWN&#39;),
+				CONTAINS(Contact.LastName, &#39;unknown&#39;),
+				CONTAINS(Contact.LastName, &#39;Unknown&#39;)
+		       )
+
+
+            )
+
+    )
+
+
+,
+&#39;Valued Customer&#39;,
+
+
+Contact.FirstName + &#39; &#39; + Contact.LastName
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valued Customer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

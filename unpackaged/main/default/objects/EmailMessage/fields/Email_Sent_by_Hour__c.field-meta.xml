@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Sent_by_Hour__c</fullName>
+    <description>This field is used for reporting to track emails sent per hour.</description>
+    <externalId>false</externalId>
+    <formula>Value(MID(TEXT( MessageDate - (0.0417*4)), 12, 2))</formula>
+    <label>Email Sent by Hour</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Origin__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE (Case__r.Origin,
+&quot;Email&quot;, &quot;Email&quot;,
+&quot;Web&quot;, &quot;Web&quot;,
+&quot;Phone&quot;, &quot;Phone&quot;,
+&quot;Chat&quot;, &quot;Chat&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Origin</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

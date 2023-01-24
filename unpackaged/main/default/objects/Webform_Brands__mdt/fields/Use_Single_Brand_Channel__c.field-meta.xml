@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Single_Brand_Channel__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>By checking this box, you are acknowledging that there&#39;s only a single Brand Channel needed for this brand. This also means, for this Brand, you cannot use multiple Additional Details as you are not using multiple Brand Channels.</inlineHelpText>
+    <label>Use Single Brand Channel</label>
+    <type>Checkbox</type>
+</CustomField>

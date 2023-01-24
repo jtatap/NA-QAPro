@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>ECOM:  For any web-based commerce channel
+
+RETAIL:  For retail location channels
+
+OTHER RETAILER:  For wholesale location channels
+
+SINGLE:  For any brand that is supported by one channel</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECom</fullName>
+                <default>true</default>
+                <label>ECom</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Other Retailer</fullName>
+                <default>false</default>
+                <label>Other Retailer</label>
+            </value>
+            <value>
+                <fullName>Single</fullName>
+                <default>false</default>
+                <label>Single</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

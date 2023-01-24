@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Log Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>Data_Retention_Period_In_Days__c</field>
+        <value xsi:type="xsd:double">100.0</value>
+    </values>
+    <values>
+        <field>Data_Strategy__c</field>
+        <value xsi:type="xsd:string">Archive</value>
+    </values>
+    <values>
+        <field>Field_Set__c</field>
+        <value xsi:type="xsd:string">message__c, level__c, type__c, user_info__c, class_name__c, method_name__c, record_id__c, api_request__c, api_response__c, stack_trace__c, log_date__c</value>
+    </values>
+    <values>
+        <field>Logging_Enabled__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

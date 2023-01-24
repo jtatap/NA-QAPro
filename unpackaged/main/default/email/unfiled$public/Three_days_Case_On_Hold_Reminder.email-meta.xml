@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This templates are used to send Three days case On-Hold reminder to CSR</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Three_days_Case_On_Hold_Reminder</letterhead>
+    <name>Three days Case On-Hold Reminder</name>
+    <style>freeForm</style>
+    <subject>Gentle Reminder:Request Has Been On-Hold for 3 Days, case# {!Case.CaseNumber} {!Case.Thread_Id}</subject>
+    <textOnly>Hi {!Case.OwnerFirstName}
+
+This email is to notify you that request {!Case.CaseNumber} has been On-hold for 3 days. The status of this request has now been set back to Open. Please check the case and update the customer on the status of their request.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Product Sub-Category --></label>
+        <name>Product_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>#MYCALVINS Custom</masterLabel>
+            <translation><!-- #MYCALVINS Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activewear</masterLabel>
+            <translation><!-- Activewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adult Goggles</masterLabel>
+            <translation><!-- Adult Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arm Bands</masterLabel>
+            <translation><!-- Arm Bands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baby</masterLabel>
+            <translation><!-- Baby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backpacks</masterLabel>
+            <translation><!-- Backpacks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bags</masterLabel>
+            <translation><!-- Bags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bags &amp; Backpacks</masterLabel>
+            <translation><!-- Bags &amp; Backpacks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balconette</masterLabel>
+            <translation><!-- Balconette --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bath</masterLabel>
+            <translation><!-- Bath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedding</masterLabel>
+            <translation><!-- Bedding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Begin To Swim</masterLabel>
+            <translation><!-- Begin To Swim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belts</masterLabel>
+            <translation><!-- Belts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bikini</masterLabel>
+            <translation><!-- Bikini --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bikinis &amp; Separates</masterLabel>
+            <translation><!-- Bikinis &amp; Separates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blouses</masterLabel>
+            <translation><!-- Blouses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board shorts</masterLabel>
+            <translation><!-- Board shorts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bodysuits</masterLabel>
+            <translation><!-- Bodysuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bottoms</masterLabel>
+            <translation><!-- Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boxer Briefs</masterLabel>
+            <translation><!-- Boxer Briefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boxers</masterLabel>
+            <translation><!-- Boxers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boyshort</masterLabel>
+            <translation><!-- Boyshort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bralette</masterLabel>
+            <translation><!-- Bralette --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bras</masterLabel>
+            <translation><!-- Bras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Briefs</masterLabel>
+            <translation><!-- Briefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casual Shirts</masterLabel>
+            <translation><!-- Casual Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coats &amp; Jackets</masterLabel>
+            <translation><!-- Coats &amp; Jackets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dining</masterLabel>
+            <translation><!-- Dining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dress Shirts</masterLabel>
+            <translation><!-- Dress Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dresses</masterLabel>
+            <translation><!-- Dresses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dresses &amp; Skirts</masterLabel>
+            <translation><!-- Dresses &amp; Skirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Décor</masterLabel>
+            <translation><!-- Décor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ear Plugs</masterLabel>
+            <translation><!-- Ear Plugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite Goggles</masterLabel>
+            <translation><!-- Elite Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite Technical Swimsuits</masterLabel>
+            <translation><!-- Elite Technical Swimsuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fins</masterLabel>
+            <translation><!-- Fins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flip-flop</masterLabel>
+            <translation><!-- Flip-flop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fragrance</masterLabel>
+            <translation><!-- Fragrance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf</masterLabel>
+            <translation><!-- Golf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf &amp; Active</masterLabel>
+            <translation><!-- Golf &amp; Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handbags</masterLabel>
+            <translation><!-- Handbags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hats &amp; Scarves</masterLabel>
+            <translation><!-- Hats &amp; Scarves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hats, Gloves &amp; Scarves</masterLabel>
+            <translation><!-- Hats, Gloves &amp; Scarves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hilfiger Collection</masterLabel>
+            <translation><!-- Hilfiger Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hipster</masterLabel>
+            <translation><!-- Hipster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoodies &amp; Sweatshirts</masterLabel>
+            <translation><!-- Hoodies &amp; Sweatshirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hosiery</masterLabel>
+            <translation><!-- Hosiery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jackets</masterLabel>
+            <translation><!-- Jackets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jackets &amp; Outerwear</masterLabel>
+            <translation><!-- Jackets &amp; Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jammers</masterLabel>
+            <translation><!-- Jammers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeans</masterLabel>
+            <translation><!-- Jeans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jock Straps</masterLabel>
+            <translation><!-- Jock Straps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joggers</masterLabel>
+            <translation><!-- Joggers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jr. Goggles</masterLabel>
+            <translation><!-- Jr. Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids Goggles</masterLabel>
+            <translation><!-- Kids Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knits &amp; Active</masterLabel>
+            <translation><!-- Knits &amp; Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loungewear</masterLabel>
+            <translation><!-- Loungewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luggage</masterLabel>
+            <translation><!-- Luggage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masks</masterLabel>
+            <translation><!-- Masks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nose Clips</masterLabel>
+            <translation><!-- Nose Clips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Piece Swimsuits</masterLabel>
+            <translation><!-- One Piece Swimsuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One- Piece Suits</masterLabel>
+            <translation><!-- One- Piece Suits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optical Goggles</masterLabel>
+            <translation><!-- Optical Goggles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panties</masterLabel>
+            <translation><!-- Panties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pants</masterLabel>
+            <translation><!-- Pants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pants &amp; Jeans</masterLabel>
+            <translation><!-- Pants &amp; Jeans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pants &amp; Leggings</masterLabel>
+            <translation><!-- Pants &amp; Leggings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pants, Jeans &amp; Shorts</masterLabel>
+            <translation><!-- Pants, Jeans &amp; Shorts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parkas</masterLabel>
+            <translation><!-- Parkas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polos</masterLabel>
+            <translation><!-- Polos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polos &amp; Tees</masterLabel>
+            <translation><!-- Polos &amp; Tees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Racerback</masterLabel>
+            <translation><!-- Racerback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Racing &amp; Practice Swimsuits</masterLabel>
+            <translation><!-- Racing &amp; Practice Swimsuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rash Guards</masterLabel>
+            <translation><!-- Rash Guards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rugs</masterLabel>
+            <translation><!-- Rugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirts</masterLabel>
+            <translation><!-- Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirts &amp; Blouses</masterLabel>
+            <translation><!-- Shirts &amp; Blouses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoes</masterLabel>
+            <translation><!-- Shoes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoes &amp; Accessories</masterLabel>
+            <translation><!-- Shoes &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shorts</masterLabel>
+            <translation><!-- Shorts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shorts &amp; Swimwear</masterLabel>
+            <translation><!-- Shorts &amp; Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skirts</masterLabel>
+            <translation><!-- Skirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skirts &amp; Dresses</masterLabel>
+            <translation><!-- Skirts &amp; Dresses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sleepwear &amp; Loungewear</masterLabel>
+            <translation><!-- Sleepwear &amp; Loungewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snorkeling</masterLabel>
+            <translation><!-- Snorkeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Socks</masterLabel>
+            <translation><!-- Socks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Legs</masterLabel>
+            <translation><!-- Square Legs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strapless</masterLabel>
+            <translation><!-- Strapless --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straps and Cases</masterLabel>
+            <translation><!-- Straps and Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Streetwear</masterLabel>
+            <translation><!-- Streetwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suiting &amp; Blazers</masterLabel>
+            <translation><!-- Suiting &amp; Blazers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suits &amp; Blazers</masterLabel>
+            <translation><!-- Suits &amp; Blazers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suits &amp; Jackets</masterLabel>
+            <translation><!-- Suits &amp; Jackets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunglasses</masterLabel>
+            <translation><!-- Sunglasses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweaters</masterLabel>
+            <translation><!-- Sweaters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweaters &amp; Fleece</masterLabel>
+            <translation><!-- Sweaters &amp; Fleece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweatshirts &amp; Fleece</masterLabel>
+            <translation><!-- Sweatshirts &amp; Fleece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweatshirts &amp; Hoodies</masterLabel>
+            <translation><!-- Sweatshirts &amp; Hoodies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim</masterLabel>
+            <translation><!-- Swim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Bottoms</masterLabel>
+            <translation><!-- Swim Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Caps</masterLabel>
+            <translation><!-- Swim Caps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Tees</masterLabel>
+            <translation><!-- Swim Tees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim Trunks &amp; Boardshorts</masterLabel>
+            <translation><!-- Swim Trunks &amp; Boardshorts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimwear</masterLabel>
+            <translation><!-- Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-Shirt</masterLabel>
+            <translation><!-- T-Shirt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-Shirts</masterLabel>
+            <translation><!-- T-Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-Shirts &amp; Polos</masterLabel>
+            <translation><!-- T-Shirts &amp; Polos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-Shirts, Polos &amp; Shirts</masterLabel>
+            <translation><!-- T-Shirts, Polos &amp; Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tailored</masterLabel>
+            <translation><!-- Tailored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tankinis</masterLabel>
+            <translation><!-- Tankinis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Apparel</masterLabel>
+            <translation><!-- Team Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Warmups</masterLabel>
+            <translation><!-- Team Warmups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tees &amp; Camis</masterLabel>
+            <translation><!-- Tees &amp; Camis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tees &amp; Tanks</masterLabel>
+            <translation><!-- Tees &amp; Tanks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thong</masterLabel>
+            <translation><!-- Thong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thongs</masterLabel>
+            <translation><!-- Thongs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ties</masterLabel>
+            <translation><!-- Ties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ties &amp; Pocket Squares</masterLabel>
+            <translation><!-- Ties &amp; Pocket Squares --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tights</masterLabel>
+            <translation><!-- Tights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Jeans</masterLabel>
+            <translation><!-- Tommy Jeans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tommy Sport</masterLabel>
+            <translation><!-- Tommy Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TommyXLewis</masterLabel>
+            <translation><!-- TommyXLewis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TommyXMercedes</masterLabel>
+            <translation><!-- TommyXMercedes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TommyXZendaya</masterLabel>
+            <translation><!-- TommyXZendaya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tops</masterLabel>
+            <translation><!-- Tops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tops &amp; Shirts</masterLabel>
+            <translation><!-- Tops &amp; Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tops &amp; Tanks</masterLabel>
+            <translation><!-- Tops &amp; Tanks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Towels</masterLabel>
+            <translation><!-- Towels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Gear</masterLabel>
+            <translation><!-- Training Gear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triathlon &amp; Wetsuits</masterLabel>
+            <translation><!-- Triathlon &amp; Wetsuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True Body</masterLabel>
+            <translation><!-- True Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True Everyday</masterLabel>
+            <translation><!-- True Everyday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True Lingerie</masterLabel>
+            <translation><!-- True Lingerie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True Weekend</masterLabel>
+            <translation><!-- True Weekend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trunks</masterLabel>
+            <translation><!-- Trunks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwear</masterLabel>
+            <translation><!-- Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwear &amp; Lounge</masterLabel>
+            <translation><!-- Underwear &amp; Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volleys</masterLabel>
+            <translation><!-- Volleys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallets</masterLabel>
+            <translation><!-- Wallets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallets &amp; Keychains</masterLabel>
+            <translation><!-- Wallets &amp; Keychains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches &amp; Jewelry</masterLabel>
+            <translation><!-- Watches &amp; Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches &amp; Suit Accessories</masterLabel>
+            <translation><!-- Watches &amp; Suit Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water Shoe</masterLabel>
+            <translation><!-- Water Shoe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wireless</masterLabel>
+            <translation><!-- Wireless --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

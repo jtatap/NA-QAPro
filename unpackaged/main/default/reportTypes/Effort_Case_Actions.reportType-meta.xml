@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>aeon2__EffortGroupAction__c</baseObject>
+    <category>cases</category>
+    <deployed>true</deployed>
+    <description>This should allow us to track AHT</description>
+    <label>Effort Case Actions</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>aeon2__EffortGroup__c</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>aeon2__Adjustable__c</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>aeon2__Visible__c</field>
+            <table>aeon2__EffortGroupAction__c</table>
+        </columns>
+        <masterLabel>Effort Group Case Actions</masterLabel>
+    </sections>
+</ReportType>

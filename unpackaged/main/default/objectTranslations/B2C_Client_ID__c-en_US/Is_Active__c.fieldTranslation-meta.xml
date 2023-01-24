@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... when checked - -  this B2C Client ID can be used authenticate against the B2C Commerce Account Manager. --></help>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </CustomFieldTranslation>

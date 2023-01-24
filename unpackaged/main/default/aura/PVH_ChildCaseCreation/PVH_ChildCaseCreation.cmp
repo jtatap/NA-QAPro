@@ -1,0 +1,83 @@
+<aura:component controller ='ChildCaseController' implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+   <ltng:require styles="/resource/SLDS_Stylesheet/assets/styles/salesforce-lightning-design-system-ltng.css" />
+<aura:attribute name="cases" type="Case[]"/>
+ <lightning:workspaceAPI aura:id="workspace" />
+ <!--<aura:attribute name="newCase" type="Case"
+     default="{ 'sobjectType': 'Case',
+                 'Subject': '',
+                 'Status': 'Pending',
+                 'Contact': '',
+                 'desc':''
+                   }"/>-->
+   <!--aura:handler event="force:refreshView" action="{!c.doInit}" /-->
+  <aura:attribute name="newCase" type="case" default="{'sobjectType' : 'case'}"/>
+  <aura:attribute name="listStatus" type="list" default="Pending" description="to store status field values"/>
+  <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+  <aura:attribute name="selectedId" type="String" />
+  <aura:attribute name="ContactId" type="String" />
+  <aura:attribute name="childCaseId" type="String" />
+  <aura:attribute name="recordId"  type="string"  />
+  <aura:attribute name="storeNumberatt"  type="string" />
+  <aura:attribute name="districtNumberatt"  type="string"/>
+  <aura:attribute name="manufactureratt"  type="string" />
+  <aura:attribute name="productCategoryatt"  type="string"/>
+  <aura:attribute name="skuStyleNumberatt"  type="string"/>
+    <aura:handler name="oSelectedContactEvent" event="c:SearchAllSelectionEvt" action="{!c.handleComponentEvent}"/>
+    <!--<aura:handler event="c:ContactLookupSelectionEvt" action="{!c.setSelectedContact}"/>-->
+  <!--<aura:attribute name="selectedContact" type="String"/>-->
+  <!-- Input Form using components -->
+    <lightning:spinner variant="brand" size="large" aura:id="Id_spinner" class="slds-hide" />
+ <div class="container">
+   <form class="slds-form--stacked">
+     <div class="slds-form-element slds-is-required">
+    <div class="slds-form-element__control">
+       <c:ContactLookup 
+                    objectAPIName="contact"
+                    aura:id="contact"
+                    label="Contact Name"
+                    returnFields="['Name','Email','Brand_Lookup_Search__c','LoyaltyID__c']"
+                    queryFields="['Name','Email','Brand_Lookup_Search__c','LoyaltyID__c']"
+                    selectedId="{!v.selectedId}"
+                    filter="CreatedDate > 1900-01-01T00:00:01Z" /> 
+       
+     <div class="slds-form-element">
+      <div class="slds-form-element__control">
+       <lightning:select aura:id="status" name="select" 
+                              label="Status" 
+                              onchange="{!c.onStatus}" 
+                              >
+           <aura:iteration items="{!v.listStatus}" var="status">
+                   <option value="{!status}" text="{!status}"></option>
+             </aura:iteration>
+    </lightning:select>
+       </div>
+     </div>   
+      <ui:inputText aura:id="subject" label="Subject"
+                    class="slds-input"
+                    labelClass="slds-form-element__label"
+                    value="{!v.newCase.Subject}"
+                    />
+     </div>
+   </div>
+   <div class="slds-form-element slds-is-required">
+     <div class="slds-form-element__control">
+        <lightning:input aura:id="desc" type="text" label="Description"
+                        value="{!v.newCase.Description}"
+                      />
+      </div>
+    </div>
+     <div class="slds-form-element">
+         <div style="padding-top:1px;">
+        <center>
+             <lightning:button label="Create" variant="Brand" onclick="{!c.handleSubmit}"/>
+          </center>
+      </div> 
+       </div>
+     </form>
+    </div>
+    
+    
+  
+    
+</aura:component>

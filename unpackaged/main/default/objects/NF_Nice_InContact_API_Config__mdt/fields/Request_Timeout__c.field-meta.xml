@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Timeout__c</fullName>
+    <defaultValue>10000</defaultValue>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The max time for which apex should wait for the response.
+Min: 1, Max: 120000, Default: 10000</inlineHelpText>
+    <label>Request Timeout(in ms)</label>
+    <precision>6</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

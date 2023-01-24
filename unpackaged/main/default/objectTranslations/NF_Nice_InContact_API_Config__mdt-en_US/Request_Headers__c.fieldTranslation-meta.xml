@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Key-value pairs of headers in JSON format. Eg. {&quot;Accept&quot;:&quot;application/json&quot;, &quot;Content-Type&quot;:&quot;application/json&quot;} --></help>
+        <label><!-- Request Headers --></label>
+        <name>Request_Headers__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Manage_Brands</name>
+    </customPermissions>
+    <description>This Permission Set gives the ability to edit and delete Brand Account Records</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Brand_Image_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Brand_Privacy_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Brand_Privacy_Form_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Brand_Privacy_OWA_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Privacy_Escalation_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Brands</label>
+    <recordTypeVisibilities>
+        <recordType>Account.Brand</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

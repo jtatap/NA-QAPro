@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission Set gives the ability to edit and delete Brand Account Records</description>
+    <isLicensed>false</isLicensed>
+    <label>Manage Brands</label>
+</CustomPermission>

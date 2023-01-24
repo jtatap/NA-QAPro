@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- XBR/Fraud Reasons --></label>
+        <name>XBR_Fraud_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Fraudulent Devalue (GC/MC)</masterLabel>
+            <translation><!-- Fraudulent Devalue (GC/MC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent Devalue (Loyalty)</masterLabel>
+            <translation><!-- Fraudulent Devalue (Loyalty) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

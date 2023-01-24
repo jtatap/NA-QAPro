@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>1 - TH Anchor</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>2 - Company Store/Outlet US</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>3 - Company Store/Oulet CA</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>4 - Specialty US</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>5 - Specialty CA</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>6 - Ecomm</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>7 - Canada Ecom</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>8 - General Registrants</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>9 - Giftee</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>10 - CK Collection</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>11 - All US</label>
+    </customValue>
+    <customValue>
+        <fullName>12</fullName>
+        <default>false</default>
+        <label>12 - All Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>VC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VC</label>
+    </customValue>
+    <customValue>
+        <fullName>OS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OS</label>
+    </customValue>
+    <customValue>
+        <fullName>CX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CX</label>
+    </customValue>
+    <customValue>
+        <fullName>CA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CA</label>
+    </customValue>
+    <customValue>
+        <fullName>CC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CC</label>
+    </customValue>
+    <customValue>
+        <fullName>CO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CO</label>
+    </customValue>
+    <customValue>
+        <fullName>CK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CK</label>
+    </customValue>
+    <customValue>
+        <fullName>TX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TX</label>
+    </customValue>
+    <customValue>
+        <fullName>TI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TI</label>
+    </customValue>
+    <customValue>
+        <fullName>TS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TS</label>
+    </customValue>
+    <customValue>
+        <fullName>TC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TC</label>
+    </customValue>
+    <customValue>
+        <fullName>TH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TH</label>
+    </customValue>
+    <customValue>
+        <fullName>TO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TO</label>
+    </customValue>
+    <masterLabel>Channel</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

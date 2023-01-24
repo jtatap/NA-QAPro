@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Availability Questions</fullName>
+                <default>false</default>
+                <label>Availability Questions</label>
+            </value>
+            <value>
+                <fullName>Quality Concerns</fullName>
+                <default>false</default>
+                <label>Quality Concerns</label>
+            </value>
+            <value>
+                <fullName>Sizing Questions</fullName>
+                <default>false</default>
+                <label>Sizing Questions</label>
+            </value>
+            <value>
+                <fullName>Care Instructions</fullName>
+                <default>false</default>
+                <label>Care Instructions</label>
+            </value>
+            <value>
+                <fullName>Product Feedback</fullName>
+                <default>false</default>
+                <label>Product Feedback</label>
+            </value>
+            <value>
+                <fullName>Problem Placing Order</fullName>
+                <default>false</default>
+                <label>Problem Placing Order</label>
+            </value>
+            <value>
+                <fullName>Tracking Order Shipment</fullName>
+                <default>false</default>
+                <label>Tracking Order Shipment</label>
+            </value>
+            <value>
+                <fullName>Edit Existing Order</fullName>
+                <default>false</default>
+                <label>Edit Existing Order</label>
+            </value>
+            <value>
+                <fullName>Cancel Order</fullName>
+                <default>false</default>
+                <label>Cancel Order</label>
+            </value>
+            <value>
+                <fullName>Missing/Damaged Product</fullName>
+                <default>false</default>
+                <label>Missing/Damaged Product</label>
+            </value>
+            <value>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+                <label>Return Policy</label>
+            </value>
+            <value>
+                <fullName>Returning Order</fullName>
+                <default>false</default>
+                <label>Returning Order</label>
+            </value>
+            <value>
+                <fullName>Creating Return Label</fullName>
+                <default>false</default>
+                <label>Creating Return Label</label>
+            </value>
+            <value>
+                <fullName>Tracking Return</fullName>
+                <default>false</default>
+                <label>Tracking Return</label>
+            </value>
+            <value>
+                <fullName>Return Status</fullName>
+                <default>false</default>
+                <label>Return Status</label>
+            </value>
+            <value>
+                <fullName>Signing Up</fullName>
+                <default>false</default>
+                <label>Signing Up</label>
+            </value>
+            <value>
+                <fullName>Program Questions</fullName>
+                <default>false</default>
+                <label>Program Questions</label>
+            </value>
+            <value>
+                <fullName>Adding Points</fullName>
+                <default>false</default>
+                <label>Adding Points</label>
+            </value>
+            <value>
+                <fullName>Redeeming Rewards</fullName>
+                <default>false</default>
+                <label>Redeeming Rewards</label>
+            </value>
+            <value>
+                <fullName>Account Balance</fullName>
+                <default>false</default>
+                <label>Account Balance</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>Update Information</fullName>
+                <default>false</default>
+                <label>Update Information</label>
+            </value>
+            <value>
+                <fullName>Problem Receiving</fullName>
+                <default>false</default>
+                <label>Problem Receiving</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe</fullName>
+                <default>false</default>
+                <label>Unsubscribe</label>
+            </value>
+            <value>
+                <fullName>Access My Data</fullName>
+                <default>false</default>
+                <label>Access My Data</label>
+            </value>
+            <value>
+                <fullName>Delete My Data</fullName>
+                <default>false</default>
+                <label>Delete My Data</label>
+            </value>
+            <value>
+                <fullName>Data Owner Request</fullName>
+                <default>false</default>
+                <label>Data Owner Request</label>
+            </value>
+            <value>
+                <fullName>Privacy Email</fullName>
+                <default>false</default>
+                <label>Privacy Email</label>
+            </value>
+            <value>
+                <fullName>Rectify My Data</fullName>
+                <default>false</default>
+                <label>Rectify My Data</label>
+            </value>
+            <value>
+                <fullName>Do Not Sell/Share</fullName>
+                <default>false</default>
+                <label>Do Not Sell/Share</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Availability Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Quality Concerns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Sizing Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Care Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Product Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Problem Placing Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Tracking Order Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Edit Existing Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Cancel Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Missing/Damaged Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Return Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Returning Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Creating Return Label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Tracking Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Returns</controllingFieldValue>
+            <valueName>Return Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Signing Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Program Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Adding Points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Redeeming Rewards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Account Balance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loyalty</controllingFieldValue>
+            <valueName>Password Reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Update Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Problem Receiving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Unsubscribe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privacy</controllingFieldValue>
+            <valueName>Access My Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privacy</controllingFieldValue>
+            <valueName>Delete My Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privacy</controllingFieldValue>
+            <valueName>Data Owner Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privacy</controllingFieldValue>
+            <valueName>Privacy Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privacy</controllingFieldValue>
+            <valueName>Rectify My Data</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

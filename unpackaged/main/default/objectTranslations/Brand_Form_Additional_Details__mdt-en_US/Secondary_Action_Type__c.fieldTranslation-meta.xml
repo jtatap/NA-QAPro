@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- DEFLECT:  Displays message defined in &quot;Additional Information&quot; fields and the &quot;Submit&quot; button
+
+BLOCK:  DOES NOT display message, file upload section and &quot;Submit&quot; button
+
+QUESTION/SUBMIT:  Displays message defined in &quot;Additional Information&quot; fields and the &quot;Submit&quot; button --></help>
+        <label><!-- Secondary Action Type --></label>
+        <name>Secondary_Action_Type__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deflect</masterLabel>
+            <translation><!-- Deflect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question/Submit</masterLabel>
+            <translation><!-- Question/Submit --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

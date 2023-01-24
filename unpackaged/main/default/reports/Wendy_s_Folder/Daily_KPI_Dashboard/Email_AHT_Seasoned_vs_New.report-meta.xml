@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(aeon2__Log__c.aeon2__Total__c:SUM - aeon2__Log__c.aeon2__Idle__c:SUM)/CASE_NUMBER:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sum of Overall Time</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Handle Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Case.Total_Active_Time__c:SUM/RowCount)/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total Active Time (seconds)</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Active Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_64497918</developerName>
+        <masterLabel>Agent Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FK_CUSTENT_OWNER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Zachary Pavlocak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jenna Martemucci</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathrina Giles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stefany Berni</sourceValue>
+            </sourceValues>
+            <value>Group 0</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ana Dawson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angelica Colon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barbara Friday</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billie McDowell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Breanna Harris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlette Mayers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Margot Cerutti</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Sondak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Giunta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nina Tripodi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiana Parker</sourceValue>
+            </sourceValues>
+            <value>Group 1A</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erin Neary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Faith Ortiz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Iateaka Lizardo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jentaura Cobb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Mancusi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kia Bowers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lexi Newton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lydia Balogh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Payal Trivedi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Porscha Dillard-Morton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roniesha Scott</sourceValue>
+            </sourceValues>
+            <value>Group 1B</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kimberly Rivas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kareemah Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shannon Lombardi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Salgado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Veronica Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Carmody</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Lugo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amanda Myers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristen Kalapick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Arlene Abreu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicoletta Pantelyat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frank Portuesi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lailah Chavez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bridget Mastrorilli</sourceValue>
+            </sourceValues>
+            <value>Group 2A</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bethany Bryant</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Imani Thomas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Milan Afflitto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leah Rainbow</sourceValue>
+            </sourceValues>
+            <value>Group 3A</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_20999152</developerName>
+        <masterLabel>Case Vertical</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chat</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FK_$aeon2__Day__c.aeon2__Date__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_64497918</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>aeon2__Log__c.aeon2__Total__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>aeon2__Log__c.aeon2__Idle__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>CASE_ID</primaryTableColumn>
+        <relatedTable>EmailMessage</relatedTable>
+        <relatedTableJoinColumn>Parent</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Phone,Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Duplicate_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>aeon2__Log__c.aeon2__Total__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>0.3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Resolved,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUSTENT_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Aliyah,Elizabeth Cruz,Hymein,Caroline,Ann Marie Stevens,Keith</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUSTENT_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Jessica Bensinger,Alexis Rios,Andrew R</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>11</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalWeek</dateGranularity>
+        <field>FK_$aeon2__Day__c.aeon2__Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_64497918</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_CUSTENT_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Email AHT (Seasoned vs. New)</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$aeon2__Log__c@aeon2__Log__c.aeon2__Day__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_$aeon2__Day__c.aeon2__Date__c</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

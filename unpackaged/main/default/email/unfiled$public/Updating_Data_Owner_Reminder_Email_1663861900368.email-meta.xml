@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Correcting Request Data Owner Reminder Emails 5/10/15/Privacy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Correcting Data Owner Reminder Email</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>REMINDER - Action Required: {{{Case.Brand__c}}}  Personal Data Rectification Request {{{Case.CaseNumber}}}​​​​​​​</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the count of failed authToken requests brokered via the B2C Commerce Account Manager. --></help>
+        <label><!-- Total Failure Count --></label>
+        <name>Total_Failure_Count__c</name>
+    </CustomFieldTranslation>

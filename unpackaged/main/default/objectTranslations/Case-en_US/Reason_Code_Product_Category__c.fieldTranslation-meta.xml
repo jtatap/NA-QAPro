@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason Code Product Category --></label>
+        <name>Reason_Code_Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activewear</masterLabel>
+            <translation><!-- Activewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bags/Wallets</masterLabel>
+            <translation><!-- Bags/Wallets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bottoms</masterLabel>
+            <translation><!-- Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cosmetic Products</masterLabel>
+            <translation><!-- Cosmetic Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dress Shirts</masterLabel>
+            <translation><!-- Dress Shirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dresses/Skirts</masterLabel>
+            <translation><!-- Dresses/Skirts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footwear</masterLabel>
+            <translation><!-- Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fragrances</masterLabel>
+            <translation><!-- Fragrances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Products</masterLabel>
+            <translation><!-- Home Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infant</masterLabel>
+            <translation><!-- Infant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeans/Denim</masterLabel>
+            <translation><!-- Jeans/Denim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luggage</masterLabel>
+            <translation><!-- Luggage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirts/Tops/Blouses/Polos</masterLabel>
+            <translation><!-- Shirts/Tops/Blouses/Polos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suiting/Formal Wear</masterLabel>
+            <translation><!-- Suiting/Formal Wear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweaters/Wovens</masterLabel>
+            <translation><!-- Sweaters/Wovens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimwear</masterLabel>
+            <translation><!-- Swimwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tops</masterLabel>
+            <translation><!-- Tops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwear</masterLabel>
+            <translation><!-- Underwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches/Jewelry</masterLabel>
+            <translation><!-- Watches/Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Form Submission</masterLabel>
+            <translation><!-- Web Form Submission --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

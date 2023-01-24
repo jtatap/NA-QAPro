@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Retail Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business_Group__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Associate Discount</fullName>
+                <default>false</default>
+                <label>Associate Discount</label>
+            </value>
+            <value>
+                <fullName>Cash Discrepancy</fullName>
+                <default>false</default>
+                <label>Cash Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Customer Warning</fullName>
+                <default>false</default>
+                <label>Customer Warning</label>
+            </value>
+            <value>
+                <fullName>Incident Report</fullName>
+                <default>false</default>
+                <label>Incident Report</label>
+            </value>
+            <value>
+                <fullName>Locate Product</fullName>
+                <default>false</default>
+                <label>Locate Product</label>
+            </value>
+            <value>
+                <fullName>Loyalty (Bulk Buying)</fullName>
+                <default>false</default>
+                <label>Loyalty (Bulk Buying)</label>
+            </value>
+            <value>
+                <fullName>Loyalty (General)</fullName>
+                <default>false</default>
+                <label>Loyalty (General)</label>
+            </value>
+            <value>
+                <fullName>Loyalty (Technical)</fullName>
+                <default>false</default>
+                <label>Loyalty (Technical)</label>
+            </value>
+            <value>
+                <fullName>Order (E-Commerce)</fullName>
+                <default>false</default>
+                <label>Order (E-Commerce)</label>
+            </value>
+            <value>
+                <fullName>Order (Special Order)</fullName>
+                <default>false</default>
+                <label>Order (Special Order)</label>
+            </value>
+            <value>
+                <fullName>Return (Credit Card)</fullName>
+                <default>false</default>
+                <label>Return (Credit Card)</label>
+            </value>
+            <value>
+                <fullName>Return (General)</fullName>
+                <default>false</default>
+                <label>Return (General)</label>
+            </value>
+            <value>
+                <fullName>Return (Klarna)</fullName>
+                <default>false</default>
+                <label>Return (Klarna)</label>
+            </value>
+            <value>
+                <fullName>Return (PayPal)</fullName>
+                <default>false</default>
+                <label>Return (PayPal)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Associate Discount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Cash Discrepancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Customer Warning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Incident Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Locate Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Loyalty (Bulk Buying)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Loyalty (General)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Loyalty (Technical)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Order (E-Commerce)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Order (Special Order)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Return (Credit Card)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Return (General)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Return (Klarna)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tommy Hilfiger - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Tommy Hilfiger - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Field (Stores)</controllingFieldValue>
+            <controllingFieldValue>Calvin Klein - Retail Operations</controllingFieldValue>
+            <controllingFieldValue>Corporate - HR</controllingFieldValue>
+            <valueName>Return (PayPal)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

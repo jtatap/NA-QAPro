@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Calvin Klein</label>
+    <protected>false</protected>
+    <values>
+        <field>Brand_Code__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Brand_Name__c</field>
+        <value xsi:type="xsd:string">Calvin Klein</value>
+    </values>
+    <values>
+        <field>Case_Success_Message__c</field>
+        <value xsi:type="xsd:string">Thank you for contacting CalvinKlein.us Customer Service. Your submission has been successfully received. Your case number is &lt;b&gt;CASENUMBER&lt;/b&gt;.</value>
+    </values>
+    <values>
+        <field>Check_Order_Status_At__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Logo_URL__c</field>
+        <value xsi:type="xsd:string">/img/CK.svg</value>
+    </values>
+    <values>
+        <field>Password_Reset_At__c</field>
+        <value xsi:type="xsd:string">https://www.calvinklein.us/ResetPasswordGuestErrorView?catalogId=12101&amp;state=forgetpassword&amp;langId=-1&amp;storeId=10751</value>
+    </values>
+    <values>
+        <field>Show_Logo__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Track_Order_At__c</field>
+        <value xsi:type="xsd:string">https://www.calvinklein.us/TrackYourOrderView?catalogId=12101&amp;langId=-1&amp;storeId=10751</value>
+    </values>
+    <values>
+        <field>Use_Single_Brand_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

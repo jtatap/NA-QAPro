@@ -1,0 +1,20 @@
+.THIS {
+}
+
+.customFont.THIS{
+     font-size:18px;
+}
+.THIS .buttonClass{
+    background-color:#006DCC;
+    color: #fff; 
+}
+.THIS .slds-form-element__label{
+    font-size: 0.875rem !important;
+    color:black;
+}
+.THIS .field-title{
+   color: #3E3E3C;
+}
+.THIS .custom-box {
+    padding: 1rem;
+}

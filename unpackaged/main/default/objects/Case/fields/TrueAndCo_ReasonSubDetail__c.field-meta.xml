@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrueAndCo_ReasonSubDetail__c</fullName>
+    <externalId>false</externalId>
+    <label>TrueAndCo_ReasonSubDetail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TrueAndCo_ReasonCodeDetails__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Address Line Issue</fullName>
+                <default>false</default>
+                <label>Address Line Issue</label>
+            </value>
+            <value>
+                <fullName>Broken Clasp</fullName>
+                <default>false</default>
+                <label>Broken Clasp</label>
+            </value>
+            <value>
+                <fullName>Broken Hyperlink</fullName>
+                <default>false</default>
+                <label>Broken Hyperlink</label>
+            </value>
+            <value>
+                <fullName>Browser Issues/Clear Cache</fullName>
+                <default>false</default>
+                <label>Browser Issues/Clear Cache</label>
+            </value>
+            <value>
+                <fullName>Check Inventory</fullName>
+                <default>false</default>
+                <label>Check Inventory</label>
+            </value>
+            <value>
+                <fullName>Checkout Error</fullName>
+                <default>false</default>
+                <label>Checkout Error</label>
+            </value>
+            <value>
+                <fullName>Color Bleeding</fullName>
+                <default>false</default>
+                <label>Color Bleeding</label>
+            </value>
+            <value>
+                <fullName>Email Link Not Working</fullName>
+                <default>false</default>
+                <label>Email Link Not Working</label>
+            </value>
+            <value>
+                <fullName>Fabric Stretching</fullName>
+                <default>false</default>
+                <label>Fabric Stretching</label>
+            </value>
+            <value>
+                <fullName>Fabric Torn</fullName>
+                <default>false</default>
+                <label>Fabric Torn</label>
+            </value>
+            <value>
+                <fullName>Fit Quiz No Match</fullName>
+                <default>false</default>
+                <label>Fit Quiz No Match</label>
+            </value>
+            <value>
+                <fullName>Gift Card Error</fullName>
+                <default>false</default>
+                <label>Gift Card Error</label>
+            </value>
+            <value>
+                <fullName>Incorrect Description</fullName>
+                <default>false</default>
+                <label>Incorrect Description</label>
+            </value>
+            <value>
+                <fullName>Incorrect Image</fullName>
+                <default>false</default>
+                <label>Incorrect Image</label>
+            </value>
+            <value>
+                <fullName>Incorrect Items Advertised</fullName>
+                <default>false</default>
+                <label>Incorrect Items Advertised</label>
+            </value>
+            <value>
+                <fullName>Incorrect Pricing</fullName>
+                <default>false</default>
+                <label>Incorrect Pricing</label>
+            </value>
+            <value>
+                <fullName>Login Issue</fullName>
+                <default>false</default>
+                <label>Login Issue</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Issue</fullName>
+                <default>false</default>
+                <label>Manufacturing Issue</label>
+            </value>
+            <value>
+                <fullName>Material Rolling</fullName>
+                <default>false</default>
+                <label>Material Rolling</label>
+            </value>
+            <value>
+                <fullName>Order Cancellation</fullName>
+                <default>false</default>
+                <label>Order Cancellation</label>
+            </value>
+            <value>
+                <fullName>PayPal Error</fullName>
+                <default>false</default>
+                <label>PayPal Error</label>
+            </value>
+            <value>
+                <fullName>Plus/Extended Sizing</fullName>
+                <default>false</default>
+                <label>Plus/Extended Sizing</label>
+            </value>
+            <value>
+                <fullName>Promo Code Error</fullName>
+                <default>false</default>
+                <label>Promo Code Error</label>
+            </value>
+            <value>
+                <fullName>Promotion Not Working</fullName>
+                <default>false</default>
+                <label>Promotion Not Working</label>
+            </value>
+            <value>
+                <fullName>Referral Code Error</fullName>
+                <default>false</default>
+                <label>Referral Code Error</label>
+            </value>
+            <value>
+                <fullName>Reorder</fullName>
+                <default>false</default>
+                <label>Reorder</label>
+            </value>
+            <value>
+                <fullName>Restock Inquiry</fullName>
+                <default>false</default>
+                <label>Restock Inquiry</label>
+            </value>
+            <value>
+                <fullName>Return/Exchange Error</fullName>
+                <default>false</default>
+                <label>Return/Exchange Error</label>
+            </value>
+            <value>
+                <fullName>Split Seam</fullName>
+                <default>false</default>
+                <label>Split Seam</label>
+            </value>
+            <value>
+                <fullName>Stitching</fullName>
+                <default>false</default>
+                <label>Stitching</label>
+            </value>
+            <value>
+                <fullName>Straps</fullName>
+                <default>false</default>
+                <label>Straps</label>
+            </value>
+            <value>
+                <fullName>Underwire Issue</fullName>
+                <default>false</default>
+                <label>Underwire Issue</label>
+            </value>
+            <value>
+                <fullName>Wrinkled/Bent Pads</fullName>
+                <default>false</default>
+                <label>Wrinkled/Bent Pads</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>Address Line Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>Checkout Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>Gift Card Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>PayPal Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>Promo Code Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shopping Cart</controllingFieldValue>
+            <valueName>Referral Code Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>Check Inventory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>Plus/Extended Sizing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>Reorder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>Restock Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Broken Clasp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Color Bleeding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Fabric Stretching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Fabric Torn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Manufacturing Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Material Rolling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Split Seam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Stitching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Straps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Underwire Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective</controllingFieldValue>
+            <valueName>Wrinkled/Bent Pads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Email Link Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Incorrect Items Advertised</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Promotion Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PDP</controllingFieldValue>
+            <valueName>Incorrect Description</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PDP</controllingFieldValue>
+            <valueName>Incorrect Image</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PDP</controllingFieldValue>
+            <valueName>Incorrect Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Broken Hyperlink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Browser Issues/Clear Cache</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Fit Quiz No Match</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Login Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Order Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Return/Exchange Error</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

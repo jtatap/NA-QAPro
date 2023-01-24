@@ -1,0 +1,68 @@
+<template>
+    <span if:true={isText}>
+		<lightning-input type={field.fieldType}
+						 label={field.fieldLabel}
+						 required={field.isRequired}
+						 class="form-input theField"
+						 pattern={field.pattern}
+						 disabled={field.disabled}
+						 message-when-pattern-mismatch={field.messageWhenPatternMismatch}
+						 message-when-too-short={field.messageWhenTooShort}
+						 min-length={field.minLength}>
+		</lightning-input>
+	</span>
+	<span if:true={isPicklist}>
+		<div class="slds-form-element">
+			<span class="required-symbol" if:true={field.isRequired}>*&nbsp;</span>
+			<label for="picklist" class="picklist-label theField slds-form-element__label">{field.fieldLabel}</label><br/>
+			<select name={field.fieldName} 
+					id="picklist" 
+					onchange={handlePicklistChange}
+					class="form-input theField form-picklist slds-input">
+				<template for:each={displayOptions} for:item="op">
+					<option value={op.value} key={op.key} data-id={op.developerName}>{op.label}</option>
+				</template>
+			</select>
+		</div>
+	</span>
+	<span if:true={isTextArea}>
+		<lightning-textarea label={field.fieldLabel}
+							required={field.isRequired}
+							class="form-input theField"
+							disabled={field.disabled}>
+		</lightning-textarea>
+	</span>
+	<template for:each={ComplexPayload} for:item="input">
+		<div class="slds-m-vertical_medium" key={input.key}>
+			<template if:true={input.isText}>
+				<lightning-formatted-rich-text value={input.value} class="additional-text theField">
+				</lightning-formatted-rich-text>
+			</template>
+			<template if:true={input.isInput}>
+				<lightning-input type={input.type}
+								label={input.label}
+								name={input.name}
+								class="additional-field theField">
+				</lightning-input>
+			</template>
+			<template if:true={input.isRadio}>
+				<p class="theField">
+					{input.label}
+				</p>
+				<template for:each={input.options} for:item="op">
+					<section key={op.key} class="slds-m-vertical_x-small">
+						<input type="radio" 
+							   id={op.value} 
+							   name={input.name} 
+							   value={op.value}
+							   class="additional-field theField add-radio"/>
+						<label for={op.value}
+							   class="theField">
+							{op.label}
+						</label>
+					</section>
+				</template>
+			</template>
+		</div>
+	</template>
+</template>

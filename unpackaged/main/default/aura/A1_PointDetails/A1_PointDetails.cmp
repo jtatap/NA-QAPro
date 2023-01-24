@@ -1,0 +1,112 @@
+<aura:component access="global">
+	<!--Declare Attribute-->
+    <aura:attribute name="pointWrapper" type="object"/>
+    <aura:attribute name="indexRow" type="Integer"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:overlayLibrary aura:id="overlayTransactionDetail"/>
+   
+    <!--Component Start--> 
+    <div class="slds-page-header">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-opportunity">
+                            <lightning:icon iconName="standard:lead_insights" alternativeText="Points" />
+                        </span>
+                    </div>
+                    <div class="slds-page-header__name">
+                    <div class="slds-page-header__name-title">
+                        <h1>
+                         <span>Points</span>
+                            <span class="slds-page-header__title slds-truncate" title="Recently Viewed ">C/S Issued Points</span>
+                        </h1>
+                    </div>
+                </div>
+               </div>
+             </div>
+        </div>
+    </div>
+    <div class="slds-grid">
+        <div class="slds-col">
+        	<lightning:layout >
+                <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" >Type</p>
+                        <label class="slds-form-element__label">{!v.pointWrapper.Type}</label>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+		<div class="slds-col">
+        	<lightning:layout >
+                <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" >Points Issued</p>
+                        <label class="slds-form-element__label">{!v.pointWrapper.PointsIssued}</label>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </div>
+    <div class="slds-tabs_default">
+        <ul class="slds-tabs_default__nav" role="tablist">
+            <li class="slds-tabs_default__item slds-is-active" title="Detail" role="presentation">   
+               <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Details</a>
+        	</li>
+        </ul>
+    </div>
+    <h3 class="slds-section-title--divider">Information</h3>
+    <div class="c-container">
+        <lightning:layout multipleRows="true">
+           <!-- <aura:if isTrue="{!v.pointWrapper.Category == 'Transaction'}"> -->
+            <!-- Show HyperLink only When Category=Transaction AND Type=Purchase -->
+            <aura:if isTrue="{! and(v.pointWrapper.Category == 'Transaction',v.pointWrapper.Type == 'Purchase')}">
+                <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                        <p class="field-title">Description</p>
+                        <p class="slds-form-element__label"><a href="javascript:void(0)" onclick="{!c.handleTransactionClick}">{!v.pointWrapper.Description}</a></p>                    
+                </lightning:layoutItem>            
+                <aura:set attribute="else">
+                        <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                            <p class="field-title">Description</p>
+                            <label class="slds-form-element__label">{!v.pointWrapper.Description}</label>
+                        </lightning:layoutItem>
+                </aura:set>
+            </aura:if>            
+            <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                    <p class="field-title">Issue Date</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.IssueDate}</label>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                <div class="header-column">
+                    <p class="field-title" >Case Number</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.Casenumber}</label>
+                </div>
+            </lightning:layoutItem>
+              <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                <div class="header-column">
+                    <p class="field-title" >Type</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.Type}</label>
+                </div>
+            </lightning:layoutItem>
+              <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                    <p class="field-title" >Points Issued</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.PointsIssued}</label>
+            </lightning:layoutItem>
+            <!--
+            <lightning:layoutItem size="12" mediumDeviceSize="6" padding="small">
+                    <p class="field-title" >Reason Code</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.ReasonCode}</label>
+            </lightning:layoutItem>
+			-->
+            <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
+                    <p class="field-title" >Transaction Id</p>
+                    <label class="slds-form-element__label">{!v.pointWrapper.Description}</label>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <div>
+            <lightning:button class="slds-align_absolute-center slds-m-top_x-small buttonClass" label="Cancel" onclick="{!c.handleCloseModal}"/>
+        </div>
+  </div>
+    <!--Component End-->
+</aura:component>

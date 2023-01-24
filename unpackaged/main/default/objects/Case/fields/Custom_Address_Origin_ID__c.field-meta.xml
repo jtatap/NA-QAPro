@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Address_Origin_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Carrier__c),
+&quot;FedEx Jonesville&quot;, &quot;a101U000002suh3QAA&quot;,
+&quot;Fedex Bridgewater&quot;, &quot;a101U000002suhDQAQ&quot;,
+&quot;UPS - HR&quot;, &quot;a101U000002suhIQAQ&quot;,
+&quot;UPS - CK&quot;, &quot;a101U000002t2aFQAQ&quot;,
+&quot;UPS - TH&quot;, &quot;a101U000002t2aPQAQ&quot;,
+&quot;UPS - SP&quot;, &quot;a101U000002t2aUQAQ&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom Address Origin ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

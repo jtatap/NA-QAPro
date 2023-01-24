@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Community</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calvin Klein - CA</fullName>
+                <default>true</default>
+                <label>Calvin Klein - CA</label>
+            </value>
+            <value>
+                <fullName>Calvin Klein Community</fullName>
+                <default>false</default>
+                <label>Calvin Klein Community</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

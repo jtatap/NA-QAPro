@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check if answer is &quot;Yes.&quot; --></help>
+        <label><!-- Billing Address Not Verified --></label>
+        <name>Billing_Address_Not_Verified__c</name>
+    </CustomFieldTranslation>

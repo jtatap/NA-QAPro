@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Carrier --></label>
+        <name>Carrier__c</name>
+        <picklistValues>
+            <masterLabel>Fedex Bridgewater</masterLabel>
+            <translation><!-- Fedex Bridgewater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fedex Jonesville</masterLabel>
+            <translation><!-- Fedex Jonesville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS - CK</masterLabel>
+            <translation><!-- UPS - CK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS - HR</masterLabel>
+            <translation><!-- UPS - HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS - SP</masterLabel>
+            <translation><!-- UPS - SP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS - TH</masterLabel>
+            <translation><!-- UPS - TH --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Futura Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Book'), url('FuturaStdBook.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Book Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Book Oblique'), url('FuturaStdBookOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Light Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Light Condensed'), url('FuturaStdCondensedLight.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Light'), url('FuturaStdLight.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Light Condensed Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Light Condensed Oblique'), url('FuturaStdCondensedLightObl.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Light Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Light Oblique'), url('FuturaStdLightOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Medium Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Medium Condensed'), url('FuturaStdCondensed.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Medium'), url('FuturaStdMedium.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Medium Condensed Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Medium Condensed Oblique'), url('FuturaStdCondensedOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Medium Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Medium Oblique'), url('FuturaStdMediumOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Heavy'), url('FuturaStdHeavy.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Heavy Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Heavy Oblique'), url('FuturaStdHeavyOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Bold'), url('FuturaStdBold.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Bold Condensed'), url('FuturaStdCondensedBold.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Bold Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Bold Oblique'), url('FuturaStdBoldOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Bold Condensed Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Bold Condensed Oblique'), url('FuturaStdCondensedBoldObl.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Extra Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Extra Bold Condensed'), url('FuturaStdCondensedExtraBd.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Extra Bold'), url('FuturaStdExtraBold.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Extra Bold Condensed Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Extra Bold Condensed Oblique'), url('FuturaStdCondExtraBoldObl.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Std Extra Bold Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura Std Extra Bold Oblique'), url('FuturaStdExtraBoldOblique.woff?orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9') format('woff');
+}

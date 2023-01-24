@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tommy_Hilfiger</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Label__c</columns>
+    <columns>Value__c</columns>
+    <columns>Order__c</columns>
+    <columns>Help_Topics__c</columns>
+    <columns>Secondary_Action_Type__c</columns>
+    <columns>Additional_Information_ECom_Single__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DeveloperName</field>
+        <operation>notContain</operation>
+        <value>_Warner</value>
+    </filters>
+    <filters>
+        <field>DeveloperName</field>
+        <operation>notContain</operation>
+        <value>_Olga</value>
+    </filters>
+    <filters>
+        <field>DeveloperName</field>
+        <operation>notContain</operation>
+        <value>_CK</value>
+    </filters>
+    <filters>
+        <field>DeveloperName</field>
+        <operation>notContain</operation>
+        <value>_CK_CA</value>
+    </filters>
+    <label>Tommy Hilfiger</label>
+</ListView>

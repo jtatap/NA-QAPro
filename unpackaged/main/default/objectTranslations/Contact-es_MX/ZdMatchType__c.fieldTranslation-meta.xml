@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- ZdMatchType --></label>
+        <name>ZdMatchType__c</name>
+        <picklistValues>
+            <masterLabel>MultipleMatchByEmailFirstName</masterLabel>
+            <translation><!-- MultipleMatchByEmailFirstName --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MultipleMatchByPhoneFirstName</masterLabel>
+            <translation><!-- MultipleMatchByPhoneFirstName --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New-NoEmailMatch</masterLabel>
+            <translation><!-- New-NoEmailMatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New-NoPhoneMatch</masterLabel>
+            <translation><!-- New-NoPhoneMatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New-noEmailorPhoneInSource</masterLabel>
+            <translation><!-- New-noEmailorPhoneInSource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UniqueMatchByEmail</masterLabel>
+            <translation><!-- UniqueMatchByEmail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UniqueMatchByEmailFirstName</masterLabel>
+            <translation><!-- UniqueMatchByEmailFirstName --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UniqueMatchByPhone</masterLabel>
+            <translation><!-- UniqueMatchByPhone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UniqueMatchByPhoneFirstName</masterLabel>
+            <translation><!-- UniqueMatchByPhoneFirstName --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

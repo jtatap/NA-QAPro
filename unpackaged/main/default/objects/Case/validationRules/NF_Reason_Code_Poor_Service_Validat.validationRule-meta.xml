@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Reason_Code_Poor_Service_Validat</fullName>
+    <active>false</active>
+    <description>This validation rule checks that if Reason Code details is set to Poor Service that a district number and store number is addedZdPVHDateofServiceIssue__c</description>
+    <errorConditionFormula>AND(
+    NFCaseScenario__r.Name = &quot;Corporate: Reporting Poor Service at a Company Store&quot;,
+    OR(
+        ISBLANK(ZdPVHStoreNumber__c),
+        ISBLANK(ZdPVHDistrictNumber__c),
+        ISBLANK(ZdPVHDateofServiceIssue__c)
+        ),
+    Supervisor_Data_Validation_Override__c = FALSE   
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid Store Number,District Number and Date of service Issue</errorMessage>
+</ValidationRule>

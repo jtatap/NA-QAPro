@@ -1,0 +1,38 @@
+.THIS .reg {
+    margin-top : 10px;
+    background-color: black;
+    color: white;
+    border-radius:8px;
+    width: 270px;
+    padding: 5px;
+}
+
+.THIS .anon {
+    margin-top: 10px;
+    background-color:gray;
+    color: white;
+    border-radius:8px;
+    width: 270px;
+	padding: 5px;
+}
+.THIS .datTab {
+    margin-top: 10px;
+}
+
+.THIS .reg:hover {
+    background-color:#002ead;
+      transition: 0.7s;
+}
+
+.THIS .anon:hover	 {
+    background-color:#002ead;
+      transition: 0.7s;
+}
+.THIS.crd {
+    border-style: solid;
+    border-color: #D3D3D3;
+  border-width: 2px;
+}
+.THIS.err{
+    padding-top: 200px;
+}

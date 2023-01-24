@@ -1,0 +1,4829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_Request</fullName>
+    <active>true</active>
+    <businessProcess>Support Case</businessProcess>
+    <compactLayoutAssignment>Corporate_Request</compactLayoutAssignment>
+    <description>Cases submitted via internal corporate request form</description>
+    <label>Corporate Request</label>
+    <picklistValues>
+        <picklist>Accounting_Sales_Audit_Reasons__c</picklist>
+        <values>
+            <fullName>Confirm Mailing Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Failure %28IDOC%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brand__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Group__c</picklist>
+        <values>
+            <fullName>Calvin Klein - Retail Field %28Stores%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calvin Klein - Retail Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calvin Klein - Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - Internal Audit-XBR%2FFraud Investigations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - Legal%2FRisk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - Loss Prevention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - PR%2FSocial Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate - Sales Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heritage - Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVH ANZD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVH Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVH Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TUG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger - Retail Field %28Stores%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger - Retail Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger - Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSR_Email_UserConfirmation__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier__c</picklist>
+        <values>
+            <fullName>Fedex Bridgewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fedex Jonesville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - CK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - TH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Source_Country__c</picklist>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel__c</picklist>
+        <values>
+            <fullName>Amazon%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calvin Klein Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CalvinKlein%2Eca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CalvinKlein%2Eus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Izod%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordstrom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Olga%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speedo%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SpeedoUSA%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Heusen %7C IZOD Company Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VanHeusen%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warner%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>styleBureau%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>trueandco%2Ecom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country_of_Residence__c</picklist>
+        <values>
+            <fullName>Afghanistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andorra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anguilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antigua %26 Barbuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argentina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azerbaijan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahamas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bangladesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barbados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belarus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhutan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bolivia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnia %26 Herzegovina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botswana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brazil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brunei Darussalam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulgaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burkina Faso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burundi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambodia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cameroon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cape Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cayman Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central African Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colombia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comoros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo%2C Democratic Republic of %28DRC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costa Rica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Croatia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyprus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Djibouti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominican Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecuador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egypt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equatorial Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eritrea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethiopia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Guiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gabon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambia%2C Republic of The</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Great Britain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guatemala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea-Bissau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guyana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haiti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honduras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hungary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iceland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iraq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ivory Coast %28Cote d%27Ivoire%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jamaica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jordan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kazakhstan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea%2C Democratic Republic of %28North Korea%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea%2C Republic of %28South Korea%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kosovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyrgyz Republic %28Kyrgyzstan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latvia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lesotho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liechtenstein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lithuania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luxembourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madagascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malawi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maldives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Martinique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moldova%2C Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mongolia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montenegro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morocco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mozambique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myanmar%2FBurma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namibia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nicaragua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nigeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Macedonia%2C Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Papua New Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paraguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puerto Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qatar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian Federation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rwanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Kitts and Nevis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Lucia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Vincent and the Grenadines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sao Tome and Principe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saudi Arabia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seychelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra Leone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovak Republic %28Slovakia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solomon Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somalia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sri Lanka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suriname</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switzerland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajikistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanzania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thailand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timor Leste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Togo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinidad %26 Tobago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tunisia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkmenistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turks %26 Caicos Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uganda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ukraine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Arab Emirates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom %28UK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States of America %28USA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uruguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbekistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venezuela</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Islands %28UK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Islands %28US%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zambia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zimbabwe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Eligible_for_7day_reminder__c</picklist>
+        <values>
+            <fullName>Reminder Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reminder Schedule</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Assignment_Code__c</picklist>
+        <values>
+            <fullName>I</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_Existing_Purchase__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legal_Risk_Reasons__c</picklist>
+        <values>
+            <fullName>Incident Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Claims</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PR_Social_Media__c</picklist>
+        <values>
+            <fullName>Corporate Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint %28AZND%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint %28Asia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint %28CA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint %28EU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint %28US%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations  Inquirie</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Place_of_Purchase__c</picklist>
+        <values>
+            <fullName>Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordstrom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>Boy%27s Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boy%27s Apparel %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boy%27s Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bra %26 Underwear Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girl%27s Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girl%27s Apparel %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girl%27s Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kid%27s Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Activewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Competition Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Adaptive Boys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Adaptive Girls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Adaptive Men</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Adaptive Women</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Activewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Competition Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Underwear</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Sub_Category__c</picklist>
+        <values>
+            <fullName>%23MYCALVINS Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arm Bands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backpacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bags %26 Backpacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balconette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Begin To Swim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bikini</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bikinis %26 Separates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blouses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board shorts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bodysuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boxer Briefs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boxers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boyshort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bralette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briefs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coats %26 Jackets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dress Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dresses %26 Skirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Décor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ear Plugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elite Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elite Technical Swimsuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flip-flop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fragrance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf %26 Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handbags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hats %26 Scarves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hats%2C Gloves %26 Scarves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hilfiger Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hipster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoodies %26 Sweatshirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosiery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackets %26 Outerwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jammers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jock Straps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joggers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jr%2E Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knits %26 Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loungewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Masks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nose Clips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Piece Swimsuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One- Piece Suits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outerwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pants %26 Jeans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pants %26 Leggings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pants%2C Jeans %26 Shorts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parkas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polos %26 Tees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racerback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racing %26 Practice Swimsuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rash Guards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shirts %26 Blouses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoes %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shorts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shorts %26 Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skirts %26 Dresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleepwear %26 Loungewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snorkeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Legs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strapless</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straps and Cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streetwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suiting %26 Blazers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suits %26 Blazers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suits %26 Jackets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunglasses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweaters %26 Fleece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweatshirts %26 Fleece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweatshirts %26 Hoodies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Bottoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Caps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Tees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Trunks %26 Boardshorts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-Shirt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-Shirts %26 Polos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-Shirts%2C Polos %26 Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tailored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tankinis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Warmups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tees %26 Camis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tees %26 Tanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thongs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ties %26 Pocket Squares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Jeans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Sport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TommyXLewis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TommyXMercedes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TommyXZendaya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tops %26 Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tops %26 Tanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Towels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triathlon %26 Wetsuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Everyday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Lingerie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Weekend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trunks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwear %26 Lounge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volleys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallets %26 Keychains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches %26 Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches %26 Suit Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Shoe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wireless</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Purchase_Channel__c</picklist>
+        <values>
+            <fullName>Calvin Klein store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - calvinklein%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - izod%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - speedo%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - styleBureau%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - tommy%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - trueandco%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online - vanheusen%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online-CalvinKlein Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online-Warner%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Heusen store</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>R2R_Email_UserConfirmation__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code_Details__c</picklist>
+        <values>
+            <fullName>Accepted Forms of Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Information %28Member ID%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Issue %28Godzilla%2C Dummy Account%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Issue %28Loyalty Flag%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Merge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Registration Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adaptive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Associate Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authorization Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balance Confirmation %28Points%2FRewards%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black Friday Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulk Buyer Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Solicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVID-19 Customer Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVID-19 Store Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call%2FChat Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel Order Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Inventory%2FRestock Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check-out Error %28Non-Fraud%2FPayment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contest%2FSweepstakes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corp Social Responsibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Outfitters Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Responsibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counterfeit Merchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country%2FState Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupon Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covet Diamond Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Return %28FEDEX%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Return %28NARVAR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CyberSource%2FForter Decline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Merchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discount Inquiry %28First Responder%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discount Inquiry %28Senior%2C Military%2C Student%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualification Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duty%2FTaxes Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit Account Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment%2FInternship Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Reward Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Reward Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Explore Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front Desk Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC%2FMC Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GDPR%2FCCPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Company Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Store Registration Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue Points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item%28s%29 Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Klarna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locate Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locked Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty Member ID %28Preferred Merge Error%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Reward Redemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchandise Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mis-Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Model Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modeling Scam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narvar Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Notes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Receiving Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Receiving Password Reset Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OptIN Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Confirmation Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI%2FPD Removal Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVH Tool Preferred Points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Authorization Void</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Point Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possible Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Void</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prank%2FScam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preorder Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preorder Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing Time%2F Released to Fulfillment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Removal Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program SignUp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo Code Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion Code Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotional Website Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipt Lookup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Register Account Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement Parts Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request W2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Policy Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reward Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reward Redemption Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Tag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoprunner Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizing Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizing Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speedo Business Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorship %26 Collaboration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sticker Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Closing Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Information %28Location%2C Phone%2C %26 Hours%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TH Data Protection %E2%80%93 Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Harmonization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track It Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Return Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Place Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Giftcard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warners%2FOlga Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code_Manufacturers__c</picklist>
+        <values>
+            <fullName>Accessory Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Essentials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BCNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic Resources %28VH Socks%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COTY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calvin Klein Sportswear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ClearVision Optical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Leather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cutie Pie Baby %28100364%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Galil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishman %26 Tobin %28477%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fletcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G-III Apparel Group %2854163%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Brands Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harbor Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Himatsingka %2833699%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jimlar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kayser-Roth Corp%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Headquarters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marc Fisher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marchon %2877169%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Max Leather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nourison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVH Corp %2836543%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific Coast Feather %2819648%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peerless</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Randa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ricardo Beverly Hills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S Goldberg %26 Co %2873639%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S Rothschild %26 Co %2872803%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safilo Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Springs Industries %2815582%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear Anywhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Weather Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tommy Hilfiger Sportswear %2877806%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vandale Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WestPoint Home Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code_Product_Category__c</picklist>
+        <values>
+            <fullName>Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bags%2FWallets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cosmetic Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dress Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dresses%2FSkirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fragrances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeans%2FDenim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outerwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shirts%2FTops%2FBlouses%2FPolos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suiting%2FFormal Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweaters%2FWovens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches%2FJewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form Submission</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code_Product_Sub_Categories_Widge__c</picklist>
+        <values>
+            <fullName>Bath Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bedding Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coats%2FJackets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Weather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinnerware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Décor%2FAccessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elite%2FLZR Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eyewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formal Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handbags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%E2%80%99s Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mens Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mens Suiting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overcoats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slippers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socks%2FTights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Caps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tie%2FNeckwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umbrella</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%E2%80%99s Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Womens Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Womens Suiting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code_Product_Sub_Categories__c</picklist>
+        <values>
+            <fullName>Bath Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bedding Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coats%2FJackets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Weather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinnerware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Décor%2FAccessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eyewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formal Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goggles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handbags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%E2%80%99s Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mens Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mens Suiting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overcoats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slippers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socks%2FTights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Caps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear Type - Elite%2FLZR Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear Type - General Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Costco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Dick%E2%80%99s Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Elsmore Swim Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Men%E2%80%99s Swim Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Vendor - Swim Outlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tie%2FNeckwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umbrella</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%E2%80%99s Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Womens Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Womens Suiting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Code__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Sub_detail__c</picklist>
+        <values>
+            <fullName>Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activewear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertisement Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Associate Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bags%2FWallets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canadian Return Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checkout%2FCart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cosmetic Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Profiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead Hyperlink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dress Shirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dresses%2FSkirts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Editorial Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Express Shipping Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion Event Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Sale Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit %26 Sizing Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fragrances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Return%2FExchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InStore PayPal Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InStore eComm Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeans%2FDenim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Response Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Model Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modeling Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Receipt%2FOriginal Form of Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Ship Confirmation Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outerwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging Concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Description</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resend Virtual Giftcard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Sender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship From Store Item%2FOrder Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship From Store Order Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipment Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shirts%2FTops%2FBlouses%2FPolos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoprunner Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suiting%2FFormal Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweaters%2FWovens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Account Info Reason</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Giftcard Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Giftcard Purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches%2FJewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Address</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution_Code__c</picklist>
+        <values>
+            <fullName>Data Not Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response to follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Data Deleted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Data Provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retail_Reasons__c</picklist>
+        <values>
+            <fullName>Associate Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash Discrepancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locate Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty %28Bulk Buying%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty %28General%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty %28Technical%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %28E-Commerce%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %28Special Order%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return %28Credit Card%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return %28General%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return %28Klarna%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return %28PayPal%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reward_Change_Details__c</picklist>
+        <values>
+            <fullName>Adding Transaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond Extension Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Distance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Traveling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Receive Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Points Promo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Transaction Manual Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outside of Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signup Bonus Points Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Processed Manual Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triple Points Promo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Extend</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reward_Change_Type__c</picklist>
+        <values>
+            <fullName>AccommodationPoints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redeem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>State_of_Residence__c</picklist>
+        <values>
+            <fullName>Alabama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arkansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecticut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delaware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idaho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kentucky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maryland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massachusetts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minnesota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississippi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missouri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nebraska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hampshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ohio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oklahoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oregon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pennsylvania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennessee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vermont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Access My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adding Points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creating Return Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Owner Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit Existing Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FDamaged Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privacy Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem Placing Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem Receiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redeeming Rewards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returning Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signing Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizing Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tracking Order Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tracking Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Third_Party_Vendors__c</picklist>
+        <values>
+            <fullName>Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dick%27s Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elsmore Swim Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Swim Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swim Outlet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TrueAndCo_ReasonCodeDetails__c</picklist>
+        <values>
+            <fullName>Add Promo Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authorization Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBB Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Solicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog Subscribe Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog Unsubscribe Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color%2FStyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Info Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Responsibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Reconciliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Unsubscribe Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchanged Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchanges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra Pad Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabric Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback%2FSuggestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit%2FSizing Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfill Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GDPA%2FCCPA %28Data Removal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Redemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest Checkout Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Inquiry %28APO%2FFPO%2FDPO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing Page Unavailable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mastectomy Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mis-ship Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mis-ship Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modeling Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Top 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Tracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Confirmation Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Size Range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possible Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Order Bugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-sale Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-sale Order Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo Code Errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quiz Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received Wrong Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommendation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Abuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove Billing Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Label Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Label Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return%2FExchange Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned to Sender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale%2FPromo Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Policy Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopping Cart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizing Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stuck in Placed%2FSubmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tag Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Return%2FExchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True EveryBody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Account Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Fit Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TrueAndCo_ReasonCodes__c</picklist>
+        <values>
+            <fullName>Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return%2FExchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TrueAndCo_ReasonSubDetail__c</picklist>
+        <values>
+            <fullName>Address Line Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Clasp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Hyperlink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Browser Issues%2FClear Cache</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checkout Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color Bleeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Link Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabric Stretching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabric Torn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit Quiz No Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Description</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Image</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Items Advertised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Rolling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus%2FExtended Sizing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo Code Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Code Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restock Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return%2FExchange Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Seam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stitching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwire Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrinkled%2FBent Pads</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hilfiger Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey Follow Up Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Try Before You Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>XBR_Fraud_Reasons__c</picklist>
+        <values>
+            <fullName>Fraudulent Devalue %28GC%2FMC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fraudulent Devalue %28Loyalty%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

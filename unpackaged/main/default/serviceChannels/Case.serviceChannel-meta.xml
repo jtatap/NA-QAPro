@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceChannel xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <doesMinimizeWidgetOnAccept>false</doesMinimizeWidgetOnAccept>
+    <hasAutoAcceptEnabled>false</hasAutoAcceptEnabled>
+    <label>Case</label>
+    <relatedEntityType>Case</relatedEntityType>
+    <secondaryRoutingPriorityField>High_Priority__c</secondaryRoutingPriorityField>
+    <serviceChannelFieldPriorities>
+        <priority>4</priority>
+        <value xsi:nil="true"/>
+    </serviceChannelFieldPriorities>
+    <serviceChannelFieldPriorities>
+        <priority>3</priority>
+        <value xsi:nil="true"/>
+    </serviceChannelFieldPriorities>
+</ServiceChannel>

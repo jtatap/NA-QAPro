@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Dinersclub Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>&quot;^3(0[0-59]\d{2}|[6]\d{3})[\s\-]*\d{4}[\s\-]*\d{5}$
+3(0[0-59]\d{2}|[6]\d{3})[\s\-]*\d{4}[\s\-]*\d{5}
+^3[89]\d{3}[\s\-]*\d{4}[\s\-]*\d{7}$
+3[89]\d{3}[\s\-]*\d{4}[\s\-]*\d{7}
+^3(?:0[0-5]|[68][0-9])[0-9]{11}$
+3(?:0[0-5]|[68][0-9])[0-9]{11}&quot;</pattern>
+    <priority>10</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

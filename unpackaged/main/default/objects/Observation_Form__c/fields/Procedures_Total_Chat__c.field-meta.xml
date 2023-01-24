@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procedures_Total_Chat__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Correct_Information__c , &quot;Pass&quot;) || ISPICKVAL(  Correct_Information__c , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(  Proper_Resolution__c , &quot;Pass&quot;) || ISPICKVAL(  Proper_Resolution__c , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(   Proper_Understanding_of_Issue__c , &quot;Pass&quot;) || ISPICKVAL(  Proper_Understanding_of_Issue__c , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL(  Provided_Options__c  , &quot;Pass&quot;)  ||  ISPICKVAL(  Provided_Options__c  , &quot;N/A&quot;), 1, 0) +  IF( ISPICKVAL(   Proper_Ticket_Coding__c , &quot;Pass&quot;)  ||  ISPICKVAL(   Proper_Ticket_Coding__c , &quot;N/A&quot;)  , 1, 0)) / 5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Procedures Total % (Chat)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<!--
+ - Created by bryananderson on 10/21/19.
+ -->
+
+<aura:component description="privacyCaseStatusFlow" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <div aura:id="outerDiv" class="slds-card">
+        <lightning:flow aura:id="privacyCaseStatus" onstatuschange="{!c.handleStatusChange}" />
+    </div>
+    <force:recordData aura:id="forceRecord"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      targetRecord="{!v._record}"
+                      targetFields="{!v.simpleRecord}"
+                      targetError="{!v._error}"
+                      recordUpdated="{!c.recordUpdated}" />
+</aura:component>

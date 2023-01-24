@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Corporate Responsibility</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">To learn more about our Corporate Responsibility, 
+click &lt;a href=&quot;https://pvh.com/responsibility/&quot;target=&quot;_blank&quot;&gt;here&lt;/a&gt;.</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:type="xsd:string">X010</value>
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Company_Information_Olga</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Corporate Responsibility</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Deflect</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Corporate: Environmental/Sustainability Question</value>
+    </values>
+</CustomMetadata>

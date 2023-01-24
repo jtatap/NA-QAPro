@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateStart__c</fullName>
+    <defaultValue>Today()</defaultValue>
+    <description>This is the date when the Message will start to appear.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date when the Message will start to appear.</inlineHelpText>
+    <label>Date Start</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

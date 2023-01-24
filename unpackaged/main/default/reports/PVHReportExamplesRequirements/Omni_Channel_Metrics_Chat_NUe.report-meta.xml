@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59631927</developerName>
+        <masterLabel>Channel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>AgentWork$OriginalQueue</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ecomm Queue</sourceValue>
+            </sourceValues>
+            <value>eCommerce</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Retail Queue</sourceValue>
+            </sourceValues>
+            <value>Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Speedo Chat Priority</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tommy Chat Priority</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Wholesale Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>True&amp;Co Ecomm &amp; Wholesale Queue</sourceValue>
+            </sourceValues>
+            <value>Wholesale</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>High Priority Privacy Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Privacy Request</sourceValue>
+            </sourceValues>
+            <value>Privacy Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CSAT Follow Up Queue</sourceValue>
+            </sourceValues>
+            <value>CSAT Follow Up Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Unsubscribe Queue</sourceValue>
+            </sourceValues>
+            <value>Unsubscribe Queue</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <aggregate>Average</aggregate>
+        <columnName>AgentWork$AgentCapacityWhenDeclined</columnName>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>3.0</lowBreakpoint>
+        <lowColor>#FFFFFF</lowColor>
+        <midColor>#B50E03</midColor>
+    </colorRanges>
+    <columns>
+        <field>AgentWork$OriginalQueue</field>
+    </columns>
+    <columns>
+        <field>AgentWork$WorkItem</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AssignedDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>AgentWork$DeclineReason</field>
+    </columns>
+    <columns>
+        <field>AgentWork$DeclineDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$CreatedBy</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$SpeedToAnswer</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$CapacityWeight</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$AgentCapacityWhenDeclined</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(AgentWork.AssignedDateTime - AgentWork.RequestDateTime) * 24 * 60</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Time between case submission and agent assigned</description>
+        <developerName>CDF1</developerName>
+        <label>Lag Time (Minutes)</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$ServiceChannel</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>sfdc_liveagent</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <formattingRules>
+        <aggregate>Average</aggregate>
+        <columnName>AgentWork$AgentCapacityWhenDeclined</columnName>
+        <values>
+            <rangeUpperBound>3.0</rangeUpperBound>
+        </values>
+        <values>
+            <backgroundColor>#B50E03</backgroundColor>
+        </values>
+    </formattingRules>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$ServiceChannel</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$User</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_59631927</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Omni Channel Metrics- Chat</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Average_Speed_to_Answer__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$AcceptDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

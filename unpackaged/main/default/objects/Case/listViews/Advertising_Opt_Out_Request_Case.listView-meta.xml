@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advertising_Opt_Out_Request_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Advertising Opt-Out Request</label>
+    <queue>Advertising_Opt_Out_Request</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

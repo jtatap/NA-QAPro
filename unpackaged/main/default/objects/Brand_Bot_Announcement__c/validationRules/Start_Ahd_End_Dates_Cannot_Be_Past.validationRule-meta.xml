@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Ahd_End_Dates_Cannot_Be_Past</fullName>
+    <active>true</active>
+    <description>Start and end dates for new announcements must be either today or a date in the future, to avoid confusion.</description>
+    <errorConditionFormula>Announcement_End_Date__c  &lt;  TODAY() ||  Announcement_Start_Date__c &lt;  TODAY()</errorConditionFormula>
+    <errorMessage>Your announcement&#39;s start and end date must be either today, or sometime in the future.</errorMessage>
+</ValidationRule>

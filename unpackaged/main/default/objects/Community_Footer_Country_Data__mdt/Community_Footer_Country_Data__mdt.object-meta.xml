@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Stores the data of the global websites and their specific URL&#39;s corresponding to each brand</description>
+    <label>Community Footer Country Data</label>
+    <pluralLabel>Community_Footer_Country_Data</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

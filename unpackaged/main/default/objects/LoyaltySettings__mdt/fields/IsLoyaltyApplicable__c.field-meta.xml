@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsLoyaltyApplicable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if this brand is part of Loyalty program or not.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>IsLoyaltyApplicable</label>
+    <type>Checkbox</type>
+</CustomField>

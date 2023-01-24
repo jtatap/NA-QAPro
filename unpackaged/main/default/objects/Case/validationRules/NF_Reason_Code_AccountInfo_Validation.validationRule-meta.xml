@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Reason_Code_AccountInfo_Validation</fullName>
+    <active>false</active>
+    <description>Checks that the Update Account Info Reason is updated.</description>
+    <errorConditionFormula>AND(
+    NFCaseScenario__r.Name = &quot;CRM: How to edit Profile&quot;,
+    ISBLANK(ZdPVHUpdateAccountInfoReason__c),
+    Supervisor_Data_Validation_Override__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>Please enter a updated account info reason.</errorMessage>
+</ValidationRule>

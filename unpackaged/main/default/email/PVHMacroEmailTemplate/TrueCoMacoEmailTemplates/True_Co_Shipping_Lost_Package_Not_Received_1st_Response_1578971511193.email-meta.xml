@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Macro: Shipping&gt;Lost Package-Not Received&gt;2nd Response</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>True&amp;Co Shipping - Lost Package - Not Received - 2nd Response</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Re: {{{Case.Subject}}} ({{{Case.CaseNumber}}})</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

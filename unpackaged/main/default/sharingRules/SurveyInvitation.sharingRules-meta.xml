@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Tier_1_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>If case owner is equal to Tier 1 CSR (PVH, Wholesale, True&amp;Co, CCPA) share with Role(Ops/Quality)</description>
+        <label>Tier 1 Users</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Supervisor_Tier_3_CSR</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

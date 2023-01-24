@@ -1,0 +1,78 @@
+<aura:component controller="ecommContactCase" implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="CaseId" type="String" default=""/>
+    <aura:attribute name="ContactId" type="String"/>
+    <aura:attribute name="NewContactId" type="String"/>
+    <aura:attribute name="thisCon" type ="Contact" />
+    <aura:attribute name="con" type ="Contact[]" />
+    <aura:attribute name ="col" type="List"/>
+    <aura:attribute name="eCommNotConnected" type="Boolean" default="false"/>
+    <aura:attribute name="otherECommContact" type="Boolean" default="false"/>
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    <aura:attribute name="msg" type="String"/>
+    <aura:attribute name="ContactExist" type ="Boolean" default="false"/>
+    <aura:attribute name="msg1" type="String"/>
+    <aura:attribute name="value" type="List"/>
+    
+    <h1 class="slds-text-heading_large slds-align_absolute-center">Ecomm Verify</h1>
+    
+    <aura:if isTrue="{!v.ContactExist}">
+            <aura:if isTrue="{!v.eCommNotConnected}">
+                <aura:if isTrue="{!v.otherECommContact}">
+                    <lightning:card class="crd">
+                        <div style="font-weight: bold; font-size:120%;">
+                            <p>Review: This customer has an email address which has an Ecomm Contact with the following details:</p>
+                            <p>  </p>
+                        </div>    
+                        <div class="datTab" style="color:Black; font-size:95%; font-family: courier;">
+                            <lightning:dataTable keyField="id" data="{!v.con}" columns="{!v.col}" hideCheckboxColumn="true"
+                                                 columnWidthsMode="auto"/>
+                            
+                        </div>
+                        <lightning:recordViewForm recordId="{!v.NewContactId}" objectApiName="Contact">
+                            <lightning:outputField fieldName="Ecomm_Connected__c" />
+                        </lightning:recordViewForm> 
+                        <div style="font-weight: bold; font-size:120%; padding-top:around-small">
+                            <p>  </p>
+                            <p>To link the Case with above Contact, click below </p>
+                            
+                        </div>    
+                        <lightning:button class="btn"  label="Re-associate the Contact" onclick="{!c.confirm}"/>    
+                        <aura:if isTrue="{!v.isLoading}">
+            				<div class="spin">
+               				<lightning:spinner alternativeText="Loading"  />
+                			</div>
+                		</aura:if>
+                        <div style="font-weight: bold; font-size:120%; padding-top:around-small">
+                        <p>{!v.msg}</p>
+                        </div>    
+                    </lightning:card>
+                    
+                   
+                    <aura:set attribute="else">
+                        <lightning:card>
+                            <div class="err"  style="font-weight: bold; font-size:120%; margin-top: around-large;">
+                                <p> There is no available Ecomm Contact with matching email address </p>
+                                <p> </p>
+                                <p>  </p>
+                            </div>
+                            
+                        </lightning:card> 
+                    </aura:set>    
+                </aura:if>
+                <aura:set attribute="else">
+                    <lightning:card>
+                        <div class="err" style="font-weight: bold; font-size:120%;">
+                            <p> This is an Ecomm Connected Contact. </p>
+                        </div>    
+                    </lightning:card>
+                </aura:set>
+            </aura:if>
+            <aura:set attribute="else">
+                <div class="err1" style="font-weight: bold; font-size:120%;">
+                    {!v.msg1}
+                </div>
+            </aura:set>    
+        </aura:if>
+    
+</aura:component>

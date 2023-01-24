@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Privacy_Form_Messages_Delete_My_Data</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Brand_Name__c</columns>
+    <columns>Type__c</columns>
+    <columns>Type_of_Request__c</columns>
+    <columns>Success_Message_f__c</columns>
+    <columns>Regards__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>P</value>
+    </filters>
+    <filters>
+        <field>Type_of_Request__c</field>
+        <operation>startsWith</operation>
+        <value>Delete</value>
+    </filters>
+    <label>Privacy Form Messages - Delete My Data</label>
+</ListView>

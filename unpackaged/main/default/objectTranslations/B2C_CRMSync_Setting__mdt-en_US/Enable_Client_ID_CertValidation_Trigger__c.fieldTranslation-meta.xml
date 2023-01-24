@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... this checkbox manages the behavior of the B2C Client ID certValidation trigger; when enabled - -  it verifies that the JWT Certificate name maps to an existing Salesforce certificate. --></help>
+        <label><!-- Enable Client ID CertValidation Trigger --></label>
+        <name>Enable_Client_ID_CertValidation_Trigger__c</name>
+    </CustomFieldTranslation>

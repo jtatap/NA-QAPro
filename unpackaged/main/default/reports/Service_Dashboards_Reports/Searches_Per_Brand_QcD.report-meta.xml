@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Network.NetworkSearchQueryFrequency$SearchTerm</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Network.NetworkSearchQueryFrequency$CountQueries</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Network$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Tommy</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Top Tommy Searches</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Network_Search_Query_Frequency__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Network.NetworkSearchQueryFrequency$CountQueries</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Network$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is the component Key that is set on the community builder. There is a design attribute for this key. --></help>
+        <label><!-- Component Key --></label>
+        <name>ComponentKey__c</name>
+    </CustomFieldTranslation>

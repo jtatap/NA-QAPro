@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Partner Brands Chat Priority</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Tier_1_CSR_CCPA</publicGroup>
+            <publicGroup>Tier_1_CSR_Wholesale</publicGroup>
+        </publicGroups>
+        <roles>
+            <role>Supervisor_Tier_3_CSR</role>
+            <role>PVH_Corp</role>
+        </roles>
+        <users>
+            <user>brianawilliams@pvh.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Priority_Chat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

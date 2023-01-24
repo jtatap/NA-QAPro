@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logo_URL__c</fullName>
+    <description>The BrandFormHeader static resource contains the logos for various brands. Provide relative URL of logos from this static resource.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Provide relative URL of logos from BrandFormHeader static resource.</inlineHelpText>
+    <label>Logo URL</label>
+    <length>200</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

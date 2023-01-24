@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <choices>
+        <name>Adding_Transaction</name>
+        <choiceText>&lt;span style=&quot;font-size: 12pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Adding Transaction&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Adding Transaction</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Beyond_Extension_Period</name>
+        <choiceText>&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 12pt;&quot;&gt;Beyond Extension Period&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Beyond Extension Period</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Customer_Accommodation</name>
+        <choiceText>Customer Accommodation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Customer Accommodation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Double_Pts_Promo</name>
+        <choiceText>Double Points Promo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Double Points Promo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Gift_Card_Accommodation</name>
+        <choiceText>Gift Card Accommodation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Gift Card Accommodation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Signup_Bonus</name>
+        <choiceText>&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 12pt;&quot;&gt;Signup Bonus Points Issue&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Signup Bonus Points Issue</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Triple_Pts_Promo</name>
+        <choiceText>Triple Points Promo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Triple Points Promo</stringValue>
+        </value>
+    </choices>
+    <constants>
+        <name>Hide_RewardChangeType_field</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>true</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_New_LoyaltyId_valid</name>
+        <label>Is New LoyaltyId valid?</label>
+        <locationX>436</locationX>
+        <locationY>384</locationY>
+        <defaultConnector>
+            <targetReference>Merge_LoyaltyId_Try_Again</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Validation1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LoyaltyId_Merge_Confirmation</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New_LoyaltyId_valid_0</name>
+        <label>Is New LoyaltyId valid?</label>
+        <locationX>775</locationX>
+        <locationY>124</locationY>
+        <defaultConnector>
+            <targetReference>Merge_LoyaltyId_Try_Again</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Validation2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LoyaltyId_Merge_Confirmation_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>PointsReasonCodes</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Reason_Code__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <description>checking for CK LoyaltyIDs by left 3 characters and if they match to current Case Contact Brand for CK</description>
+        <name>CKLoyaltyIds</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;2&quot;, LEFT({!New_LoyaltyId}, 3) = &quot;C03&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>HELoyaltyId_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;5&quot;,LEFT({!New_LoyaltyId},4)=&quot;E043&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>HELoyaltyId_81</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;81&quot;,LEFT({!New_LoyaltyId},4)=&quot;E043&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>HELoyaltyId_82</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;82&quot;,LEFT({!New_LoyaltyId},4)=&quot;E043&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>HELoyaltyId_84</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;84&quot;,LEFT({!New_LoyaltyId},4)=&quot;E043&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>HELoyaltyId_9</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;9&quot;,LEFT({!New_LoyaltyId},4)=&quot;E043&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>Left_CK</name>
+        <dataType>Boolean</dataType>
+        <expression>LEFT({!New_LoyaltyId}, 3) = &quot;C03&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Left_CK_text</name>
+        <dataType>String</dataType>
+        <expression>Left({!New_LoyaltyId},3)</expression>
+    </formulas>
+    <formulas>
+        <name>LoyaltyBrandValidation</name>
+        <dataType>Boolean</dataType>
+        <expression>OR({!CKLoyaltyIds}=TRUE,{!HELoyaltyId_5}=TRUE,{!HELoyaltyId_81}=TRUE,{!HELoyaltyId_82}=TRUE,{!HELoyaltyId_84}=TRUE,{!HELoyaltyId_9}=TRUE,
+{!THLoyaltyIds}=TRUE)</expression>
+    </formulas>
+    <formulas>
+        <name>THLoyaltyIds</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;1&quot;,LEFT({!New_LoyaltyId},3)=&quot;TH3&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>Validation1</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;2&quot;, LEFT({!New_LoyaltyId}, 2) = &quot;C0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;5&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;4&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;81&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;82&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;84&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;9&quot;,LEFT({!New_LoyaltyId},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;1&quot;,LEFT({!New_LoyaltyId},2)=&quot;TH&quot;))</expression>
+    </formulas>
+    <formulas>
+        <name>Validation2</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;2&quot;, LEFT({!New_LoyaltyId_0}, 2) = &quot;C0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;5&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;4&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;81&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;82&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;84&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;9&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;E0&quot;),
+AND(TEXT({!Get_Case_Contact.Brand_Id__c})=&quot;1&quot;,LEFT({!New_LoyaltyId_0},2)=&quot;TH&quot;))</expression>
+    </formulas>
+    <interviewLabel>Merge LoyaltyId {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Merge LoyaltyId</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Case record the Points Adjustment button was clicked from</description>
+        <name>Get_Case</name>
+        <label>Get Case</label>
+        <locationX>193</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Case_Contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>curCase2</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Contact_Loyalty_ID__c</queriedFields>
+        <queriedFields>PointsGranted__c</queriedFields>
+        <queriedFields>Comments</queriedFields>
+        <queriedFields>Reward_Change_Details__c</queriedFields>
+        <queriedFields>ContactId</queriedFields>
+        <queriedFields>Reward_Change_Type__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Contact</name>
+        <label>Get Case Contact</label>
+        <locationX>193</locationX>
+        <locationY>189</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Merge_LoyaltyId</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Case.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>LoyaltyID__c</queriedFields>
+        <queriedFields>Brand_Id__c</queriedFields>
+        <queriedFields>BrandIdAPIValue__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>942</locationX>
+        <locationY>281</locationY>
+        <connector>
+            <targetReference>Update_Contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>curCase2</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>New_LoyaltyId__c</field>
+            <value>
+                <elementReference>New_LoyaltyId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Case_0</name>
+        <label>Update Case</label>
+        <locationX>1053</locationX>
+        <locationY>120</locationY>
+        <connector>
+            <targetReference>Update_Contact_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>curCase2</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>New_LoyaltyId__c</field>
+            <value>
+                <elementReference>New_LoyaltyId_0</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Contact</name>
+        <label>Update Contact</label>
+        <locationX>1103</locationX>
+        <locationY>281</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Case_Contact.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LoyaltyID__c</field>
+            <value>
+                <elementReference>New_LoyaltyId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LoyaltyMergeDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Contact_0</name>
+        <label>Update Contact</label>
+        <locationX>1194</locationX>
+        <locationY>120</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Case_Contact.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LoyaltyID__c</field>
+            <value>
+                <elementReference>New_LoyaltyId_0</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LoyaltyMergeDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <screens>
+        <name>LoyaltyId_Merge_Confirmation</name>
+        <label>LoyaltyId Merge Confirmation</label>
+        <locationX>775</locationX>
+        <locationY>281</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Confirmation_Message</name>
+            <fieldText>&lt;p&gt;You are attempting to update {!Get_Case_Contact.Name}&#39;s LoyaltyId from {!Get_Case_Contact.LoyaltyID__c} to {!New_LoyaltyId}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: rgb(255, 3, 3);&quot;&gt;This is NOT reversible. Please confirm this change before hitting Next.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Click Next to submit the change, otherwise close this sub-tab to cancel or click Previous to adjust the New LoyaltyId you entered. Thank you.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>LoyaltyId_Merge_Confirmation_0</name>
+        <label>LoyaltyId Merge Confirmation</label>
+        <locationX>916</locationX>
+        <locationY>120</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Case_0</targetReference>
+        </connector>
+        <fields>
+            <name>Confirmation_Message_0</name>
+            <fieldText>&lt;p&gt;You are attempting to update {!Get_Case_Contact.Name}&#39;s LoyaltyId from {!Get_Case_Contact.LoyaltyID__c} to {!New_LoyaltyId_0}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: rgb(255, 3, 3);&quot;&gt;This is NOT reversible. Please confirm this change before hitting Next.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Click Next to submit the change, otherwise close this sub-tab to cancel or click Previous to adjust the New LoyaltyId you entered. Thank you.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Merge_LoyaltyId</name>
+        <label>Merge LoyaltyId</label>
+        <locationX>348</locationX>
+        <locationY>189</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Is_New_LoyaltyId_valid</targetReference>
+        </connector>
+        <fields>
+            <name>CurrentLoyaltyId</name>
+            <fieldText>&lt;p&gt;Current LoyaltyId for {!Get_Case_Contact.Name}: &lt;b&gt;{!Get_Case_Contact.LoyaltyID__c}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_LoyaltyId</name>
+            <dataType>String</dataType>
+            <fieldText>New LoyaltyId</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Merge_LoyaltyId_Try_Again</name>
+        <label>Merge LoyaltyId-Try Again</label>
+        <locationX>604</locationX>
+        <locationY>131</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Is_New_LoyaltyId_valid_0</targetReference>
+        </connector>
+        <fields>
+            <name>Try_Again</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(247, 1, 9);&quot;&gt;The LoyaltyId you entered does not match the Brand of the Case Contact. Please fix and resubmit. Thank you.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CurrentLoyaltyId_0</name>
+            <fieldText>&lt;p&gt;Current LoyaltyId for {!Get_Case_Contact.Name}: &lt;b&gt;{!Get_Case_Contact.LoyaltyID__c}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_LoyaltyId_0</name>
+            <dataType>String</dataType>
+            <fieldText>New LoyaltyId</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>curCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>curCase2</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

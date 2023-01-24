@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_8106066</developerName>
+        <masterLabel>Brand Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ebotdata__Bot_Session__c.Brand__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>IZOD</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Van Heusen</sourceValue>
+            </sourceValues>
+            <value>Heritage</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ebotdata__Bot_Session__c.Brand__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ebotdata__Bot_Session__c.ebotdata__Visitor_Message_Count__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ebotdata__Bot_Session__c.ebotdata__Outcome__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_8106066</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2. Deflected vs. Attempted Escalation</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ebotdata__Bot_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

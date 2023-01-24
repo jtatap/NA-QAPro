@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93319700</developerName>
+        <masterLabel>Agent Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Kelly Walsh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Kelly Walsh</sourceValue>
+            </sourceValues>
+            <value>Kelly Walsh</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ashley Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Ashley Christian</sourceValue>
+            </sourceValues>
+            <value>Ashley Christian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Stephanie Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Stephanie Christian</sourceValue>
+            </sourceValues>
+            <value>Stephanie Christian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Stephanie Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Stephanie Anderson</sourceValue>
+            </sourceValues>
+            <value>Stephanie Anderson</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Christine Manley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Tyler Manley</sourceValue>
+            </sourceValues>
+            <value>Tyler Manley</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aliyah Caiazzo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Aliyah Caiazzo</sourceValue>
+            </sourceValues>
+            <value>Aliyah Caiazzo</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case.Brand__c</field>
+    </columns>
+    <columns>
+        <field>Case.Channel__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>EMAIL.STATUS</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <description># of outbound emails</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Duplicate_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL.STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Unverified</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <field>EMAIL.MESSAGE_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93319700</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>True Cases with Email Activity</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseEmail</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>EMAIL.MESSAGE_DATE</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

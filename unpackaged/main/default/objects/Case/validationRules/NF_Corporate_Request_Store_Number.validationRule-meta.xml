@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Corporate_Request_Store_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &#39;Corporate_Request&#39;,
+
+    OR(
+        ISPICKVAL(Business_Group__c, &quot;Calvin Klein - Retail Field (Stores)&quot;),
+        ISPICKVAL(Business_Group__c, &quot;Tommy Hilfiger - Retail Field (Stores)&quot;)
+        ),
+        
+    OR(
+        ISBLANK(ZdPVHStoreNumber__c),
+        NOT(ISNUMBER(ZdPVHStoreNumber__c)),
+        LEN(ZdPVHStoreNumber__c) &lt;&gt; 3
+        )
+)</errorConditionFormula>
+    <errorDisplayField>ZdPVHStoreNumber__c</errorDisplayField>
+    <errorMessage>Please enter a valid Store Number (3 digits)</errorMessage>
+</ValidationRule>

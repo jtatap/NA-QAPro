@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Status_Change__c</fullName>
+    <description>Used to track the last time a status was changed to open in order to properly assign case to either a zQueue or the originating queue.</description>
+    <externalId>false</externalId>
+    <label>Last Status Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

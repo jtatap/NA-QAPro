@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Handling_Skills_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Use_of_Customer_Name__c , &quot;Pass&quot;) || ISPICKVAL(  Use_of_Customer_Name__c , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(   Avoid_Long_Silences__c , &quot;Pass&quot;) || ISPICKVAL(  Avoid_Long_Silences__c , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(  Avoid_Filler_Words__c , &quot;Pass&quot;) || ISPICKVAL( Avoid_Filler_Words__c , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL(  Hold_Procedure__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Hold_Procedure__c , &quot;N/A&quot;), 1, 0) +  IF( ISPICKVAL(  Talking_Over_Customer__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Talking_Over_Customer__c , &quot;N/A&quot;)  , 1, 0)) / 5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Handling Skills Total %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

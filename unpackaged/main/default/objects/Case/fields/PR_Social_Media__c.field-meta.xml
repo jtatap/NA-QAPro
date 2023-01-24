@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PR_Social_Media__c</fullName>
+    <externalId>false</externalId>
+    <label>PR/Social Media</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business_Group__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporate Escalation</fullName>
+                <default>false</default>
+                <label>Corporate Escalation</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint (Asia)</fullName>
+                <default>false</default>
+                <label>Customer Complaint (Asia)</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint (AZND)</fullName>
+                <default>false</default>
+                <label>Customer Complaint (AZND)</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint (CA)</fullName>
+                <default>false</default>
+                <label>Customer Complaint (CA)</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint (EU)</fullName>
+                <default>false</default>
+                <label>Customer Complaint (EU)</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint (US)</fullName>
+                <default>false</default>
+                <label>Customer Complaint (US)</label>
+            </value>
+            <value>
+                <fullName>Public Relations  Inquirie</fullName>
+                <default>false</default>
+                <label>Public Relations  Inquirie</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Corporate Escalation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Customer Complaint (Asia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Customer Complaint (AZND)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Customer Complaint (CA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Customer Complaint (EU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Customer Complaint (US)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PVH ANZD</controllingFieldValue>
+            <controllingFieldValue>PVH Asia</controllingFieldValue>
+            <controllingFieldValue>PVH Europe</controllingFieldValue>
+            <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
+            <valueName>Public Relations  Inquirie</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

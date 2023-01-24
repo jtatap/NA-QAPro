@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Base Profile</profile>
+            <profile>Ops%2FQuality</profile>
+            <profile>Tier 1 TEMP</profile>
+            <profile>Tier I CSR CCPA</profile>
+            <profile>Tier I CSR PVH</profile>
+            <profile>Tier I CSR Wholesale</profile>
+            <profile>Tier I CSR Wholesale %5BOLD%5D</profile>
+            <profile>Tier II CSR</profile>
+        </profiles>
+    </assignments>
+    <capacity>10</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>false</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>PVH Presence</label>
+    <presenceStatusOnPushTimeout>Time_Out</presenceStatusOnPushTimeout>
+</PresenceUserConfig>

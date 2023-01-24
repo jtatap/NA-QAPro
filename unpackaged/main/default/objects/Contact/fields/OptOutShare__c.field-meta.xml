@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OptOutShare__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When opt_out_share = 0
+ - opt_out_share = N
+
+When opt_out_share = 1
+ - opt_out_share =  Y</description>
+    <externalId>false</externalId>
+    <label>OptOutShare</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

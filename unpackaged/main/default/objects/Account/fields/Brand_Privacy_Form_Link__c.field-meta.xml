@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Privacy_Form_Link__c</fullName>
+    <description>Link to the brand&#39;s privacy policy form to submit data access and deletion requests</description>
+    <externalId>false</externalId>
+    <label>Brand Privacy Form Link</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Escalation Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>MOD_POE</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Escalations</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

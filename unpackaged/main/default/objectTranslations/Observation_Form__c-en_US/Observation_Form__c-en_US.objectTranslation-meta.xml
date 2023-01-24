@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Observation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Observation Forms</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Chat Observation Form Layout</layout>
+        <sections>
+            <label><!-- Case Observation Details --></label>
+            <section>Case Observation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Closing --></label>
+            <section>Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Etiquette --></label>
+            <section>Etiquette</section>
+        </sections>
+        <sections>
+            <label><!-- Handling Skills --></label>
+            <section>Handling Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Inappropriate Performance Results in Automatic Failure --></label>
+            <section>Inappropriate Performance Results in Automatic Failure</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Form Details --></label>
+            <section>Observation Form Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opening --></label>
+            <section>Opening</section>
+        </sections>
+        <sections>
+            <label><!-- Procedures --></label>
+            <section>Procedures</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Email &amp; Web Observation Form - True &amp; Co Layout</layout>
+        <sections>
+            <label><!-- Case Observation Details --></label>
+            <section>Case Observation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Closing --></label>
+            <section>Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Etiquette --></label>
+            <section>Etiquette</section>
+        </sections>
+        <sections>
+            <label><!-- Handling Skills --></label>
+            <section>Handling Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Inappropriate Performance Results in Automatic Failure --></label>
+            <section>Inappropriate Performance Results in Automatic Failure</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Form Details --></label>
+            <section>Observation Form Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opening --></label>
+            <section>Opening</section>
+        </sections>
+        <sections>
+            <label><!-- Procedures --></label>
+            <section>Procedures</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Email &amp; Web Observation Form Layout</layout>
+        <sections>
+            <label><!-- Case Observation Details --></label>
+            <section>Case Observation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Closing --></label>
+            <section>Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Etiquette --></label>
+            <section>Etiquette</section>
+        </sections>
+        <sections>
+            <label><!-- Handling Skills --></label>
+            <section>Handling Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Inappropriate Performance Results in Automatic Failure --></label>
+            <section>Inappropriate Performance Results in Automatic Failure</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Form Details --></label>
+            <section>Observation Form Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opening --></label>
+            <section>Opening</section>
+        </sections>
+        <sections>
+            <label><!-- Procedures --></label>
+            <section>Procedures</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Phone Observation Form Layout</layout>
+        <sections>
+            <label><!-- Call Handling Skills --></label>
+            <section>Call Handling Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Case Observation Details --></label>
+            <section>Case Observation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Closing --></label>
+            <section>Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Greeting --></label>
+            <section>Greeting</section>
+        </sections>
+        <sections>
+            <label><!-- Inappropriate Performance Results in Automatic Failure --></label>
+            <section>Inappropriate Performance Results in Automatic Failure</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Form Details --></label>
+            <section>Observation Form Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Management --></label>
+            <section>Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Etiquette --></label>
+            <section>Phone Etiquette</section>
+        </sections>
+        <sections>
+            <label><!-- Procedures --></label>
+            <section>Procedures</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Customer Service Chat Observation Form Scorecard --></description>
+        <label><!-- Chat Observation Form --></label>
+        <name>Chat_Observation_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Customer Service Email Observation Form Scorecard and Summary. --></description>
+        <label><!-- Email &amp; Web Observation Form --></label>
+        <name>Email_Observation_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- True &amp; Co - Customer Service Email Observation Form Scorecard and Summary. --></description>
+        <label><!-- Email &amp; Web Observation Form - True &amp; Co --></label>
+        <name>Email_Observation_Form_True_Co</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Customer Service Phone Observation Form Scorecard and Summary --></description>
+        <label><!-- Phone Observation Form --></label>
+        <name>Phone_Observation_Form</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

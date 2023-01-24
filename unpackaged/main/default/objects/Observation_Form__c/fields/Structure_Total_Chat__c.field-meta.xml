@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Structure_Total_Chat__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Proper_Spelling__c , &quot;Pass&quot;)  ||  ISPICKVAL(  Proper_Spelling__c , &quot;N/A&quot;)  , 1, 0 ) +  IF( ISPICKVAL(  Proper_Grammar__c  , &quot;Pass&quot;)  ||  ISPICKVAL(  Proper_Grammar__c  , &quot;N/A&quot;)  , 1, 0) +  IF( ISPICKVAL(   Ownership__c  , &quot;Pass&quot;)  ||  ISPICKVAL(  Ownership__c , &quot;N/A&quot;)  , 1, 0))  /  3</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Structure Total % (Chat)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

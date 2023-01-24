@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What page should this be displayed:
+
+Home -  home page of the community / portal / digital experience
+Topic - Certain Topic Page
+Custom Page - Enter Page Key Field --></help>
+        <label><!-- Where should this go? --></label>
+        <name>DisplayonHomepageorTopic__c</name>
+        <picklistValues>
+            <masterLabel>Custom Page</masterLabel>
+            <translation><!-- Custom Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Topic</masterLabel>
+            <translation><!-- Topic --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

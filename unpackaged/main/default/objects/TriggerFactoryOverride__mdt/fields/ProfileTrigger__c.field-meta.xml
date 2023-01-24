@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProfileTrigger__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Profile|TriggerName</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Enter a Profile Name (Case sensitive) &#39;|&#39; and Trigger Name
+Either name can be replaced by &#39;*&#39; instead of a specific value</inlineHelpText>
+    <label>Profile.Trigger</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

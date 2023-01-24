@@ -1,0 +1,7 @@
+<!--
+ - Created by bryananderson on 11/21/19.
+ -->
+
+<aura:event type="APPLICATION" description="getRecordIdEvent">
+    <aura:attribute name="recordId" type="String"/>
+</aura:event>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailDeliverabilityStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>Email Deliverability Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>normal</fullName>
+                <default>true</default>
+                <label>normal</label>
+            </value>
+            <value>
+                <fullName>held</fullName>
+                <default>false</default>
+                <label>held</label>
+            </value>
+            <value>
+                <fullName>bounce</fullName>
+                <default>false</default>
+                <label>bounce</label>
+            </value>
+            <value>
+                <fullName>unsub</fullName>
+                <default>false</default>
+                <label>unsub</label>
+            </value>
+            <value>
+                <fullName>deleted</fullName>
+                <default>false</default>
+                <label>deleted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

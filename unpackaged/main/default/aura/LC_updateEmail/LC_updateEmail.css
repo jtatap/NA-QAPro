@@ -1,0 +1,26 @@
+.THIS.crd {
+    
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.THIS .inpt {
+    padding-right:200px;
+}
+.THIS .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+.THIS .btn:hover {
+    background-color:#002ead;
+      transition: 0.7s;
+}
+.THIS .spin{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}

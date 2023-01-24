@@ -1,0 +1,325 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="MAO_Order_Search">
+    
+    <aura:handler name="oSelectedContactEvent" event="c:SearchAllSelectionEvt" action="{!c.handleComponentEvent}"/>
+    
+    <aura:attribute name="selectedId" type="String" />
+    <aura:attribute name="caseContactId" type="String" />
+    <aura:attribute name="previousCaseContactId" type="String" />
+    <aura:attribute name="recordId"  type="string"  /> 
+    <aura:attribute name="isCaseDetailsLoaded" type="Boolean" />
+    <aura:attribute name="isSearchDisabled" type="Boolean" />
+    <aura:attribute name="isFirstTime" type="Boolean" />
+    <aura:attribute name="completeURL" type="String" />
+    <aura:attribute name="isLoading" type="Boolean" default="false" />
+    
+    <aura:attribute name="caseRecord" type="Object"/>
+    <aura:attribute name="contactRecord" type="Object"/>
+    <!--aura:attribute name="caseContactRecord" type="Object"/-->
+    <aura:attribute name="manualContactRecord" type="Object"/>
+    
+    <aura:attribute name="caseRecordLoadError" type="String" />
+    <aura:attribute name="contactRecordLoadError" type="String" />
+    <!--aura:attribute name="caseContactRecordLoadError" type="String" /-->
+    
+    <aura:attribute name="orderId" type="String" />
+    <aura:attribute name="clickedTabLabel" type="String" default='Customer search'/>
+    
+    <aura:attribute name="isOrderIdDisabled" type="Boolean" default="false"/>
+    <aura:attribute name="isContactFormDisabled" type="Boolean" default="false"/>
+    <aura:attribute name="freeFormErrorMessage" type="String" />
+    
+    <!--{'label': 'Order search', 'value': 'sByOid'}, -->
+    <aura:attribute name="options" type="List" default="[
+                                                        {'label': 'Order Search', 'value': 'sByFreeForm'},
+                                                        {'label': 'Customer Lookup', 'value': 'sByContact'}
+                                                        ]"/>
+    <aura:attribute name="sValue" type="String"/>    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.selectedId}" action="{!c.onContactChange}"/>
+    <aura:attribute name="selectedEcommSite" type="String"/>
+    <aura:attribute name="ecommSiteOptions" type="List" default="[
+                                                                 {'label': 'CK-US', 'value': 'CK'},
+                                                                 {'label': 'CK-CA', 'value': 'CK-CA'},{'label': 'TH-US', 'value': 'TH-US'}
+                                                                  
+                                                                 ]"/>
+    <aura:attribute name="ecommSiteErrorMessage" type="String"/>
+    <force:recordData aura:id="caseRecordLoader"
+                      mode="EDIT"
+                      recordId="{!v.recordId}"
+                      fields="CaseNumber, ContactId, AccountId, Order_Number__c"
+                      targetFields="{!v.caseRecord}"
+                      targetError="{!v.caseRecordLoadError}"
+                      recordUpdated="{!c.handleCaseRecordUpdated}"
+                      />
+    <br/>
+    <aura:html tag="style">
+        .slds-modal__container{
+        width: 90% !important;
+        max-width: 90% !important;
+        }
+    </aura:html>
+    
+    <force:recordData aura:id="contactRecordHandler"
+                      recordId="{!v.selectedId}"
+                      fields="Id, FirstName, LastName, Email, Phone, LoyaltyID__c, isEmployee__c, VIP__c, Brand_Id__c,Brand__c, Bulk_Buyer__c, EcommSite__c, LoyaltyFlag__c, Multiple_Offender__c, Multiple_Offender_Contact__c, EmailOptInStatus__c "
+                      targetFields="{!v.contactRecord}"
+                      targetError="{!v.contactRecordLoadError}"
+                      recordUpdated="{!c.handleContactRecordUpdated}"
+                      />
+    <!--force:recordData aura:id="currentCasecontactRecordHandler"
+                          recordId="{!v.caseContactId}"
+                          fields="Id, FirstName, LastName, Email, Phone, LoyaltyID__c, isEmployee__c, VIP__c"
+                          targetFields="{!v.caseContactRecord}"
+                          targetError="{!v.caseContactRecordLoadError}"
+                         recordUpdated="{!c.handleCaseContactRecordUpdated}"
+                          /-->
+    
+    <aura:if isTrue="{!v.isCaseDetailsLoaded}"><!--{!v.selectedId}-->
+        <div class="comp-container">
+            <div class="slds-form--compound">
+                <div class="slds-form-element">
+                    
+                   
+                </div>
+                
+                <div>
+                    <div style="float: right;position:relative;" class="slds-p-left_medium slds-p-right_medium slds-size_4-of-12">
+                        <lightning:combobox name="Please select Ecomm website" label="Please select Ecomm website:" value="{!v.selectedEcommSite}" placeholder="Select Ecomm website" options="{! v.ecommSiteOptions }" onchange="{! c.handleChangeEcommSite }"/>
+                    </div>
+                    <lightning:card  variant="Narrow" title="Search in MAO" 
+                                    iconName="standard:contact">
+                        <aura:if isTrue="{! not(empty(v.ecommSiteErrorMessage))}">
+                           <div class="freeFormErrorMessage-section slds-m-top_small " style="margin-left:525px;">
+                                            
+                             <span>{!v.ecommSiteErrorMessage}</span>
+                              </div>
+                          </aura:if>
+                        
+                        <aura:set attribute="footer">
+                            <lightning:button variant="neutral" label="Cancel" onclick="{!c.handleCancel}"></lightning:button>
+                            <!--aura:if isTrue="{!v.sValue == 'sByOid' }">
+                                <lightning:button variant="brand" class="slds-m-left_x-small" label="Search" type="submit" onclick="{!c.handleSubmit}" disabled="{!empty(v.orderId)}"></lightning:button> 
+                            </aura:if-->
+                            <aura:if isTrue="{!v.sValue == 'sByContact' }">
+                                <lightning:button variant="brand" class="slds-m-left_x-small" label="Search" type="submit2" onclick="{!c.handleSubmit}" disabled="{!empty (v.selectedId)}"></lightning:button> 
+                            </aura:if>
+                            <aura:if isTrue="{!v.sValue == 'sByFreeForm'}">
+                                <lightning:button variant="brand" class="slds-m-left_x-small" label="Search" type="submit1" onclick="{!c.handleSubmit}"></lightning:button> 
+                            </aura:if>
+                            <!--disabled="{!v.isSearchDisabled}"-->
+                            <!--aura:if isTrue="{!not(empty(v.completeURL))}">
+                                <p class="slds-p-aound_small">
+                                    <a href="{!v.completeURL}" target="_blank">{!v.completeURL}</a>    
+                                </p>
+                            </aura:if-->
+                        </aura:set>
+                        <p class="slds-p-horizontal_small">
+                            Search by Order Id or choose a contact or manually provide First Name, Last Name, Email and Phone.
+                        </p>
+                        <div class="search-container slds-m-around_small slds-p-around_small">
+                            
+                            <div class="search-by-onum-container">
+                                <label class="slds-form-element__legend  slds-form-element__label" for="">Search By</label>
+                                <div class="slds-grid slds-gutters slds-wrap slds-m-horizontal_xx-small slds-m-vertical_x-small oid-search-container">
+                                    <div class="slds-col slds-size_4-of-4">
+                                        <div class="slds-form-element slds-border_bottom">
+                                            <div class="slds-form-element__control">
+                                                <lightning:input aura:id="orderId-input" name="orderInput" value="{!v.orderId}" label="Order Id" placeholder="Please enter your order ID here" onchange="{!c.handleOnOrdeIdChange}" disabled="{!v.isOrderIdDisabled}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-1 o-id-search-btn">
+                                        <lightning:button variant="brand" class="" label="Search" type="submit" onclick="{!c.handleSubmitOrderId}" disabled="{! empty(v.orderId)}"></lightning:button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="slds-form-element">
+                                <!--div class="slds-form-element__control or-seperator slds-m-top_small">
+                                        OR    
+                                    </div-->
+                                <aura:if isTrue="{! not(empty(v.freeFormErrorMessage))}">
+                                    <div class="freeFormErrorMessage-section slds-m-top_small">
+                                        <span>{!v.freeFormErrorMessage}</span>
+                                    </div>
+                                </aura:if>
+                            </div>
+                            <div>
+                                <lightning:radioGroup name="radioButtonGroup"
+                                                      label="Search By"
+                                                      options="{! v.options }"
+                                                      value="{! v.sValue }"
+                                                      onchange="{! c.handleChange }"
+                                                      type="button"/>
+                            </div>
+                            
+                            <div class="slds-p-horizontal_small">
+                                <!--aura:if isTrue="{!v.sValue == 'sByOid' }">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <lightning:input required="true" name="orderInput" value="{!v.orderId}" label="Order Id" placeholder="Please enter your order ID here"/>
+                                        </div>
+                                    </div>
+                                    <div class="sByOid-con-container">
+                                    </div>
+                                </aura:if-->
+                                <aura:if isTrue="{!v.sValue == 'sByContact' }">
+                                    <c:ContactLookup 
+                                                     objectAPIName="contact"
+                                                     aura:id="contact"
+                                                     showAddNew="false"
+                                                     label=""
+                                                     maxResults="5"
+                                                     returnFields="['FirstName','LastName','Email','LoyaltyID__c','Phone']"
+                                                     queryFields="['FirstName','LastName','Email','LoyaltyID__c','Phone']"
+                                                     selectedId="{!v.selectedId}"
+                                                     filter="CreatedDate > 1900-01-01T00:00:01Z" />
+                                    <div class="sByContact-con-container">
+                                        <aura:if isTrue="{!not(empty (v.selectedId))}">
+                                            <div class="slds-grid slds-gutters slds-m-horizontal_xx-small slds-m-vertical_x-small">
+                                                <div class="slds-col slds-size_2-of-4 slds-box">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control contact-extrafileds-container">
+                                                            <lightning:input aura:id="cb_firstName" type="checkbox" label="First Name:" name="cb_firstName" checked="{! not (empty (v.contactRecord.FirstName))}"/>
+                                                            <span name="firstName" class="val-item">{!v.contactRecord.FirstName}</span>
+                                                            <!--lightning:input readonly="true" name="firstName" value="{!v.contactRecord.FirstName}" label="First Name" variant="label-hidden"/-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control contact-extrafileds-container">
+                                                            <lightning:input aura:id="cb_lastName" type="checkbox" label="Last Name:" name="cb_lastName" checked="{! not (empty (v.contactRecord.LastName))}"/>
+                                                            <span name="lastName" class="val-item">{!v.contactRecord.LastName}</span>
+                                                            <!--lightning:input readonly="true" name="lastName" value="{!v.contactRecord.LastName}" label="Last Name" variant="label-hidden"/-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control contact-extrafileds-container">
+                                                            <lightning:input aura:id="cb_email" type="checkbox" label="Email:" name="cb_email" checked="{! not (empty (v.contactRecord.Email))}"/>
+                                                            <span name="email" class="val-item">{!v.contactRecord.Email}</span>
+                                                            <!--lightning:input readonly="true" type="email" name="email" value="{!v.contactRecord.Email}" label="Email" variant="label-hidden"/-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control contact-extrafileds-container">
+                                                            <lightning:input aura:id="cb_phone" type="checkbox" label="Phone:" name="cb_phone" checked="{! not (empty (v.contactRecord.Phone))}"/>
+                                                            <span name="phone" class="val-item">{!v.contactRecord.Phone}</span>
+                                                            <!--lightning:input readonly="true" type="tel" name="phone" value="{!v.contactRecord.Phone}" label="Phone" variant="label-hidden"/-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_2-of-4 slds-box">
+                                                    
+                                                    
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="loyaltyId">Loyalty ID:</label>
+                                                            <span name="loyaltyId" class="val-item">{!v.contactRecord.LoyaltyID__c}</span>
+                                                            <!--lightning:input readonly="true" type="text" name="" value="{!v.contactRecord.LoyaltyID__c}" label="Loyalty ID:"/-->
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="brandId">Brand:</label>
+                                                            <span name="brandId" class="val-item">{!v.contactRecord.Brand__c}</span>
+                                                            <!--lightning:input readonly="true" type="text" name="brandId" value="{!v.contactRecord.Brand__c}" label="Brand Names:"/-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="isEmployee__c">Is Employee:</label>
+                                                            <lightning:input class="val-item" aura:id="isEmployee__c" id="isEmployee__c" readonly="true" type="checkbox" name="isEMployee" checked="{!v.contactRecord.isEmployee__c}" value="{!v.contactRecord.isEmployee__c}" variant="label-hidden" label="Is Employee:" disabled="true"/>
+                                                        </div>
+                                                    </div>
+                                                    <!--div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <lightning:input readonly="true" type="text" name="vip" value="{!v.contactRecord.VIP__c}" label="VIP"/>
+                                                        </div>
+                                                    </div-->
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="Bulk_Buyer__c">Bulk Buyer:</label>
+                                                            <lightning:input class="val-item" aura:id="Bulk_Buyer__c" id="Bulk_Buyer__c" readonly="true" type="checkbox" name="brandId" checked="{!v.contactRecord.Bulk_Buyer__c}" value="{!v.contactRecord.Bulk_Buyer__c}" variant="label-hidden" label="Bulk Buyer:" disabled="true"/>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="Loyalty Flag__c">Loyalty Flag:</label>
+                                                            <lightning:input class="val-item" aura:id="Loyalty Flag__c" id="Loyalty Flag__c" readonly="true" type="checkbox" name="LoyaltyFlag__c" checked="{!v.contactRecord.LoyaltyFlag__c}" value="{!v.contactRecord.LoyaltyFlag__c}" variant="label-hidden" label="Loyalty Flag" disabled="true"/>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="Multiple_Offender_Contact__c">Multiple Offender Contact:</label>
+                                                            <lightning:input class="val-item" aura:id="Multiple_Offender_Contact__c" id="Multiple_Offender_Contact__c" readonly="true" type="checkbox" name="Multiple_Offender_Contact__c" checked="{!v.contactRecord.Multiple_Offender_Contact__c}" value="{!v.contactRecord.Multiple_Offender_Contact__c}" variant="label-hidden" label="Multiple Offender Contact" disabled="true"/>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control look-extrafileds-container">
+                                                            <label class="slds-form-element__label field-label" for="EmailOptInStatus__c">Email Opt-in:</label>
+                                                            <span name="EmailOptInStatus__c" class="val-item">{!v.contactRecord.EmailOptInStatus__c}</span>
+                                                        </div>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>                           
+                                        </aura:if>
+                                        <aura:if isTrue="{! not(empty(v.ecommSiteErrorMessage))}">
+                         	<div class="freeFormErrorMessage-section slds-m-top_small ">
+                          		<span>{!v.ecommSiteErrorMessage}</span>
+                            </div>
+                        </aura:if>
+                                    </div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.sValue == 'sByFreeForm'}">
+                                    <div class="sByFreeForm-con-container">
+                                        
+                                        <div class="slds-form-element slds-border_bottom">
+                                            <div class="slds-form-element__control">
+                                                <lightning:input name="firstName" value="{!v.manualContactRecord.FirstName}" label="First Name" onchange="{!c.handleOnContactDetailChange}" disabled="{!v.isContactFormDisabled}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-border_bottom">
+                                            <div class="slds-form-element__control">
+                                                <lightning:input name="lastName" value="{!v.manualContactRecord.LastName}" label="Last Name" onchange="{!c.handleOnContactDetailChange}" disabled="{!v.isContactFormDisabled}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-border_bottom">
+                                            <div class="slds-form-element__control">
+                                                <lightning:input type="text" name="email"  value="{!v.manualContactRecord.Email}" label="Email" onchange="{!c.handleOnContactDetailChange}" disabled="{!v.isContactFormDisabled}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-border_bottom">
+                                            <div class="slds-form-element__control">
+                                                <span
+                                                      onkeydown="{!c.enforceFormat}"
+                                                      onkeyup="{!c.formatToPhone}"
+                                                      >
+                                                    <lightning:input aura:id="inputPhoneFreeForm" type="tel" name="phone" value="{!v.manualContactRecord.Phone}" label="Phone" 
+                                                                     onchange="{!c.handleOnContactDetailChange}"
+                                                                     disabled="{!v.isContactFormDisabled}"/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                         <aura:if isTrue="{! not(empty(v.ecommSiteErrorMessage))}">
+                                        <div class="freeFormErrorMessage-section slds-m-top_small">
+                                            
+                                            <span>{!v.ecommSiteErrorMessage}</span>
+                                        </div>
+                                    </aura:if>
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </div>
+                    </lightning:card>                    
+                </div>
+                <aura:if isTrue="{!v.isLoading}">
+                    <lightning:spinner alternativeText="Loading" size="small" />
+                </aura:if>
+            </div>
+        </div>
+    </aura:if>
+</aura:component>

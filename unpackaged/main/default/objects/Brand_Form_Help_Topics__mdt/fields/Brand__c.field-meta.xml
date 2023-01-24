@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <description>Associated brand</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Choose a related &quot;Brand&quot; here. When the chosen &quot;Brand&quot; is chosen from the Brand Form, this Help Topic entry will display.</inlineHelpText>
+    <label>Brand</label>
+    <referenceTo>Webform_Brands__mdt</referenceTo>
+    <relationshipLabel>Brand Form - Help Topics</relationshipLabel>
+    <relationshipName>Brand_Form_Help_Topics1</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

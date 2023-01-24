@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Brand__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CalvinKlein.us</fullName>
+                <default>false</default>
+                <label>Online - CalvinKlein.com</label>
+            </value>
+            <value>
+                <fullName>Calvin Klein Retail</fullName>
+                <default>false</default>
+                <label>Calvin Klein Store</label>
+            </value>
+            <value>
+                <fullName>Tommy.com</fullName>
+                <default>false</default>
+                <label>Online - Tommy.com</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger Retail</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger Store</label>
+            </value>
+            <value>
+                <fullName>SpeedoUSA.com</fullName>
+                <default>false</default>
+                <label>Online - speedo.com</label>
+            </value>
+            <value>
+                <fullName>VanHeusen.com</fullName>
+                <default>false</default>
+                <label>Online - vanheusen.com</label>
+            </value>
+            <value>
+                <fullName>Izod.com</fullName>
+                <default>false</default>
+                <label>Online - Izod.com</label>
+            </value>
+            <value>
+                <fullName>styleBureau.com</fullName>
+                <default>false</default>
+                <label>Online - styleBureau.com</label>
+            </value>
+            <value>
+                <fullName>trueandco.com</fullName>
+                <default>false</default>
+                <label>Online -True&amp;co.com</label>
+            </value>
+            <value>
+                <fullName>CalvinKlein.ca</fullName>
+                <default>false</default>
+                <label>Online-CalvinKlein Canada</label>
+            </value>
+            <value>
+                <fullName>Speedo.com</fullName>
+                <default>false</default>
+                <label>Speedo.com</label>
+            </value>
+            <value>
+                <fullName>Warner.com</fullName>
+                <default>false</default>
+                <label>Online-Warner&#39;s</label>
+            </value>
+            <value>
+                <fullName>Van Heusen | IZOD Company Store</fullName>
+                <default>false</default>
+                <label>Van Heusen | IZOD Company Store</label>
+            </value>
+            <value>
+                <fullName>Amazon.com</fullName>
+                <default>false</default>
+                <label>Amazon.com</label>
+            </value>
+            <value>
+                <fullName>Nordstrom</fullName>
+                <default>false</default>
+                <label>Nordstrom</label>
+            </value>
+            <value>
+                <fullName>Other Retailer</fullName>
+                <default>false</default>
+                <label>Other Retailer</label>
+            </value>
+            <value>
+                <fullName>Olga.com</fullName>
+                <default>false</default>
+                <label>Online-Olga</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>84</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>styleBureau.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>81</controllingFieldValue>
+            <controllingFieldValue>82</controllingFieldValue>
+            <controllingFieldValue>83</controllingFieldValue>
+            <valueName>Other Retailer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>SpeedoUSA.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>82</controllingFieldValue>
+            <valueName>VanHeusen.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>81</controllingFieldValue>
+            <valueName>Izod.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Speedo.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>83</controllingFieldValue>
+            <valueName>Warner.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <valueName>trueandco.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <valueName>Nordstrom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Tommy.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Tommy Hilfiger Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>CalvinKlein.us</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Calvin Klein Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>CalvinKlein.ca</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

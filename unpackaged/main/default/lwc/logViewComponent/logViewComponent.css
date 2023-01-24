@@ -1,0 +1,23 @@
+.filterContainer {
+    border: 2px solid #ffb75d;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    background-color: white;
+    padding: 0rem;
+    border-radius: 1rem;
+}
+.headerText{
+    font-weight: normal;
+    font-size: 18px; 
+    color: white;
+    padding-top: 0.5rem !important;
+}
+.containerDiv{
+    height:auto;
+    background: black;
+    border-radius: 1rem;
+    margin-top: -1rem;
+}
+.typeFilter{
+    width: 14rem;
+}

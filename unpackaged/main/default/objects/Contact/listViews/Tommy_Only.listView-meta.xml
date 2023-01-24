@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tommy_Only</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Brand__c</columns>
+    <columns>Customer_Id__c</columns>
+    <columns>EmailOptInStatus__c</columns>
+    <columns>EmailOptInDate__c</columns>
+    <columns>LoyaltyID__c</columns>
+    <columns>EmailOptDownStatus__c</columns>
+    <columns>EmailOptOutDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Brand__c</field>
+        <operation>contains</operation>
+        <value>Tommy</value>
+    </filters>
+    <label>Tommy Only</label>
+</ListView>

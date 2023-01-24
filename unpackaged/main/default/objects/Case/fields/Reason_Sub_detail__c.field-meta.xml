@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Sub_detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Sub-detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Code_Details__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+                <label>Accessories</label>
+            </value>
+            <value>
+                <fullName>Activewear</fullName>
+                <default>false</default>
+                <label>Activewear</label>
+            </value>
+            <value>
+                <fullName>Advertisement Feedback</fullName>
+                <default>false</default>
+                <label>Advertisement Feedback</label>
+            </value>
+            <value>
+                <fullName>Associate Behavior</fullName>
+                <default>false</default>
+                <label>Associate Behavior</label>
+            </value>
+            <value>
+                <fullName>Bags/Wallets</fullName>
+                <default>false</default>
+                <label>Bags/Wallets</label>
+            </value>
+            <value>
+                <fullName>Bottoms</fullName>
+                <default>false</default>
+                <label>Bottoms</label>
+            </value>
+            <value>
+                <fullName>Canadian Return Policy</fullName>
+                <default>false</default>
+                <label>Canadian Return Policy</label>
+            </value>
+            <value>
+                <fullName>Carrier Claim</fullName>
+                <default>false</default>
+                <label>Carrier Claim</label>
+            </value>
+            <value>
+                <fullName>Checkout/Cart</fullName>
+                <default>false</default>
+                <label>Checkout/Cart</label>
+            </value>
+            <value>
+                <fullName>Color</fullName>
+                <default>false</default>
+                <label>Color</label>
+            </value>
+            <value>
+                <fullName>Cosmetic Products</fullName>
+                <default>false</default>
+                <label>Cosmetic Products</label>
+            </value>
+            <value>
+                <fullName>Customer Injury</fullName>
+                <default>false</default>
+                <label>Customer Injury</label>
+            </value>
+            <value>
+                <fullName>Customer Profiling</fullName>
+                <default>false</default>
+                <label>Customer Profiling</label>
+            </value>
+            <value>
+                <fullName>Damaged Package</fullName>
+                <default>false</default>
+                <label>Damaged Package</label>
+            </value>
+            <value>
+                <fullName>Dead Hyperlink</fullName>
+                <default>false</default>
+                <label>Dead Hyperlink</label>
+            </value>
+            <value>
+                <fullName>Delivered Not Received</fullName>
+                <default>false</default>
+                <label>Delivered Not Received</label>
+            </value>
+            <value>
+                <fullName>Dresses/Skirts</fullName>
+                <default>false</default>
+                <label>Dresses/Skirts</label>
+            </value>
+            <value>
+                <fullName>Dress Shirts</fullName>
+                <default>false</default>
+                <label>Dress Shirts</label>
+            </value>
+            <value>
+                <fullName>Editorial Feedback</fullName>
+                <default>false</default>
+                <label>Editorial Feedback</label>
+            </value>
+            <value>
+                <fullName>Employment Opportunities</fullName>
+                <default>false</default>
+                <label>Employment Opportunities</label>
+            </value>
+            <value>
+                <fullName>Employment Verification</fullName>
+                <default>false</default>
+                <label>Employment Verification</label>
+            </value>
+            <value>
+                <fullName>Express Shipping Delays</fullName>
+                <default>false</default>
+                <label>Express Shipping Delays</label>
+            </value>
+            <value>
+                <fullName>Fashion Event Request</fullName>
+                <default>false</default>
+                <label>Fashion Event Request</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>Final Sale Inquiry</fullName>
+                <default>false</default>
+                <label>Final Sale Inquiry</label>
+            </value>
+            <value>
+                <fullName>Fit &amp; Sizing Question</fullName>
+                <default>false</default>
+                <label>Fit &amp; Sizing Question</label>
+            </value>
+            <value>
+                <fullName>Footwear</fullName>
+                <default>false</default>
+                <label>Footwear</label>
+            </value>
+            <value>
+                <fullName>Fragrances</fullName>
+                <default>false</default>
+                <label>Fragrances</label>
+            </value>
+            <value>
+                <fullName>General Sponsorship</fullName>
+                <default>false</default>
+                <label>General Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Gift Return/Exchange</fullName>
+                <default>false</default>
+                <label>Gift Return/Exchange</label>
+            </value>
+            <value>
+                <fullName>Home Products</fullName>
+                <default>false</default>
+                <label>Home Products</label>
+            </value>
+            <value>
+                <fullName>Image Error</fullName>
+                <default>false</default>
+                <label>Image Error</label>
+            </value>
+            <value>
+                <fullName>Incorrect Order</fullName>
+                <default>false</default>
+                <label>Incorrect Order</label>
+            </value>
+            <value>
+                <fullName>Infant</fullName>
+                <default>false</default>
+                <label>Infant</label>
+            </value>
+            <value>
+                <fullName>InStore eComm Return</fullName>
+                <default>false</default>
+                <label>InStore eComm Return</label>
+            </value>
+            <value>
+                <fullName>InStore PayPal Return</fullName>
+                <default>false</default>
+                <label>InStore PayPal Return</label>
+            </value>
+            <value>
+                <fullName>International Shipping</fullName>
+                <default>false</default>
+                <label>International Shipping</label>
+            </value>
+            <value>
+                <fullName>Internship</fullName>
+                <default>false</default>
+                <label>Internship</label>
+            </value>
+            <value>
+                <fullName>Item</fullName>
+                <default>false</default>
+                <label>Item</label>
+            </value>
+            <value>
+                <fullName>Jeans/Denim</fullName>
+                <default>false</default>
+                <label>Jeans/Denim</label>
+            </value>
+            <value>
+                <fullName>Late Return</fullName>
+                <default>false</default>
+                <label>Late Return</label>
+            </value>
+            <value>
+                <fullName>Licensing Request</fullName>
+                <default>false</default>
+                <label>Licensing Request</label>
+            </value>
+            <value>
+                <fullName>Lost Package</fullName>
+                <default>false</default>
+                <label>Lost Package</label>
+            </value>
+            <value>
+                <fullName>Luggage</fullName>
+                <default>false</default>
+                <label>Luggage</label>
+            </value>
+            <value>
+                <fullName>Media Response Request</fullName>
+                <default>false</default>
+                <label>Media Response Request</label>
+            </value>
+            <value>
+                <fullName>Modeling Inquiry</fullName>
+                <default>false</default>
+                <label>Modeling Inquiry</label>
+            </value>
+            <value>
+                <fullName>Model Inquiry</fullName>
+                <default>false</default>
+                <label>Model Inquiry</label>
+            </value>
+            <value>
+                <fullName>No Receipt/Original Form of Payment</fullName>
+                <default>false</default>
+                <label>No Receipt/Original Form of Payment</label>
+            </value>
+            <value>
+                <fullName>No Ship Confirmation Email</fullName>
+                <default>false</default>
+                <label>No Ship Confirmation Email</label>
+            </value>
+            <value>
+                <fullName>Outerwear</fullName>
+                <default>false</default>
+                <label>Outerwear</label>
+            </value>
+            <value>
+                <fullName>Packaging Concern</fullName>
+                <default>false</default>
+                <label>Packaging Concern</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>PR Inquiry</fullName>
+                <default>false</default>
+                <label>PR Inquiry</label>
+            </value>
+            <value>
+                <fullName>Product Description</fullName>
+                <default>false</default>
+                <label>Product Description</label>
+            </value>
+            <value>
+                <fullName>Product Page</fullName>
+                <default>false</default>
+                <label>Product Page</label>
+            </value>
+            <value>
+                <fullName>Product Question</fullName>
+                <default>false</default>
+                <label>Product Question</label>
+            </value>
+            <value>
+                <fullName>Quantity</fullName>
+                <default>false</default>
+                <label>Quantity</label>
+            </value>
+            <value>
+                <fullName>Resend Virtual Giftcard</fullName>
+                <default>false</default>
+                <label>Resend Virtual Giftcard</label>
+            </value>
+            <value>
+                <fullName>Return Fee</fullName>
+                <default>false</default>
+                <label>Return Fee</label>
+            </value>
+            <value>
+                <fullName>Return to Sender</fullName>
+                <default>false</default>
+                <label>Return to Sender</label>
+            </value>
+            <value>
+                <fullName>Sample Question</fullName>
+                <default>false</default>
+                <label>Sample Question</label>
+            </value>
+            <value>
+                <fullName>Ship From Store Item/Order Cancellation</fullName>
+                <default>false</default>
+                <label>Ship From Store Item/Order Cancellation</label>
+            </value>
+            <value>
+                <fullName>Ship From Store Order Delays</fullName>
+                <default>false</default>
+                <label>Ship From Store Order Delays</label>
+            </value>
+            <value>
+                <fullName>Shipment Policy</fullName>
+                <default>false</default>
+                <label>Shipment Policy</label>
+            </value>
+            <value>
+                <fullName>Shirts/Tops/Blouses/Polos</fullName>
+                <default>false</default>
+                <label>Shirts/Tops/Blouses/Polos</label>
+            </value>
+            <value>
+                <fullName>Shoprunner Question</fullName>
+                <default>false</default>
+                <label>Shoprunner Question</label>
+            </value>
+            <value>
+                <fullName>Size</fullName>
+                <default>false</default>
+                <label>Size</label>
+            </value>
+            <value>
+                <fullName>Social Media Sponsorship</fullName>
+                <default>false</default>
+                <label>Social Media Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Split Shipment</fullName>
+                <default>false</default>
+                <label>Split Shipment</label>
+            </value>
+            <value>
+                <fullName>Store Accommodation</fullName>
+                <default>false</default>
+                <label>Store Accommodation</label>
+            </value>
+            <value>
+                <fullName>Store Environment</fullName>
+                <default>false</default>
+                <label>Store Environment</label>
+            </value>
+            <value>
+                <fullName>Store Marketing</fullName>
+                <default>false</default>
+                <label>Store Marketing</label>
+            </value>
+            <value>
+                <fullName>Store Policy</fullName>
+                <default>false</default>
+                <label>Store Policy</label>
+            </value>
+            <value>
+                <fullName>Suggestion</fullName>
+                <default>false</default>
+                <label>Suggestion</label>
+            </value>
+            <value>
+                <fullName>Suiting/Formal Wear</fullName>
+                <default>false</default>
+                <label>Suiting/Formal Wear</label>
+            </value>
+            <value>
+                <fullName>Sweaters/Wovens</fullName>
+                <default>false</default>
+                <label>Sweaters/Wovens</label>
+            </value>
+            <value>
+                <fullName>Swimwear</fullName>
+                <default>false</default>
+                <label>Swimwear</label>
+            </value>
+            <value>
+                <fullName>Tops</fullName>
+                <default>false</default>
+                <label>Tops</label>
+            </value>
+            <value>
+                <fullName>Track Shipment</fullName>
+                <default>false</default>
+                <label>Track Shipment</label>
+            </value>
+            <value>
+                <fullName>Underwear</fullName>
+                <default>false</default>
+                <label>Underwear</label>
+            </value>
+            <value>
+                <fullName>Update Account Info Reason</fullName>
+                <default>false</default>
+                <label>Update Account Info Reason</label>
+            </value>
+            <value>
+                <fullName>Virtual Giftcard Inquiry</fullName>
+                <default>false</default>
+                <label>Virtual Giftcard Inquiry</label>
+            </value>
+            <value>
+                <fullName>Virtual Giftcard Purchase</fullName>
+                <default>false</default>
+                <label>Virtual Giftcard Purchase</label>
+            </value>
+            <value>
+                <fullName>Watches/Jewelry</fullName>
+                <default>false</default>
+                <label>Watches/Jewelry</label>
+            </value>
+            <value>
+                <fullName>Wrong Address</fullName>
+                <default>false</default>
+                <label>Wrong Address</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Canadian Return Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Final Sale Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Gift Return/Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>InStore eComm Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>InStore PayPal Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Late Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>No Receipt/Original Form of Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Return Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return Policy Inquiry</controllingFieldValue>
+            <valueName>Store Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Associate Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Customer Injury</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Customer Profiling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Store Environment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Store Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <valueName>Store Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Carrier Claim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Damaged Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Delivered Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Express Shipping Delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>International Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Lost Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>No Ship Confirmation Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Packaging Concern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Return to Sender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Ship From Store Item/Order Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Ship From Store Order Delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Shipment Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Shoprunner Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Split Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Track Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Wrong Address</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources</controllingFieldValue>
+            <valueName>Employment Opportunities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources</controllingFieldValue>
+            <valueName>Employment Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources</controllingFieldValue>
+            <valueName>Internship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Advertisement Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Editorial Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Fashion Event Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>General Sponsorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Media Response Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Modeling Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model Inquiry</controllingFieldValue>
+            <valueName>Social Media Sponsorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Checkout/Cart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Dead Hyperlink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Image Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Product Description</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website Issue</controllingFieldValue>
+            <valueName>Product Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Giftcard</controllingFieldValue>
+            <valueName>Resend Virtual Giftcard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Giftcard</controllingFieldValue>
+            <valueName>Virtual Giftcard Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Giftcard</controllingFieldValue>
+            <valueName>Virtual Giftcard Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Fit &amp; Sizing Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Model Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>PR Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Product Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Sample Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adaptive</controllingFieldValue>
+            <valueName>Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edit Account Information</controllingFieldValue>
+            <valueName>Update Account Info Reason</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licensing</controllingFieldValue>
+            <valueName>Licensing Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mis-Ship</controllingFieldValue>
+            <valueName>Color</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mis-Ship</controllingFieldValue>
+            <valueName>Incorrect Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mis-Ship</controllingFieldValue>
+            <valueName>Item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mis-Ship</controllingFieldValue>
+            <valueName>Quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mis-Ship</controllingFieldValue>
+            <valueName>Size</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

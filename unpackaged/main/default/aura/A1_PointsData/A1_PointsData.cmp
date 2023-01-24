@@ -1,0 +1,116 @@
+<aura:component controller="A1_PointsDataApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    <aura:attribute name="currentPointBalance" type="Integer"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="isCaseRecord" type="boolean" />
+    <aura:attribute name="pendingPointAdjustment" type="boolean" default="false" />
+    <aura:attribute name="isEnableRewardsButton" type="boolean" default="false" />
+    <aura:attribute name="numRecords" type="Integer" default="0"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="pointWrapper" type="object[]"/>
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    
+    <lightning:flow aura:id="pointAdjustmentFlow" />
+    <lightning:flow aura:id="rewardAdjustmentFlow" />
+    <!-- register events -->
+    <aura:registerEvent name="PointEvent" type="c:A1_PointEvent"/>
+    
+    
+    <!--spinner -->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    
+    <!-- To Show Detail -->
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <!-- showing spinner -->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    
+    <!--
+        <aura:if isTrue="{!v.isCaseRecord}">
+            <lightning:button class="slds-m-bottom_small mergeButton slds-float_right" label="Merge Loyalty Accounts" title="merge" onclick="{! c.handleMergeLoyalty }" />
+        </aura:if>
+    -->
+    <div class="labelClass">Point Balance</div>
+    <div class="customFont">Current Point Balance: {!v.currentPointBalance}</div>
+    
+    <div class="customFont slds-text-title_bold slds-m-top_small">
+        <lightning:icon iconName="standard:lead_insights" alternativeText="Points" class="slds-m-right_x-small" />
+        <!--Points ({!v.numRecords})-->
+        Points History
+        
+                
+        <!-- show buttons when on Case Record and pendingPointAdjustment is false -->
+        <!--<aura:if isTrue="{! and(v.isCaseRecord,v.pendingPointAdjustment)}">-->
+        <aura:if isTrue="{!v.isCaseRecord}">   
+            <div class="buttonClass">
+                <lightning:button label="Point Adjustment" title="points" onclick="{! c.handlePointAdjustment }" />
+                
+                <!--<aura:if isTrue="{!v.isEnableRewardsButton}"> -->
+                  <aura:if isTrue="{! and(v.isEnableRewardsButton,v.pendingPointAdjustment)}">
+                    <lightning:button label="Reward Adjustment" title="rewards" onclick="{! c.handleRewardAdjustment }" />
+                </aura:if>
+            </div>
+        </aura:if>
+    </div>
+    
+     <aura:if isTrue="{!not(empty(v.pointWrapper))}">
+     <div class="slds-p-around--medium slds-scrollable_x slds-scrollable_y">
+         <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+                
+                <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Description</div>
+                </th>
+                 <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Issue Date</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Type</div>
+                </th>
+                 <th scope="col">
+                    <div class="slds-truncate" title="rewardid">Points Issued</div>
+                </th>
+               
+            </tr>
+        </thead>
+    	 <tbody>
+            <aura:iteration items="{!v.pointWrapper}" var="points" indexVar="ind">
+                <tr>
+                    
+                    
+                    
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!points.Description}"><a href="javascript:void(0)" onclick="{!c.handleClick}" id="{!ind}">
+            {!points.Description}</a></div>
+                    </th>
+                     <th scope="row">
+                        <div class="slds-truncate" title="{!points.IssueDate}">{!points.IssueDate}</div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!points.Type}">{!points.Type}</div>
+                    </th>
+                     <th scope="row">
+                        <div class="slds-truncate" title="{!points.PointsIssued}">{!points.PointsIssued}</div>
+                    </th>
+                   
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+  </div>
+    <aura:set attribute="else">
+          <div class="slds-m-top_xx-small slds-align_absolute-center">No Records Found</div>
+    </aura:set>
+  </aura:if> 
+</aura:component>

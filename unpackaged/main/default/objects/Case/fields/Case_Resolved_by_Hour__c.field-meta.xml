@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Resolved_by_Hour__c</fullName>
+    <description>This field is used for reporting to track resolved cases per hour.</description>
+    <externalId>false</externalId>
+    <formula>Value(MID(TEXT( Resolved_Date__c  - (0.0417*4)), 12, 2))</formula>
+    <label>Case Resolved by Hour</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

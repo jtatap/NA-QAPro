@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Problem</fullName>
+        <default>false</default>
+        <label>Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Feature Request</fullName>
+        <default>false</default>
+        <label>Feature Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Question</fullName>
+        <default>false</default>
+        <label>Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product</fullName>
+        <default>false</default>
+        <label>Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Order</fullName>
+        <default>false</default>
+        <label>Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Returns</fullName>
+        <default>false</default>
+        <label>Returns</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loyalty</fullName>
+        <default>false</default>
+        <label>Loyalty</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Privacy</fullName>
+        <default>false</default>
+        <label>Privacy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hilfiger Club</fullName>
+        <default>false</default>
+        <label>Hilfiger Club</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical</fullName>
+        <default>false</default>
+        <label>Technical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate</fullName>
+        <default>false</default>
+        <label>Corporate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fit</fullName>
+        <default>false</default>
+        <label>Fit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Exchange</fullName>
+        <default>false</default>
+        <label>Exchange</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Your Account</fullName>
+        <default>false</default>
+        <label>Your Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Try Before You Buy</fullName>
+        <default>false</default>
+        <label>Try Before You Buy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Survey Follow Up Request</fullName>
+        <default>false</default>
+        <label>Survey Follow Up Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gift Cards</fullName>
+        <default>false</default>
+        <label>Gift Cards</label>
+    </standardValue>
+</StandardValueSet>

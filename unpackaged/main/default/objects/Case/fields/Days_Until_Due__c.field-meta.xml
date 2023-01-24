@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Until_Due__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (!ISBLANK(Due_Date__c),
+  IF(Due_Date__c &gt; NOW(),
+  Due_Date__c - NOW(),
+  0),
+NULL)</formula>
+    <label>Days Until Due</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

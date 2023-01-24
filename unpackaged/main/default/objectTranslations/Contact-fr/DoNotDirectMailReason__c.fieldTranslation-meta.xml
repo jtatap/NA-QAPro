@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Do Not Direct Mail Reason --></label>
+        <name>DoNotDirectMailReason__c</name>
+        <picklistValues>
+            <masterLabel>A - Email Address Only</masterLabel>
+            <translation><!-- A - Email Address Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM</masterLabel>
+            <translation><!-- HM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HN</masterLabel>
+            <translation><!-- HN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HNS</masterLabel>
+            <translation><!-- HNS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HS</masterLabel>
+            <translation><!-- HS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HT</masterLabel>
+            <translation><!-- HT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HV</masterLabel>
+            <translation><!-- HV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HVS</masterLabel>
+            <translation><!-- HVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N - NCOA</masterLabel>
+            <translation><!-- N - NCOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NHS</masterLabel>
+            <translation><!-- NHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NS</masterLabel>
+            <translation><!-- NS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NT</masterLabel>
+            <translation><!-- NT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - Standardization</masterLabel>
+            <translation><!-- S - Standardization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST</masterLabel>
+            <translation><!-- ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T - Store Address</masterLabel>
+            <translation><!-- T - Store Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TS</masterLabel>
+            <translation><!-- TS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VS</masterLabel>
+            <translation><!-- VS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

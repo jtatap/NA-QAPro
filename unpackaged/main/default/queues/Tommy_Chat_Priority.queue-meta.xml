@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Tommy Chat Priority</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Brands</publicGroup>
+            <publicGroup>Tommy_Hilfiger</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Priority_Chat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aliyah_All_Open_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Open,Pending,On Hold</value>
+    </filters>
+    <filters>
+        <field>CONTACT.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>christopher</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>zQueue Christopher Apostola</value>
+    </filters>
+    <filters>
+        <field>Brand__c</field>
+        <operation>equals</operation>
+        <value>1,2,4,5,7,8,9,81,83,84,10</value>
+    </filters>
+    <label>Individual CSR All Open Cases</label>
+    <sharedTo>
+        <role>PVH_Corp</role>
+        <role>Supervisor_Tier_3_CSR</role>
+    </sharedTo>
+</ListView>

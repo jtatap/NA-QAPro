@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Put the message you want displayed here specific to the Ecom or Single Brand Channel. HTML allowed for additional styling. --></help>
+        <label><!-- Additional Information ECom/Single --></label>
+        <name>Additional_Information_ECom_Single__c</name>
+    </CustomFieldTranslation>

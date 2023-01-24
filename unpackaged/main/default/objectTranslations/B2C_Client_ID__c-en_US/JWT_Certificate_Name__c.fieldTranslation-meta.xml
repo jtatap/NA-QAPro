@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ... represents the Certificate that will be used to mint JWT tokens that can be exchanged for REST API AuthTokens via the B2C Commerce Account Manager. --></help>
+        <label><!-- JWT Certificate Name --></label>
+        <name>JWT_Certificate_Name__c</name>
+    </CustomFieldTranslation>

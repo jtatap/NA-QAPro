@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TH Warehouse Delays</label>
+    <protected>false</protected>
+    <values>
+        <field>Announcement_End_Date__c</field>
+        <value xsi:type="xsd:date">2021-06-23</value>
+    </values>
+    <values>
+        <field>Announcement_Start_Date__c</field>
+        <value xsi:type="xsd:date">2021-06-16</value>
+    </values>
+    <values>
+        <field>Announcement__c</field>
+        <value xsi:type="xsd:string">We’re currently making improvements to our warehouse systems. From 6/17-6/23, expedited shipping will be unavailable, and there may be slight delays in order processing. We appreciate your patience.</value>
+    </values>
+    <values>
+        <field>Brand_API_Name__c</field>
+        <value xsi:type="xsd:string">Tommy Hilfiger</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Warner&#39;s/Olga</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Brands</publicGroup>
+            <publicGroup>Wholesale</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Email</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

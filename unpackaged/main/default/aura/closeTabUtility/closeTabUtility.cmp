@@ -1,0 +1,13 @@
+<!--
+ - Created by bryananderson on 11/21/19.
+ -->
+
+<aura:component description="closeTabUtility" implements="lightning:backgroundUtilityItem,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="ToggleCloseCaseTab">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="tabObj" type="Object" />
+    <aura:handler event="c:getRecordIdEvent" action="{!c.handleApplicationEvent}"/>
+    <aura:handler event="lightning:tabClosed" action="{!c.onTabClosed}"/>
+    <aura:handler event="lightning:tabRefreshed" action="{!c.onTabRefreshed}"/>
+    <aura:handler event="lightning:tabFocused" action="{!c.onTabFocused}"/>
+    <lightning:workspaceAPI aura:id="workspace" />
+</aura:component>

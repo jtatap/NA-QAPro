@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Retail Reasons --></label>
+        <name>Retail_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Associate Discount</masterLabel>
+            <translation><!-- Associate Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Discrepancy</masterLabel>
+            <translation><!-- Cash Discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Warning</masterLabel>
+            <translation><!-- Customer Warning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incident Report</masterLabel>
+            <translation><!-- Incident Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locate Product</masterLabel>
+            <translation><!-- Locate Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyalty (Bulk Buying)</masterLabel>
+            <translation><!-- Loyalty (Bulk Buying) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyalty (General)</masterLabel>
+            <translation><!-- Loyalty (General) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyalty (Technical)</masterLabel>
+            <translation><!-- Loyalty (Technical) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order (E-Commerce)</masterLabel>
+            <translation><!-- Order (E-Commerce) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order (Special Order)</masterLabel>
+            <translation><!-- Order (Special Order) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return (Credit Card)</masterLabel>
+            <translation><!-- Return (Credit Card) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return (General)</masterLabel>
+            <translation><!-- Return (General) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return (Klarna)</masterLabel>
+            <translation><!-- Return (Klarna) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return (PayPal)</masterLabel>
+            <translation><!-- Return (PayPal) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

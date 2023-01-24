@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason Code --></label>
+        <name>Reason_Code__c</name>
+        <picklistValues>
+            <masterLabel>Adding Online Transaction</masterLabel>
+            <translation><!-- Adding Online Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adding Store Transaction</masterLabel>
+            <translation><!-- Adding Store Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beyond Extension Period</masterLabel>
+            <translation><!-- Beyond Extension Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Accommodation</masterLabel>
+            <translation><!-- Customer Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Distance</masterLabel>
+            <translation><!-- Customer Distance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Sick</masterLabel>
+            <translation><!-- Customer Sick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Traveling</masterLabel>
+            <translation><!-- Customer Traveling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Receive Email</masterLabel>
+            <translation><!-- Did Not Receive Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualification</masterLabel>
+            <translation><!-- Disqualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Card Accommodation</masterLabel>
+            <translation><!-- Gift Card Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Transaction Manual Accommodation</masterLabel>
+            <translation><!-- Online Transaction Manual Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outside of Country</masterLabel>
+            <translation><!-- Outside of Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signup Bonus Points Issue</masterLabel>
+            <translation><!-- Signup Bonus Points Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Processed Manual Accommodation</masterLabel>
+            <translation><!-- Store Processed Manual Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Extend</masterLabel>
+            <translation><!-- Unable to Extend --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Olga</fullName>
+    <columns>Sequence__c</columns>
+    <columns>Brand_Name__c</columns>
+    <columns>Question__c</columns>
+    <columns>Picklist_Values__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Brand_Name__c</field>
+        <operation>startsWith</operation>
+        <value>Olga</value>
+    </filters>
+    <label>Olga</label>
+</ListView>

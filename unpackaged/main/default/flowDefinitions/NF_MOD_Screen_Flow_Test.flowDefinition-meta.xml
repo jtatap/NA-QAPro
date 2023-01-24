@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to add/remove Public Group Members to the following Public Groups:
+
+- MOD
+- Tier 3 CSR/Supervisor
+- Ops/Quality</description>
+    <masterLabel>NF - MOD Screen Flow</masterLabel>
+</FlowDefinition>

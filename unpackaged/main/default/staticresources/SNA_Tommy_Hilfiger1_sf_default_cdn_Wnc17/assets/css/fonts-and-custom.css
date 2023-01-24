@@ -1,0 +1,587 @@
+/*
+Note : When adding css attributes
+
+Add your Date, First/Last Name and reason for using CSS overrides 
+
+Example:
+
+xx/xx/xxxx | First Last | This is an OOTB component. 
+*/
+
+/* 09/20/2021 | Luis Rocha | This is an OOTB component, so we can only change it from the css overrides. */
+.selfServiceTopicTrendingArticles42 .slds-grid--vertical a:focus {
+    box-shadow: 0 0 0 0px var(--lwc-colorBrand,rgb(0, 23, 79)) !important;
+} /* End of documented change. */
+
+.slds-tile__detail.slds-text-body--small.slds-p-bottom--xxx-small {
+    display: none !important;
+}
+
+.forcePageBlockSection  .test-id__field-label-container {
+	display: none;
+}
+
+.forceCommunityThemeLogo .logoImage { 
+    width: 250px !important;
+    height: 25px !important;
+}
+@font-face {
+    font-family: FuturaStd-Book;
+    src: url(../resource/FuturaStdBook);
+}
+@font-face {
+    font-family: FuturaStdBold;
+    src: url(../resource/FuturaStdBold);
+    
+} 
+
+
+.forceCommunityThemeNav.themeNavContainer {
+    font-size: 15px;
+}
+
+@media only screen and (max-width:462px){
+.contentContainer .widthContainer .content h2.contentTitle{
+color:rgb(0,23,79) !important;
+font-size: 30px;    
+}
+}
+
+
+@font-face { 
+    font-family: tommyfont; 
+	src: url(../resource/tommyfont);
+    font-weight:400;
+}
+
+@font-face {
+    font-family: tommyfont;
+    src: url(../resource/FuturaStdBold);
+    font-weight:700;
+} 
+
+
+.content .forcePageBlockSectionRow ~ .forcePageBlockSectionRow{
+    display:none;
+}
+
+.ebcm_content .slds-p-vertical--xx-small, .ebcm_content .slds-p-vertical_xx-small {
+border: none;
+}
+.topicRelatedArticleList .summary .footer {
+	display : none;
+}
+.selfServiceArticleHeaderDetail.meta {
+margin-bottom: 30px;
+display: none;
+}
+
+.forceCommunityEmbeddedServiceHelpButton {
+    bottom: 0px !important;
+    height: 35px !important;
+
+}
+
+.forceCommunityEmbeddedServiceHelpButton .help {
+    padding-right: 0px;
+    height: -webkit-fill-available;
+    bottom: -8px;
+}
+.forceCommunityEmbeddedServiceHelpButton .flatButton{
+    background-color: #00174f!important;
+    font-family: FuturaStd-Book, Arial, sans-serif!important;
+    min-width: 0px !important;
+    max-width: none !important;
+    width: 260px !important;
+    border-radius: 30px !important;
+    /*bottom: 12px !important; */
+    height: 35px !important;
+}
+
+.chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    font-family: FuturaStdBook !important;
+}
+.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonEnabled:hover::before,
+.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonEnabled:focus::before {
+  background-color: #02194c !important;
+  color: #fff !important;
+}
+.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel {
+    align-self: center !important;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+  background-color: #02194c !important;
+    color: #fff !important;
+  opacity: 1 !important;
+}
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus:hover {
+  background-color: #02194c !important;
+  color: #fff !important;
+  opacity: 1;
+}
+
+.chat-content.agent .chatMessageContent a:link, .chat-content.agent .chatMessageContent a:visited, .chat-content.agent .chatMessageContent a:hover, .chat-content.agent .chatMessageContent a:active {
+  color: #5491ff !important;
+}
+
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] a:link {
+    color: #fff !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+  background-color: #fff !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+background: #02194c !important;
+}
+
+.embeddedServiceSidebarDialogState .dialogButton {
+    background: #02194c !important;
+
+}
+.embeddedServiceSidebarDialogState .dialogButton:hover {
+    background: #4e5e82 !important;
+}
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background: #4e5e82 !important;
+}
+
+.forceCommunityEmbeddedServiceHelpButton .flatButton .uiButton {
+    background-color: #00174f;
+    font-family: "FuturaStd-Book", sans-serif;
+}
+.forceCommunityEmbeddedServiceHelpButton .flatButton  {
+    background-color: #00174f;
+    font-family: "FuturaStd-Book", sans-serif;
+}
+
+
+.forceCommunityEmbeddedServiceHelpButton .flatButton .uiButton:focus {
+    outline: 1px solid #00174f;
+}
+
+.forceCommunityEmbeddedServiceHelpButton .flatButton:focus {
+    outline: 1px solid #00174f;
+}
+
+.forceCommunityEmbeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+        font: FuturaStd-Book !important;
+}
+
+
+html,
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.embeddedServiceSidebar.sidebarMaximized {
+    background:none !important;
+}
+.helpButtonDisabled {
+    visibility: hidden;
+}
+
+.embeddedServiceSidebarHeader .headerText {
+    font-size: 16px !important;
+}
+
+.forceCommunityEmbeddedServiceHelpButton .flatButton {
+    bottom: 0px !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI.helpButton .messageContent {
+    justify-content: normal !important;
+}
+
+.forceCommunityEmbeddedServiceHelpButton .flatButton .uiButton:focus {
+    outline: 1px solid #00174f
+}
+
+.embeddedServiceSidebarFormField .uiInput .uiLabel-left {
+    display: inline-block;
+    font-size: 14px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message {
+    color: #fff
+}
+
+.embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+html.mobile .embeddedServiceLiveAgentStateChatHeader .chatOptions {
+    margin-top: 56px!important
+}
+
+.extendedHeader .embeddedServiceLiveAgentStateWaitingHeader .backgroundPattern {
+    background-image: none!important
+}
+
+.forceCommunityEmbeddedServiceHelpButton .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon,
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedImage {
+    margin-right: 0!important
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+    padding: 0!important
+}
+
+.embeddedServiceIcon{
+    font-family: embeddedserviceiconfont;
+    font-size: 1.25em;
+    content: url(../resource/TH_Chat/img/FLAG_32x32.svg) !important;
+    speak: none;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.help x-small embeddedServiceIcon{
+    font-family: embeddedserviceiconfont;
+    font-size: 1.25em;
+    content: url(../resource/TH_Chat/img/FLAG_32x32.svg) !important;
+    speak: none;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+.embeddedServiceIcon svg {
+    display: none !important;
+}
+html.mobile .embeddedServiceSidebar.modalContainer {
+    z-index: 1100
+}
+
+.embeddedServiceLiveAgentStateChatHeader .content {
+    justify-content: flex-start!important;
+    height: 156px!important
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message,
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName {
+    display: block!important;
+    font-size: 14px!important
+}
+
+.embeddedServiceSidebarExtendedHeader .backgroundPattern {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important
+}
+
+.embeddedServiceSidebarDialogState #dialogTextBody {
+    font-size: 14px!important
+}
+
+/* cta/minimized */
+.forceCommunityEmbeddedServiceHelpButton .flatButton .uiButton,
+.embeddedServiceSidebarMinimizedDefaultUI {
+    background-color: #00174f!important;
+    font-family: FuturaStd-Book, Arial, sans-serif!important;
+    min-width: 0px !important;
+    max-width: none !important;
+    width: 260px !important;
+    border-radius: 30px !important;
+    /*bottom: 12px !important; */
+    height: 35px !important;
+}
+
+
+
+/* adding logo to all minimized tabs */
+.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent .minimizedText::before {
+    content: url(../resource/TH_Chat/img/FLAG_32x32.svg) !important;
+}
+
+/* Hide logo from chat header */
+body > div.modalContainer.sidebarMaximized.layout-docked.embeddedServiceSidebar > div > embeddedservice-chat-header > header > img {
+    display: none;
+    width: 0px;
+}
+
+/* TH minimized chat, hide icon from embeddedServiceIcon */
+.embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon {
+    display: none;
+}
+
+/* hide old chat icon in minimized chat */
+.embeddedServiceSidebarMinimizedDefaultUI > button > div > div > span > svg {
+    display: none;
+}
+
+/* TH icon in initial minimized chat */
+.uiButton.helpButtonEnabled > embeddedServiceIcon {
+    content: url(../resource/TH_Chat/img/FLAG_32x32.svg);
+}
+
+/* hide old chat icon in initial minimized chat */
+body > div.forceCommunityEmbeddedServiceHelpButton > div > button > span.embeddedServiceIcon {
+    display:block !important;
+}
+
+/* styling for "cancel chat" button while connecting */
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+
+/* styling for "Go Back" button when ending Chat */
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #4e5e82 !important;
+}
+
+.dialogButton.dialog-button-1.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* styling for "Save Transcript" button when chat has ended */
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background-color: #00174F !important;
+    margin-top: 8px;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton:hover {
+    background-color: #000E2F !important;
+}
+
+.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton > span {
+    color: white !important;
+}
+
+/* remove TH logo when connecting */
+.waitingImage {
+    display: none;
+    height: 0px !important;
+}
+
+/* avatar change 
+.embeddedServiceLiveAgentStateChatAvatar .avatar {
+    background-image:url("../img/FLAG_32x32.svg") !important;
+}*/
+
+/* chat bubble background */
+.agent.chat-content[c-pvhChatMessageSnapinTommy_pvhChatMessageSnapinTommy] {
+    background-color: white !important;
+}
+
+/* chat background color */
+.embeddedServiceLiveAgentStateChat .messageArea {
+    background-color: #f4f4f4 !important;
+    margin-bottom: 2px !important;
+    border-bottom: 2px solid #02194c;
+}
+
+.embeddedServiceLiveAgentStateChat .messageArea .chatMessage {
+    background-color: #f4f4f4 !important;
+}
+
+/* mobile styling */
+@media screen and (max-device-width: 480px) {
+  .embeddedServiceHelpButton .helpButton {
+    top: 0px;
+  }
+    .forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel {
+        display: none !important;
+    }
+  .embeddedServiceSidebarMinimizedDefaultUI .minimizedText > .helpButtonLabel {
+    display: none;
+  }
+
+.embeddedServiceSidebar.layout-docked .dockableContainer, .embeddedServiceSidebar.layout-float .dockableContainer {
+    margin: 0px auto !important;
+}
+.forceCommunityEmbeddedServiceHelpButton {
+    right: 50px !important;
+    bottom: 50px !important;
+}
+    
+  .forceCommunityEmbeddedServiceHelpButton .flatButton, .embeddedServiceSidebarMinimizedDefaultUI {
+        background-color: #00174f !important;
+        border-radius: 100% !important;
+        min-width: 0px !important;
+        width: 44px !important;
+        height: 44px !important;
+        padding: 0px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom:49px !important;
+        box-shadow: 0px 3px 3px grey !important;
+  }
+.forceCommunityEmbeddedServiceHelpButton .embeddedServiceIcon {
+/*position: relative !important; */
+    display: inline-block !important;
+    margin: 12px 0px 0px 12px !important;
+    content: none !important;
+    width: 20px;
+    height: 15px;
+    background-color: white;
+    }
+
+.forceCommunityEmbeddedServiceHelpButton .embeddedServiceIcon::before {
+    position: absolute;
+    content: "" !important;
+    right: 12px;
+    bottom: 13px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #f4f4f4;
+    border-left: 8px solid transparent;
+    }
+  #helpButtonSpan {
+    display: none;
+  }
+    .embeddedServiceSidebarMinimizedDefaultUI.sidebarHeader {
+            right: 6px !important;
+    bottom: 99px !important;
+        position: fixed !important;
+
+    }
+    .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent .minimizedText::before {
+        content: none !important;
+    }
+  .embeddedServiceSidebarMinimizedDefaultUI.sidebarHeader {
+        height: 44px !important;
+        width: 44px !important;
+  }
+  .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent {
+/*position: relative !important; */
+    display: inline-block !important;
+    margin: 12px 11px 3px 10px !important;
+    content: none !important;
+    width: 20px;
+    height: 15px;
+    background-color: white;  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+        position: absolute;
+    content: "" !important;
+    right: 0px;
+    bottom: -4px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #f4f4f4;
+    border-left: 8px solid transparent;
+  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon {
+    display: none !important;
+  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .message {
+    display: none !important;
+  }
+
+
+  .forceCommunityEmbeddedServiceHelpButton .flatButton {
+      position: absolute !important;
+      right: auto !important;
+  }
+    
+    .embeddedServiceSidebar.sidebarMaximized {
+        /*height: 577px !important;*/
+    /* bottom: 6px; */
+    /*bottom: 0px !important;*/
+    /*top: 200px !important;*/
+    }
+}
+.forceCommunityThemeNav .comm-navigation__top-level-item.mainNavItem:first-child {
+    display:none;
+}
+
+.cm-preview-content[c-tommyCommunityFooter_tommyCommunityFooter] .th-reskin-regular-footer.th-d-footer[c-tommyCommunityFooter_tommyCommunityFooter] .th-d-footer-columns-item[c-tommyCommunityFooter_tommyCommunityFooter] h2[c-tommyCommunityFooter_tommyCommunityFooter], .footerTopCM[c-tommyCommunityFooter_tommyCommunityFooter] .th-placement[c-tommyCommunityFooter_tommyCommunityFooter] .th-reskin-regular-footer.th-d-footer[c-tommyCommunityFooter_tommyCommunityFooter] .th-d-footer-columns-item[c-tommyCommunityFooter_tommyCommunityFooter] h2[c-tommyCommunityFooter_tommyCommunityFooter]{
+	font-size: 12px !important;
+    font-family: FuturaStdBold !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.footerTopCM[c-tommyCommunityFooter_tommyCommunityFooter] .th-placement[c-tommyCommunityFooter_tommyCommunityFooter] .th-reskin-regular-footer.th-d-footer[c-tommyCommunityFooter_tommyCommunityFooter] .th-d-footer-columns-item[c-tommyCommunityFooter_tommyCommunityFooter] a[c-tommyCommunityFooter_tommyCommunityFooter] {
+	font-size: 14px !important;
+    font-family: FuturaStd-Book !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/***
+ *    ███████  ██████  ███    ██ ████████ ███████ 
+ *    ██      ██    ██ ████   ██    ██    ██      
+ *    █████   ██    ██ ██ ██  ██    ██    ███████ 
+ *    ██      ██    ██ ██  ██ ██    ██         ██ 
+ *    ██       ██████  ██   ████    ██    ███████                                               
+ */
+@font-face {
+    font-family: 'KleinWeb';
+    src: url(../resource/CalvinFonts/Klein-55Regular-Web.woff2)format('woff2');
+    font-weight: 300;
+    font-style: normal
+}
+@font-face {
+    font-family: 'KleinWeb';
+    src: url(../resource/CalvinFonts/Klein-55Regular-Web.woff2)format('woff2');
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: 'KleinWeb';
+    src: url(../resource/CalvinFonts/Klein-65Medium-Web.woff2)format('woff2');
+    font-weight: 600;
+    font-style: normal
+}
+@font-face {
+    font-family: 'KleinWeb';
+    src: url(../resource/CalvinFonts/Klein-75Bold-Web.woff2)format('woff2');
+    font-weight: 700;
+    font-style: bold
+}
+
+/* Trending Article Component: Increases the font size of the header label 
+.selfServiceTopicTrendingArticles42 .slds-text-heading--small */
+.comm-topic-trending-articles h2 {
+      font-size: 16px !important;
+}
+
+/* Trending Article Component: Increases the font size of article labels */
+.selfServiceTopicTrendingArticles42 .slds-text-body_small {
+      font-size: 13px !important;
+}
+
+/* Trending Article Component: Removes the bottom border line between article */
+.slds-border_bottom, .slds-border--bottom {
+    border-bottom: none;
+}
+
+/* Trending Article Component: Title Re-Color */
+.comm-topic-trending-articles h2 {
+    font-family: FuturaStdBold !important;
+    color: #CC0C2F;
+}
+:root { --dxp-c-section-columns-max-width: 1170px; }

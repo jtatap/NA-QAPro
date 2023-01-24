@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NFScenarioCategory__c</fullName>
+    <description>Returns the Category (string to the left of the colon) of a Case Scenario&#39;s name for reporting, list views, etc.</description>
+    <externalId>false</externalId>
+    <formula>LEFT( Name , (FIND(&#39;:&#39;, Name)-1))</formula>
+    <label>Scenario Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

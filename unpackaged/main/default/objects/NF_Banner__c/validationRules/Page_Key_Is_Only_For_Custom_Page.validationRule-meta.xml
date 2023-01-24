@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Page_Key_Is_Only_For_Custom_Page</fullName>
+    <active>true</active>
+    <description>Page key field should be blank unless the display target is Custom Page</description>
+    <errorConditionFormula>!ISBLANK(PageKey__c) &amp;&amp; !ISPICKVAL(DisplayonHomepageorTopic__c, &#39;Custom Page&#39;)</errorConditionFormula>
+    <errorDisplayField>PageKey__c</errorDisplayField>
+    <errorMessage>Page Key should be blank if the &quot;Where should this go?&quot; field isn&#39;t &quot;Custom Page&quot;.</errorMessage>
+</ValidationRule>

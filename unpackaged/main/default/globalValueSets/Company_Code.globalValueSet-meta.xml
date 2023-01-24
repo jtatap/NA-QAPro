@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CA</fullName>
+        <default>false</default>
+        <label>CA - Calvin Klein Specialty</label>
+    </customValue>
+    <customValue>
+        <fullName>CC</fullName>
+        <default>false</default>
+        <label>CC - Calvin Klein Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>CK</fullName>
+        <default>false</default>
+        <label>CK - Calvin Klein Collection</label>
+    </customValue>
+    <customValue>
+        <fullName>CO</fullName>
+        <default>false</default>
+        <label>CO - Calvin Klein Company US</label>
+    </customValue>
+    <customValue>
+        <fullName>CX</fullName>
+        <default>false</default>
+        <label>CX - Calvin Klein Ecommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>IC</fullName>
+        <default>false</default>
+        <label>IC - Izod CA</label>
+    </customValue>
+    <customValue>
+        <fullName>IZ</fullName>
+        <default>false</default>
+        <label>IZ - Izod US</label>
+    </customValue>
+    <customValue>
+        <fullName>OS</fullName>
+        <default>false</default>
+        <label>OS - Van Heusen US</label>
+    </customValue>
+    <customValue>
+        <fullName>SX</fullName>
+        <default>false</default>
+        <label>SX - Speedo Ecommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>TC</fullName>
+        <default>false</default>
+        <label>TC - Tommy Hilfiger Company/Outlets CA</label>
+    </customValue>
+    <customValue>
+        <fullName>TH</fullName>
+        <default>false</default>
+        <label>TH - Tommy Hilfiger Full Price</label>
+    </customValue>
+    <customValue>
+        <fullName>TI</fullName>
+        <default>false</default>
+        <label>TI - Tommy Hilfiger Full Price CA</label>
+    </customValue>
+    <customValue>
+        <fullName>TO</fullName>
+        <default>false</default>
+        <label>TO - Tommy Hilfiger Company/Outlets US</label>
+    </customValue>
+    <customValue>
+        <fullName>TS</fullName>
+        <default>false</default>
+        <label>TS - Tommy Hilfiger Specialty US</label>
+    </customValue>
+    <customValue>
+        <fullName>TX</fullName>
+        <default>false</default>
+        <label>TX - Tommy Hilfiger Ecommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>VC</fullName>
+        <default>false</default>
+        <label>VC - Van Heusen CA</label>
+    </customValue>
+    <customValue>
+        <fullName>VX</fullName>
+        <default>false</default>
+        <label>VX - Heritage Ecommerce</label>
+    </customValue>
+    <description>Global Company Code list</description>
+    <masterLabel>Company Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

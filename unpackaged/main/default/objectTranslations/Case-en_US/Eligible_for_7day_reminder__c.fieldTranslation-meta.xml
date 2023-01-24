@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Eligible for 7day reminder --></label>
+        <name>Eligible_for_7day_reminder__c</name>
+        <picklistValues>
+            <masterLabel>Reminder Ready</masterLabel>
+            <translation><!-- Reminder Ready --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder Schedule</masterLabel>
+            <translation><!-- Reminder Schedule --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Exception</label>
+    <protected>false</protected>
+    <values>
+        <field>Datatable_Payload__c</field>
+        <value xsi:type="xsd:string">[
+        {
+            label: &#39;Name&#39;,
+            fieldName: &#39;recordLink&#39;,
+            type: &#39;url&#39;,
+            sortable: true,
+            fixedWidth: 90,
+            typeAttributes: {
+                label: { fieldName: &#39;Name&#39; }, 
+                target: &#39;_blank&#39;
+            }
+        },
+        {
+            label: &#39;Message&#39;,
+            fieldName: &#39;Message__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true,
+            wrapText: true,
+            fixedWidth: 235,
+        },
+        {
+            label: &#39;Type&#39;,
+            fieldName: &#39;Type__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true,
+            fixedWidth: 195
+        },
+        {
+            label: &#39;User Info&#39;,
+            fieldName: &#39;User_Info__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true,
+            wrapText: true
+        },
+        {
+            label: &#39;Class Name&#39;,
+            fieldName: &#39;Class_Name__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true
+        },
+        {
+            label: &#39;Method Name&#39;,
+            fieldName: &#39;Method_Name__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true
+        },
+        {
+            label: &#39;Stack Trace&#39;,
+            fieldName: &#39;Stack_Trace__c&#39;,
+            type: &#39;text&#39;,
+            sortable: true,
+            wrapText: true,
+            fixedWidth: 240,
+        },
+        {
+            label: &#39;Log Date&#39;,
+            fieldName: &#39;Log_Date__c&#39;,
+            type: &#39;date&#39;,
+            sortable: true,
+            wrapText: true,
+            fixedWidth: 120,
+            typeAttributes: { 
+                day: &#39;numeric&#39;, 
+                month: &#39;short&#39;, 
+                year: &#39;numeric&#39;, 
+                hour: &#39;2-digit&#39;, 
+                minute: &#39;2-digit&#39;, 
+                second: &#39;2-digit&#39;, 
+                hour12: true,
+                timeZone:&#39;UTC&#39;
+            }
+        }
+ ]</value>
+    </values>
+    <values>
+        <field>Fields_to_Display__c</field>
+        <value xsi:type="xsd:string">name, message__c, level__c, type__c, user_info__c, class_name__c, method_name__c, stack_trace__c, Log_Date__c</value>
+    </values>
+</CustomMetadata>

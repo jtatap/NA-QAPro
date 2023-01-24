@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>True&amp;Co</label>
+    <protected>false</protected>
+    <values>
+        <field>Brand_Name__c</field>
+        <value xsi:type="xsd:string">True&amp;Co</value>
+    </values>
+    <values>
+        <field>Brand_Number__c</field>
+        <value xsi:type="xsd:string">11</value>
+    </values>
+    <values>
+        <field>Brand_form_link__c</field>
+        <value xsi:type="xsd:string">https://help.trueandco.com/s/contactsupport</value>
+    </values>
+    <values>
+        <field>Donot_sell_share_success_template__c</field>
+        <value xsi:type="xsd:string">Advertising Opt-Out Success Template</value>
+    </values>
+    <values>
+        <field>Email_Template__c</field>
+        <value xsi:type="xsd:string">R2R Change Confirmation request TH</value>
+    </values>
+    <values>
+        <field>Email_template_donot_share_Sell__c</field>
+        <value xsi:type="xsd:string">DSS Change Confirmation request</value>
+    </values>
+    <values>
+        <field>Ordwide_Email__c</field>
+        <value xsi:type="xsd:string">True and Co Privacy Support</value>
+    </values>
+    <values>
+        <field>PDR_Link__c</field>
+        <value xsi:type="xsd:string">https://pvhservicecloud--qapro.sandbox.my.site.com/trueandco/s/personal-data-request</value>
+    </values>
+    <values>
+        <field>Privacy_Policy_Link__c</field>
+        <value xsi:type="xsd:string">https://trueandco.com/privacy-policy/</value>
+    </values>
+    <values>
+        <field>Success_Email_Template__c</field>
+        <value xsi:type="xsd:string">Rectification Success Template</value>
+    </values>
+</CustomMetadata>

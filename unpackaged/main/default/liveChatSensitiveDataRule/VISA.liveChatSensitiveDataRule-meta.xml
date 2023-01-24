@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionType>Replace</actionType>
+    <description>Visa Credit Card details masking</description>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>^4((\d{3}[\s\-]*\d{3,4}[\s\-]*\d{3,4}[\s\-]*\d{4})|(d{3}[\s\-]*d{4}[\s\-]*\d{4}[\s\-]*\d{4}))$
+4((\d{3}[\s\-]*\d{3,4}[\s\-]*\d{3,4}[\s\-]*\d{4})|(d{3}[\s\-]*d{4}[\s\-]*\d{4}[\s\-]*\d{4}))
+^4(\d{12}|\d{15})$
+4(\d{12}|\d{15})</pattern>
+    <priority>2</priority>
+    <replacement>***************</replacement>
+</LiveChatSensitiveDataRule>

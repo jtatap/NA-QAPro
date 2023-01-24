@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is the page key when selecting the custom page. --></help>
+        <label><!-- Page Key --></label>
+        <name>PageKey__c</name>
+    </CustomFieldTranslation>

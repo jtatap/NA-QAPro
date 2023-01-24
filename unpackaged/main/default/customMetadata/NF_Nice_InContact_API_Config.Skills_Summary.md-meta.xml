@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Skills Summary</label>
+    <protected>false</protected>
+    <values>
+        <field>Attribute_Name_to_search_in_response__c</field>
+        <value xsi:type="xsd:string">skillSummaries</value>
+    </values>
+    <values>
+        <field>Check_Response_Body__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Contain_conditions_In_Response_s_Records__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Create_Records__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Delete_Obsolete_Records__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Object_to_Create__c</field>
+        <value xsi:type="xsd:string">NF_Skills_Summary__c</value>
+    </values>
+    <values>
+        <field>Request_Body__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Request_Endpoint__c</field>
+        <value xsi:type="xsd:string">[BASE_URL]services/[API_VERSION]/skills/summary?startDate=[START_DATE]&amp;endDate=[END_DATE]</value>
+    </values>
+    <values>
+        <field>Request_Headers__c</field>
+        <value xsi:type="xsd:string">{&quot;Authorization&quot;: &quot;bearer [ACCESS_TOKEN]&quot;, &quot;Content-Type&quot;:&quot;application/json&quot;, &quot;Accept&quot;:&quot;application/json, text/javascript, */*; q=0.01&quot;}</value>
+    </values>
+    <values>
+        <field>Request_Timeout__c</field>
+        <value xsi:type="xsd:double">10000.0</value>
+    </values>
+    <values>
+        <field>Request_Type__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>Sample_Response_Used_in_test_class__c</field>
+        <value xsi:type="xsd:string">&quot;skillSummaries&quot;:[{&quot;businessUnitId&quot;:&quot;123&quot;,&quot;businessUnitName&quot;:&quot;test&quot;,&quot;abandonCount&quot;:&quot;0&quot;,&quot;abandonRate&quot;:&quot;0&quot;,&quot;agentsAcw&quot;:&quot;0&quot;,&quot;agentsAvailable&quot;:&quot;0&quot;,&quot;agentsIdle&quot;:&quot;0&quot;,&quot;agentsLoggedIn&quot;:&quot;0&quot;,&quot;agentsUnavailable&quot;:&quot;0&quot;,&quot;agentsWorking&quot;:&quot;0&quot;,&quot;averageHandleTime&quot;:&quot;0&quot;,&quot;averageInqueueTime&quot;:&quot;0&quot;,&quot;averageSpeedToAnswer&quot;:&quot;0&quot;,&quot;averageTalkTime&quot;:&quot;0&quot;,&quot;averageWrapTime&quot;:&quot;0&quot;,&quot;campaignId&quot;:&quot;456&quot;,&quot;campaignName&quot;:&quot;test&quot;,&quot;contactsActive&quot;:&quot;0&quot;,&quot;contactsHandled&quot;:&quot;0&quot;,&quot;contactsOffered&quot;:&quot;1&quot;,&quot;contactsQueued&quot;:&quot;0&quot;,&quot;contactsOutOfSLA&quot;:&quot;0&quot;,&quot;contactsWithinSLA&quot;:&quot;0&quot;,&quot;holdTime&quot;:&quot;0&quot;,&quot;isOutbound&quot;:&quot;False&quot;,&quot;longestQueueDur&quot;:&quot;0&quot;,&quot;mediaTypeId&quot;:&quot;789&quot;,&quot;mediaTypeName&quot;:&quot;test&quot;,&quot;queueCount&quot;:&quot;0&quot;,&quot;serviceLevel&quot;:&quot;1&quot;,&quot;skillName&quot;:&quot;test&quot;,&quot;skillId&quot;:&quot;012&quot;,&quot;serviceLevelGoal&quot;:&quot;9&quot;,&quot;serviceLevelThreshold&quot;:&quot;3&quot;,&quot;totalContactTime&quot;:&quot;1&quot;,&quot;dials&quot;:&quot;0&quot;,&quot;connects&quot;:&quot;0&quot;,&quot;connectsAHT&quot;:&quot;0.00&quot;,&quot;rightPartyConnects&quot;:&quot;0&quot;,&quot;rightPartyConnectsAHT&quot;:&quot;0.00&quot;}]</value>
+    </values>
+    <values>
+        <field>Specific_Ids__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Successful_Callout_Status_Code__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+</CustomMetadata>

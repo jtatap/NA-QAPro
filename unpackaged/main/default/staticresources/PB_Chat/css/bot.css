@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+@import url("../fonts/stylesheet.css");
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/.otf?orgId=00D2C000000Cmsr&orgId=00D1U000000xmv4&orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9") format("opentype");
+}
+
+.embeddedServiceHelpButton .helpButton {
+  bottom: 0px !important;
+  height: 35px !important;
+}
+
+.embeddedServiceSidebar.modalContainer {
+  background: none !important;
+}
+
+.embeddedServiceLiveAgentStateChatAvatar.isCommunitiesContext {
+  background-color: none !important;
+}
+
+.embeddedServiceHelpButton .helpButton button.uiButton, .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
+  background-color: black !important;
+  border: none !important;
+  border-top-left-radius: 9px !important;
+  border-top-right-radius: 9px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  bottom: 0px !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) !important;
+  height: 35px !important;
+  max-width: initial !important;
+  width: 116px !important;
+  min-width: 0px !important;
+}
+
+#helpButtonSpan .message {
+  display: none;
+}
+
+#helpButtonSpan:after {
+  content: "SUPPORT" !important;
+  font-family: "Proxima Nova" !important;
+  font-size: 14px;
+  font-weight: normal;
+  flex-grow: 0.5 !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText > .message {
+  font-size: 0px;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText > .message:after {
+  content: "SUPPORT";
+  font-family: "Proxima Nova", sans-serif !important;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.sidebarHeader.minimizedContainer .embeddedServiceIcon {
+  display: none !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content:before {
+  content: "";
+  background-image: url("../img/quote.bubble.fill.png") !important;
+  color: transparent !important;
+  background-size: 16px 16px !important;
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+  padding: 0px !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI.queue .messageContent {
+  justify-content: center !important;
+}
+
+.embeddedServiceLiveAgentStateChatAvatar .avatar {
+  background-repeat: no-repeat;
+  background-size: 17px !important;
+  background-color: black;
+  background-position: center !important;
+}
+
+.chat-content.agent .chatMessageContent a {
+  text-decoration: none !important;
+}
+
+.chat-content.agent .chatMessageContent a:link, .chat-content.agent .chatMessageContent a:visited, .chat-content.agent .chatMessageContent a:hover, .chat-content.agent .chatMessageContent a:active {
+  color: #8dbaf8 !important;
+}
+
+.chat-content.agent img {
+  width: 100%;
+}
+
+.ebcm_content.ebcm_video {
+  margin-left: 40px !important;
+}
+
+.headerAnnouncement[embeddedService-chatHeader_chatHeader], .loadingAnimation[embeddedService-chatHeader_chatHeader], .sidebarHeader[embeddedService-chatHeader_chatHeader] {
+  background-color: black !important;
+}
+
+.sidebarHeader[embeddedService-chatHeader_chatHeader] {
+  border-bottom: none;
+}
+
+svg.slds-icon.slds-icon-text-default.slds-icon_x-small {
+  width: 15px;
+}
+
+button.minimizeButton {
+  padding: 0;
+}
+
+button.closeButton {
+  padding: 0;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button {
+  clip-path: none;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+  outline: 1px solid black;
+}
+
+.embeddedServiceHelpButton .uiButton {
+  max-width: 20em;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:hover:before, .embeddedServiceHelpButton .helpButton .uiButton:focus:before {
+  border-radius: inherit !important;
+}
+
+.embeddedServiceHelpButton .uiButton .helpButtonLabel .message {
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.16667px;
+  line-height: 14px !important;
+  overflow: visible !important;
+  text-align: right;
+}
+
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+  background: black !important;
+  border-radius: 8px 8px 0 !important;
+}
+
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem {
+  background-color: #fff;
+  color: black !important;
+}
+
+.embeddedServiceSidebarHeader .shortHeaderContent > *, .shortHeaderContent .headerText .headerButton {
+  margin-top: 3px;
+}
+
+.chat-content.agent .chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+  hyphens: none;
+}
+
+.embeddedServiceLiveAgentStateChat .messageArea:focus {
+  border: none !important;
+}
+
+.embeddedServiceLiveAgentStateChatInputFooter .chasitorText.textAreaIsFocused {
+  border: unset !important;
+}
+
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem {
+  border-color: black !important;
+  border-radius: 21px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover, .embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+  background-color: black !important;
+  opacity: 1 !important;
+}
+
+.embeddedServiceLiveAgentSidebarFeature .embeddedServiceLiveAgentStateChat .messageArea {
+  background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChat .messageWrapper {
+  background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage {
+  background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+  background-color: #fff !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.embeddedServiceLiveAgentStateChatInputFooter.chasitorInputWrapper {
+  background-color: #fff !important;
+}
+
+.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput {
+  background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChat .chasitorInputWrapper {
+  background-color: #fff !important;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse .label {
+  color: white !important;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse, .embeddedServiceSidebarButton.uiButton--inverse:disabled {
+  background: black !important;
+}
+
+.embeddedServiceSidebarButton {
+  background: black !important;
+}
+
+.embeddedServiceSidebarButton {
+  padding: none;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover {
+  background-color: #484848 !important;
+}
+
+.embeddedServiceSidebarButton:not(:disabled):hover {
+  background: #484848 !important;
+}
+
+.embeddedServiceLiveAgentStateChatHeader.reconnecting {
+  background-color: black !important;
+}
+
+a.chatOption.embeddedServiceLiveAgentStateChatHeaderOption {
+  color: white !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+  border-bottom-left-radius: 8px !important;
+  max-height: 600px !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+  bottom: 32px !important;
+}
+
+select:focus, textarea, input {
+  font-size: 16px !important;
+}
+
+.embeddedServiceHelpButton .helpButton {
+  right: 5px !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+  border-bottom-right-radius: 0 !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer, .embeddedServiceSidebar.layout-float .dockableContainer {
+  max-height: 90% !important;
+  max-width: 90% !important;
+  top: 40px !important;
+}
+
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover:before, .embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus:before {
+  background-color: #484848 !important;
+}
+
+.embeddedServiceLiveAgentStateWaitingHeader .waitingGreeting {
+  font-size: 0;
+}
+
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message {
+  font-size: 14px !important;
+}
+
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName {
+  font-size: 14px !important;
+}
+
+.embeddedServiceSidebarExtendedHeader {
+  color: white !important;
+}
+
+.chat-content.agent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+  border-radius: 8px 8px 8px 0 !important;
+  max-width: 80% !important;
+}
+
+.embeddedServiceLiveAgentStateChat .chasitorInputWrapper {
+  border-color: black !important;
+  border-top-style: solid !important;
+  border-width: 2px !important;
+}
+
+.headerButton:before, .headerButton:after {
+  display: none !important;
+}
+
+button.minimizeButton.headerItem:after {
+  display: none !important;
+}
+
+button.minimizeButton.headerItem:before {
+  display: none !important;
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon {
+  content: url("../img/quote.bubble.fill.png") !important;
+  margin: 0px !important;
+  width: 18px !important;
+  height: 17px !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 44.75px;
+  overflow: hidden;
+  width: 220px !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li {
+  border: none;
+  border-radius: 0;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li:not(:last-child) {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-item, .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-itemOptionIsClicked {
+  background-color: white;
+  font-size: 14px;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover, .embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:active, .embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover:active, .embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus, .embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  opacity: 1;
+}
+
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+  font-family: "Proxima Nova", sans-serif !important;
+  text-transform: none !important;
+}
+
+.embeddedServiceHelpButton .uiButton .helpButtonLabel .message {
+  padding-bottom: 3px !important;
+}
+
+.embeddedServiceLiveAgentStateChatHeader .embeddedServiceLoadingBalls {
+  margin-bottom: 7px !important;
+  margin-top: 7px !important;
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):focus, .embeddedServiceSidebar .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover {
+  text-decoration: none !important;
+}
+
+button.helpButtonEnabled.uiButton:hover {
+  background-color: #484848 !important;
+}
+
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+  text-decoration: none !important;
+}
+
+.embeddedServiceLiveAgentStateChatHeaderOption:after {
+  border: unset !important;
+}
+
+.chat-content.chasitor .chatMessageContent a {
+  color: white !important;
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI.minimizedContainer:focus {
+  text-decoration: none !important;
+}
+
+.loadingBallContainer.tiny.animated.embeddedServiceLoadingBalls {
+  display: none !important;
+}
+
+.embeddedServiceHelpButton .helpButtonDisabled {
+  display: none !important;
+}
+
+.endChatButton {
+  margin-bottom: 5px !important;
+}
+
+@media screen and (max-device-width: 480px) {
+  .embeddedServiceHelpButton .helpButton button.uiButton, .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
+    background-color: black !important;
+    border: none !important;
+    border-radius: 50% !important;
+    bottom: 10px !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) !important;
+    height: 51px !important;
+    width: 51px !important;
+    min-width: 0px !important;
+  }
+  
+  .embeddedServiceHelpButton .helpButton {
+    width: 51px !important;
+    height: 51px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+  
+  .embeddedServiceHelpButton .embeddedServiceIcon {
+    content: url("../img/quote.bubble.fill.png") !important;
+    margin: 0px !important;
+    width: 27px !important;
+    height: 26px !important;
+  }
+  
+  .uiButton.no-hover.helpButtonEnabled {
+    min-height: 0px !important;
+    height: 51px !important;
+    min-width: 0px !important;
+    width: 51px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    border-radius: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent .minimizedText .message {
+    display: none;
+  }
+  
+  #helpButtonSpan {
+    display: none !important;
+  }
+  
+  .embeddedServiceHelpButton .helpButton button.uiButton > .embeddedServiceIcon {
+    position: relative;
+    content: url("../img/quote.bubble.fill.png") !important;
+    background-color: black;
+  }
+  
+  .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent {
+    content: url("../img/quote.bubble.fill.png");
+    flex-grow: 0 !important;
+    align-self: auto !important;
+    width: 27px !important;
+    height: 26px !important;
+  }
+  
+  .embeddedServiceSidebarMinimizedDefaultUI .content:before {
+    display: none !important;
+  }
+  
+  #helpButtonSpan {
+    display: none;
+  }
+}
+
+.containerDiv[ebcm-einsteinBotMiniCardContainer_einsteinBotMiniCardContainer] {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.slds-m-around_none.minicard-title-text {
+  font-size: 12px;
+  text-align: left;
+}
+
+.helpButtonEnabled {
+  visibility: hidden !important;
+}

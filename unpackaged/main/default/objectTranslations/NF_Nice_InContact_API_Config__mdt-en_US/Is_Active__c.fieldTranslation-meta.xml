@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Determines whether this callout is a part of Ring Central data sync. --></help>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </CustomFieldTranslation>

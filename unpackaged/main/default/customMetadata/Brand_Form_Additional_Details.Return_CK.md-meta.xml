@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Return</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">Click here to start a return &lt;a href=&quot;https://returns.narvar.com/calvinklein/returns&quot;&gt;here&lt;/a&gt;.</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">If at any time, for any reason, you are not completely satisfied with your purchase, it may be returned with original tags attached for a prompt and courteous refund, within 30 days of the original purchase date.</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">Click here to start a return &lt;a href=&quot;https://returns.narvar.com/calvinklein/returns&quot;&gt;here&lt;/a&gt;.</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Returns_CK</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Return</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Submit</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Returns: Requesting a return label</value>
+    </values>
+</CustomMetadata>

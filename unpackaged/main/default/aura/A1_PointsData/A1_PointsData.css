@@ -1,0 +1,42 @@
+.THIS {
+}
+
+.THIS.labelClass{
+    color: #1798c1;
+    font-size:18px;
+}
+
+.THIS.customFont{
+     font-size:18px;
+     display:flex;
+}
+.THIS .buttonClass{
+     position:absolute;
+     right:0;
+}
+.THIS .buttonClass>button{
+     background-color:#006DCC;
+    color: #fff; 
+}
+.THIS .buttonClass>button:hover{
+     background-color:#03569e;
+}
+
+.THIS.slds-modal__container{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 90rem;
+    min-width: 20rem;
+}
+
+
+/*
+.THIS.mergeButton{
+    font-size:18px;
+    background-color:#006DCC;
+    color: #fff;
+}
+.THIS.mergeButton:hover{
+     background-color:#03569e;
+}
+*/

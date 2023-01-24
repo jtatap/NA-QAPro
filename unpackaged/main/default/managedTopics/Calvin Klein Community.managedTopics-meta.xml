@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:FAQs</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>FAQs</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:Gift Services</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Gift Services</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:Online Store Information</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Online Store Information</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:Payment</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Payment</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:Product Care</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Product Care</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Content:Your Account</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Your Account</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Featured:Additional Help Topics</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Additional Help Topics</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Featured:Preferred Loyalty Program</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Preferred Loyalty Program</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Featured:Returns</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Returns</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Featured:Shipping</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Shipping</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Featured:Your Order</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Your Order</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Additional Help Topics</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Additional Help Topics</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:FAQs</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FAQs</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Gift Services</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Gift Services</name>
+        <parentName>Additional Help Topics</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Online Store Information</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Online Store Information</name>
+        <parentName>Additional Help Topics</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Payment</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Payment</name>
+        <parentName>Additional Help Topics</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Preferred Loyalty Program</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Preferred Loyalty Program</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Product Care</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Product Care</name>
+        <parentName>Additional Help Topics</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Returns</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Returns</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Shipping</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Shipping</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Your Account</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Your Account</name>
+        <parentName>Additional Help Topics</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Calvin Klein Community.Navigational:Your Order</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Your Order</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+    </managedTopic>
+</ManagedTopics>

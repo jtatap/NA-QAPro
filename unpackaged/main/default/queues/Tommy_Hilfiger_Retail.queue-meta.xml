@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pvh.invalid</email>
+    <name>Tommy Hilfiger Retail</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Brands</publicGroup>
+            <publicGroup>Tommy_Hilfiger</publicGroup>
+        </publicGroups>
+        <users>
+            <user>t2csr@pvh.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Email</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_OptOut__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field created to give ability to CSR for opting out customer from SMS</description>
+    <externalId>false</externalId>
+    <label>SMS OptOut</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

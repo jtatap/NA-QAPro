@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+  <aura:handler name="init" value="{!this}" action="{!c.init}" />
+  <aura:attribute
+    name="canonicalUrl"
+    type="String"
+    description="Canonical Url for the page"
+  />
+</aura:component>

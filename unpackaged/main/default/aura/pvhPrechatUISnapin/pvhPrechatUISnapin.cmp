@@ -1,0 +1,53 @@
+<!--
+ - Created by bryananderson on 2019-08-28.
+ -->
+
+<aura:component implements="lightningsnapin:prechatUI" access="global" description="Sample custom pre-chat component for Embedded Chat. Implemented using Aura." controller="pvhPrechatUISnapinController">
+    <!-- You must implement "lightningsnapin:prechatUI" for this component to appear in the "Pre-chat Component" customization dropdown in the Embedded Service setup -->
+
+    <!-- Pre-chat field components to render -->
+    <aura:attribute name="prechatFieldComponents" type="List" description="An array of objects representing the pre-chat fields specified in pre-chat setup."/>
+
+    <!-- Handler for when this component is initialized -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- Attribute to check if all required fields are populated -->
+    <aura:attribute name="validationSuccessful"
+                    type="Boolean"
+                    description="Determines if all required fields are populated or not"
+                    default="true"/>
+
+    <aura:attribute name="laDeploymentId" type="String" />
+    <aura:attribute name="hasPrechatBackground" type="Boolean" default="false" />
+    <aura:attribute name="prechatBackground" type="String" />
+
+    <!-- For Aura performance. -->
+    <aura:locator target="startButton"
+                  description="Prechat form submit button."/>
+
+    <!-- Contains methods for getting prechat fields, starting a chat, and validating fields. -->
+    <lightningsnapin:prechatAPI aura:id="prechatAPI"/>
+    <lightningsnapin:settingsAPI aura:id="settingsAPI" />
+
+    <div class="prechatUI embeddedServiceLiveAgentStatePrechatDefaultUI">
+        <div class="formContent embeddedServiceSidebarForm">
+            <aura:if isTrue="{!v.hasPrechatBackground}">
+                <div class="backgroundImg" id="backgroundImg" style="{!v.prechatBackground}">
+                    <span class="assistiveText">Prechat Image</span>
+                </div>
+                <div class="backgroundImgColorMask" id="backgroundImgColorMask"></div>
+            </aura:if>
+            <ul class="fieldList">
+                <aura:iteration items="{!v.prechatFieldComponents}" var="field">
+                    <li class="embeddedServiceSidebarFormField">
+                        {!field}
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+        <div class="buttonWrapper embeddedServiceSidebarForm">
+            <lightning:button variant="brand" aura:id="startButton" class="startButton uiButton--default uiButton embeddedServiceSidebarButton" label="{!$Label.LiveAgentPrechat.StartChat}" onclick="{!c.handleStartButtonClick}"/>
+        </div>
+    </div>
+
+</aura:component>

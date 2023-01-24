@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Track Shipment</label>
+    <protected>false</protected>
+    <values>
+        <field>Additional_Information_ECom_Single__c</field>
+        <value xsi:type="xsd:string">{
+    &quot;message&quot;:[&quot;You can track your shipment &lt;a href=\&quot;BRAND_ORDER_TRACK_LINK\&quot; target=\&quot;_blank\&quot;&gt;here&lt;/a&gt;.&quot;],
+    &quot;fields&quot;: [
+    {
+    &quot;fieldLabel&quot;: &quot;Order Number&quot;,
+    &quot;fieldName&quot;: &quot;Order_Number__c&quot;,
+    &quot;fieldType&quot;: &quot;STRING&quot;
+    }]
+    }</value>
+    </values>
+    <values>
+        <field>Additional_Information_Other_Retail__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Additional_Information_Retail__c</field>
+        <value xsi:type="xsd:string">To expedite deliveries, items from a single order may be shipped separately. When this happens, you may receive multiple shipment confirmation emails. Please note that there will be no additional charges if your order is divided into separate shipments.</value>
+    </values>
+    <values>
+        <field>Additional_Information__c</field>
+        <value xsi:type="xsd:string">{
+    &quot;message&quot;:[&quot;You can track your shipment &lt;a href=\&quot;BRAND_ORDER_TRACK_LINK\&quot; target=\&quot;_blank\&quot;&gt;here&lt;/a&gt;.&quot;],
+    &quot;fields&quot;: [
+    {
+    &quot;fieldLabel&quot;: &quot;Order Number&quot;,
+    &quot;fieldName&quot;: &quot;Order_Number__c&quot;,
+    &quot;fieldType&quot;: &quot;STRING&quot;
+    }]
+    }</value>
+    </values>
+    <values>
+        <field>Brand_Channel__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Topics__c</field>
+        <value xsi:type="xsd:string">Shipping_CK_CA</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Track Shipment</value>
+    </values>
+    <values>
+        <field>No_ECom_Single_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>No_Other_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>No_Retail_Channel__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Secondary_Action_Type__c</field>
+        <value xsi:type="xsd:string">Submit</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Orders: Requesting order status</value>
+    </values>
+</CustomMetadata>

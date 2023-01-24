@@ -1,0 +1,6 @@
+.slds-rich-text-editor__output img {
+    margin-bottom: 0px !important;
+}
+lightning-input-rich-text img {
+    margin-bottom: 0px !important;
+}

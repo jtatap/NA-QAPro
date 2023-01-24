@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Tier_1_PVH_CCPA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier 1 PVH CCPA</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tier_1_CSR_CCPA</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tier_1_PVH_Case_Owner</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier 1 PVH Case Owner</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tier_1_CSR_PVH</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tier_1_True_Co</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier 1 True&amp;Co</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tier_1_CSR_Wholesale</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tier_1_Wholesale</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tier 1 Wholesale Survey Owners</label>
+        <sharedTo>
+            <role>PVH_Corp</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tier_1_CSR_Wholesale_OLD</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

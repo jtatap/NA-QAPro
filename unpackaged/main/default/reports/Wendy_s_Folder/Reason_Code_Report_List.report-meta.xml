@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case.Reason_Sub_detail__c</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code_Details__c</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code__c</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code_Product_Category__c</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code_Product_Sub_Categories__c</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code_Manufacturers__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Reason Code Report List</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

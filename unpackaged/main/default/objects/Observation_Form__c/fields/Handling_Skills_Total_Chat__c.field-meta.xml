@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handling_Skills_Total_Chat__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL(  Personalization__c , &quot;Pass&quot;) || ISPICKVAL(  Personalization__c  , &quot;N/A&quot;) , 1, 0 ) + IF( ISPICKVAL(  Customization__c  , &quot;Pass&quot;) || ISPICKVAL(  Customization__c , &quot;N/A&quot;) , 1, 0) + IF( ISPICKVAL(   All_Questions__c  , &quot;Pass&quot;) || ISPICKVAL(  All_Questions__c  , &quot;N/A&quot;) , 1, 0) +  IF( ISPICKVAL(    Detailed_Explanation__c  , &quot;Pass&quot;)  ||  ISPICKVAL( Detailed_Explanation__c  , &quot;N/A&quot;)  , 1, 0) ) / 4</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Handling Skills Total % (Chat)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

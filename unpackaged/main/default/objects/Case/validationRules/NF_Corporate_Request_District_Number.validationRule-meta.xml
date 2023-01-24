@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Corporate_Request_District_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &#39;Corporate_Request&#39;,
+
+    OR(
+        ISPICKVAL(Business_Group__c, &quot;Calvin Klein - Retail Field (Stores)&quot;),
+        ISPICKVAL(Business_Group__c, &quot;Tommy Hilfiger - Retail Field (Stores)&quot;)
+        ),
+
+    OR(
+        ISBLANK(ZdPVHDistrictNumber__c),
+        NOT(ISNUMBER(ZdPVHDistrictNumber__c)),
+        LEN(ZdPVHDistrictNumber__c) &lt;&gt; 2
+        )
+)</errorConditionFormula>
+    <errorDisplayField>ZdPVHDistrictNumber__c</errorDisplayField>
+    <errorMessage>Please enter a valid District Number (2 digits)</errorMessage>
+</ValidationRule>

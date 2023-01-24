@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Email_Update_for_PVH</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Ecomm_Connected__c
+, ISCHANGED( Email ) 
+, OR(IF( $Profile.Name == &#39;Tier II CSR&#39;,TRUE,FALSE)
+    ,IF( $Profile.Name == &#39;Tier III CSR/Supervisor&#39;,TRUE,FALSE)
+,IF( $Profile.Name == &#39;Ops/Quality&#39;,TRUE,FALSE)
+    ) 
+,   RecordTypeId == &#39;0121U000000e7s4&#39;
+
+       )</errorConditionFormula>
+    <errorMessage>You cannot update Email field for an Ecomm connected Contact</errorMessage>
+</ValidationRule>

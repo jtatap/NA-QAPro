@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CK1656752404050</label>
+    <protected>false</protected>
+    <values>
+        <field>BrandId__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+    <values>
+        <field>access_key__c</field>
+        <value xsi:type="xsd:string">$2a$10$KN1I5cfNyf5PjvA8sZlzXOKyg4Cqp0kladEux8qW3E/pO/PEAGEbm</value>
+    </values>
+    <values>
+        <field>access_token__c</field>
+        <value xsi:type="xsd:string">4f84d417-329b-4cf4-a37a-f5fde149d10d</value>
+    </values>
+    <values>
+        <field>key_expires_at__c</field>
+        <value xsi:type="xsd:dateTime">2022-11-26T14:00:06.000Z</value>
+    </values>
+    <values>
+        <field>token_expires_at__c</field>
+        <value xsi:type="xsd:dateTime">2022-11-26T02:10:03.000Z</value>
+    </values>
+    <values>
+        <field>token_expires_in__c</field>
+        <value xsi:type="xsd:double">1.2762599E7</value>
+    </values>
+</CustomMetadata>

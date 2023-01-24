@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Intake_Channel__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case (Case__r.Channel__c, 
+&quot;CalvinKlein.us&quot;, &quot;Ecommerce&quot;,
+&quot;Calvin Klein Retail&quot;, &quot;Retail&quot;,
+&quot;Tommy.com&quot;, &quot;Retail&quot;,
+&quot;SpeedoUSA.com&quot;, &quot;Ecommerce&quot;,
+&quot;Other Retailer&quot;, &quot;Wholesale&quot;,
+&quot;VanHeusen.com&quot;, &quot;Ecommerce&quot;,
+&quot;Van Heusen Retail&quot;,&quot;Retail&quot;,
+&quot;Izod.com&quot;, &quot;Ecommerce&quot;, 
+&quot;styleBureau.com&quot;, &quot;Retail&quot;, 
+&quot;trueandco.com&quot;, &quot;Ecommerce&quot;,
+&quot;CalvinKlein.ca&quot;, &quot;Ecommerce&quot;,
+&quot;Speedo.com&quot;, &quot;Retail&quot;,
+&quot;Warner.com&quot;, &quot;Ecommerce&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Intake Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

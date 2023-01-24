@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_93833763</developerName>
+        <masterLabel>Email/Web</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 81</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 83</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 84</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 100</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email - 82</sourceValue>
+            </sourceValues>
+            <value>Email and Web</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case.Brand_Lookup_Search__c</field>
+    </columns>
+    <columns>
+        <field>Case.Channel__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <description># of Inbound Cases by Day</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Duplicate_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Privacy,Survey Follow Up Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.Data_Owner_Request,Case.Privacy_Request,Case.Privacy_Request_Read_Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CSAT Follow Up Queue,Automated Process,Spam Queue,Sona Sofia Antony Raj</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/14/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Web Inbound Cases by Day</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>LAST_FISCALWEEK</interval>
+    </timeFrameFilter>
+</Report>

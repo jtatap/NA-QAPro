@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MilestoneType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When survey response is received, and the customer would like to be contacted back, a case is created and routed to
+a CSAT Follow Up queue. Milestones of the queue should be a 12 hour response time for the customer to be contacted
+back.</description>
+    <recurrenceType>none</recurrenceType>
+</MilestoneType>

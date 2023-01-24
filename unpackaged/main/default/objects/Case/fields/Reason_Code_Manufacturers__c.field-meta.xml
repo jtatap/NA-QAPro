@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Code_Manufacturers__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Code Manufacturers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accessory Network</fullName>
+                <default>false</default>
+                <label>Accessory Network</label>
+            </value>
+            <value>
+                <fullName>American Essentials</fullName>
+                <default>false</default>
+                <label>American Essentials</label>
+            </value>
+            <value>
+                <fullName>Basic Resources (VH Socks)</fullName>
+                <default>false</default>
+                <label>Basic Resources (VH Socks)</label>
+            </value>
+            <value>
+                <fullName>BCNY</fullName>
+                <default>false</default>
+                <label>BCNY</label>
+            </value>
+            <value>
+                <fullName>Calvin Klein Sportswear</fullName>
+                <default>false</default>
+                <label>Calvin Klein Sportswear</label>
+            </value>
+            <value>
+                <fullName>ClearVision Optical</fullName>
+                <default>false</default>
+                <label>ClearVision Optical</label>
+            </value>
+            <value>
+                <fullName>COTY</fullName>
+                <default>false</default>
+                <label>COTY</label>
+            </value>
+            <value>
+                <fullName>Customer Leather</fullName>
+                <default>false</default>
+                <label>Customer Leather</label>
+            </value>
+            <value>
+                <fullName>Cutie Pie Baby (100364)</fullName>
+                <default>false</default>
+                <label>Cutie Pie Baby (100364)</label>
+            </value>
+            <value>
+                <fullName>Delta Galil</fullName>
+                <default>false</default>
+                <label>Delta Galil</label>
+            </value>
+            <value>
+                <fullName>Estee</fullName>
+                <default>false</default>
+                <label>Estee</label>
+            </value>
+            <value>
+                <fullName>Fishman &amp; Tobin (477)</fullName>
+                <default>false</default>
+                <label>Fishman &amp; Tobin (477)</label>
+            </value>
+            <value>
+                <fullName>Fletcher</fullName>
+                <default>false</default>
+                <label>Fletcher</label>
+            </value>
+            <value>
+                <fullName>G-III Apparel Group (54163)</fullName>
+                <default>false</default>
+                <label>G-III Apparel Group (54163)</label>
+            </value>
+            <value>
+                <fullName>Global Brands Group</fullName>
+                <default>false</default>
+                <label>Global Brands Group</label>
+            </value>
+            <value>
+                <fullName>Harbor Footwear</fullName>
+                <default>false</default>
+                <label>Harbor Footwear</label>
+            </value>
+            <value>
+                <fullName>Himatsingka (33699)</fullName>
+                <default>false</default>
+                <label>Himatsingka (33699)</label>
+            </value>
+            <value>
+                <fullName>Internal Wholesale</fullName>
+                <default>false</default>
+                <label>Internal Wholesale</label>
+            </value>
+            <value>
+                <fullName>Jimlar</fullName>
+                <default>false</default>
+                <label>Jimlar</label>
+            </value>
+            <value>
+                <fullName>Kayser-Roth Corp.</fullName>
+                <default>false</default>
+                <label>Kayser-Roth Corp.</label>
+            </value>
+            <value>
+                <fullName>Kids Headquarters</fullName>
+                <default>false</default>
+                <label>Kids Headquarters</label>
+            </value>
+            <value>
+                <fullName>LF Home</fullName>
+                <default>false</default>
+                <label>LF Home</label>
+            </value>
+            <value>
+                <fullName>Marc Fisher</fullName>
+                <default>false</default>
+                <label>Marc Fisher</label>
+            </value>
+            <value>
+                <fullName>Marchon (77169)</fullName>
+                <default>false</default>
+                <label>Marchon (77169)</label>
+            </value>
+            <value>
+                <fullName>Marcraft</fullName>
+                <default>false</default>
+                <label>Marcraft</label>
+            </value>
+            <value>
+                <fullName>Max Leather</fullName>
+                <default>false</default>
+                <label>Max Leather</label>
+            </value>
+            <value>
+                <fullName>Movado</fullName>
+                <default>false</default>
+                <label>Movado</label>
+            </value>
+            <value>
+                <fullName>Nourison</fullName>
+                <default>false</default>
+                <label>Nourison</label>
+            </value>
+            <value>
+                <fullName>Pacific Coast Feather (19648)</fullName>
+                <default>false</default>
+                <label>Pacific Coast Feather (19648)</label>
+            </value>
+            <value>
+                <fullName>Peerless</fullName>
+                <default>false</default>
+                <label>Peerless</label>
+            </value>
+            <value>
+                <fullName>PVH Corp (36543)</fullName>
+                <default>false</default>
+                <label>PVH Corp (36543)</label>
+            </value>
+            <value>
+                <fullName>Randa</fullName>
+                <default>false</default>
+                <label>Randa</label>
+            </value>
+            <value>
+                <fullName>Retail Product</fullName>
+                <default>false</default>
+                <label>Retail Product</label>
+            </value>
+            <value>
+                <fullName>Ricardo Beverly Hills</fullName>
+                <default>false</default>
+                <label>Ricardo Beverly Hills</label>
+            </value>
+            <value>
+                <fullName>Safilo Group</fullName>
+                <default>false</default>
+                <label>Safilo Group</label>
+            </value>
+            <value>
+                <fullName>SG Footwear</fullName>
+                <default>false</default>
+                <label>SG Footwear</label>
+            </value>
+            <value>
+                <fullName>S Goldberg &amp; Co (73639)</fullName>
+                <default>false</default>
+                <label>S Goldberg &amp; Co (73639)</label>
+            </value>
+            <value>
+                <fullName>Springs Industries (15582)</fullName>
+                <default>false</default>
+                <label>Springs Industries (15582)</label>
+            </value>
+            <value>
+                <fullName>S Rothschild &amp; Co (72803)</fullName>
+                <default>false</default>
+                <label>S Rothschild &amp; Co (72803)</label>
+            </value>
+            <value>
+                <fullName>Swatch</fullName>
+                <default>false</default>
+                <label>Swatch</label>
+            </value>
+            <value>
+                <fullName>Swimwear Anywhere</fullName>
+                <default>false</default>
+                <label>Swimwear Anywhere</label>
+            </value>
+            <value>
+                <fullName>The Weather Co</fullName>
+                <default>false</default>
+                <label>The Weather Co</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger Sportswear (77806)</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger Sportswear (77806)</label>
+            </value>
+            <value>
+                <fullName>Vandale Industries</fullName>
+                <default>false</default>
+                <label>Vandale Industries</label>
+            </value>
+            <value>
+                <fullName>WestPoint Home Inc</fullName>
+                <default>false</default>
+                <label>WestPoint Home Inc</label>
+            </value>
+            <value>
+                <fullName>Z-3</fullName>
+                <default>false</default>
+                <label>Z-3</label>
+            </value>
+            <value>
+                <fullName>Web Form Submission</fullName>
+                <default>false</default>
+                <label>Web Form Submission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

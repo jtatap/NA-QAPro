@@ -1,0 +1,23 @@
+<template>
+        <div class="streamingDiv">
+                <c-data-change-event-handler 
+                        total-records={totalNumberOfRows}
+                        onnotification={handlenotification}>
+                </c-data-change-event-handler>
+        </div>
+        <div class="dataTableDiv">
+                <lightning-datatable 
+                        data={data} 
+                        columns={columns}
+                        key-field="Id" 
+                        enable-infinite-loading="true"
+                        onloadmore={loadMoreData}
+                        hide-checkbox-column="true" 
+                        show-row-number-column="true"
+                        sorted-by={sortBy}
+                        sorted-direction={sortDirection}
+                        onsort={handleSortdata}>
+                </lightning-datatable>
+                 {loadMoreStatus}
+        </div> 
+</template>

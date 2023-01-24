@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The object type that needs to be created. If &quot;Create Records&quot; is checked, this value is mandatory. --></help>
+        <label><!-- Object to Create --></label>
+        <name>Object_to_Create__c</name>
+        <picklistValues>
+            <masterLabel>Agent Performance</masterLabel>
+            <translation><!-- Agent Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent State History</masterLabel>
+            <translation><!-- Agent State History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts Completed</masterLabel>
+            <translation><!-- Contacts Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skills SLA Summary</masterLabel>
+            <translation><!-- Skills SLA Summary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skills Summary</masterLabel>
+            <translation><!-- Skills Summary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teams Performance Total</masterLabel>
+            <translation><!-- Teams Performance Total --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

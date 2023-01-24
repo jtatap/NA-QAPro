@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Records__c</fullName>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Whether to create records after a successful callout. If it&#39;s checked, you&#39;d need to mention the object name in the &quot;Object to Create&quot; field.</inlineHelpText>
+    <label>Create Records</label>
+    <type>Checkbox</type>
+</CustomField>

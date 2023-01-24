@@ -1,0 +1,3682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MlDomain xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>PVH Business Intents</label>
+    <mlIntents>
+        <developerName>bus_cancelChangeOrder_direct</developerName>
+        <label>bus_cancelChangeOrder_direct</label>
+        <mlIntentUtterances>
+            <utterance>Edit order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Change address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I just ordered but I dropped the wrong gmail</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>wrong address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to add more</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can u pls cancel this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancel the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>we need to cancel the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>pls cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is it to late to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i would like to proceed with the order cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i would like to cancel the order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to cancelled one order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i have to cancelled one order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i accidentally double ordered. i&#39;d like to cancel one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i was wondering if i could cancel my order that i did yesterday</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to cancel the order because i&#39;m going on a trip</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to edit my order and add something to that</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i have placed an order just now and i want to add one more item to it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i just placed an order and i wanted to make that 2 instead of 1</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to correct my address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to make sure if i wrote the correct billing address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Add to my order that was just placed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can u pls cancel this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancel the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ask you to cancel the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i was wondering if i could cancel my order that i did yesterday</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;d like to cancel one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can&#39;t cancel it after 30 minutes.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to cancel one of the items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have to cancelled one order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to cancelled one order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to cancel the order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was in the middle of a cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to fix or cancel it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is it impossible to cancel it after 30 minutes?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is it to late to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is it too late to cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>it&#39;s within the time frame but there is no option to cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>help me cancel the order immediately.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I just cancel it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Pls cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>The item I was ordered was final no return but I want to cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>We need to cancel the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to edit the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to fix shipping address of my oder</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I chance my order ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>csncl a order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I made a mistake in destination address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I made a mistake in the destination address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I adjust my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you help me to alter the size of all my purchase</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you please edit the size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Change size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Edit an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Edit my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>trying to figure out how to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>trying to figure out how to place an order cancellation for mys</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>trying to figure out how to place an order cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in canceling an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in canceling my orders</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in canceling a order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in terminating an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in order cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I cancel an order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how to cancel order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to cancel order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can I cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where do I cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where to cancel order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can I cancel this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to cancel this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I don&#39;t need this order anymore can I cancel it?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how to go about canceling an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>make an order cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order cancellation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancelling an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancel order for my</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancel order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you cancel my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can I cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Please cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to stop an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I stop my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I stop my order shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I stop my shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I stop my</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I stop my Product shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to drop my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I cancel my</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I cancel my order shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I cancel my shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to cancel my Product order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to cancel my Stuff</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to cancel my</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to cancel my Product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terminate my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terminate an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can cancel a order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can cancel a refill order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terminate order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terminate my Product shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>terminate my shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can cancel an</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the process to cancel an order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the process to cancel a order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order cancelation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the process to cancel a refill order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order canceling</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about how to cancel an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order cancel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about canceling my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>trying to figure out how to place an order change</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>please assist me in order change</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I change an order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how to change order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to change order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can I change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where do I change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where to change order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can I change this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to change this order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I don&#39;t need this order anymore can I change it?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how to go about changing an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>make an order change</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order change</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>changing order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>change order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you change my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can I change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Please change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I change my order shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I change my shipment</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to change my Product order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to change my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>want to change my Product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can change a order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can change a refill order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me how I can change an</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the process to change an order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the process to change a order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order changeation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order changing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about how to change an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about order change</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about changing my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Cancel a order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Cancel my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>CANCEL ORDER</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How to modify my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can change a sandals for difent size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to cancel my order</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_covid19_direct</developerName>
+        <label>bus_covid19_direct</label>
+        <mlIntentUtterances>
+            <utterance>Are you impacted by coronavirus?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is your COVID-19 response?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How are you prepared for COVID-19?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is COVID-19?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How does COVID-19 spread and what are the symptoms?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long does it take for symptoms of the COVID-19 to appear?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How is COVID-19 treated?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How can I best protect myself?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Should I wear a face mask? Will that help protect me?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can pregnant women with COVID-19 pass the virus to their fetus or newborn?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have an appointment and I am concerned about COVID-19. Should I cancel my appointment?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What restrictions are in place for visitors going to your facilities due to COVID-19?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have an appointment during Corovnavirus. What do I need to bring?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are you concerned about shortages of any medical supplies or medications?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are their current recommendations on international travel for personal reasons?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What are the symptoms? How can you tell the difference between the novel coronavirus and a cold or influenza (flu)?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are people contagious before they develop symptoms?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What should people do if they think they may have been infected?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do face masks or surgical masks protect against novel coronavirus?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do we know how long coronavirus lives on surfaces?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What are the best cleaners to remove coronavirus germs?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is social distancing?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is it dangerous to be outdoors during corona virus?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What needs to happen for the social separation (distancing) to eventually end?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Will warmer weather mean fewer cases of novel coronavirus?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why did public health authorities declare an emergency, and what does that mean?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I heard that coronavirus is a pandemic. What does that mean?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do outbreaks normally end?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is a novel coronavirus?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>because of covid-19 how long is the wait time for my delivery of my items to arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is covid going go delay my order</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_currentPromos_direct</developerName>
+        <label>bus_currentPromos_direct</label>
+        <mlIntentUtterances>
+            <utterance>What is the code for the extra 30% off sale price today?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Promo codes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Promo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>coupon</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>coupon code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>%15 off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>$10 off $50</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>10 DOLLAR OFF</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>10% discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>10% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>15 off promocode</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>15% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>15% off code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>15% off for loyalty members</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>15% off for signing up for alerts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20 %off my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% club house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% discount email</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% discount when you sign up and place first order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% First Responder Discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off coupon for signing up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off sign up promotion</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off welcome offer didn&#39;t come through</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off with sign up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% off. I didn&#39;t get the code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% responder</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% welcome gift</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% welcome offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% welcome vpucher for first order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20%off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>3 for $49</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>3 for $49 mens briefs</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>30% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>30% promo code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>40% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>40% off code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>40% off my cart for the promo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>40% offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>4th July discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>50% off sale is marked or is at the end?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>50% sale</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>any first tim eorder offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Applying extra 40% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>asking the 20% of first purchase</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday gifr</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday gift</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>birthday offer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday rewards</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Birthday special</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>birthdy discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I get 40% off my uniform order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I get the 20% welcome</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Club discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Could you give me welcome bonus for a first order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discount amount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discount for first order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>discount for joining</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discount for joining the club not apple</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Discount for signing up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do have 40% off on everything</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do I have my 50% off online because I&#39;m working at tommy?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do i still get 15% or 10% off for signing up for emails?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you give military discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you guys do Military Discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have 40% off on every thing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you offer a military discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>employee discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Extra 15% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Extra 40 off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>extra 40% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>First one line order discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>first order coupon</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>first order discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>first responder discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>First time online order discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was wondering if it&#39;s possible to apply the military discount on my online order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Health care discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Health care discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>get a 20% coupon code for signing up?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can obtain my birthday bonus or discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I sign up for the 20% off my purchase?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Free shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why shipping is not free?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why shipping not free?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was wondering if I could get a free shipping code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>currently offering any free shipping codes.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you wave shipping cost please?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for a shipping waiver.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for free shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Clearance</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Military discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Military Discount?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Student discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>teacher discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thank you 10% off</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Thank you 10% off till when?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest promos</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest promotional discounts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when are your new sales launching</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are you running any new sales</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your current specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can i find the current specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have any new specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are your latest specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a page with all of your specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you send me the latest specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a link to the latest specials</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>promotions page</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>link to your promotions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of sales do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Coupon code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do u get 30 percent after u spent 50$</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are there any discounts if I want to place an order for the first time</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are there any discounts for new customers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need a coupon</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need coupons</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need promotion</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>promo code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the sale code</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When discount will expired</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_deliveryIssues_direct</developerName>
+        <label>bus_deliveryIssues_direct</label>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>Package did not come</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>package not delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>My item arrived dirty and used</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>wrong item received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>received wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>I was shipped the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>My item arrived dirty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <language>en_US</language>
+            <utterance>My item arrived used</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>empty package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I did not recieve my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have an order that appears to me as being delivered but not delivered or delivered wrong, I need a solution for this</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have not received my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I made an order on thursday it still hasn&#39;t arrived</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i never received an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I never received my package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received an incomplete order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>lost order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>lost package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Missing order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Missing package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package is missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package was stolen</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Never received order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order not received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order says delivered but never received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package not delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package not received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why hasn&#39;t my order arrived yet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Damaged product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received the wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received a wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a black T-shirt, and they sent me a gray</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>defect</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>An order came with a dirty sweater, I ask you to return part of the cost of the sweater</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Defective</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order was not delivered I would like a refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package appears delivered but has not made it to my house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package did not come</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package hasn&#39;t been delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package is missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package lost</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package misplaced</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package never arrived</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package not delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package not found</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>package not here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package saying delivered and I dont have it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package says delivered but I did not receive it and it&#39;s not in my neighbors house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package was never delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>recieved wrong product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPPS confused the zip code and did not deliver the parcel to the correct address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPPS did not deliver the parcel to the correct address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPPS has changed delivery address for my parcel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Upps messed up delivery address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPPS messed up delivery address for my parcel , can you help me with it ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong item arrived</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong item received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong item sent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong item was send</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong item was sent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong jtem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>wrong order sent to me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>wrong product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Wrong product sent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>wrong product sent to me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was shipped the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>CLASSIC COTTON TRUNK 3PK wrong size packed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I placed and recieved an order and I was sent the wrong sizes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was sent the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>One of the boxers size is wrong.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order was for size 34 and I received size 35.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the product I got is the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was shipped the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order has arrived at wrong delivery address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the package arrived without three items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>an article of what I ordered arrived a different size than the one I ordered, what can I do in that case?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order says arrived but it&#39;s not here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package said it arrived and i didn&#39;t get it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Item arrived damaged</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Item arrived dirty and used</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My item arrived dirty and used</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my last purchase arrived incomplete</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order according to you was delivered on Sunday 15 but the order has not arrived home</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order said dilvered from saturday and it has not arrived as yet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My ordered never arrived at my house and it was suppose to come July 31st</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order arrived incomplete and I was missing 8 items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>A package of mine was never delivered and it was returned by the carrier</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>delivered not to me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order say it was delivered Tuesday and I haven&#39;t gotten it.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order says delivered and has not been delivered at least it is not in my address how can you help me with this</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have a package and it&#39;s delivered but I didn&#39;t receive it,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my parcel was not delivered,</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package hasn&#39;t been delivered, but you send me an email, that it has.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi my package was supposed to be delivered and I&#39;ve never received it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi my product looks delivered but i cant find it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i did an order and I&#39;ve just found that it was not delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I got an email that said my order of five shirts had been delivered to my house. They have not come to my house.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I got an email stating that 2 where delivered yesterday and 2 today and I haven&#39;t received any</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have ordered 2 pices of garments but delivered only one pices</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I haven&#39;t received my order but it said it was delivered and I never got it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered something awhile ago and it said delivered but it never got delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was emailed that my packages have been delivered, but I only got 1 shirt instead of 4</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to know if further investigation is being made if package is lost or delivered late?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m missing my order that&#39;s said to be delivered two days ago</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order said delivered 2 days ago And I don&#39;t have it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order says delivered but I never got it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order says it was delivered but it&#39;s not outside my house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order was delivered but no in my home</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package says delivered but I never got it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package says delivered to my home but it&#39;s not here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package says it was delivered but I don&#39;t have it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my package was delivered in other house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package was delivered to the wrong address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package was not delivered to the right address. I don&#39;t know where it is.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my parcel was delivered to the wrong place, left and no one signed for it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Never delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order says delivered but I cant locate it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order states delivered but I did not find anything in my front door</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the parcel was not delivered to me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>They delivered some where else</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPS emailed that my package was delivered today at 4:07. I went down at 4:45 and it was not there. It is not in our sister building either.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>UPS said my order was delivered and left at our front door but I don&#39;t see it.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Was never delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was shipped the wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received a wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received my order. One of the shirts came in the wrong color.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I recieved the wrong order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I said I got the wrong order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was sent the wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i was sent the wrong product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was sent wrong product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order was wrong</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>The other you send to me is wrong</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>The product is wrong</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the wrong item was sent</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>They gave me the wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>They sent me the wrong order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I got the wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I asked for a tennis shoe and I got a wrong size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>You guys send me the wrong pant</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>You sent me wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a few weeks ago and it said it was delivered and I checked the mail and I have&#39;t received anything</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received my order, but it was not all</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>track number shows that the parcel was received,but I did not receive it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;ve not received one item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received my parcel, but it is empty. What to do?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i only received 1 item out of 5</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;ve ordered some clothes and received them this week, but I found that some of my clothes are missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I bought three items and only received two</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I bought two items, but received only one</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered 3 bras and only received 2</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered 3 bras and only received 2 but was charged for all 3</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a jacket in size S, and just received it. The tag on it says S, but the jacket neck says SP.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered for 2 of these, but received only 1</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered size 18 pants but received a size 12.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I placed an order last July 3, for two jackets.. I received only 1.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was shipped an incorrect item</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_orderStatus_start</developerName>
+        <label>bus_orderStatus_start</label>
+        <mlIntentUtterances>
+            <utterance>Missing order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>lost package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order not received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need help with an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>lost order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package not delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order problem</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Never received order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Missing package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I placed an order on Saturday but have not received an order confirmation number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I placed an order but never received an order confirmation</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have an order that appears to me as being delivered but not delivered or delivered wrong, I need a solution for this</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Package not received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order says delivered but never received</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order issue</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package was stolen</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My package is missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Missing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received an incomplete order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I never received my package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I did not recieve my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>empty package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to know when you will ship my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to track my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to know if the order has been sent?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>will my order be shipped?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to know when you will ship my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am waiting for my order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I made an order on thursday it still hasn&#39;t arrived</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is taking so long to ship my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When are you going to ship my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When are you going to ship my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When you going to ship my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when you ship my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can you track an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you offer a parcel tracking number?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Don&#39;t have tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>give me please track number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need the order tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i DON&#39;t have a tracking number yet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to track my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to track an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am not able to track my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am trying to track down information about an order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am trying to track my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need my track number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need my tracking No</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need my tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need the tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Lost tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need help tracking my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Need tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order tracking</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Track order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Tracking</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Tracking number?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Help me to clarify the tracking number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Tracking package</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Update my order information</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I see my order is on hold, why is that?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why is my order showing this status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why would my order be on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order still on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when is my order going to no longer be on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is order still on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is order on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is order in process</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is order still in process</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is taking so long with the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can my order still be processing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to know why the order is still processing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order still processing</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why was the order canceled?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you explain how my my order was canceled</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did my order get canceled?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me why it&#39;s in process</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to know why the order is on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is the order pending more information?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order in this status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why is my order on hold?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Why is my order in this status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my order still on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why are my items stil on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can my order still be on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is the order pending</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the order is still showing as pending</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order has been showing pending for several days</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>more than a week and the order is still pending?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how come the order is on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did my order get delays</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did my order get delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to know why the order is delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is the order delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when was the order delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why did the order get delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why was the order put on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why was my order put on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is order on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when was the order put on hold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>since when is the order pending</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did it get put in pending status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did it get in delayed status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how did it get delayed</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what does my order status mean?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the status of my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order 12345678 status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the status of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to know the status of an order i placed on Monday</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order statuses</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can u show my statuses</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>show order statuess</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>show order statuses</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i see my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Current Order Status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Current ORder Status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I can&#39;t find the status of my order.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the status of my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I find out the order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I find my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do I find the status of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell what the status of my order is</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me the status of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me what my order status is</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where can I find my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where&#39;s the status of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where&#39;s the status of the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need the order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need my order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is my order status?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Order Status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When do I get the rest of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is my order underway</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when will my order get here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s up with my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where&#39;s my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when do I get my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where&#39;s my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What day does my order come</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what day does my order arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when did my last order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when did my last order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are my orders</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where are my orders?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s going on with order# 12345678</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s going on with my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when did my last order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Has my order shipped?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s the tracking number for 12345678</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Has my order shipped?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my orders</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where is my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me my orders</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how can I tell if my order has shipped</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where is my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When will I receive my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when will i receive my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have not received my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when will my order be delivered</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where is my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where&#39;s order 12345678</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>checking on order 12345678</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where is my order?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what date does my order arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long until my order get here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long until my order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When do I get the rest of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why hasn&#39;t my order arrived yet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where is my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is my order underway</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when will my order get here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s up with my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where&#39;s my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when do I get my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where&#39;s my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What day does my order come</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what day does my order arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what date does my order arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long until my order get here</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long until my order ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i never received an order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>58492950 order number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>about a boot I purchased</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>about a boot I purchased</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tracking has not yet been given for two late orders</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i ordered my products on 10/09/20 when would they arrive</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why is my bag shipment late</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>my order from Oct 7 still isnt shipping, why</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>not shipped</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_productQuestion_direct</developerName>
+        <label>bus_productQuestion_direct</label>
+        <mlIntentUtterances>
+            <utterance>Mens</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Women</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Product question</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Product questions</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>men</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Availability</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Men&#39;s</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Men?s</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>coat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Bags</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>20% discount</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Canvas belts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to ask about jacket model number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>may i inquire about the types of boxers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>have you discontinued it?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i wanted to know if all your watches carry a 1 year warranty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to find the matching thong</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to ensure if my sunglasses are original or not</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to ask about jacket model number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i buy watch and want to confirm it is original</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i bought a watch and i want to know if it original or not</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>just wanted to know is the sleek bikini top, padded or not</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i was wanting to see if you had perfume samples</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do modern structure hipster have white color?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to buy cotton dress with american flag</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to know if the sweater of the mercedes collection is available..</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to know, if the products i bought are fake, or true..</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there any watch written swiss made</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Does this model have size 5</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Interested in the length of this Model Recycled Nylon Long Puffer Coat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How can I find the model number</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to know model name for a shoe</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>model of Jeans comes with a belt</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>this model of watches are realy or fack</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What model is the textured black ramses oxford</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>are your jackets made in the USA?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Biker shorts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>bra</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Bra in style QF1839</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>BRas 36b</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>A have question about product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>A specific top</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are Air FX Micro Boxer Brief Low Rise</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are Calvin Klein modern cotton sheets being discontinued?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are ck one thing panties unisex?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are the chromatic hip briefs for men going to be coming back</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are the Mens silver birch linen blend pants silver or more off white</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Any Tommy Hilfiger decorations supplies for my baby</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Black bottle red top</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Black colour</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>black in color</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Boots</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Boys</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Calvin Klein Men&#39;s STEEL Slim-Fit Non-Iron Stretch Performance Dress Shirt country of origin?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I get a white jogger</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i get just the shorts in the space jam pajama set</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I have a backpack custom made to go with my Tommy luggage set.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Chino shorts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Clavin Klein bras in small size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you carry men?s Infinite Stretch suits</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you carry the Reconsidered Comfort Joggers in mens small?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have canvas belts?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have cotton bras?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have in stock the Naomi crossbody bag in gold</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have king sheets that are 60 percent cotton, 40 percent polyester?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have king sheets that are 60% cotton, 40% polyester?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have matching sweatpants for your hoodies?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have men&#39;s swim trunks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have mens boxer briefs in xxl ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have pocket t shirts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have regimental stripped pants?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have shot sleeve button Original red white and blue Tommy sure</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to know the length of a product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to know the length of TG000751</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for a purse that is older</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for a soft cotton white boxer</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for adaptive sweatpants for my husband.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for air fx silver small .</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for cool flex suit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for great everyday underwear</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for luxury flag pillows</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for medium in white</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for mens pants</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for old pattern</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for QF 1804 in nude</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for the Hailey H1ADSCT2 handbag in the python print</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for Van Heiden stretch extensible</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for van heusen rn 36543</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>SANDALS</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>school uniform</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>school uniforms</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>School uniforms with school logo</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of things do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s on sale</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of clothes do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what clothes do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;m looking for clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;d like to buy some clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the kinds of clothes that you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the types of clothes that you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>list of your clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of clothes do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what clothes do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;m looking for clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i&#39;d like to buy some clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the kinds of clothes that you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the types of clothes that you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>list of your clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what do you have for sale</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s on sale on your website</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of things do you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>website tour</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tour of the website</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>different types of clothes you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s on your website</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s here on the site</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is here on the site</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what do you have available for sale</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what kind of products do you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what products do you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what prodcuts do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the different products you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are the different lines</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what different lines do you carry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are some of your feature products</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your feature products</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your most popular items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>popular items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>popular types of clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your popular items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>common items on your site</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>common stuff you sell</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>different kind of clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>different kinds of make-up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you carry other stuff besides clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>different clothes that you carry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>different clothes that you carry</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new pants</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new shirts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new jeans</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new dress pants</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new dresses</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new underwear</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for bedsheets</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for new shoes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for new jackets</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>looking for a suit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>new product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s the latest releases</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>newest clothes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>gloves</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what new products do you have</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>product quesiton</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you still carry Modern Cotton High Waist Bikini, previous item Item #: 51476280 Thanks.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>does this store carry Van Heusen no tuck shirts</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>ECO SERIES RECYCLED POLYESTER PUFFER JACKET</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello I am looking for the item number 12675 its a jacket</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>hello,im looking for a all grey sweat suit</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello! may i have Style #: 11864218 XS</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hey you have this dress yobbh328</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi do you have mens thongs</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi do you know when you will have more 44 belts in stock of the reversible</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hi when will the CAROUSEL 2-PACK BOYSHORT in the lake and gray combo be available again in a size small</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I am trying to order your women straight leg stretch pants black and your website won&#39;t take the order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to see all watches collection for 2021</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to check for a dress calvinklein black</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to know if
+have in stock thanks</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m looking for NB 1569</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Iam looking for a dressy shirt for ladys navy blue red white</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is peacoat colour dark blue,navy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Jogging fit jeans in adaptive womens, what are number sizes that apply to the letter size M and L.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Looking for this type of underwater</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>New Arrival Eco Series Recycled Polyester Puffer Jacket
+ECO SERIES RECYCLED POLYESTER PUFFER JACKET</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Straight fit stretch pants size 8 black</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Trying to purchase Miami shirts but the sizes are for jackets</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>U have men&#39;s driving sneakers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is the width of this shoe.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When will CK release new mens brief styles</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>When will the Calvin Klein duffle bag be available again</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Woman joggers</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>women jacket size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>women&#39;s</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Womens</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_returns_start</developerName>
+        <label>bus_returns_start</label>
+        <mlIntentUtterances>
+            <utterance>Damaged product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Change size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want a refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received the wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Refund status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>eyeglass warranty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a gray hat, but received a blue hat</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Damage product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Where is my refund?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>the inner cover of the eyeglass case is broken</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>WRONG SIZE</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>received damage item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Quality issue</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Product warranty</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I received a wrong item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a black T-shirt, and they sent me a gray</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I ordered a black jacket, a white one went instead</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Hello. I returned your things to me, they processed a refund, but unfortunately I did not receive my money</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Defective</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>defect</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Change sizes</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to replace it with a smaller size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to return the products after 3 months</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i bought something and its been more than 90 days now and i want to return it.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how much i would be charged if i dont like an item and wants to returm it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am i able to return undersweat that i bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>An order came with a dirty sweater, I ask you to return part of the cost of the sweater</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Are returns free?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Black mid rise ankle is too long,can I have it switch size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I return a pair of mens shorts to a local van heusen outlet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return an undershirt if I have washed it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I return to a local van heusen outlet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can nursing bras be returned</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can underwear be returned</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you return boxers if they are unworn</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Did you receive this return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>But I have to spend $9 for it to be returned?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to know if my order is eligible for a return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to return it because its not his size</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I have a question about a return that was returned to me.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I was wondering could I return them to a Tommy store ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I wanted to know if the heron Preston collab is returnable for a refund?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>just want to follow up regarding the item that returned</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I purchase some pants online and I need to return them</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>would I be charged with shipping fee if I return a cloth?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to return something.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I return them by ups or fedex?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is there a different process for return for this?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I see that orders over $49 ship free are returns free also?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I sent my return in 2 weeks ago</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to return the products after 3 months</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>If I buy something online, can I return it at one of the locations?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return just some of the items?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>if you wash the undershirt then you can&#39;t return it?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>im past my 30 days can i still returns the items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is return shipping free?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Location of store to return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need return label</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Regarding a return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>regarding return location</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return authorization</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return on a jacket</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return police</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Return time frame</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Store near me for the return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>stores to return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>when will the money be returned to me?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why am i being charged for a return you messed up?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why i am charged $15 for return shipping fee?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want a refund of a cancelled item</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like a refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>In reference to refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>My order was not delivered I would like a refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Problem with my refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Refunds</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Request for a refund</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you allow returns</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return something i bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i don&#39;t like this, can I return it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to do a return on product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you take returns</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>returns</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return my product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return the product I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return product that I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am I allowed to return items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I bought something, don&#39;t want it. can I return it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return something</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is your return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>product return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what if I don&#39;t like what I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I exchange my product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you allow exchanges</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I exchange something i bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i don&#39;t like this, can I exchange it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to do an exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you take exchanges</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchanges</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchange my product</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchange the product I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchange product that I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am I allowed to exchange items</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I bought something, don&#39;t want it. can I exchange it</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I exchange something</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>exchange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what is your exchange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have a exchange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>product exchange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what if I don&#39;t like what I bought</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return or exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return or exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return or exchange a bid I won</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>am I allowed to reutrn or exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s your return/exhcange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return or exchange policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return or exchange my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to do a partial return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>partial exchange</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>partial return of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i need to return some of my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do i do a return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do i set up a return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you start a return for me</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s the return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>status of my return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>did you get my return back yet</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>where is my return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how do i do a return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>update on return status</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>status return update</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what&#39;s ur return policy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i return these suits</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i return these pants</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can I return things that i&#39;ve worn</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to return gloves</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>set up return</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need to return a shirt that was ordered that is too small</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>may I return orders from multiple in one package to save money on shipping</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlIntents>
+        <developerName>bus_shipping_direct</developerName>
+        <label>bus_shipping_direct</label>
+        <mlIntentUtterances>
+            <utterance>do you deliver in the philippines?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to now how much is shipping price in this country</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i want to ask if you can ship internationally?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I do store pick up?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I pick up my order from an UPS office?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you allow self pick up?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How can i chose curbside pick up for my order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is that posiible to pick up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>is that possible to pick up order</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Pick up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Self pick up</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can china ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I choose DHL as my shipping option?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can my package be delivered to a UPS</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do calvin Klein give free shipping world wide</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do oyu ship international</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do y&#39;all ship usps</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do y&#39;all use the shipping method of USPS</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have pickup store?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you have worldwide shipping?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you ship international too ?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you ship internationally?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Does CK ship to Trinidad and Tobago?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How do I do curbside pickup instead of shipping to my house</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long does ground shipping take?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long does it take to ship</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long does standard ground shipping take?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long is shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How long it takes to get order shipped to Toronto?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how long will the shipping duration be?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>how long your shipping takes?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How many time is the shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>How quickly can shoes ship?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>international shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you ship order overseas?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>International Shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>International shipping is available??</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>International shipping?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Is this site ship po box</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Its possible shipping order to Ukraine?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I want to ask if you can ship internationally?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>i have an inquiry on shipping.</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I buy some products not shipping India</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shippin</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shipping Australia as well</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping overseas</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shipping time</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shipping to South Africa</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping to overseas</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>There is shipping to Middle east</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>World wide shipping??</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>worldwide shipping?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>What is ground delivery?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Which carrier you use?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>unsure about your shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you give me shipping information</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping information</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need to understand what your shipping policies are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping rules</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are your shipping rules and policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>asking about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping general info</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I would like to know about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>inquiring about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me about your shipping policies?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>confused about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>questions about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me more about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>order shipping information</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>have questions about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping rules</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I wanted to ask about your order shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping information</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I wanted to ask about your order shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what can you tell me about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about your shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me your shipping policies for</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what can you tell me about your shipping policies?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you give me more information about your shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you give me more info regarding shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what can you give me about shipping info</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you give me info for shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you provide me with info for shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you provide me with info for shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m not sure what your shipping policies are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I&#39;m confused about your shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>confused about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>not sure what your shipping is about</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>really confused about how you do shipping at unsure about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>unsure what to do about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>unsure what your shipping policies are for don&#39;t know what your shipping policies are</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>don&#39;t know about shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>don&#39;t know what to do with your shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>don&#39;t know how shipping works at what are s shipping rules and policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what are shipping rules</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell how shipping works with you guys?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can you tell me more about your shipping policies and rules?</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what can you tell me about shipping rules</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>what can you tell me about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about your shipping rules and policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me more about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about the rules for shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>tell me about the policies for shipping</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>need someone to tell me about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping info</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>shipping for shipping policies for shipping rules for I have a question about shipping policies</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I order something online and pick it up in the store</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Can I ship to India-Kerala</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>can i ship to more than one address</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you guys deliver in canada</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you have an option to deliver to Israel</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Do you send to Chile country</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>DO YOU SHIP TO ISRAEL</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you ship to italy</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you ship to Canada</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you ship to the UK</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>do you ship to India Mumbai</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Whats the delievery time to Washington</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>HOW LONG DOES DELIVERY TAKE</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>I need shiping to israel please</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Shipping to kuwait</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>There is direct delivery to Saudi Arabia</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>why i can ship a winter jacket to canada</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+</MlDomain>

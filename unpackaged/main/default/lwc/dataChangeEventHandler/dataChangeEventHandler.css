@@ -1,0 +1,17 @@
+.notificationText{
+    font-weight: normal;
+    font-size: 16px; 
+    /* font-family: sans-serif;
+    color: #deb887; */
+    color: #ffb75d;
+}
+.subscriptionText{
+    font-family: sans-serif;
+    color: #ffb75d;
+}
+.customToggle{
+    background: #ffb75d !important;
+}
+/* .customToggle:focus{
+    background: red;
+} */

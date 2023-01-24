@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand Form - Additional Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brand Form - Additional Details</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Brand Form - Additional Detail Layout</layout>
+        <sections>
+            <label><!-- Brand Channel Actions --></label>
+            <section>Brand Channel Actions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_For_Survey__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+    NOT(Suppress_Survey__c),
+    NOT(ISBLANK((NFCaseScenario__c))),
+    CASE(NFCaseScenario__r.Name ,
+        &quot;Corporate: Reporting Good Service&quot;, &quot;false&quot;,
+        &quot;Corporate: Reporting Poor Service at a Company Store&quot;, &quot;false&quot;,
+        &quot;Corporate: Requesting to sell Brand Product&quot;, &quot;false&quot;,
+        &quot;Corporate: Business Solicitation&quot;, &quot;false&quot;,
+        &quot;Corporate: Request to Model for Brand&quot;, &quot;false&quot;,
+        &quot;BBB Complaint&quot;, &quot;false&quot;,
+        &quot;Corporate: Employment Verification Request&quot;, &quot;false&quot;,
+        &quot;Payroll&quot;, &quot;false&quot;,
+        &quot;Corporate: Employment Opportunities&quot;, &quot;false&quot;,
+        &quot;Corporate: Customer reporting in-store Injury&quot;, &quot;false&quot;,
+        &quot;Corporate: Donation Request&quot;, &quot;false&quot;,
+        &quot;Risk&quot;, &quot;false&quot;,
+        &quot;Corporate: Inquiring about a Contest/Sweepstakes&quot;, &quot;false&quot;,
+        &quot;Payment: Payment Dispute from Bank&quot;, &quot;false&quot;,
+        &quot;Fulfill Cancel&quot;, &quot;false&quot;,
+        &quot;Final Sale&quot;, &quot;false&quot;,
+        &quot;CRM: Loyalty Email Unsubscribe Request&quot;, &quot;false&quot;,
+        &quot;CRM: Physical Mailer Unsubscribe Request&quot;, &quot;false&quot;,
+        &quot;Possible Fraud&quot;, &quot;false&quot;,
+        &quot;Stuck in Placed/Submitted&quot;, &quot;false&quot;,
+        &quot;Shipping: Where can we ship orders&quot;, &quot;false&quot;,
+        &quot;true&quot;
+        ) = &quot;true&quot;,
+    CASE(NFCaseScenario__r.Name,
+        &quot;Licensing Request&quot;, &quot;false&quot;,
+        &quot;Media Response Request&quot;, &quot;false&quot;,
+        &quot;Corporate: Store Calling to Provide Warning&quot;, &quot;false&quot;,
+        &quot;Corporate: Free Promotional Product Request&quot;, &quot;false&quot;,
+        &quot;true&quot;) = &quot;true&quot;,
+    CASE(NFCaseScenario__r.NFScenarioCategory__c,
+        &quot;Marketing&quot;, &quot;false&quot;,
+        &quot;true&quot;) = &quot;true&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligible For Survey</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

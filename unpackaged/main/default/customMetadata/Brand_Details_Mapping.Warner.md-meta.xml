@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Warner</label>
+    <protected>false</protected>
+    <values>
+        <field>Brand_Name__c</field>
+        <value xsi:type="xsd:string">Warner</value>
+    </values>
+    <values>
+        <field>Brand_Number__c</field>
+        <value xsi:type="xsd:string">83</value>
+    </values>
+    <values>
+        <field>Brand_form_link__c</field>
+        <value xsi:type="xsd:string">https://help.warners.com/s/brand-form</value>
+    </values>
+    <values>
+        <field>Donot_sell_share_success_template__c</field>
+        <value xsi:type="xsd:string">Advertising Opt-Out Success Template</value>
+    </values>
+    <values>
+        <field>Email_Template__c</field>
+        <value xsi:type="xsd:string">R2R Change Confirmation request TH</value>
+    </values>
+    <values>
+        <field>Email_template_donot_share_Sell__c</field>
+        <value xsi:type="xsd:string">DSS Change Confirmation request</value>
+    </values>
+    <values>
+        <field>Ordwide_Email__c</field>
+        <value xsi:type="xsd:string">Warner&#39;s Privacy Support</value>
+    </values>
+    <values>
+        <field>PDR_Link__c</field>
+        <value xsi:type="xsd:string">https://pvhservicecloud--qapro.sandbox.my.site.com/warners/s/personal-data-request</value>
+    </values>
+    <values>
+        <field>Privacy_Policy_Link__c</field>
+        <value xsi:type="xsd:string">https://warners.com/your-privacy-rights/</value>
+    </values>
+    <values>
+        <field>Success_Email_Template__c</field>
+        <value xsi:type="xsd:string">Rectification Success Template</value>
+    </values>
+</CustomMetadata>

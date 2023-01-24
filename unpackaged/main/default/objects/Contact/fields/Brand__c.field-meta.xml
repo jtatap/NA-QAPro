@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Brand Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bass</fullName>
+                <default>false</default>
+                <label>Bass</label>
+            </value>
+            <value>
+                <fullName>Calvin Klein</fullName>
+                <default>false</default>
+                <label>Calvin Klein</label>
+            </value>
+            <value>
+                <fullName>Heritage Ecom</fullName>
+                <default>false</default>
+                <label>Heritage Ecom</label>
+            </value>
+            <value>
+                <fullName>IZOD</fullName>
+                <default>false</default>
+                <label>IZOD</label>
+            </value>
+            <value>
+                <fullName>IZOD.com</fullName>
+                <default>false</default>
+                <label>IZOD.com</label>
+            </value>
+            <value>
+                <fullName>Partner Brands</fullName>
+                <default>false</default>
+                <label>Partner Brands</label>
+            </value>
+            <value>
+                <fullName>Speedo</fullName>
+                <default>false</default>
+                <label>Speedo</label>
+            </value>
+            <value>
+                <fullName>Style Bureau</fullName>
+                <default>false</default>
+                <label>Style Bureau</label>
+            </value>
+            <value>
+                <fullName>Tommy Hilfiger</fullName>
+                <default>false</default>
+                <label>Tommy Hilfiger</label>
+            </value>
+            <value>
+                <fullName>Van Heusen</fullName>
+                <default>false</default>
+                <label>Van Heusen</label>
+            </value>
+            <value>
+                <fullName>Van Heusen.com</fullName>
+                <default>false</default>
+                <label>Van Heusen.com</label>
+            </value>
+            <value>
+                <fullName>Warners.com</fullName>
+                <default>false</default>
+                <label>Warners.com</label>
+            </value>
+            <value>
+                <fullName>Speedo USA</fullName>
+                <default>false</default>
+                <label>Speedo USA</label>
+            </value>
+            <value>
+                <fullName>Van Heusen.com (VHE)</fullName>
+                <default>false</default>
+                <label>Van Heusen.com (VHE)</label>
+            </value>
+            <value>
+                <fullName>True&amp;Co</fullName>
+                <default>false</default>
+                <label>True&amp;Co</label>
+            </value>
+            <value>
+                <fullName>Warner</fullName>
+                <default>false</default>
+                <label>Warner</label>
+            </value>
+            <value>
+                <fullName>Olga</fullName>
+                <default>false</default>
+                <label>Olga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

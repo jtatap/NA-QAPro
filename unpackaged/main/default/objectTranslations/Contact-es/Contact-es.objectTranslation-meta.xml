@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>B2C: Contact (Support) Layout</layout>
+        <sections>
+            <label><!-- B2C Commerce Customer Status --></label>
+            <section>B2C Commerce Customer Status</section>
+        </sections>
+        <sections>
+            <label><!-- B2C Commerce Identifiers --></label>
+            <section>B2C Commerce Identifiers</section>
+        </sections>
+        <sections>
+            <label><!-- B2C Commerce System Information --></label>
+            <section>B2C Commerce System Information</section>
+        </sections>
+        <sections>
+            <label><!-- B2C Customer Information --></label>
+            <section>B2C Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- B2C Integration Controls --></label>
+            <section>B2C Integration Controls</section>
+        </sections>
+        <sections>
+            <label><!-- B2C Integration Processing Details --></label>
+            <section>B2C Integration Processing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Information --></label>
+            <section>Phone Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Email Layout</layout>
+        <sections>
+            <label><!-- Customer Account Management --></label>
+            <section>Customer Account Management</section>
+        </sections>
+        <sections>
+            <label><!-- Data Source Information --></label>
+            <section>Data Source Information</section>
+        </sections>
+        <sections>
+            <label><!-- Loyalty Information --></label>
+            <section>Loyalty Information</section>
+        </sections>
+        <sections>
+            <label><!-- SMS Information --></label>
+            <section>SMS Information</section>
+        </sections>
+        <sections>
+            <label><!-- Subscription Information --></label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact SMS Layout</layout>
+        <sections>
+            <label><!-- Subscription Information --></label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- CSR Email Update --></label>
+        <name>CSR_Email_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Disable B2C Commerce Event Auditing --></label>
+        <name>Disable_B2C_Commerce_Event_Auditing</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Disable B2C Commerce Profile Integration --></label>
+        <name>Disable_B2C_Commerce_Profile_Integration</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enable B2C Commerce Event Auditing --></label>
+        <name>Enable_B2C_Commerce_Event_Auditing</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enable B2C Commerce Profile Integration --></label>
+        <name>Enable_B2C_Commerce_Profile_Integration</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order on Behalf Of --></label>
+        <name>Order_on_Behalf_Of</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Publish to B2C Commerce Profile --></label>
+        <name>Publish_to_B2C_Commerce_Profile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order On Behalf Of --></label>
+        <name>SFCC_Order_On_Behalf_Of</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sync with B2C Commerce Profile --></label>
+        <name>Sync_with_B2C_Commerce_Profile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Unlock --></label>
+        <name>Unlock</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update PVH Contact --></label>
+        <name>Update_PVH_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Activity --></label>
+        <name>Activity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Support Case --></label>
+        <name>Create_Support_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Privacy Contact --></label>
+        <name>Update_Privacy_Contact</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- A Brand&apos;s Data Owner Responsible For Handling Privacy Requests --></description>
+        <label><!-- Data Owner --></label>
+        <name>Data_Owner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SMSMobile --></label>
+        <name>SMSMobile</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot update Email field for an Ecomm connected Contact --></errorMessage>
+        <name>Restrict_Email_Update_for_PVH</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

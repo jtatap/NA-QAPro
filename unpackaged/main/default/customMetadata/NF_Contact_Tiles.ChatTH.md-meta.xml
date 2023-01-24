@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ChatTH</label>
+    <protected>false</protected>
+    <values>
+        <field>Action__c</field>
+        <value xsi:type="xsd:string">ButtonToPress</value>
+    </values>
+    <values>
+        <field>ButtonClass__c</field>
+        <value xsi:type="xsd:string">flatButton</value>
+    </values>
+    <values>
+        <field>ComponentKey__c</field>
+        <value xsi:type="xsd:string">TH</value>
+    </values>
+    <values>
+        <field>HTML_Content__c</field>
+        <value xsi:type="xsd:string">&lt;div class=&quot;slds-grid slds-gutters&quot;&gt;
+
+&lt;div class=&quot;slds-col slds-size_1-of-3&quot;&gt;
+&lt;div class=&quot;slds-p-top_medium&quot; style=&quot;text-align:center;height: 100%;&quot;&gt;
+&lt;img src=&quot;/sfsites/c/resource/nf_logochat&quot; style=&quot;width: 70px;height: 70px;vertical-align: middle;&quot; class=&quot;slds-m-top_medium&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;slds-col slds-size_2-of-3&quot;&gt;
+
+&lt;div class=&quot;slds-text-heading_medium&quot; style=&quot;font-weight:700;&quot;&gt;Chat&lt;/div&gt;
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+&lt;/b&gt;Mon-Sun:&lt;/b&gt; 9am-9pm ET
+&lt;br/&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+&lt;u&gt;Open Chat&lt;/u&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;</value>
+    </values>
+    <values>
+        <field>LinkToOpen__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>SortOrder__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+</CustomMetadata>

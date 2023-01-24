@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Whether to create records after a successful callout. If it&apos;s checked, you&apos;d need to mention the object name in the &quot;Object to Create&quot; field. --></help>
+        <label><!-- Create Records --></label>
+        <name>Create_Records__c</name>
+    </CustomFieldTranslation>

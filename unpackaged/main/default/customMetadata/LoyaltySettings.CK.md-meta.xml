@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Calvin Klein (CK)</label>
+    <protected>false</protected>
+    <values>
+        <field>BrandId__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+    <values>
+        <field>EnableRewardsButton__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>EnableTriggeredSend__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>IsLoyaltyApplicable__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogSignupActivity__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LoyaltyPrefix__c</field>
+        <value xsi:type="xsd:string">C04</value>
+    </values>
+    <values>
+        <field>MCSMSEnabled__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Parent_Brand__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>WaterfallSMSEnabled__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ZetaGUID__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>chargeItKeyword__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>preferenceCenterKeyword__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>shortCode__c</field>
+        <value xsi:type="xsd:string">225846</value>
+    </values>
+    <values>
+        <field>stopKeyword__c</field>
+        <value xsi:type="xsd:string">STOP</value>
+    </values>
+</CustomMetadata>

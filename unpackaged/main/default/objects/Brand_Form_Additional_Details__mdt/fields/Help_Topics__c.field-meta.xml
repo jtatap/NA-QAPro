@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Help_Topics__c</fullName>
+    <description>Associated help topic</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Help Topics</label>
+    <referenceTo>Brand_Form_Help_Topics__mdt</referenceTo>
+    <relationshipLabel>Brand Form - Additional Details</relationshipLabel>
+    <relationshipName>Brand_Form_Additional_Details</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

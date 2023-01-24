@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Privacy Request Case</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The closed status indicates we&amp;#39;ve completed the customer&amp;#39;s request.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Case enters the system in a &lt;b&gt;new &lt;/b&gt;status and the customer is emailed to verify their email address. Once verified, it will move to the Open&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Customer has verified their email address. Please perform lookup to determine the type of match found:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Possible match -&amp;gt; Send an email to the customer requesting additional information and move case to Pending status&lt;/li&gt;&lt;li&gt;Perfect match or No match (North America customer) -&amp;gt; Create child (Data Owner Request) cases and move the status to On Hold&lt;/li&gt;&lt;li&gt;No match (non North America) - Change status to Resolved with a resolution type of &amp;#39;No Match Found&amp;#39;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b&gt;Pending&lt;/b&gt; signifies that PVH has reached out to the customer, and is waiting to hear back. &lt;/p&gt;&lt;p&gt;For &lt;b&gt;Access Requests&lt;/b&gt; this is identity verification. &lt;/p&gt;&lt;p&gt;For &lt;b&gt;Deletion Requests&lt;/b&gt; this is an email telling the customer the deletion request is in process.&lt;/p&gt;</info>
+        <picklistValueName>Pending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Processing Request&lt;/p&gt;</info>
+        <picklistValueName>Processing Request</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Case will auto-close after 15 days.&lt;/p&gt;&lt;p&gt;For &lt;b&gt;Access Requests&lt;/b&gt; this means we&amp;#39;ve emailed the customer back with an attachment of the data we hold on them.&lt;/p&gt;&lt;p&gt;For &lt;b&gt;Deletion Requests&lt;/b&gt; we simply email the customer to let them know we&amp;#39;ve deleted their data.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Resolved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;All child cases have been resolved. Please review the responses. &lt;/p&gt;</info>
+        <picklistValueName>ReviewResponse</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Privacy_Request</recordTypeName>
+</PathAssistant>

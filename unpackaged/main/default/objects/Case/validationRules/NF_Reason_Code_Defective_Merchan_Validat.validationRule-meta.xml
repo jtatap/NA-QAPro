@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Reason_Code_Defective_Merchan_Validat</fullName>
+    <active>false</active>
+    <description>This validation rule checks that if Reason Code details is set to Poor Service that a district number and store number is addedZdPVHDateofServiceIssue__c</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Reason_Code_Details__c,&#39;Defective Merchandise&#39;),
+    OR(
+        ISBLANK(TEXT(Reason_Code_Manufacturers__c)),
+        ISBLANK(TEXT(Reason_Code_Product_Category__c))
+        ),
+    Supervisor_Data_Validation_Override__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid Manufacturer , Product Category</errorMessage>
+</ValidationRule>

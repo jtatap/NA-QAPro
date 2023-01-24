@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Brand Form --></label>
+        <name>Brand_Form</name>
+    </fieldSets>
+    <layouts>
+        <layout>Corporate Request Case Layout</layout>
+        <sections>
+            <label><!-- Checkbox section --></label>
+            <section>Checkbox section</section>
+        </sections>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+        <sections>
+            <label><!-- Loyalty Adjustments --></label>
+            <section>Loyalty Adjustments</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Privacy Request Layout</layout>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interaction Dates --></label>
+            <section>Interaction Dates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Privacy Request Layout - Read Only</layout>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interaction Dates --></label>
+            <section>Interaction Dates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Case - Read Only Layout</layout>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Case Layout</layout>
+        <sections>
+            <label><!-- Checkbox section --></label>
+            <section>Checkbox section</section>
+        </sections>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+        <sections>
+            <label><!-- Loyalty Adjustments --></label>
+            <section>Loyalty Adjustments</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment Information --></label>
+            <section>Shipment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Case Layout (OLD)</layout>
+        <sections>
+            <label><!-- Intake Information --></label>
+            <section>Intake Information</section>
+        </sections>
+        <sections>
+            <label><!-- Loyalty Adjustments --></label>
+            <section>Loyalty Adjustments</section>
+        </sections>
+        <sections>
+            <label><!-- Reason Code Details --></label>
+            <section>Reason Code Details</section>
+        </sections>
+        <sections>
+            <label><!-- Shipment Information --></label>
+            <section>Shipment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Zendesk PVH Layout</layout>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Zendesk True &amp; Co Layout</layout>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Einstein Case Scenario --></label>
+        <name>Einstein_Case_Scenario</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Escalate Case --></label>
+        <name>Escalate_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order On Behalf --></label>
+        <name>OOBO</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- OOBO - Anonymous Customer --></label>
+        <name>OOBO_Anonymous_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- OOBO - Registered Customer --></label>
+        <name>OOBO_Registered_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order Search --></label>
+        <name>Order_Search</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Physical Address Update --></label>
+        <name>Physical_Address_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Unlock Account --></label>
+        <name>Unlock_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ecomm Verify --></label>
+        <name>eComm_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- MC/GC Issuance --></label>
+        <name>MC_GC_Issuance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>New_Child_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order Update Action --></label>
+        <name>Order_Update_Action</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>PVH_Child_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- View Case Details --></label>
+        <name>View_Case_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Contact Search --></label>
+        <name>Contact_Search</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Support Case --></label>
+        <name>Support_Case_Form_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Action --></label>
+        <name>Action</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Action --></label>
+        <name>ActionFlow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Priority --></label>
+        <name>Change_Priority</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close the Case --></label>
+        <name>Close_the_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Reason Code --></label>
+        <name>FLOW_UpdateReasonCode</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Privacy Case --></label>
+        <name>Form_Details_Privacy_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>New_Child_Case_privacy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SocialPublisher --></label>
+        <name>SocialPublisher</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Reason Code --></label>
+        <name>Update_Reason_Code</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Cases submitted via internal corporate request form --></description>
+        <label><!-- Corporate Request --></label>
+        <name>Corporate_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Data Owner Request --></label>
+        <name>Data_Owner_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Privacy Request --></label>
+        <name>Privacy_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Privacy Request - Read Only --></label>
+        <name>Privacy_Request_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Case --></label>
+        <name>Support_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Case - Read Only --></label>
+        <name>Support_Case_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Zendesk PVH --></label>
+        <name>ZdPVH</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Zendesk True &amp; Co --></label>
+        <name>ZdTnC</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot edit Cases that are already in a Closed Status. --></errorMessage>
+        <name>Cannot_edit_closed_cases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Add Contact To Resolve the Case. Please assign the Contact to continue. --></errorMessage>
+        <name>Contact_Required_To_Resolve_The_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid District Number (2 digits) --></errorMessage>
+        <name>NF_Corporate_Request_District_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Loyalty Id for specified Brand --></errorMessage>
+        <name>NF_Corporate_Request_Loyalty_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Store Number (3 digits) --></errorMessage>
+        <name>NF_Corporate_Request_Store_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a updated account info reason. --></errorMessage>
+        <name>NF_Reason_Code_AccountInfo_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Manufacturer , Product Category --></errorMessage>
+        <name>NF_Reason_Code_Defective_Merchan_Validat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Store Number and District Number --></errorMessage>
+        <name>NF_Reason_Code_Good_Service_Validat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Store Number,District Number and Date of service Issue --></errorMessage>
+        <name>NF_Reason_Code_Poor_Service_Validat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Third party Vendors --></errorMessage>
+        <name>NF_Reason_Code_ThirdPartyVendor_Validat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone is not editable once set --></errorMessage>
+        <name>Prevent_Milestone_Editing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Scenario is Required for Support Cases. --></errorMessage>
+        <name>Reason_Code_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Brand is Required to advance the Case status. Please assign the brand to continue. --></errorMessage>
+        <name>Require_Brand_on_Support_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resolving a Privacy Case Requires a Resolution Code to be populated as well. --></errorMessage>
+        <name>Resolving_Privacy_Cases_Needs_Resolution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not able to manually close this case. Please mark it as resolved. --></errorMessage>
+        <name>Restrict_Case_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are unable to manually mark this ticket as New. Please set to the proper status. --></errorMessage>
+        <name>Restrict_Status_Change_to_New_Again</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select UPS-TH in the Carrier field. --></errorMessage>
+        <name>Shipment_Carrier_same_as_Brand_TH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select UPS-CK in the Carrier field. --></errorMessage>
+        <name>Shipment_Carrier_should_be_same_as_Brand</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Points_Adjustment --></label>
+        <name>Points_Adjustment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rewards_Adjustment --></label>
+        <name>Rewards_Adjustment</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <masterLabel>NF Tile Component</masterLabel>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="ComponentKey" type="String" label="This is the key that is used to retrieve the records from the custom metadata that matches this component key." />
+            <property label="Inner Tile Padding" name="innerPadding" type="String" datasource="small,medium,large,xlarge,xxlarge" default="medium" />
+            <property name="tileStyle" type="String" label="This is the default style for the component" />
+            <property name="maxwidth" type="Integer" label="This is the max width of the component, should match the max width of the page" />
+            <property name="columns" type="Integer" label="This is the max number of columns of the component, max number is 4" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

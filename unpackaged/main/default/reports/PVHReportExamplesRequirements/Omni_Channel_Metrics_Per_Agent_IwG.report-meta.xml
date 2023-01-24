@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_74732860</developerName>
+        <masterLabel>Queue/Channel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>AgentWork$OriginalQueue</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ecomm Queue</sourceValue>
+            </sourceValues>
+            <value>eCommerce</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Retail Queue</sourceValue>
+            </sourceValues>
+            <value>Retail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Wholesale Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>True&amp;Co Ecomm &amp; Wholesale Queue</sourceValue>
+            </sourceValues>
+            <value>Wholesale</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>High Priority Privacy Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Privacy Request</sourceValue>
+            </sourceValues>
+            <value>Privacy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy Chat Priority</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedo Chat Priority</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CSAT Follow Up Queue</sourceValue>
+            </sourceValues>
+            <value>CSAT Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Unsubscribe Queue</sourceValue>
+            </sourceValues>
+            <value>Unsubscribe Queue</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <aggregate>Average</aggregate>
+        <columnName>AgentWork$AgentCapacityWhenDeclined</columnName>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>3.0</lowBreakpoint>
+        <lowColor>#FFFFFF</lowColor>
+        <midColor>#B50E03</midColor>
+    </colorRanges>
+    <columns>
+        <field>AgentWork$WorkItem</field>
+    </columns>
+    <columns>
+        <field>AgentWork$Status</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AssignedDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>AgentWork$DeclineReason</field>
+    </columns>
+    <columns>
+        <field>AgentWork$DeclineDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$CreatedBy</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$SpeedToAnswer</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$CapacityWeight</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$AgentCapacityWhenDeclined</field>
+    </columns>
+    <columns>
+        <field>BucketField_74732860</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>AgentWork.AssignedDateTime - AgentWork.RequestDateTime</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Submission vs Assigned</description>
+        <developerName>CDF1</developerName>
+        <label>Lag Time (Days)</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/7/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$OriginalQueue</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>zQueue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,0,3</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <formattingRules>
+        <aggregate>Average</aggregate>
+        <columnName>AgentWork$AgentCapacityWhenDeclined</columnName>
+        <values>
+            <rangeUpperBound>3.0</rangeUpperBound>
+        </values>
+        <values>
+            <backgroundColor>#B50E03</backgroundColor>
+        </values>
+    </formattingRules>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$ServiceChannel</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$User</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$OriginalQueue</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Omni Channel Metrics- Per Agent</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Average_Speed_to_Answer__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$RequestDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

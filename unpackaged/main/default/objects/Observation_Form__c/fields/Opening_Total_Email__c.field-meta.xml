@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opening_Total_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( ISPICKVAL( Proper_Greeting__c , &quot;Pass&quot;)  ||  ISPICKVAL(Proper_Greeting__c, &quot;N/A&quot;)  , 1, 0 ) +  IF( ISPICKVAL( Proper_Spelling_of_Cuustomer_Name_Email__c , &quot;Pass&quot;)  ||  ISPICKVAL( Proper_Spelling_of_Cuustomer_Name_Email__c , &quot;N/A&quot;)  , 1, 0) +  IF( ISPICKVAL( Thanking_Customer__c , &quot;Pass&quot;)  ||  ISPICKVAL(Thanking_Customer__c, &quot;N/A&quot;)  , 1, 0))  /  3</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opening Total % (Email)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

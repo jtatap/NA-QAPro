@@ -1,0 +1,5 @@
+<design:component>
+        
+		<design:attribute name="brandNames" label="Brand Name ?" description="Please Configure the Brand Name Here" datasource="apex://BrandNamePicklist"/>
+    	<design:attribute name="caseSourceCountry" label="Source Country ?" description="Please Configure the Case Source Country Here" datasource="apex://CaseSourceCountryPicklist"/>
+</design:component>

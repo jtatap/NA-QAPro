@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CK_Survey_Send</fullName>
+        <description>CK Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>customerservice@support.calvinklein.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Calvin_Klien_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>IZOD_Survey_Send</fullName>
+        <description>IZOD Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Izod_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Olga_Survey_Send</fullName>
+        <description>Olga Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>contactus@support.olgaintimates.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Olga_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Speedo_Survey_Send</fullName>
+        <description>Speedo Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Speedo_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Style_Bureau_Survey_Send</fullName>
+        <description>Style Bureau Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Style_Bureau_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Tommy_Survey_Send</fullName>
+        <description>Tommy Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>tommyhelp@support.usa.tommy.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Tommy_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>True_CO_Survey_Send</fullName>
+        <description>True&amp;CO Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>support@tcsupport.trueandco.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/True_Co_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Van_Heusen_Survey_Send</fullName>
+        <description>Van Heusen Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Van_Heusen_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Warners_Survey_Send</fullName>
+        <description>Warners Survey Send</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>contactus@support.warners.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Templates/Warners_Survey</template>
+    </alerts>
+</Workflow>

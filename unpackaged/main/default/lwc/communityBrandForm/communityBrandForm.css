@@ -1,0 +1,32 @@
+.brand-form{
+	background: white;
+}
+/* .brand-success-message{
+	margin: 2% 32% 0% 32%;
+} */
+
+.brand-form .brand-form-container .header-alert{
+	/* color: rgb(194, 57, 52); */
+	text-align: justify;
+}
+
+
+@media only screen and (min-width:481px){
+	.brand-form-header, .brand-form-container, .brand-success-message{
+		margin: var(--smallMargin);
+	}
+}
+@media only screen and (min-width:768px){
+	.brand-form-header, .brand-form-container, .brand-success-message{
+		margin: var(--mediumMargin);
+	}
+}
+@media only screen and (min-width:1023px){
+	.brand-form-header, .brand-form-container, .brand-success-message{
+		margin: var(--largeMargin);
+	}
+}
+
+.toastMessage.forceActionsText{
+	white-space : pre-line !important;
+}
