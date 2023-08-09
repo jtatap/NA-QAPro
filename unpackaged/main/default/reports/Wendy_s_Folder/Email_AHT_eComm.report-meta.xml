@@ -211,7 +211,7 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>FiscalWeek</dateGranularity>
+        <dateGranularity>Day</dateGranularity>
         <field>FK_$aeon2__Day__c.aeon2__Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -241,8 +241,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>FK_$aeon2__Day__c.aeon2__Date__c</dateColumn>
-        <endDate>2023-01-24</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2023-01-24</startDate>
+        <interval>LAST_FISCALPERIOD</interval>
     </timeFrameFilter>
 </Report>

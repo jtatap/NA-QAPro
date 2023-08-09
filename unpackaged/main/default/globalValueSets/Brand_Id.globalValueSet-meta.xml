@@ -76,18 +76,6 @@
         <isActive>false</isActive>
         <label>3</label>
     </customValue>
-    <customValue>
-        <fullName>CK</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>CK</label>
-    </customValue>
-    <customValue>
-        <fullName>TH</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>TH</label>
-    </customValue>
     <masterLabel>Brand Id</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

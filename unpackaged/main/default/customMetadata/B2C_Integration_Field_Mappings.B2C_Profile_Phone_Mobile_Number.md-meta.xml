@@ -12,11 +12,11 @@
     </values>
     <values>
         <field>Consume_Updates_from_B2C_Commerce__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
         <field>Enable_for_Integration__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
         <field>Field_Description__c</field>
@@ -32,11 +32,11 @@
     </values>
     <values>
         <field>Push_Updates_to_B2C_Commerce__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
         <field>Seed_Property_on_First_Time_Sync__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
         <field>Service_Cloud_Attribute_Alt__c</field>

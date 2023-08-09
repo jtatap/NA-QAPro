@@ -38,7 +38,7 @@
         </inputParameters>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assigns the IA output results to an output value for external consumption.</description>
         <name>asn_allowIntegrationProcessOutput</name>
@@ -148,6 +148,7 @@
         </rules>
     </decisions>
     <description>... helper flow that evaluates the security configuration of the CustomerList, Instance, and specified Contact to determine is integration should be allowed for the sourceContact.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Process: Allow Integration Helper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Allow Integration Helper</label>
     <processMetadataValues>

@@ -1,122 +1,166 @@
 <template>
-   <div class="footer">
-      <div class="footerTopCM">
-          <div class="footerRow">
-              <div class="contentWrapper">
-                  <div class="th-placement cm-placement-globalFooterRB01 ">
-                      <div class="desktopFooter th-d-footer th-reskin-regular-footer">
-                          <div class="th-d-footer-content">
-                              <div class="th-d-footer-columns">
-                                  <div>
-                                      <template if:true={renderFooter}>
-                                          <template for:each={mapHeaderToItems} for:item="mapKey">
-                                              <div class="footerColumn1 th-d-footer-columns-item ae-exclude" key={mapKey.key}>
-                                                  <div>
-                                                      <h2 class="heading">{mapKey.key}</h2>
-                                                      <template for:each={mapKey.value} for:item="record">
-                                                          <ul key={record.Value}>
-                                                              <li class="subheading">
-                                                                  <template if:true={record.NewTab}>
-                                                                      <a href={record.Value} target="_blank" rel="noopener" aria-describedby="audioeye_new_window_message">{record.Label}</a> 
-                                                                  </template>
-                                                                  <template if:false={record.NewTab}>
-                                                                      <a href={record.Value}>{record.Label}</a> 
-                                                                  </template>
-                                                              </li>
-                                                          </ul>
-                                                      </template>
-                                                  </div>
-                                              </div>
-                                          </template>
-                                      </template>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+    <div class="footer">
+        <div class="footerTopCM">
+            <div class="footerRow">
+                <div class="contentWrapper">
+                    <div class="th-placement cm-placement-globalFooterRB01 ">
+                        <div class="desktopFooter th-d-footer th-reskin-regular-footer">
+                            <div class="th-d-footer-content">
+                                <div class="th-d-footer-columns">
+                                    <div>
+                                        <template if:true={renderFooter}>
+                                            <template for:each={mapHeaderToItems} for:item="mapKey">
+                                                <div class="footerColumn1 th-d-footer-columns-item ae-exclude"
+                                                    key={mapKey.key}>
+                                                    <div>
+                                                        <h2 class="heading">{mapKey.key}</h2>
+                                                        <template for:each={mapKey.value} for:item="record">
+                                                            <ul key={record.Value}>
+                                                                <li class="subheading">
+                                                                    <template if:true={record.NewTab}>
+                                                                        <a href={record.Value} target="_blank"
+                                                                            rel="noopener"
+                                                                            aria-describedby="audioeye_new_window_message">{record.Label}</a>
+                                                                    </template>
+                                                                    <template if:false={record.NewTab}>
+                                                                        <a href={record.Value}>{record.Label}</a>
+                                                                    </template>
+                                                                </li>
+                                                            </ul>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div style="width: 28%;padding:6px 35px;">
+                                    <img src={tommyLogo} />
+                                </div>
+                                <div style="display: flex;padding:7px 23px;">
+                                    <template for:each={policieValues} for:item="policie">
+                                        <template for:each={policie.value} for:item="record">
+                                            <div key={record.Value} style="padding:10px;">
+                                                <a href={record.Value} style="color:white;"
+                                                    class="policieFooter">{record.Label}</a>
 
-                     <!-- MOBILE -->
-
-                     <div class="mobileFooter th-m-footer th-reskin-regular-footer">
-                        <div class="th-m-footer-content">
-                           <div class="th-m-footer-columns">
-                              <div class="th-m-footer-accordiondiv accordion">
-                                 <template if:true={renderFooter}>
-                                    <template for:each={mapHeaderToItems} for:item="mapKey" for:index="index">
-                                       <div class="th-m-footer-accordion-section accordion-header" key={mapKey.key}>
-                                          <div class="accordion-section-header">
-                                             <h2 class="th-m-footer-text-upper">
-                                                <a class="th-m-footer-accordion-title" href="#" onclick={dropdownClicked} data-index={index} data-expand="false" tabindex="0" aria-expanded="false" aria-controls="">{mapKey.key}</a>
-                                                <span class="th-m-footer-arrow-left upArrow" data-parent={index}></span>
-                                             </h2>
-                                          </div>
-                                          <ul class="footer-accordion-section-content dropdown hidedropdown" data-parent={index} aria-hidden="true">
-                                             <template for:each={mapKey.value} for:item="record">
-                                                <li class="th-m-footer-accordion-section-content" key={record.Value}>
-                                                   <template if:true={record.NewTab}>
-                                                      <a href={record.Value} target="_blank" rel="noopener" aria-describedby="audioeye_new_window_message">{record.Label}</a> 
-                                                   </template>
-                                                   <template if:false={record.NewTab}>
-                                                      <a href={record.Value}>{record.Label}</a> 
-                                                   </template>
-                                                </li>
-                                             </template>
-                                          </ul>
-                                       </div>
+                                            </div>
+                                            <span if:true={record.bshowPipline} key={record.Label}
+                                                class="policiPipline">|</span>
+                                        </template>
                                     </template>
-                              </template>
-                              </div>
-                           </div>
+                                </div>
+                                <div class="footerBottomCM" style="background:none;">
+                                    <div class="copyrightRow">
+                                        <span class="copyright" style="color:white;">©&nbsp; {label.TommyHLabel}</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
 
-                     <!-- MOBILE -->
+                        <!-- MOBILE -->
 
-                  </div>
-              </div>
-          </div>
-      </div>
+                        <div class="mobileFooter th-m-footer th-reskin-regular-footer">
+                            <div class="th-m-footer-content">
+                                <div class="th-m-footer-columns">
+                                    <div class="th-m-footer-accordiondiv accordion">
+                                        <template if:true={renderFooter}>
+                                            <template for:each={mapHeaderToItems} for:item="mapKey" for:index="index">
+                                                <div class="th-m-footer-accordion-section accordion-header"
+                                                    key={mapKey.key}>
+                                                    <div class="accordion-section-header">
+                                                        <h2 class="th-m-footer-text-upper">
+                                                            <a class="th-m-footer-accordion-title" href="#"
+                                                                onclick={dropdownClicked} data-index={index}
+                                                                data-expand="false" tabindex="0" aria-expanded="false"
+                                                                aria-controls="">{mapKey.key}</a>
+                                                            <span class="th-m-footer-arrow-left upArrow"
+                                                                data-parent={index}></span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="footer-accordion-section-content dropdown hidedropdown"
+                                                        data-parent={index} aria-hidden="true">
+                                                        <template for:each={mapKey.value} for:item="record">
+                                                            <li class="th-m-footer-accordion-section-content"
+                                                                key={record.Value}>
+                                                                <template if:true={record.NewTab}>
+                                                                    <a href={record.Value} target="_blank"
+                                                                        rel="noopener"
+                                                                        aria-describedby="audioeye_new_window_message">{record.Label}</a>
+                                                                </template>
+                                                                <template if:false={record.NewTab}>
+                                                                    <a href={record.Value}>{record.Label}</a>
+                                                                </template>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </div>
+                                            </template>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-      <div class="footerMiddleCM hideSocialMediaPanel">
-          <div class="socialIcons" id="footerSocialIcons" aria-expanded="true" aria-label="Follow us on our Social Media" style="display: block; height: auto;">
-          <a href="http://www.facebook.com/tommyhilfiger" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/facebook.png" title="facebook" alt="facebook">
-          </a>
-          <a href="http://www.twitter.com/tommyhilfiger" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/twitter.png" title="twitter" alt="twitter">
-          </a>
-          <a href="http://www.instagram.com/tommyhilfiger" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/instagram.png" title="instagram" alt="instagram">
-          </a>
-          <a href="https://tommyhilfiger.tumblr.com/" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/tumblr.png" title="tumblr" alt="tumblr">
-          </a>
-          <a href="http://pinterest.com/tommyhilfiger" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/pinterest.png" title="pinterest" alt="pinterest">
-          </a>
-          <a href="http://www.youtube.com/tommyhilfiger" class="" target="_blank" aria-describedby="audioeye_new_window_message">
-          <img src="//media.tommy.com/us/static/images/global/socialIcons/youtube.png" title="youtube" alt="youtube">
-          </a>
-          </div>
-      </div>
+                        <!-- MOBILE -->
 
-      <div class="footerBottomCM1">
-          <div class="linksMenu">
-              <a href="https://usa.tommy.com/en/customerservice/store-locator" class="">STORE LOCATOR</a>
-              <a href="#" onclick={followusClicked} class="followus" role="button" data-ae-blurbtype="button" data-expand="false" aria-expanded="false">Follow Us</a>
-          </div>
-      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      <div class="footerBottomCM1_Mobile">
-         <div class="linksMenu">
-            <a href="#" onclick={followusClicked} class="followus" role="button" data-ae-blurbtype="button" data-expand="false" aria-expanded="false">Follow Us</a>
-            <a href="https://usa.tommy.com/en/customerservice/store-locator" class="">STORE LOCATOR</a>
-         </div>
-     </div>
+        <div class="footerMiddleCM hideSocialMediaPanel">
+            <div class="socialIcons" id="footerSocialIcons" aria-expanded="true"
+                aria-label="Follow us on our Social Media" style="display: block; height: auto;">
+                <a href="http://www.facebook.com/tommyhilfiger" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/facebook.png" title="facebook"
+                        alt="facebook">
+                </a>
+                <a href="http://www.twitter.com/tommyhilfiger" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/twitter.png" title="twitter"
+                        alt="twitter">
+                </a>
+                <a href="http://www.instagram.com/tommyhilfiger" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/instagram.png" title="instagram"
+                        alt="instagram">
+                </a>
+                <a href="https://tommyhilfiger.tumblr.com/" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/tumblr.png" title="tumblr"
+                        alt="tumblr">
+                </a>
+                <a href="http://pinterest.com/tommyhilfiger" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/pinterest.png" title="pinterest"
+                        alt="pinterest">
+                </a>
+                <a href="http://www.youtube.com/tommyhilfiger" class="" target="_blank"
+                    aria-describedby="audioeye_new_window_message">
+                    <img src="//media.tommy.com/us/static/images/global/socialIcons/youtube.png" title="youtube"
+                        alt="youtube">
+                </a>
+            </div>
+        </div>
 
-      <div class="footerBottomCM">
-          <div class="copyrightRow">
-              <span class="copyright">©&nbsp; 2020 Tommy Hilfiger licensing, LLC. All rights reserved.</span>
-          </div>
-      </div>
-  </div>
+       <!--  <div class="footerBottomCM1">
+            <div class="linksMenu">
+                <a href="https://usa.tommy.com/en/customerservice/store-locator" class="">{label.STORE_LOCATOR}</a>
+                <a href="#" onclick={followusClicked} class="followus" role="button" data-ae-blurbtype="button"
+                    data-expand="false" aria-expanded="false">{label.Follow_Us}</a>
+            </div>
+        </div>
+
+        <div class="footerBottomCM1_Mobile">
+            <div class="linksMenu">
+                <a href="#" onclick={followusClicked} class="followus" role="button" data-ae-blurbtype="button"
+                    data-expand="false" aria-expanded="false">{label.Follow_Us}</a>
+                <a href="https://usa.tommy.com/en/customerservice/store-locator" class="">{label.STORE_LOCATOR}</a>
+            </div>
+        </div> -->
+
+       
+    </div>
 </template>

@@ -1,8 +1,7 @@
 @isTest
 public class OlgaStagingTableTriggerTest {
-
-    Private static TestMethod void BeforeInsertTest(){
-
+    @TestSetup
+    static void makeData(){
         List<Account> accountList = new List<Account>();
         Account a1 = new Account(
                 Name = 'rob j'
@@ -24,7 +23,7 @@ public class OlgaStagingTableTriggerTest {
 
         List<Contact> contactList = new List<Contact>();
         Contact c1 = new Contact(
-            Brand_Id__c    = '1',
+                Brand_Id__c    = '1',
                 LastName   = 'J',
                 FirstName = 'Rob',
                 Email = 'rob@test.com',
@@ -198,7 +197,9 @@ public class OlgaStagingTableTriggerTest {
 
         }
         System.debug('***'+ contactList.size());
+    }
 
+    Private static TestMethod void BeforeInsertTest(){
         Test.startTest();
         List <OlgaStagingTable__c> osList = new List<OlgaStagingTable__c>();
 
@@ -356,12 +357,12 @@ public class OlgaStagingTableTriggerTest {
 
         osList.add(os11);
 
-        
-
-
         insert osList;
+        Integer callouts = Limits.getCallouts();
 
         Test.stopTest();
+        system.assertEquals(0, callouts);
+
 
 
 

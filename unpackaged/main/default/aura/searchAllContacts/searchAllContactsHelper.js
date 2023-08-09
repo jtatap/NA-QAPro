@@ -3,6 +3,9 @@
         // show spinner message
          component.find("Id_spinner").set("v.class" , 'slds-show');
         var action = component.get("c.fetchContact");
+        var error = String($A.get("$Label.c.Error1"));
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
         action.setParams({
             'searchKeyWord': component.get("v.searchKeyword")
         });
@@ -10,7 +13,7 @@
            // hide spinner when response coming from server 
             component.find("Id_spinner").set("v.class" , 'slds-hide');
             var state = response.getState();
-            if (state === "SUCCESS") {
+            if (state === success) {
                 var storeResponse = response.getReturnValue();
                 
                 // if storeResponse size is 0 ,display no record found message on screen.
@@ -26,9 +29,9 @@
                 // set searchResult list with return value from server.
                 component.set("v.searchResult", storeResponse); 
                 
-            }else if (state === "INCOMPLETE") {
+            }else if (state === incomplete) {
                 alert('Response is Incompleted');
-            }else if (state === "ERROR") {
+            }else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -57,8 +60,7 @@
             return reverse * ((a > b) - (b > a));
         };
     },
-
-    handleSort: function(cmp, event) {
+     handleSort: function(cmp, event) {
         var sortedBy = event.getParam('fieldName');
         var sortDirection = event.getParam('sortDirection');
 		 var finalData=cmp.get("v.searchResult"); 
@@ -68,5 +70,5 @@
         cmp.set('v.searchResult', cloneData);
         cmp.set('v.sortDirection', sortDirection);
         cmp.set('v.sortedBy', sortedBy);
-    }
+    },
 })

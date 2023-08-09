@@ -23,7 +23,7 @@
                         <div class="slds-page-header__name-title">
                             <h1>
                                 
-                                <span class="slds-page-header__title slds-truncate" title="Recently Viewed ">Transaction Details</span>
+                                <span class="slds-page-header__title slds-truncate" title="Recently Viewed ">{!$Label.c.Transaction_Details}</span>
                             </h1>
                         </div>
                     </div>
@@ -43,14 +43,13 @@
                         <lightning:layout multipleRows="true">
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Description</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Description}</p>
                                     <p>{!v.pointWrapper.Description}</p>
-                                    <!-- <div class="slds-truncate" title="{!points.Description}"><a href="javascript:void(0)" onclick="{!c.handleTransactionClick}">{!v.pointWrapper.Description}</a></div>-->
                                 </div>
                             </lightning:layoutItem>
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Issue Date</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Issue_Date}</p>
                                     <p>{!v.pointWrapper.IssueDate}</p>
                                     
                                 </div>
@@ -59,13 +58,13 @@
                         <lightning:layout multipleRows="true">
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Case Number</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Case_Number}</p>
                                     <p>{!v.pointWrapper.Casenumber}</p>
                                 </div>
                             </lightning:layoutItem>
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Type</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Type}</p>
                                     <p>{!v.pointWrapper.Type}</p>
                                 </div>
                             </lightning:layoutItem>
@@ -73,13 +72,13 @@
                         <lightning:layout multipleRows="true">
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Points Issued</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Points_Issued}</p>
                                     <p>{!v.pointWrapper.PointsIssued}</p>
                                 </div>
                             </lightning:layoutItem>
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Reason Code</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Reason_Code}</p>
                                     <p>{!v.pointWrapper.ReasonCode}</p>
                                 </div>
                             </lightning:layoutItem>
@@ -87,14 +86,14 @@
                         <lightning:layout multipleRows="true">
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 1">Transaction Id</p>
+                                    <p class="field-title" title="Field 1">{!$Label.c.Transaction_Id}</p>
                                     <lightning:outputField fieldName="ReasonCode" />
                                     <p>{!v.pointWrapper.Description}</p>
                                 </div>
                             </lightning:layoutItem>
                             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                                 <div class="header-column">
-                                    <p class="field-title" title="Field 2">Store of Purchase</p>
+                                    <p class="field-title" title="Field 2">{!$Label.c.Store_of_Purchase}</p>
                                     <lightning:outputField fieldName="store" />
                                     <p>{!v.pointWrapper.StoreofPurchase}</p>
                                 </div>
@@ -152,11 +151,9 @@
                                         </th>
                                         
                                         <th scope="row">
-                                            <!---<div class="slds-truncate" title="{!tr.netPrice}">{!tr.NetPrice}</div>-->
                                             <lightning:formattedNumber value="{!tr.NetPrice}" style="decimal" minimumFractionDigits="2"/>
                                         </th>
                                         <th scope="row">
-                                            <!--<div class="slds-truncate" title="{!tr.discount}">{!tr.Discount}</div>-->
                                             <lightning:formattedNumber value="{!tr.Discount}" style="decimal" minimumFractionDigits="2"/>
                                         </th>
                                     </tr>

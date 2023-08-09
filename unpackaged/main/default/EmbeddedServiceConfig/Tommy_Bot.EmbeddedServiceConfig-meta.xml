@@ -4,6 +4,11 @@
     <deploymentFeature>LiveAgent</deploymentFeature>
     <deploymentType>Web</deploymentType>
     <embeddedServiceCustomComponents>
+        <componentBundleType>AuraDefinitionBundle</componentBundleType>
+        <customComponent>NF_CustomerCare_PreChatForm</customComponent>
+        <customComponentType>LA_Prechat</customComponentType>
+    </embeddedServiceCustomComponents>
+    <embeddedServiceCustomComponents>
         <componentBundleType>LightningComponentBundle</componentBundleType>
         <customComponent>ebcm__einsteinBotChatMessage</customComponent>
         <customComponentType>LA_PlainTextChatMessage</customComponentType>

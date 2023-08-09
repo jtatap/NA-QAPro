@@ -20,7 +20,7 @@ public without sharing class A1_RewardsDataApexController {
 		List<Reward__c> listRewards = new List<Reward__c>();       
         Schema.SObjectType token = recordIds.getSObjectType();
         Schema.DescribeSObjectResult dr = token.getDescribe();
-		System.debug('Name = '+dr.getName());
+		Log.push('Name = '+dr.getName());
        
         // fetching loyalty MDT
         List<LoyaltySettings__mdt> loyaltyList = [Select Id, BrandId__c, Parent_Brand__c from LoyaltySettings__mdt];
@@ -29,7 +29,7 @@ public without sharing class A1_RewardsDataApexController {
             	LoyaltyMap.put(loyalRecord.BrandId__c,loyalRecord.Parent_Brand__c);
             }
         }
-        System.debug('Loyalty Map = '+LoyaltyMap);
+        Log.push('Loyalty Map = '+LoyaltyMap);
         
         
         if(dr.getName().equals('Contact')){
@@ -46,12 +46,12 @@ public without sharing class A1_RewardsDataApexController {
             brandId = LoyaltyMap.get(brandId);
         }
         
-        //System.debug('Loyalty Id = '+conRecord.LoyaltyID__c);
-        //System.debug('Actual BrandId = '+conRecord.Brand_Id__c);
-        //System.debug('Updated BrandId = '+brandId);
+        //Log.push('Loyalty Id = '+conRecord.LoyaltyID__c);
+        //Log.push('Actual BrandId = '+conRecord.Brand_Id__c);
+        //Log.push('Updated BrandId = '+brandId);
         
-        //System.debug('Loyalty Id = '+caseRecord.Contact.LoyaltyID__c);
-        //System.debug('Brand Id = '+caseRecord.Contact.Brand_Id__c);
+        //Log.push('Loyalty Id = '+caseRecord.Contact.LoyaltyID__c);
+        //Log.push('Brand Id = '+caseRecord.Contact.Brand_Id__c);
         
         if(conRecord!=null && conRecord.LoyaltyID__c !=null){
              listRewards = AgileOne.getRewardsData(conRecord.LoyaltyID__c);
@@ -80,15 +80,17 @@ public without sharing class A1_RewardsDataApexController {
            wrapperObj.transactionId = rew.TransactionId__c;
            wrapperObj.status = rew.Status__c;
            wrapperObj.description = metadataMap.get(rew.RewardType__c);
-           System.debug('***Get BackEnd ExpireDate__c = '+rew.ExpireDate__c);
+           Log.push('***Get BackEnd ExpireDate__c = '+rew.ExpireDate__c);
            //Date expDate = rew.Expire_Date_form__c;
-          
+           if(rew.ExpireDate__c!=Null){
            String getExpireDateString = DateTime.newInstance(rew.ExpireDate__c.year(),rew.ExpireDate__c.month(),rew.ExpireDate__c.day()).format('yyyy-MM-dd');
-		   System.debug('***Expire_Date_form__c AS String = '+getExpireDateString);
-           wrapperObj.expireDate = getExpireDateString;
+               Log.push('***Expire_Date_form__c AS String = '+getExpireDateString);
+               wrapperObj.expireDate = getExpireDateString;
+           }
            wrapperlist.add(wrapperObj);
         }
-      System.debug('***Final Data = '+wrapperlist);
+      Log.push('***Final Data = '+wrapperlist);
+      Logger.logDebug();
       return wrapperlist;
     }
     

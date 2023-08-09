@@ -1,4 +1,4 @@
-@IsTest
+@IsTest(isParallel=false)
 public class NF_BrandNamePicklistTest {
 
   	@isTest
@@ -6,9 +6,10 @@ public class NF_BrandNamePicklistTest {
         NF_BrandNamePicklist rec = new NF_BrandNamePicklist();
         
         test.startTest();
-        	rec.getDefaultValue();
-        	rec.getValues();
-        system.assertEquals(null, null);
+        	VisualEditor.DataRow defaultVal = rec.getDefaultValue();
+        	VisualEditor.DynamicPickListRows picklistVal = rec.getValues();
+        system.assertEquals(true, defaultVal!=null);
+        system.assertEquals(true, picklistVal!=null);
         test.stopTest();
     }
 }

@@ -324,8 +324,9 @@
    },
     
     createCaseForDoNotSell :function(component, event, helper) {
-  
-            helper.handleDonotSellShare(component, event);
+        
+        helper.handleDonotSellShare(component, event);
+        
     },
   
    closeModel: function(component, event, helper) {
@@ -416,7 +417,7 @@
           component.set("v.showRectifyData", false);
           component.set("v.doNotSellShare", false);
           
-      }else if(component.get("v.newCase.Type") == 'Advertising/Sharing Opt-Out'){
+      }else if(component.get("v.newCase.Type") == 'Advertising/Sharing Opt-Out/Do Not Sell'){
           component.set("v.otherRequests", false);
           component.set("v.showRectifyData", false);
           component.set("v.doNotSellShare", true);
@@ -473,7 +474,13 @@
           component.set("v.showErr",false);
       }
   },
-    
+  checkIfEmailExist: function(component, event, helper) {
+    if(component.get("v.newCase.SuppliedEmail")!=undefined && component.get("v.newCase.SuppliedEmail")!='' && component.get("v.newCase.SuppliedEmail").includes('@'))  {    
+      helper.checkIfEmailExistHelper(component, event);
+    }else{
+        component.set("v.showErr",false);
+    }
+  },
   handleRectifyData : function(component, event, helper) {
       // added for GCT-1249
      var monthMapper = new Map([
@@ -605,7 +612,7 @@
         "Error: ",
         "Please provide all of the required information below"
       );
-    } else if (inputEmail && !inputEmail.match(regExpEmailformat)) {
+    } else if ((inputEmail && !inputEmail.match(regExpEmailformat)) || component.get("v.showErr")) {
       /*
         if(!typeOfRequest && !country && !inputEmail && !firstname &&!lastname)
         {

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>IF Expire Date is not blank and is changed, then revert to previous Expire Date value. Otherwise, no action.</description>
+    <environments>Default</environments>
+    <interviewLabel>Reward: Before Save, Original Expired Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reward: Before Save, Original Expired Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Gets value of previous Expired Date value and sets the Original Expiry Date
+
+IF( 
+    AND(
+        NOT(ISBLANK(ExpireDate__c )),
+        ISCHANGED(ExpireDate__c )
+        ), 
+    PRIORVALUE( ExpireDate__c), ExpireDate__c )</description>
+        <name>Revert_Reward_s_Expire_Date</name>
+        <label>Revert Reward&#39;s Expire Date</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>ExpireDate__c</field>
+            <value>
+                <elementReference>$Record__Prior.ExpireDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Revert_Reward_s_Expire_Date</targetReference>
+        </connector>
+        <filterFormula>AND(
+NOT(ISBLANK({!$Record.ExpireDate__c})),
+ISCHANGED({!$Record.ExpireDate__c})
+)</filterFormula>
+        <object>Reward__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

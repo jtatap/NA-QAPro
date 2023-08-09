@@ -4,7 +4,7 @@
     <label>Olga</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxSR3p.Y1VvtJPoroXcE9uE_e5.94B1XeXf.uh.XGfvBkAz_VaEBfQCw1_Oza</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

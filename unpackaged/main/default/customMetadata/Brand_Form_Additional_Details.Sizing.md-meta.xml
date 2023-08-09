@@ -4,15 +4,15 @@
     <protected>false</protected>
     <values>
         <field>Additional_Information_ECom_Single__c</field>
-        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/customerservice/size-guide&quot;&gt;here&lt;/a&gt;.</value>
+        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/size-guide.html&quot;&gt;here&lt;/a&gt;.</value>
     </values>
     <values>
         <field>Additional_Information_Other_Retail__c</field>
-        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/customerservice/size-guide&quot;&gt;here&lt;/a&gt;.</value>
+        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/size-guide.html&quot;&gt;here&lt;/a&gt;.</value>
     </values>
     <values>
         <field>Additional_Information_Retail__c</field>
-        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/customerservice/size-guide&quot;&gt;here&lt;/a&gt;.</value>
+        <value xsi:type="xsd:string">You can find our size guides &lt;a href=&quot;https://usa.tommy.com/en/size-guide.html&quot;&gt;here&lt;/a&gt;.</value>
     </values>
     <values>
         <field>Additional_Information__c</field>

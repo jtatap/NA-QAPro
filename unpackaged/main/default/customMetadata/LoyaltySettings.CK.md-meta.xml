@@ -56,6 +56,6 @@
     </values>
     <values>
         <field>stopKeyword__c</field>
-        <value xsi:type="xsd:string">STOP</value>
+        <value xsi:type="xsd:string">STOPMSG</value>
     </values>
 </CustomMetadata>

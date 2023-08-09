@@ -51,15 +51,20 @@ public with sharing class B2CIAPersistB2CAuthToken {
 
                 // Was a B2C AuthToken returned?
                 if (hasB2CAuthToken) {
+                   
 
                     // If so, create an instance of the authToken
                     authToken = new B2C_AuthToken__c(
                         B2C_Client_ID__c = thisAuthTokenResult.b2cClientIdRecordId,
-                        Name = thisAuthTokenResult.accessToken
+                        //Name = thisAuthTokenResult.accessToken
+                        B2C_AuthToken__c = thisAuthTokenResult.accessToken
+                        
                     );
+                     System.debug('***Access Token***' + authToken.B2C_AuthToken__c);
 
                     // Create the collection of authTokens to process
                     authTokens.add(authToken);
+                    
 
                 }
 
@@ -98,11 +103,13 @@ public with sharing class B2CIAPersistB2CAuthToken {
 
             // Create the authTokenId map / Id quickReference
             for (B2C_AuthToken__c thisAuthToken : authTokens) {
-                authTokenIds.put(thisAuthToken.Name, thisAuthToken.Id);
+                //authTokenIds.put(thisAuthToken.Name, thisAuthToken.Id);
+                System.debug('*** Access Token Call ***' + thisAuthToken.Id);
+                authTokenIds.put(thisAuthToken.B2C_AuthToken__c, thisAuthToken.Id);
             }
 
         }
-
+		System.debug('*** size of integrationHistory ***' + integrationHistory.size());
         // Was at least (1) authToken integration event audited?
         if (integrationHistory.size() > 0 &&
             B2C_Client_ID_Integration_History__c.SObjectType.getDescribe().isAccessible() &&
@@ -113,7 +120,7 @@ public with sharing class B2CIAPersistB2CAuthToken {
 
                 // Assign the authToken identifier using the tokenValue as a reference point
                 thisIntegrationHistoryEntry.B2C_AuthToken__c = authTokenIds.get(thisIntegrationHistoryEntry.Auth_Token_Value__c);
-
+				System.debug('*** Auth token value inside for loop ***' + thisIntegrationHistoryEntry.B2C_AuthToken__c);
                 // Re-seed the integrationHistory entry back in its ordinal position
                 integrationHistory.set(integrationHistoryEntryIndex, thisIntegrationHistoryEntry);
 

@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 public class Query {
-    public static final String VERSION = '2.0.0-pre';
+    public static final String VERSION = SYSTEM.LABEL.X2_0_0_pre;
 
     /* Public members */
     public Query(String objectName) {
@@ -39,8 +39,8 @@ public class Query {
         this.objectType = globalDescribe.get(appendNamespace(objectName));
 
         if (null == this.objectType) {
-            throw new QueryException('Cannot find corresponding ' +
-                    'SObject type from the SObject name ' + this.objectName);
+            throw new QueryException(SYSTEM.LABEL.Cannot_find_corresponding +
+                    SYSTEM.LABEL.SObject_type_from_the_SObject_name + this.objectName);
         }
 
         this.objectName = this.objectType.getDescribe().getName();
@@ -1218,7 +1218,7 @@ public class Query {
      * After calling this function, all conditions will be concatenated by 'AND'
      */
     public Query switchToConjunction() {
-        conditionOperator = 'AND';
+        conditionOperator = SYSTEM.LABEL.AND;
         return this;
     }
 
@@ -1226,7 +1226,7 @@ public class Query {
      * After calling this function, all conditions will be concatenated by 'OR'
      */
     public Query switchToDisjunction() {
-        conditionOperator = 'OR';
+        conditionOperator = SYSTEM.LABEL.OR;
         return this;
     }
 
@@ -1242,103 +1242,103 @@ public class Query {
      */
 
     public Query forView() {
-        optionalClause = 'FOR VIEW';
+        optionalClause = SYSTEM.LABEL.FOR_VIEW;
         return this;
     }
 
     public Query forUpdate() {
-        optionalClause = 'FOR UPDATE';
+        optionalClause = SYSTEM.LABEL.FOR_UPDATE;
         return this;
     }
 
     public Query forReference() {
-        optionalClause = 'FOR REFERENCE';
+        optionalClause = SYSTEM.LABEL.FOR_REFERENCE;
         return this;
     }
-    public static final DateLiteral YESTERDAY = new DateLiteral('YESTERDAY');
-    public static final DateLiteral TODAY = new DateLiteral('TODAY');
-    public static final DateLiteral TOMORROW = new DateLiteral('TOMORROW');
-    public static final DateLiteral LAST_WEEK = new DateLiteral('LAST_WEEK');
-    public static final DateLiteral THIS_WEEK = new DateLiteral('THIS_WEEK');
-    public static final DateLiteral NEXT_WEEK = new DateLiteral('NEXT_WEEK');
-    public static final DateLiteral LAST_MONTH = new DateLiteral('LAST_MONTH');
-    public static final DateLiteral THIS_MONTH = new DateLiteral('THIS_MONTH');
-    public static final DateLiteral NEXT_MONTH = new DateLiteral('NEXT_MONTH');
-    public static final DateLiteral LAST_90_DAYS = new DateLiteral('LAST_90_DAYS');
-    public static final DateLiteral NEXT_90_DAYS = new DateLiteral('NEXT_90_DAYS');
-    public static final DateLiteral THIS_QUARTER = new DateLiteral('THIS_QUARTER');
-    public static final DateLiteral LAST_QUARTER = new DateLiteral('LAST_QUARTER');
-    public static final DateLiteral NEXT_QUARTER = new DateLiteral('NEXT_QUARTER');
-    public static final DateLiteral THIS_YEAR = new DateLiteral('THIS_YEAR');
-    public static final DateLiteral LAST_YEAR = new DateLiteral('LAST_YEAR');
-    public static final DateLiteral NEXT_YEAR = new DateLiteral('NEXT_YEAR');
+    public static final DateLiteral YESTERDAY = new DateLiteral(SYSTEM.LABEL.YESTERDAY);
+    public static final DateLiteral TODAY = new DateLiteral(SYSTEM.LABEL.TODAY);
+    public static final DateLiteral TOMORROW = new DateLiteral(SYSTEM.LABEL.TOMORROW);
+    public static final DateLiteral LAST_WEEK = new DateLiteral(SYSTEM.LABEL.LAST_WEEK);
+    public static final DateLiteral THIS_WEEK = new DateLiteral(SYSTEM.LABEL.THIS_WEEK);
+    public static final DateLiteral NEXT_WEEK = new DateLiteral(SYSTEM.LABEL.NEXT_WEEK);
+    public static final DateLiteral LAST_MONTH = new DateLiteral(SYSTEM.LABEL.LAST_MONTH);
+    public static final DateLiteral THIS_MONTH = new DateLiteral(SYSTEM.LABEL.THIS_MONTH);
+    public static final DateLiteral NEXT_MONTH = new DateLiteral(SYSTEM.LABEL.NEXT_MONTH);
+    public static final DateLiteral LAST_90_DAYS = new DateLiteral(SYSTEM.LABEL.LAST_90_DAYS);
+    public static final DateLiteral NEXT_90_DAYS = new DateLiteral(SYSTEM.LABEL.NEXT_90_DAYS);
+    public static final DateLiteral THIS_QUARTER = new DateLiteral(SYSTEM.LABEL.THIS_QUARTER);
+    public static final DateLiteral LAST_QUARTER = new DateLiteral(SYSTEM.LABEL.LAST_QUARTER);
+    public static final DateLiteral NEXT_QUARTER = new DateLiteral(SYSTEM.LABEL.NEXT_QUARTER);
+    public static final DateLiteral THIS_YEAR = new DateLiteral(SYSTEM.LABEL.THIS_YEAR);
+    public static final DateLiteral LAST_YEAR = new DateLiteral(SYSTEM.LABEL.LAST_YEAR);
+    public static final DateLiteral NEXT_YEAR = new DateLiteral(SYSTEM.LABEL.NEXT_YEAR);
     public static final DateLiteral THIS_FISCAL_QUARTER =
-            new DateLiteral('THIS_FISCAL_QUARTER');
+            new DateLiteral(SYSTEM.LABEL.THIS_FISCAL_QUARTER);
     public static final DateLiteral LAST_FISCAL_QUARTER =
-            new DateLiteral('LAST_FISCAL_QUARTER');
+            new DateLiteral(SYSTEM.LABEL.LAST_FISCAL_QUARTER);
     public static final DateLiteral NEXT_FISCAL_QUARTER =
-            new DateLiteral('NEXT_FISCAL_QUARTER');
+            new DateLiteral(SYSTEM.LABEL.NEXT_FISCAL_QUARTER);
     public static final DateLiteral THIS_FISCAL_YEAR =
-            new DateLiteral('THIS_FISCAL_YEAR');
+            new DateLiteral(SYSTEM.LABEL.THIS_FISCAL_YEAR);
     public static final DateLiteral LAST_FISCAL_YEAR =
-            new DateLiteral('LAST_FISCAL_YEAR');
+            new DateLiteral(SYSTEM.LABEL.LAST_FISCAL_YEAR);
     public static final DateLiteral NEXT_FISCAL_YEAR =
-            new DateLiteral('NEXT_FISCAL_YEAR');
+            new DateLiteral(SYSTEM.LABEL.NEXT_FISCAL_YEAR);
 
     public static DateLiteral LAST_N_DAYS(Integer n) {
-        return new DateLiteral('LAST_N_DAYS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_DAYS, n);
     }
 
     public static DateLiteral NEXT_N_DAYS(Integer n) {
-        return new DateLiteral('NEXT_N_DAYS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_DAYS, n);
     }
 
     public static DateLiteral LAST_N_WEEKS(Integer n) {
-        return new DateLiteral('LAST_N_WEEKS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_WEEKS, n);
     }
 
     public static DateLiteral NEXT_N_WEEKS(Integer n) {
-        return new DateLiteral('NEXT_N_WEEKS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_WEEKS, n);
     }
 
     public static DateLiteral LAST_N_MONTHS(Integer n) {
-        return new DateLiteral('LAST_N_MONTHS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_MONTHS, n);
     }
 
     public static DateLiteral NEXT_N_MONTHS(Integer n) {
-        return new DateLiteral('NEXT_N_MONTHS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_MONTHS, n);
     }
 
     public static DateLiteral LAST_N_QUARTERS(Integer n) {
-        return new DateLiteral('LAST_N_QUARTERS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_QUARTERS, n);
     }
 
     public static DateLiteral NEXT_N_QUARTERS(Integer n) {
-        return new DateLiteral('NEXT_N_QUARTERS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_QUARTERS, n);
     }
 
     public static DateLiteral LAST_N_YEARS(Integer n) {
-        return new DateLiteral('LAST_N_YEARS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_YEARS, n);
     }
 
     public static DateLiteral NEXT_N_YEARS(Integer n) {
-        return new DateLiteral('NEXT_N_YEARS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_YEARS, n);
     }
 
     public static DateLiteral LAST_N_FISCAL_QUARTERS(Integer n) {
-        return new DateLiteral('LAST_N_FISCAL_QUARTERS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_FISCAL_QUARTERS, n);
     }
 
     public static DateLiteral NEXT_N_FISCAL_QUARTERS(Integer n) {
-        return new DateLiteral('NEXT_N_FISCAL_QUARTERS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_FISCAL_QUARTERS, n);
     }
 
     public static DateLiteral LAST_N_FISCAL_YEARS(Integer n) {
-        return new DateLiteral('LAST_N_FISCAL_YEARS', n);
+        return new DateLiteral(SYSTEM.LABEL.LAST_N_FISCAL_YEARS, n);
     }
 
     public static DateLiteral NEXT_N_FISCAL_YEARS(Integer n) {
-        return new DateLiteral('NEXT_N_FISCAL_YEARS', n);
+        return new DateLiteral(SYSTEM.LABEL.NEXT_N_FISCAL_YEARS, n);
     }
 
     public static DateLiteral buildDateLiteral(String name, Integer num) {
@@ -1455,8 +1455,8 @@ public class Query {
     }
 
     public Query debug() {
-        System.debug(toQueryString());
-
+        Log.push('toQueryString()'+toQueryString());
+        Logger.logDebug();
         return this;
     }
 
@@ -1690,13 +1690,13 @@ public class Query {
     Condition havingCondition;
 
     private final String EMPTY = '';
-    private final String MAX = 'MAX';
-    private final String MIN = 'MIN';
-    private final String AVG = 'AVG';
-    private final String SUM = 'SUM';
-    private final String COUNT = 'COUNT';
-    private final String COUNT_DISTINCT = 'COUNT_DISTINCT';
-    private final String TO_LABEL = 'TOLABEL';
+    private final String MAX = SYSTEM.LABEL.MAX;
+    private final String MIN = SYSTEM.LABEL.MIN;
+    private final String AVG = SYSTEM.LABEL.AVG;
+    private final String SUM = SYSTEM.LABEL.SUM;
+    private final String COUNT = SYSTEM.LABEL.COUNT;
+    private final String COUNT_DISTINCT = SYSTEM.LABEL.COUNT_DISTINCT;
+    private final String TO_LABEL = SYSTEM.LABEL.TOLABEL;
 
     // Object Schema variables
     private String objectName;
@@ -1800,16 +1800,16 @@ public class Query {
         Schema.SObjectField field = objType.getDescribe().fields.getMap().get(nextItem);
 
         if (null == field) {
-            throw new QueryException('Cannot find field ' + nextItem +
-                    ' from the object ' + objType.getDescribe().getName());
+            throw new QueryException(SYSTEM.LABEL.Cannot_find_field + nextItem +
+                    system.label.from_the_object + objType.getDescribe().getName());
         }
 
         List<Schema.SObjectType> referenceTo =
                 field.getDescribe().getReferenceTo();
 
         if (null == referenceTo || referenceTo.isEmpty()) {
-            throw new QueryException('Cannot find parent relationship ' + nextItem +
-                    ' from the object ' + objType.getDescribe().getName());
+            throw new QueryException(SYSTEM.LABEL.Cannot_find_parent_relationship + nextItem +
+                    system.label.from_the_object + objType.getDescribe().getName());
         }
 
         Schema.SObjectType nextObj = referenceTo.get(0);
@@ -1934,7 +1934,7 @@ public class Query {
 
     private void saveConditionArg(Integer idx, Object arg) {
         if (idx >= maxArgSize) {
-            throw new QueryException('The number of arguments exceeds the limit');
+            throw new QueryException(SYSTEM.LABEL.The_number_of_arguments_exceeds_the_limit);
         }
 
         if (idx == 0) {
@@ -2041,8 +2041,7 @@ public class Query {
         if (!String.isEmpty(optionalClause)) {
             query += ' ' + optionalClause;
             if ('FOR UPDATE'.equalsIgnoreCase(optionalClause) && addAllRows) {
-                throw new QueryException('You cannot use the ALL ROWS keywords ' +
-                    'with the FOR UPDATE keywords');
+                throw new QueryException(SYSTEM.LABEL.You_cannot_use_the_ALL_ROWS_keywords_with_the_FOR_UPDATE_keywords);
             }
         }
 

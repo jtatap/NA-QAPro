@@ -42,7 +42,7 @@ Anytime – we typically respond within 48 hours.
     </values>
     <values>
         <field>LinkToOpen__c</field>
-        <value xsi:type="xsd:string">https://projectdev-pvhservicecloud.cs78.force.com/tommy/s/brand-form</value>
+        <value xsi:type="xsd:string">https://help.usa.tommy.com/s/brand-form</value>
     </values>
     <values>
         <field>SortOrder__c</field>

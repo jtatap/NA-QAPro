@@ -17,9 +17,10 @@ private class pvhPrechatUISnapinControllerTest {
     @isTest
     static void lcdTestBadDate() {
         Test.startTest();
-
-        EmbeddedServiceDetail esdTest = pvhPrechatUISnapinController.getEmbeddedServiceDetailRecord('bad data');
-        System.assertEquals(null, esdTest);
+		List<LiveChatDeployment> lcdList = [SELECT DeveloperName,Id FROM LiveChatDeployment];
+        System.debug('lcdList'+lcdList);
+        EmbeddedServiceDetail esdTest = pvhPrechatUISnapinController.getEmbeddedServiceDetailRecord(lcdList[0].Id);
+        System.assertNotEquals(null, esdTest);
 
         Test.stopTest();
     }

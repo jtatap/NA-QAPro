@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">http://global.tommy.com/int/en/newsroom/press-contacts/17</value>
+        <value xsi:type="xsd:string">https://newsroom.tommy.com/corporate/contact-us/</value>
     </values>
 </CustomMetadata>

@@ -10,11 +10,10 @@ public with sharing class LogPublisher {
 
     public static void publishLogs(List<Log_Event__e> logEventList){
         try{
-            Log_Setting__mdt logSetting = [SELECT Logging_Enabled__c	 
+            Log_Setting__mdt logSetting = [SELECT Logging_Enabled__c     
                                                 FROM Log_Setting__mdt 
-                                                    WHERE DeveloperName = 'Log_Setting'];
-                                                    
-            if(logSetting != null && logSetting.Logging_Enabled__c){
+                                                    WHERE DeveloperName = 'Log_Setting'];            
+            if(logEventList!=Null && logSetting != null  && System.Limits.getPublishImmediateDML() < 150 && logSetting.Logging_Enabled__c){
                 List<Database.SaveResult> results = EventBus.publish(logEventList);
                 for (Database.SaveResult sr : results) {
                     if (!sr.isSuccess()) {

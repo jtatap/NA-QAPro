@@ -41,23 +41,8 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>11/16/2020 12:00 AM</values>
-            <values>11/23/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>10/20/2020 12:00 AM</values>
-            <values>10/22/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>10/15/2020 12:00 AM</values>
-            <values>10/22/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>11/27/2020 12:00 AM</values>
-            <values>12/2/2020 12:00 AM</values>
+            <values>3/13/2021 12:00 AM</values>
+            <values>4/12/2021 12:00 AM</values>
         </dashboardFilterOptions>
         <name>Bot Session: Created Date</name>
     </dashboardFilters>

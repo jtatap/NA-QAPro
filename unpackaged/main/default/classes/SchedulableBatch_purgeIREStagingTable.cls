@@ -5,7 +5,8 @@
  */
 global class SchedulableBatch_purgeIREStagingTable implements Schedulable{ 
     global void execute(SchedulableContext ctx){
+        NF_Batch_Control__mdt batchMeta =  NF_Batch_Control__mdt.getInstance('SchedulableBatch_purgeIREStagingTable'); 
         Batch_purgeIREStagingTable TrackerEvents = new Batch_purgeIREStagingTable();
-        Database.executeBatch(TrackerEvents);
+        Database.executeBatch(TrackerEvents,Integer.valueOf(batchMeta.Batch_Size__c));
     }
 }

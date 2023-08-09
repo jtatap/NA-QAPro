@@ -16,7 +16,7 @@
             <name>Update_Comments_Field_for_Task</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Task.Description</field>
             <operation>notEqual</operation>

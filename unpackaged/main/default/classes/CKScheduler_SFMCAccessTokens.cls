@@ -28,15 +28,16 @@ global class CKScheduler_SFMCAccessTokens implements Schedulable,Database.Allows
                              
             }
             else if(String.valueOf(getRes.getStatusCode()).startsWith('4') ||  String.valueOf(getRes.getStatusCode()).startsWith('5')){
-                System.debug('*****ERROR - StatusCode = 4XX OR 5XX');
+                Log.push('*****ERROR - StatusCode = 4XX OR 5XX');
                 //insert record into Error Log                  
                 SFMCUtility.createErrorLogs(reqEndPoint,reqBody,String.valueOf(getRes.getStatusCode()),getRes.getBody(),'SFMC_Auth_End_Point');
             }
         }
+        Logger.logDebug();
     }
     //method: Callout for Access Token
     private static HttpResponse doCalloutForToken(String requestEP, String calloutMethod,String inputBody){
-        System.debug('*****inside doCalloutForToken()');
+        Log.push('*****inside doCalloutForToken()');
         String responseString = Null;
         HttpRequest req = new HttpRequest();
         HttpResponse res = new HttpResponse();
@@ -48,11 +49,12 @@ global class CKScheduler_SFMCAccessTokens implements Schedulable,Database.Allows
         try{
             res = http.send(req);
             responseString = res.getBody();
-            System.debug('*****Response Body = '+responseString);
-            System.debug('*****Status Code = '+res.getStatusCode());
+            Log.push('*****Response Body = '+responseString);
+            Log.push('*****Status Code = '+res.getStatusCode());
         }catch(System.CalloutException e) {
-            System.debug('Callout error: '+ e);
+            Logger.logException(e);
         }
+        Logger.logDebug();
         return res;
     }
     //Wrapper class to collect token response

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... attempt to create the name for the Account based on the existence of first / lastName on the source Contact.</description>
         <name>asn_accountNameViaFormula</name>
@@ -142,6 +142,7 @@
         </rules>
     </decisions>
     <description>... this flow is used to abstract the incremental assignment of sourceContact attributes to a new Account object for future processing.</description>
+    <environments>Default</environments>
     <formulas>
         <description>... this formula concatenates a first-pass as an accountName for the specified contact based on first / last name properties.</description>
         <name>fla_createAccountName</name>

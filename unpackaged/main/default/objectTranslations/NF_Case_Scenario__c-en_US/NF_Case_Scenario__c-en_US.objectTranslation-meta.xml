@@ -11,5 +11,25 @@
     
     
     
+    
+    <layouts>
+        <layout>Case Scenario Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Delete --></label>
+        <name>Delete_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit --></label>
+        <name>Edit_Flow</name>
+    </quickActions>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Case Scenario Name can only be changed by using the Edit button --></errorMessage>
+        <name>ScenarioNameEditIssue</name>
+    </validationRules>
 </CustomObjectTranslation>

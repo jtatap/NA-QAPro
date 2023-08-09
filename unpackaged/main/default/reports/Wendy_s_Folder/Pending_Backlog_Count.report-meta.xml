@@ -27,7 +27,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Pending</value>
+            <value>Pending,On Hold</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -57,7 +57,7 @@
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Pending Backlog Count</name>
+    <name>Pending/On-Hold Backlog Count</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -73,7 +73,7 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2021-03-04</endDate>
+        <endDate>2021-06-27</endDate>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

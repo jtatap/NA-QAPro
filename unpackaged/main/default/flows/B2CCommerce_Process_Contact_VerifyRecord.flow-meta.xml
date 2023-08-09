@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... audit and generate an exception back to the calling flow.</description>
         <name>asn_auditContactFaultByContactID</name>
@@ -782,6 +782,7 @@
         </rules>
     </decisions>
     <description>... this subFlow attempts to verify a Contact record using the key identifiers that drive record-based resolution.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Process: Contact: Verify Record {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Contact: Helper: Verify Contact Record</label>
     <processMetadataValues>
@@ -911,7 +912,7 @@
             <targetReference>dec_wasB2CCustomerListProvided</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <description>... internal flag used to bypass the ContactID validation.</description>
         <name>BypassContactID</name>

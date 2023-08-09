@@ -855,47 +855,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>VIP_Contact__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VIP__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Current_Point_Balance__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Store_Master__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EcommSite__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SFCC_User_ID__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Email_Updated_by_CSR__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Latest_Campaigns__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CSR_Trigger_PB__c</field>
+            <field>Profile_Complete__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -905,7 +865,32 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>UpdateBySFCCIntUser__c</field>
+            <field>Record_Type_ID_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner_type_id_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Created_by_id_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact_Full_Name__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IseCommSMS__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsExisting__c</field>
             <table>Contact</table>
         </columns>
         <masterLabel>Contacts</masterLabel>
@@ -2183,27 +2168,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IsChild__c</field>
+            <field>NFCaseScenario__c</field>
             <table>Contact.Cases</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>B2C_Is_Locked__c</field>
-            <table>Contact.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Is_Automation_Bypassed__c</field>
-            <table>Contact.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AutomationBypassDateTimeDelay__c</field>
-            <table>Contact.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CSR_Email_UserConfirmation__c</field>
+            <field>Tealium_Email_Suppression__c</field>
             <table>Contact.Cases</table>
         </columns>
         <masterLabel>Cases</masterLabel>

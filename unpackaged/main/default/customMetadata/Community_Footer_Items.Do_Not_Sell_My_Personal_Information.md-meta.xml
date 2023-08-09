@@ -20,7 +20,7 @@
     </values>
     <values>
         <field>Name__c</field>
-        <value xsi:type="xsd:string">Do Not Sell My Personal Information</value>
+        <value xsi:type="xsd:string">Do Not Sell or Share My Personal Information</value>
     </values>
     <values>
         <field>Open_In_New_Tab__c</field>
@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">javascript:(function(){utag.gdpr.showConsentPreferences()})();</value>
+        <value xsi:type="xsd:string">https://usa.tommy.com/en/privacy-policy.html</value>
     </values>
 </CustomMetadata>

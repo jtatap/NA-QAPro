@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the current recordCount to a local variable to simplify processing.</description>
         <name>asn_B2CSiteRecordCount</name>
@@ -45,6 +45,7 @@
         </rules>
     </decisions>
     <description>... activates the Sites related to a B2C CustomerList.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: B2C CustomerList: Sites: Activate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: B2C CustomerList: Sites: Activate</label>
     <loops>

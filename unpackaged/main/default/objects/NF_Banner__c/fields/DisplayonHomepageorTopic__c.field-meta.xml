@@ -4,14 +4,12 @@
     <description>What page should this be displayed:
 
 Home -  home page of the community / portal / digital experience
-Topic - Certain Topic Page
-Custom Page - Enter Page Key Field</description>
+Topic - Certain Topic Page along with any articles that lookup to this topic.</description>
     <externalId>false</externalId>
     <inlineHelpText>What page should this be displayed:
 
 Home -  home page of the community / portal / digital experience
-Topic - Certain Topic Page
-Custom Page - Enter Page Key Field</inlineHelpText>
+Topic - Certain Topic Page along with any articles that lookup to this topic.</inlineHelpText>
     <label>Where should this go?</label>
     <required>true</required>
     <trackHistory>false</trackHistory>

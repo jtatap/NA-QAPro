@@ -20,7 +20,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value></value>
+            <value>,general</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

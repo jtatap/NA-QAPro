@@ -5,5 +5,6 @@
 */ 
 
 trigger LogEventTrigger on Log_Event__e (after insert) {
-    new LogEventTriggerHandler().createLogs(trigger.new);
+    //new LogEventTriggerHandler().createLogs(trigger.new);
+    TriggerDispatcher.run(new NF_LogEventTriggerHandler());
 }

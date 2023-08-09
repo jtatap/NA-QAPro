@@ -1,8 +1,7 @@
-<html style="overflow-y: hidden;">
-<head>
+<html><head>
 	<title></title>
 </head>
-<body style="height: auto; min-height: auto;"><meta content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 15"><meta name="Originator" content="Microsoft Word 15">
+<body style="height: auto; min-height: auto;"><meta content="text/html; charset=utf-8" /><meta content="Word.Document" name="ProgId" /><meta content="Microsoft Word 15" name="Generator" /><meta content="Microsoft Word 15" name="Originator" />
 <style type="text/css"><!--
  /* Font Definitions */
  @font-face
@@ -78,218 +77,24 @@ div.WordSection1
 -->
 </style>
 <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;background:white"><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;
-color:black;mso-color-alt:windowtext">Dear {{{Case.Dear_Valued_Customer__c}}},</span><br />
+normal;background:white"><span style="font-family: &quot;Segoe UI&quot;, sans-serif;">Dear&nbsp;{{{Case.Dear_Valued_Customer__c}}},</span><br />
 <br />
-&nbsp;</p>
-
-<p style="margin:0in;margin-bottom:.0001pt;background:white"><meta content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 15"><meta name="Originator" content="Microsoft Word 15">
-<style type="text/css"><!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
-@font-face
-	{font-family:"Segoe UI";
-	panose-1:2 11 5 2 4 2 4 2 2 3;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-a:link, span.MsoHyperlink
-	{mso-style-priority:99;
-	color:blue;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#954F72;
-	mso-themecolor:followedhyperlink;
-	text-decoration:underline;
-	text-underline:single;}
-p
-	{mso-style-priority:99;
-	mso-margin-top-alt:auto;
-	margin-right:0in;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-.MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;
-	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-</p>
-
-<p style="margin:0in;margin-bottom:.0001pt;background:white"><meta content="text/html; charset=utf-8"><meta content="Word.Document" name="ProgId"><meta content="Microsoft Word 15" name="Generator"><meta content="Microsoft Word 15" name="Originator">
-<style type="text/css"><!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
-@font-face
-	{font-family:"Segoe UI";
-	panose-1:2 11 5 2 4 2 4 2 2 3;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-a:link, span.MsoHyperlink
-	{mso-style-priority:99;
-	color:blue;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#954F72;
-	mso-themecolor:followedhyperlink;
-	text-decoration:underline;
-	text-underline:single;}
-p
-	{mso-style-priority:99;
-	mso-margin-top-alt:auto;
-	margin-right:0in;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-.MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;
-	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-</p>
-
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">Thank you for contacting the Customer Experience Team at True&amp;Co.</span></p>
+<span style="font-family: &quot;Segoe UI&quot;, sans-serif;">Thank you for contacting the Customer Experience Team at True&amp;Co.</span></p>
 
 <p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span></p>
 
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">We&#39;re thrilled that you are interested in our&nbsp;</span><a href="https://trueandco.com/scholarship" target="_blank"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#1F73B7">Future is Female Scholarship</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif">.</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">We're thrilled that you are interested in our&nbsp;</span><a href="https://trueandco.com/scholarship" target="_blank"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#1F73B7">Future is Female Scholarship</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif">.</span></p>
 
 <p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span></p>
 
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">We currently do not have a scholarship for the 2019 year, however we will be sure to announce future opportunities via social media.</span></p>
-
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span></p>
-
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">For any future scholarship inquiries, please email&nbsp;</span><a href="http://scholarship_partners@trueandco.com/" target="_blank"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#1F73B7">scholarship_partners@trueandco.com</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif">. This team will be able to provide you with the most information about the scholarship program.</span></p>
-
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">&nbsp;</span></p>
-
-<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">We wish you good luck in your future endeavors.</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-family:&quot;Segoe UI&quot;,sans-serif">We apologize for any disappointment, but we are not currently offering a scholarship for the 2021 year. We will announce any future opportunities via social media.<br />
+<br />
+Thank you again for your interest in True&amp;Co. and we wish you continued success with your education.<br />
+<br />
+Regards,<br />
+<br />
+{{{Sender.Agent_Signature__c}}}<br />
+True&amp;Co. Customer Service</span></p>
 
 <p style="margin:0in;margin-bottom:.0001pt;background:white">&nbsp;</p>
 <style type="text/css"><!--
@@ -556,5 +361,95 @@ div.WordSection1
 	{page:WordSection1;}
 -->
 </style>
-</body>
-</html>
+<style type="text/css"><!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style></body></html>

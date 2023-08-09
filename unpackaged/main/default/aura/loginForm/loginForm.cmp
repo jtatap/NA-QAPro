@@ -22,7 +22,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.initialize}"/>
     <aura:dependency resource="c:setStartUrl" type="EVENT"/>
     <!-- Please uncomment
-    <aura:dependency resource="siteforce:registerQueryEventMap" type="EVENT"/>
+    
     -->
     <aura:handler event="c:setStartUrl" action="{!c.setStartUrl}"/>
     <aura:handler event="c:setExpId" action="{!c.setExpId}"/>    

@@ -5,8 +5,9 @@
     <name>Retail Queue</name>
     <queueMembers>
         <publicGroups>
-            <publicGroup>Ops_Quality_Group</publicGroup>
+            <publicGroup>Tier_3_CSR_Supervisor</publicGroup>
             <publicGroup>PVH_Corp_Operations_Quality</publicGroup>
+            <publicGroup>Tier_1_CSR_PVH</publicGroup>
             <publicGroup>Tier_1_CSR_Wholesale_OLD</publicGroup>
         </publicGroups>
         <users>

@@ -7,7 +7,6 @@
 ******************************************************************************/ 
 global class AgileOne {
     
-
     @auraEnabled
     public static List<TransactionRec> getC360Data(String LoyatlyId, String BrandId){
         String accessToken = Null;
@@ -26,11 +25,17 @@ global class AgileOne {
         //reqEndPoint  = 'callout:A1_360API_DataEndPoint/'+credsRecord.TenantId__c+'/dw/a360/customers/'+LoyatlyId; 
         reqEndPoint  = 'callout:A1_360API_DataEndPoint/'+credsRecord.TenantId__c+'/dw/a360/customers/'+LoyatlyId+'?'+System.Label.Limit; 
         responseVal = httpCalloutMethod(reqEndPoint,authBearer, 'GET'); 
-        System.debug('** 360API Response: '+ responseVal);
-        if(! String.isEmpty(responseVal)){
+        Log.push('** 360API Response: '+ responseVal);
+         System.debug('360API Response:'+responseVal);
+        if(!String.isEmpty(responseVal)){
+            System.debug('360API Response:'+responseVal);
              transactionlist = parseresourceJSON(responseVal);
+             System.debug('parseresourceJSON(responseVal****'+parseresourceJSON(responseVal));
         }
-        System.debug('***transactionlist = '+transactionlist);
+        Log.push('***transactionlist = '+transactionlist);
+        
+        Logger.logDebug();
+        System.debug('transactionlist****'+transactionlist);
         return transactionlist;
     }
     
@@ -73,12 +78,12 @@ global class AgileOne {
             responseString = res.getBody();
             
         }catch(System.CalloutException e) {
-            System.debug('Callout error: '+ e);
+            Log.push('Callout error: '+ e);
+            Logger.logException(e);
         }
         return responseString;
     }
     
-   
     @AuraEnabled
     public static List<Reward__c> getRewardsData(String LoyaltyId)
     {
@@ -91,35 +96,46 @@ global class AgileOne {
         List<TransactionRec> transactionRecordList = new List<TransactionRec>();
         List<ResourceData> transactionList = new list<ResourceData>();
         List<ResourceData> eventList = new list<ResourceData>();
-        List<ResourceData> customersummaryList = new list<ResourceData>();
+        List<ResourceCustData> customersummaryList = new list<ResourceCustData>();
         List<String> customerIdsList = new List<String>();
         JSONParser parser = JSON.createParser(jsonResponse);
+       
+        system.debug('parser.getText()***'+parser.getText());
         while (parser.nextToken() != null) {
          if (parser.getCurrentToken() == JSONToken.FIELD_NAME){
-                if(parser.getText() == 'customerIds'){
+              if(parser.getText() == 'customerIds'){
                     String customerIds = parser.getText();
                     customerIdsList =customerIds.split(',');
+                    system.debug('customerIdsList***'+customerIdsList);
                 }
-                if(parser.getText() =='{"displayResourceKey":"$customerTransaction360","resource":"transaction","layout":"customer"}'){
-                  parser.nextToken();
+             // if(parser.getText() =='{"displayResourceKey":"$customerTransaction360","resource":"transaction","layout":"customer"}'){
+               if(parser.getText() =='{"resource":"customersummary","layout":"customer"}'){
+                     parser.nextToken();
+                     customersummaryList = (List<ResourceCustData>)parser.readValueAs(List<ResourceCustData>.class); 
+                    
+                }
+              
+              //  if(parser.getText() =='{\"displayResourceKey\":\"$customersummaryAttributes\",\"resource\":\"customersummary\",\"layout\":\"customer\"}'){
+              if(parser.getText() =='{\"resource\":\"transaction\",\"layout\":\"customer\"}'){
+                    parser.nextToken();
                     transactionList = (List<ResourceData>)parser.readValueAs(List<ResourceData>.class); 
-                }
-                //parser.nextToken();
-                if(parser.getText() =='{\"displayResourceKey\":\"$customersummaryAttributes\",\"resource\":\"customersummary\",\"layout\":\"customer\"}'){
-                      parser.nextToken();
-                    customersummaryList = (List<ResourceData>)parser.readValueAs(List<ResourceData>.class); 
+                   
                 }
                  
-                if(parser.getText() =='{\"displayResourceKey\":\"$customerJourney\",\"resource\":\"event\",\"layout\":\"customer\"}'){
-                     parser.nextToken();
+                //if(parser.getText() =='{\"displayResourceKey\":\"$customerJourney\",\"resource\":\"event\",\"layout\":\"customer\"}'){
+                if(parser.getText() =='{\"resource\":\"event\",\"layout\":\"customer\"}'){
+                    parser.nextToken();
                     eventList = (List<ResourceData>)parser.readValueAs(List<ResourceData>.class); 
+                    
                 }
              
             }
         }
         Double currentPointBalance;
-        if(!customersummaryList.isEmpty()){            
-            for(ResourceData transactionRec : customersummaryList){   
+          system.debug(' customersummaryList***'+customersummaryList);
+        if(!customersummaryList.isEmpty()){  
+           
+            for(ResourceCustData transactionRec : customersummaryList){   
                 TransactionRec rec = new TransactionRec(); 
                     for(Values val :transactionRec.values){
                         if(val.udmColumn =='customersummary.c_balancePoints' && String.isNotBlank(val.value)){
@@ -129,13 +145,14 @@ global class AgileOne {
                     }
                   rec.Category ='Customer Summary';
                   transactionRecordList.add(rec);
+                  
             }
         }
         if(!transactionList.isEmpty()){
             for(ResourceData transactionRec : transactionList){
                 TransactionRec rec = new TransactionRec();                
                 for(Values val :transactionRec.values){
-                    System.debug('Transaction val '+val);
+                    Log.Push('Transaction val '+val);
                     if(val.udmColumn =='transaction.Type' && String.isNotBlank(val.value)){ 
                         rec.Type = val.value;
                     }
@@ -146,26 +163,31 @@ global class AgileOne {
                         rec.Total = val.value;
                     }
                     if(val.udmColumn =='transaction.c_finalPoints' && String.isNotBlank(val.value)){
-                        rec.PointsIssued = val.value;
+                        String delimiter = '.';
+                        String input = val.value;
+                       rec.PointsIssued = input.substringBefore(delimiter);
+                       // rec.PointsIssued = val.value;
+                         
                     }
                     if(val.udmColumn =='organization.SourceOrganizationNumber' && String.isNotBlank(val.value)){
                     //    String inputStore = val.value;
-                    //    System.debug('^^^Mall Name = '+inputStore);
+                    //    Log.push('^^^Mall Name = '+inputStore);
                     //    List<String> listStore = inputStore.split(' ');
                     //    String storeCode = listStore[0];
                         String storeCode = val.value;
                         if (storeCode.left(1)=='0') storeCode = storeCode.substring(1);  //to strip first leading 0
                         if (storeCode.left(1)=='0') storeCode = storeCode.substring(1); //to strip second leading 0, if exists
                         if (storeCode.left(1)=='0') storeCode = storeCode.substring(1); //to strip third leading 0, if exists
-                        System.debug('^^^storeCode = '+storeCode);
+                        Log.push('^^^storeCode = '+storeCode);
                         String storeBrand = storeCode.right(2);
                         storeCode = storeCode.remove(storeBrand);
-                        System.debug('^^^final Store = '+storeBrand+storeCode);
+                        Log.push('^^^final Store = '+storeBrand+storeCode);
                         rec.StoreofPurchase = storeBrand+storeCode;
                     }
                     if(val.udmColumn =='transaction.TransactionTimestamp' && String.isNotBlank(val.value)){
-                        Long dt1 =  Long.valueOf(val.value);
-                        DateTime issueDateTime = DateTime.newInstance(dt1);
+                       // Long dt1 =  Long.valueOf(val.value);
+                        DateTime issueDateTime=DateTime.valueOf(val.value);
+                        //DateTime issueDateTime = DateTime.newInstance(dt1);
                         Date issueDate = date.newinstance(issueDateTime.year(), issueDateTime.month(), issueDateTime.day());
                         rec.IssueDate = issueDate;
                     }
@@ -195,7 +217,7 @@ global class AgileOne {
                             item.Quantity = Integer.valueOf(child.value);
                         }   
                     }
-                     System.debug('Transaction item'+item);
+                     Log.push('Transaction item'+item);
                     transactionItemList.add(item);
                 }
                 
@@ -206,10 +228,11 @@ global class AgileOne {
                 */
                 //checking is TransactionRecord.Type == Purchase AND TransactionRecord.transaction.c_finalPoints is NOT NULL
                 if(rec.Type == 'Purchase' && String.isNotBlank(rec.PointsIssued)){
-                    System.debug('***PointsIssued OR transaction.c_finalPoints = '+rec.PointsIssued );
+                    Log.push('***PointsIssued OR transaction.c_finalPoints = '+rec.PointsIssued );
                     rec.Category ='Transaction';
                     rec.transactionItemList = transactionItemList;
                     transactionRecordList.add(rec);
+                    system.debug(' transactionRecordList***'+transactionRecordList);
                 }
              }
                 
@@ -227,13 +250,17 @@ global class AgileOne {
                         eventRec.ReasonCode = val.value;
                      }
                      if(val.udmColumn =='event.EventTimeStamp' && String.isNotBlank(val.value)){
-                        Long dt1 =  Long.valueOf(val.value);
-                        DateTime issueDateTime = DateTime.newInstance(dt1);
+                        //Long dt1 =  Long.valueOf(val.value);
+                        //DateTime issueDateTime = DateTime.newInstance(dt1);
+                        DateTime issueDateTime=DateTime.valueOf(val.value);
                         Date issueDate = date.newinstance(issueDateTime.year(), issueDateTime.month(), issueDateTime.day());
                         eventRec.IssueDate = issueDate;
                      }
-                     if(val.udmColumn =='event.c_pointsGranted' && String.isNotBlank(val.value)){
-                        eventRec.PointsIssued = val.value;
+                     if(val.udmColumn ==SYSTEM.LABEL.EventDotCPointsGranted && String.isNotBlank(val.value)){
+                        String delimiter = '.';
+                        String input = val.value;
+                        eventRec.PointsIssued = input.substringBefore(delimiter);
+                       // eventRec.PointsIssued = val.value;
                      }
                      if(val.udmColumn =='Event.c_sfscCaseNumber' && String.isNotBlank(val.value)){
                         eventRec.Casenumber = val.value; 
@@ -255,6 +282,7 @@ global class AgileOne {
                    eventRec.Description = System.Label.Event_Description;
                    eventRec.Category ='Event';
                    transactionRecordList.add(eventRec); 
+                   system.debug(' transactionRecordList***'+transactionRecordList);
                }
                 
             }
@@ -263,11 +291,9 @@ global class AgileOne {
        //List<Contact> conList=[Select Id, Name ,Current_Point_Balance__c ];
         System.debug(transactionRecordList);
         for(TransactionRec r :transactionRecordList){
-            System.debug(r);
-            
+            Log.push('r'+r);
         }
-        
-        
+        Logger.logDebug();
         return transactionRecordList;
     }
     
@@ -322,9 +348,16 @@ global class AgileOne {
         public String  value;
     }
     public class ResourceData{
-        public String rowKey; 
+        public Object  rowKey; 
         public List<Values> values ;
         public List<List<Values>> children; 
+        public Boolean ignore ;
+    
+    }
+    public class ResourceCustData{
+        public Object rowKey; 
+        public List<Values> values ;
+        public List<Values> children; 
         public Boolean ignore ;
     
     }

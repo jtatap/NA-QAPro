@@ -1,6 +1,6 @@
 	@font-face {
  	  	font-family: "FuturaStdBook";
-  		src: url("../fonts/futurastd-book-woff-data.woff") format("woff");
+  		src: url("../fonts/futurastd-book-woff-data.woff?v=1.2") format("woff");
 	}
 .chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
     font-family: FuturaStdBook !important;
@@ -69,7 +69,7 @@ background: #02194c !important;
 }
 
 .embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
-        font: FuturaStdBook important!;
+        font-family: FuturaStdBook !important;
 }
 
 
@@ -414,4 +414,16 @@ body > div.embeddedServiceHelpButton > div > button > span.embeddedServiceIcon {
 .slds-m-around_none.minicard-title-text {
     font-size: 12px;
     text-align: left;
+}
+
+.embeddedServiceSidebar h2 {
+    text-transform: none;
+}
+
+.embeddedServiceHelpButton span, .embeddedServiceSidebar span{
+    margin-bottom:unset;
+}
+
+.embeddedServiceSidebar h3 {
+    text-transform: unset;
 }

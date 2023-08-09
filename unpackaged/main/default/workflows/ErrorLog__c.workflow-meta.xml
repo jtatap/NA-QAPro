@@ -5,7 +5,7 @@
         <description>Send Email for Error Log</description>
         <protected>false</protected>
         <recipients>
-            <recipient>avinashthampara@pvh.com</recipient>
+            <recipient>sonasofiavanithaanto@pvh.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>

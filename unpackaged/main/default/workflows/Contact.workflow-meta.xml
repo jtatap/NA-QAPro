@@ -11,16 +11,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Set_Do_Not_Sync_Flag_Value</fullName>
-        <field>Do_Not_Sync_with_SFMC__c</field>
-        <literalValue>1</literalValue>
-        <name>Set Do Not Sync Flag Value</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_Created_By_Method</fullName>
         <field>CreatedByMethod__c</field>
         <formula>&#39;UI&#39;</formula>
@@ -30,27 +20,6 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Do_not_sync_SFMC</fullName>
-        <field>Do_Not_Sync_with_SFMC__c</field>
-        <literalValue>0</literalValue>
-        <name>Update Do not sync  SFMC</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <rules>
-        <fullName>Do Not Sync Exact Target Contacts  to MC</fullName>
-        <actions>
-            <name>Set_Do_Not_Sync_Flag_Value</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Do Not Sync Exact Target Contacts  to MC, set the flag value to &quot;True&quot;</description>
-        <formula>CONTAINS(Email,&quot;@bh.exacttarget.com&quot;)</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
     <rules>
         <fullName>Do not Sync</fullName>
         <actions>
@@ -71,40 +40,11 @@
             <name>Update_Created_By_Method</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Contact.CreatedByMethod__c</field>
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Update Do not sync  SFMC</fullName>
-        <actions>
-            <name>Update_Do_not_sync_SFMC</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <booleanFilter>((1 AND 2) AND 3) AND 4</booleanFilter>
-        <criteriaItems>
-            <field>Contact.EmailOptInStatus__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Contact.EmailOptInStatus__c</field>
-            <operation>equals</operation>
-            <value>Y</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Contact.Do_Not_Sync_with_SFMC__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Contact.LastModifiedById</field>
-            <operation>equals</operation>
-            <value>IsChanged</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

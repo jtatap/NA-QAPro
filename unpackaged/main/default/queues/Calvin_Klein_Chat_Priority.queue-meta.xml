@@ -8,6 +8,12 @@
             <publicGroup>All_Brands</publicGroup>
             <publicGroup>Calvin_Klein</publicGroup>
         </publicGroups>
+        <users>
+            <user>blake.williams@neuraflash.com</user>
+            <user>minaaamer@pvh.com</user>
+            <user>nate.oconnor@neuraflash1.com</user>
+            <user>t1pvh@pvh.com</user>
+        </users>
     </queueMembers>
     <queueRoutingConfig>Priority_Chat</queueRoutingConfig>
     <queueSobject>

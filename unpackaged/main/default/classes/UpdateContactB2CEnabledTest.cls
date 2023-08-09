@@ -31,6 +31,7 @@ public class UpdateContactB2CEnabledTest {
             con.StoreOfCapture__c = 'cLoc';
             con.LoyaltyID__c = 'C0000001'+i;
             con.B2C_Is_Enabled__c = false;
+            con.B2C_Customer_No__c = 'a1234' + i;
             conList.add(con);
         }
         insert conList;

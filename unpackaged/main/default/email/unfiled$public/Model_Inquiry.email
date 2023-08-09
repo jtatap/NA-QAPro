@@ -1,0 +1,12 @@
+Dear {!Case.Dear_Valued_Customer__c},
+
+Thank you for your interest in {!Case.Brand__c}.
+
+All modeling requests must be submitted through a modeling agency/agent.
+
+Thank you for contacting {!Case.Brand__c} Customer Service.
+
+Regards,
+
+{!User.Agent_Signature__c}
+{!Case.Brand__c} Customer Service

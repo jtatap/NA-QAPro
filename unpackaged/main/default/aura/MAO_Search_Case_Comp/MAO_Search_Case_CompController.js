@@ -12,7 +12,6 @@
         }
     },
     handleComponentEvent:function(component, event, helper) {
-        //component.set ('v.isSearchDisabled', true);
         let message = event.getParam("message");
         console.log('Entered into the eventPVh'+ JSON.stringify(message));
         if (message && message.length > 0) {
@@ -21,7 +20,6 @@
         }
     },
     onContactChange : function(component, event, helper) {
-        //component.set ('v.isSearchDisabled', true);
         component.set ('v.contactRecord', null);
         component.set ('v.contactRecordLoadError', null);
         if (event.getParam("value") && component.find("contactRecordHandler")) {
@@ -31,8 +29,12 @@
     handleCaseRecordUpdated : function (component, event, helper) {
         let changeType = event.getParams().changeType;
         
-        if (changeType === "ERROR") { /* handle error; do this first! */ }
-        else if (changeType === "LOADED") { 
+        var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var removed = String($A.get("$Label.c.Removed"));
+        var changed = String($A.get("$Label.c.Changed"));
+        if (changeType === error) { /* handle error; do this first! */ }
+        else if (changeType === loaded) { 
             /* handle record load */ 
             let contactId = component.get ('v.caseRecord').ContactId;
             component.set ('v.selectedId', contactId);
@@ -48,45 +50,44 @@
             if (component.find("contactRecordHandler")) {
                 component.find("contactRecordHandler").reloadRecord();
             }
-            /*if (component.find("currentCasecontactRecordHandler")) {
-                component.find("currentCasecontactRecordHandler").reloadRecord();
-            }*/
+            
         }
-            else if (changeType === "REMOVED") { /* handle record removal */ }
-                else if (changeType === "CHANGED") { 
+            else if (changeType === removed) { /* handle record removal */ }
+                else if (changeType === changed) { 
                     /* handle record change */ 
                     component.find("caseRecordLoader").reloadRecord();
                 }
     },
     handleCaseContactRecordUpdated : function (component, event, helper) {
         let changeType = event.getParams().changeType;
+        var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var changed = String($A.get("$Label.c.Changed"));
         
-        if (changeType === "ERROR") { /* handle error; do this first! */ }
-        else if (changeType === "LOADED") { 
-            /* handle record load 
-        }
-    	else if (changeType === "REMOVED") { /* handle record removal */ }
-            else if (changeType === "CHANGED") { 
+        if (changeType === error) { /* handle error; do this first! */ }
+        else if (changeType === loaded) { 
+             }
+            else if (changeType === changed) { 
                 /* handle record change */ 
                 component.find("currentCasecontactRecordHandler").reloadRecord();
             }
     },
     handleContactRecordUpdated : function (component, event, helper) {
         let changeType = event.getParams().changeType;
+        var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var changed = String($A.get("$Label.c.Changed"));
+        var removed = String($A.get("$Label.c.Removed"));
         
-        if (changeType === "ERROR") { /* handle error; do this first! */ }
-        else if (changeType === "LOADED") { 
+        if (changeType === error) { /* handle error; do this first! */ }
+        else if (changeType === loaded) { 
             /* handle record load */ 
-            //let contactRecord = component.get ('v.contactRecord');
-            //let isSearchDisabled = !contactRecord || contactRecord && !contactRecord.Ecomm_Connected__c;
-            //component.set ('v.isSearchDisabled', isSearchDisabled);
-        }
-            else if (changeType === "REMOVED") { /* handle record removal */ }
-                else if (changeType === "CHANGED") { 
+            }
+            else if (changeType === removed) { /* handle record removal */ }
+                else if (changeType === changed) { 
                     /* handle record change */ 
                     component.find("contactRecordHandler").reloadRecord();
                 }
-        //console.log (JSON.stringify (component.get ('v.contactRecord')));
     },
     handleCancel : function (component, event, helper) {
         $A.get("e.force:closeQuickAction").fire ();
@@ -167,7 +168,7 @@
                     let ordId = component.get ('v.orderId');
                     let manualContactRecord = component.get ('v.manualContactRecord');
                     if (!ordId 
-                        //&& !manualContactRecord
+                        
                         && (!manualContactRecord.FirstName && !manualContactRecord.LastName && !manualContactRecord.Email && !manualContactRecord.Phone)
                        ) {
                         component.set ('v.freeFormErrorMessage', 'Please fill order id or contact details');
@@ -222,20 +223,10 @@
         .replace (/\+{2,}/g, "+");
         helper.isValidPhoneFormat (component, input);
         component.set ('v.manualContactRecord.Phone', input);
-        //if(helper.isModifierKey(event) && !helper.isEnabledCharacters (event)) {
-        //    return;
-        //}
         
         
-        //replace(/\D/g,'').substring(0,10); // First ten digits of input only
-        //const zip = input.substring(0,3);
-        //const middle = input.substring(3,6);
-        //const last = input.substring(6,10);
         
-        //`(${zip}) ${middle} - ${last}`;
-        //if(input.length > 6){component.set ('v.manualContactRecord.Phone', `(${zip}) ${middle}-${last}`);}
-        //else if(input.length > 3){component.set ('v.manualContactRecord.Phone',`(${zip})${middle}`);}
-        //else if(input.length > 0){component.set ('v.manualContactRecord.Phone',`${zip}`);}
+        
     },
     handleChangeEcommSite : function(component,event, helper){
         var selectedOptionValue = event.getParam("value");

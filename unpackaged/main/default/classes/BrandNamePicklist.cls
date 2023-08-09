@@ -13,7 +13,7 @@ global class BrandNamePicklist extends VisualEditor.DynamicPickList{
     }
     global override VisualEditor.DynamicPickListRows getValues() {
        
-        String fieldName = 'Brand__c';
+        String fieldName = SYSTEM.LABEL.Brand_c;
         VisualEditor.DynamicPickListRows  picklistValues = new VisualEditor.DynamicPickListRows();
         Map<String, Schema.SObjectField> currPageObjectfieldsMap = Schema.getGlobalDescribe().get('Case').getDescribe().fields.getMap();
         

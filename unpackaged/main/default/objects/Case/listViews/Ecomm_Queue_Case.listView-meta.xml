@@ -23,6 +23,5 @@
         <role>PVH_Corp</role>
         <role>Supervisor_Tier_3_CSR</role>
         <role>Tier_1_TEMP</role>
-        <roleAndSubordinates>Tier_1_TEMP</roleAndSubordinates>
     </sharedTo>
 </ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContacts</fullName>
+    <columns>Customer_Id__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Brand__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Status__c</columns>
+    <columns>LoyaltyID__c</columns>
+    <columns>External_Id__c</columns>
+    <columns>EmailOptInStatus__c</columns>
+    <columns>EmailOptInDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Contacts</label>
+</ListView>

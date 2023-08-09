@@ -34,18 +34,12 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>10/15/2020 12:00 AM</values>
-            <values>10/22/2020 12:00 AM</values>
+            <values>3/13/2021 12:00 AM</values>
+            <values>4/12/2021 12:00 AM</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>10/26/2020 12:00 AM</values>
-            <values>11/2/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>11/16/2020 12:00 AM</values>
-            <values>11/29/2020 12:00 AM</values>
+            <operator>equals</operator>
+            <values>THIS_FISCAL_YEAR</values>
         </dashboardFilterOptions>
         <name>Bot Session: Created Date</name>
     </dashboardFilters>
@@ -310,10 +304,10 @@
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
                     <axisBinding>y</axisBinding>
-                    <column>FORMULA1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentChartTheme>dark</componentChartTheme>
-                <componentType>ColumnStacked100</componentType>
+                <componentType>LineGrouped</componentType>
                 <dashboardFilterColumns>
                     <column>CUST_CREATED_DATE</column>
                 </dashboardFilterColumns>

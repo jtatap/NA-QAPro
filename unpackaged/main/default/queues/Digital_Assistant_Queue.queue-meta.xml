@@ -6,13 +6,11 @@
         <roleAndSubordinates>
             <roleAndSubordinate>Supervisor_Tier_3_CSR</roleAndSubordinate>
             <roleAndSubordinate>PVH_Corp</roleAndSubordinate>
-            <roleAndSubordinate>Tier_1_TEMP</roleAndSubordinate>
-            <roleAndSubordinate>Tier_I_CSR_Privacy</roleAndSubordinate>
+            <roleAndSubordinate>Tier_1_CSR</roleAndSubordinate>
         </roleAndSubordinates>
         <users>
             <user>brianawilliams@pvh.com</user>
-            <user>sonasofiavanithaanto@pvh.com</user>
-            <user>vivekvishal@pvh.com</user>
+            <user>t1pvh@pvh.com</user>
         </users>
     </queueMembers>
     <queueRoutingConfig>Digital_Assistant_Bot_RC</queueRoutingConfig>

@@ -3,7 +3,7 @@
  */
 
 public with sharing class NF_GetRandomResponse {
-    static String BOT_NAME = 'Base Bot';
+    static String BOT_NAME = SYSTEM.LABEL.Base_Bot;
 
     public class Input{
         @InvocableVariable(required=true)
@@ -33,7 +33,7 @@ public with sharing class NF_GetRandomResponse {
                 return new List<String>(respSet)[Math.mod(Math.abs(Crypto.getRandomLong().intValue()), respSet.size())];
             }
         }catch(Exception e){
-            System.debug('Exception: ' + e);
+            Logger.logException(e);
         }
         return null;
     }

@@ -4,7 +4,7 @@ public without sharing class ecommContactCase {
         
         list<Case> conId = [select ContactId,Brand__c from Case where Id =:CaseId];
         if (conId[0].Brand__c == NULL){
-            Return 'Case should have Brand Linked.';
+            Return SYSTEM.LABEL.Case_should_have_Brand_Linked;
         }
         else{
             if (conId[0].ContactId != NULL){
@@ -15,11 +15,11 @@ public without sharing class ecommContactCase {
                 else{
                     Contact con = [select Id,B2C_Is_Enabled__c,B2C_Is_Locked__c from Contact where Id=:conId[0].ContactId];
                     if (con.B2C_Is_Enabled__c==false){
-                        Return 'The Customer Account is disabled!';
+                        Return SYSTEM.LABEL.The_Customer_Account_is_disabled;
                     }
                     else{
                         if (con.B2C_Is_Locked__c == true){
-                            Return 'The Customer Account is Locked.';
+                            Return SYSTEM.LABEL.The_Customer_Account_is_Locked;
                         }
                         else{
                             Return conId[0].ContactId;        
@@ -28,7 +28,7 @@ public without sharing class ecommContactCase {
                 }
             }
             else {
-                Return 'Please associate the Case with an existing or a New Contact.';
+                Return SYSTEM.LABEL.Please_associate_the_Case_with_an_existing_or_a_New_Contact;
             }
         }
     }

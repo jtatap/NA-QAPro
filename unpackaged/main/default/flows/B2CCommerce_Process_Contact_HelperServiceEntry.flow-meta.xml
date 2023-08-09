@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... default the contactToResolve to the sourceContact</description>
         <name>asn_defaultContactToResolve</name>
@@ -1006,6 +1006,7 @@
         </rules>
     </decisions>
     <description>... this flow acts as a serviceEntry for the Process and Resolve services -- consuming the same argument structure to provide data exposed by the processServices.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Process: Contact: Service Helper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Contact: Helper: Service Entry</label>
     <processMetadataValues>

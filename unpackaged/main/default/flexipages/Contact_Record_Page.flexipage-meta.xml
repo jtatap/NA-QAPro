@@ -7,46 +7,16 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Contact.CSR_Email_Update</value>
-                            <visibilityRule>
-                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Tier I CSR CCPA</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Tier I CSR PVH</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Tier I CSR Wholesale</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Contact.Unlock</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Contact.Activity</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Contact.Create_Support_Case</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Contact.Sync_with_B2C_Commerce_Profile</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Contact.SFCC_Order_On_Behalf_Of</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Global.NewTask</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Delete</value>
+                            <value>Contact.Order_on_Behalf_Of</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -64,11 +34,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>numVisibleActions</name>
-                    <value>3</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
@@ -154,12 +120,36 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>Spinner</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isEnableRewardsButton</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>numRecords</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pendingPointAdjustment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
                 <componentName>A1_PointsData</componentName>
                 <identifier>A1_PointsData</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>Spinner</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>numRecords</name>
+                    <value>0</value>
+                </componentInstanceProperties>
                 <componentName>A1_RewardsData</componentName>
                 <identifier>A1_RewardsData</identifier>
             </componentInstance>
@@ -347,32 +337,6 @@
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>9</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>5</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>81</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>82</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>4</rightValue>
-                    </criteria>
                     <criteria>
                         <leftValue>{!Record.Brand_Id__c}</leftValue>
                         <operator>EQUAL</operator>
@@ -390,32 +354,6 @@
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset2</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>9</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>5</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>81</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>82</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Brand_Id__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>4</rightValue>
-                    </criteria>
                     <criteria>
                         <leftValue>{!Record.Brand_Id__c}</leftValue>
                         <operator>NE</operator>
@@ -431,6 +369,10 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>showLegacyActivityComposer</name>
+                    <value>false</value>
+                </componentInstanceProperties>
                 <componentName>runtime_sales_activities:activityPanel</componentName>
                 <identifier>runtime_sales_activities_activityPanel</identifier>
             </componentInstance>

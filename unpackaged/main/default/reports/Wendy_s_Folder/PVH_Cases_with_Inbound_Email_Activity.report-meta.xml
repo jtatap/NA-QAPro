@@ -172,6 +172,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>EMAIL.MESSAGE_DATE</dateColumn>
-        <interval>LAST_FISCALWEEK</interval>
+        <interval>INTERVAL_YESTERDAY</interval>
     </timeFrameFilter>
 </Report>

@@ -31,7 +31,8 @@ public class searchAllContactsControllerTest {
         );
         insert genRecAcct;
         Test.startTest();
-        searchAllContactsController.fetchContact(con.lastName);
+        List<Contact> conList = searchAllContactsController.fetchContact(con.lastName);
         Test.stopTest();
+        System.assert(conList.size() == 1);
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <name>assignB2CClientID</name>
         <label>Assign the B2C Client ID</label>
@@ -210,6 +210,7 @@
         </rules>
     </decisions>
     <description>... this flow compares retrieved B2C Sites against existing B2C Sites and evaluates if the B2C ClientID should be applied.  It also determines which Sites should be created (because they do not exist) or updated (because they exist).</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Evaluate Sites {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: B2C Instance: Sites: Evaluate</label>
     <loops>

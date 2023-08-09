@@ -105,6 +105,13 @@
                     <stringValue>Rejected Request</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>getCase_0.Resolution_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>User Data Deleted</stringValue>
+                </rightValue>
+            </conditions>
             <label>Data Provided</label>
         </rules>
     </decisions>

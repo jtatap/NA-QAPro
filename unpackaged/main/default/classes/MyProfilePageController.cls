@@ -17,7 +17,7 @@ public with sharing class MyProfilePageController {
                 FROM User
                 WHERE id = :UserInfo.getUserId()];
         // guest users should never be able to access this page
-        if (user.usertype == 'GUEST') {
+        if (user.usertype == SYSTEM.LABEL.GUEST) {
             throw new NoAccessException();
         }
     }

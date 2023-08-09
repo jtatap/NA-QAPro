@@ -24,6 +24,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">https://help.calvinklein.com/s/article/SAFETY-SECURITY-PRIVACY</value>
+        <value xsi:type="xsd:string">https://www.calvinklein.us/en/customerservice/privacy</value>
     </values>
 </CustomMetadata>

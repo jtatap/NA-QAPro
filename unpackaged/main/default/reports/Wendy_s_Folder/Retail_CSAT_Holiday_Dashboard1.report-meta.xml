@@ -255,8 +255,6 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Survey_Invitations__r$CreatedDate</dateColumn>
-        <endDate>2023-01-24</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2023-01-24</startDate>
+        <interval>LAST_FISCALPERIOD</interval>
     </timeFrameFilter>
 </Report>

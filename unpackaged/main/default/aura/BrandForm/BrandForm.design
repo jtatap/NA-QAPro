@@ -1,7 +1,9 @@
 <design:component >
-   <!-- <design:attribute name="brandName" label="Brand Name ?" description="Please Configure the Brand Name Here" /> -->
     
     
     <design:attribute name="brandName" label="Brand Name ?" description="Please Configure the Brand Name Here" datasource="apex://BrandNamePicklist"/>
     <design:attribute name="caseSourceCountry" label="Source Country ?" description="Please Configure the Case Source Country Here" datasource="apex://CaseSourceCountryPicklist"/>
+    <design:attribute name="fileCountLimit" label="fileCountLimit" default="5" />
+    <design:attribute name="progress" default="0" />
+    <design:attribute name="orderNumberMaxLength" default="8" />
 </design:component>

@@ -463,7 +463,7 @@
             <assignToReference>B2CAuthToken</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>recGet_B2CAuthToken.Name</elementReference>
+                <elementReference>recGet_B2CAuthToken.B2C_AuthToken__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -942,6 +942,7 @@
         </rules>
     </decisions>
     <description>... this flow is used to retrieve, process, and write B2C Commerce Customer Profile details retrieved via the B2C Commerce OCAPI REST API back to the mapped Salesforce Contact object managed by the Salesforce Platform.</description>
+    <environments>Default</environments>
     <formulas>
         <description>... represents the number of retries to support when requesting a B2C AuthToken.</description>
         <name>RetryCountLimit</name>

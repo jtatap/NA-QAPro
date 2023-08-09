@@ -20,7 +20,9 @@
     </values>
     <values>
         <field>Success_Message_f__c</field>
-        <value xsi:type="xsd:string">Thank you for contacting SpeedoUSA.com Customer Service. Your submission has been successfully received. Your case number is &lt;b&gt;&lt;ticketid&gt;&lt;/b&gt;.</value>
+        <value xsi:type="xsd:string">Thank you for contacting SpeedoUSA.com Customer Service. Your submission has been successfully received. Your case number is &lt;b&gt;&lt;ticketid&gt;&lt;/b&gt;.
+
+Please be patient as all cases are handled in the order in which they are received. We appreciate your understanding during this time and look forward to assisting you.</value>
     </values>
     <values>
         <field>Type__c</field>

@@ -1,15 +1,13 @@
 ({
 	fetchNavigationalTopic : function(component, event) {
         var self = this;
-        //console.log('2');
         var articalDisplayed = component.get('v.articalDisplayed');
+        var success = String($A.get("$Label.c.Success1"));
+        var error = String($A.get("$Label.c.Error1"));
 		var action = component.get("c.getArticles");
-        //console.log('3');
-        //action.setParams({ articalDisplayed : articalDisplayed }); 
         action.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
-                //console.log(response.getReturnValue()); Sort_Order__c
+            if (state === success) {
                 var navigationTopicList = response.getReturnValue();
                 console.log(navigationTopicList);
                 if(navigationTopicList != null && navigationTopicList != undefined){
@@ -17,7 +15,6 @@
                         element.iconName = 'utility:chevronright';
                         if(element.knowledgeArticleVerList != null && element.knowledgeArticleVerList != undefined){
                             var sortedList = self.sortData(component, 'Sort_Order__c', 'asc',element.knowledgeArticleVerList); 
-                            //console.log(sortedList);
                             var sortedFilled = [];
                             var temp = [];
                             sortedList.forEach(function(element1){
@@ -27,11 +24,7 @@
                                     sortedFilled.push(element1);
                                 }
                             });
-                            //console.log('work');
-                            //console.log(sortedFilled); 
-                            //console.log(temp);
                             var sortedFinal = sortedFilled.concat(temp);
-                            //console.log(sortedFinal);
                             if(sortedFinal != null && sortedFinal != undefined){
                                 element.knowledgeArticleVerList = sortedFinal.length >= articalDisplayed ? element.knowledgeArticleVerList.slice(0,articalDisplayed) : element.knowledgeArticleVerList.slice(0,sortedFinal.length);
                             }
@@ -42,7 +35,7 @@
                 var newList = [];
                 
                component.set('v.topicList',navigationTopicList);
-            }else if (state === "ERROR") {
+            }else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -69,13 +62,11 @@
         
     },
     sortData: function (component , fieldName, sortDirection,data) {
-        //var data = component.get("v.data");
         var reverse = sortDirection !== 'asc';
 
         data = Object.assign([],
             data.sort(this.sortBy(fieldName, reverse ? -1 : 1))
         );
-        //component.set("v.data", data);
         return data;
     },
     sortBy: function (field, reverse, primer) {

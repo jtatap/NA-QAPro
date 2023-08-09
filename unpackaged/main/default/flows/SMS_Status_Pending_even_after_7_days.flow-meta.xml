@@ -228,11 +228,11 @@
                 <stringValue>NOW()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myWaitEvent_myWait_myRule_1_event_0_SA1_5197899929</name>
+        <name>formula_2_myWaitEvent_myWait_myRule_1_event_0_SA1_8620734707</name>
         <dataType>DateTime</dataType>
         <expression>NOW()</expression>
     </formulas>
-    <interviewLabel>SMS_Status_Pending_even_after_7_days-5_InterviewLabel</interviewLabel>
+    <interviewLabel>SMS_Status_Pending_even_after_7_days-2_InterviewLabel</interviewLabel>
     <label>SMS Status P to N after 7 Days</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -338,7 +338,7 @@
             </processMetadataValues>
             <field>SMSOptOutDate__c</field>
             <value>
-                <elementReference>formula_2_myWaitEvent_myWait_myRule_1_event_0_SA1_5197899929</elementReference>
+                <elementReference>formula_2_myWaitEvent_myWait_myRule_1_event_0_SA1_8620734707</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -410,7 +410,7 @@
             </processMetadataValues>
             <field>SMS_Unsubscribe_Reason__c</field>
             <value>
-                <stringValue>No Response Opt-Out</stringValue>
+                <stringValue>No Response Opt-out</stringValue>
             </value>
         </inputAssignments>
         <object>Contact</object>

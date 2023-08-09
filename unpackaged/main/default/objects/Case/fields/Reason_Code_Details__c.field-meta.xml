@@ -23,11 +23,6 @@
                 <label>Account Information (Member ID)</label>
             </value>
             <value>
-                <fullName>Accounting</fullName>
-                <default>false</default>
-                <label>Accounting</label>
-            </value>
-            <value>
                 <fullName>Account Issue (Godzilla, Dummy Account)</fullName>
                 <default>false</default>
                 <label>Account Issue (Godzilla, Dummy Account)</label>
@@ -71,16 +66,6 @@
                 <fullName>Balance Confirmation (Points/Rewards)</fullName>
                 <default>false</default>
                 <label>Balance Confirmation (Points/Rewards)</label>
-            </value>
-            <value>
-                <fullName>BBB Complaint</fullName>
-                <default>false</default>
-                <label>BBB Complaint</label>
-            </value>
-            <value>
-                <fullName>Black Friday Complaint</fullName>
-                <default>false</default>
-                <label>Black Friday Complaint</label>
             </value>
             <value>
                 <fullName>Brand Protection</fullName>
@@ -168,19 +153,9 @@
                 <label>Counterfeit Merchandise</label>
             </value>
             <value>
-                <fullName>Country/State Error</fullName>
-                <default>false</default>
-                <label>Country/State Error</label>
-            </value>
-            <value>
                 <fullName>Coupon Request</fullName>
                 <default>false</default>
                 <label>Coupon Request</label>
-            </value>
-            <value>
-                <fullName>Covet Diamond Request</fullName>
-                <default>false</default>
-                <label>Covet Diamond Request</label>
             </value>
             <value>
                 <fullName>COVID-19 Customer Feedback</fullName>
@@ -253,11 +228,6 @@
                 <label>Duty/Taxes Inquiry</label>
             </value>
             <value>
-                <fullName>eBay</fullName>
-                <default>false</default>
-                <label>eBay</label>
-            </value>
-            <value>
                 <fullName>Edit Account Information</fullName>
                 <default>false</default>
                 <label>Edit Account Information</label>
@@ -293,11 +263,6 @@
                 <label>Expired Reward Extension</label>
             </value>
             <value>
-                <fullName>Explore Page</fullName>
-                <default>false</default>
-                <label>Explore Page</label>
-            </value>
-            <value>
                 <fullName>Front Desk Transfer</fullName>
                 <default>false</default>
                 <label>Front Desk Transfer</label>
@@ -321,11 +286,6 @@
                 <fullName>Gift Card Replacement</fullName>
                 <default>false</default>
                 <label>Gift Card Replacement</label>
-            </value>
-            <value>
-                <fullName>Gift Card Request</fullName>
-                <default>false</default>
-                <label>Gift Card Request</label>
             </value>
             <value>
                 <fullName>Good Service</fullName>
@@ -513,16 +473,6 @@
                 <label>PayPal Authorization Void</label>
             </value>
             <value>
-                <fullName>Payroll</fullName>
-                <default>false</default>
-                <label>Payroll</label>
-            </value>
-            <value>
-                <fullName>PI/PD Removal Request</fullName>
-                <default>false</default>
-                <label>PI/PD Removal Request</label>
-            </value>
-            <value>
                 <fullName>Place Order</fullName>
                 <default>false</default>
                 <label>Place Order</label>
@@ -618,11 +568,6 @@
                 <label>Purchase Gift Card</label>
             </value>
             <value>
-                <fullName>PVH Tool Preferred Points</fullName>
-                <default>false</default>
-                <label>PVH Tool Preferred Points</label>
-            </value>
-            <value>
                 <fullName>Receipt Lookup</fullName>
                 <default>false</default>
                 <label>Receipt Lookup</label>
@@ -671,11 +616,6 @@
                 <fullName>Reward Redemption Issue</fullName>
                 <default>false</default>
                 <label>Reward Redemption Issue</label>
-            </value>
-            <value>
-                <fullName>Risk</fullName>
-                <default>false</default>
-                <label>Risk</label>
             </value>
             <value>
                 <fullName>Security Tag</fullName>
@@ -738,9 +678,9 @@
                 <label>Store Closing Complaint</label>
             </value>
             <value>
-                <fullName>Store Information (Location, Phone, &amp; Hours)</fullName>
+                <fullName>Store Information (Location, Phone &amp; Hours)</fullName>
                 <default>false</default>
-                <label>Store Information (Location, Phone, &amp; Hours)</label>
+                <label>Store Information (Location, Phone &amp; Hours)</label>
             </value>
             <value>
                 <fullName>Store Warning</fullName>
@@ -758,11 +698,6 @@
                 <label>Tax Exempt</label>
             </value>
             <value>
-                <fullName>TH Data Protection – Japan</fullName>
-                <default>false</default>
-                <label>TH Data Protection – Japan</label>
-            </value>
-            <value>
                 <fullName>Tommy Harmonization</fullName>
                 <default>false</default>
                 <label>Tommy Harmonization</label>
@@ -771,11 +706,6 @@
                 <fullName>Tommy Hilfiger Club</fullName>
                 <default>false</default>
                 <label>Tommy Hilfiger Club</label>
-            </value>
-            <value>
-                <fullName>Track It Issue</fullName>
-                <default>false</default>
-                <label>Track It Issue</label>
             </value>
             <value>
                 <fullName>Track Return Shipment</fullName>
@@ -798,11 +728,6 @@
                 <label>Virtual Giftcard</label>
             </value>
             <value>
-                <fullName>Warners/Olga Inquiry</fullName>
-                <default>false</default>
-                <label>Warners/Olga Inquiry</label>
-            </value>
-            <value>
                 <fullName>Website Issue</fullName>
                 <default>false</default>
                 <label>Website Issue</label>
@@ -815,19 +740,7 @@
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Accounting</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
             <valueName>Associate Discount</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>BBB Complaint</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Black Friday Complaint</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
@@ -903,10 +816,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Gift Card Request</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
             <valueName>Human Resources</valueName>
         </valueSettings>
         <valueSettings>
@@ -960,23 +869,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Payroll</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>PI/PD Removal Request</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
             <valueName>Prank/Scam</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
             <valueName>Request W2</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Risk</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
@@ -1000,20 +897,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
-            <controllingFieldValue>Sales</controllingFieldValue>
-            <valueName>Store Information (Location, Phone, &amp; Hours)</valueName>
+            <valueName>Store Information (Location, Phone &amp; Hours)</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
             <valueName>Store Warning</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>TH Data Protection – Japan</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate</controllingFieldValue>
-            <valueName>Warners/Olga Inquiry</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Corporate</controllingFieldValue>
@@ -1122,14 +1010,6 @@
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Discount Inquiry (Senior, Military, Student)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>eBay</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Explore Page</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -1414,14 +1294,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Technical</controllingFieldValue>
-            <valueName>Country/State Error</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Technical</controllingFieldValue>
-            <valueName>Covet Diamond Request</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Technical</controllingFieldValue>
             <valueName>Gift Card Replacement</valueName>
         </valueSettings>
         <valueSettings>
@@ -1450,15 +1322,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Technical</controllingFieldValue>
-            <valueName>PVH Tool Preferred Points</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Technical</controllingFieldValue>
             <valueName>Shoprunner Error</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Technical</controllingFieldValue>
-            <valueName>Track It Issue</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Technical</controllingFieldValue>

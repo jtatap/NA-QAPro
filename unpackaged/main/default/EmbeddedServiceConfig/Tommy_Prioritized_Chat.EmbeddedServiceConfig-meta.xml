@@ -5,7 +5,7 @@
     <deploymentType>Web</deploymentType>
     <embeddedServiceCustomComponents>
         <componentBundleType>AuraDefinitionBundle</componentBundleType>
-        <customComponent>pvhPrechatUISnapin</customComponent>
+        <customComponent>NF_CustomerCare_PreChatForm</customComponent>
         <customComponentType>LA_Prechat</customComponentType>
     </embeddedServiceCustomComponents>
     <embeddedServiceCustomComponents>

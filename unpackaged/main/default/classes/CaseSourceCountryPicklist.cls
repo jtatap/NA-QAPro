@@ -24,7 +24,7 @@ global class CaseSourceCountryPicklist extends VisualEditor.DynamicPickList{
             // listBrands.add(ent.getValue());
             listCaseSourceCountry.add(ent.getLabel());
         }
-       	System.debug('***Got BrandList = '+listCaseSourceCountry);
+       	Log.push('***Got BrandList = '+listCaseSourceCountry);
         
         VisualEditor.DynamicPickListRows  countryNameList = new VisualEditor.DynamicPickListRows();
         for(String getValue : listCaseSourceCountry)
@@ -32,7 +32,8 @@ global class CaseSourceCountryPicklist extends VisualEditor.DynamicPickList{
             VisualEditor.DataRow CountryName = new VisualEditor.DataRow(getValue,getValue);
             countryNameList.addRow(CountryName);
         }
-        System.debug('***brandNameList = '+countryNameList);
+        Log.push('***brandNameList = '+countryNameList);
+        Logger.logDebug();
         return countryNameList;
     }
 }

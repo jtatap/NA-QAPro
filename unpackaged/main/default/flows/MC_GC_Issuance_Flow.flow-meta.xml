@@ -9,17 +9,16 @@
             <stringValue>MC/GC Issuance</stringValue>
         </value>
     </choices>
-    <description>Versioned to change &quot;Total Value&quot; field to support decimals and stop rounding</description>
     <dynamicChoiceSets>
         <name>ActionType</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true" />
-        <object xsi:nil="true" />
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
         <picklistField>Action_Type__c</picklistField>
         <picklistObject>Task</picklistObject>
     </dynamicChoiceSets>
     <interviewLabel>MC/GC Issuance Flow {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>MC/GC Issuance Flow2</label>
+    <label>MC/GC Issuance Flow</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>

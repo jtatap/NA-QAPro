@@ -1,6 +1,6 @@
 global class Batch_PrivacyUnconfirmedCaseArchiver implements Database.Batchable <sObject>{
     global List<Case> start(Database.BatchableContext bc){
-        System.debug('===starting archiver');
+        Log.push('===starting archiver');
         // and status in list of statuses
         Privacy_Intervals__c orgInterval;
         Integer archiveElapsedHours;
@@ -8,12 +8,12 @@ global class Batch_PrivacyUnconfirmedCaseArchiver implements Database.Batchable 
         orgInterval = Privacy_Intervals__c.getValues(Constants.privacyIntervalSettingName);
         archiveElapsedHours = Integer.valueOf(orgInterval.MaxBeforeConfirm__c);
 
-        System.debug('===archiveElapsedHours' + archiveElapsedHours);
+        Log.push('===archiveElapsedHours' + archiveElapsedHours);
 
         List<String> selectedSubTypes = new List<String>(Constants.parentPrivacyCaseSubTypes);
         selectedSubTypes.add(Constants.unsubscribeRequestSubType);
         List<String> selectedTypes = new List<String>{Constants.privacyCaseType, Constants.marketingCaseType};
-
+        Logger.logDebug();
         return [Select Id, Status, Sub_Type__c, Brand__c, SuppliedEmail, ContactId, Brand_Privacy_OWA_Name__c From Case Where Type IN :selectedTypes AND Sub_Type__c In :selectedSubTypes And Hours_Since_Creation__c >= :archiveElapsedHours And Status = :Constants.newPrivacyStatus];
     }
 

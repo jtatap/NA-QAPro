@@ -20,24 +20,5 @@ export default class NfPicklistAsButtons extends LightningElement {
             return 'reasonCodeButton slds-button slds-button_neutral';
         }
     }
-    /*
-    get itemtodisplay() {
-        return this.itemtodisplay;
-    }
-
-    set itemtodisplay(value) {
-        /*
-        if(value == null || value === undefined){
-            return;
-        }
-        console.log('JSON.stringify(value) ' +  JSON.stringify(value) );
-        this.itemtodisplay = JSON.parse(JSON.stringify(value));
-
-        if(this.currentreasoncode ===  this.itemtodisplay.value ) {
-            this.buttonClass = "slds-button slds-button_neutral slds-button_brand";
-        } else {
-            this.buttonClass = "slds-button slds-button_neutral";
-        }
-    }
-*/
+    
 }

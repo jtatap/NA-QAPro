@@ -1,6 +1,8 @@
-@isTest
+@isTest(isParallel=false)
 public class ContactDataExtractionTest {
-    @isTest static void testdoSignup(){
+
+    @TestSetup
+    static void makeData(){
         Account acc = new Account(Name=System.Label.PlaceHolderAccountName);
         String recordTypeId = Schema.SObjectType.Contact.getRecordTypeInfosByDeveloperName().get('Email').getRecordTypeId();
         insert acc;
@@ -34,6 +36,9 @@ public class ContactDataExtractionTest {
         objContStg.Subscriber_Key__c=con.id;
         //objContStg.SFSC_Contact_Id__c = con.id;
         insert objContStg;
+    }
+    @isTest static void testdoSignup(){
+        
         Test.startTest();
         ContactDataExtraction c = new ContactDataExtraction();
         Database.executeBatch(c);

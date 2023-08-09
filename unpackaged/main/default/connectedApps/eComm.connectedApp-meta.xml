@@ -4,7 +4,7 @@
     <label>eComm</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxeFJBFlFG90ZNdsAC1mbenUGjXNuwtVBfmH26t4Bs0VSuVDTOqwyWTGdTo9d</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

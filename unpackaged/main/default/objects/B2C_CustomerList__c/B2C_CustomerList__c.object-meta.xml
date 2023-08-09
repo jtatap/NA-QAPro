@@ -174,10 +174,9 @@
         <customTabListAdditionalFields>Is_Active__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Total_Sites__c</customTabListAdditionalFields>
         <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
-        <excludedStandardButtons>Accept</excludedStandardButtons>
-        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
-        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
         <lookupDialogsAdditionalFields>B2C_Instance__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>B2C_Client_ID__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Is_Active__c</lookupDialogsAdditionalFields>

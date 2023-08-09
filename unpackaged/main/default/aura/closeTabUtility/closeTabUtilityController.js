@@ -48,14 +48,7 @@
                 objTemp[tabIdResp] = tabRecId;
                 console.log("value after iteration"+i+" - " + objTemp);
 
-                /*if (response[i].title == 'Unable to load') {
-                    workspaceAPI.disableTabClose({
-                        tabId: response[i].tabId,
-                        disabled: false
-                    });
-
-                    workspaceAPI.closeTab({tabId: response[i].tabId});
-                }*/
+                
             }
 
             console.log('NEW tabs START');
@@ -95,14 +88,7 @@
                 objTemp[tabIdResp] = tabRecId;
                 console.log("value after iteration"+i+" - " + objTemp);
 
-                /*if (response[i].title == 'Unable to load') {
-                    workspaceAPI.disableTabClose({
-                        tabId: response[i].tabId,
-                        disabled: false
-                    });
-
-                    workspaceAPI.closeTab({tabId: response[i].tabId});
-                }*/
+                
             }
 
             console.log('NEW tabs START');

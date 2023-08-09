@@ -197,6 +197,43 @@ public class Subscriptions_EmailMarketingOptInTest {
         System.assertEquals('02', returnContact.WelcomeSource__c);
     }
     
+    
+    
+    @isTest static void testDoSignupWeCampaign(){
+        //Test for welcome sourse WE_CAMPAIGN 
+        Contact conRec = createContact();
+        Subscriptions_EmailMarketingOptIn.SFCCRequest sfccReq = new Subscriptions_EmailMarketingOptIn.SFCCRequest();
+        Subscriptions_EmailMarketingOptIn.SFCCResponse  sfccRes = new Subscriptions_EmailMarketingOptIn.SFCCResponse();
+        sfccReq.firstName = 'TEST NAME1';
+        sfccReq.lastName = 'TEST NAME2';
+        sfccReq.brandId = '2';
+        sfccReq.emailAddress ='test@yopemail.com';
+        sfccReq.region = 'Americas';
+        sfccReq.country = 'US';
+        sfccReq.DOB = '/1904';
+        sfccReq.market = 'NA';
+        sfccReq.sourceSystem = 'ecom';
+        sfccReq.requestType = 'Subscribe';
+        sfccReq.EmailOrgSource = 'WE_CAMPAIGN';
+        sfccReq.campaignName='ProjectBlue';
+        Test.startTest();
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();
+        String jsonMsg=JSON.serialize(sfccReq);
+        req.requestURI = '/Subscriptions/EmailMarketingOptIn';  //Request URL
+        req.httpMethod = 'POST';//HTTP Request Type
+        req.requestBody = Blob.valueof(jsonMsg);
+        RestContext.request = req;
+        RestContext.response= res;
+        sfccRes = Subscriptions_EmailMarketingOptIn.doSignup();
+        Test.stopTest();
+        System.assertEquals(res.statusCode, 200);
+        System.assertEquals('OK', sfccRes.code);
+        System.assertEquals('Success', sfccRes.message);
+        Contact returnContact = [SELECT Id, WelcomeSource__c, EmailOrigSource__c FROM Contact WHERE Id =: sfccRes.Subscriberkey];
+        System.assertEquals('07', returnContact.WelcomeSource__c);
+    }
+    
     @isTest static void testDoSignupUnSubscribe(){
         //Test for Email optin request for UnSubscribe
         Contact conRec = createContact();

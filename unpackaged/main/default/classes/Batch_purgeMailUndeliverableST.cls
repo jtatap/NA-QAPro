@@ -8,8 +8,10 @@ global class Batch_purgeMailUndeliverableST implements Database.Batchable <sObje
     String QueryString = Null;
     
     global Database.QueryLocator start(Database.BatchableContext bc){
-        QueryString = 'SELECT Id, CreatedDate FROM DirectMailUndeliverablesStaging__c ';
-        System.debug('QueryString: '+ QueryString);
+        NF_Batch_Control__mdt batchMeta = NF_Batch_Control__mdt.getInstance('Batch_purgeMailUndeliverableST');
+        QueryString = batchMeta.Query_String__c;
+        Log.push('QueryString: '+ QueryString);
+        Logger.logDebug();
         return Database.getQueryLocator(QueryString);
     }
     
@@ -22,24 +24,25 @@ global class Batch_purgeMailUndeliverableST implements Database.Batchable <sObje
             integer datediff = CreatedDate.daysBetween(Today);
                    
                     if(datediff > 21){
-                    System.debug('>>>Records Add in IREStagingList');
+                    Log.push('>>>Records Add in IREStagingList');
                     DirectMailUndeliverableStagingList.add(DMS);
                 }
             } 
             
         
-        System.debug('DirectMailUndeliverableStagingList size: '+ DirectMailUndeliverableStagingList.size());
+        Log.push('DirectMailUndeliverableStagingList size: '+ DirectMailUndeliverableStagingList.size());
         
         if(DirectMailUndeliverableStagingList.size()>0){
             List<Database.DeleteResult> results = Database.Delete(DirectMailUndeliverableStagingList, false);
             for (Database.DeleteResult result : results) {
                 if (!result.isSuccess()){
                     for (Database.Error err : result.getErrors()){
-                        System.debug('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
+                        Log.push('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
                     }
                 }
             }
-        } 
+        }
+        Logger.logDebug(); 
     }
     
     global void finish(Database.BatchableContext bc){

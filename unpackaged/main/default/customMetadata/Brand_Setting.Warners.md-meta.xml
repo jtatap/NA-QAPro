@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>Brand_website_link__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">https://help.warners.com/s/</value>
     </values>
     <values>
         <field>Community_Id__c</field>

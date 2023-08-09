@@ -28,6 +28,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>BatchProcess__c.OutputFileName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>BatchProcess__c.Sequence__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -39,6 +44,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ContactStaging2__c.B2C_CustomerList__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContactStaging2__c.B2C_Customer_No__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -123,6 +133,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ContactStaging2__c.Output_File_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ContactStaging2__c.Point_Balance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -139,6 +154,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ContactStaging2__c.Seuqence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContactStaging2__c.Subscriber_Key__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -320,16 +340,4 @@
         <object>Contact_Staging__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <tabSettings>
-        <tab>BatchProcess__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>ContactStaging2__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>Contact_Staging__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
 </PermissionSet>

@@ -2,7 +2,7 @@
  * Created by apoorvrajput on 10/10/20.
  */
 
-@IsTest
+@IsTest(isParallel=false)
 private class NF_GetBrandFromConstantsTest {
     @IsTest
     static void test1NoRecordFound() {

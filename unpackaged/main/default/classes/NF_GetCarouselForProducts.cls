@@ -17,7 +17,7 @@ public with sharing class NF_GetCarouselForProducts {
     @InvocableMethod(label='Neuraflash - Get Carousal for Products')
     public static void getResponse(List<Input> input){
         String payloadCard = '' ;
-        if (input[0].brandName == 'Calvin Klein') {
+        if (input[0].brandName == SYSTEM.LABEL.Calvin_Klein) {
             payloadCard = '<div class = \'carousel\'> <div class=\'Rectangle\'><table class=\'productsTable\'><tbody><tr><td style=\'text-align:center\'><a href=\'https://www.calvinklein.us/en/womens-clothing/womens-apparel/womens-shop-all?ab=homepage_desktop_1\'>Womens</a></td></tr><tr><td style=\'text-align:center\'><a href=\'https://www.calvinklein.us/en/mens-clothing/mens-apparel/mens-shop-all?ab=homepage_desktop_2\'>Mens</a></td></tr><tr><td style=\'text-align:center\'><a href=\'https://www.calvinklein.us/en/kids-clothing\'>Kids</a></td></tr><tr><td style=\'text-align:center\'><a href=\'https://www.calvinklein.us/en/underwear\'>Underwear</a></td></tr><tr><td style=\'text-align:center\'><a href=\'https://www.calvinklein.us/en/home-decor-collection\'>Home</a></td></tr></tbody></table></div></div>';
         }
         else {
@@ -35,8 +35,9 @@ public with sharing class NF_GetCarouselForProducts {
             update session;
         }
         else {
-            System.debug('session not found');
+            Log.push('session not found');
             NF_Util.insertSession(input[0].chatKey,finalDynamicPayload, input[0].brandName);
+            Logger.logDebug();
         }
     }
 

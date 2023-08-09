@@ -23,17 +23,17 @@ global class ContactExtractionProcess implements Database.Batchable <sObject>, D
         for(ContactStaging2__c cs1: conStgList){
             emailIds.add(cs1.Email__c);
         }//For TH please include SMS related fields in the below query
-        List<Contact> conList = [SELECT id,Email,Brand_Id__c,Point_Balance__c,Deceased__c,Bulk_Buyer__c,Bulk_Buyer_Update_Date__c, Fraud__c,WelcomeSource__c,Loyalty_Optin_Date__c,LoyaltyFlag__c,LoyaltyID__c,EmailOptInStatus__c, EmailOptInDate__c, EmailOptOutDate__c, Latest_Source__c, AccountId, lastmodifieddate, SMSNumber__c, SMSOptinStatus__c, SMSOptOutDate__c, SMSOptInDate__c, PrefCenterInterests__c, HomeStore__c,StoreOfCapture__c
+        List<Contact> conList = [SELECT id,Email,Brand_Id__c,Point_Balance__c,Deceased__c,Bulk_Buyer__c,Bulk_Buyer_Update_Date__c, Fraud__c,WelcomeSource__c,Loyalty_Optin_Date__c,LoyaltyFlag__c,LoyaltyID__c,EmailOptInStatus__c, EmailOptInDate__c, EmailOptOutDate__c, Latest_Source__c, AccountId, lastmodifieddate, SMSNumber__c, SMSOptinStatus__c, SMSOptOutDate__c, SMSOptInDate__c, PrefCenterInterests__c, HomeStore__c,StoreOfCapture__c,FirstName,LastName
                                  FROM contact WHERE Email IN :emailIds AND Brand_Id__c IN('1','2')];
         finalConList.addAll(conList);
         
         }
     global void finish(Database.BatchableContext BC){
         //For TH please include SMS related fields in the below header and line no 36 for values
-        string header = 'Sub_Key,Email,Brand_Id__c,Point_Balance__c,Deceased__c,Bulk_Buyer__c,Bulk_Buyer_Update_Date__c,Fraud__c,WelcomeSource__c,Loyalty_Optin_Date__c,LoyaltyFlag__c,LoyaltyID__c,EmailOptInStatus__c,EmailOptInDate__c,EmailOptOutDate__c,Latest_Source__c,AccountId,LastModifiedDate\n';
+        string header = 'Sub_Key,Email,Brand_Id__c,Point_Balance__c,Deceased__c,Bulk_Buyer__c,Bulk_Buyer_Update_Date__c,Fraud__c,WelcomeSource__c,Loyalty_Optin_Date__c,LoyaltyFlag__c,LoyaltyID__c,EmailOptInStatus__c,EmailOptInDate__c,EmailOptOutDate__c,Latest_Source__c,AccountId,LastModifiedDate,SMSNumber__c,SMSOptinStatus__c,SMSOptOutDate__c,SMSOptInDate__c,PrefCenterInterests__c,HomeStore__c,StoreOfCapture__c,FirstName,LastName\n';
         string finalstr = header;
         for(Contact c: finalConList){
-            string recordString = c.id+','+c.Email+','+c.Brand_Id__c+','+c.Point_Balance__c+','+c.Deceased__c+','+c.Bulk_Buyer__c+','+c.Bulk_Buyer_Update_Date__c+','+c.Fraud__c+','+c.WelcomeSource__c+','+c.Loyalty_Optin_Date__c+','+c.LoyaltyFlag__c+','+c.LoyaltyID__c+','+c.EmailOptInStatus__c+','+c.EmailOptInDate__c+','+c.EmailOptOutDate__c+','+c.Latest_Source__c+','+c.AccountId+','+c.lastmodifieddate+ ',' + c.SMSNumber__c +  ',' + c.SMSOptinStatus__c + ',' + c.SMSOptOutDate__c + ',' + c.SMSOptInDate__c + ',' + c.PrefCenterInterests__c + ',' + c.HomeStore__c + ',' + c.StoreOfCapture__c + '\n';            
+            string recordString = c.id+','+c.Email+','+c.Brand_Id__c+','+c.Point_Balance__c+','+c.Deceased__c+','+c.Bulk_Buyer__c+','+c.Bulk_Buyer_Update_Date__c+','+c.Fraud__c+','+c.WelcomeSource__c+','+c.Loyalty_Optin_Date__c+','+c.LoyaltyFlag__c+','+c.LoyaltyID__c+','+c.EmailOptInStatus__c+','+c.EmailOptInDate__c+','+c.EmailOptOutDate__c+','+c.Latest_Source__c+','+c.AccountId+','+c.lastmodifieddate+ ',' + c.SMSNumber__c +  ',' + c.SMSOptinStatus__c + ',' + c.SMSOptOutDate__c + ',' + c.SMSOptInDate__c + ',' + c.PrefCenterInterests__c + ',' + c.HomeStore__c + ',' + c.StoreOfCapture__c + ',' + c.FirstName + ',' + c.LastName + '\n';            
             finalstr = finalstr +recordString;
         }
         /*Messaging.EmailFileAttachment csvAttc = new Messaging.EmailFileAttachment();

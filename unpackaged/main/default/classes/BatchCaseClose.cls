@@ -13,9 +13,10 @@ global class BatchCaseClose implements Database.Batchable <sObject>{
     global Database.QueryLocator start(Database.BatchableContext bc){
         
         
-        QueryString = 'SELECT Id, Status, Type, RecordTypeId, LastModifiedDate, CreatedDate, ClosedDate  FROM Case ' + 
-            'WHERE  ParentId != Null And Is_Milestone_Violated__c = True';
-        System.debug('QueryString: '+ QueryString);
+        NF_Batch_Control__mdt batchMeta = NF_Batch_Control__mdt.getInstance('BatchCaseClose');
+        QueryString = batchMeta.Query_String__c;
+        Log.push('QueryString: '+ QueryString);
+        Logger.logDebug();
         return Database.getQueryLocator(QueryString);
     }
     
@@ -28,11 +29,11 @@ global class BatchCaseClose implements Database.Batchable <sObject>{
             integer datediff = CreatedDate.daysBetween(Today);
             
             if((c.Type == 'Support') && (c.Is_Milestone_Violated__c = True)){
-                System.debug('>>>Support Record Check');
+                Log.push('>>>Support Record Check');
                 
                 
                 if(datediff > 4){
-                    System.debug('>>>Support child case Record Closed');
+                    Log.push('>>>Support child case Record Closed');
                     c.Status = 'Closed';
                     c.RecordTypeId = SupportReadOnlyRecordId;
                     caseList.add(c);
@@ -40,18 +41,19 @@ global class BatchCaseClose implements Database.Batchable <sObject>{
             } 
             
         }
-        System.debug('Caselist size: '+caseList.size());
+        Log.push('Caselist size: '+caseList.size());
         
         if(caseList.size()>0){
             List<Database.SaveResult> results = Database.update(caseList, false);
             for (Database.SaveResult result : results) {
                 if (!result.isSuccess()){
                     for (Database.Error err : result.getErrors()){
-                        System.debug('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
+                        Log.push('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
                     }
                 }
             }
-        }      
+        }
+        Logger.logDebug();      
     }
     global void finish(Database.BatchableContext bc){
         

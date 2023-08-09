@@ -6,8 +6,9 @@
 private class NF_BotSessionPopulateFieldsTest {
     @IsTest
     static void testBehavior() {
+        Test.startTest();
         String chatKey = NF_UtilTest.createLiveChatTranscript('Calvin Klein');
-
+		NF_BotSessionPopulateFieldsTest nf = new NF_BotSessionPopulateFieldsTest();
         List<LiveChatTranscript> listTranscripts = new List<LiveChatTranscript>();
 
         try {
@@ -28,7 +29,13 @@ private class NF_BotSessionPopulateFieldsTest {
 
 
         ebotdata__Bot_Session__c sessionNew = NF_Util.getBotSession(chatKey);
-
+        Test.stopTest();
         System.assertEquals(transcript.Brand__c,sessionNew.Brand__c);
     }
+    
+    @isTest
+    static void instantiateClass(){
+        NF_BotSessionPopulateFields bspf = new NF_BotSessionPopulateFields();
+    }
+        
 }

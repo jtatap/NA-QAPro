@@ -1,11 +1,11 @@
 @font-face {
   font-family: "klein65";
-  src: url("../fonts/Klein-65Medium.otf?orgId=00D1U000000xmv4&orgId=00D1U000000xmv4&orgId=00D040000004cRH&orgId=00D2C000000Cmsr&orgId=00D1U000000xmv4&orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9&orgId=00D6w0000008as9") format("opentype");
+  src: url("../fonts/Klein-65Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "klein55";
-  src: url("../fonts/Klein-55Regular.otf?orgId=00D1U000000xmv4&orgId=00D1U000000xmv4&orgId=00D040000004cRH&orgId=00D2C000000Cmsr&orgId=00D1U000000xmv4&orgId=00D1U000000xmv4&orgId=00D6w0000008as9&orgId=00D7X000000E9p9&orgId=00D6w0000008as9") format("opentype");
+  src: url("../fonts/Klein-55Regular.otf") format("opentype");
 }
 
 .embeddedServiceSidebar.modalContainer {
@@ -31,7 +31,8 @@
 .embeddedServiceHelpButton .helpButton button.uiButton, .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
   background-color: white !important;
   border-radius: 100% !important;
-  top: 0px !important;
+  /* top: 0px !important; */
+  bottom: 20px !important;
   min-width: 0px !important;
   width: 45px !important;
   height: 45px !important;
@@ -337,7 +338,7 @@ body > div.modalContainer.sidebarMaximized.layout-docked.embeddedServiceSidebar 
   margin-bottom: 0px;
 }
 
-.embeddedServiceSidebar > select:focus, .embeddedServiceSidebar textarea, .embeddedServiceSidebar input {
+.embeddedServiceSidebar > select:focus, textarea, input {
   font-size: 16px !important;
 }
 
@@ -506,7 +507,7 @@ button.helpButtonEnabled.uiButton:hover {
 
 @media screen and (max-device-width: 480px) {
   .embeddedServiceHelpButton .helpButton {
-    top: 0px;
+    top: unset;
   }
   
   .embeddedServiceSidebar.layout-docked .dockableContainer.showDockableContainer {
@@ -521,7 +522,6 @@ button.helpButtonEnabled.uiButton:hover {
   .embeddedServiceHelpButton .helpButton button.uiButton, .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
     background-color: white !important;
     border-radius: 100% !important;
-    top: 0px !important;
     min-width: 0px !important;
     width: 36px !important;
     height: 36px !important;
@@ -530,6 +530,8 @@ button.helpButtonEnabled.uiButton:hover {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 3px 3px grey !important;
+    bottom: 12px !important;
+    top: unset !important;
   }
   
   .embeddedServiceHelpButton .helpButton .embeddedServiceIcon {
@@ -602,6 +604,10 @@ button.helpButtonEnabled.uiButton:hover {
     border-top: 5px solid black !important;
     border-left: 8px solid transparent !important;
   }
+
+    .embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput{
+    font-size: 16px !important;
+  }
 }
 
 .containerDiv[ebcm-einsteinBotMiniCardContainer_einsteinBotMiniCardContainer] {
@@ -612,4 +618,8 @@ button.helpButtonEnabled.uiButton:hover {
 .slds-m-around_none.minicard-title-text {
   font-size: 12px;
   text-align: left;
+}
+
+button.dialogButton {
+    margin-bottom: 5px !important;
 }

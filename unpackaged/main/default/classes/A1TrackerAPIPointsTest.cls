@@ -1,8 +1,9 @@
 @isTest
 public class A1TrackerAPIPointsTest {
-    static Map<String, String> responseHeaders = new Map<String, String>();
+     static Map<String, String> responseHeaders = new Map<String, String>();     
     static void testDatasetup(){
-                Account genAcc = new Account();
+        
+        Account genAcc = new Account();
         genAcc.Name = 'generic Account' + Math.random();
         insert genAcc;
         
@@ -24,15 +25,16 @@ public class A1TrackerAPIPointsTest {
                 recordId__c = genAcc.Id
         );
         insert genRecAcct;
+        
         Contact con = new Contact(FirstName='Test',LastName='User',Brand_Id__c='2', LoyaltyID__c='123456789',Email='testUser@nomail.com');
         insert con;
-        System.debug(con.Id);
+        Log.push(con.Id);
         Case cas = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id);
         insert cas;
-        System.debug('Case contact '+cas.ContactId+'--'+cas.Contact.Brand_Id__c);
-        
+        Log.push('Case contact '+cas.ContactId+'--'+cas.Contact.Brand_Id__c);
+        Logger.logDebug();
     }
-
+    
     @isTest
     static void futurePostTrackerAPIEventstest(){
         DateTime myDateTime = datetime.newInstance(2019, 9, 15, 12, 30, 0);
@@ -42,7 +44,7 @@ public class A1TrackerAPIPointsTest {
         Contact con = new Contact(FirstName='Test',LastName='User',Brand_Id__c='2', LoyaltyID__c='123456789',Email='testUser@nomail.com');
         insert con;
         //Case cas = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id);
-        Case cas = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id,PointsAdjustmentTimeStamp__c=myDateTime,PointsGranted__c=100,LoyaltyComments__c='Testing');
+        Case cas = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id,PointsAdjustmentTimeStamp__c=myDateTime,PointsGranted__c=100,LoyaltyComments__c='Testing',Reason_Code__c='Returns');
         caseList.add(cas);
         /*
         Case cas1 = new Case(Origin='Email',Status='New',Brand__c='2',Subject='Test Case',ContactId=con.Id);
@@ -53,19 +55,20 @@ public class A1TrackerAPIPointsTest {
         caseList.add(cas3);
 		*/
         insert caseList;
-        System.debug('***inserted case='+caseList[0]);
+        Log.push('***inserted case='+caseList[0]);
         responseHeaders.put('Content-Type', 'application/json');
         SingleRequestMock fakeResponse = new SingleRequestMock(200,
-                'OK',
-                '{"access_token":"ecdc4492-8a1c-4f03-b9ad-6b9db87f61a1","token_type":"bearer","expires_in":15445210}',
-                responseHeaders);
-        Test.setMock(HttpCalloutMock.class, fakeResponse);
+                                                 'OK',
+                                                 '{"access_token":"ecdc4492-8a1c-4f03-b9ad-6b9db87f61a1","token_type":"bearer","expires_in":15445210}',
+                                                 responseHeaders);
+        Test.setMock(HttpCalloutMock.class, fakeResponse);  
         Map<Id,Case> cases = new Map<Id,Case>([SELECT Id FROM Case limit 100]);
         List<Id> caseId = new List<Id>(cases.keySet());
         List<Id> listCasesIds = new List<Id>();
         listCasesIds.add(caseList[0].Id);
         A1TrackerAPIPoints.invokePostTrackerAPIPoints(listCasesIds);
         Test.stopTest();
+        Logger.logDebug();
     }
 
 }

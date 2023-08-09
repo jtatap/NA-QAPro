@@ -5,7 +5,7 @@
         <name>Update_Case_Fields</name>
         <label>Update Case Fields</label>
         <locationX>314</locationX>
-        <locationY>398</locationY>
+        <locationY>518</locationY>
         <assignmentItems>
             <assignToReference>recordId.IsEscalated</assignToReference>
             <operator>Assign</operator>
@@ -44,7 +44,7 @@
         <locationX>182</locationX>
         <locationY>278</locationY>
         <defaultConnector>
-            <targetReference>Update_Case_Fields</targetReference>
+            <targetReference>EscalationMessageScreen</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Move on to Escalation</defaultConnectorLabel>
         <rules>
@@ -112,7 +112,7 @@
         <name>Escalate_Case</name>
         <label>Escalate Case</label>
         <locationX>314</locationX>
-        <locationY>518</locationY>
+        <locationY>638</locationY>
         <connector>
             <targetReference>Escalation_Success</targetReference>
         </connector>
@@ -142,7 +142,7 @@
         <name>Error_Message</name>
         <label>Error Message</label>
         <locationX>578</locationX>
-        <locationY>638</locationY>
+        <locationY>758</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -158,7 +158,7 @@
         <name>Escalation_Success</name>
         <label>Escalation_Success</label>
         <locationX>314</locationX>
-        <locationY>638</locationY>
+        <locationY>758</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -169,6 +169,25 @@
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>EscalationMessageScreen</name>
+        <label>EscalationMessageScreen</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Case_Fields</targetReference>
+        </connector>
+        <fields>
+            <name>EscalationCheckScreen</name>
+            <fieldText>&lt;p&gt;By clicking next, you will escalate this Case. If you are sure you are ready to escalate, please click Next.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
     </screens>
     <start>
         <locationX>56</locationX>

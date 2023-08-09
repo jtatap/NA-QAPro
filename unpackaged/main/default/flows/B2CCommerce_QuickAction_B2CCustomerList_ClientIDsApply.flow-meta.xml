@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <decisions>
         <description>... evaluate if the current CustomerList has a valid ClientID?</description>
         <name>dec_wasB2CClientIDFound</name>
@@ -28,6 +28,7 @@
         </rules>
     </decisions>
     <description>... apply the ClientID value configured for a given B2C CustomerList to all child Sites.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: QuickAction: B2C CustomerList: ClientIDs: Apply {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: B2C CustomerList: Sites: B2C ClientIDs: Apply</label>
     <processMetadataValues>

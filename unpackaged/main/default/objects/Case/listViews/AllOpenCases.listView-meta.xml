@@ -2,21 +2,34 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AllOpenCases</fullName>
     <columns>CASES.CASE_NUMBER</columns>
-    <columns>CASES.RECORDTYPE</columns>
     <columns>Brand__c</columns>
     <columns>NAME</columns>
     <columns>CASES.ORIGIN</columns>
-    <columns>CASES.SUBJECT</columns>
-    <columns>Privacy_Escalation_Email__c</columns>
     <columns>CASES.STATUS</columns>
     <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
     <columns>OWNER_NAME</columns>
+    <columns>Brand_Lookup_Search__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>CASES.STATUS</field>
         <operation>equals</operation>
         <value>Open</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Ecomm Queue,Retail Queue,Brand Interactions Queue,Ericka Guevara,Caroline Grady,Cheryl Ritchwood,Hymein Hill,Aliyah Caiazzo,Elizabeth Cruz,Spam Queue</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Robin Doherty,Jasen Nemeth,Charles Orens,Soant Rios,Ioannis Mimidas,Alexis Rios</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>zQueue Robin Doherty,zQueue Elizabeth Cruz,zQueue Aliyah Caiazzo,zQueue Ericka Guevara,zQueue Cheryl Ritchwood,zQueue Charles Orens</value>
     </filters>
     <label>All Open Cases</label>
     <sharedTo>

@@ -75,7 +75,7 @@
         </inputParameters>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the active B2C Site Count to a local variable.</description>
         <name>asn_activeB2CSites</name>
@@ -624,6 +624,7 @@
         <sortOrder>Asc</sortOrder>
         <valueField>Name</valueField>
     </dynamicChoiceSets>
+    <environments>Default</environments>
     <formulas>
         <description>... evaluates which storefrontUrl to leverage -- the internalUrl or the customUrl driven by the urlType configuration.</description>
         <name>frm_selectedStorefrontUrl</name>
@@ -1819,7 +1820,7 @@
             <targetReference>recGet_activeB2CSites</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <description>... records the number of active customerLists present.</description>
         <name>activeB2CCustomerListCount</name>

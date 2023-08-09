@@ -1,0 +1,61 @@
+<!--
+ - Created by mcasella on 9/11/20.
+ -->
+
+<aura:component implements="lightningsnapin:prechatUI" description="pre-chat component" controller="NF_PreChatFormCustomerCareController">
+    <!-- Pre-chat field components to render -->
+    <aura:attribute name="FirstName" type="String" />
+    <aura:attribute name="LastName" type="String" />
+    <aura:locator target="startButton" description="Pre-chat form submit button." />
+    <aura:attribute name="prechatFieldComponents" type="List" description="An array of objects representing the pre-chat fields specified in pre-chat setup." />
+    <aura:attribute name="preChatFieldsList" type="Object" description=" object of all preChatfields" />
+    <aura:attribute name="brand" type="String" description="Brand the chat is on" />
+
+    <div id="loadingContainer">
+        <lightning:spinner alternativeText="Loading" size="small" />
+        <div style="position: absolute; top: calc(50% + 20px); left: 0; right: 0;">Loading...</div>
+    </div>
+
+    <!-- Handler for when this component is initialized -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <lightningsnapin:prechatAPI aura:id="prechatAPI" />
+
+
+
+    <div id="privacyPolicyContainer" class="prechatContainer chatUnavailable" style="display: none;">
+        <aura:if isTrue="{!v.brand == 'Tommy Hilfiger' }">
+            <div class='privacy_tommyHilfiger'>
+                <div class="socialHi">
+                    <h2>
+                        <strong>
+                            Hello!
+                        </strong>
+                    </h2>
+                </div>
+                <p>Click below to chat with the Tommy Hilfiger Digital Assistant</p>
+                <p>All chats may be recorded and used by our third-party partners, consistent with our <a href='https://usa.tommy.com/en/customerservice/privacy-policy'>Privacy Policy</a>.</p>
+                <div class="startButtonWrapper">
+                    <ui:button aura:id="startButton" class="startButton" label="Start Chat" press="{!c.handleStartButtonClick}"></ui:button>
+                </div>
+
+            </div>
+            <aura:set attribute="else">
+                <div class='privacy_calvinKlein'>
+                    <div class="socialHi">
+                        <h2>
+                            <strong>
+                                Hello!
+                            </strong>
+                        </h2>
+                    </div>
+                    <p>Click below to chat with the Calvin Klein Digital Assistant</p>
+                    <p>All chats may be recorded and used by our third-party partners, consistent with our <a href='https://www.calvinklein.us/en/privacy.html#privacyComt'>Privacy Policy</a>.</p>
+                    <div class="startButtonWrapper">
+                        <ui:button aura:id="startButton" class="startButton" label="Start Chat" press="{!c.handleStartButtonClick}"></ui:button>
+                    </div>
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

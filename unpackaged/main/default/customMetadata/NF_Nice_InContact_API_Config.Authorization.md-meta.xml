@@ -32,15 +32,19 @@
     </values>
     <values>
         <field>Request_Body__c</field>
-        <value xsi:type="xsd:string">{&quot;grant_type&quot;:&quot;password&quot;,&quot;username&quot;:&quot;TableauCRMapi@pvh.com&quot;,&quot;password&quot;:&quot;Admin2021!&quot;,&quot;scope&quot;:&quot;&quot;}</value>
+        <value xsi:type="xsd:string">{
+    &quot;accessKeyId&quot;: &quot;4G35JEZUZRS5FNT4WLBQU2RQAVFDNCK4MQLMYRT6YNRVGAE6CCPA====&quot;,
+
+    &quot;accessKeySecret&quot;: &quot;73VQJ2PCQT32RCJCF3EEZXU36QVMIR5HGC3PNHDBB55QCHQYE2VQ====&quot;
+}</value>
     </values>
     <values>
         <field>Request_Endpoint__c</field>
-        <value xsi:type="xsd:string">https://api.incontact.com/InContactAuthorizationServer/Token</value>
+        <value xsi:type="xsd:string">https://na1.nice-incontact.com/authentication/v1/token/access-key</value>
     </values>
     <values>
         <field>Request_Headers__c</field>
-        <value xsi:type="xsd:string">{&quot;Authorization&quot;:&quot;basic VGFibGVhdV9DUk1AU2FsZXNmb3JjZVNlcnZpY2VDbG91ZDo0NTk4Njg1&quot;, &quot;Content-Type&quot;:&quot;application/json&quot;}</value>
+        <value xsi:type="xsd:string">{ &quot;Content-Type&quot; :&quot;application/json&quot; }</value>
     </values>
     <values>
         <field>Request_Timeout__c</field>
@@ -52,7 +56,7 @@
     </values>
     <values>
         <field>Sample_Response_Used_in_test_class__c</field>
-        <value xsi:type="xsd:string">&quot;access_token&quot;:&quot;testToken&quot;,&quot;expires_in&quot;:3600,&quot;resource_server_base_uri&quot;:&quot;https://api.incontact.com&quot;</value>
+        <value xsi:type="xsd:string">&quot;access_token&quot;:&quot;testToken&quot;,&quot;expires_in&quot;:3600,&quot;resource_server_base_uri&quot;:&quot;https://na1.nice-incontact.com&quot;</value>
     </values>
     <values>
         <field>Specific_Ids__c</field>

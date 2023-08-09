@@ -32,11 +32,11 @@
     </values>
     <values>
         <field>PDR_Link__c</field>
-        <value xsi:type="xsd:string">https://pvhservicecloud--qapro.sandbox.my.site.com/olga/s/personal-data-request</value>
+        <value xsi:type="xsd:string">https://pvhservicecloud--uat.sandbox.my.site.com/olga/s/personal-data-request</value>
     </values>
     <values>
         <field>Privacy_Policy_Link__c</field>
-        <value xsi:type="xsd:string">https://olgaintimates.com/privacy</value>
+        <value xsi:type="xsd:string">https://www.pvh.com/privacy-policy</value>
     </values>
     <values>
         <field>Success_Email_Template__c</field>

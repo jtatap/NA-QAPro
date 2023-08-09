@@ -1,0 +1,30 @@
+@font-face { 
+    font-family: calvinfont; 
+	src: url(../resource/calvinfont);
+}
+button {
+    border-radius: 0px !important;
+}
+.slds-button_brand, .slds-button--brand{
+    line-height: 48px;
+    font-size: 15px !important;
+    font-weight: 500;
+    padding: 0;
+    background: #000;
+    width: 300px;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase !important;
+    width:100%;
+    border: none;
+}
+.slds-input{
+    border-radius: 0px;
+}
+.slds-textarea{
+    border-radius: 0px;
+}
+lightning-helptext{
+    display: none;
+}
+:root { --dxp-c-section-columns-max-width: 1170px; }

@@ -107,7 +107,8 @@ public without sharing class NF_MinicardBuilder {
             listOfCards.remove(index);
             NUMBER_OF_CARDS--;
         } else {
-            System.debug('>> Cannot remove minicard, index invalid!');
+            Log.push('>> Cannot remove minicard, index invalid!');
+            Logger.logDebug();
         }
     }
 

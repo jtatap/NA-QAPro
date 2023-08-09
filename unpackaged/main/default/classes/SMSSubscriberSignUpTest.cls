@@ -37,7 +37,7 @@ public class SMSSubscriberSignUpTest {
     
     @isTest
     public static void doSMSSignUp_missingParameters(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -50,8 +50,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '15555555551';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
-        //newCon.SMSLocale__c  =smsRequest.locale;
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -59,12 +57,13 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
         System.assertEquals('MISSING_PARAMETERS', responseObj.code);
     }
     
     @isTest
     public static void doSMSSignUp_OptIn_1(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -77,7 +76,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '7878787878';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -85,11 +83,13 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
+        System.assertEquals('OK', responseObj.code);
     }
     
     @isTest
     public static void doSMSSignUp_OptIn_2(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -102,7 +102,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '7878787878';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -110,11 +109,13 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
+        System.assertEquals('OK', responseObj.code);
     }
     
     @isTest
     public static void doSMSSignUp_OptIn_3(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -127,7 +128,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '15555555556';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -135,11 +135,13 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
+        System.assertEquals('OK', responseObj.code);
     }
     
     @isTest
     public static void doSMSSignUp_Re_OptIn_5(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -152,7 +154,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '15555555552';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -160,11 +161,13 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
+        System.assertEquals('OK', responseObj.code);
     }
     
     @isTest
     public static void doSMSSignUp_ReOptIn_1_2_3_4_5(){
-        
+        Test.startTest();
         RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();             
     
@@ -177,7 +180,6 @@ public class SMSSubscriberSignUpTest {
 		requestObj.smsNumber = '15555555552';
 		requestObj.loyaltyOptin = true;
 		requestObj.storeOfCapture = 'CK801';
-        requestObj.locale = 'en_US';
       	String JSONRequest = JSON.serialize(requestObj);  
      	req.requestURI = '/SMSSubscriber/SignUp';
         req.httpMethod = 'GET';
@@ -185,5 +187,7 @@ public class SMSSubscriberSignUpTest {
         responseObj = SMSSubscriberSignUp.doSMSSignUp();
         System.debug('***Got Response = '+responseObj);
         System.debug('***RES = '+res);
+        Test.stopTest();
+        System.assertEquals('OK', responseObj.code);
     }
 }

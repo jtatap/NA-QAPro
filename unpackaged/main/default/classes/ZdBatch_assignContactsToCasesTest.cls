@@ -1,59 +1,50 @@
 @isTest
-public class ZdBatch_assignContactsToCasesTest {
-    private static testMethod void testUpdateContactIdAccountIdOnCaseForZendeskCaseMigration()
-    {
-        Id zdPVHRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('ZdPVH').getRecordTypeId();
-        Id zdTnCRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('ZdTnC').getRecordTypeId();
+private class ZdBatch_assignContactsToCasesTest {
+    static testMethod void testAssignContactsToCases() {
+        // Create test data
+        Account genAcc = new Account();
+        genAcc.Name = 'generic Account' + Math.random();
+        insert genAcc;
 
-        List<Account> lstAccount = new List<Account>();
-        lstAccount.add(new Account(Name='Test Account ABC'));
-        lstAccount.add(new Account(Name='Test Account PQR'));
-        insert lstAccount;
+        Contact genCon = new Contact();
+        genCon.email = 'foo@example.com';
+        genCon.lastName = 'generic contact ' + Math.random();
+        genCon.AccountId = genAcc.id;
+        genCon.Brand_Id__c='9';
+        insert genCon;
 
-        List<Contact> lstContact = new List<Contact>();
-        lstContact.add(new Contact( ZdTnCUserId__c = '230000', AccountId = lstAccount[1].Id, LastName = 'Test Contact PQR', FirstName='jay', Brand_Id__c='1', Email='test1@mail.com'));
-        lstContact.add(new Contact( ZdPVHUserId__c = '44449999', AccountId = lstAccount[0].Id, LastName = 'Test Contact ABC', FirstName='joe', Brand_Id__c='2', Email='test2@mail.com'));
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = genCon.Id
+        );
+        insert genRec;
 
-        insert lstContact;
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = genAcc.Id
+        );
+        insert genRecAcct;
 
+        Contact con1 = new Contact(ZdTnCUserId__c = 'user1', ZdPVHUserId__c = 'user1', LastName='Test');
+        Contact con2 = new Contact(ZdTnCUserId__c = 'user2', ZdPVHUserId__c = 'user2', LastName='Test');
+        insert con1;
+        insert con2;
+        Case case1 = new Case(ZdTnCTicketId__c = 'ticket1', ZdTnCUserId__c = 'user1', ContactId = null, AccountId = null);
+        Case case2 = new Case(ZdPVHTicketId__c = 'ticket2', ZdPVHUserId__c = 'user2', ContactId = null, AccountId = null);
+        insert case1;
+        insert case2;
 
-
+        // Create a new instance of the batch class and run the test
         Test.startTest();
-
-
-        List<Case> lstCase = new List<Case>();
-        lstCase.add(new Case(RecordTypeId = zdTnCRecordTypeId, Subject='ZdTnCTicketId__c present ', Origin = 'Email' , SuppliedEmail = 'abc@gmail.com' ,
-                ZdTnCUserId__c = '230000',ZdTnCTicketId__c = '3333999', Source_System__c = 'Zendesk T&C', Status = 'Closed', CreatedByMethod__c='Data Migration',
-                Brand__c='1'
-        ));
-        lstCase.add(new Case(RecordTypeId = zdPVHRecordTypeId, Subject='ZdPVHTicketId__c present', Origin = 'Email' , SuppliedEmail = 'abc@gmail.com' ,
-                ZdPVHUserId__c = '44449999', ZdPVHTicketId__c = '44449999', Source_System__c = 'Zendesk PVH', Status = 'Closed', CreatedByMethod__c='Data Migration',
-                Brand__c='1'
-        ));
-
-
-        insert lstCase;
-
-       List <Case> casesBefore = [select id, ContactId, ZdTnCTicketId__c, ZdTnCUserId__c, ZdPVHTicketId__c, ZdPVHUserId__c, Contact.Id, Contact.ZdPVHUserId__c, Contact.ZdTnCUserId__c from Case];
-
-        for (Case c: casesBefore){
-            System.debug('*** case: '+ c);
-        }     
-
-        ZdBatch_assignContactsToCases thisBatch1 = new ZdBatch_assignContactsToCases();
-        Database.executeBatch(thisBatch1);
-
-
-
-
+        ZdBatch_assignContactsToCases batch = new ZdBatch_assignContactsToCases();
+        ID batchId = Database.executeBatch(batch);
         Test.stopTest();
 
-        List <Case> casesAfter = [select id, ContactId, ZdTnCTicketId__c, ZdTnCUserId__c, ZdPVHTicketId__c, ZdPVHUserId__c, Contact.Id, Contact.ZdPVHUserId__c, Contact.ZdTnCUserId__c from Case];
-
-        for (Case c: casesAfter){
-            System.debug('*** case: '+ c);
+        // Verify the results
+        List<Case> updatedCases = [SELECT Id, ContactId, AccountId FROM Case WHERE Id IN :new List<Id>{case1.Id, case2.Id}];
+        for (Case c : updatedCases) {
+            System.assertNotEquals(null, c.ContactId);
+            System.assertNotEquals(null, c.AccountId);
         }
-
     }
-
 }

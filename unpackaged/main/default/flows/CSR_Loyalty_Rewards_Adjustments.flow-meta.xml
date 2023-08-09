@@ -8,7 +8,6 @@
         <locationY>279</locationY>
         <actionName>Rewards</actionName>
         <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>brandId</name>
             <value>
@@ -350,17 +349,12 @@
 &quot;Active&quot;)</expression>
     </formulas>
     <interviewLabel>CSR Loyalty Rewards Adjustments {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
     <label>CSR Loyalty Rewards Adjustments</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
             <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
-    <processMetadataValues>
-        <name>CanvasMode</name>
-        <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -677,8 +671,8 @@
     <recordUpdates>
         <name>Update_Reward_Extend</name>
         <label>Update Reward-Extend</label>
-        <locationX>1276</locationX>
-        <locationY>504</locationY>
+        <locationX>1277</locationX>
+        <locationY>503</locationY>
         <connector>
             <targetReference>Post_to_A1</targetReference>
         </connector>
@@ -703,7 +697,7 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Reason_Code__c</field>
+            <field>ReasonCode__c</field>
             <value>
                 <elementReference>RewardChange_dependent.middleValue</elementReference>
             </value>
@@ -733,7 +727,7 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>Reason_Code__c</field>
+            <field>ReasonCode__c</field>
             <value>
                 <elementReference>RewardChange_dependent.middleValue</elementReference>
             </value>
@@ -821,7 +815,6 @@
                     <elementReference>RewardChangeDetails_value</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>

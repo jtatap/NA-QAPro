@@ -18,6 +18,9 @@
     <columns>
         <field>DESCRIPTION</field>
     </columns>
+    <columns>
+        <field>Case.Reason_Code_Manufacturers__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>

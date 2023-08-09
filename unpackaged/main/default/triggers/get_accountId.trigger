@@ -1,7 +1,7 @@
 trigger get_accountId on Contact (before insert, before update) {
-System.debug('Limits.getQueries -get_accountId --line2'+ Limits.getQueries());
+
     if (utilityClass.triggerEnabled( String.valueOf(this).substring(0,String.valueOf(this).indexOf(':')))) {
-            
+
         Set<String> custIds = new Set<String>();
         List<Account> newAccountList = new List<Account>();
         Id customerAccountRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('Customer').getRecordTypeId();
@@ -36,9 +36,7 @@ System.debug('Limits.getQueries -get_accountId --line2'+ Limits.getQueries());
 
             }
             if (newAccountList.size() > 0) {
-            System.debug('Limits.getQueries -get_accountId --line39'+ Limits.getQueries());
                 insert newAccountList;
-            System.debug('Limits.getQueries -get_accountId --line41'+ Limits.getQueries());
                 for (Account a : newAccountList) {
                     accMap.put(a.Customer_Id__c, a.id);
                 }
@@ -56,5 +54,4 @@ System.debug('Limits.getQueries -get_accountId --line2'+ Limits.getQueries());
 
         }
     }
-    System.debug('Limits.getQueries -get_accountId --line59'+ Limits.getQueries());
 }

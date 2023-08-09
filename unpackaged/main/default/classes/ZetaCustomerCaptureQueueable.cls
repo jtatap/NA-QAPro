@@ -22,7 +22,7 @@ public with sharing class ZetaCustomerCaptureQueueable implements Queueable, Dat
 
         ZetaCustomerCaptureWrapper objWrapContact = new ZetaCustomerCaptureWrapper(contactObj);
         String jsB2 = JSON.serialize(objWrapContact);
-        System.debug('serialized string is ==>'+jsB2);
+        Log.push('serialized string is ==>'+jsB2);
 
         HttpRequest req = new HttpRequest();
         req.setEndpoint('callout:Zeta');
@@ -36,14 +36,15 @@ public with sharing class ZetaCustomerCaptureQueueable implements Queueable, Dat
         try {
             HttpResponse res = http.send(req);
             String returnVal = res.getBody();
-            system.debug('returnVal---->'+res.getBody());
+            Log.push('returnVal---->'+res.getBody());
             if(returnVal != null && returnVal != ''){
                 contactObj.Zeta_Callout_Response__c = res.getBody();
                 update contactObj;
             }
-            //system.debug('response---->'+res.getBody());
+            //Log.push('response---->'+res.getBody());
         } catch(System.CalloutException e) {
-            System.debug('Callout error: '+ e);
+            Logger.logException(e);
         }
+        Logger.logDebug();
     }
 }

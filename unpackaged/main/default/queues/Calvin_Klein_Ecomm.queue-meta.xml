@@ -10,7 +10,6 @@
         </publicGroups>
         <users>
             <user>t1pvh@pvh.com</user>
-            <user>t3csr@pvh.com</user>
         </users>
     </queueMembers>
     <queueRoutingConfig>Email</queueRoutingConfig>

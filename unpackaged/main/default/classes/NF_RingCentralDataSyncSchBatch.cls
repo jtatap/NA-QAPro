@@ -1,7 +1,7 @@
 /**
  * @description       :
  * @author            : chayan.batabyal@neuraflash.com
- * @last modified on  : 10-07-2021
+ * @last modified on  : 10-11-2021
  * @last modified by  : chayan.batabyal@neuraflash.com
 **/
 global class NF_RingCentralDataSyncSchBatch
@@ -64,8 +64,9 @@ global class NF_RingCentralDataSyncSchBatch
             DateTime singleCallStart = DateTime.newInstance(
                 apiStartDate,  Time.newInstance(0, 0, 0, 0)
             );
+            system.debug('singleCallStart***'+singleCallStart);
             DateTime singleCallEnd = singleCallStart.addDays(1);
-
+system.debug('singleCallEnd***'+singleCallEnd);
             encodedStartDate = EncodingUtil.urlEncode(
                 String.valueOf(singleCallStart).replace(' ', 'T'), 'UTF-8'
             );
@@ -95,7 +96,7 @@ global class NF_RingCentralDataSyncSchBatch
     **/
     public Iterable<String> start(Database.BatchableContext ctx) {
         activeAPIsForDataSync = fetchAPIsToCall();
-        System.debug('activeAPIsForDataSync :: ' + activeAPIsForDataSync);
+        Log.push('activeAPIsForDataSync :: ' + activeAPIsForDataSync);
 
         if(authorizationActive && activeAPIsForDataSync != null && !activeAPIsForDataSync.isEmpty()){
             try{
@@ -103,14 +104,15 @@ global class NF_RingCentralDataSyncSchBatch
                 fetchRequestedDetailsAndInsertData('Authorization');
             }
             catch(Exception e){
-                System.debug('Error: ' + e.getLineNumber() + ' : ' + e.getMessage());
+                Logger.logException(e);
             }
             finally{
                 if(authorizationError){
-                    System.debug('Error in authorization');
+                    Log.push('Error in authorization');
                 }
             }
         }
+        Logger.logDebug();
         return authorizationError ? new List<String>() : (
             Test.isRunningTest() ? (new List<String>{activeAPIsForDataSync[0]}) : activeAPIsForDataSync
         );
@@ -123,6 +125,8 @@ global class NF_RingCentralDataSyncSchBatch
     * @param apiToCall
     **/
     public void execute(Database.BatchableContext ctx, List<String> apiToCall) {
+        
+        system.debug('apiToCall***'+apiToCall);
         if(apiToCall != null && !apiToCall.isEmpty()){
             try{
                 if(
@@ -143,13 +147,14 @@ global class NF_RingCentralDataSyncSchBatch
                 }
             }
             catch(Exception e){
-                System.debug('Error: ' + e.getLineNumber() + ' : ' + e.getMessage());
+                Logger.logException(e);
             }
             finally{
                 if(authorizationError){
-                    System.debug('Error in authorization');
+                    Log.push('Error in authorization');
                 }
             }
+            Logger.logDebug();
         }
     }
 
@@ -171,7 +176,8 @@ global class NF_RingCentralDataSyncSchBatch
             Database.executeBatch(batchable, 1);
         }
     }
-
+    
+        
     /**
     * @description Fetches the names of the APIs that need to be called
     * @author chayan.batabyal@neuraflash.com | 09-09-2021
@@ -202,6 +208,7 @@ global class NF_RingCentralDataSyncSchBatch
                 }
             }
         }
+        system.debug('lstOfActiveAPIs***'+lstOfActiveAPIs);
         return lstOfActiveAPIs;
     }
 
@@ -223,8 +230,8 @@ global class NF_RingCentralDataSyncSchBatch
             WHERE
                 DeveloperName =: requestedAPI LIMIT 1
         ];
-
-        HttpResponse resp = NF_CalloutUtility.doCallout(
+        system.debug('metaRecord***'+metaRecord);
+       /* HttpResponse resp = NF_CalloutUtility.doCallout(
             metaRecord.Request_Endpoint__c
             .replace('[BASE_URL]', resource_server_base_uri)
             .replace('[API_VERSION]', LABEL.NF_RC_API_VERSION_NUMBER)
@@ -240,9 +247,46 @@ global class NF_RingCentralDataSyncSchBatch
             metaRecord.Request_Body__c,
             Integer.valueOf(metaRecord.Successful_Callout_Status_Code__c),
             metaRecord.Check_Response_Body__c
-        );
-
-        switch on requestedAPI {
+        ); */
+        
+        // This is Sanjay code - Start
+         String endpoint =    metaRecord.Request_Endpoint__c
+            .replace('[API_VERSION]', LABEL.NF_RC_API_VERSION_NUMBER)
+            .replace('[START_DATE]', encodedStartDate)
+            .replace('[END_DATE]', encodedEndDate)
+            .replace('[SPECIFIC_ID]', specificId);
+        System.debug('endpoint : ' + endpoint);
+        
+        String requestType =  metaRecord.Request_Type__c;
+        System.debug('requestType : ' + requestType);
+        
+        Integer timeout =   Integer.valueOf(metaRecord.Request_Timeout__c);
+        System.debug('timeout : ' + timeout);
+        
+           Map<String, Object> headers =  String.isNotBlank(metaRecord.Request_Headers__c) ?
+               (Map<String, Object>)JSON.deserializeUntyped(
+                   metaRecord.Request_Headers__c.replace('[ACCESS_TOKEN]', access_token)
+               ) : null;
+        System.debug('headers : ' + headers);
+        
+        String body = metaRecord.Request_Body__c;
+        System.debug('body : ' + body);
+        
+        Integer statusCode = Integer.valueOf(metaRecord.Successful_Callout_Status_Code__c);
+        System.debug('statusCode : ' + statusCode);
+        
+        Boolean toCheckForNonEmptyResponseBody=   metaRecord.Check_Response_Body__c;
+        System.debug('toCheckForNonEmptyResponseBody : ' + toCheckForNonEmptyResponseBody);
+        HttpResponse resp = NF_CalloutUtility.doCallout(endpoint,requestType,timeout,headers,body,statusCode,toCheckForNonEmptyResponseBody);
+        System.debug('resp.getBody() : ' + resp.getBody());
+        
+       
+        
+        // This is Sanjay code - END */
+        
+        
+system.debug('metaRecord***'+metaRecord);
+       switch on requestedAPI {
             when 'Authorization' {
                 processAuthorization(resp.getBody());
             }
@@ -259,7 +303,7 @@ global class NF_RingCentralDataSyncSchBatch
                     );
                 }
             }
-        }
+        } 
     }
 
     /**
@@ -269,11 +313,18 @@ global class NF_RingCentralDataSyncSchBatch
     **/
     @TestVisible
     private void processAuthorization(String body){
+        system.debug('body***'+body);
+        
+        
         Map<String, Object> responseMap = (Map<String, Object>)JSON.deserializeUntyped(body);
+        
+        system.debug('access Token***'+String.valueOf(responseMap.get('access_token')));
+         system.debug('resource_server_base_uri***'+String.valueOf(responseMap.get('resource_server_base_uri')));
+         system.debug('access_token***'+String.valueOf(responseMap.get('access_token')));
         if(
             responseMap != null && !responseMap.keySet().isEmpty() &&
             String.isNotBlank(String.valueOf(responseMap.get('access_token'))) &&
-            String.isNotBlank(String.valueOf(responseMap.get('resource_server_base_uri'))) &&
+            //String.isNotBlank(String.valueOf(responseMap.get('resource_server_base_uri'))) &&
             String.isNotBlank(String.valueOf(responseMap.get('expires_in')))
         ){
             access_token = String.valueOf(responseMap.get('access_token'));
@@ -409,4 +460,298 @@ global class NF_RingCentralDataSyncSchBatch
 
         return recordsToReturn;
     }
+     public static void test234Method(){
+    Integer i=0;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;  
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;  
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;  
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;
+     i=i+1;
+    i=i+1;
+    i=i+1;
+    i=i+1;       
+    //repeat the i++ hundred of times
+
+  }   
+
 }

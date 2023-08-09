@@ -3,7 +3,7 @@
     <fullName>VIP__c</fullName>
     <externalId>false</externalId>
     <formula>IF(VIP_Contact__c = TRUE,
-(IMAGE(&quot;https://pvhservicecloud--qapro--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Gif&amp;versionId=0682C000001BdnE&amp;operationContext=DELIVERY&amp;contentId=05T2C000006E1Sc&amp;page=0&amp;d=/a/2C000000GwS6/y2D00r2g7kMrWryoXAY7rB6Z2RISAEBQZo.DV00AyVQ&amp;oid=00D2C000000Cmsr&amp;dpt=null&amp;viewId=&quot;, &quot;text&quot; , 50, 50)),
+(IMAGE(&quot;https://pvhservicecloud--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Gif&amp;versionId=0683t00000C5BLV&amp;operationContext=CHATTER&amp;contentId=05T3t00000iwcKK&quot;, &quot;text&quot; , 50, 50)),
 &quot; &quot;)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>VIP</label>

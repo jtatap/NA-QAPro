@@ -28,7 +28,7 @@
     </values>
     <values>
         <field>Show_Logo__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
         <field>Track_Order_At__c</field>
@@ -36,6 +36,6 @@
     </values>
     <values>
         <field>Use_Single_Brand_Channel__c</field>
-        <value xsi:type="xsd:boolean">false</value>
+        <value xsi:type="xsd:boolean">true</value>
     </values>
 </CustomMetadata>

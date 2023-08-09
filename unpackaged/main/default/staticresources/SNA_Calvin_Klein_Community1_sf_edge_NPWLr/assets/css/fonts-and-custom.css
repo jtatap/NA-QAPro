@@ -1,0 +1,751 @@
+/*
+Note : When adding css attributes
+
+Add your Date, First/Last Name and reason for using CSS overrides 
+
+Example:
+
+xx/xx/xxxx | First Last | This is an OOTB component. 
+*/
+
+/* 09/20/2021 | Luis Rocha | This is an OOTB component, so we can only change it from the css overrides. */
+.selfServiceTopicTrendingArticles42 .slds-grid--vertical a:focus {
+    box-shadow: 0 0 0 0px var(--lwc-colorBrand,rgb(0, 23, 79)) !important;
+} /* End of documented change. */
+a.slds-p-vertical_small.slds-border_bottom.slds-hyphenate {
+    font-weight: 400;
+}
+/* 10/05/2021 | Luis Rocha | This is an OOTB component, so we can only change it from the css overrides. */
+h1.article-head.selfServiceArticleHeaderDetail {
+    font-size: 2.5rem !important;
+    color: #222 !important;
+    font-weight: normal;
+} /* End of documented change. */
+
+.forceCommunityThemeNav .comm-navigation__top-level-item.mainNavItem:first-child {
+    display:none;
+}
+
+.forceCommunityThemeNav.themeNavContainer {
+    font-size: 14px;
+}
+
+.forceCommunityThemeHeroBase .contentCaption {
+    font-size: 1.875rem !important;
+}
+
+.article-summary{
+    display:none;
+}
+
+/* Fixing small scrollbar over CTA */
+.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel {
+    overflow-x: visible !important;
+}
+
+/* DT */
+@media only screen and (max-width:767px){
+    .nf_mobileWrapper {
+        max-width: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+    
+    .embeddedServiceSidebar .chasitorText {	
+          font-size: 16px !important;
+}
+    
+    .forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col {
+        border-right: 0px !important;
+    }
+}
+
+.forceCommunityThemeHeaderBase, .forceCommunityThemeHeaderCompact  {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+}
+
+/*.forceCommunityThemeHeaderCompact {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+}*/
+
+.slds-breadcrumb .slds-list__item>a, .slds-breadcrumb .slds-breadcrumb__item>a {
+    text-transform: none !important;
+}
+.forceCommunityThemeSearch .search-inputSearchButton svg {
+    width: 1rem !important;
+}
+
+.forceCommunityThemeSearch .search-inputSearchButton {
+   /*width: 45px  !important;    */
+   font-size: 1rem  !important;
+}
+
+.forceCommunityThemeSearch.jepsonInnerHeader .search-input {
+    font-size: 1rem !important;
+}
+
+.forceCommunityThemeSearch.jepsonInnerHeader .search-box .search-inputSearchButton--right {
+	padding-right: 30px !important;   
+}
+
+.forceCommunityThemeSearch.jepsonInnerHeader .search-input {
+    padding-left: 30px !important;
+}
+
+.slds-form-element_readonly {
+    border-bottom-width: 0px !important;
+}
+
+.slds-tile__detail.slds-text-body--small.slds-p-bottom--xxx-small {
+    display: none !important;
+}
+
+/*.forceCommunityThemeHeaderBase { 
+   max-width: 100% !important;
+}*/
+
+/*.forceCommunityThemeHeaderCompact .themeHeaderInner {
+    padding-right: 10rem !important;
+}*/
+
+.slds-rich-text-editor__textarea table, .slds-rich-text-editor__output table {
+    font-size: 16px !important;
+    font-family: calvinfont !important;    
+}
+
+.selfServiceArticleLayout .forcePageBlockItem.full, .selfServiceArticleLayout .forcePageBlockItem.full:last-child {
+	font-size: 16px !important;
+    line-height: 30px !important;
+    font-family: calvinfont !important;
+}
+
+.forceCommunityThemeSearch.jepsonInnerHeader .search-input, .forceCommunityThemeSearch.jepsonInnerHeader .search-box .search-inputSearchButton--right {
+    height: 50px;
+}
+
+.forceCommunityThemeSearch.jepsonHomeHero .search-box {
+    height: 80px;
+}
+
+.cNF_NavigationalTopicArticles .navTopicDesign a, .cNF_NavigationalTopicArticles .subTopicDesign a {
+    font-size: 16px !important;
+}
+
+.cNF_NavigationalTopicArticles .topicLine {
+    border: none !important;
+    border-top: none !important;
+    margin: 15px 10px 15px 0 !important;
+}
+
+.selfServiceArticleLayout.zoom.article-column {
+	padding-bottom: 50px;
+    padding-left: 40px !important;
+}
+
+.selfServiceArticleLayout.zoom .article-head {
+    font-size: 2.5rem !important;
+    color: #222 !important;
+}
+
+.forceCommunityThemeNav .mainNavItem {
+    padding-left: 30px !important;
+    padding-right: 30px;
+}
+
+.desktopFooter {
+    Border-top: 1px solid #D8D8D8;
+}
+
+.desktopFooter[c-calvinCommunityFooter_calvinCommunityFooter] {
+    width: 95% !important;
+}
+
+.covid-footer[c-calvinCommunityFooter_calvinCommunityFooter], html.mobile[c-calvinCommunityFooter_calvinCommunityFooter] .covid-footer[c-calvinCommunityFooter_calvinCommunityFooter] {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.footer[c-calvinCommunityFooter_calvinCommunityFooter] .footer-links[c-calvinCommunityFooter_calvinCommunityFooter] {
+    margin: 30px 0 50px 90px;
+}
+
+.forceCommunityThemeHeroBase .content {
+    width: 60% !important;
+}
+
+.forceCommunityThemeHeroStarter .searchRegion {
+    margin-top: 1rem;
+}
+
+.forceCommunityThemeHeaderBase .themeBottomBorder{
+    background-color: rgba(0, 0, 0, 0.0) !important
+}
+
+.forceCommunityBreadcrumbs {
+    padding-left: 40px;
+}
+
+.forceCommunityThemeSearchHero .search-inputSearchButton svg {
+	width: 30px !important;
+    height: 30px !important;
+    position: relative !important;
+}
+
+/* End */
+
+.forceCommunityThemeSearchHero .search-input.search-input--right {
+    padding-left: 40px !important;
+    padding-right: 16px !important;
+}
+
+
+.forcePageBlockSection  .test-id__field-label-container {
+	display: none;
+}
+
+/*------------For CK Menu Links -----------------*/
+@media only screen and (max-width:1145px) and (min-width:1144px){
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container {
+		margin: 0px 20%;
+	}
+}
+.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container {
+    margin: 0;
+}
+@media only screen and (max-width:767px){
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col{
+		max-width: 20%;
+		min-width: max-content;
+		padding: 0 2%;
+		border-right: 1px solid black;
+        font-size:16px;
+	}
+    
+    .forceCommunityRichText .forceCommunityHtmlBlock {
+        max-width: 100px;
+        align-content: center;
+        margin-left: 35%;
+        margin-right: 30%;
+    }
+}
+@media only screen and (min-width:768px){
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col{
+		max-width: max-content;
+		min-width: max-content;
+		padding: 0 2%;
+		border-right: 1px solid black;
+        font-size:16px;
+
+	}
+   
+}
+@media only screen and (max-width:378px){
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col{
+		max-width: 50%;
+		min-width: 50%;
+		padding: 0 2%;
+		border-right: 1px solid black;
+        font-size:16px;
+	}
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col:nth-child(even){
+		border: 0;
+	}
+}
+@media only screen and (max-width:340px){
+	.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col{
+		max-width: 100%;
+		min-width: 100%;
+		padding: 0 2%;
+		border: 0;
+        font-size:16px;
+	}
+}
+.forceCommunityRichText.forceCommunityHtmlBlock .uiOutputRichText .content-container .content-col:last-child{
+    border: 0 !important;
+}
+@media only screen and (max-width:1200px){
+    .footer .ui-widget{
+        padding: 0 1.5%;
+    }
+}
+.footer .ui-widget{
+    padding: 0 2%;
+}
+
+article.content .forcePageBlockSectionRow ~ .forcePageBlockSectionRow{
+    display:none;
+}
+
+.ebcm_content .slds-p-vertical--xx-small, .ebcm_content .slds-p-vertical_xx-small {
+border: none;
+}
+.topicRelatedArticleList .summary .footer {
+	display : none;
+}
+.selfServiceArticleHeaderDetail.meta {
+margin-bottom: 30px;
+display: none;
+}
+
+@font-face { 
+    font-family: calvinfont; 
+	src: url(../resource/calvinfont);
+}
+
+@font-face {
+  font-family: klein65;
+  src: url("/resource/CK_Chat/fonts/Klein-65Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: klein55;
+  src: url("/resource/CK_Chat/fonts/Klein-55 Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family:Klein-55 Regular;
+  src: url("/resource/CK_Chat/fonts/Klein-55Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Klein55;
+  src: url("/resource/CK_Chat/fonts/Klein-55Regular.otf") format("opentype");
+}
+
+.embeddedServiceLiveAgentStateChatAvatar.isCommunitiesContext {
+    
+    background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+    font-family: klein55, sans-serif !important;
+    text-transform: none !important;
+}
+.forceCommunityEmbeddedServiceHelpButton .flatButton  {
+        background-color: white !important;
+    border-radius: 100% !important;
+    top: 0px !important;
+    min-width: 0px !important;
+    width: 45px !important;
+    height: 45px !important;
+    padding: 0px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 3px 3px grey !important;
+    border: 0px !important;
+
+}
+
+.embeddedServiceSidebarMinimizedDefaultUI {
+    background-color: white !important;
+    border-radius: 100% !important;
+    bottom: 10px !important;
+    min-width: 0px !important;
+    width: 45px !important;
+    height: 45px !important;
+    padding: 0px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 3px 3px grey !important;
+    border: 0px !important;
+
+}
+
+  .forceCommunityEmbeddedServiceHelpButton .help {
+    position: absolute;
+    margin: 0px 0px 0px 0px !important;
+    content: none !important;
+    width: 24px;
+    height: 18px;
+    background-color: black;
+    left: 10px;
+    bottom: 18px;
+}
+
+.forceCommunityEmbeddedServiceHelpButton .help::before {
+    position: absolute;
+    content: "" !important;
+    right: 0px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid black;
+    border-left: 8px solid transparent;
+}
+
+
+.forceCommunityEmbeddedServiceHelpButton .help {
+    padding-right: none !important;
+    
+}
+
+.forceCommunityEmbeddedServiceHelpButton .embeddedServiceIcon {
+    
+}
+
+
+  .embeddedServiceSidebarMinimizedDefaultUI .content {
+    height: 45px !important;
+    width: 45px !important;
+  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent {
+    position: relative;
+    margin: 10px 0px 0px 0px !important;
+    content: none !important;
+    width: 24px;
+    height: 18px;
+    background-color: black;
+    flex-grow: 0 !important;
+        left: -1px;
+    bottom: -3px !important;
+  }
+.embeddedServiceLiveAgentStateChatItem .isCommunitiesContext .avatar {
+    height: 32px !important;
+    width: 32px !important;
+}
+  .embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+    position: absolute;
+    content: "" !important;
+    right: 0px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid black;
+    border-left: 8px solid transparent;
+    align-self: auto;
+  }
+
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText>.message {
+    display: none;
+}
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+  background: black !important;
+  border-radius: 8px 8px 0 !important;
+}
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+    font-family: klein55, sans-serif !important;
+    text-transform: none !important;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+  background-color: black !important;
+  opacity: 1 !important;
+}
+.embeddedServiceLiveAgentStateChatItem.chatMessage button {
+  clip-path: none;
+}
+.embeddedServiceLiveAgentSidebarFeature .embeddedServiceLiveAgentStateChat .messageArea {
+  background-color: #f4f4f4 !important;
+}
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 44.75px;
+  overflow: hidden;
+  width: 220px !important;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li {
+  border: none;
+  border-radius: 0;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li:not(:last-child) {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-item,
+.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-itemOptionIsClicked {
+  background-color: white;
+  font-size: 14px;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  opacity: 1;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+  background-color: #fff !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button {
+  clip-path: none;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover,
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+  background-color: black !important;
+  opacity: 1 !important;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage {
+  background-color: #f4f4f4 !important;
+}
+
+/* Chat bubble(agent message box) */
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+  background-color: #fff !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.embeddedServiceLiveAgentStateChatAvatar.isCommunitiesContext {
+    height: 32px !important;
+    width: 32px !important;
+    
+   
+}
+
+.chat-content.agent .chatMessageContent a:link, .chat-content.agent .chatMessageContent a:visited, .chat-content.agent .chatMessageContent a:hover, .chat-content.agent .chatMessageContent a:active {
+  color: #5491ff !important;
+}
+
+.endChatButton {
+  margin-bottom: 5px !important;
+}
+
+/* cancel chat request message*/
+.embeddedServiceSidebarButton.uiButton--inverse .label {
+  color: white !important;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse,
+.embeddedServiceSidebarButton.uiButton--inverse:disabled {
+  background: black !important;
+}
+
+.embeddedServiceSidebarButton {
+  background: black !important;
+}
+
+.embeddedServiceSidebarButton {
+  padding: none;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover {
+  background-color: #484848 !important;
+}
+@media screen and (max-device-width: 480px) {
+  .embeddedServiceHelpButton .helpButton {
+    top: 0px;
+  }
+  
+    /*.embeddedServiceSidebar.layout-docked .dockableContainer, .embeddedServiceSidebar.layout-float .dockableContainer {
+        position: absolute !important;
+    	bottom: 0px;
+    }*/
+        .embeddedServiceSidebar.layout-docked .dockableContainer.showDockableContainer {
+    top: 40px !important;
+    max-height: var(--lwc-sidebarHeight,90%) !important;
+
+    }
+    
+    .embeddedServiceSidebar .chasitorText {	
+          font-size: 16px !important;
+}
+
+  .embeddedServiceSidebarMinimizedDefaultUI .minimizedText > .helpButtonLabel {
+    display: none;
+  }
+  
+/* #2924 Chat Display, Mobile, CKUS*/
+.embeddedServiceSidebar.layout-docked .dockableContainer, .embeddedServiceSidebar.layout-float .dockableContainer {
+    margin: 12px auto !important;
+    max-height: /*82%*/ 100% !important;
+}
+
+  .embeddedServiceHelpButton .helpButton button.uiButton,
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
+    background-color: white !important;
+    border-radius: 100% !important;
+    min-width: 0px !important;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0px !important;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-shadow: 0px 3px 3px grey !important;
+  }
+.embeddedServiceHelpButton .helpButton button.uiButton > .embeddedServiceIcon {
+    position: relative;
+    margin: 0px 0px 0px 0px !important;
+    content: none !important;
+    width: 20px;
+    height: 15px;
+    background-color: black;
+}
+
+.embeddedServiceHelpButton .helpButton button.uiButton > .embeddedServiceIcon::before {
+    position: absolute;
+    content: "" !important;
+    right: 0px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid black;
+    border-left: 8px solid transparent;
+}
+
+  #helpButtonSpan {
+    display: none;
+  }
+
+  .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content {
+    height: 36px !important;
+    width: 36px !important;
+  }
+
+  .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent {
+    position: relative;
+    margin: 10px 0px 0px 0px !important;
+    content: none !important;
+    width: 20px;
+    height: 15px;
+    background-color: black;
+    flex-grow: 0 !important;
+  }
+
+  .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+    position: absolute;
+    content: "" !important;
+    right: 0px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid black;
+    border-left: 8px solid transparent;
+    align-self: auto;
+  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .embeddedServiceIcon {
+    display: none !important;
+  }
+
+  .embeddedServiceSidebarMinimizedDefaultUI .message {
+    display: none !important;
+  }
+
+
+  .sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI .content .messageContent::before {
+      position: absolute !important;
+      content: "" !important;
+      right: 0px;
+      bottom: -5px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid black !important;
+      border-left: 8px solid transparent !important;
+  }
+  .forceCommunityEmbeddedServiceHelpButton .flatButton {
+      position: absolute !important;
+  }
+    
+    .embeddedServiceSidebar.sidebarMaximized {
+        /*height: 577px !important;*/
+    /* bottom: 6px; */
+    /*bottom: 0px !important;*/
+    /*top: 200px !important;*/
+    }
+}
+
+	/***	
+ *     ██████  █████  ██████  ██████  	
+ *    ██      ██   ██ ██   ██ ██   ██ 	
+ *    ██      ███████ ██████  ██   ██ 	
+ *    ██      ██   ██ ██   ██ ██   ██ 	
+ *     ██████ ██   ██ ██   ██ ██████                                   	
+ */	
+.NF_card {	
+	position: relative;	
+	background-color: #fff;	
+	border-radius: .4rem;	
+	box-shadow: 0 .2rem .2rem 0 rgba(12, 11, 8, .2);	
+	color: rgba(12, 11, 8, .75);	
+	width: 100%;	
+	transition: box-shadow .2s cubic-bezier(.15, 0, .15, 0);	
+	cursor: pointer;	
+	overflow: hidden	
+}	
+.NF_card:active,	
+.NF_card:hover {	
+	box-shadow: 0 .8rem .8rem 0 rgba(12, 11, 8, .2);	
+	transform: translateY(-.2rem);	
+	transition: .2s	
+}
+/***
+ *    ███████  ██████  ███    ██ ████████ ███████ 
+ *    ██      ██    ██ ████   ██    ██    ██      
+ *    █████   ██    ██ ██ ██  ██    ██    ███████ 
+ *    ██      ██    ██ ██  ██ ██    ██         ██ 
+ *    ██       ██████  ██   ████    ██    ███████                                               
+ */
+@font-face {	
+    font-family: 'KleinWeb';	
+    src: url(../resource/CalvinFonts/Klein-55Regular-Web.woff2)format('woff2');	
+    font-weight: 300;	
+    font-style: normal	
+}	
+@font-face {	
+    font-family: 'KleinWeb';	
+    src: url(../resource/CalvinFonts/Klein-55Regular-Web.woff2)format('woff2');	
+    font-weight: 400;	
+    font-style: normal	
+}	
+@font-face {	
+    font-family: 'KleinWeb';	
+    src: url(../resource/CalvinFonts/Klein-65Medium-Web.woff2)format('woff2');	
+    font-weight: 600;	
+    font-style: normal	
+}	
+@font-face {	
+    font-family: 'KleinWeb';	
+    src: url(../resource/CalvinFonts/Klein-75Bold-Web.woff2)format('woff2');	
+    font-weight: 700;	
+    font-style: bold	
+}
+
+/* Trending Article Component: Increases the font size of the header label 
+.selfServiceTopicTrendingArticles42 .slds-text-heading--small */
+.comm-topic-trending-articles h2 {
+    font-size: 19px !important;
+}
+
+/* Trending Article Component: Increases the font size of article labels */
+.selfServiceTopicTrendingArticles42 .slds-text-body_small {
+      font-size: 16px !important;
+}
+
+/* Trending Article Component: Removes the bottom border line between article */
+.slds-border_bottom, .slds-border--bottom {
+    border-bottom: none;
+}
+@font-face {	
+    font-family: 'FontTest3';	
+    src: url(../resource/CalvinFonts1/Klein-65Medium-Web.woff2) format('woff2');	
+    font-weight: 600;	
+    font-style: bold	
+}
+@font-face {	
+    font-family: 'Klein-55Regular';	
+    src: url(../resource/CalvinFonts1/Klein-55Regular-Web.woff2) format('woff2');	
+    font-weight: 600;	
+    font-style: bold	
+}
+:root { --dxp-c-section-columns-max-width: 1170px; }

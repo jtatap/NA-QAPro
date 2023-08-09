@@ -5,6 +5,7 @@
 */
 public with sharing class LogArchivalBatchScheduler implements Schedulable {
     public void execute(SchedulableContext sc) {
-        Database.executeBatch(new LogArchivalBatch());
+        NF_Batch_Control__mdt batchMeta =  NF_Batch_Control__mdt.getInstance('LogArchivalBatchScheduler');
+        Database.executeBatch(new LogArchivalBatch(),Integer.valueOf(batchMeta.Batch_Size__c));
     }
 }

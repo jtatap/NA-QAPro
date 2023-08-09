@@ -1,9 +1,10 @@
 ({
  getCases: function(component) {
     var action = component.get("c.getCases");
+    var success = String($A.get("$Label.c.Success1"));
     action.setCallback(this, function(response) {
         var state = response.getState();
-        if (component.isValid() && state === "SUCCESS") {
+        if (component.isValid() && state === success) {
             component.set("v.cases", response.getReturnValue());
         }
     });

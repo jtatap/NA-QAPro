@@ -3,7 +3,7 @@
     <areGuestUsersAllowed>false</areGuestUsersAllowed>
     <deploymentFeature>LiveAgent</deploymentFeature>
     <deploymentType>Web</deploymentType>
-    <isEnabled>true</isEnabled>
+    <isEnabled>false</isEnabled>
     <masterLabel>Partner Brands Prioritized Chat</masterLabel>
     <shouldHideAuthDialog>false</shouldHideAuthDialog>
     <site>Van_Heusen</site>

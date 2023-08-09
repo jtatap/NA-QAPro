@@ -28,4 +28,20 @@
         <enabled>true</enabled>
         <name>ViewDraftArticles</name>
     </userPermissions>
+    <recordTypeVisibilities>
+        <recordType>Knowledge__kav.CalvinKlein</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Knowledge__kav.FAQ</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Knowledge__kav.Informational_Article</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Knowledge__kav.Procedure</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </PermissionSet>

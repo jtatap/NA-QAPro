@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLDataDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>mlpd_v0_mldd_v1_1671068356356</developerName>
+    <entityDeveloperName>LiveChatTranscript</entityDeveloperName>
+    <includedFields>LiveChatTranscript.Body</includedFields>
+    <parentDefinitionDevName>mlpd_v0_1671068354513</parentDefinitionDevName>
+    <type>Prediction</type>
+</MLDataDefinition>

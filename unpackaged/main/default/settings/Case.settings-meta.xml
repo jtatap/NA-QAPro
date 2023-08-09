@@ -12,6 +12,7 @@
     <defaultCaseFeedLayoutOn>false</defaultCaseFeedLayoutOn>
     <defaultCaseOwner>Default_Case_Queue</defaultCaseOwner>
     <defaultCaseOwnerType>Queue</defaultCaseOwnerType>
+    <defaultCaseUser>brajkishorsingh@pvh.com</defaultCaseUser>
     <emailActionDefaultsHandlerClass>EmailPublisherLoader</emailActionDefaultsHandlerClass>
     <emailToCase>
         <enableE2CAttachmentAsFile>true</enableE2CAttachmentAsFile>
@@ -31,7 +32,6 @@
             <createTask>false</createTask>
             <emailAddress>privacysupport@calvinklein.ca</emailAddress>
             
-            
             <routingName>Calvin Klein Canada Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
@@ -41,7 +41,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>customerservice-ca@calvinklein.com</emailAddress>
-            <emailServicesAddress>customerservice-ca@s-26ycz9f7ovp6waaleotl0t0butf13r6ob7peygit11zpf3yc1g.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>customerservice-ca@4yq0hmhheax1d2hz9dm2fnnfvsff1m15h00wv0o94485yx8l2.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Calvin Klein Customer Service Canada</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -52,7 +52,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>customerservice@calvinklein.com</emailAddress>
-            <emailServicesAddress>customerservice@1wyqnpaqeiuqhlgkkzwidp8xiyvcxrcosaraj8n9cz3yyglk4i.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>customerservice@k-223yktqtujmzhuuhrqfciin75aq455xh905frjhkw1i0otoytv.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Calvin Klein Ecomm Email</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -63,7 +63,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>privacysupport@calvinklein.com</emailAddress>
-            <emailServicesAddress>privacysupport@5-2uex7gncsg5k6irqpowrat4q4q8m3pezlz5k2mvvnsgzll5pm9.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>privacysupport@1rpkfvqpnfctnqmfzxeo4t0jidpxqxe0r55nhjv7bervyrrxye.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Calvin Klein Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -73,30 +73,10 @@
             <caseOrigin>Email - 2 - R</caseOrigin>
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
-            <emailAddress>vivekvishal@pvh.com</emailAddress>
-            <emailServicesAddress>vivekvishal@x-rhfbyuee67diu4qunchlfm4lbitlli6vfeq2n8o3cbnapebxx.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailAddress>calvinkleincustomerservice@pvh.com</emailAddress>
+            <emailServicesAddress>calvinkleincustomerservice@121p2eq8gtlqixlj8sqch0wncp67iwttdic6w9lhmaqshem99o.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Calvin Klein Retail Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 4 - E</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>customerservice@izod.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>IZOD Retail Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>privacysupport@izod.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>IZOD Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
         <routingAddresses>
@@ -125,8 +105,8 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>pvhcustomerservice@pvh.com</emailAddress>
-            <emailServicesAddress>sonasofiavanithaanto@2zhrbjdha99bsmy7nqb12om5p4sf8e2w3ngfoosms01at5l15t.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
-            <isVerified>false</isVerified>
+            <emailServicesAddress>pvhcustomerservice@19b81bs7e7aiarrioebt56adv0bcidyt6swro86yv9x9xf4qr1.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
             <routingName>PVH Brand Customer Service</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
@@ -136,49 +116,9 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>custsvchelp@pvh.com</emailAddress>
-            <emailServicesAddress>custsvchelp@jv61yd5hv0t7nb4gl1rt4wxfsz7ktfxpjnkw9857ja0dvpmur.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>custsvchelp@f-xzd7vkksh90840lyr83w718vljb26kbisqfnykvecbfo0ns6r.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>PVH Customer Service Help</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 7 - W</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>info@speedocanada.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Speedo Canada Wholesale</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 7 - E</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>speedocustomerservice@pvh.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Speedo Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 7 - W</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>service@speedousa.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Speedo Retail Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>privacysupport@speedousa.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Speedo USA Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
         <routingAddresses>
@@ -187,6 +127,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>thservice@tommy.com</emailAddress>
+            <emailServicesAddress>thservice@0-2f0lzol2jbrlirg6ayvv5l68vmvu8uvmfxr3k7fga8kcfmrr98.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>TH Customer Service</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -197,7 +138,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>tommyhelp@tommy.com</emailAddress>
-            <emailServicesAddress>tommyhelp@180cdzbdh5z3lgo78ze0h1zoezc51kll1xyaz8hmqhwkulxlc3.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>tommyhelp@12z7ec1up8un0skdm7hv7l2u9vqpbgnil3sybcjgf76rwre0q8.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Tommy Help</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -208,7 +149,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>privacysupport@tommy.com</emailAddress>
-            <emailServicesAddress>privacysupport@n-u5vcle6utk6bp7fpio3qm2sgkyaw6in2an6o5uvirlafqjfre.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>privacysupport@1xo217qoatpqtlnwqzpfgiii9dc3yjjs4410zvah1zpk99tziz.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Tommy Hilfiger Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -218,8 +159,8 @@
             <caseOrigin>Email - 1 - R</caseOrigin>
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
-            <emailAddress>brajkishorsingh@pvh.com</emailAddress>
-            <emailServicesAddress>brajkishorsingh@1p2eglz60dse31ymgx25qdases2xd2mxxprr0dx6y7pp3bpq34.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailAddress>tommyhilfigercustomerservice@tommy.com</emailAddress>
+            <emailServicesAddress>tommyhilfigercustomerservice@k-1qudkfyf5pzhrpusyakwywje5xrpnf6wy0vfmekajvltw54ekc.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Tommy Retail Customer Service</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -230,7 +171,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>support@trueandco.com</emailAddress>
-            <emailServicesAddress>support@f-v9prknszni9omak20uipnqfx2j0zabh4pj51r04t1tcjigg4s.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>support@u-2fmur5aicfajk1bzyqy9mxls3wwbcj7tuxu4m9adivepx8vj6r.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>True&amp;Co Customer Service</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -241,39 +182,8 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>privacysupport@tcsupport.trueandco.com</emailAddress>
-            <emailServicesAddress>privacysupport@1ls0oywnk78v63cfydjko6erup8gc2nqy7w5q8hgtltk16tdsf.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>True&amp;Co Privacy Support</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 5 - E</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>customerservice@vanheusen.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Van Heusen Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 5 - R</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>vanheusencustomerservice@pvh.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Van Heusen Retail Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>privacysupport@vanheusen.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>Van Heusen Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
         <routingAddresses>
@@ -282,7 +192,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>contactus@warners.com</emailAddress>
-            <emailServicesAddress>contactus@u-2gt66dsb692fpnlr6bi4qszmer9px8f9a7i1tppnpt6wpv05h.2c-cmsruac.cs59.case.sandbox.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>contactus@1eplqm0f6wg300fbd49yeejenqgyyrazuumqfiu84hg94j33dx.8l-4esduay.cs224.case.sandbox.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>Warners Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
@@ -295,26 +205,6 @@
             <emailAddress>privacysupport@warners.com</emailAddress>
             <isVerified>true</isVerified>
             <routingName>Warners Privacy Support</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email - 84 - E</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>customerservice@stylebureau.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>styleBureau Customer Service</routingName>
-            <saveEmailHeaders>false</saveEmailHeaders>
-        </routingAddresses>
-        <routingAddresses>
-            <addressType>EmailToCase</addressType>
-            <caseOrigin>Email</caseOrigin>
-            <casePriority>Medium</casePriority>
-            <createTask>false</createTask>
-            <emailAddress>privacysupport@stylebureau.com</emailAddress>
-            <isVerified>true</isVerified>
-            <routingName>styleBureau Privacy Support</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>
         <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
@@ -347,7 +237,7 @@
     <showFewerCloseActions>false</showFewerCloseActions>
     <systemUserEmail>hpang@00d1u000000xmv4uaa.com</systemUserEmail>
     <useSystemEmailAddress>true</useSystemEmailAddress>
-    <useSystemUserAsDefaultCaseUser>true</useSystemUserAsDefaultCaseUser>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
     <visibleInCssCheckbox>false</visibleInCssCheckbox>
     <webToCase>
         <enableWebToCase>false</enableWebToCase>

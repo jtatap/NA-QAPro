@@ -31,12 +31,9 @@ public class R2RChangeRequestSendEmail{
         if(flowInputsList[0].subType == 'Do Not Sell/Share'){
             templates = [SELECT Id,Name FROM EmailTemplate 
                                          WHERE Name = :mapOfBrandMappings.get(flowInputsList[0].brandName).Email_template_donot_share_Sell__c];
-           
-            system.debug('templates***'+templates);
         }else{
            templates = [SELECT Id,Name FROM EmailTemplate 
                                          WHERE Name = :mapOfBrandMappings.get(flowInputsList[0].brandName).Email_Template__c];
-            system.debug('templates***'+templates);
         }
         
         Messaging.SingleEmailMessage sem = new Messaging.SingleEmailMessage();   

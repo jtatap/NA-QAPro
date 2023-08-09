@@ -1,6 +1,5 @@
 <aura:component controller="ObservationFormComponentApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId">
    <aura:attribute name="recordId" type="String" />
-  <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
    <div class="slds-box slds-theme_default">
    <lightning:button class="slds-align_absolute-center slds-m-top_small slds-m-bottom_small" variant="brand" label="Create Observation Form" title="Brand action" onclick="{! c.doInit }" />
    </div>

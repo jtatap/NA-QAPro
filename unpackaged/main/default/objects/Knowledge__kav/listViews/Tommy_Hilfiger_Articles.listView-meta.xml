@@ -4,10 +4,13 @@
     <columns>ARTICLE_NUMBER</columns>
     <columns>TITLE</columns>
     <columns>VALIDATION_STATUS_ENUM</columns>
+    <columns>Sort_Order__c</columns>
     <columns>PUBLISH_STATUS</columns>
     <columns>LAST_UPDATE</columns>
     <columns>LANGUAGE</columns>
     <columns>LAST_PUBLISHED_DATE</columns>
+    <columns>ABSTRACT</columns>
+    <columns>SEO_Additional_Detail__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Brand__c</field>

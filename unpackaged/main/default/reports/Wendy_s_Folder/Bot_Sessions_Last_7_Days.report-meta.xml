@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ConversationDefinitionSession$SessionStartTime</field>
+    </columns>
+    <columns>
+        <field>ConversationDefinitionSession$ChannelType</field>
+    </columns>
+    <columns>
+        <field>ConversationDefinitionSession$SessionTransferResult</field>
+    </columns>
+    <columns>
+        <field>ConversationDefinitionSession$SessionEndType</field>
+    </columns>
+    <columns>
+        <field>ConversationDefinitionSession$SessionStatus</field>
+    </columns>
+    <columns>
+        <field>ConversationDefinitionSession$SessionTransferType</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Bot Sessions- Last 7 Days</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Bot_Sessions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ConversationDefinitionSession$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

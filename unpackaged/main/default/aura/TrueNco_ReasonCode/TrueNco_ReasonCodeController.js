@@ -23,7 +23,7 @@
            
            if(ListOfDependentFields.length > 0){
                cmp.set("v.bDisabledDependentFld" , false);  
-                //cmp.set("isbutton",true);
+                
                 helper.fetchDepValues(cmp, ListOfDependentFields,"v.listDependingValues");    
             }else{
                 cmp.set("v.bDisabledDependentFld" , true); 
@@ -63,16 +63,11 @@
                }  
            } else {
                 component.set("v.listSubDependingValues", ['']);
-               // component.set("v.listproductCategoryValues", ['']);
+               
                component.set("v.bDisabledSubDependentFld" , true);
             }
         
-               /* if(controllerValueKey == 'Defective'){
-                     component.set("v.isSkunumber",true);
-                }
-                else{
-                    component.set("v.isSkunumber",false);
-                }*/
+               
      
           },
      onSubControllerFieldChange : function(component, event, helper) {
@@ -81,14 +76,14 @@
          var parentFieldValue = component.get("v.parentValue");    
          if(grandParentFieldValue ==='Product' && parentFieldValue === "Defective" && childFieldValue ==="Manufacturing Issue"){
              component.set("v.isSkunumber",true);
-             // helper.fetchPickListVal(component, 'Reason_Code_Channel__c', 'channel');
+             
             }
          else{
                     component.set("v.isSkunumber",false);
         }
          if(grandParentFieldValue ==='Product' && parentFieldValue === "Defective" ){
              component.set("v.isPurchased",true);
-             // helper.fetchPickListVal(component, 'Reason_Code_Channel__c', 'channel');
+             
             }
          else{
                     component.set("v.isPurchased",false);
@@ -143,10 +138,12 @@
           }
          action1.setCallback(this, function(response){
          	var status = response.getState();
+             var error = String($A.get("$Label.c.Error1"));
+             var success = String($A.get("$Label.c.Success1"));
           
-              if(status === "SUCCESS"){
+              if(status === success){
                    
-                 // $A.get('e.force:refreshView').fire();
+                 
               var workspaceAPI = cmp.find("workspace");
                workspaceAPI.getFocusedTabInfo().then(function(response) {
                             var focusedTabId = response.tabId;
@@ -164,8 +161,8 @@
           
                   
                  }
-             else if(status === "ERROR"){
-                //cmp.set(cmp.find("storeNumber").get("v.value"), response.getReturnValue());
+             else if(status === error){
+                
              }
             
          });
@@ -188,12 +185,16 @@
      },
     recordLoaded: function(cmp, event, helper) {
        var eventParams = event.getParams();
-        if(eventParams.changeType === "CHANGED") {
-        } else if(eventParams.changeType === "LOADED") {
+       var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var removed = String($A.get("$Label.c.Removed"));
+        var changed = String($A.get("$Label.c.Changed"));
+        if(eventParams.changeType === changed) {
+        } else if(eventParams.changeType === loaded) {
             // record is loaded in the cache
-        } else if(eventParams.changeType === "REMOVED") {
+        } else if(eventParams.changeType === removed) {
             //record is deleted.
-        } else if(eventParams.changeType === "ERROR") {
+        } else if(eventParams.changeType === error) {
             // there’s an error while loading, saving, or deleting the record
         } 
     },

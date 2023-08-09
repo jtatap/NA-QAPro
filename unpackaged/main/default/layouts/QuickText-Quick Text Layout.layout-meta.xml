@@ -28,6 +28,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>ShouldPredictInRr</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>IsInsertable</field>
             </layoutItems>
         </layoutColumns>
@@ -38,12 +42,13 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
+        <layoutColumns />
         <style>CustomLinks</style>
     </layoutSections>
     <miniLayout>
+        <fields>ShouldPredictInRr</fields>
         <fields>IsInsertable</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>

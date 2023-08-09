@@ -5,6 +5,7 @@ import ID_FIELD from '@salesforce/schema/Corporate_Form_Configuration__c.Id';
 import FIELDDATA from '@salesforce/schema/Corporate_Form_Configuration__c.FieldData__c';
 import { updateRecord,getRecord,getFieldValue } from 'lightning/uiRecordApi';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import CsvStatementLabel from '@salesforce/label/c.CsvStatementLabel';
 
 const fields = [ID_FIELD, FIELDDATA];
 export default class NfCorporateFormEditor extends LightningElement {
@@ -19,6 +20,9 @@ export default class NfCorporateFormEditor extends LightningElement {
     selectedOptionsToSave = [];
     values = [];
     valuesAlreadyAdded = [];
+    label = {
+        CsvStatementLabel
+    };
 
     @wire(getRecord, { recordId: "$recordId", fields }) wireRecords ({ error, data }) {
         if (data) {

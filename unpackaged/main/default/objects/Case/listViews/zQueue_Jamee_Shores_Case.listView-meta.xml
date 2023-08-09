@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zQueue_Jamee_Shores_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>zQueue Jamee Shores</label>
+    <queue>zQueue_Jamee_Shores</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

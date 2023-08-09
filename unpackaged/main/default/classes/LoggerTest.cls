@@ -3,7 +3,7 @@
 * @CreatedDate: May'29, 2020
 * @TestClass: LoggerTest
 */
-@isTest
+@isTest(isParallel=false)
 private class LoggerTest {
     
     private enum LogLevel {FATAL, ERROR, INFO, DEBUG}

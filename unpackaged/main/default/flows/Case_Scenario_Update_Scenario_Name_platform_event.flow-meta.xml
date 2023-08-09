@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Invoked by the Case Scenario: Edit Screen flow</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fValidationRuleBypassToggle</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!$Record.BypassToggle__c}= TRUE, FALSE, TRUE)</expression>
+    </formulas>
+    <interviewLabel>Case Scenario: Update Scenario Name platform event {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Scenario: Update Scenario Name platform event</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case_Scenario_name</name>
+        <label>Update Case Scenario name</label>
+        <locationX>176</locationX>
+        <locationY>194</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RecordtoupdateId__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>$Record.MessagetoUpdate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ValidationRuleBypass__c</field>
+            <value>
+                <elementReference>fValidationRuleBypassToggle</elementReference>
+            </value>
+        </inputAssignments>
+        <object>NF_Case_Scenario__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Case_Scenario_name</targetReference>
+        </connector>
+        <object>Brand_Form_CMDT_Update__e</object>
+        <triggerType>PlatformEvent</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varCaseScenarioToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>NF_Case_Scenario__c</objectType>
+    </variables>
+</Flow>

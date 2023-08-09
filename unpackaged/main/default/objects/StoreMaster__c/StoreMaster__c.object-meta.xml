@@ -161,7 +161,20 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Store Master</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>StoreNumber__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>State__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Mall_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Brand__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Concatenated_Store_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>StoreNumber__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Mall_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Store_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Brand__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

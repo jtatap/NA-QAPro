@@ -70,7 +70,7 @@
 
             // Dispatch the event
             document.dispatchEvent(caseFieldsEvent);
-            //component.find("prechatAPI").startChat(fields);
+            
 
         } else {
             console.warn("Prechat fields did not pass validation!");

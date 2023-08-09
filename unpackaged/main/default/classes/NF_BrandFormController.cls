@@ -39,11 +39,11 @@ public without sharing class NF_BrandFormController {
     @AuraEnabled
     public static String createCase(String recordString){
         String operationResult;
-        System.debug('recordString @42: ' + recordString);
         Log.push('recordString >> ' + recordString);
         try{
             if(String.isNotBlank(recordString)){
                 Map<String,Object> recordObject = (Map<String,Object>) JSON.deserializeUntyped(recordString);
+
                 //Filter out the related files
                 CaseAttachmentObject caob = new CaseAttachmentObject();
                 caob.filesToDelete = (List<FileObject>)JSON.deserialize(JSON.serialize(recordObject.get('filesToDelete')),List<FileObject>.class);
@@ -71,13 +71,14 @@ public without sharing class NF_BrandFormController {
 
                     //The lines 82 - 91 are commented out by Nishant (Neuraflash) since the Reason_Code__c
                     // and Reason_Code_Details__c are not being used to set any other fields going forward
+
                     /**
                      * If "Reason_Code__c" is "Loyalty"
                      * and "Reason_Code_Details__c" is "Edit Account Information"
                      * then set "ZdPVHUpdateAccountInfoReason__c" same as the "Description" of the case with 255 characters limit.
                      */
 
-                    /*
+                     /*
                     if(String.valueOf(caseRecord.get('Reason_Code__c')) == 'Loyalty'
                     && String.valueOf(caseRecord.get('Reason_Code_Details__c')) == 'Edit Account Information'){
                         String caseDescription = String.valueOf(caseRecord.get('Description'));
@@ -85,11 +86,11 @@ public without sharing class NF_BrandFormController {
                         caseDescription = caseDescription.substring(0, maxLength);
                         caseRecord.put('ZdPVHUpdateAccountInfoReason__c',caseDescription);
                     }
-                     */
-
+                    */
 
                     //The lines 82 - 91 are commented out by Nishant (Neuraflash) since the Reason_Code__c
                     // and Reason_Code_Details__c are not being used to set any other fields going forward
+
                     /**
                      * If "Reason_Code__c" is "Product"
                      * and "Reason_Code_Details__c" is "Defective Mechandise"
@@ -107,8 +108,7 @@ public without sharing class NF_BrandFormController {
                         caseRecord.put('Reason_Code_Product_Category__c','Web Form Submission');
                         caseRecord.put('Reason_Code_Manufacturers__c','Web Form Submission');
                     }
-                     */
-
+                    */
                     //Case Origin as Web Form
                     caseRecord.put('Origin','Web');
 
@@ -127,9 +127,13 @@ public without sharing class NF_BrandFormController {
                     dmls.assignmentRuleHeader.assignmentRuleId= assignRule.id;
                     Log.push('dmls***'+dmls);
                     caseRecord.setOptions(dmls);
+                    
+                    
+                    
                     String reasonCodeDetail = String.valueOf(caseRecord.get('Reason_Code_Details__c'));
                     System.debug('reasonCodeDetail @127: ' + reasonCodeDetail);
                     List<NF_Case_Scenario__c> scenarios = new List<NF_Case_Scenario__c>();
+
                     try{
                         scenarios = [SELECT Id FROM NF_Case_Scenario__c WHERE Name =:reasonCodeDetail LIMIT 1];
                         if(scenarios[0] != null){
@@ -137,13 +141,16 @@ public without sharing class NF_BrandFormController {
                         }
                     }
                     catch(Exception e){
-                        System.debug('e @132: ' + e);
+                        ErrorLog__c log = new ErrorLog__c();
+                        log.Message__c = e.getMessage();
+                        log.StackTrace__c = e.getStackTraceString();
+                        insert log;
                     }
-
                     //Reason_Code__c abd Reason_Code_Details__c fields will not be populated going forward
                     caseRecord.put('Reason_Code__c', null);
                     caseRecord.put('Reason_Code_Details__c', null);
                     insert caseRecord;
+                    
 
                     //Link case record with files
                     caob.parentId = caseRecord.Id;

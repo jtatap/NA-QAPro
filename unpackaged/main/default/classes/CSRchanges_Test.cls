@@ -6,14 +6,14 @@ public class CSRchanges_Test {
         account acc = new account(name = 'DummyAccount');
         insert acc;
         
-        contact con = new contact (lastname='Dummycontact' ,email='test@gmail.com',Brand_Id__c = '1');
+        contact con = new contact (lastname='Dummycontact' ,email='test@gmail.com',Brand_Id__c = '2');
         insert con;
         getContact.getContactDetails(con.Id);
         GenericRecords__c gr = new GenericRecords__c();
         gr.recordId__c = con.Id;
         gr.Name ='privacyContact';
         insert gr;
-        case cs =new case(Type='Support',Status='New',SuppliedEmail='test@gmail.com',ContactId=con.id,Brand__c='1');
+        case cs =new case(Type='Support',Status='New',SuppliedEmail='test@gmail.com',ContactId=con.id,Brand__c='2');
         insert cs;
         con.Ecomm_Connected__c = true;
         con.B2C_Customer_No__c ='12345678';
@@ -30,12 +30,13 @@ public class CSRchanges_Test {
         getContact.searchMail(con.Email);
         Test.startTest();
         getContact.updateCSREmailField(con.Id,con.Email);
-        Test.stopTest();
+
         
         List<Case> Ca = [select Id, Brand_Lookup_Search__c,ContactEmail,contactId from Case where Id =:cs.Id];
         mailChangeRequest.mailChangeRequest(Ca);
         
  	    cs.CSRMailUpdateonContact__c = true;
+        cs.VerificationHash__c ='WwwtS4KRmST3gBYN';
         //cs.LastModifiedById = '0051U000006XWVd';
         update cs;
         
@@ -94,20 +95,33 @@ public class CSRchanges_Test {
         UpdateContactEmailBack.updateEmail(b2cHistList);
 
         ///////API Class 
+		RestRequest req = new RestRequest();
+        RestResponse res = new RestResponse();
+        req.requestURI = 'https://privacyCSR?in_response=Open&in_verificationCode=WwwtS4KRmST3gBYN&in_caseid='+cs.Id;
+    
+        req.addHeader('Content-Type', 'application/json');
+        req.httpMethod = 'GET';
+        req.requestBody = Blob.valueof('{"in_caseid":'+cs.Id+ ',"in_response":"Open","in_verificationCode":"Yes"}');
+        req.params.put('in_caseid',cs.Id);
+        req.params.put('in_response','Open');
+        req.params.put('in_verificationCode',cs.VerificationHash__c);
+        RestContext.request = req;
+        RestContext.response= res;
+	    PrivacyEmailChange_ProcessResponse_API.restGet();
 
-    RestRequest req = new RestRequest();
-    RestResponse res = new RestResponse();
-    req.requestURI = 'https://privacyCSR';
-
-    req.addHeader('Content-Type', 'application/json');
-    req.httpMethod = 'GET';
-    req.requestBody = Blob.valueof('{"in_caseid":'+cs.Id+ ',"in_response":"Open","in_verificationCode":"Yes"}');
-
-    RestContext.request = req;
-    RestContext.response= res;
-
-
-     PrivacyEmailChange_ProcessResponse_API.restGet();
+        RestRequest req2 = new RestRequest();
+        RestResponse res2 = new RestResponse();
+        req2.requestURI = 'https://privacyCSR?in_response=Open&in_verificationCode=WwwtS4KRmST3gBYN&in_caseid='+cs.Id;
+    
+        req2.addHeader('Content-Type', 'application/json');
+        req2.httpMethod = 'GET';
+        req2.requestBody = Blob.valueof('{"in_caseid":'+cs.Id+ ',"in_response":"Open","in_verificationCode":"Yes"}');
+        req2.params.put('in_caseid',cs.Id);
+        req2.params.put('in_response','Resolved');
+        req2.params.put('in_verificationCode',cs.VerificationHash__c);
+        RestContext.request = req2;
+        RestContext.response= res2;
+	    PrivacyEmailChange_ProcessResponse_API.restGet();
 
         
         ///eMailServiceCSRMail
@@ -121,7 +135,7 @@ public class CSRchanges_Test {
         email.plainTextBody = 'Test';
         
         emailService.handleInboundEmail(email,env);
-        
+                Test.stopTest();
         
     }
 }

@@ -6,7 +6,7 @@
 private class NF_GetShippingDelaysTest {
     @IsTest
     static void test1() {
-
+        Test.startTest();
         List<NF_GetShippingDelays.Input> inputs = new List<NF_GetShippingDelays.Input>();
         NF_GetShippingDelays.Input input = new NF_GetShippingDelays.Input();
         List<NF_GetShippingDelays.Output> outputs;
@@ -16,7 +16,7 @@ private class NF_GetShippingDelaysTest {
         outputs = NF_GetShippingDelays.getShippingDelays(inputs);
 
         Einstein_Bot_Dialog_Configuration__mdt configuration = [select Shipping_Delays__c from Einstein_Bot_Dialog_Configuration__mdt limit 1];
-        
+        Test.stopTest();
         System.assertEquals(outputs.get(0).shippingDelaysEnabled,configuration.Shipping_Delays__c);
     }
 }

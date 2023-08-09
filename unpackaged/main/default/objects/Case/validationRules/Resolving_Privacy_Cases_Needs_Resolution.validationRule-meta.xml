@@ -4,20 +4,20 @@
     <active>true</active>
     <description>Resolving a Privacy Case Requires a Resolution Code to be populated as well.</description>
     <errorConditionFormula>AND(
-    OR(
-        ISPICKVAL(Status,&quot;Resolved&quot;),
-        ISPICKVAL(Status,&quot;Closed&quot;)
-        ),
+OR(
+ISPICKVAL(Status,&quot;Resolved&quot;),
+ISPICKVAL(Status,&quot;Closed&quot;)
+),
 
-    ISBLANK(TEXT(Resolution_Code__c)),
+ISBLANK(TEXT(Resolution_Code__c)),
 
-    OR(
-        $RecordType.DeveloperName = &quot;Privacy_Request&quot;,
-        $RecordType.DeveloperName = &quot;Data_Owner_Request&quot;,
-        $RecordType.DeveloperName = &quot;Privacy_Request_Read_Only&quot;
-        ),
-    
-    Supervisor_Data_Validation_Override__c = FALSE
+OR(
+$RecordType.DeveloperName = &quot;Privacy_Request&quot;,
+$RecordType.DeveloperName = &quot;Data_Owner_Request&quot;,
+$RecordType.DeveloperName = &quot;Privacy_Request_Read_Only&quot;
+),
+
+Supervisor_Data_Validation_Override__c = FALSE
 
 )</errorConditionFormula>
     <errorDisplayField>Resolution_Code__c</errorDisplayField>

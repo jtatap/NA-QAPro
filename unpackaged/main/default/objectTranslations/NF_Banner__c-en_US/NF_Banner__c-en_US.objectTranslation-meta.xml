@@ -8,16 +8,6 @@
         <plural>true</plural>
         <value>Portal Banners</value>
     </caseValues>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <layouts>
         <layout>Portal Banner Layout</layout>
         <sections>
@@ -42,4 +32,14 @@
         <errorMessage><!-- Page Key should be blank if the &quot;Where should this go?&quot; field isn&apos;t &quot;Custom Page&quot;. --></errorMessage>
         <name>Page_Key_Is_Only_For_Custom_Page</name>
     </validationRules>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </CustomObjectTranslation>

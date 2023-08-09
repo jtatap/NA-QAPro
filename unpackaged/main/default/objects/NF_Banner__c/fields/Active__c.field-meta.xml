@@ -2,7 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Active__c</fullName>
     <defaultValue>false</defaultValue>
-    <description>Determines weather this message is active or not</description>
+    <description>Determines weather this message is active or not
+
+The portal banner system is a way to display in communities / digital experiences. This allows internal users to have a way to communicate with portal users without the need of changing the portal and without the assistance of a system admin or developer. The system allows to control in which communities this is to be placed as well if it is active and if it is with in the time frame.</description>
     <externalId>false</externalId>
     <inlineHelpText>Determines weather this message is active or not</inlineHelpText>
     <label>Active</label>

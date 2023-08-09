@@ -35,69 +35,71 @@ global class SFCCRewardUpdate {
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response; 
         String requestData = req.requestBody.toString();
-        system.debug('requestData>>>'+requestData);
+        Log.push('requestData>>>'+requestData);
         SubRequest subReqReceived = (SubRequest)JSON.deserialize(requestData,SubRequest.class);
-        system.debug('subReqReceived>>>'+subReqReceived);
+        Log.push('subReqReceived>>>'+subReqReceived);
         SubResponse objres1=new SubResponse();
         List<RewardIds> lstRewd=new List<RewardIds>();
         RewardIds objRew;
         if (String.IsBlank(subReqReceived.LoyaltyId) || string.IsBlank(subReqReceived.BrandId) || subReqReceived.RewardId.size()<1) {
             objRew=new RewardIds();
             res.statusCode = 400;            
-            objres1.code='INVALID_QUERY'; 
-            objRew.message='Missing required parameters BrandId Or LoyaltyId Or RewardId';
+            objres1.code=SYSTEM.LABEL.INVALID_QUERY; 
+            objRew.message=SYSTEM.LABEL.Missing_required_parameters_BrandId_Or_LoyaltyId_Or_RewardId;
             lstRewd.add(objRew);
             objres1.RewardIds=lstRewd;
             res.responseBody = Blob.valueOf(JSON.serialize(objres1));
-            //system.debug('test>>>,,'+BrandId);
+            //Log.push('test>>>,,'+BrandId);
+            Logger.logDebug();
             return;
-        }else if(subReqReceived.BrandId=='2'){
+        }else if(subReqReceived.BrandId==SYSTEM.LABEL.X2){
             Map<Id,Reward__c> getMapOfRewards=rewardsUpdate(subReqReceived);
             if(getMapOfRewards.size()>0){
-                system.debug('helper method size>>'+getMapOfRewards.size());
+                Log.push('helper method size>>'+getMapOfRewards.size());
                 Database.SaveResult[] srList = Database.update(getMapOfRewards.values(), false);
                 set<id> setSuccId=new set<id>();
                 for (Database.SaveResult sr : srList) {
                     if (sr.isSuccess()) {
                         setSuccId.add(sr.getId());
                         // Operation was successful, so get the ID of the record that was processed
-                        System.debug('Successfully inserted account. Account ID: ' + sr.getId());
+                        Log.push('Successfully inserted account. Account ID: ' + sr.getId());
                     }
                     else {
                         // Operation failed, so get all errors                
                         for(Database.Error err : sr.getErrors()) {
-                            System.debug('The following error has occurred.');                    
-                            System.debug(err.getStatusCode() + ': ' + err.getMessage());
-                            System.debug('Account fields that affected this error: ' + err.getFields());
+                            Log.push('The following error has occurred.');                    
+                            Log.push(err.getStatusCode() + ': ' + err.getMessage());
+                            Log.push('Account fields that affected this error: ' + err.getFields());
                         }
                     }                    
                 }
                 res.statusCode = 200;            
-                objres1.code='200';
+                objres1.code=SYSTEM.LABEL.X200;
                 for(Reward__c objRewd:getMapOfRewards.values()){
                     objRew=new RewardIds();
                     objRew.RewardId=objRewd.RewardId__c;
                     objRew.LoyaltyId=objRewd.LoyaltyId__c;
                     if(setSuccId.contains(objRewd.id)){
-                        objRew.Message='Success';                        
+                        objRew.Message=SYSTEM.LABEL.Success;                        
                     }else{                        
-                        objRew.Message='Failure';                        
+                        objRew.Message=SYSTEM.LABEL.Failure;                        
                     }
                     lstRewd.add(objRew);
                 }
                 objres1.RewardIds=lstRewd;
-                system.debug('test>>>>>'+objres1);
+                Log.push('test>>>>>'+objres1);
+                Logger.logDebug();
                 res.responseBody = Blob.valueOf(JSON.serialize(objres1));
             }
         }else{
             objRew=new RewardIds();
             res.statusCode = 400;            
-            objres1.code='INVALID_BRAND'; 
+            objres1.code=SYSTEM.LABEL.INVALID_BRAND; 
             objRew.message='Invalid BrandId';
             lstRewd.add(objRew);
             objres1.RewardIds=lstRewd;
             res.responseBody = Blob.valueOf(JSON.serialize(objres1));
-            //system.debug('test>>>,,'+BrandId);
+            //Log.push('test>>>,,'+BrandId);
             return;
         }
     }
@@ -106,15 +108,16 @@ global class SFCCRewardUpdate {
         List<Reward__c> lstrewards=new List<Reward__c>();
         for(Reward__c objrewards:[Select Id,LoyaltyId__c, Reward_Number__c,Web_Order_Id__c, RewardId__c, RewardType__c, Status__c,Web_Operation_Type__c,ExpireDate__c From Reward__c  Where LoyaltyId__c=:inputRequest.LoyaltyId AND RewardId__c IN :inputRequest.RewardId] ){
             objrewards.Web_Operation_Type__c=inputRequest.OperationType;
-            if(inputRequest.OperationType=='PendingRedeemed'){
-                objrewards.Status__c='Pending Redeemed' ;
+            if(inputRequest.OperationType==SYSTEM.LABEL.PendingRedeemed){
+                objrewards.Status__c=SYSTEM.LABEL.Pending_Redeemed ;
             }else{
-                objrewards.Status__c='Active' ;
+                objrewards.Status__c=SYSTEM.LABEL.Active1 ;
             }
             objrewards.Web_Order_Id__c=inputRequest.OrderId;
             mapofRewards.put(objrewards.id,objrewards);
         }       
-        system.debug('helper method>>'+mapofRewards);
+        Log.push('helper method>>'+mapofRewards);
+        Logger.logDebug();
         return mapofRewards;
     }
     

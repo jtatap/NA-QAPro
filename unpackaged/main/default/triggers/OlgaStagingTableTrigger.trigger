@@ -1,6 +1,6 @@
 trigger OlgaStagingTableTrigger on OlgaStagingTable__c (before insert) {
 
-    List<Contact> newContactList = new List<Contact>();
+    /*List<Contact> newContactList = new List<Contact>();
     List<Account> newAccountList = new List<Account>();
 
 
@@ -535,7 +535,8 @@ trigger OlgaStagingTableTrigger on OlgaStagingTable__c (before insert) {
 
         OSTtoNewContactMap.put(otable, con);
 
-    } // end createContact()
+    } // end createContact()*/
+    TriggerDispatcher.run(new NF_OlgaStagingTableTriggerHandler());
 
 
 

@@ -9,20 +9,12 @@
         <topicDescription> </topicDescription>
     </managedTopic>
     <managedTopic>
-        <fullName>Calvin Klein Community.Content:Gift Services</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>Gift Services</name>
-        <parentName></parentName>
-        <position>1</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
         <fullName>Calvin Klein Community.Content:Online Store Information</fullName>
         <managedTopicType>Content</managedTopicType>
         <name>Online Store Information</name>
         <parentName></parentName>
         <position>2</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s online store? Visit our help page for more info on online orders, items, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Content:Payment</fullName>
@@ -30,15 +22,7 @@
         <name>Payment</name>
         <parentName></parentName>
         <position>3</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Calvin Klein Community.Content:Product Care</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>Product Care</name>
-        <parentName></parentName>
-        <position>4</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about making a payment with Calvin Klein? Visit our help page for more info on payment options, using PayPal, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Content:Your Account</fullName>
@@ -46,7 +30,7 @@
         <name>Your Account</name>
         <parentName></parentName>
         <position>5</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about your Calvin Klein account? Visit our help page for more info about opening and managing your account.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Featured:Additional Help Topics</fullName>
@@ -54,7 +38,7 @@
         <name>Additional Help Topics</name>
         <parentName></parentName>
         <position>4</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question or need assistance from Calvin Klein? Visit our help page to find answers to frequently asked questions and additional topics.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Featured:Preferred Loyalty Program</fullName>
@@ -62,7 +46,7 @@
         <name>Preferred Loyalty Program</name>
         <parentName></parentName>
         <position>0</position>
-        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s Preferred Loyalty Program? Visit our help page for more info on signing up, logging in, rewards, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Featured:Returns</fullName>
@@ -70,7 +54,7 @@
         <name>Returns</name>
         <parentName></parentName>
         <position>2</position>
-        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein return? Visit our help page for more info on how to make a return, our return policy, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Featured:Shipping</fullName>
@@ -78,7 +62,7 @@
         <name>Shipping</name>
         <parentName></parentName>
         <position>1</position>
-        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein shipping? Visit our help page for more info on shipping methods, charges, tracking, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Featured:Your Order</fullName>
@@ -86,7 +70,7 @@
         <name>Your Order</name>
         <parentName></parentName>
         <position>3</position>
-        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein order? Visit our help page for more info on order status, cancelling an order, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Additional Help Topics</fullName>
@@ -94,7 +78,7 @@
         <name>Additional Help Topics</name>
         <parentName></parentName>
         <position>4</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question or need assistance from Calvin Klein? Visit our help page to find answers to frequently asked questions and additional topics.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:FAQs</fullName>
@@ -105,20 +89,12 @@
         <topicDescription> </topicDescription>
     </managedTopic>
     <managedTopic>
-        <fullName>Calvin Klein Community.Navigational:Gift Services</fullName>
-        <managedTopicType>Navigational</managedTopicType>
-        <name>Gift Services</name>
-        <parentName>Additional Help Topics</parentName>
-        <position>2</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Online Store Information</fullName>
         <managedTopicType>Navigational</managedTopicType>
         <name>Online Store Information</name>
         <parentName>Additional Help Topics</parentName>
         <position>4</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s online store? Visit our help page for more info on online orders, items, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Payment</fullName>
@@ -126,7 +102,7 @@
         <name>Payment</name>
         <parentName>Additional Help Topics</parentName>
         <position>1</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about making a payment with Calvin Klein? Visit our help page for more info on payment options, using PayPal, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Preferred Loyalty Program</fullName>
@@ -134,15 +110,7 @@
         <name>Preferred Loyalty Program</name>
         <parentName></parentName>
         <position>0</position>
-        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Calvin Klein Community.Navigational:Product Care</fullName>
-        <managedTopicType>Navigational</managedTopicType>
-        <name>Product Care</name>
-        <parentName>Additional Help Topics</parentName>
-        <position>3</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s Preferred Loyalty Program? Visit our help page for more info on signing up, logging in, rewards, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Returns</fullName>
@@ -150,7 +118,7 @@
         <name>Returns</name>
         <parentName></parentName>
         <position>2</position>
-        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein return? Visit our help page for more info on how to make a return, our return policy, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Shipping</fullName>
@@ -158,7 +126,7 @@
         <name>Shipping</name>
         <parentName></parentName>
         <position>1</position>
-        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein shipping? Visit our help page for more info on shipping methods, charges, tracking, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Your Account</fullName>
@@ -166,7 +134,7 @@
         <name>Your Account</name>
         <parentName>Additional Help Topics</parentName>
         <position>0</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about your Calvin Klein account? Visit our help page for more info about opening and managing your account.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein Community.Navigational:Your Order</fullName>
@@ -174,6 +142,6 @@
         <name>Your Order</name>
         <parentName></parentName>
         <position>3</position>
-        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein order? Visit our help page for more info on order status, cancelling an order, and more.</topicDescription>
     </managedTopic>
 </ManagedTopics>

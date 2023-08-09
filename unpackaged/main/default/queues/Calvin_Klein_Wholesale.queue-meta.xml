@@ -8,9 +8,6 @@
             <publicGroup>All_Brands</publicGroup>
             <publicGroup>Wholesale</publicGroup>
         </publicGroups>
-        <users>
-            <user>wholesale@pvh.com</user>
-        </users>
     </queueMembers>
     <queueRoutingConfig>Wholesale</queueRoutingConfig>
     <queueSobject>

@@ -35,6 +35,8 @@ private class SubscriberProfileUpdatesTest {
         RestContext.response= res;
         SubscriberProfileUpdates.PCUpdateResponse subResponse = new SubscriberProfileUpdates.PCUpdateResponse();
         subResponse = SubscriberProfileUpdates.doSignUp();
+        Test.stopTest();
+        System.assertEquals(subResponse.message, 'Missing: ContactId');
         System.debug('***Response 1 = '+subResponse);
     }
     
@@ -54,6 +56,7 @@ private class SubscriberProfileUpdatesTest {
         subResponse = SubscriberProfileUpdates.doSignUp();
         Test.stopTest(); 
         System.debug('***Response 2 = '+subResponse);
+        System.assertEquals(subResponse.message, 'No matching contact found');
     }
     
     @isTest
@@ -80,7 +83,8 @@ private class SubscriberProfileUpdatesTest {
         SubscriberProfileUpdates.PCUpdateResponse subResponse = new SubscriberProfileUpdates.PCUpdateResponse();
         
         //subResponse = SubscriberProfileUpdates.doSignUp();
-       
+        Test.stopTest();
+        System.assertEquals(subResponse.message, null);
         System.debug('***Response 3 = '+subResponse);
        
     }
@@ -113,7 +117,8 @@ private class SubscriberProfileUpdatesTest {
         SubscriberProfileUpdates.PCUpdateResponse subResponse = new SubscriberProfileUpdates.PCUpdateResponse();
         subResponse = SubscriberProfileUpdates.doSignUp();
         System.debug('***Response 4 = '+subResponse);
-       
+        Test.stopTest();
+        System.assertEquals(subResponse.message, null);
     }
     @isTest
     static void doSignUpTest_ContactUpdate1() {
@@ -145,7 +150,8 @@ private class SubscriberProfileUpdatesTest {
         SubscriberProfileUpdates.PCUpdateResponse subResponse = new SubscriberProfileUpdates.PCUpdateResponse();
         subResponse = SubscriberProfileUpdates.doSignUp();
         System.debug('***Response 4 = '+subResponse);
-       
+       Test.stopTest();
+        System.assertEquals(subResponse.message, 'Success');
     }
     @isTest
     static void doSignUpTest_ContactUpdateException() {
@@ -174,7 +180,9 @@ private class SubscriberProfileUpdatesTest {
         RestContext.response= res;
         SubscriberProfileUpdates.PCUpdateResponse subResponse = new SubscriberProfileUpdates.PCUpdateResponse();
         subResponse = SubscriberProfileUpdates.doSignUp();
+        Test.stopTest();
         System.debug('***Response 4 = '+subResponse);
+        System.assert(subResponse.message != 'Missing: ContactId');
        
     }
 }

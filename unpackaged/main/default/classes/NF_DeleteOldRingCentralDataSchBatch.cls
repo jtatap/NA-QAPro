@@ -34,8 +34,8 @@ global class NF_DeleteOldRingCentralDataSchBatch implements Database.Batchable<S
             }
         }
 
-        System.debug('objectsToDelete :: ' + objectsToDelete);
-
+        Log.push('objectsToDelete :: ' + objectsToDelete);
+        Logger.logDebug();
         if(!objectsToDelete.isEmpty()){
             NF_DeleteOldRingCentralDataSchBatch batchable =
                 new NF_DeleteOldRingCentralDataSchBatch(objectsToDelete, index);
@@ -83,10 +83,11 @@ global class NF_DeleteOldRingCentralDataSchBatch implements Database.Batchable<S
     **/
     public void execute(Database.BatchableContext ctx, List<SObject> recordsToDelete){
         Integer deleteSize = recordsToDelete != null && !recordsToDelete.isEmpty() ? recordsToDelete.size() : 0;
-        System.debug(
+        Log.push(
             'Deleting ' + deleteSize + ' records of ' + objectName +
             ' object whose ' + FIELD_TO_CONSIDER + ' < ' + CUT_OFF_DATE
         );
+        Logger.logDebug();
         Database.delete(recordsToDelete);
     }
 

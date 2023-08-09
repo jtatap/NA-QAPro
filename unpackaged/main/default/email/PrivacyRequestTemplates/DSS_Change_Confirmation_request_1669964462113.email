@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title></title>
-	<meta /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="IE=edge" />
+	<meta /><meta content="width=device-width, initial-scale=1" name="viewport" /><meta content="IE=edge" />
 	<style type="text/css">/* CLIENT-SPECIFIC STYLES */
     body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
     table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
@@ -114,7 +114,7 @@
 												<br />
 												{{{Case.Brand__c}}} has received an Advertising/Sharing Opt-Out request associated with the email {{{Case.SuppliedEmail}}}.<br />
 												&nbsp;<br />
-												By clicking “Yes” you acknowledge that you have submitted this request and you will be removed from our targeted advertising lists. We will also stop sharing your information with third parties. Please note you may still receive {{{Case.Brand__c}}} ads but you will not be targeted directly.&nbsp;<br />
+												By clicking “Yes” you acknowledge that you have submitted this request and you will be removed from our targeted advertising lists. We will also stop sharing your information with third parties. Please note you may still receive a&nbsp;{{{Case.Brand__c}}} ads but you will not be targeted directly.&nbsp;<br />
 												&nbsp;<br />
 												If you have not submitted the request, please click the "No" link below.&nbsp;<br />
 												&nbsp;<br />

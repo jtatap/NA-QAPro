@@ -11,16 +11,19 @@
         // the server-side action returns
         actionMergeLoyalty.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
+            let success = String($A.get("$Label.c.Success1"));
+            let incomplete = String($A.get("$Label.c.Incomplete"));
+            let error = String($A.get("$Label.c.Error1"));
+            if (state === success) {
                 var loyaltyStatus = response.getReturnValue();
                 console.log('*****loyaltystatus='+loyaltyStatus);
                 cmp.set("v.isLoyaltyApplicable",loyaltyStatus);
                 console.log('*****'+cmp.get("v.isLoyaltyApplicable"));
             }
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 // do something
             }
-            else if (state === "ERROR") {
+            else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {

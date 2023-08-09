@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... set the QA Contact Properties to facilitate testing.</description>
         <name>asn_qaContactAssignContactID</name>
@@ -339,6 +339,7 @@
         </rules>
     </decisions>
     <description>... this flow accepts a collection of QA Mode attributes and produces a Contact record that can be used for flow validation.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Process: QA Mode Helper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: QA Mode Helper</label>
     <processMetadataValues>

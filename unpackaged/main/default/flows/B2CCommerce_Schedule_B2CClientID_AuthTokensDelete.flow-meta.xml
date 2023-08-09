@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the recordCount of the selected records to delete.</description>
         <name>asn_recordCountOfRecords</name>
@@ -42,6 +42,7 @@
         </rules>
     </decisions>
     <description>... deletes the expired or invalid authTokens associated to a given B2C Client ID.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Schedule: B2C Client ID: AuthTokens: Delete {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Schedule: B2C Client ID: AuthTokens: Delete</label>
     <processMetadataValues>

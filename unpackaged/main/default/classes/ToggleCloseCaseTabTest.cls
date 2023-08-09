@@ -4,9 +4,37 @@
 
 @IsTest
 private class ToggleCloseCaseTabTest {
+    @TestSetup
+    static void makeData(){
+        Account genAcc = new Account();
+        genAcc.Name = 'generic Account' + Math.random();
+        insert genAcc;
+
+        Contact genCon = new Contact();
+        genCon.email = 'foo@example.com';
+        genCon.lastName = 'generic contact ' + Math.random();
+        genCon.AccountId = genAcc.id;
+        genCon.Brand_Id__c='9';
+        insert genCon;
+    }
+
     @isTest
     static void createCaseTestPos()
     {
+        Account genAcc = [select id from Account LIMIT 1];
+        Contact genCon = [SELECT Id FROM Contact WHERE Brand_Id__c = '9'];
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = genCon.Id
+        );
+        insert genRec;
+
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = genAcc.Id
+        );
+        insert genRecAcct;
+        
         Id recordTypeIdSupportCase = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('Support_Case').getRecordTypeId();
         //Setting the API Name for Calvin Klein Brand
         List<Case> getCaseList = TestDataFactory.createCases(1);
@@ -30,6 +58,20 @@ private class ToggleCloseCaseTabTest {
     @isTest
     static void createCaseTestNeg()
     {
+        Account genAcc = [select id from Account LIMIT 1];
+        Contact genCon = [SELECT Id FROM Contact WHERE Brand_Id__c = '9'];
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = genCon.Id
+        );
+        insert genRec;
+
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = genAcc.Id
+        );
+        insert genRecAcct;
+        
         Id recordTypeIdSupportCase = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('Support_Case').getRecordTypeId();
         //Setting the API Name for Calvin Klein Brand
         List<Case> getCaseList = TestDataFactory.createCases(1);

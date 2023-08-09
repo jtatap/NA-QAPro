@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">https://help.calvinklein.com/s/topic/0TO3t000001E1dlGAC/returns</value>
+        <value xsi:type="xsd:string">https://uat-pvhservicecloud.cs224.force.com/calvinkleinca/s/topic/0TO3t000001E1dlGAC/returns</value>
     </values>
 </CustomMetadata>

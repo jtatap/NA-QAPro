@@ -4,15 +4,15 @@
     <protected>false</protected>
     <values>
         <field>Announcement_End_Date__c</field>
-        <value xsi:type="xsd:date">2021-06-23</value>
+        <value xsi:type="xsd:date">2021-08-05</value>
     </values>
     <values>
         <field>Announcement_Start_Date__c</field>
-        <value xsi:type="xsd:date">2021-06-16</value>
+        <value xsi:type="xsd:date">2021-07-27</value>
     </values>
     <values>
         <field>Announcement__c</field>
-        <value xsi:type="xsd:string">We’re currently making improvements to our warehouse systems. From 6/17-6/23, expedited shipping will be unavailable, and there may be slight delays in order processing. We appreciate your patience.</value>
+        <value xsi:type="xsd:string">Due to system maintenance, orders placed during this time may be delayed in processing and expedited shipping will not be available. We appreciate your patience as we work to improve your shopping experience.</value>
     </values>
     <values>
         <field>Brand_API_Name__c</field>

@@ -133,14 +133,6 @@
         <name>OOBO</name>
     </quickActions>
     <quickActions>
-        <label><!-- OOBO - Anonymous Customer --></label>
-        <name>OOBO_Anonymous_Customer</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- OOBO - Registered Customer --></label>
-        <name>OOBO_Registered_Customer</name>
-    </quickActions>
-    <quickActions>
         <label><!-- Order Search --></label>
         <name>Order_Search</name>
     </quickActions>
@@ -151,6 +143,10 @@
     <quickActions>
         <label><!-- Unlock Account --></label>
         <name>Unlock_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Case - Macros --></label>
+        <name>Update_Case_Macros</name>
     </quickActions>
     <quickActions>
         <label><!-- Ecomm Verify --></label>
@@ -357,6 +353,10 @@
         <label><!-- CsMrgListBtn --></label>
         <name>csmrgp__CsMrgListBtn</name>
     </webLinks>
+    
+    
+    
+    
     
     
     

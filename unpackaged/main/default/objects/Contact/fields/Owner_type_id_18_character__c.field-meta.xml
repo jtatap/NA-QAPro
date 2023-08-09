@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Owner_type_id_18_character__c</fullName>
     <externalId>false</externalId>
-    <formula>CASESAFEID(  OwnerId  )</formula>
+    <formula>CASESAFEID( OwnerId )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Owner type id 18 character</label>
     <required>false</required>

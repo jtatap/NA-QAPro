@@ -24,7 +24,7 @@ public with Sharing class LookupfieldController {
     
     @AuraEnabled
     public static List<sObject> SearchRecords(String ObjectName, List<String> ReturnFields, List<String> QueryFields, String SearchText, String SortColumn, String SortOrder, Integer MaxResults, String Filter) {
-        system.debug('inside search records***');
+        Log.push('inside search records***');
         //always put a limit on the results
         if (MaxResults == null || MaxResults == 0) {
             MaxResults = 5;
@@ -62,12 +62,13 @@ public with Sharing class LookupfieldController {
             sQuery += ' ORDER BY ' + SortColumn + ' ' + SortOrder;
         }
         
-        sQuery += ' LIMIT ' + MaxResults;
+       sQuery += ' LIMIT ' + MaxResults;
         
-        System.debug('sQuery>>>'+sQuery);
+        Log.push('sQuery>>>'+sQuery);
         
         List <sObject> searchResult = Database.query(sQuery);
-        system.debug('searchResult'+searchResult);
+        Log.push('searchResult'+searchResult);
+        Logger.logDebug();
         return searchResult;
     }
     

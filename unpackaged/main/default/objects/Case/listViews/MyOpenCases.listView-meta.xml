@@ -8,13 +8,12 @@
     <columns>Brand__c</columns>
     <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-    <columns>Reason_Code__c</columns>
-    <columns>Reason_Code_Details__c</columns>
+    <columns>NFCaseScenario__c</columns>
     <filterScope>Mine</filterScope>
     <filters>
         <field>CASES.STATUS</field>
         <operation>equals</operation>
-        <value>Open</value>
+        <value>New,Open</value>
     </filters>
     <label>My Open Cases</label>
 </ListView>

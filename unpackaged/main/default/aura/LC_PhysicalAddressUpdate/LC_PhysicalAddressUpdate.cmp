@@ -48,5 +48,4 @@
             </div>
         </div>
     </aura:if>
-    
 </aura:component>

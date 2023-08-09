@@ -149,6 +149,11 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>The portal banner system is a way to display in communities / digital experiences. 
+
+This allows internal users to have a way to communicate with portal users without the need of changing the portal and without the assistance of a system admin or developer.
+
+The system allows to control in which communities this is to be placed as well if it is active and if it is with in the time frame.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>

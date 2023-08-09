@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... deactivate the B2C CustomerList&#39;s active and profile-control flags (disabling integration).</description>
         <name>asn_DeActivateB2CCustomerList</name>
@@ -47,6 +47,7 @@
         </connector>
     </assignments>
     <description>... deactivates the selected B2C Commerce CustomerList and disable integration with B2C Commerce.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: DeActivate CustomerList {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: DeActivate CustomerList</label>
     <processMetadataValues>

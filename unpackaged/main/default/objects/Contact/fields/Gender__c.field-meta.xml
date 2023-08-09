@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Gender__c</fullName>
     <externalId>false</externalId>
-    <formula>IF(ISPICKVAL(SelfClaimedGender__c, &quot;&quot;), 
+    <formula>IF(ISPICKVAL(SelfClaimedGender__c, &quot;&quot;),
 CASE(TEXT(Account.Gender__c),
 &quot;M&quot;,&quot;M&quot;,
 &quot;F&quot;,&quot;F&quot;,&quot;None&quot;

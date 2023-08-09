@@ -40,6 +40,15 @@
             </sourceValues>
             <value>Wholesale Queue</value>
         </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ashley Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>zQueue Ashley Christian</sourceValue>
+            </sourceValues>
+            <value>Ashley Christian</value>
+        </values>
     </buckets>
     <columns>
         <field>Case.Brand__c</field>
@@ -90,7 +99,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Stephanie Anderson,Elizabeth Sellers,Carolyn Anderson,Wholesale Queue</value>
+            <value>Stephanie Anderson,Elizabeth Sellers,Carolyn Anderson,Wholesale Queue,Ashley Christian</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

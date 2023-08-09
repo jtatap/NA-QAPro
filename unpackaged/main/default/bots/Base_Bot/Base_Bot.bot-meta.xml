@@ -166,6 +166,10 @@
             </relatedMlIntents>
         </mlIntents>
         <mlIntents>
+            <developerName>bus_deliverIssues_direct</developerName>
+            <label>bus_deliverIssues_direct</label>
+        </mlIntents>
+        <mlIntents>
             <developerName>bus_deliveryIssues_direct</developerName>
             <label>bus_deliveryIssues_direct</label>
             <relatedMlIntents>
@@ -189,6 +193,20 @@
         <mlIntents>
             <developerName>Confused</developerName>
             <label>Confused</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>End_Chat</developerName>
+            <label>End Chat</label>
+            <mlIntentUtterances>
+                <utterance>end_chat</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>No_Agent_Available</developerName>
+            <label>No Agent</label>
+            <mlIntentUtterances>
+                <utterance>no_agent</utterance>
+            </mlIntentUtterances>
         </mlIntents>
         <mlIntents>
             <developerName>Send_Chat_To_Brand_Queue</developerName>
@@ -264,7 +282,6 @@
         </mlSlotClasses>
         <mlSlotClasses>
             <dataType>Text</dataType>
-            <description>Order Number (set to 8 or 10 digits long)</description>
             <developerName>Order_Number</developerName>
             <extractionRegex>[0-9]{10}|[0-9]{8}|Don&#39;t know it</extractionRegex>
             <extractionType>Pattern</extractionType>
@@ -391,7 +408,6 @@
         </mlSlotClasses>
         <mlSlotClasses>
             <dataType>Text</dataType>
-            <description>5-digit US ZIP code</description>
             <developerName>ZIP_Code</developerName>
             <extractionRegex>^\d{5}$</extractionRegex>
             <extractionType>Pattern</extractionType>

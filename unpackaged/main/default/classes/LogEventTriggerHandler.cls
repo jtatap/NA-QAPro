@@ -35,7 +35,7 @@ public with sharing class LogEventTriggerHandler {
                 insert logList;
             }
         } catch(Exception ex){
-            System.debug(LoggingLevel.ERROR, 'LOGGER >> LogEventTriggerHandler > createLogs: '+ex.getMessage());
+            Logger.logException(ex);
         }
     }
 }

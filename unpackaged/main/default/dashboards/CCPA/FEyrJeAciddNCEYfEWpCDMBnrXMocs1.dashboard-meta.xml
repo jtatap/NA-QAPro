@@ -35,7 +35,7 @@
                 </groupingSortProperties>
                 <header>Email Outbound</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Aliyah_Reporting/Copy_of_Email_Activity_by_Agent</report>
+                <report>CCPAMetricsReports/Aliyah_Reporting/Copy_of_Email_Activity_by_Agent</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -116,7 +116,7 @@
                 </groupingSortProperties>
                 <header>CCPA Resolved Cases</header>
                 <legendPosition>Right</legendPosition>
-                <report>Aliyah_Reporting/Copy_of_CCPA_Resolved_Cases_Today</report>
+                <report>CCPAMetricsReports/Aliyah_Reporting/Copy_of_CCPA_Resolved_Cases_Today</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

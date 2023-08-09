@@ -13,7 +13,7 @@
         <customComponent>pvhChatMessageSnapinSpeedo</customComponent>
         <customComponentType>LA_PlainTextChatMessage</customComponentType>
     </embeddedServiceCustomComponents>
-    <isEnabled>true</isEnabled>
+    <isEnabled>false</isEnabled>
     <masterLabel>Speedo Prioritized Chat</masterLabel>
     <shouldHideAuthDialog>false</shouldHideAuthDialog>
     <site>Speedo</site>

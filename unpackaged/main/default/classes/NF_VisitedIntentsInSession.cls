@@ -21,10 +21,11 @@ public with sharing class NF_VisitedIntentsInSession {
         String chatKey = input[0].chatKey;
         Output out = new Output();
         out.visitedOrderStatusOrReturns = true;
-        System.debug('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
+        Log.push('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
 
         result.add(out);
-        System.debug(result.toString());
+        Log.push('result.toString()'+result.toString());
+        Logger.logDebug();
         return result;
     }
 

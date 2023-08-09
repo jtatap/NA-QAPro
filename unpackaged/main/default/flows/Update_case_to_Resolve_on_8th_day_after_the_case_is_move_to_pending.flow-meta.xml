@@ -530,7 +530,7 @@
         <object>Case</object>
     </recordUpdates>
     <startElementReference>myPreWaitDecision_myWait_myRule_1</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>cancelWaits</name>
         <dataType>String</dataType>
@@ -599,13 +599,13 @@
             <inputParameters>
                 <name>TimeOffsetUnit</name>
                 <value>
-                    <stringValue>Hours</stringValue>
+                    <stringValue>Days</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
                 <name>TimeOffset</name>
                 <value>
-                    <numberValue>4.0</numberValue>
+                    <numberValue>8.0</numberValue>
                 </value>
             </inputParameters>
             <label>myWaitEvent_myWait_myRule_1_event_0</label>

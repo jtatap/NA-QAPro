@@ -4,18 +4,18 @@
 
 public with sharing class NF_Util {
 
-    public static final String ORIGIN = 'Chat';
-    public static String TOMMY = 'Tommy Hilfiger';
-    public static String CALVIN = 'Calvin Klein';
-    public static String IZOD = 'IZOD';
-    public static String VAN = 'Van Heusen';
-    public static final String RECORD_TYPE = 'Chat Case';
+    public static final String ORIGIN = SYSTEM.LABEL.Chat;
+    public static String TOMMY = SYSTEM.LABEL.Tommy_Hilfiger;
+    public static String CALVIN = SYSTEM.LABEL.Calvin_Klein;
+    public static String IZOD = SYSTEM.LABEL.IZOD;
+    public static String VAN = SYSTEM.LABEL.Van_Heusen;
+    public static final String RECORD_TYPE = SYSTEM.LABEL.Chat_Case;
 
     public static String getLastBusinessIntent(String chatKey){
         String lastBusinessIntent = '';
         try {
             ebotdata__Bot_Session__c botSession = NF_Util.getBotSession(chatKey);
-            System.debug('>>NF_Util.getFirstUserInput botSession=' + botSession);
+            Log.push('>>NF_Util.getFirstUserInput botSession=' + botSession);
 
             if (botSession != null) {
                 for (ebotdata__Bot_Chat_Log__c chatLog : [
@@ -26,7 +26,7 @@ public with sharing class NF_Util {
                         LIMIT 10
                 ]) {
 
-                    System.debug('>>NF_Util.getLastBusinessIntent: ebotdata__Intent_Name__c=' + chatLog.ebotdata__Intent_Name__c);
+                    Log.push('>>NF_Util.getLastBusinessIntent: ebotdata__Intent_Name__c=' + chatLog.ebotdata__Intent_Name__c);
                     if (String.isNotEmpty(chatLog.ebotdata__Intent_Name__c) && chatLog.ebotdata__Intent_Name__c.substring(0, 3) == 'bus') {
                         lastBusinessIntent = chatLog.ebotdata__Intent_Name__c;
                         break;
@@ -34,8 +34,9 @@ public with sharing class NF_Util {
                 }
             }
         }catch(Exception e){
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
+        Logger.logDebug();
         return lastBusinessIntent;
     }
 
@@ -51,35 +52,35 @@ public with sharing class NF_Util {
     }
 
     public static Map<String, String> channelMapping = new Map<String, String>{
-            TOMMY => 'Online - Tommy.com',
-            CALVIN => 'Online - CalvinKlein.com',
-            IZOD => 'Online - Izod.com',
-            VAN => 'Online - vanheusen.com'
+            TOMMY => SYSTEM.LABEL.Online_Tommy_com,
+            CALVIN => SYSTEM.LABEL.Online_CalvinKlein_com,
+            IZOD => SYSTEM.LABEL.Online_Izod_com,
+            VAN => SYSTEM.LABEL.Online_vanheusen_com
     };
 
     public static Map<String, String> buttonMapping = new Map<String, String>{
-            TOMMY => 'Tommy Prioritized Chat',
-            CALVIN => 'Calvin Klein Prioritized Chat',
-            IZOD => 'Partner Brands Prioritized Chat',
-            VAN => 'Partner Brands Prioritized Chat'
+            TOMMY => SYSTEM.LABEL.Tommy_Prioritized_Chat,
+            CALVIN => SYSTEM.LABEL.Calvin_Klein_Prioritized_Chat,
+            IZOD => SYSTEM.LABEL.Partner_Brands_Prioritized_Chat,
+            VAN => SYSTEM.LABEL.Partner_Brands_Prioritized_Chat
     };
 
     public static Map<String, String> deploymentMapping = new Map<String, String> {
-            TOMMY => 'Tommy Prioritized Chat',
-            CALVIN => 'Calvin Klein Prioritized Chat',
-            IZOD => 'Partner Brands Prioritized Chat',
-            VAN => 'Partner Brands Prioritized Chat'
+            TOMMY => SYSTEM.LABEL.Tommy_Prioritized_Chat,
+            CALVIN => SYSTEM.LABEL.Calvin_Klein_Prioritized_Chat,
+            IZOD => SYSTEM.LABEL.Partner_Brands_Prioritized_Chat,
+            VAN => SYSTEM.LABEL.Partner_Brands_Prioritized_Chat
     };
 
     public static Map<String, String> queueMapping = new Map<String, String> {
-            TOMMY => 'Tommy_Chat_Priority',
-            CALVIN => 'Calvin_Klein_Chat_Priority',
-            IZOD => 'Partner_Brands_Chat_Priority',
-            VAN => 'Partner_Brands_Chat_Priority'
+            TOMMY => SYSTEM.LABEL.Tommy_Chat_Priority,
+            CALVIN => SYSTEM.LABEL.Calvin_Klein_Chat_Priority,
+            IZOD => SYSTEM.LABEL.Partner_Brands_Chat_Priority,
+            VAN => SYSTEM.LABEL.Partner_Brands_Chat_Priority
     };
 
     public static Brand_Setting__mdt getBrandName(String URL){
-        System.debug(URL);
+        Log.push(URL);
         String brandName = '';
         String backup = URL.toUpperCase();
         URL = URL.toUpperCase();
@@ -87,21 +88,21 @@ public with sharing class NF_Util {
         URL = URL.remove('HTTP');
         URL = URL.remove('//');
         URL = URL.substringBefore('/');
-        System.debug(URL +', ' +backup);
+        Log.push(URL +', ' +backup);
         // this is a test domain.
-        if(URL.contains('NEURAFLASH') || URL.contains('PVHSERVICECLOUD')) {
+        if(URL.contains(SYSTEM.LABEL.NEURAFLASH) || URL.contains(SYSTEM.LABEL.PVHSERVICECLOUD)) {
             URL = backup;
-            System.debug('USING backup'+ URL +', ' +URL.contains('CALVIN'));
+            Log.push('USING backup'+ URL +', ' +URL.contains('CALVIN'));
 
         }
-        if(URL.contains('TH') || URL.contains('TOMMY') || URL.contains('HILFIGER'))
-            brandName = 'Tommy_Hilfiger';
-        else if(URL.contains('CK') || URL.contains('CALVIN') || URL.contains('KLEIN'))
-            brandName = 'Calvin_Klein';
-        else if(URL.contains('IZOD') || URL.contains('IZOD') || URL.contains('IZ'))
-            brandName = 'Izod';
-        else if(URL.contains('VH') || URL.contains('HEUSEN') || URL.contains('VAN'))
-            brandName = 'Van_Heusen';
+        if(URL.contains(SYSTEM.LABEL.TH) || URL.contains(SYSTEM.LABEL.TOMMY) || URL.contains(SYSTEM.LABEL.HILFIGER))
+            brandName = SYSTEM.LABEL.Tommy_Hilfiger1;
+        else if(URL.contains(SYSTEM.LABEL.CK) || URL.contains(SYSTEM.LABEL.CALVIN) || URL.contains(SYSTEM.LABEL.KLEIN))
+            brandName = SYSTEM.LABEL.Calvin_Klein1;
+        else if(URL.contains(SYSTEM.LABEL.IZOD) || URL.contains(SYSTEM.LABEL.IZOD) || URL.contains(SYSTEM.LABEL.IZ))
+            brandName = SYSTEM.LABEL.IZOD;
+        else if(URL.contains(SYSTEM.LABEL.VH) || URL.contains(SYSTEM.LABEL.HEUSEN) || URL.contains(SYSTEM.LABEL.VAN))
+            brandName = SYSTEM.LABEL.Van_Heusen1;
 
         List<Brand_Setting__mdt> configs = new List<Brand_Setting__mdt>();
         try{
@@ -110,24 +111,26 @@ public with sharing class NF_Util {
             WHERE DeveloperName = :brandName];
         }
         catch(Exception e) {
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
+        Logger.logDebug();
         return configs.size() > 0 ? configs[0] : null;
     }
 
     public static void insertSession(String chatKey, String payload, String brand){
-        System.debug('bot session creation started.');
+        Log.push('bot session creation started.');
         ebotdata__Bot_Session__c session = new ebotdata__Bot_Session__c();
         session.CarouselContent__c = payload;
         session.ebotdata__Live_Agent_Session_Id__c = chatKey;
         //session.ebotdata__Live_Chat_Transcript__c = chatKey;
         session.Brand__c = brand;
         insert session;
-        System.debug('bot session created');
+        Log.push('bot session created');
+        Logger.logDebug();
     }
 
     public static User getPlatformIntegrationUser(){
-        User[] users = [SELECT Id, Name FROM User WHERE Name = 'Automated Process' LIMIT 1];
+        User[] users = [SELECT Id, Name FROM User WHERE Name =: SYSTEM.LABEL.Automated_Process LIMIT 1];
         return users.size() > 0 ? users[0] : null;
     }
 
@@ -136,11 +139,12 @@ public with sharing class NF_Util {
 
             Url uri = new Url(url);
             String domain = uri.getHost();
-            System.debug('Host is: '+ domain);
+            Log.push('Host is: '+ domain);
+            Logger.logDebug();
             return domain.startsWith('www.') ? domain.substring(4) : domain;
         }
         catch (Exception e) {
-            System.debug('exception details :'+e.getStackTraceString());
+            Logger.logException(e);
         }
         return '';
     }
@@ -156,7 +160,7 @@ public with sharing class NF_Util {
             if (!names.isEmpty()) {
                 //set the first name, and a default last name
                 firstName = names.remove(0);
-                lastName = 'NA';
+                lastName = SYSTEM.LABEL.NA;
 
                 if (!names.isEmpty()) {
                     lastName = names[0];
@@ -183,7 +187,7 @@ public with sharing class NF_Util {
             }
         }
         catch(Exception e) {
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
         return contactList.size() > 0 ? contactList[0] : null;
     }
@@ -191,7 +195,7 @@ public with sharing class NF_Util {
     public static Contact getContact(String email, String accountId, String brand) {
         List<Contact> contactList = new List<Contact>();
         List<Brand_Setting__mdt> configs = new List<Brand_Setting__mdt>();
-        System.debug('brand is:'+brand  + 'email is: '+email);
+        Log.push('brand is:'+brand  + 'email is: '+email);
 
         if(!String.isBlank(brand))
             try{
@@ -199,7 +203,7 @@ public with sharing class NF_Util {
                 FROM Brand_Setting__mdt
                 WHERE Label = :brand];
             }catch(Exception e) {
-                System.debug('Exception encountered: ' + e);
+                Logger.logException(e);
             }
 
         try{
@@ -217,11 +221,12 @@ public with sharing class NF_Util {
                 //WHERE Email = :email and AccountId = :accountId];
                 WHERE Email = :email ];
             }
-            System.debug('Returning contact list: '+contactList);
+            Log.push('Returning contact list: '+contactList);
         }
         catch(Exception e) {
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
+        Logger.logDebug();
         return contactList.size() > 0 ? contactList[0] : null;
 
     }
@@ -235,14 +240,15 @@ public with sharing class NF_Util {
                         SELECT ID, CaseNumber, ContactId, CreatedDate, LastModifiedDate
                         FROM Case
                         WHERE ContactId = :contactId
-                        AND (status = 'Open' OR status='New')
+                        AND (status =: SYSTEM.LABEL.Open OR status=:
+                        SYSTEM.LABEL.New)
                         AND LastModifiedDate >= :compareDate
                         ORDER BY LastModifiedDate DESC
                 ];
             }
         }
         catch(Exception e) {
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
         return caseList.size() > 0 ? caseList[0] : null;
     }
@@ -279,7 +285,7 @@ public with sharing class NF_Util {
         ]) {
             if (String.isNotBlank(chatLog.ebotdata__Current_Utterance__c)) {
                 subject = chatLog.ebotdata__Current_Utterance__c;
-                System.debug('NF_CreateCase getCaseSubject: using utterance for subject:' + subject);
+                Log.push('NF_CreateCase getCaseSubject: using utterance for subject:' + subject);
                 break;
             }
         }
@@ -287,8 +293,9 @@ public with sharing class NF_Util {
         //if we weren't able to find an utterance from the history
         if (String.isBlank(subject)) {
             //if it's empty here, just default to 'Chatbot Case'
-            subject = 'Chatbot Case';
+            subject = SYSTEM.LABEL.Chatbot_Case;
         }
+        Logger.logDebug();
         if(subject.length() > 250)
             return subject.substring(0, 250);
         else 
@@ -297,10 +304,10 @@ public with sharing class NF_Util {
     }
 
     public static LiveChatTranscript getLiveChatTranscript(String chatKey){
-        System.debug('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
+        Log.push('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
 
         if(String.isEmpty(chatKey)){
-            System.debug('>>NF_Util.getLiveChatTranscript Cannot find LiveChatTranscript, chatKey is empty');
+            Log.push('>>NF_Util.getLiveChatTranscript Cannot find LiveChatTranscript, chatKey is empty');
             return null;
         }
 
@@ -311,14 +318,14 @@ public with sharing class NF_Util {
             WHERE ChatKey = :chatKey];
         }
         catch(Exception e){
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
-
+        Logger.logDebug();
         return listTranscripts.size() > 0 ? listTranscripts[0] : null;
     }
 
     public static boolean associateTranscriptWithCase(LiveChatTranscript transcript, String caseId, String contactId) {
-        System.debug('Associating Transcript with Case: ' + caseId);
+        Log.push('Associating Transcript with Case: ' + caseId);
 
         boolean result = false;
 
@@ -330,24 +337,24 @@ public with sharing class NF_Util {
                 FROM Case
                 WHERE Id = :caseId
                 LIMIT 1];
-                System.debug('Associating Case #' + caseToLink.CaseNumber + ' to transcript ' + transcript.id);
+                Log.push('Associating Case #' + caseToLink.CaseNumber + ' to transcript ' + transcript.id);
                 caseToLink.LiveChatTranscripts.add(transcript);
                 caseToLink.SourceId = transcript.Id;
                 if(String.isNotBlank(contactId)) {
                     transcript.ContactId = contactId;
                 }
-                System.debug('updating transcript :****'+ transcript);
+                Log.push('updating transcript :****'+ transcript);
                 transcript.Subject__c = caseToLink.Description;
                 update transcript;
-                System.debug('updating case :****'+ caseToLink);
+                Log.push('updating case :****'+ caseToLink);
                 update caseToLink;
+                Logger.logDebug();
                 result = true;
             }
             catch (Exception e) {
                 //NF_EinsteinBotLogger.populatedLog(e);
-                System.debug('Exception encountered while updating transcript: ' + e);
-                System.debug('Line: ' + e.getLineNumber());
-                System.debug('Trace: ' + e.getStackTraceString());
+                Logger.logException(e);
+                Logger.logDebug();
                 return false;
             }
         }
@@ -357,19 +364,20 @@ public with sharing class NF_Util {
 
     @Future
     public static void associateCaseWithSession(String chatKey, String caseId) {
-        System.debug('NF_CreateCase associateCaseWithSession: chatKey=' + chatKey);
+        Log.push('NF_CreateCase associateCaseWithSession: chatKey=' + chatKey);
 
         if (String.isNotBlank(chatKey)) {
             ebotdata__Bot_Session__c session = NF_Util.getBotSession(chatKey);
-            System.debug('NF_CreateCase associateCaseWithSession: session=' + session);
+            Log.push('NF_CreateCase associateCaseWithSession: session=' + session);
 
             if (session != null && String.isNotBlank(caseId)) {
                 session.ebotdata__Case__c = caseId;
-                System.debug('NF_CreateCase associateCaseWithSession: ebotdata__Case__c=' + session.ebotdata__Case__c);
+                Log.push('NF_CreateCase associateCaseWithSession: ebotdata__Case__c=' + session.ebotdata__Case__c);
 
                 update session;
             }
         }
+        Logger.logDebug();
     }
 
     public static ebotdata__Bot_Session__c getBotSession(String chatKey){
@@ -390,37 +398,39 @@ public with sharing class NF_Util {
                     Name = firstName + ' ' + lastName
                     //RecordTypeId = personAccRecordTypeId
             );
-            System.debug('Inserting account'+ newPersonAccount);
+            Log.push('Inserting account'+ newPersonAccount);
             insert newPersonAccount;
+            Logger.logDebug();
             return newPersonAccount;
         }
         catch(Exception e) {
-            System.debug('Exception encountered: ' + e);
+            Logger.logException(e);
         }
         return null;
 
     }
 
     public static Contact createContact(String firstName, String lastName, String emailId, String brandId) {
-        Id contactEmailRecordTypeId = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Email').getRecordTypeId();
         if(String.isBlank(firstName))
-            firstName = 'UNKNOWN';
+            firstName = SYSTEM.LABEL.UNKNOWN1;
         if(String.isBlank(lastName))
-            lastName = 'UNKNOWN';
+            lastName = SYSTEM.LABEL.UNKNOWN1;
         try{
             Contact contact = new Contact(
-            FirstName = firstName,
-            LastName = lastName,
-            Email = emailId,
-            Brand_Id__c = brandId,
-            RecordTypeId = contactEmailRecordTypeId
-            );//Added RecordTypeId for Incident INC0781631 - Duplicate contact created
-        System.debug('Inserting contact'+ contact);
+        FirstName = firstName,
+        LastName = lastName,
+        Email = emailId,
+
+                    Brand_Id__c = brandId
+        //RecordTypeId = personAccRecordTypeId
+        );
+        Log.push('Inserting contact'+ contact);
         insert contact;
+        Logger.logDebug();
         return contact;
         }
         catch(Exception e) {
-        System.debug('Exception encountered: ' + e);
+        Logger.logException(e);
         }
     return null;
 
@@ -434,7 +444,7 @@ public with sharing class NF_Util {
                 FROM Brand_Setting__mdt
                 WHERE Label = :brand];
             }catch(Exception e) {
-                System.debug('Exception encountered: ' + e);
+                Logger.logException(e);
             }
         return configs[0].Brand_Id__c;
     }

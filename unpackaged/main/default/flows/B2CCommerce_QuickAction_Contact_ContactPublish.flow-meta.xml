@@ -38,7 +38,7 @@
         </inputParameters>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <decisions>
         <description>... evaluates if the Contact has the required fields representing a B2C Commerce Customer Profile.</description>
         <name>dec_doesContactRequiredFields</name>
@@ -184,6 +184,7 @@
         </rules>
     </decisions>
     <description>... this flow is used to trigger the publishing of this Contact details to its corresponding B2C Customer Profile.  It creates a Platform Event which makes a B2C Commerce OCAPI REST API request to publish the Contact details and then consume the Customer Profile details for the configured B2C Instance.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: Trigger Customer Details Publish {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: Contact: Customer Profile: Publish</label>
     <processMetadataValues>

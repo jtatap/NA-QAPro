@@ -18,8 +18,8 @@ public class PrivacyEmailHandler {
         for (OrgWideEmailAddress owa : owaList) {
             this.owaMap.put(owa.DisplayName, owa);
         }
-        System.debug('Constants.privacyContactGenericRecordSettingName @21: ' + Constants.privacyContactGenericRecordSettingName);
-		System.debug('GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName) @21: ' + GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName));
+		
+                System.debug('GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName) @22: ' + GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName));
         GenericRecords__c genericContactRecord = GenericRecords__c.getValues(Constants.privacyContactGenericRecordSettingName);
         this.genericContactId = genericContactRecord.recordId__c;
 
@@ -44,10 +44,9 @@ public class PrivacyEmailHandler {
             // LOG THIS SOMEWHERE
             return null;
         }
-        system.debug('>>>>>>>owa.Id>>>'+owa.Id);
         mail.setOrgWideEmailAddressId(owa.Id);
         this.caseToOWAMap.put(cse.Id, owa);
-		system.debug('>>>>emailAddress>>>>>'+emailAddress);
+
         mail.setToAddresses(new List<String>{emailAddress});
         mail.setSaveAsActivity(false);
         if (String.isNotBlank(cse.ContactId)) {
@@ -59,7 +58,6 @@ public class PrivacyEmailHandler {
         mail.setWhatId(cse.Id);
         mail.setUseSignature(false);
         mail.setTreatTargetObjectAsRecipient(false);
-        system.debug('>>>>>>mail>>>>>>'+mail);
         return mail;
 
     }

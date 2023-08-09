@@ -11,7 +11,7 @@
     <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Queue</filterScope>
-    <label>True&amp;Co Ecomm &amp; Wholesale Queue</label>
+    <label>True&amp;Co Ecomm &amp; Wholesale (DO NOT USE)</label>
     <queue>True_Co_Ecomm_Wholesale_Queue</queue>
     <sharedTo>
         <group>Tier_1_CSR_Wholesale</group>

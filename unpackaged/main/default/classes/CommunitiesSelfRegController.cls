@@ -48,6 +48,9 @@ public class CommunitiesSelfRegController {
 
         try {
             userId = Site.createExternalUser(u, accountId, password);
+            Log.push('userId***'+userId);
+            Logger.logDebug();
+            
         } catch(Site.ExternalUserCreateException ex) {
             List<String> errors = ex.getDisplayMessages();
             for (String error : errors)  {
@@ -56,7 +59,7 @@ public class CommunitiesSelfRegController {
             
             // This message is used for debugging. Do not display this in the UI to the end user.
             // It has the information around why the user creation failed.
-            System.debug(ex.getMessage());
+            Logger.logException(ex);
         }
         
         if (userId != null) { 

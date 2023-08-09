@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>Order_Status_URL__c</field>
-        <value xsi:type="xsd:string">https://dev2.usa.tommy.com/en/trackorder</value>
+        <value xsi:type="xsd:string">https://stg2.usa.tommy.com/en/orderdetails</value>
     </values>
     <values>
         <field>Order_Status__c</field>
@@ -72,7 +72,7 @@
     </values>
     <values>
         <field>Return_URL__c</field>
-        <value xsi:type="xsd:string">https://returns.narvar.com/tommy2/returns</value>
+        <value xsi:type="xsd:string">https://returns-st01.narvar.qa/tommy2/returns</value>
     </values>
     <values>
         <field>Shipping_Questions_URL__c</field>

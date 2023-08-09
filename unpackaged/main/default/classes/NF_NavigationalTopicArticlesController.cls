@@ -74,7 +74,7 @@ public with sharing class NF_NavigationalTopicArticlesController {
                                                                  WHERE Language = 'en_US' AND PublishStatus = 'Online' AND Id in :entityToTopicSetMap.keySet() order by Sort_Order__c Desc Nulls last ];//Limit :Integer.valueOf(articalDisplayed)*/
 
         Map<String,Knowledge__kav> knowledgeMap = new Map<String,Knowledge__kav>([SELECT Id, KnowledgeArticleId, PublishStatus, VersionNumber, Title, UrlName,Sort_Order__c, ArticleNumber, ArticleTotalViewCount FROM Knowledge__kav 
-                                                                                WHERE Language = 'en_US' AND PublishStatus = 'Online' AND Sort_Order__c != null AND Id in :entityToTopicSetMap.keySet() order by Sort_Order__c ASC Nulls last ]);
+                                                                                WHERE Language =: SYSTEM.LABEL.en_US AND PublishStatus =: SYSTEM.LABEL.Online AND Sort_Order__c != null AND Id in :entityToTopicSetMap.keySet() order by Sort_Order__c ASC Nulls last ]);
         List<knowledgeArticleVerWrapper> wrapperList = new List<knowledgeArticleVerWrapper>();
         if(navigationTopicList != null && navigationTopicList.size() > 0){
             for(Navigational_Topic_Information__mdt navMetadataRecord : navigationTopicList){

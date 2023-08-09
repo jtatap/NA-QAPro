@@ -4,7 +4,7 @@
 * @JIRA		  : NASSC-1665
 *
 ******************************************************************************/
-@isTest
+@isTest(isParallel=false)
 public class LogSignupActivitiesTest {
     
     @isTest

@@ -91,7 +91,7 @@
         <ruleEntry>
             <assignedTo>CS_Lead_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR 3 OR (2 AND 4)</booleanFilter>
+            <booleanFilter>1 OR 3 OR 5 OR (2 AND 4)</booleanFilter>
             <criteriaItems>
                 <field>EmailMessage.ToAddress</field>
                 <operation>equals</operation>
@@ -111,6 +111,11 @@
                 <field>Case.Origin</field>
                 <operation>equals</operation>
                 <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Business_Group__c</field>
+                <operation>equals</operation>
+                <value>Corporate - Loss Prevention</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -406,7 +411,7 @@
             <criteriaItems>
                 <field>EmailMessage.ToAddress</field>
                 <operation>equals</operation>
-                <value>ontactus@olgaintimates.com</value>
+                <value>contactus@olgaintimates.com</value>
             </criteriaItems>
             <criteriaItems>
                 <field>EmailMessage.ToAddress</field>

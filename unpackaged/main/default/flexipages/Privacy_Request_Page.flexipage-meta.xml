@@ -192,7 +192,7 @@
                 <identifier>narvar_Narvar_Track</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-1e68c037-146d-48dc-8362-c1b1bc450245</name>
+        <name>Facet-fc7ec606-ee62-4ea4-920e-7a665c834f11</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -250,7 +250,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-1e68c037-146d-48dc-8362-c1b1bc450245</value>
+                    <value>Facet-fc7ec606-ee62-4ea4-920e-7a665c834f11</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
@@ -283,10 +283,21 @@
                 <componentName>privacyCaseStatusFlow</componentName>
                 <identifier>privacyCaseStatusFlow</identifier>
                 <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.Type}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>Privacy</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sub_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Rectify My Data</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sub_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Do Not Sell/Share</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>

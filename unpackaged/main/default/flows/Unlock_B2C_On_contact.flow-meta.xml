@@ -405,7 +405,7 @@
             <targetReference>Get_Case_Record</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <subflows>
         <name>Invoke_Customer_Profile_retrieve_0</name>
         <label>Invoke Customer Profile retrieve</label>

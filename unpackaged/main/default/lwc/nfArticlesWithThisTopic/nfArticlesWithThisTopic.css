@@ -16,3 +16,7 @@
 .layoutItem.layoutItem a:hover::after {
     width: 100%;
 }
+
+.fontFamily{
+    font-family: sans-serif;
+}

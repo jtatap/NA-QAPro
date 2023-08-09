@@ -29,13 +29,24 @@
             <values>LAST_N_DAYS:30</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_FISCAL_QUARTER</values>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>2/27/2022 12:00 AM</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>1/3/2021 12:00 AM</values>
-            <values>1/31/2021 12:00 AM</values>
+            <values>2/28/2022 12:00 AM</values>
+            <values>4/3/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>4/4/2022 12:00 AM</values>
+            <values>5/1/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>5/1/2022 12:00 AM</values>
         </dashboardFilterOptions>
         <name>Agent Work Day: Created Date</name>
     </dashboardFilters>
@@ -75,7 +86,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Retail Email AHT</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Brand</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Brand</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>7</rowSpan>
@@ -114,7 +125,7 @@
                 </groupingSortProperties>
                 <header>Retail Email AHT</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Brand</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Brand</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -159,7 +170,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Case Owner Role</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Agent_Role</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Agent_Role</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>7</rowSpan>
@@ -194,7 +205,7 @@
                 <header>Chat AHT by Originating Queue</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Chat_AHT_by_Originating_Queue</report>
+                <report>Daily_KPI_Dashboard/YTD_Chat_AHT_by_Originating_Queue</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -240,7 +251,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>eComm Email AHT</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_eComm_Email_AHT</report>
+                <report>Daily_KPI_Dashboard/YTD_eComm_Email_AHT</report>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
             <rowSpan>7</rowSpan>
@@ -279,7 +290,7 @@
                 </groupingSortProperties>
                 <header>eComm Email AHT</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_eComm_Email_AHT</report>
+                <report>Daily_KPI_Dashboard/YTD_eComm_Email_AHT</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -330,7 +341,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Agent</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Agent</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Agent</report>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
             <rowSpan>17</rowSpan>
@@ -383,7 +394,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Chat AHT by Agent</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Chat_AHT_by_Agent</report>
+                <report>Daily_KPI_Dashboard/YTD_Chat_AHT_by_Agent</report>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
             <rowSpan>10</rowSpan>
@@ -430,7 +441,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Reason Codes</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Reason_Codes</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Reason_Codes</report>
             </dashboardComponent>
             <rowIndex>14</rowIndex>
             <rowSpan>10</rowSpan>
@@ -469,7 +480,7 @@
                 </groupingSortProperties>
                 <header>Email AHT by Reason Code</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Reason_Codes</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Reason_Codes</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -507,7 +518,7 @@
                 </groupingSortProperties>
                 <header>Chat AHT by Week</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Chat_AHT_by_Week</report>
+                <report>Daily_KPI_Dashboard/YTD_Chat_AHT_by_Week</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -545,7 +556,7 @@
                 </groupingSortProperties>
                 <header>AHT by Week</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Week</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Week</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -589,7 +600,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Week</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Email_AHT_by_Week</report>
+                <report>Daily_KPI_Dashboard/YTD_Email_AHT_by_Week</report>
             </dashboardComponent>
             <rowIndex>24</rowIndex>
             <rowSpan>10</rowSpan>
@@ -629,7 +640,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Chat AHT by Week</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Chat_AHT_by_Week</report>
+                <report>Daily_KPI_Dashboard/YTD_Chat_AHT_by_Week</report>
             </dashboardComponent>
             <rowIndex>24</rowIndex>
             <rowSpan>10</rowSpan>

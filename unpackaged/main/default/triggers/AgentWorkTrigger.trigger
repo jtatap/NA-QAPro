@@ -3,5 +3,6 @@
  */
 
 trigger AgentWorkTrigger on AgentWork (before insert, before update,before delete,after update, after insert, after delete, after undelete) {
-    TriggerFactory.createAndExecuteHandler(AgentWorkTriggerHandler.class);
+    //TriggerFactory.createAndExecuteHandler(AgentWorkTriggerHandler.class);
+    TriggerDispatcher.run(new NF_AgentWorkTriggerHandler());
 }

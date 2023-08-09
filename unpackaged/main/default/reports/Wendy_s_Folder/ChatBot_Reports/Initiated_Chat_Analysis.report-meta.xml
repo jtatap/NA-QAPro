@@ -42,7 +42,7 @@
         <field>LiveChatTranscript.ebotdata__Einstein_Bot_Chat_Session__r$ebotdata__Einstein_Bot_Escalation__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Initiated Chat Analysis</name>
+    <name>Chat Escalation Type Analysis</name>
     <params>
         <name>co</name>
         <value>1</value>

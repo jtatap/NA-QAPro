@@ -1,21 +1,21 @@
 /**
-* @author       : NeuraFlash, LLC
-* @date       : 04/11/2021
-* @description   : This class is needed because the privacy logic can only execute once due to its sending emails, 
-*           which the CaseTriggerHandler interface does not allow 
+* @author 	    : NeuraFlash, LLC
+* @date 	    : 04/11/2021
+* @description 	: This class is needed because the privacy logic can only execute once due to its sending emails, 
+* 				  which the CaseTriggerHandler interface does not allow 
 *===========================================================
-* Ver    Date            Author      Modification
+* Ver    Date          	Author			Modification
 *===========================================================
-* 1.0    00/00/0000      -----      Initial Version (Unknown Creation Date)
-* 1.1    04/28/2021    Luis Rocha    Adding the missing comparison statement for Marketing and removed system debugs
-* 1.2    04/28/2021    Luis Rocha    Added bypassrun for test classes on each method to use, By putting the check at the top of the action we can ensure that bypass behavior is not dependent on external settings or configuration.
+* 1.0    00/00/0000    	-----			Initial Version (Unknown Creation Date)
+* 1.1 	 04/28/2021		Luis Rocha		Adding the missing comparison statement for Marketing and removed system debugs
 */
 public class PrivacyCaseTriggerHandler {
     
     public static Boolean isFirstRun = True;
     @testVisible static Boolean bypassRun = false;
     
-    private static Id supportId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(System.Label.Support_Case).getRecordTypeId();
+    
+    private static Id supportId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('Support_Case').getRecordTypeId();
    
     public static void sendEmailsIfNecessary() {
         if(bypassRun) { return; }
@@ -23,29 +23,42 @@ public class PrivacyCaseTriggerHandler {
         List<Id> newCaseIds = new List<Id>();
         List<Id> parentIds = new List<Id>();
         List<Id> dataOwnerIds = new List<Id>();
+        string cseSubtype;
         List<Case> unsubCases = new List<Case>();
         List<Case> newEmailPrivacyCases = new List<Case>();
         for (sObject sobjCase : Trigger.new) {
             Case cse = (Case)sobjCase;
+            Log.push('cse ' +  cse);
             if (
-            ( cse.Type == Constants.privacyCaseType || cse.Type == System.Label.Marketing) &&
-            cse.Sub_Type__c == Constants.unsubscribeRequestSubType
+                ( cse.Type == Constants.privacyCaseType || cse.Type == SYSTEM.LABEL.Marketing ) &&
+                cse.Sub_Type__c == Constants.unsubscribeRequestSubType
             ){
                 unsubCases.add(cse);
+                
             }
             
-            if ((cse.RecordTypeId == Constants.dataOwnerCaseRecordTypeId ||  cse.RecordTypeId == Constants.privacyRecordTypeId || cse.RecordTypeId == supportId) && cse.Sub_Type__c !='Rectify My Data') {
+			if ((cse.RecordTypeId == Constants.dataOwnerCaseRecordTypeId ||  cse.RecordTypeId == Constants.privacyRecordTypeId || cse.RecordTypeId == supportId) && cse.Sub_Type__c !='Rectify My Data') {
                 privacyCases.add(cse);
+            
             } else {
-                if ( cse.Type == Constants.privacyCaseType && cse.Sub_Type__c == Constants.unsubscribeRequestSubType) {
-                    unsubCases.add(cse);
-                }
-                if (cse.Type == Constants.privacyCaseType && cse.Sub_Type__c == Constants.privacyEmailSubType && cse.Status == Constants.newPrivacyStatus && Trigger.isUpdate ) {
-                    Case oldCase = (Case)Trigger.oldMap.get(cse.Id);
-                    if (String.isNotBlank(cse.emailToAddress__c) && String.isBlank(oldCase.emailToAddress__c)) {
-                        newEmailPrivacyCases.add(cse);
+                if (
+                    
+                    cse.Type == Constants.privacyCaseType &&
+                    cse.Sub_Type__c == Constants.unsubscribeRequestSubType
+                    ) {
+                        unsubCases.add(cse);
                     }
-                }
+                if (
+                    cse.Type == Constants.privacyCaseType &&
+                    cse.Sub_Type__c == Constants.privacyEmailSubType &&
+                    cse.Status == Constants.newPrivacyStatus &&
+                    Trigger.isUpdate
+                    ) {
+                        Case oldCase = (Case)Trigger.oldMap.get(cse.Id);
+                        if (String.isNotBlank(cse.emailToAddress__c) && String.isBlank(oldCase.emailToAddress__c)) {
+                            newEmailPrivacyCases.add(cse);
+                        }
+                    }
                 continue;
             }
             if (cse.Sub_Type__c == Constants.dataOwnerRequestSubType) {
@@ -76,8 +89,10 @@ public class PrivacyCaseTriggerHandler {
         if (newEmailPrivacyCases.size() > 0) {
             processNewEmailPrivacyCases(newEmailPrivacyCases);
         }
+        Logger.logDebug();
     }
-
+	
+    @TestVisible
     private static void processNewEmailPrivacyCases(List<Case> newUnsubCases) {
         if(bypassRun) { return; }
         List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>();
@@ -96,6 +111,8 @@ public class PrivacyCaseTriggerHandler {
         }
         emailHandler.sendEmails(emailsToSend);
     }
+	
+    @TestVisible
     private static void processUnsubCases(List<Case> unsubCases) {
         if(bypassRun) { return; }
         List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>();
@@ -128,10 +145,11 @@ public class PrivacyCaseTriggerHandler {
         }
         emailHandler.sendEmails(emailsToSend);
     }
+	@TestVisible
     private static void createChildCasesIfNeeded(List<Case> cases) {
         if(bypassRun) { return; }
         List<Case> casesNeedingUpdate = new List<Case>();
-        List<Account> accountsWithSupplementalDataOwners = [Select Name From Account Where Id In (Select AccountId From Contact Where RecordTypeId = :Constants.dataOwnerContactRecordTypeId And System_Type__c = :Constants.dataOwnerSupplemental)];
+        List<Account> accountsWithSupplementalDataOwners = [Select Name From Account Where Id In (Select AccountId From Contact Where RecordTypeId = :Constants.dataOwnerContactRecordTypeId)];
         List<String> accountNamesWithSupplemental = new List<String>();
         Map<String,String> brandValueMap = new Map<String,String>();
         List<Schema.Picklistentry> fieldResult = Case.Brand__c.getDescribe().getPicklistValues();
@@ -149,10 +167,10 @@ public class PrivacyCaseTriggerHandler {
                 cse.Type == Constants.privacyCaseType && 
                 (cse.Sub_Type__c == Constants.accessRequestSubType || cse.Sub_Type__c == Constants.deletionRequestSubType ||cse.Sub_Type__c == Constants.rectifyRequestSubType) && 
                 cse.Status == Constants.dataOwnersContacted &&
-                oldCase.Status != Constants.dataOwnersContacted
+                oldCase.Status != Constants.dataOwnersContacted 
             ) {
                 if (cse.Perfect_Match_Found__c) {
-                    if (cse.Sub_Type__c == Constants.accessRequestSubType && !accountNamesWithSupplemental.contains(brandValueMap.get(cse.Brand__c))) {
+                    if (cse.Sub_Type__c == SYSTEM.LABEL.Access_My_Data1 && !accountNamesWithSupplemental.contains(brandValueMap.get(cse.Brand__c))) {
                         //CSR has all data for the brand already
                         Case newCase = new Case(Id=cse.Id);
                         newCase.Status = Constants.reviewResponseStatus;
@@ -180,6 +198,7 @@ public class PrivacyCaseTriggerHandler {
                             casesNeedingUpdate.add(newCase);
                         }
                     }
+
                 }
             }
         }
@@ -187,19 +206,22 @@ public class PrivacyCaseTriggerHandler {
             update casesNeedingUpdate;
         }
     }
+	@TestVisible
     private static void sendPrivacyEmailsIfNeeded(List<Case> cases, List<Id> parentIds, List<Id> dataOwnerIds) {
         if(bypassRun) { return; }
         Map<Id, String> dataOwnerEmailMap = new Map<Id, String>();
+        String cseSubtype;
         Map<Id, Case> parentCasesMap = new Map<Id, Case>();
         Map<Id, List<String>> dataOwnerAddtionalEmailsMap = new Map<Id, List<String>>();
         if (parentIds.size() > 0) {
             List <Case> parentCases = [Select Id, Sub_Type__c From Case Where Id In :parentIds];
             for (Case parentCase : parentCases) {
                 parentCasesMap.put(parentCase.Id, parentCase);
+                cseSubtype=parentCase.Sub_Type__c;
             }
         }
-        if (dataOwnerIds.size() > 0) {
-            List<Contact> dataOwners= [Select Id, Email, Additional_Email_1__c, Additional_Email_2__c, Additional_Email_3__c, Additional_Email_4__c From Contact Where Id In :dataOwnerIds];
+        if (dataOwnerIds.size() > 0 && parentCasesMap.size()>0) {
+            List<Contact> dataOwners= [Select Id, Email,DataOwner_Subtype__c, Additional_Email_1__c, Additional_Email_2__c, Additional_Email_3__c, Additional_Email_4__c From Contact Where Id In :dataOwnerIds ];
             for (Contact dataOwner : dataOwners) {
                 List<String> additionalEmails = new List<String>();
                 if (String.isNotBlank(dataOwner.Additional_Email_1__c)) additionalEmails.add(dataOwner.Additional_Email_1__c);
@@ -216,13 +238,13 @@ public class PrivacyCaseTriggerHandler {
             if (cse.Type != Constants.privacyCaseType ) {
                 continue;
             }
-            if (cse.Sub_Type__c == Constants.accessRequestSubType) {
+            if (cse.Sub_Type__c == SYSTEM.LABEL.Access_My_Data1) {
                 emailsToSend = processAccessCases(cse, emailsToSend, emailHandler);
             }
             if (cse.Sub_Type__c == Constants.dataOwnerRequestSubType && String.isNotBlank(cse.Id)) {
                 emailsToSend = processDataOwnerCases(cse, emailsToSend, emailHandler, parentCasesMap, dataOwnerAddtionalEmailsMap, dataOwnerEmailMap);
             }
-            if (cse.Sub_Type__c == Constants.deletionRequestSubType ) {
+            if (cse.Sub_Type__c == Constants.deletionRequestSubType) {
                 emailsToSend = processDeletionCase(cse, emailsToSend, emailHandler);
             }
             if (cse.Sub_Type__c == Constants.rectifyRequestSubType) {
@@ -237,6 +259,7 @@ public class PrivacyCaseTriggerHandler {
             emailHandler.sendEmails(emailsToSend);
         }
     }
+	@TestVisible
     private static List<Messaging.SingleEmailMessage> processAccessCases(Case cse, List<Messaging.SingleEmailMessage> emailsToSend, PrivacyEmailHandler emailHandler) {
         if(bypassRun) { return new List<Messaging.SingleEmailMessage>(); }
         if (Trigger.isInsert) {
@@ -289,6 +312,7 @@ public class PrivacyCaseTriggerHandler {
         return emailsToSend;
         
     }
+	@TestVisible
     private static List<Messaging.SingleEmailMessage> processDeletionCase(Case cse, List<Messaging.SingleEmailMessage> emailsToSend, PrivacyEmailHandler emailHandler) {
         if(bypassRun) { return new List<Messaging.SingleEmailMessage>(); }
         if (Trigger.isInsert) {
@@ -307,7 +331,7 @@ public class PrivacyCaseTriggerHandler {
                         return emailsToSend;
                     }
                     emailsToSend.add(email);
-                }else if (cse.Resolution_Code__c == Constants.privacyResolvedRejectedRequest) {
+                } else if (cse.Resolution_Code__c == Constants.privacyResolvedRejectedRequest) {
                     email = emailHandler.createEmail(cse, Constants.D7RequestEmail);
                     if (email == null) {
                         return emailsToSend;
@@ -344,7 +368,7 @@ public class PrivacyCaseTriggerHandler {
         }
         return emailsToSend;
     }
-    
+	@TestVisible
     private static List<Messaging.SingleEmailMessage> processUpdationCase(Case cse, List<Messaging.SingleEmailMessage> emailsToSend, PrivacyEmailHandler emailHandler) {
         if(bypassRun) { return new List<Messaging.SingleEmailMessage>(); }
         if (Trigger.isInsert) {
@@ -384,6 +408,7 @@ public class PrivacyCaseTriggerHandler {
         return emailsToSend;
     }
 	// added as part of GCT-772
+	@TestVisible
 	private static List<Messaging.SingleEmailMessage> processdoNotSellShareCase(Case cse, List<Messaging.SingleEmailMessage> emailsToSend, PrivacyEmailHandler emailHandler) {
         if(bypassRun) { return new List<Messaging.SingleEmailMessage>(); }
         if (Trigger.isInsert) {
@@ -422,15 +447,14 @@ public class PrivacyCaseTriggerHandler {
         }
         return emailsToSend;
     }
-    
+	@TestVisible
     private static List<Messaging.SingleEmailMessage> processDataOwnerCases(Case cse, List<Messaging.SingleEmailMessage> emailsToSend, PrivacyEmailHandler emailHandler, Map<Id, Case> parentCasesMap, Map<Id, List<String>> dataOwnerAddtionalEmailsMap, Map<Id, String> dataOwnerEmailMap) {
-        if(bypassRun) { return new List<Messaging.SingleEmailMessage>(); }
         Case parentCase = parentCasesMap.get(cse.ParentId);
         if (Trigger.isInsert) {
             String emailTemplate;
-            if (parentCase.Sub_Type__c == Constants.accessRequestSubType) {
+            if (parentCase.Sub_Type__c == SYSTEM.LABEL.Access_My_Data1) {
                 emailTemplate = Constants.A5RequestEmail;
-            }else if(parentCase.Sub_Type__c == Constants.deletionRequestSubType){
+            } else if(parentCase.Sub_Type__c == Constants.deletionRequestSubType){
                 emailTemplate = Constants.D3RequestEmail;
             }else if(parentCase.Sub_Type__c == Constants.rectifyRequestSubType){
                 emailTemplate = Constants.U3RequestEmail;
@@ -452,7 +476,6 @@ public class PrivacyCaseTriggerHandler {
             if(Constants.privacyCaseCompletedStatuses.contains(cse.Status)) {
                 Case oldCase = (Case)Trigger.oldMap.get(cse.Id);
                 if (!Constants.privacyCaseCompletedStatuses.contains(oldCase.Status)) {
-                    system.debug('>>>>>>>>>inside method>>>>>>');
                     ChildPrivacyCaseActionsHandler.handleChildCaseResolved(cse.Id, cse.parentId);
                 }
             }

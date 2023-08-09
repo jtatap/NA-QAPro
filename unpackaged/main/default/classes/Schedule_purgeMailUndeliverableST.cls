@@ -4,7 +4,8 @@
  */
 global class Schedule_purgeMailUndeliverableST implements Schedulable{ 
     global void execute(SchedulableContext ctx){
+        NF_Batch_Control__mdt batchMeta =  NF_Batch_Control__mdt.getInstance('Schedule_purgeMailUndeliverableST'); 
         Batch_purgeMailUndeliverableST DMstaging = new Batch_purgeMailUndeliverableST();
-        Database.executeBatch(DMstaging);
+        Database.executeBatch(DMstaging,Integer.valueOf(batchMeta.Batch_Size__c));
     }
 }

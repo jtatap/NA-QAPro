@@ -78,7 +78,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/CSAT_Reports/All_PVH_CSAT</report>
+                <report>CSAT_Reports/All_PVH_CSAT</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>

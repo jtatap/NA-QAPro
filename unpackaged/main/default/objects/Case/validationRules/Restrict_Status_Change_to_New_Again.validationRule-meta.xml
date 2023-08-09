@@ -3,17 +3,18 @@
     <fullName>Restrict_Status_Change_to_New_Again</fullName>
     <active>true</active>
     <description>This validation rule restricts the CSR to change the Status to New From any other Status</description>
-    <errorConditionFormula>AND(
+    <errorConditionFormula>AND
+(
 ISCHANGED(Status),
-    OR(
-    ISPICKVAL(PRIORVALUE(Status),&quot;Open&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;Identity Verified&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;Data Request Processed&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;Pending&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;On-Hold&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;Resolved&quot;),
-    ISPICKVAL(PRIORVALUE(Status),&quot;Closed&quot;)
-    ),
+		OR(
+		ISPICKVAL(PRIORVALUE(Status),&#39;Open&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;Identity Verified&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;Data Request Processed&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;Pending&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;On-Hold&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;Resolved&#39;),
+		ISPICKVAL(PRIORVALUE(Status),&#39;Closed&#39;)
+		),
 ISPICKVAL(Status, &quot;New&quot;),
 NOT(ISBLANK(csmrgp__Merged_Date_Time__c )),
 $Profile.Name &lt;&gt; &quot;System Administrator&quot;,

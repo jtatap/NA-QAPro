@@ -27,10 +27,6 @@
             <translation><!-- Account Registration Error --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Accounting</masterLabel>
-            <translation><!-- Accounting --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Adaptive</masterLabel>
             <translation><!-- Adaptive --></translation>
         </picklistValues>
@@ -47,16 +43,8 @@
             <translation><!-- Authorization Hold --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>BBB Complaint</masterLabel>
-            <translation><!-- BBB Complaint --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Balance Confirmation (Points/Rewards)</masterLabel>
             <translation><!-- Balance Confirmation (Points/Rewards) --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Black Friday Complaint</masterLabel>
-            <translation><!-- Black Friday Complaint --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Brand Protection</masterLabel>
@@ -139,16 +127,8 @@
             <translation><!-- Counterfeit Merchandise --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Country/State Error</masterLabel>
-            <translation><!-- Country/State Error --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Coupon Request</masterLabel>
             <translation><!-- Coupon Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Covet Diamond Request</masterLabel>
-            <translation><!-- Covet Diamond Request --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Create Return (FEDEX)</masterLabel>
@@ -223,10 +203,6 @@
             <translation><!-- Expired Reward Extension --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Explore Page</masterLabel>
-            <translation><!-- Explore Page --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Front Desk Transfer</masterLabel>
             <translation><!-- Front Desk Transfer --></translation>
         </picklistValues>
@@ -245,10 +221,6 @@
         <picklistValues>
             <masterLabel>Gift Card Replacement</masterLabel>
             <translation><!-- Gift Card Replacement --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Gift Card Request</masterLabel>
-            <translation><!-- Gift Card Request --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Good Service</masterLabel>
@@ -375,14 +347,6 @@
             <translation><!-- Other --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>PI/PD Removal Request</masterLabel>
-            <translation><!-- PI/PD Removal Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PVH Tool Preferred Points</masterLabel>
-            <translation><!-- PVH Tool Preferred Points --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Password Reset Issue</masterLabel>
             <translation><!-- Password Reset Issue --></translation>
         </picklistValues>
@@ -405,10 +369,6 @@
         <picklistValues>
             <masterLabel>Payment Fraud</masterLabel>
             <translation><!-- Payment Fraud --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Payroll</masterLabel>
-            <translation><!-- Payroll --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Place Order</masterLabel>
@@ -527,10 +487,6 @@
             <translation><!-- Reward Redemption Issue --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Risk</masterLabel>
-            <translation><!-- Risk --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Security Tag</masterLabel>
             <translation><!-- Security Tag --></translation>
         </picklistValues>
@@ -579,8 +535,8 @@
             <translation><!-- Store Closing Complaint --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Store Information (Location, Phone, &amp; Hours)</masterLabel>
-            <translation><!-- Store Information (Location, Phone, &amp; Hours) --></translation>
+            <masterLabel>Store Information (Location, Phone &amp; Hours)</masterLabel>
+            <translation><!-- Store Information (Location, Phone &amp; Hours) --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Store Warning</masterLabel>
@@ -589,10 +545,6 @@
         <picklistValues>
             <masterLabel>Suggestion</masterLabel>
             <translation><!-- Suggestion --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TH Data Protection – Japan</masterLabel>
-            <translation><!-- TH Data Protection – Japan --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Tax Exempt</masterLabel>
@@ -605,10 +557,6 @@
         <picklistValues>
             <masterLabel>Tommy Hilfiger Club</masterLabel>
             <translation><!-- Tommy Hilfiger Club --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Track It Issue</masterLabel>
-            <translation><!-- Track It Issue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Track Return Shipment</masterLabel>
@@ -627,19 +575,11 @@
             <translation><!-- Virtual Giftcard --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Warners/Olga Inquiry</masterLabel>
-            <translation><!-- Warners/Olga Inquiry --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Website Issue</masterLabel>
             <translation><!-- Website Issue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Wrong Number</masterLabel>
             <translation><!-- Wrong Number --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>eBay</masterLabel>
-            <translation><!-- eBay --></translation>
         </picklistValues>
     </CustomFieldTranslation>

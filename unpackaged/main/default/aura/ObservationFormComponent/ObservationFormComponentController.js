@@ -1,10 +1,11 @@
 ({
     doInit : function(cmp, event, helper) {
-        //alert('inside doInit');
+       
         
         var recId = cmp.get("v.recordId");
-        //alert('Case Id = '+recId);
-        
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
+        var error = String($A.get("$Label.c.Error1"));
         var action = cmp.get("c.getCaseOrigin");
         action.setParams({ caseId : recId });
         
@@ -13,10 +14,9 @@
         action.setCallback(this, function(response) {
             var state = response.getState();
            
-            if (state === "SUCCESS") {
+            if (state === success) {
                 // Alert the user with the value returned 
                 // from the server
-                //alert("From server: " + response.getReturnValue());
                 var recordTypeToSet = response.getReturnValue();
                 
                 var createRecordEvent = $A.get("e.force:createRecord");
@@ -35,10 +35,10 @@
                 // client-side notification that the server-side 
                 // action is complete
             }
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 // do something
             }
-                else if (state === "ERROR") {
+                else if (state === error) {
                     var errors = response.getError();
                     if (errors) {
                         if (errors[0] && errors[0].message) {
@@ -55,21 +55,6 @@
         
         
     },
-    
-    /*
-    doRender : function(cmp, event, helper) {
-        this.superRender();
-    alert('called doRender');
-    },
-     doReRender : function(cmp, event, helper) {
-         this.superRender();
-     alert('called doReRender');
-    },
-    doUnRender : function(cmp, event, helper) {
-        this.superRender();
-    alert('called doUnRender');
-    }
-    */
     
     
 })

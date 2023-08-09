@@ -70,6 +70,6 @@ global class ZdBatch_assignContactsToCases implements Database.Batchable <sObjec
     }
     global void finish(Database.BatchableContext bc){
 
-        System.debug('***');
+        
     }
 }

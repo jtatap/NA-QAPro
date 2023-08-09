@@ -3,7 +3,7 @@
  */
 
 
-@IsTest
+@IsTest(isParallel=false)
 private class NF_AgentAvailabilityCheckTest {
     @isTest static void test1(){
         List<LiveChatDeployment> deploymentList = [SELECT Id FROM LiveChatDeployment];

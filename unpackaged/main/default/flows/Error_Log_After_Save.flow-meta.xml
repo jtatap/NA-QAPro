@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_When_Error_Occured</name>
+        <label>Send Email When Error Occured</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>ErrorLog__c.Send_Email_for_Error_Log</actionName>
+        <actionType>emailAlert</actionType>
+        <faultConnector>
+            <targetReference>Assign_Fault_Section</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Fault_Section</name>
+        <label>Assign Fault Section</label>
+        <locationX>440</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>varFaultSection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Send Email When Error Occurred</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Run_error_handling_subflow</targetReference>
+        </connector>
+    </assignments>
+    <description>This flow sends email to admin on ErrorLog insertion
+
+WHEN Error Log record is created
+THEN Send Email that error occurred (workflow alert)</description>
+    <environments>Default</environments>
+    <interviewLabel>Error Log: After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Error Log: After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email_When_Error_Occured</targetReference>
+        </connector>
+        <object>ErrorLog__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_error_handling_subflow</name>
+        <label>Run error handling subflow</label>
+        <locationX>440</locationX>
+        <locationY>575</locationY>
+        <flowName>Log_Error_Handling_Subflow</flowName>
+        <inputAssignments>
+            <name>varClassName</name>
+            <value>
+                <stringValue>Error Log: After Save</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFaultSection</name>
+            <value>
+                <elementReference>varFaultSection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>varFaultSection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

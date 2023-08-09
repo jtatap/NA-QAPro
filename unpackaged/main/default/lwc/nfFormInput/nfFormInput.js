@@ -55,10 +55,9 @@ export default class NfFormInput extends LightningElement {
 	handlePicklistChange(e) {
 		let el = this.input;
 		let text = el.options[el.selectedIndex].innerText;
-		//let selectedOption = this.field.fieldOptions.find(f => f.label === text);
-        let developerName = el.options[el.selectedIndex].dataset.id;
+		let developerName = el.options[el.selectedIndex].dataset.id;
 		let selectedOption = this.field.fieldOptions.find(f => (f.label === text && (this.field.fieldName === 'Reason_Code_Details__c' ? f.developerName === developerName : true)));
-		let secondaryAction = selectedOption.secondaryAction || '';
+		let secondaryAction = selectedOption ? selectedOption.secondaryAction : '';
 
 		this.dispatchEvent(new CustomEvent('optionchange', {
 			detail: {

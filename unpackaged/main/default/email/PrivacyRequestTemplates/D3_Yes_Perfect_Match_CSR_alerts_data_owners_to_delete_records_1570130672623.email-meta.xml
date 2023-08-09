@@ -6,7 +6,7 @@
     <name>D3 -Yes, Perfect Match -&gt; CSR alerts data owners to delete records</name>
     <relatedEntityType>Case</relatedEntityType>
     <style>none</style>
-    <subject>Action Required:  {{{Case.Brand__c}}} Personal Data Deletion Request_{{{Case.CaseNumber}}}</subject>
+    <subject>Action Required: {{{Case.Brand__c}}} Personal Data Deletion Request {{{Case.CaseNumber}}}</subject>
     <type>custom</type>
     <uiType>SFX</uiType>
 </EmailTemplate>

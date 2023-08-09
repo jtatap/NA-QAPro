@@ -27,7 +27,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Spam Queue,Automated Process,Default Queue</value>
+            <value>Unverified Privacy Request,Automated Process,Spam,Queue,System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Aliyah,Elizabeth Cruz,Hymein,Caroline,Ann Marie,Keith</value>
         </criteriaItems>
         <criteriaItems>
             <column>CDF1</column>
@@ -49,6 +49,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,1,2,4,5,7,8,9,81,83,84,11,10,100,82</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_CASE_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -78,8 +85,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2023-01-24</endDate>
+        <endDate>2023-08-09</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2023-01-24</startDate>
+        <startDate>2023-08-09</startDate>
     </timeFrameFilter>
 </Report>

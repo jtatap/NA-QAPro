@@ -6,7 +6,7 @@
     <name>True&amp;Co Corporate - Scholarship</name>
     <relatedEntityType>Case</relatedEntityType>
     <style>none</style>
-    <subject>Re: {{{Case.Subject}}} ({{{Case.CaseNumber}}})</subject>
+    <subject>Scholarship Inquiry ({{{Case.CaseNumber}}})</subject>
     <type>custom</type>
     <uiType>SFX</uiType>
 </EmailTemplate>

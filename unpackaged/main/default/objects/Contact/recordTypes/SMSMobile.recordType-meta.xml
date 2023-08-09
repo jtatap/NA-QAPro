@@ -32,10 +32,6 @@
             <fullName>Synchronizing</fullName>
             <default>false</default>
         </values>
-        <values>
-            <fullName>exported</fullName>
-            <default>false</default>
-        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Brand_Id__c</picklist>
@@ -61,10 +57,6 @@
         </values>
         <values>
             <fullName>4</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5</fullName>
             <default>false</default>
         </values>
         <values>
@@ -277,6 +269,29 @@
         </values>
         <values>
             <fullName>VX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DataOwner_Subtype__c</picklist>
+        <values>
+            <fullName>Access My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Sell%2FShare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rectify My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -742,6 +757,10 @@
         </values>
         <values>
             <fullName>04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07</fullName>
             <default>false</default>
         </values>
     </picklistValues>

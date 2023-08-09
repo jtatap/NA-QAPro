@@ -149,6 +149,11 @@
             <table>Case</table>
         </columns>
         <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Customer_Email__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Origin</field>
             <table>Case</table>
@@ -1085,27 +1090,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IsChild__c</field>
+            <field>NFCaseScenario__c</field>
             <table>Case</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>B2C_Is_Locked__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Is_Automation_Bypassed__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AutomationBypassDateTimeDelay__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CSR_Email_UserConfirmation__c</field>
+            <field>Tealium_Email_Suppression__c</field>
             <table>Case</table>
         </columns>
         <masterLabel>Cases</masterLabel>

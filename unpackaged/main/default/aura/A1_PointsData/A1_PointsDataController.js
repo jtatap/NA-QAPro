@@ -3,6 +3,9 @@
         
         var getRecord = cmp.get("v.recordId");
         var ifCase = getRecord.startsWith("500");
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
+        var error = String($A.get("$Label.c.Error1"));
         cmp.set("v.isCaseRecord",ifCase);
         
         //PendingPointCheckStarts
@@ -13,23 +16,20 @@
         // the server-side action returns
         actionPendingPoints.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
-                //alert('got boolean = '+response.getReturnValue());
+            if (state === success) {
+                
                 var getWrapperObject = response.getReturnValue();
-                //console.log('***backend Points='+getWrapperObject.isPendingPointAdjustment);
-                //console.log('***backend Rewards='+getWrapperObject.isEnableRewardsButton);
                 if(getWrapperObject.isPendingPointAdjustment==false){
                     cmp.set("v.pendingPointAdjustment",true);
-                    //console.log('***pendingPointAdjustment='+cmp.get("v.pendingPointAdjustment"));
-                    //alert('button: '+cmp.get('v.pendingPointAdjustment'));
+                    
                 }
                 cmp.set("v.isEnableRewardsButton",getWrapperObject.isEnableRewardsButton);
                 
             }
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 // do something
             }
-            else if (state === "ERROR") {
+            else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -51,16 +51,14 @@
         // the server-side action returns
         action.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
+            if (state === success) {
                 var currentPointBalance;
                 var pointList = response.getReturnValue();
                 //check if type = Category= Customer Summary
-                console.log('***Response = '+JSON.stringify(pointList));
                 for (var i = 0; i < response.getReturnValue().length; i++) {
                     if (pointList[i].Category == "Customer Summary") {
                         currentPointBalance = pointList[i].currentPointBalance;
                         console.log('***CPB = '+currentPointBalance);
-                        //pointList.splice(i,1);
                         cmp.set("v.currentPointBalance",currentPointBalance);
                     }
                     console.log('Record '+i+' = '+pointList[i].IssueDate);
@@ -77,8 +75,6 @@
                  }
                 
                  cmp.set("v.pointWrapper",pointList);
-                //cmp.set("v.pointWrapper",pointList);
-                //alert('response = '+JSON.stringify(pointList));
                 
                 cmp.set("v.numRecords",pointList.length);
                 
@@ -88,10 +84,10 @@
                 appEvent.setParams({"pointWrapperFromEvent" : pointList}); 
                 appEvent.fire(); 
             }
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 // do something
             }
-            else if (state === "ERROR") {
+            else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -113,17 +109,7 @@
 	},
     
     handlePointAdjustment: function(cmp, event, helper) {
-      /*  
-      var flow = cmp.find("pointAdjustmentFlow");  
-      var inputVariables = [
-            {
-               	name : 'curCase2',
-                type : 'String',
-                value : cmp.get("v.recordId")
-            }
-          ];
-      flow.startFlow("CSR_Loyalty_Points_Adjustment",inputVariables);
-      */
+      
         
       var currentRecordId =  cmp.get("v.recordId");  
       var workspaceAPI = cmp.find("workspace");
@@ -144,17 +130,7 @@
 
     
     handleRewardAdjustment :  function(cmp, event, helper) {
-      /*  
-      var flow = cmp.find("rewardAdjustmentFlow");  
-      var inputVariables = [
-            {
-               	name : 'curCase2',
-                type : 'String',
-                value : cmp.get("v.recordId")
-            },
-          ];
-      flow.startFlow("CSR_Loyalty_Rewards_Adjustments",inputVariables);
-      */
+      
       var currentRecordId =  cmp.get("v.recordId");  
       var workspaceAPI = cmp.find("workspace");
         workspaceAPI.openSubtab({
@@ -171,37 +147,14 @@
         });
     },
     
-    /*
-    handleMergeLoyalty: function(cmp, event, helper) {
-        
-      var currentRecordId =  cmp.get("v.recordId");  
-      var workspaceAPI = cmp.find("workspace");
-        workspaceAPI.openSubtab({
-            url: '/flow/Merge_LoyaltyId?curCase2='+currentRecordId+'&retURL=/'+currentRecordId,
-            focus: true
-        }).then(function(response) {
-            workspaceAPI.getTabInfo({
-                tabId: response
-            }).then(function(tabInfo) {
-            console.log("The recordId for this tab is: " + tabInfo.recordId);
-            });
-        }).catch(function(error) {
-                console.log(error);
-        });
-      
-    },
-    */
+    
     
     handleClick: function(cmp, event, helper) {
         
-        //alert('inside handle click');
-        //var indexvar = event.getSource().get("v.name");
         var idx = event.target.id;
-        //alert('***index = '+idx);
         var getPointWrapper = cmp.get("v.pointWrapper")[idx];
-        //alert('data = '+getPointWrapper);
-        //alert('##'+JSON.stringify(getPointWrapper));
-       
+        var success = String($A.get("$Label.c.Success1"));
+        
         
         $A.createComponent("c:A1_PointDetails",
                            {
@@ -209,11 +162,9 @@
                                "indexRow" : idx    
                            },
                            function(content, status) {
-                               if (status === "SUCCESS") {
-                                   //alert('Inside Success');
+                               if (status === success) {
                                    var modalBody = content;
                                    cmp.find('overlayLib').showCustomModal({
-                                       //header: "Welcome to Points Detail",
                                        body: modalBody, 
                                        showCloseButton: true,
                                       

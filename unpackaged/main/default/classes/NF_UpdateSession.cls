@@ -24,7 +24,7 @@ public with sharing class NF_UpdateSession {
             }
 
         }catch(Exception e){
-            System.debug('NF_UpdateSession.updateSession Exception encountered ' + e.getMessage() + e.getStackTraceString());
+            Logger.logException(e);
         }
 
     }

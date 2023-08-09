@@ -2,9 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>VIP_Contact__c</fullName>
     <defaultValue>false</defaultValue>
-    <description>Check if this person is a VIP and requires special attention (ie - board member)</description>
     <externalId>false</externalId>
-    <inlineHelpText>Check if this person is a VIP and requires special attention (ie - board member)</inlineHelpText>
     <label>VIP Contact</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

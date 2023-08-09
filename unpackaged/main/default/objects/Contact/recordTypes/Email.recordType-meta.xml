@@ -33,10 +33,6 @@
             <fullName>Synchronizing</fullName>
             <default>false</default>
         </values>
-        <values>
-            <fullName>exported</fullName>
-            <default>false</default>
-        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Brand_Id__c</picklist>
@@ -46,10 +42,6 @@
         </values>
         <values>
             <fullName>10</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>100</fullName>
             <default>false</default>
         </values>
         <values>
@@ -69,14 +61,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>81</fullName>
             <default>false</default>
         </values>
@@ -86,10 +70,6 @@
         </values>
         <values>
             <fullName>83</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>84</fullName>
             <default>false</default>
         </values>
         <values>
@@ -282,6 +262,29 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>DataOwner_Subtype__c</picklist>
+        <values>
+            <fullName>Access My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Sell%2FShare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rectify My Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>DoNotDirectMailReason__c</picklist>
         <values>
             <fullName>A</fullName>
@@ -466,6 +469,14 @@
     </picklistValues>
     <picklistValues>
         <picklist>Email_Address_Reason_Code__c</picklist>
+        <values>
+            <fullName>Tealium Request%3A Advertise OptIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tealium Request%3A Advertise OptOut</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>Verfication Success%3A login email is already in use</fullName>
             <default>false</default>
@@ -759,6 +770,10 @@
         </values>
         <values>
             <fullName>06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07</fullName>
             <default>false</default>
         </values>
         <values>

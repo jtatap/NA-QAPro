@@ -4,7 +4,7 @@
     <label>SFMC</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4Pjxc7FpVVPyT8revRKs5YkOr6OH706h6Dvqa9Ura3Mq6PtJFp9oAguMjE9tasL</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

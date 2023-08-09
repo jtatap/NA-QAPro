@@ -13,7 +13,9 @@ private class TriggeredSendTest {
         	insert c2;
             c2.EmailOptInStatus__c = 'N';
             update c2;
+        Integer callouts = Limits.getCallouts();
         Test.stopTest();
+        system.assertEquals(0, callouts);
 
     }
 }

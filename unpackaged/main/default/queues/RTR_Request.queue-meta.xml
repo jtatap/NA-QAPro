@@ -2,6 +2,12 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>RTR Request</name>
+    <queueMembers>
+        <users>
+            <user>ioannismimidas@pvh.com</user>
+            <user>jasennemeth@pvh.com</user>
+        </users>
+    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

@@ -192,18 +192,6 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>aeon2__Log__c.aeon2__Idle__c</field>
     </columns>
-    <crossFilters>
-        <criteriaItems>
-            <column>Status</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>3</value>
-        </criteriaItems>
-        <operation>with</operation>
-        <primaryTableColumn>CASE_ID</primaryTableColumn>
-        <relatedTable>EmailMessage</relatedTable>
-        <relatedTableJoinColumn>Parent</relatedTableJoinColumn>
-    </crossFilters>
     <filter>
         <criteriaItems>
             <column>Case.Duplicate_Case__c</column>
@@ -267,13 +255,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Hymein,Caroline,Ann Marie,Keith,Alexis Rios</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>FK_CREATED_DATE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LAST_N_DAYS:30</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

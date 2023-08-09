@@ -31,6 +31,10 @@
                 <behavior>Required</behavior>
                 <field>LastName__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_type_id_18_character__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -40,6 +44,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Fraud__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Gender__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -80,6 +88,10 @@
                 <behavior>Edit</behavior>
                 <field>Rate_of_Return__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -88,8 +100,8 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Address Information</label>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -112,10 +124,6 @@
                 <behavior>Readonly</behavior>
                 <field>ParentId</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Gender__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -124,9 +132,9 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
+        <layoutColumns />
         <style>CustomLinks</style>
     </layoutSections>
     <platformActionList>
@@ -142,7 +150,7 @@
             <sortOrder>1</sortOrder>
         </platformActionListItems>
     </platformActionList>
-    <quickActionList/>
+    <quickActionList />
     <relatedContent>
         <relatedContentItems>
             <layoutItem>
@@ -166,7 +174,6 @@
         <fields>EmailOptOutDate__c</fields>
         <fields>External_Id__c</fields>
         <fields>LoyaltyID__c</fields>
-        <fields>CONTACT.LAST_UPDATE</fields>
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>

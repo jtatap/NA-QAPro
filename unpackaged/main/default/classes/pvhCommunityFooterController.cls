@@ -1,26 +1,27 @@
-public class pvhCommunityFooterController {
-
+public class pvhCommunityFooterController{
     @AuraEnabled(cacheable = true)
-    public static Map<String, List<Community_Footer_Items__mdt>> getFooterData(String brandName) {
-        try {
-             Map<String, List<Community_Footer_Items__mdt>> mapFooterLabelToValue = new Map<String, List<Community_Footer_Items__mdt>>();
-             for(Community_Footer_Items__mdt eachData : [SELECT Brand__c, Brand__r.Brand_Name__c, Name__c, Value__c,
-                                                            Header__c, Item_SequenceNo__c, Open_In_New_Tab__c, Header_SequenceNo__c
-                                                                FROM Community_Footer_Items__mdt 
-                                                                    WHERE Brand__r.MasterLabel =: brandName
-                                                                        ORDER BY Header_SequenceNo__c, Item_SequenceNo__c ASC]) {
-                
-                if(mapFooterLabelToValue.containsKey(eachData.Header__c)) {
+    public static Map<String, List<Community_Footer_Items__mdt>> getFooterData(String brandName){
+        try{
+            Map<String, List<Community_Footer_Items__mdt>> mapFooterLabelToValue = new Map<String, List<Community_Footer_Items__mdt>>();
+            for (Community_Footer_Items__mdt eachData : [SELECT Brand__c, Brand__r.Brand_Name__c, Name__c, Value__c, Header__c, Item_SequenceNo__c, Open_In_New_Tab__c, Header_SequenceNo__c
+                                                         FROM Community_Footer_Items__mdt
+                                                         WHERE Brand__r.MasterLabel = :brandName
+                                                         ORDER BY Header_SequenceNo__c, Item_SequenceNo__c ASC]){
+
+                if (mapFooterLabelToValue.containsKey(eachData.Header__c)){
                     List<Community_Footer_Items__mdt> lstTempMdt = mapFooterLabelToValue.get(eachData.Header__c);
                     lstTempMdt.add(eachData);
                     mapFooterLabelToValue.put(eachData.Header__c, lstTempMdt);
-                } else {
-                    mapFooterLabelToValue.put(eachData.Header__c, new List<Community_Footer_Items__mdt>{eachData});
+                } else{
+                    mapFooterLabelToValue.put(eachData.Header__c, new List<Community_Footer_Items__mdt>{ eachData });
                 }
-            } 
-            if(!mapFooterLabelToValue.keySet().isEmpty()) return mapFooterLabelToValue; 
-        } catch(Exception ex) {
-            System.debug('Exception :::'+ ex.getMessage());
+            }
+            Log.push('mapFooterLabelToValue'+mapFooterLabelToValue);
+            Logger.logDebug();
+            if (!mapFooterLabelToValue.keySet().isEmpty())
+                return mapFooterLabelToValue;
+        } catch (Exception ex){
+            Logger.logException(ex);
         }
         return null;
     }
@@ -42,12 +43,15 @@ public class pvhCommunityFooterController {
                 } else {
                     mapLabelToValue.put(Integer.valueOf(eachData.Row_SequenceNo__c), new List<Community_Footer_Copyright_Area_Items__mdt>{eachData});
                 }
-            } 
-            System.debug('-- checking data--'+mapLabelToValue);
-            if(!mapLabelToValue.keySet().isEmpty()) return mapLabelToValue; 
-        } catch(Exception ex) {
-            System.debug('Exception :::'+ ex.getMessage());
+            }
+            Log.push('mapLabelToValue'+mapLabelToValue);
+            Logger.logDebug();
+            if (!mapLabelToValue.keySet().isEmpty())
+                return mapLabelToValue;
+        } catch (Exception ex){
+            Logger.logException(ex);
         }
         return null;
-    } 
+    }
+
 }

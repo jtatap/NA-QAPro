@@ -91,14 +91,11 @@ public with sharing class B2CContactManager extends B2CBaseMeta {
         for (B2C_Integration_Field_Mappings__mdt thisFieldMapping: fieldMappings) {
 
             // Create a reference to the property value for this contact
-            //customerProfile.Birthdate=date.today();
             contactPropertyValue = customerProfile.get(thisFieldMapping.Service_Cloud_Attribute__c);
-            
                 system.debug('thisFieldMapping>>>>'+thisFieldMapping);
-            System.debug('contactPropertyValueeeee'+contactPropertyValue);
             // Is this property empty and is this not a child node?  If so, then add it to the delete node
             if (contactPropertyValue == null && !thisFieldMapping.B2C_Commerce_OCAPI_Attribute__c.contains('.')) {
-				 system.debug('entered into loop>>>>'+thisFieldMapping.B2C_Commerce_OCAPI_Attribute__c);
+                 system.debug('entered into loop>>>>'+thisFieldMapping.B2C_Commerce_OCAPI_Attribute__c);
                 // If so, then add it to the delete node (fields to clear out)
                 deleteNode.add(thisFieldMapping.B2C_Commerce_OCAPI_Attribute__c);
 
@@ -117,9 +114,7 @@ public with sharing class B2CContactManager extends B2CBaseMeta {
                 output.put(thisFieldMapping.B2C_Commerce_OCAPI_Attribute__c, contactPropertyValue);
 
             }
-System.debug('Printing Outputttttt'+ output);
-System.debug('Printing Deletessss'+ deleteNode);
-System.debug('Printing Credentialssss'+ credentialsNode);
+
         }
 
         // If we have credential updates, then include it in the output
@@ -131,7 +126,7 @@ System.debug('Printing Credentialssss'+ credentialsNode);
         if (deleteNode.size() > 0) {
             output.put('_delete', deleteNode);
         }
-System.debug('Printing FinalllOutputttttt'+ output);
+
         // Returns the output collection
         return output;
 
@@ -212,7 +207,7 @@ System.debug('Printing FinalllOutputttttt'+ output);
         contactQuery.selectField('Total_Updates_From_B2C_Commerce__c');
         contactQuery.selectField('Total_Updates_to_B2C_Commerce__c');
         contactQuery.selectField('Updated_by_B2C_Platform_Event__c');
-		
+        
         // Iterate over the field mappings and attach the mapped fields to the query
         for (B2C_Integration_Field_Mappings__mdt thisFieldMapping: fieldMappings) {
 

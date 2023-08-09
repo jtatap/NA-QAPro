@@ -2,16 +2,16 @@
 	
     <lightning:workspaceAPI aura:id="workspace"/>
     <aura:attribute name="value" type="String" default=""/>
-    <!-- call doInit function on component load -->  
+    
     <aura:handler name="init" value="this" action="{!c.doInit}"/>
     
-     <!--<aura:dependency resource="markup://force:editRecord" type="EVENT" />-->
+   
    <aura:handler event="force:refreshView" value="this" action="{!c.isRefreshed}" /> 
     
     <aura:dependency resource="markup://force:navigateToURL" type="EVENT"/>
     <aura:dependency resource="markup://force:navigateToSObject" type="EVENT"/>
     
-    <!-- aura attributes-->  
+    
      <aura:attribute name="objDetail" type="case" default="{'sobjectType' : 'case'}"/>
     
     <aura:attribute name="listControllingValues" type="list" default="[]" description="to store controller field values"/>
@@ -58,14 +58,7 @@
     {'label': 'Fit', 'value': 'Fit'},
     {'label': 'Return/Exchange',     'value': 'Return/Exchange'}
     ]"/>
-   <!-- <aura:attribute name="options3" type="List" default="[
-    {'label': 'Shipping',   'value': 'Shipping'},
-    {'label': 'TBYB',    'value': 'TBYB'},                                                     
-    {'label': 'Fit', 'value': 'Fit'}   
-    ]"/>-->
-   <!-- <aura:attribute name="options4" type="List" default="[
-    {'label': 'Return/Exchange',     'value': 'Return/Exchange'}
-    ]"/>-->
+   
 
 <article class="slds-tile">  
 <div class="slds-box slds-theme_default">
@@ -84,9 +77,9 @@
                 <div class="slds-grid slds-gutters">
                     <div class="slds-col">
                      <lightning:outputField aura:id="ReCode" fieldName="Reason_Code__c" /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
-               <!--<aura:if isTrue="{!not(empty(v.objDetail.TrueAndCo_ReasonCodeDetails__c)) }"> -->    
+                
                      <lightning:outputField  fieldName="Reason_Code_Details__c"  /><hr style="margin-top: 2px;margin-bottom: 2px;"/>
-              <!--</aura:if>  -->             
+                          
               <aura:if isTrue="{!not(empty(v.fields.Reason_Sub_detail__c)) }">
                         <lightning:outputfield  fieldName="Reason_Sub_detail__c"/><hr style="margin-top: 2px;margin-bottom: 2px;"/>
               </aura:if>
@@ -168,10 +161,10 @@
          
      <aura:if isTrue="{!v.isPurchased}">     
         <lightning:select  aura:id="placeOfPurchase" name="selectItem" label="Place Of Purchase">
-                            <option value="Online">Online</option>
-                            <option value="Amazon">Amazon</option>
-                            <option value="Nordstrom">Nordstrom</option>
-                            <option value="Target">Target</option>
+                            <option value="Online">{!$Label.c.Online}</option>
+                            <option value="Amazon">{!$Label.c.Amazon}</option>
+                            <option value="Nordstrom">{!$Label.c.Nordstrom}</option>
+                            <option value="Target">{!$Label.c.Target}</option>
                            
          </lightning:select>
       </aura:if>  
@@ -181,16 +174,14 @@
                         value="{!v.objDetail.Sku_Style_Number__c}"
                       
                         />
-     <!--<label class="slds-form-element__label" for="select-01">Channel</label>
-                 <ui:inputSelect  aura:id="channel" class="slds-select" >
-                          </ui:inputSelect>-->
+     
       
           
      <lightning:select  aura:id="channel" name="selectItem" label="Channel">
-                        <option value="Online - trueandco.com">Online - trueandco.com</option>
-                        <option value="Nordstrom">Nordstrom</option>
-                        <option value="Target">Target</option>
-                        <option value="Hudson's Bay">Hudson's Bay</option>
+                        <option value="Online - trueandco.com">{!$Label.c.OnlineTrue}</option>
+                        <option value="Nordstrom">{!$Label.c.Nordstrom}</option>
+                        <option value="Target">{!$Label.c.Target}</option>
+                        <option value="Hudson's Bay">{!$Label.c.HudsonBay}</option>
                        
       </lightning:select>     
 

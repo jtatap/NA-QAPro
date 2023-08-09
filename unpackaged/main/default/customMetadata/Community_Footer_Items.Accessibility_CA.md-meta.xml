@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">https://stg.calvinklein.us/en/accessibility.html</value>
+        <value xsi:type="xsd:string">https://www.calvinklein.ca/en/customerservice/accessibility</value>
     </values>
 </CustomMetadata>

@@ -9,7 +9,6 @@
             <profile>Tier I CSR PVH</profile>
             <profile>Tier I CSR Wholesale</profile>
             <profile>Tier I CSR Wholesale %5BOLD%5D</profile>
-            <profile>Tier II CSR</profile>
         </profiles>
     </assignments>
     <capacity>10</capacity>

@@ -32,9 +32,9 @@
                 <label>Rectify My Data</label>
             </value>
             <value>
-                <fullName>Advertising/Sharing Opt-Out</fullName>
+                <fullName>Advertising/Sharing Opt-Out/Do Not Sell</fullName>
                 <default>false</default>
-                <label>Advertising/Sharing Opt-Out</label>
+                <label>Advertising/Sharing Opt-Out/Do Not Sell</label>
             </value>
         </valueSetDefinition>
     </valueSet>

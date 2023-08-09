@@ -13,6 +13,10 @@ public without sharing class PersonalDataFormApexController
         @AuraEnabled
         public String caseNumber {get;set;}
         @AuraEnabled
+        public String caseId {get;set;}
+        @AuraEnabled
+        public String verificationCode  {get;set;}
+        @AuraEnabled
         public String message_success {get;set;}
         @AuraEnabled
         public String regards_success {get;set;}
@@ -334,8 +338,8 @@ public without sharing class PersonalDataFormApexController
      * JIRA: GCT-773
      */
    @AuraEnabled
-    public static CaseWrapper createCaseForDonotSellShare(String brandNames, String checkEmail)
-    {
+    public static CaseWrapper createCaseForDonotSellShare(String brandNames, String checkEmail,Boolean isTealiumApi)
+    {	System.debug('Tealium request parameters ' + brandNames + ' ' + checkEmail);
         CaseWrapper wrapperObj = new CaseWrapper();
         Map<String, String> mapOfBrandApiToLabel = new Map<String, String>();
         List<Schema.PicklistEntry> values = Contact.Brand_Id__c.getDescribe().getPicklistValues();
@@ -344,7 +348,7 @@ public without sharing class PersonalDataFormApexController
         }
         Boolean insertCase=false;
         List<Contact> caseContact=[SELECT Id, Ecomm_Connected__c, Email, Brand_Id__c,FirstName,LastName,MailingStreet, MailingCity, MailingCountry
-                                   , MailingState,MailingPostalCode,Phone, Gender__c,Birthdate 
+                                   , MailingState,MailingPostalCode,Phone, Gender__c,Birthdate, OptOutShare__c
                                    FROM Contact 
                                    where Brand_Id__c like :mapOfBrandApiToLabel.get(brandNames) AND Email =:checkEmail order by lastmodifieddate desc];
         system.debug('caseContact--'+caseContact);
@@ -364,6 +368,14 @@ public without sharing class PersonalDataFormApexController
                     wrapperObj.contactDetails = caseContact[0];
                 }
             }
+            System.debug('Contact details: ' + wrapperObj.contactDetails);
+            if(wrapperObj.contactDetails.OptOutShare__c && !isTealiumApi)
+            {
+                wrapperObj.message_success='Our records indicate this contact is already opted out of targeted advertising/sharing. Please enter a different email to submit a request.';
+                wrapperObj.regards_success='Support Team';
+                return wrapperObj;
+            }
+            
         }
          if(caseContact.isEmpty()){
             system.debug('entered');
@@ -398,7 +410,8 @@ public without sharing class PersonalDataFormApexController
                                      recordTypeId =recordTypeIdPrivacyRequest,
                                      R2R_Email_UserConfirmation__c = 'Started',
                                      SuppliedEmail =wrapperObj.contactDetails.email,
-                                     status = 'Pending'
+                                     status = 'Pending',
+                                     Tealium_Email_Suppression__c = isTealiumApi
                                      
                                     ); 
             newCases.setOptions(dmls);
@@ -409,7 +422,7 @@ public without sharing class PersonalDataFormApexController
                 System.debug('The following exception has occurred: ' + e.getMessage());
             }
             
-            List<Case> getCase = [Select Id,caseNumber from Case where Id =: newCases.Id];
+            List<Case> getCase = [Select Id,caseNumber,VerificationHash__c from Case where Id =: newCases.Id];
             
             ///CODE ADDED FOR  PVH Jira - 2781
             List<Id> newCaseIds = new List<Id>();
@@ -417,6 +430,8 @@ public without sharing class PersonalDataFormApexController
             ContactFuture.processNewPrivacyCases(newCaseIds);
             //------------------------
             wrapperObj.caseNumber = (getCase != null && getCase.size() > 0) ? getCase[0].CaseNumber : '';
+            wrapperObj.caseId = (getCase != null && getCase.size() > 0) ? getCase[0].Id : '';
+            wrapperObj.verificationCode = (getCase != null && getCase.size() > 0) ? getCase[0].VerificationHash__c : '';
             //System.debug('***Case inserted with Case Number = '+getCase.CaseNumber);
             List<Success_Message_Setting__mdt> getMessage = [Select Id,Success_Message_f__c,Regards__c from Success_Message_Setting__mdt Where Type__c='P' and Brand_Name__c=:brandNames and Type_of_Request__c='Privacy'];
             if(!getMessage.isEmpty())
@@ -446,6 +461,7 @@ public without sharing class PersonalDataFormApexController
     {
         //System.debug('***inside createCase');
         CaseWrapper wrapperObj = new CaseWrapper();
+        Boolean insertCase=false;
         
         Id recordTypeIdPrivacyRequest = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('Privacy_Request').getRecordTypeId();
         Id recordTypeIdSupportCase = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('Support_Case').getRecordTypeId();
@@ -468,7 +484,31 @@ public without sharing class PersonalDataFormApexController
         }
         
         system.debug('Check RT'+recordTyeToSet);
-        
+         
+        List<Contact> caseContact=[SELECT Id, Email, Brand_Id__c,Ecomm_Connected__c FROM Contact where Brand_Id__c =:brandNames AND Email= :getCaseDetail.SuppliedEmail order by lastmodifieddate desc];
+        Contact cont;
+        if(!test.isRunningTest() && caseContact.size()>0){
+            if(!caseContact.isEmpty()){
+                insertCase = true;
+                if(caseContact.size() == 1){
+                    wrapperObj.contactDetails = caseContact[0];
+                } else {
+                    for(Contact c: caseContact){
+                        if(c.Ecomm_Connected__c == true){
+                            wrapperObj.contactDetails = c;
+                            break;
+                        }
+                    }
+                    
+                    if(wrapperObj.contactDetails == null){
+                        wrapperObj.contactDetails = caseContact[0];
+                    }
+                }}
+             //cont = caseContact[0];
+        }else{
+            wrapperObj.contactDetails = [SELECT Id, Email, Brand_Id__c  FROM Contact limit 1];
+        }
+        if(insertCase || test.isRunningTest() ) {
         //Fetching the assignment rules on case
         AssignmentRule assignRule = new AssignmentRule(); 
         assignRule = [select id from AssignmentRule where SobjectType = 'Case' and Active = true and Name='Case Assignment Rule' limit 1];
@@ -477,25 +517,19 @@ public without sharing class PersonalDataFormApexController
         Database.DMLOptions dmls = new Database.DMLOptions();
         dmls.assignmentRuleHeader.assignmentRuleId= assignRule.id;
         system.debug('dmls***'+dmls);
-        
-        List<Contact> caseContact=[SELECT Id, Email, Brand_Id__c FROM Contact where Brand_Id__c =:brandNames AND Email= :getCaseDetail.SuppliedEmail LIMIT 1];
-        Contact cont;
-        if(!test.isRunningTest() && caseContact.size()>0){
-             cont = caseContact[0];
-        }else{
-            cont = [SELECT Id, Email, Brand_Id__c  FROM Contact limit 1];
-        }
+       
         system.debug('getCaseDetail.SuppliedEmail::'+getCaseDetail.SuppliedEmail);
         Case newCases = new Case(Type=typeToSet, 
                                  Sub_Type__c=subTypeToSet, 
                                  Country_of_Residence__c=getCaseDetail.Country_of_Residence__c, 
                                  State_of_Residence__c=getCaseDetail.State_of_Residence__c,
                                  SuppliedName=name, SuppliedEmail=getCaseDetail.SuppliedEmail, 
-                                 SuppliedPhone=getCaseDetail.SuppliedPhone,ContactId=cont.Id,
+                                 SuppliedPhone=getCaseDetail.SuppliedPhone,ContactId=wrapperObj.contactDetails.Id,
                                  Loyalty_Account_Number__c=getCaseDetail.Loyalty_Account_Number__c,
                                  Brand__c = brandNames,
                                  Origin = 'Web',
-                                 recordTypeId =recordTyeToSet
+                                 recordTypeId =recordTyeToSet,
+                                 R2R_Email_UserConfirmation__c = 'Started'
                                  );
                                  //Brand_Label__c = mapBrandNameLabel.get(brandNames)
         
@@ -537,8 +571,41 @@ public without sharing class PersonalDataFormApexController
              //System.debug('***No Configurd Message. Default Message is Set');
              wrapperObj.message_success='Thank you for submitting a Personal Data Request. Your case number is <b><ticketid></b>. We will contact you before we begin to process your request.';
              wrapperObj.regards_success='Support Team';
-        }        
+        }   
+    }     
         return wrapperObj;      
+    }
+    
+    @AuraEnabled
+    public static CaseWrapper checkIfContactExistWithEmailId(String brandNames, String checkEmail)
+    {
+        CaseWrapper wrapperObj = new CaseWrapper();
+        Map<String, String> mapOfBrandApiToLabel = new Map<String, String>();
+        List<Schema.PicklistEntry> values = Contact.Brand_Id__c.getDescribe().getPicklistValues();
+        For(Schema.PicklistEntry sp : values){
+            mapOfBrandApiToLabel.put(sp.getValue(), sp.getLabel());
+        }
+        List<Contact> caseContact=[SELECT Id, Ecomm_Connected__c, Email, Brand_Id__c,FirstName,LastName,MailingStreet, MailingCity, MailingCountry
+                                   , MailingState,MailingPostalCode,Phone, Gender__c,Birthdate 
+                                   FROM Contact 
+                                   where Brand_Id__c like :mapOfBrandApiToLabel.get(brandNames) AND Email =:checkEmail order by lastmodifieddate desc];
+        system.debug('caseContact--'+caseContact);
+
+        if(caseContact.isEmpty()){
+            system.debug('entered');
+            Map<String,Brand_Details_Mapping__mdt> mapOfBrandMappings = new Map<String,Brand_Details_Mapping__mdt>();
+            
+            List<Brand_Details_Mapping__mdt> listOfBrandMappings = [Select Id,Brand_Number__c,Brand_Name__c,PDR_Link__c,Email_Template__c,Ordwide_Email__c,Brand_form_link__c from Brand_Details_Mapping__mdt];
+            for(Brand_Details_Mapping__mdt eachMdt : listOfBrandMappings){
+                mapOfBrandMappings.put(eachMdt.Brand_Number__c, eachMdt);
+                
+            }
+            wrapperObj.message_error = 'Record not found. Please make sure you’ve entered your email address correctly. Contact a PVH Customer Service Representative for further assistance.';
+            wrapperObj.error = true;
+            wrapperObj.brandLink=mapOfBrandMappings.get(brandNames).Brand_form_link__c;
+            return wrapperObj;
+        }
+        return wrapperObj; 
     }
     
     /* NOT using this method 

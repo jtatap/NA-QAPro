@@ -5,7 +5,7 @@
     <name>Speedo Chat Priority</name>
     <queueMembers>
         <publicGroups>
-            <publicGroup>Tier_1_CSR_CCPA</publicGroup>
+            <publicGroup>Tier_1_CSR_PVH</publicGroup>
             <publicGroup>Tier_1_CSR_Wholesale</publicGroup>
         </publicGroups>
         <roles>
@@ -19,8 +19,7 @@
             <user>kimberlyrivas@pvh.com</user>
         </users>
     </queueMembers>
-    <queueRoutingConfig>Priority_Chat</queueRoutingConfig>
     <queueSobject>
         <sobjectType>LiveChatTranscript</sobjectType>
     </queueSobject>
-</Queue>
+<queueRoutingConfig></queueRoutingConfig></Queue>

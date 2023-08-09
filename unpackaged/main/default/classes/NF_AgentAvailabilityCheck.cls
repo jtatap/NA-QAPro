@@ -19,16 +19,17 @@ public with sharing class NF_AgentAvailabilityCheck {
         output.bAgentAvailability = false;
 
         try{
-            System.debug('input is:'+input.toString());
-            System.debug('Button mapping is:'+NF_Util.buttonMapping.get(input[0].brand));
-            System.debug('Deployment mapping is:'+NF_Util.deploymentMapping.get(input[0].brand));
+            Log.push('input is:'+input.toString());
+            Log.push('Button mapping is:'+NF_Util.buttonMapping.get(input[0].brand));
+            Log.push('Deployment mapping is:'+NF_Util.deploymentMapping.get(input[0].brand));
 
             output.bAgentAvailability = getButtonAvailability(NF_Util.buttonMapping.get(input[0].brand), NF_Util.deploymentMapping.get(input[0].brand));
 
         }catch(Exception e){
-            System.debug('Exception: ' + e);
+            Logger.logException(e);
         }
-        System.debug('returning availability as'+output);
+        Log.push('returning availability as'+output);
+        Logger.logDebug();
         return new List<Output>{output};
     }
 
@@ -54,7 +55,7 @@ public with sharing class NF_AgentAvailabilityCheck {
 
 
         String sPath = 'callout:Live_Chat_Agent_Availability/chat/rest/Visitor/Availability?Availability.ids='+botTransferbuttonId+'&deployment_id='+botDeploymentId+'&org_id='+botOrgId;
-        System.debug('>> NF_AgentAvailabilityCheck.getButtonAvailability: sPath='+sPath);
+        Log.push('>> NF_AgentAvailabilityCheck.getButtonAvailability: sPath='+sPath);
 
         HttpRequest request = new HttpRequest();
         request.setEndpoint(sPath);
@@ -63,7 +64,7 @@ public with sharing class NF_AgentAvailabilityCheck {
 
         Http http = new Http();
         HttpResponse response = http.send(request);
-        System.debug('NF_AgentAvailabilityCheck.getButtonAvailability: response='+response.getBody());
+        Log.push('NF_AgentAvailabilityCheck.getButtonAvailability: response='+response.getBody());
 
         // If the request is successful, parse the JSON response.
         if (response.getStatusCode() == 200) {
@@ -76,7 +77,8 @@ public with sharing class NF_AgentAvailabilityCheck {
                 }
             }
         }
-        System.debug('Returning Agent Availability as:' +isAvailable);
+        Log.push('Returning Agent Availability as:' +isAvailable);
+        Logger.logDebug();
         return isAvailable;
 
     }

@@ -16,8 +16,11 @@ public class Privacy_ProcessResponse_API_Test {
 
     Test.startTest();
     Privacy_ProcessResponse_API.restGet();
+    Integer callouts = Limits.getCallouts();
     Test.stopTest();
-   
+    system.assertEquals(0, callouts);
+
+
  }
     
 }

@@ -18,15 +18,15 @@
                         <value>&lt;Please Enter Your Bot Name&gt;</value>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>83605086-837f-4124-8c14-c33f9a6d8e36</stepIdentifier>
+                <stepIdentifier>6a89fa5e-06a0-4f32-bc92-415d8f1d32ea</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
                     <message>Hi! I&#39;m your helpful bot.</message>
-                    <messageIdentifier>7d894e26-90f0-4f1a-bcd6-198dc7cd0e3a</messageIdentifier>
+                    <messageIdentifier>a704c108-0e27-434e-bef0-10589731f782</messageIdentifier>
                 </botMessages>
-                <stepIdentifier>88cb191e-6133-4369-b1b8-31128c8ec6f1</stepIdentifier>
+                <stepIdentifier>43910270-599e-4273-b13b-acb34c5a290a</stepIdentifier>
                 <type>Message</type>
             </botSteps>
             <botSteps>
@@ -36,7 +36,7 @@
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>66fa9404-4563-4c1f-a043-faa33f3fb019</stepIdentifier>
+                <stepIdentifier>5d081864-0b02-44c5-9b63-c3830fe538d5</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
             <developerName>Welcome</developerName>
@@ -85,11 +85,11 @@
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>6e2a5ed0-97bb-49b6-b06b-a336580175e2</stepIdentifier>
+                <stepIdentifier>292931f1-ca00-4501-91b5-4486639e67b6</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
-                <stepIdentifier>3a736703-7a76-4d3e-9055-ab56fcd6673d</stepIdentifier>
+                <stepIdentifier>81781220-a670-476c-86ee-51bc8e63460f</stepIdentifier>
                 <type>Wait</type>
             </botSteps>
             <developerName>Main_Menu</developerName>
@@ -138,14 +138,14 @@
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>4343887c-d7e3-4bad-aa1e-7a8c9c48e91e</stepIdentifier>
+                <stepIdentifier>ea99bd7a-7f18-4d10-a54d-481e63cbc3de</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
                 <conversationSystemMessage>
                     <type>Transfer</type>
                 </conversationSystemMessage>
-                <stepIdentifier>ebe438cb-74b3-42b2-9e2e-f4ec15d79be6</stepIdentifier>
+                <stepIdentifier>3420a48a-4e56-4c73-880d-9b9e957668d1</stepIdentifier>
                 <type>SystemMessage</type>
             </botSteps>
             <developerName>Transfer_To_Agent</developerName>
@@ -194,19 +194,19 @@
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>7c2956b6-9974-47d5-b909-c2996f4b3ace</stepIdentifier>
+                <stepIdentifier>8c74ae4c-69ec-40cb-9105-545497d38bfa</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
                     <message>Goodbye! Click the &quot;End Chat&quot; button to end this chat</message>
-                    <messageIdentifier>20a33b24-ff84-4e29-b8c8-17e078ff23d9</messageIdentifier>
+                    <messageIdentifier>06c20c9d-01d6-4af6-a873-e754b3f3942f</messageIdentifier>
                 </botMessages>
-                <stepIdentifier>ca2d2a27-7b04-483e-8c26-b7bb2fb93848</stepIdentifier>
+                <stepIdentifier>7d53ebf7-6107-462e-9cb9-e4df677e03d3</stepIdentifier>
                 <type>Message</type>
             </botSteps>
             <botSteps>
-                <stepIdentifier>cb6b6e62-b674-4830-be66-e55d688d0af5</stepIdentifier>
+                <stepIdentifier>93c7abe9-42ec-4f96-86e8-dc4f7a50c910</stepIdentifier>
                 <type>Wait</type>
             </botSteps>
             <developerName>End_Chat</developerName>
@@ -255,19 +255,19 @@
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>d31b7c49-e8c6-49fb-9462-0fbc5fb441e3</stepIdentifier>
+                <stepIdentifier>fa7a5f86-eeb5-4e49-9752-148b443dea7b</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
                     <message>Sorry, I didn&#39;t understand that.</message>
-                    <messageIdentifier>5353209f-86bc-4d8a-a44f-7bfa16812407</messageIdentifier>
+                    <messageIdentifier>29d6f934-c4d2-40e3-8172-811beb5aa48a</messageIdentifier>
                 </botMessages>
-                <stepIdentifier>a4c504d2-6935-4426-9a67-f885202b3378</stepIdentifier>
+                <stepIdentifier>ac45ef31-8e8f-496a-a021-13338bfd4529</stepIdentifier>
                 <type>Message</type>
             </botSteps>
             <botSteps>
-                <stepIdentifier>d9d8cfae-5831-4840-8fa2-b9c9625a3610</stepIdentifier>
+                <stepIdentifier>543654ef-0693-4384-9fb3-77ad3b2f6f71</stepIdentifier>
                 <type>Wait</type>
             </botSteps>
             <developerName>Confused</developerName>
@@ -316,19 +316,19 @@
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>b32b4caf-d641-47e1-9621-4017860f1f6b</stepIdentifier>
+                <stepIdentifier>9ae78e02-f288-4f50-9d2c-cc3c63a9c29c</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
                     <message>Unfortunately, there are no agents available at the moment</message>
-                    <messageIdentifier>1755a085-1d74-4ddc-b849-fbf2a57ffd0b</messageIdentifier>
+                    <messageIdentifier>f8b86392-eb24-47ea-ad59-66aee8019534</messageIdentifier>
                 </botMessages>
-                <stepIdentifier>8fe074a1-774d-469e-87c6-f064e6f88eee</stepIdentifier>
+                <stepIdentifier>fb609262-e49b-405c-808f-b188404bc9b8</stepIdentifier>
                 <type>Message</type>
             </botSteps>
             <botSteps>
-                <stepIdentifier>4a15edb2-fc8a-4e7b-993d-afab7036fb56</stepIdentifier>
+                <stepIdentifier>eb29bc7b-d0f9-45cf-8ecb-4340106294f1</stepIdentifier>
                 <type>Wait</type>
             </botSteps>
             <developerName>No_Agent_Available</developerName>

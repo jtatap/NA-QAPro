@@ -4,6 +4,6 @@
     <encryptedWithPlatformEncryption>false</encryptedWithPlatformEncryption>
     <expirationDate>2024-05-02T00:00:00.000Z</expirationDate>
     <keySize>4096</keySize>
-    <masterLabel>certformule</masterLabel>
+    <masterLabel>CertForMule</masterLabel>
     <privateKeyExportable>true</privateKeyExportable>
 </Certificate>

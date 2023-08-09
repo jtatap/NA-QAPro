@@ -6,7 +6,15 @@
 <table border="1" cellpadding="5" cellspacing="0" height="250" width="650">
 	
 		<tr>
-			<td>Thank you for submitting an Advertising Opt-Out request on {{{Case.createdDate}}}. This email confirms that your email has been opted out from advertising. Please note that it may take a few days for you to see these updates in all systems. No further action is required on your part.</td>
+			<td><br />
+			<br />
+			<br />
+			Dear Customer,<br />
+			<br />
+			Thank you for submitting an Advertising Opt-Out request on {{{Case.createdDate}}}. This email confirms that your email has been opted out from advertising and will not be shared or sold to third parties for advertising purposes. Additionally, your information will no longer be shared via website cookies/pixels/tags. Please note that it may take a few days for you to see these updates in all systems. No further action is required on your part.<br />
+			<br />
+			Regards,&nbsp;<br />
+			{{{Case.Brand__c}}} Support Team</td>
 		</tr>
 	
 </table>

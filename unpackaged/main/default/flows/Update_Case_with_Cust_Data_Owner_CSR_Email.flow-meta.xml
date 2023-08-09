@@ -4,7 +4,7 @@
         <name>CSR_Email_services_Alert</name>
         <label>CSR Email services Alert</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>158</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -20,7 +20,7 @@
         <inputParameters>
             <name>emailAddresses</name>
             <value>
-                <elementReference>ServiceEmailAddress</elementReference>
+                <stringValue>	csr_email_service@4-1j8yzmxeg2kduu3i8whdxdxqejanmk1qgojuhrqvqrsntpdmcr.8l-4esduay.cs224.apex.sandbox.salesforce.com</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -35,7 +35,7 @@
         <name>Exit_Flow</name>
         <label>Exit Flow</label>
         <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationY>278</locationY>
         <assignmentItems>
             <assignToReference>out_success</assignToReference>
             <operator>Assign</operator>
@@ -52,11 +52,6 @@
         </assignmentItems>
     </assignments>
     <environments>Default</environments>
-    <formulas>
-        <name>ServiceEmailAddress</name>
-        <dataType>String</dataType>
-        <expression>{!Email_Service_Address.LocalPart} + &#39;@&#39; +{!Email_Service_Address.EmailDomainName}</expression>
-    </formulas>
     <interviewLabel>Update Case with Cust/Data Owner-CSR Email {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Update Case with Cust/Data Owner-CSR Email</label>
     <processMetadataValues>
@@ -78,32 +73,11 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordLookups>
-        <name>Email_Service_Address</name>
-        <label>Email Service Address</label>
-        <locationX>176</locationX>
-        <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>CSR_Email_services_Alert</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>DeveloperName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>CSREmailAddress</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>EmailServicesAddress</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Email_Service_Address</targetReference>
+            <targetReference>CSR_Email_services_Alert</targetReference>
         </connector>
     </start>
     <status>Active</status>

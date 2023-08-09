@@ -50,6 +50,10 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>aeon2__Log__c.aeon2__Idle__c</field>
     </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Total_Active_Time__c</field>
+    </columns>
     <crossFilters>
         <criteriaItems>
             <column>Status</column>

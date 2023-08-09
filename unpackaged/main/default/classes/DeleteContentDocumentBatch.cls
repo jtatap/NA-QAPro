@@ -17,11 +17,11 @@ global class DeleteContentDocumentBatch implements
             contentVersionIds.add(log.pcify__RecordId__c);
         }
 
-        system.debug(contentVersionIds);
+        Log.push('contentVersionIds'+contentVersionIds);
 
         Set<ContentVersion> cvSet = new Set<ContentVersion>([SELECT ContentDocumentId FROM ContentVersion WHERE Id IN :contentVersionIds]);
 
-        system.debug('cvSet=== ' + cvSet);
+        Log.push('cvSet=== ' + cvSet);
 
         Set<Id> cdSet = new Set<Id>();
 
@@ -31,16 +31,17 @@ global class DeleteContentDocumentBatch implements
 
         List<ContentDocument> cdList = Database.Query('SELECT Id FROM ContentDocument WHERE Id IN :cdSet AND IsDeleted = false');
 
-        system.debug('cdList=== ' + cdList);
+        Log.push('cdList=== ' + cdList);
 
         for (ContentDocument cd : cdList) {
             recordsProcessed = recordsProcessed + 1;
         }
+        Logger.logDebug();
         delete cdList;
     }
     global void finish(Database.BatchableContext bc) {
-        System.debug(recordsProcessed + ' records processed.');
-
+        Log.push(recordsProcessed + ' records processed.');
+        Logger.logDebug();
         System.scheduleBatch(new DeleteContentDocumentBatch(), 'Delete ContentDocument containing Credit Card ' + DateTime.now() + ' - ' + Math.random(), 5);
     }
 }

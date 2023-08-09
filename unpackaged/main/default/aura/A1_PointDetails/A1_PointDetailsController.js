@@ -1,22 +1,21 @@
 ({
 	handleCloseModal : function(component, event, helper) {
         component.find("overlayLib").notifyClose();
-		//alert('Closed');
 	},
     
     handleTransactionClick : function(cmp, event, helper) {
-        //alert('inside handle click');
         
         var getObject = cmp.get("v.pointWrapper");
         
-        
+        var success = String($A.get("$Label.c.Success1"));
+
         $A.createComponent("c:A1_TransactionDetails",
                            {
                                "pointWrapper" : getObject,
                                
                            },
                            function(content, status) {
-                               if (status === "SUCCESS") {
+                               if (status === success) {
                                    var modalBody = content;
                                    cmp.find('overlayTransactionDetail').showCustomModal({
                                        //header: "Welcome to Transaction Detail",

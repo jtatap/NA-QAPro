@@ -1,13 +1,13 @@
  let eswOptions = {
-    baseURL: 'https://pvhservicecloud--projectdev.my.salesforce.com',
-    contentURL: 'https://projectdev-pvhservicecloud.cs78.force.com/calvinklein',
-    liveAgentURL: 'https://d.la2-c1cs-ord.salesforceliveagent.com',
-    liveAgentContentURL: 'https://d.la2-c1cs-ord.salesforceliveagent.com',
-    orgID: '00D1k000000FO4T',
-    deploymentID: '5723t000000D4dL',
-    buttonIds: '5733t0000008t5U',
+    baseURL: 'https://pvhservicecloud--holidaydev.my.salesforce.com',
+    contentURL: 'https://holidaydev-pvhservicecloud.cs198.force.com/pvh',
+    liveAgentURL: 'https://d.la2-c1cs-ia4.salesforceliveagent.com',
+    liveAgentContentURL: 'https://c.la2-c1cs-ia4.salesforceliveagent.com',
+    orgID: '00D050000008afk',
+    deploymentID: '57205000000CaRq',
+    buttonIds: '57305000000CaSF',
     serviceName: 'Calvin_Klein_Bot',
-    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3t000000LMDzEAO_1752a936421',
+    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I050000004CBEEA2_174c73cbb81',
     storageDomain: 'neuraflash.com', //THE DOMAIN NAME OF THE WEBSITE HOSTING THE CHAT WINDOW
     resourceBase: '/resource/CK_Chat',
     enableLogging: true

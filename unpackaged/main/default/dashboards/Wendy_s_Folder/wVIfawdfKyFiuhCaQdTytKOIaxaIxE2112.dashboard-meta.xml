@@ -42,7 +42,11 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>trueandco.com,Amazon.com,Nordstrom</values>
+            <values>CalvinKlein.ca</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>CalvinKlein.us,Online - CalvinKlein.com,Tommy.com,Online - Tommy.com,CalvinKlein.ca</values>
         </dashboardFilterOptions>
         <name>Brand</name>
     </dashboardFilters>
@@ -53,7 +57,7 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Email,Web</values>
+            <values>Email</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
@@ -62,6 +66,10 @@
         <dashboardFilterOptions>
             <operator>equals</operator>
             <values>Web</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Phone,Web</values>
         </dashboardFilterOptions>
         <name>Case Origin</name>
     </dashboardFilters>
@@ -84,30 +92,37 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>LAST_N_DAYS:30</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_90_DAYS</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
             <values>THIS_FISCAL_YEAR</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>10/12/2020 12:00 AM</values>
-            <values>12/2/2020 12:00 AM</values>
+            <values>2/1/2021 12:00 AM</values>
+            <values>1/30/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>2/27/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>2/28/2022 12:00 AM</values>
+            <values>4/3/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>2/3/2020 12:00 AM</values>
+            <values>4/19/2020 12:00 AM</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
             <values>2/1/2021 12:00 AM</values>
-            <values>3/1/2021 12:00 AM</values>
+            <values>4/18/2021 12:00 AM</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>3/1/2021 12:00 AM</values>
-            <values>4/4/2021 12:00 AM</values>
+            <values>1/31/2022 12:00 AM</values>
+            <values>4/17/2022 12:00 AM</values>
         </dashboardFilterOptions>
         <name>Opened Date</name>
     </dashboardFilters>
@@ -174,23 +189,22 @@
                     <column>CREATED_DATEONLY</column>
                 </dashboardFilterColumns>
                 <flexComponentProperties>
-                    <decimalPrecision>1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Case.Reason_Code__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
                         <type>grouping</type>
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>RowCount</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
                         <type>aggregate</type>
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>FORMULA1</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
                         <type>aggregate</type>
                     </flexTableColumn>
                     <flexTableSortInfo>
@@ -201,11 +215,11 @@
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
+                        <sortColumn>FORMULA1</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Level One Reason Codes</header>
+                <header>ALL PVH Reason Code</header>
                 <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/ALL_PVH_Reason_Code</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -349,7 +363,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Product</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Product</report>
+                <report>Level_One/PVH_Product</report>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
             <rowSpan>12</rowSpan>
@@ -396,7 +410,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Returns</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Returns</report>
+                <report>Level_One/PVH_Returns</report>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
             <rowSpan>12</rowSpan>
@@ -459,7 +473,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Orders</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Orders</report>
+                <report>Level_One/PVH_Orders</report>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
             <rowSpan>12</rowSpan>
@@ -500,7 +514,7 @@
                 </groupingSortProperties>
                 <header>Product: Defective Merchandise</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_Three/Product_Defective_Merchandise</report>
+                <report>Level_Three/Product_Defective_Merchandise</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -546,7 +560,7 @@
                 </groupingSortProperties>
                 <header>Returns: Return Policy Inquiry</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_Three/Returns_Return_Policy_Inquiry</report>
+                <report>Level_Three/Returns_Return_Policy_Inquiry</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -592,7 +606,7 @@
                 </groupingSortProperties>
                 <header>Orders: Shipping</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_Three/Orders_Shipping</report>
+                <report>Level_Three/Orders_Shipping</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -644,7 +658,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Corporate</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Corporate</report>
+                <report>Level_One/PVH_Corporate</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>12</rowSpan>
@@ -691,7 +705,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Sales</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Sales1</report>
+                <report>Level_One/PVH_Sales1</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>12</rowSpan>
@@ -738,7 +752,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Marketing</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Marketing</report>
+                <report>Level_One/PVH_Marketing</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>12</rowSpan>
@@ -785,7 +799,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Loyalty</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Loyalty</report>
+                <report>Level_One/PVH_Loyalty</report>
             </dashboardComponent>
             <rowIndex>46</rowIndex>
             <rowSpan>11</rowSpan>
@@ -832,7 +846,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Payment</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/Payment_Sales</report>
+                <report>Level_One/Payment_Sales</report>
             </dashboardComponent>
             <rowIndex>46</rowIndex>
             <rowSpan>11</rowSpan>
@@ -879,155 +893,17 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Technical</header>
-                <report>Wendy_s_Folder/PVH_Reports/PVH_Reason_Code_Reports/Level_One/PVH_Technical</report>
+                <report>Level_One/PVH_Technical</report>
             </dashboardComponent>
             <rowIndex>46</rowIndex>
             <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Line</componentType>
-                <dashboardFilterColumns>
-                    <column>Case.Channel__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>ORIGIN</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>CREATED_DATE</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Heritage Poor Service Trend</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Heritage_Poor_Service_Trend</report>
-                <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>57</rowIndex>
-            <rowSpan>8</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Case.COVID_19_Mask__c</column>
-                </chartSummary>
-                <componentType>Line</componentType>
-                <dashboardFilterColumns>
-                    <column>Case.Channel__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>ORIGIN</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>CREATED_DATE</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Heritage Mask Complaint Trend</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Heritage_Mask_Complaint_Trend</report>
-                <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>57</rowIndex>
-            <rowSpan>8</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>ColumnStacked</componentType>
-                <dashboardFilterColumns>
-                    <column>Case.Channel__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>ORIGIN</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>CREATED_DATEONLY</groupingColumn>
-                <groupingColumn>ORIGIN</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                    <groupingSorts>
-                        <groupingLevel>g2</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>New Case Count</header>
-                <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/KPI_Dashboard_Reports/Copy_of_PVH_New_Case_Count</report>
-                <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>57</rowIndex>
-            <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>alexisrios@pvh.com</runningUser>
+    <runningUser>wendyamaya@pvh.com</runningUser>
     <textColor>#000000</textColor>
     <title>PVH Reason Codes</title>
     <titleColor>#000000</titleColor>

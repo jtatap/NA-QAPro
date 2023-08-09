@@ -8,17 +8,6 @@
         <plural>true</plural>
         <value>B2C AuthTokens</value>
     </caseValues>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <layouts>
         <layout>B2C AuthToken Layout</layout>
         <sections>
@@ -26,5 +15,17 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

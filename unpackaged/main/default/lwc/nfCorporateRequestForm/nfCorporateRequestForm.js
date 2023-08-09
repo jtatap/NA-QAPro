@@ -7,17 +7,17 @@ import retreiveRecordType from "@salesforce/apex/NfCorporateRequestFormControlle
 const MAX_FILE_SIZE = 1000000000; //100mb
 
 export default class NfCorporateRequestForm extends LightningElement {
-	@api attachmentsInstructions = 'Attach up to 5 files: If you have any attachments to add to your submission (such as photos, receipts, or screenshots), please attach up to 5 files so we can further assist you. Should a case require additional information, you may be asked to provide that at a later time.';
-	@api brandLabel = 'Brand';
-	@api businessGroupLabel = 'Business Group';
-	@api descriptionLabel = 'Description';
-	@api emailLabel = 'Email';
-	@api firstNameLabel = 'First Name';
-	@api instructions = 'Please tell us more about your inquiry using the form below and click to submit your information.';
-	@api lastNameLabel = 'Last Name';
-	@api recordTypeName = 'Corporate Request';
-	@api maxFilesInsertedLabel = 'Max files inserted.';
-	@api maxFilesInsertedSubinstructions = 'Attach up to 5 files: If you have any attachments to add to your submission.';
+	@api attachmentsInstructions;
+	@api brandLabel;
+	@api businessGroupLabel;
+	@api descriptionLabel;
+	@api emailLabel;
+	@api firstNameLabel;
+	@api instructions;
+	@api lastNameLabel;
+	@api recordTypeName;
+	@api maxFilesInsertedLabel;
+	@api maxFilesInsertedSubinstructions;
 	@api thankyouMessage;
 	@track caseCreatedSuccessfully = false;
 	@track data;

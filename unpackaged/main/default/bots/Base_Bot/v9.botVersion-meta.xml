@@ -920,7 +920,7 @@
             </botSteps>
             <botSteps>
                 <botMessages>
-                    <message>I&#39;m going to get one of our human agents to assist you. One moment.</message>
+                    <message>Let me get you over to a human agent that can assist you with this.</message>
                     <messageIdentifier>592957e4-4731-456d-9e01-60689beed410</messageIdentifier>
                 </botMessages>
                 <stepIdentifier>d0a943c6-ee56-4a89-a72a-e6918e51067c</stepIdentifier>
@@ -934,7 +934,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>5811f9f2-a455-457b-8fcd-a9a3c879fff2</stepIdentifier>
+                    <stepIdentifier>5734db15-d68f-4c9d-8e24-330c1922a150</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>361befd0-3c18-49a1-823a-38aa56e361ee</stepIdentifier>
@@ -4528,7 +4528,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>d1a8d1a4-c38b-4967-a6d8-92e21f5fcf52</variableOperationIdentifier>
+                    <variableOperationIdentifier>f6f8d0df-5567-4e40-bd12-1c23dbbd6de4</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>370065a7-026b-49b0-935b-63ee406ea9dd</stepIdentifier>
                 <type>VariableOperation</type>
@@ -4549,7 +4549,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>6663423e-a094-446d-a257-3008a17773a1</stepIdentifier>
+                    <stepIdentifier>69eafdb9-119a-40bc-bb78-0054dd93bd98</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>9f049071-9490-4024-b3c2-3d285bec18e4</stepIdentifier>
@@ -4568,7 +4568,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>9ec420d9-a94e-4072-b336-4a395496176d</stepIdentifier>
+                    <stepIdentifier>5fc4dbff-38be-424a-9852-3545cf36181d</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>feffc2aa-ae6d-4e99-91d8-5f3826bb1706</stepIdentifier>
@@ -4587,10 +4587,10 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>cd802f26-0bf4-4549-96ba-546555565495</stepIdentifier>
+                    <stepIdentifier>2f8eb653-f90f-4d95-8c5f-4e6610e62601</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
-                <stepIdentifier>c25b2bd7-231f-4a31-8316-7011d272b9e2</stepIdentifier>
+                <stepIdentifier>c60ef318-ca67-4fd8-ae66-a0f23a5d1430</stepIdentifier>
                 <type>Group</type>
             </botSteps>
             <botSteps>
@@ -4601,9 +4601,9 @@
                             <targetType>ConversationVariable</targetType>
                         </botVariableOperands>
                         <type>Unset</type>
-                        <variableOperationIdentifier>6d1a4856-73df-421b-b760-407d565678bc</variableOperationIdentifier>
+                        <variableOperationIdentifier>d34712f2-948e-476d-8684-168bb7b0f47e</variableOperationIdentifier>
                     </botVariableOperation>
-                    <stepIdentifier>916d3d2d-ab51-401c-b6b3-d4037f69455a</stepIdentifier>
+                    <stepIdentifier>7610944e-1442-4a43-9e79-4f247b60a406</stepIdentifier>
                     <type>VariableOperation</type>
                 </botSteps>
                 <stepIdentifier>6d4c4938-3c7f-4fd5-a13f-fb6f43087922</stepIdentifier>
@@ -4614,6 +4614,23 @@
                     <botInvocation>
                         <invocationActionName>NF_GetFormattedLink</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
+                        <invocationMappings>
+                            <parameterName>orderZip</parameterName>
+                            <type>Input</type>
+                            <variableName>Order_ZIP_Code</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>orderId</parameterName>
+                            <type>Input</type>
+                            <variableName>Order_Number</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>linkType</parameterName>
+                            <type>Input</type>
+                            <value>OrderStatus</value>
+                        </invocationMappings>
                         <invocationMappings>
                             <parameterName>baseURL</parameterName>
                             <type>Input</type>
@@ -4627,33 +4644,16 @@
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>chatKey</parameterName>
-                            <type>Input</type>
-                            <variableName>ChatKey</variableName>
-                            <variableType>ContextVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
                             <parameterName>email</parameterName>
                             <type>Input</type>
                             <variableName>Email</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>linkType</parameterName>
+                            <parameterName>chatKey</parameterName>
                             <type>Input</type>
-                            <value>OrderStatus</value>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>orderId</parameterName>
-                            <type>Input</type>
-                            <variableName>Order_Number</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>orderZip</parameterName>
-                            <type>Input</type>
-                            <variableName>Order_ZIP_Code</variableName>
-                            <variableType>ConversationVariable</variableType>
+                            <variableName>ChatKey</variableName>
+                            <variableType>ContextVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
                             <parameterName>formattedLink</parameterName>
@@ -4663,7 +4663,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>99855ca5-07d5-4ad8-a8a4-13cccdff7280</variableOperationIdentifier>
+                    <variableOperationIdentifier>81ec427c-d724-440a-8d5c-51c55aca3c34</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>48566975-7483-4202-81fc-5808795caf3f</stepIdentifier>
                 <type>VariableOperation</type>
@@ -4676,7 +4676,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>fd10c7c3-ca78-4e81-8b5e-16232b51268e</stepIdentifier>
+                    <stepIdentifier>90d5d545-1146-48da-be45-6b0b0a8ec27d</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>29a5eac7-ea99-4ea2-a3a2-665673936416</stepIdentifier>
@@ -4707,7 +4707,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>d19b3eff-34ed-46e7-a54e-f478b748f17d</stepIdentifier>
+                    <stepIdentifier>b71228b0-29ff-4b74-b233-829964c9af90</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>4eccf841-a0f6-49f7-af7f-99b84cf7ac8b</stepIdentifier>
@@ -4922,9 +4922,9 @@
                             <targetType>ConversationVariable</targetType>
                         </botVariableOperands>
                         <type>Unset</type>
-                        <variableOperationIdentifier>bd4b5b9a-1e7b-4041-91d1-799ca8eccdd3</variableOperationIdentifier>
+                        <variableOperationIdentifier>56185d40-af89-427d-82cc-ad99c20016bc</variableOperationIdentifier>
                     </botVariableOperation>
-                    <stepIdentifier>458bff5a-922f-4132-96e2-1e82083df810</stepIdentifier>
+                    <stepIdentifier>23f42fb4-8eaa-43ed-9123-f8e8a8e73b23</stepIdentifier>
                     <type>VariableOperation</type>
                 </botSteps>
                 <stepIdentifier>728203c2-cf99-4f6e-bd44-fc3d61bd37fd</stepIdentifier>
@@ -4952,7 +4952,7 @@
                     <quickReplyType>Static</quickReplyType>
                     <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                     <retryMessages>
-                        <message>Please check your order number and try again.</message>
+                        <message>Please check your order number and try again. It&#39;ll have 8 digits.</message>
                         <messageIdentifier>54033464-6f5e-499a-a99f-1a429696e88a</messageIdentifier>
                     </retryMessages>
                     <type>Collect</type>
@@ -4974,7 +4974,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>f77ce378-f500-4b33-9b0e-bc9c0281217b</stepIdentifier>
+                    <stepIdentifier>eaec7370-9549-410f-8442-bf8ce42fd719</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>6cb1921b-8a7c-4d99-b0bf-2d6789611d33</stepIdentifier>
@@ -4994,7 +4994,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>558a1211-4957-440f-ab79-9ab6fbf1a874</stepIdentifier>
+                    <stepIdentifier>b5221b45-d679-487d-a669-ded5de98a613</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>34efee1d-7e05-4892-868c-258f71432650</stepIdentifier>
@@ -5013,7 +5013,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>820d5b51-f04c-4a55-839d-0d23586af8f3</stepIdentifier>
+                    <stepIdentifier>bc999a79-b7f2-4cb9-91dc-0f6fc7d81f4d</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>d612cfa1-39ea-412b-82ce-09b04faa20e7</stepIdentifier>
@@ -5584,7 +5584,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>a9f72041-6394-4696-a6c2-318003f21f64</stepIdentifier>
+                    <stepIdentifier>0ff4505e-9cf9-46d4-896b-cb84d4ea8fed</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>28120407-7d99-46c9-9528-4eaf8683f48c</stepIdentifier>
@@ -5603,7 +5603,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>e7e0b5ab-989b-46c1-953f-427a0c4fba0f</stepIdentifier>
+                    <stepIdentifier>ef344fcf-4d5f-46c3-9e8c-d58fc795aa24</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>9aa3127a-8489-412c-b11d-9d3b5d83df46</stepIdentifier>
@@ -5617,9 +5617,9 @@
                             <targetType>ConversationVariable</targetType>
                         </botVariableOperands>
                         <type>Unset</type>
-                        <variableOperationIdentifier>71e1d63b-6708-4528-ab46-e3af08d08fec</variableOperationIdentifier>
+                        <variableOperationIdentifier>b27065df-1bdc-438a-a150-c8192209a3cb</variableOperationIdentifier>
                     </botVariableOperation>
-                    <stepIdentifier>8716a967-fbe9-465e-ac88-976075ecdb6b</stepIdentifier>
+                    <stepIdentifier>0591da55-3f29-43fe-8b36-4dfb84beb204</stepIdentifier>
                     <type>VariableOperation</type>
                 </botSteps>
                 <stepIdentifier>f97cc233-0c78-4494-a1da-f5baf2ee5ae9</stepIdentifier>
@@ -5631,15 +5631,32 @@
                         <invocationActionName>NF_GetFormattedLink</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
                         <invocationMappings>
-                            <parameterName>email</parameterName>
+                            <parameterName>orderId</parameterName>
                             <type>Input</type>
-                            <variableName>Email</variableName>
+                            <variableName>Order_Number</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>orderZip</parameterName>
+                            <parameterName>linkType</parameterName>
+                            <type>Input</type>
+                            <value>Returns</value>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>baseURL</parameterName>
+                            <type>Input</type>
+                            <variableName>Returns_URL</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>brand</parameterName>
                             <type>Input</type>
                             <variableName>Brand</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>email</parameterName>
+                            <type>Input</type>
+                            <variableName>Email</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -5649,23 +5666,6 @@
                             <variableType>ContextVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>baseURL</parameterName>
-                            <type>Input</type>
-                            <variableName>Returns_URL</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>linkType</parameterName>
-                            <type>Input</type>
-                            <value>Returns</value>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>orderId</parameterName>
-                            <type>Input</type>
-                            <variableName>Order_Number</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
                             <parameterName>formattedLink</parameterName>
                             <type>Output</type>
                             <variableName>Formatted_Order_Status_Link</variableName>
@@ -5673,7 +5673,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>b795c5c1-8607-4f96-b29d-4c377abbc464</variableOperationIdentifier>
+                    <variableOperationIdentifier>38e0806d-d5e1-45f3-8dab-94c7f5b3e708</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>588f3cfe-cd15-4a3f-8ef2-386025071295</stepIdentifier>
                 <type>VariableOperation</type>
@@ -5686,7 +5686,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>6f933b82-9105-47a7-840d-062f3345cb0b</stepIdentifier>
+                    <stepIdentifier>c90eef1a-4195-4148-85d3-6cbf59f6678f</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>8c9ff69e-f670-4d12-adde-2a6631fc8e33</stepIdentifier>
@@ -6099,16 +6099,16 @@
                     <invocationActionName>NF_UpdateSession</invocationActionName>
                     <invocationActionType>apex</invocationActionType>
                     <invocationMappings>
-                        <parameterName>chatKey</parameterName>
-                        <type>Input</type>
-                        <variableName>ChatKey</variableName>
-                        <variableType>ContextVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
                         <parameterName>brandName</parameterName>
                         <type>Input</type>
                         <variableName>Brand</variableName>
                         <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>chatKey</parameterName>
+                        <type>Input</type>
+                        <variableName>ChatKey</variableName>
+                        <variableType>ContextVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
                 <stepIdentifier>ff77b547-8d54-4f30-bc57-2efa64555206</stepIdentifier>
@@ -6141,7 +6141,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>e2f56bde-1d8d-4530-b63e-b055b41d3c17</variableOperationIdentifier>
+                    <variableOperationIdentifier>9556e319-7b47-4bdf-9ded-46a43d857bd8</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>416a9d8a-ac3e-48bb-a485-f06ee6370a15</stepIdentifier>
                 <type>VariableOperation</type>
@@ -6160,7 +6160,7 @@
                         </botNavigationLinks>
                         <type>Call</type>
                     </botNavigation>
-                    <stepIdentifier>fc72378c-dac1-4577-a9a4-09058d3c18c4</stepIdentifier>
+                    <stepIdentifier>09ed8179-387d-4ddc-b9fa-d4c581170366</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>4d0b80ba-c611-4735-ac5c-8f83d678a610</stepIdentifier>
@@ -6174,7 +6174,7 @@
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>00edf346-9aaa-472d-8c12-d046c424250c</stepIdentifier>
+                    <stepIdentifier>66a7792d-a394-4b29-80b1-8b88c9c05a52</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
                 <stepIdentifier>385af98e-bff0-4b44-9c65-2d5d9e19ce90</stepIdentifier>
@@ -9475,15 +9475,9 @@ Would you like to try again?</message>
                     <invocationActionName>ebotdata__BotChatLogger</invocationActionName>
                     <invocationActionType>apex</invocationActionType>
                     <invocationMappings>
-                        <parameterName>currentConfidenceForUtterance</parameterName>
+                        <parameterName>currentDialogId</parameterName>
                         <type>Input</type>
-                        <variableName>currentConfidenceForUtterance</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>currentUtterance</parameterName>
-                        <type>Input</type>
-                        <variableName>currentUtterance</variableName>
+                        <variableName>currentDialogId</variableName>
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
@@ -9493,9 +9487,15 @@ Would you like to try again?</message>
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
-                        <parameterName>currentDialogId</parameterName>
+                        <parameterName>currentConfidenceForUtterance</parameterName>
                         <type>Input</type>
-                        <variableName>currentDialogId</variableName>
+                        <variableName>currentConfidenceForUtterance</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>currentDialogName</parameterName>
+                        <type>Input</type>
+                        <variableName>currentDialogName</variableName>
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
@@ -9505,13 +9505,13 @@ Would you like to try again?</message>
                         <variableType>ContextVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
-                        <parameterName>currentDialogName</parameterName>
+                        <parameterName>currentUtterance</parameterName>
                         <type>Input</type>
-                        <variableName>currentDialogName</variableName>
+                        <variableName>currentUtterance</variableName>
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                 </botInvocation>
-                <stepIdentifier>98b70ff7-bdb3-4319-966d-ad0c403622b7</stepIdentifier>
+                <stepIdentifier>62f25e34-cb05-44d4-a0d6-3660c8e43fe1</stepIdentifier>
                 <type>Invocation</type>
             </botSteps>
             <botSteps>
@@ -9522,12 +9522,12 @@ Would you like to try again?</message>
                             <targetType>ConversationVariable</targetType>
                         </botVariableOperands>
                         <type>Unset</type>
-                        <variableOperationIdentifier>716675e9-73a7-4cb3-b075-5cdee9c90a7b</variableOperationIdentifier>
+                        <variableOperationIdentifier>0ef6173a-cbea-446c-ac11-deba36f2a405</variableOperationIdentifier>
                     </botVariableOperation>
-                    <stepIdentifier>06a3d8e1-9ca2-4475-82ea-ab7dfb5cbb48</stepIdentifier>
+                    <stepIdentifier>b0c4850b-b805-4e4b-87d9-c74aa20f61cb</stepIdentifier>
                     <type>VariableOperation</type>
                 </botSteps>
-                <stepIdentifier>538f5d05-597c-4428-af96-281c1ee7c9af</stepIdentifier>
+                <stepIdentifier>061b2a34-90bd-4e7e-808a-799f6836ae49</stepIdentifier>
                 <type>Group</type>
             </botSteps>
             <botSteps>
@@ -9535,7 +9535,7 @@ Would you like to try again?</message>
                     <askCollectIfSet>true</askCollectIfSet>
                     <botMessages>
                         <message>What ZIP code is your order being shipped to?</message>
-                        <messageIdentifier>e3076a64-b27a-a891-1821-4032dee4e9f1</messageIdentifier>
+                        <messageIdentifier>a99dc1b6-82f3-7965-7979-a92e2bc93312</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
                         <disableAutoFill>true</disableAutoFill>
@@ -9548,12 +9548,12 @@ Would you like to try again?</message>
                     <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                     <retryMessages>
                         <message>I&#39;m sorry, I didn&#39;t get that. Please enter your 5-digit ZIP code.</message>
-                        <messageIdentifier>f23f04be-de26-34ad-cbca-d0cfe8a0a1ea</messageIdentifier>
+                        <messageIdentifier>b0bbe9a2-2792-e7d3-2b10-9bacb3213de0</messageIdentifier>
                     </retryMessages>
                     <type>Collect</type>
-                    <variableOperationIdentifier>84499683-4ac5-b510-f210-0af12a5398a8</variableOperationIdentifier>
+                    <variableOperationIdentifier>04ff2799-a2ca-4d0c-3dc7-8564179e1d35</variableOperationIdentifier>
                 </botVariableOperation>
-                <stepIdentifier>fbc69860-0e2a-4864-bba1-95db4cc85a9c</stepIdentifier>
+                <stepIdentifier>9387345c-f80d-411b-9b87-5002a15b1bb2</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <botSteps>
@@ -9569,17 +9569,16 @@ Would you like to try again?</message>
                         </botNavigationLinks>
                         <type>Redirect</type>
                     </botNavigation>
-                    <stepIdentifier>534dff1c-b467-4fdf-aca3-5d64c8f4e4d8</stepIdentifier>
+                    <stepIdentifier>2405ad80-e7c6-430d-979d-89a4529c41f4</stepIdentifier>
                     <type>Navigation</type>
                 </botSteps>
-                <stepIdentifier>582170b6-f7f5-474d-bc45-30d51d9d5ba5</stepIdentifier>
+                <stepIdentifier>583029d8-74c0-4ace-853d-1e13043fe10d</stepIdentifier>
                 <type>Group</type>
             </botSteps>
             <botSteps>
-                <stepIdentifier>45908ef7-f172-4648-9701-20c901c09850</stepIdentifier>
+                <stepIdentifier>f644e731-ae89-479a-b875-653505d0ddf9</stepIdentifier>
                 <type>Wait</type>
             </botSteps>
-            <description>Collect the user&#39;s ZIP code to use in the order status lookup</description>
             <developerName>bot_zipCode_capture</developerName>
             <label>bot_zipCode_capture</label>
             <showInFooterMenu>false</showInFooterMenu>

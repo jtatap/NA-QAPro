@@ -3,10 +3,11 @@ public class ObservationFormComponentApexController {
     @AuraEnabled
     public static String getCaseOrigin(Id caseId) {
         String recordTypeToSelect = '';
-        System.debug('Case Id = '+caseId);
+        Log.push('Case Id = '+caseId);
+        Logger.logDebug();
         if(caseId != null) {
             Case getCaseInfo = [Select Origin, Brand__c from Case where Id=:caseId];
-            //System.debug('Case Origin = '+getCaseInfo.Origin + ' AND Brand ='+getCaseInfo.Brand__c);
+            //Log.push('Case Origin = '+getCaseInfo.Origin + ' AND Brand ='+getCaseInfo.Brand__c);
             Id recordTypeIdChat = Schema.SObjectType.Observation_Form__c.getRecordTypeInfosByDeveloperName().get('Chat_Observation_Form').getRecordTypeId();
             Id recordTypeIdEmailWeb = Schema.SObjectType.Observation_Form__c.getRecordTypeInfosByDeveloperName().get('Email_Observation_Form').getRecordTypeId();
             Id recordTypeIdEmailWebTrue = Schema.SObjectType.Observation_Form__c.getRecordTypeInfosByDeveloperName().get('Email_Observation_Form_True_Co').getRecordTypeId();

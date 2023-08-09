@@ -26,10 +26,11 @@ public with sharing class NF_SplitFullName {
         String chatKey = input[0].chatKey;
         Output out = new Output();
 
-        System.debug('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
+        Log.push('>>NF_Util.getLiveChatTranscript chatKey is ' + chatKey);
 
         if(String.isEmpty(chatKey)){
-            System.debug('>>NF_Util.getLiveChatTranscript Cannot find LiveChatTranscript, chatKey is empty');
+            Log.push('>>NF_Util.getLiveChatTranscript Cannot find LiveChatTranscript, chatKey is empty');
+            Logger.logDebug();
             return null;
         }
 
@@ -42,7 +43,8 @@ public with sharing class NF_SplitFullName {
         out.lastName = nameStrings.get(1);
 
         result.add(out);
-        System.debug(result.toString());
+        Log.push('result.toString()'+result.toString());
+        Logger.logDebug();
         return result;
     }
 

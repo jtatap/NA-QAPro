@@ -24,19 +24,18 @@
     
     handleClick: function (cmp, event, helper) {
         var radioGrpValue = cmp.get("v.value");
-        // var grandParentField =cmp.find(auraIdField).get("v.label");
+       
         cmp.set("v.grandParentValue" , radioGrpValue);
-        //var controllerValueKey = event.getSource().get("v.value"); // get selected controller field value
+        
         var controllerValueKey=cmp.get("v.grandParentValue");
         var depnedentFieldMap = cmp.get("v.depnedentFieldMap");
         if (controllerValueKey != '--- None ---') {
-            // disable and reset sub dependent field 
-           // cmp.set("v.isparent" ,true);
+            
            var ListOfDependentFields = depnedentFieldMap[controllerValueKey];
            
             if(ListOfDependentFields.length > 0){
                 cmp.set("v.bDisabledDependentFld" , false);  
-                //cmp.set("isbutton",true);
+                
                 helper.fetchDepValues(cmp, ListOfDependentFields,"v.listDependingValues");    
             }else{
                 cmp.set("v.bDisabledDependentFld" , true); 
@@ -89,7 +88,7 @@
             var ListOfDependentFields = depnedentFieldMap[controllerValueKey];
             if(ListOfDependentFields.length > 0){
                  
-               // component.set("v.ischild" ,true);
+              
                 component.set("v.bDisabledSubDependentFld" , false);  
                 helper.fetchDepValues(component, ListOfDependentFields,"v.listSubDependingValues");
                 
@@ -102,13 +101,11 @@
             
           } else {
             component.set("v.listSubDependingValues", ['']);
-           // component.set("v.listproductCategoryValues", ['']);
+          
             component.set("v.bDisabledSubDependentFld" , true);
           }
         
-           /*if(parentField!='' || ListOfDependentFields.length > 0){
-             component.set("isbutton",true);
-           }*/
+           
             
               if((controllerValueKey == "Care Instructions") || 
                 (controllerValueKey == "Counterfeit Merchandise") ||
@@ -121,7 +118,7 @@
                
                 component.set("v.isRequiredProduct",true);
                 helper.fetchPickListVal(component, 'Reason_Code_Product_Category__c', 'productCategory');
-                //helper.fetchPickListVal(component, 'Third_Party_Vendors__c', 'thirdPartyVendors');  
+                 
                 }
             
            
@@ -158,35 +155,11 @@
         
         
         
-           /* else {
-                    component.set("v.isRequired",false);
-                    component.set("v.isRequired1",false);
-                    component.set("v.storeNumber", "");
-                    component.set("v.districtNumber", "");
-                    component.set("v.dateofServiceIssue", "");
-
-                }*/
+           
            
         },
     
-    /*fetchPickListVal: function(component,event ,helper) {
-       alert('in init helper..');
-      var pickvar = component.get("c.getselectOptions");
-      /* action.setParams({
-           "objObject": component.get("v.objDetail"),
-           "fld": fieldName
-       });*/
-      // var opts = [];
-       /* pickvar.setCallback(this, function(response)  {
-           alert('in init helper before sucess..');
-            var state = response.getState();
-           if (state == "SUCCESS") {
-               var allValues = response.getReturnValue();
-                component.set("v.option", allValues);
-           }
-       });
-       $A.enqueueAction(action);
-   },*/
+    
     
     onSubDependentFieldChange: function (cmp, event,helper) {
          var controllerValueKey = event.getSource().get("v.value");
@@ -203,7 +176,7 @@
     onProCatChange: function (component, event,helper) {
          var proCatValue = event.getSource().get("v.value");
          component.set("v.productCategoryValue",proCatValue);
-         //helper.fetchPickListVal(component, 'Reason_Code_Product_Sub_Categories_Widge__c', 'producsubtCategoryValueList');  
+         
           var depnedentFieldMap = component.get("v.producsubtCategoryValueMap");
        
           if(proCatValue != '--- None ---' && ( proCatValue == 'Accessories' || 
@@ -214,7 +187,7 @@
               component.set("v.isProCatSelecting",true);
               var ListOfProSubCatFields = depnedentFieldMap[proCatValue];
             if(ListOfProSubCatFields.length > 0){
-                // component.set("v.isProCatSelecting",true);
+                
                
                 helper.fetchDepValues(component, ListOfProSubCatFields,"v.listProSubCatValues");
                 
@@ -222,7 +195,7 @@
                 component.set("v.listProSubCatValues", ['--- None ---']);	
             } 
         }else {
-            //component.set("v.isProCatSelecting",false);
+           
             component.set("v.listProSubCatValues", ['--- None ---']);
             component.set("v.isProCatSelecting",false);
           }
@@ -268,10 +241,7 @@
         
        var id = cmp.get("v.recordId") ;
         var myText = cmp.get("v.myText");
-       //  var dateofServiceIssue=cmp.get("v.dateofServiceIssue");
-       //  var storeNumber = cmp.get("v.storeNumber");
-         //var districtNumber = cmp.get("v.districtNumber");
-        // var updateAccountInfoReason = cmp.get("v.updateAccountInfoReason");
+       
          var parentField = cmp.find("parentField").get("v.value");
          var childField = cmp.find("childField").get("v.value");
          var grandParentField=cmp.get("v.grandParentValue");
@@ -540,7 +510,7 @@
           
               if(status === "SUCCESS"){
                    
-                 // $A.get('e.force:refreshView').fire();
+                
               var workspaceAPI = cmp.find("workspace");
                workspaceAPI.getFocusedTabInfo().then(function(response) {
                             var focusedTabId = response.tabId;
@@ -555,25 +525,11 @@
             .catch(function(error) {
                 console.log(error);
             });
-            // cmp.set("v.isSuccess",true);     
-                  
-                  
-                //  cmp.set(cmp.find("parentField").get("v.value"), response.getReturnValue());
-                //  cmp.set(cmp.find("childField").get("v.value"), response.getReturnValue());
-                   
-                  
-                 // $A.get('e.force:refreshView').fire();
-                  /*var editRecordEvent = $A.get("e.force:editRecord");
-                   editRecordEvent.setParams({
-                        "v.isEdit": true,
-                        "recordId": cmp.get("v.recordId")
-                  });*
-                  editRecordEvent.fire();
-                  $A.get('e.force:refreshView').fire();*/
+           
                   
                  }
              else if(status === "ERROR"){
-                //cmp.set(cmp.find("storeNumber").get("v.value"), response.getReturnValue());
+                
              }
             
          });
@@ -592,7 +548,7 @@
         
     isCancel: function(cmp, event, helper) {
           cmp.set("v.isEdit",true); 
-          //cmp.set("isCancel",true);
+          
      }, 
     
     handleEdited: function(component, event, helper) {
@@ -600,7 +556,7 @@
     },
     recordLoaded: function(cmp, event, helper) {
         
-        //
+        
       var eventParams = event.getParams();
         if(eventParams.changeType === "CHANGED") {
            

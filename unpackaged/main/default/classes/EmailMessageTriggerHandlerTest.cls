@@ -7,11 +7,35 @@
 *
 * @see EmailMessageTriggerHandler
 */
-@isTest
+@isTest(isParallel=false)
 public class EmailMessageTriggerHandlerTest {
 
     @testSetup
     static void setupData() {
+        
+        Account genAcc = new Account();
+        genAcc.Name = 'generic Account' + Math.random();
+        insert genAcc;
+        
+        Contact genCon = new Contact();
+        genCon.email = 'foo@example.com';
+        genCon.lastName = 'generic contact ' + Math.random();
+        genCon.AccountId = genAcc.id;
+        genCon.Brand_Id__c='9';
+        insert genCon;
+		
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = genCon.Id
+        );
+        insert genRec;
+
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = genAcc.Id
+        );
+        insert genRecAcct;
+        
         Account acc = new Account(Name='Test Account ABC');
         insert acc;
 
@@ -96,7 +120,8 @@ public class EmailMessageTriggerHandlerTest {
         EmailMessage email = new EmailMessage();
         email.FromAddress = 'test@abc.org';
         email.Incoming = false;
-        email.ToAddress= 'abc@gmail.com';
+        //email.ToAddress= 'abc@gmail.com';
+        email.ToAddress = 'testCase1@gmail.com';
         email.Subject = 'Test email';
         email.HtmlBody = 'Test email body';
         email.ParentId = testCase.Id;
@@ -138,5 +163,9 @@ public class EmailMessageTriggerHandlerTest {
 
 
 
+    }
+    @isTest 
+    static void testHandler(){
+        EmailMessageTriggerHandler em = new EmailMessageTriggerHandler();
     }
 }

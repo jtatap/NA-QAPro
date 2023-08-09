@@ -3,8 +3,8 @@
     <fullName>Multiple_Offender__c</fullName>
     <externalId>false</externalId>
     <formula>IF( Multiple_Offender_Contact__c = TRUE, 
-    (IMAGE(&quot;https://pvhservicecloud--qapro--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0682C000001Gj8O&amp;operationContext=CHATTER&amp;contentId=05T2C000006toXn&quot;,
-    &quot;text&quot;, 50, 50)),
+    (IMAGE(&quot;https://pvhservicecloud--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0683t00000HPZcY&amp;operationContext=CHATTER&amp;contentId=05T3t00000y7eV8&quot;,
+    &quot; &quot;, 40, 40)),
 &quot; &quot;
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

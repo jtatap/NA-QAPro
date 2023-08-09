@@ -12,7 +12,7 @@
 global class Batch_PrivacyDataOwnerCaseReminders implements Database.Batchable <sObject>{
 
     global List<Case> start(Database.BatchableContext bc){
-        System.debug('===starting data owners?');
+        Log.push('===starting data owners?');
         Privacy_Intervals__c orgInterval;
         Integer dataOwnerReminderIntervalHours;
         List<Integer> dataOwnerReminderIntervalMatchingValues = new List<Integer>();
@@ -23,8 +23,8 @@ global class Batch_PrivacyDataOwnerCaseReminders implements Database.Batchable <
         for (Integer i = 1; i <= totalReminders; i++) {
             dataOwnerReminderIntervalMatchingValues.add(dataOwnerReminderIntervalHours*i);
         }
-        System.debug('===batch settings' + dataOwnerReminderIntervalMatchingValues + dataOwnerReminderIntervalMatchingValues + dataOwnerReminderIntervalHours);
-
+        Log.push('===batch settings' + dataOwnerReminderIntervalMatchingValues + dataOwnerReminderIntervalMatchingValues + dataOwnerReminderIntervalHours);
+        Logger.logDebug();
         return [Select Id, Status, Brand__c, SuppliedEmail, ContactId, Data_Owner__r.Email, Data_Owner__r.Additional_Email_1__c, Data_Owner__r.Additional_Email_2__c,Data_Owner__r.Additional_Email_3__c,Data_Owner__r.Additional_Email_4__c, Hours_Since_Creation__c, Brand_Privacy_OWA_Name__c, Parent.Sub_Type__c, Privacy_Escalation_Email__c From Case Where Type = :Constants.privacyCaseType And Sub_Type__c = :Constants.dataOwnerRequestSubType And Hours_Since_Creation__c In :dataOwnerReminderIntervalMatchingValues And Status Not In :Constants.privacyCaseCompletedStatuses];
     }
 
@@ -32,7 +32,7 @@ global class Batch_PrivacyDataOwnerCaseReminders implements Database.Batchable <
         PrivacyEmailHandler emailHandler = new PrivacyEmailHandler();
         Integer escalationHours = Integer.valueOf(Privacy_Intervals__c.getValues(Constants.privacyIntervalSettingName).CaseEscalationHours__c);
 
-        System.debug('===dataOwnerReminderCases' + cases);
+        Log.push('===dataOwnerReminderCases' + cases);
         List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>();
         for (Case cse : cases) {
             List<String> ccAddresses = new List<String>();
@@ -80,7 +80,8 @@ global class Batch_PrivacyDataOwnerCaseReminders implements Database.Batchable <
 
             }
         }
-        System.debug('===emails to send' + emailsToSend);
+        Log.push('===emails to send' + emailsToSend);
+        Logger.logDebug();
         emailHandler.sendEmails(emailsToSend);
 
     }

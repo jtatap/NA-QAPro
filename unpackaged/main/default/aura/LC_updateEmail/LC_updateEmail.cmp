@@ -13,7 +13,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:attribute name="isLoading" type="Boolean" default="false" />
     <div class="modal-header slds-modal__header slds-size_1-of-1">
-        <h4 class="title slds-text-heading--medium" >CSR Email Update</h4>
+        <h4 class="title slds-text-heading--medium" >{!$Label.c.CSR_Email_Update}</h4>
     </div>
     <div style="color:Black; font-size:130%;">{!v.msg1}</div>
     

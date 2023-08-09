@@ -14,8 +14,6 @@
             }
             if (contactRecord.Phone && component.find("cb_phone").get("v.checked")) {
                 params.push('Phone='+(contactRecord.Phone.trim ()));
-                //params.push ('Phone='+(this.removeSpecialCharacters (contactRecord.Phone.trim ())));
-                //params.push ('Phone='+this.formatPhoneNumber (contactRecord.Phone.trim ()));
             }
             if(component.get("v.selectedEcommSite")){
                 params.push ('selectedOrg='+component.get("v.selectedEcommSite"));
@@ -46,11 +44,13 @@
             }
             
             //if (!contactRecord.Phone 
-               // && (contactRecord.FirstName && contactRecord.LastName && contactRecord.Email)
+                //&& (contactRecord.FirstName && contactRecord.LastName && contactRecord.Email)
                //) {
                 //component.set ('v.freeFormErrorMessage', 'Please enter First Name, Last Name, Email and Phone');
                 //return [];
             //}
+            
+            
             if (contactRecord.FirstName) {
                 params.push ('FirstName='+contactRecord.FirstName.trim ());
             }
@@ -62,8 +62,6 @@
             }
             if (contactRecord.Phone) {
                 params.push ('Phone='+(contactRecord.Phone.trim ()))
-                //params.push ('Phone='+this.removeSpecialCharacters (contactRecord.Phone.trim ()))
-                //params.push ('Phone='+this.formatPhoneNumber (contactRecord.Phone.trim ()));
             }
         }
         
@@ -95,23 +93,27 @@
     },
     updateCaseContact : function (component) {
         let caseRecord = component.get ('v.caseRecord');
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
+        var error = String($A.get("$Label.c.Error1"));
+        var draft = String($A.get("$Label.c.Draft"));
         component.set ('v.previousCaseContactId', component.get ('v.caseContactId'));
         caseRecord.ContactId = component.get ('v.selectedId');
         component.set ('v.caseRecord', caseRecord);
         component.set ('v.isLoading', true);
         let self = this;
         component.find("caseRecordLoader").saveRecord($A.getCallback(function(saveResult) {
-            if (saveResult.state === "SUCCESS" || saveResult.state === "DRAFT") {
+            if (saveResult.state === success || saveResult.state === draft) {
                 component.set ('v.caseContactId', component.get ('v.caseRecord.ContactId'));
                 if (component.find("currentCasecontactRecordHandler")) {
                     component.find("currentCasecontactRecordHandler").reloadRecord();
                 }
                 let params = self.getParamsByContact (component, component.get ('v.contactRecord'));
                 self.navigateToURL(component, params, false);
-            } else if (saveResult.state === "INCOMPLETE") {
+            } else if (saveResult.state === incomplete) {
                 console.log("User is offline, device doesn't support drafts.");
                 component.set ('v.caseContactId', component.get ('v.previousCaseContactId'));
-            } else if (saveResult.state === "ERROR") {
+            } else if (saveResult.state === error) {
                 console.log('Problem saving record, error: ' + JSON.stringify(saveResult.error));
                 component.set ('v.caseContactId', component.get ('v.previousCaseContactId'));
             } else {
@@ -123,14 +125,10 @@
     },
     navigateToURL : function (component, params, isOrder) {
         if (params && params.length > 0) {
-            console.log('********venkat testing************'+params+' >>>>>>>>:'+isOrder);
-            //let completeURL;
             let completeURL =isOrder ? $A.get ('$Label.c.MAO_ORDER_SEARCH_URL') : $A.get ('$Label.c.MAO_CUSTOMER_SEARCH_URL'); 
-           
             let paramText = '';
             if (params && params.length > 0) {
                 completeURL += params.join ('&');
-                //paramText += encodeURIComponent (params.join ('&'));
             }
         
            
@@ -147,18 +145,20 @@
             if(!newWin || newWin.closed || typeof newWin.closed=='undefined') { 
                 //POPUP BLOCKED
                 alert ('Popup blocked, Please allow current site to open popup');
-                //$A.get("e.force:closeQuickAction").fire ();
                 return;
             }
             
             this.createTaskRecord (component, completeURL);
             
-            //$A.get("e.force:closeQuickAction").fire ();    
         }
 	},
     createTaskRecord : function (component, completeURL) {
         let simpleTask = {};
         let caseRecord = component.get ('v.caseRecord');
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
+        var error = String($A.get("$Label.c.Error1"));
+        var draft = String($A.get("$Label.c.Draft"));
         simpleTask.Subject = 'URL : - '+ component.get ('v.clickedTabLabel');
         simpleTask.Description = completeURL;
         simpleTask.Status = 'Closed';
@@ -166,7 +166,6 @@
         simpleTask.WhoId = caseRecord.ContactId;
         simpleTask.WhatId = component.get ('v.recordId');
         simpleTask.TaskSubtype  = 'Email';
-        //simpleTask.ActivityDate = JSON.stringify(new Date ());
         
         let action = component.get ('c.createTask');
         action.setParams ({
@@ -175,22 +174,19 @@
         
         action.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
+            if (state === success) {
                 console.log ('response.getReturnValue() :' + response.getReturnValue());
-                //alert("From server: " + response.getReturnValue());
                 var resultsToast = $A.get("e.force:showToast");
                 resultsToast.setParams({
                     "title": "Saved",
                     "message": "The record was saved."
                 });
-                //resultsToast.fire();
-                
                 $A.get('e.force:refreshView').fire();
             }
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 // do something
             }
-            else if (state === "ERROR") {
+            else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -250,9 +246,7 @@
         	 phoneInput.setCustomValidity('');
         } else {
             if (input.replace(/\D/g,'').substring(0,10).length > 9) {
-             	//phoneInput.setCustomValidity('Invalid phone number');   
             } else {
-                //phoneInput.setCustomValidity('Please provide 10 digit phone number');
             }
         }
         phoneInput.reportValidity();

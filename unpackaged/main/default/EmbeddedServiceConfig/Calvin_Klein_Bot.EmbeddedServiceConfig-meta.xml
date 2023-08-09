@@ -8,6 +8,11 @@
         <customComponent>ebcm__einsteinBotChatMessage</customComponent>
         <customComponentType>LA_PlainTextChatMessage</customComponentType>
     </embeddedServiceCustomComponents>
+    <embeddedServiceCustomComponents>
+        <componentBundleType>AuraDefinitionBundle</componentBundleType>
+        <customComponent>NF_CustomerCare_PreChatForm</customComponent>
+        <customComponentType>LA_Prechat</customComponentType>
+    </embeddedServiceCustomComponents>
     <embeddedServiceCustomLabels>
         <customLabel>LA_Waiting_WithoutQueuePos_WaitingMessage_04I6w000000002K_6077021</customLabel>
         <labelKey>LA_Waiting_WithoutQueuePos_WaitingMessage</labelKey>

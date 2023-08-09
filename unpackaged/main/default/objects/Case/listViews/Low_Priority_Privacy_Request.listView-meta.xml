@@ -12,12 +12,7 @@
     <filters>
         <field>CASES.RECORDTYPE</field>
         <operation>equals</operation>
-        <value>Case.Privacy_Request</value>
-    </filters>
-    <filters>
-        <field>Sub_Type__c</field>
-        <operation>notEqual</operation>
-        <value>Data Owner Request</value>
+        <value>Case.Data_Owner_Request,Case.Privacy_Request</value>
     </filters>
     <filters>
         <field>CASES.STATUS</field>

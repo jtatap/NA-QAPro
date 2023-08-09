@@ -4,7 +4,7 @@
     <decisions>
         <name>decCreate_PSG_Found</name>
         <label>READ PSG Found?</label>
-        <locationX>732</locationX>
+        <locationX>534</locationX>
         <locationY>278</locationY>
         <defaultConnector>
             <targetReference>decProfile_is_was_Ops_Quality</targetReference>
@@ -29,30 +29,51 @@
     <decisions>
         <name>decIs_User_already_assigned_Modify_PSG</name>
         <label>Is User already assigned Modify PSG?</label>
-        <locationX>314</locationX>
-        <locationY>1430</locationY>
+        <locationX>248</locationX>
+        <locationY>1646</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>resAdd_to_Modify_PSG_Not_Assigned</name>
-            <conditionLogic>and</conditionLogic>
+            <name>resRemove_Modify_PSG_former_Ops_Quality</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4 AND 5</conditionLogic>
             <conditions>
                 <leftValueReference>varUserHasModifyPSG</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
-                    <booleanValue>true</booleanValue>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>varPermSetGroupAction</leftValueReference>
+                <leftValueReference>varUserPriorProfileName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Add</stringValue>
+                    <stringValue>Ops/Quality</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varUserPriorProfileName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varUserProfileName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Ops/Quality</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varUserProfileName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Add_user_to_Modify_PSG</targetReference>
+                <targetReference>Remove_Modify_PSG_from_User</targetReference>
             </connector>
-            <label>Add to Modify PSG - Not Assigned</label>
+            <label>Remove Modify PSG - former Ops/Quality</label>
         </rules>
         <rules>
             <name>resRemove_Modify_PSG_Assigned</name>
@@ -76,11 +97,33 @@
             </connector>
             <label>Remove Modify PSG - Assigned</label>
         </rules>
+        <rules>
+            <name>resAdd_to_Modify_PSG_Not_Assigned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varUserHasModifyPSG</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varPermSetGroupAction</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Add</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_user_to_Modify_PSG</targetReference>
+            </connector>
+            <label>Add to Modify PSG - Not Assigned</label>
+        </rules>
     </decisions>
     <decisions>
         <name>decIs_User_already_assigned_READ_PSG</name>
         <label>Is User already assigned READ PSG?</label>
-        <locationX>512</locationX>
+        <locationX>314</locationX>
         <locationY>518</locationY>
         <defaultConnector>
             <targetReference>decProfile_is_was_Ops_Quality</targetReference>
@@ -134,7 +177,7 @@
     <decisions>
         <name>decProfile_is_was_Ops_Quality</name>
         <label>Profile is/was Ops/Quality?</label>
-        <locationX>732</locationX>
+        <locationX>534</locationX>
         <locationY>950</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -159,12 +202,34 @@
             </connector>
             <label>Yes, Ops/Quality</label>
         </rules>
+        <rules>
+            <name>resSys_Admin</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varUserPriorProfileName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varUserProfileName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Modify_All_PSG</targetReference>
+            </connector>
+            <label>Sys Admin</label>
+        </rules>
     </decisions>
     <decisions>
         <name>Modify_All_PSG_Found</name>
         <label>Modify All PSG Found?</label>
         <locationX>534</locationX>
-        <locationY>1190</locationY>
+        <locationY>1406</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_Modify_All_PSG_found</name>
@@ -208,7 +273,7 @@
     <recordCreates>
         <name>Add_user_to_CREATE_PSG</name>
         <label>Add user to CREATE PSG</label>
-        <locationX>248</locationX>
+        <locationX>50</locationX>
         <locationY>638</locationY>
         <connector>
             <targetReference>decProfile_is_was_Ops_Quality</targetReference>
@@ -231,8 +296,8 @@
     <recordCreates>
         <name>Add_user_to_Modify_PSG</name>
         <label>Add user to Modify PSG</label>
-        <locationX>50</locationX>
-        <locationY>1550</locationY>
+        <locationX>292</locationX>
+        <locationY>1766</locationY>
         <inputAssignments>
             <field>AssigneeId</field>
             <value>
@@ -251,7 +316,7 @@
     <recordDeletes>
         <name>Remove_CREATE_PSG_from_User</name>
         <label>Remove CREATE PSG from User</label>
-        <locationX>512</locationX>
+        <locationX>314</locationX>
         <locationY>638</locationY>
         <connector>
             <targetReference>decProfile_is_was_Ops_Quality</targetReference>
@@ -276,8 +341,8 @@
     <recordDeletes>
         <name>Remove_Modify_PSG_from_User</name>
         <label>Remove Modify PSG from User</label>
-        <locationX>314</locationX>
-        <locationY>1550</locationY>
+        <locationX>248</locationX>
+        <locationY>2102</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>AssigneeId</field>
@@ -299,7 +364,7 @@
         <name>Get_Modify_All_PSG</name>
         <label>Get Modify All PSG</label>
         <locationX>534</locationX>
-        <locationY>1070</locationY>
+        <locationY>1286</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Modify_All_PSG_Found</targetReference>
@@ -321,7 +386,7 @@
     <recordLookups>
         <name>Get_READ_PSG_Id</name>
         <label>Get READ PSG Id</label>
-        <locationX>732</locationX>
+        <locationX>534</locationX>
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -344,8 +409,8 @@
     <recordLookups>
         <name>Lookup_Modify_Permission_Set_Assignment</name>
         <label>Lookup Modify Permission Set Assignment</label>
-        <locationX>314</locationX>
-        <locationY>1310</locationY>
+        <locationX>248</locationX>
+        <locationY>1526</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>decIs_User_already_assigned_Modify_PSG</targetReference>
@@ -374,7 +439,7 @@
     <recordLookups>
         <name>Lookup_READ_Permission_Set_Assignment</name>
         <label>Lookup READ Permission Set Assignment</label>
-        <locationX>512</locationX>
+        <locationX>314</locationX>
         <locationY>398</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -402,7 +467,7 @@
         </outputAssignments>
     </recordLookups>
     <start>
-        <locationX>606</locationX>
+        <locationX>408</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_READ_PSG_Id</targetReference>

@@ -39,34 +39,35 @@ global class SFCCActiveRewards {
         if (String.IsBlank(LoyaltyId) || string.IsBlank(brandId)) {
             SubResponse1 objres1=new SubResponse1();
             res.statusCode = 400;            
-            objres1.code='INVALID_QUERY'; 
-            objres1.message='Missing required parameters BrandId Or LoyaltyId';
+            objres1.code=SYSTEM.LABEL.INVALID_QUERY; 
+            objres1.message=SYSTEM.LABEL.Missing_required_parameters_BrandId_or_LoyaltyId;
             res.responseBody = Blob.valueOf(JSON.serialize(objres1));
             return;
         }
-       if(brandId=='2'){
-            string status='Active';
+       if(brandId==SYSTEM.LABEL.X2){
+            string status=SYSTEM.LABEL.Active1;
             List<Reward__c> lstRew= Database.query('Select Id,LoyaltyId__c, Reward_Number__c, RewardId__c, RewardType__c, Status__c,ExpireDate__c,IssuanceDate__c,TransactionId__c From Reward__c  Where Status__c=:status AND LoyaltyId__c=:loyaltyId ' );
             SubResponse successres = new SubResponse();
-            system.debug('lstRew>>>'+lstRew);
+            Log.push('lstRew>>>'+lstRew);
+            Logger.logDebug();
             if(!lstRew.isEmpty()){
                 res.statusCode = 200;            
-                successres.code='Ok';
+                successres.code=SYSTEM.LABEL.Ok1;
                 successres.Count=string.valueof(lstRew.size());
                 successres.ActiveRewards=sfscMapper(lstRew);
                 res.responseBody = Blob.valueOf(JSON.serialize(successres));
                 return;
             }else{
                 res.statusCode = 200;            
-                successres.code='No Active Rewards'; 
+                successres.code=SYSTEM.LABEL.No_Active_Rewards; 
                 res.responseBody = Blob.valueOf(JSON.serialize(successres));
                 return;
             }             
        }else{
             SubResponse1 objres1=new SubResponse1();
             res.statusCode = 400;            
-            objres1.code='INVALID_BRANDID'; 
-            objres1.message='Invalid BrandId';
+            objres1.code=SYSTEM.LABEL.INVALID_BRANDID; 
+            objres1.message=SYSTEM.LABEL.Invalid_BrandId1;
             res.responseBody = Blob.valueOf(JSON.serialize(objres1));
             return;
         } 

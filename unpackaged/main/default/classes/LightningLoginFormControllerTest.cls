@@ -3,7 +3,7 @@ public with sharing class LightningLoginFormControllerTest {
 
  @IsTest
  static void testLoginWithInvalidCredentials() {
-  //System.assertEquals('Argument 1 cannot be null', LightningLoginFormController.login('testUser', 'fakepwd', null));
+   LightningLoginFormController.login('testUser', 'fakepwd', null);
  }
 
  @IsTest
@@ -32,4 +32,10 @@ public with sharing class LightningLoginFormControllerTest {
   Auth.AuthConfiguration authConfig = LightningLoginFormController.getAuthConfig();
   System.assertNotEquals(null, authConfig);
  }
+    
+    @IsTest
+    static void testSetExp(){
+        String testString = LightningLoginFormController.setExperienceId('');
+        String forgotString = LightningLoginFormController.getForgotPasswordUrl();
+    }
 }

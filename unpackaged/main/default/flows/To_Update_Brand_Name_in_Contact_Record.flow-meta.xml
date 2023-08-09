@@ -44,14 +44,14 @@
 &quot;9&quot;, &quot;Partner Brands &quot;,
 &quot;81&quot;, &quot;IZOD.com&quot;,
 &quot;82&quot;, &quot;Van Heusen.com (VHE)&quot;,
-&quot;83&quot;, &quot;Warner&#39;s&quot;,
+&quot;83&quot;, &quot;Warner&quot;,
 &quot;84&quot;, &quot;Style Bureau&quot;,
 &quot;11&quot;, &quot;True&amp;Co&quot;,
 &quot;10&quot;, &quot;Olga&quot;,
 &quot;&quot;)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_8941504561</name>
+        <name>formula_2_myRule_1_A1_2664769418</name>
         <dataType>String</dataType>
         <expression>CASE(TEXT({!myVariable_current.Brand_Id__c}),
 &quot;1&quot;, &quot;Tommy Hilfiger&quot;,
@@ -63,7 +63,7 @@
 &quot;9&quot;, &quot;Partner Brands &quot;,
 &quot;81&quot;, &quot;IZOD.com&quot;,
 &quot;82&quot;, &quot;Van Heusen.com (VHE)&quot;,
-&quot;83&quot;, &quot;Warner&#39;s&quot;,
+&quot;83&quot;, &quot;Warner&quot;,
 &quot;84&quot;, &quot;Style Bureau&quot;,
 &quot;11&quot;, &quot;True&amp;Co&quot;,
 &quot;10&quot;, &quot;Olga&quot;,
@@ -183,13 +183,13 @@
             </processMetadataValues>
             <field>Brand__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_8941504561</elementReference>
+                <elementReference>formula_2_myRule_1_A1_2664769418</elementReference>
             </value>
         </inputAssignments>
         <object>Contact</object>
     </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Draft</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

@@ -8,6 +8,8 @@
     <columns>PUBLISH_STATUS</columns>
     <columns>LAST_UPDATE</columns>
     <columns>LAST_PUBLISHED_DATE</columns>
+    <columns>ABSTRACT</columns>
+    <columns>SEO_Additional_Detail__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Brand__c</field>

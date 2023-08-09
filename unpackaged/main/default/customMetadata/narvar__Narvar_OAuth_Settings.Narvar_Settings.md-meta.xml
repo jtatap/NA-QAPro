@@ -4,11 +4,11 @@
     <protected>false</protected>
     <values>
         <field>narvar__Client_ID__c</field>
-        <value xsi:type="xsd:string">3MVG9hq7jmfCuKffRsiRSjzlJqF2PZsXniIWW1QVgxN6ud7NQ01eKP6c3avaTiEcnUYjAh0zuXMS2WAKR9rJN-BAD</value>
+        <value xsi:type="xsd:string">3MVG9KsVczVNcM8wboWgptVgcpW0zQ6NHbw4Nlor775n0DKT1XurY2AZ5ISIbDWF4epz0dmdo8oM_0zCaxRR7</value>
     </values>
     <values>
         <field>narvar__Connected_App_Callback_URL__c</field>
-        <value xsi:type="xsd:string">https://csp-api.narvar.com/salesforce/auth/callback</value>
+        <value xsi:type="xsd:string">https://csp-api-st01.narvar.qa/salesforce/auth/callback</value>
     </values>
     <values>
         <field>narvar__Connected_App_Name__c</field>

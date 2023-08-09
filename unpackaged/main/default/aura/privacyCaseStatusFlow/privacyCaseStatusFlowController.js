@@ -18,24 +18,32 @@
     },
     handleStatusChange : function (component, event) {
         console.log('event.getParam("status")===' + event.getParam("status"));
-        if(event.getParam("status") === "FINISHED") {
+         var error = String($A.get("$Label.c.Error1"));
+        var finished = String($A.get("$Label.c.Finished"));
+
+        if(event.getParam("status") === finished) {
             console.log('handleStatusChange FINISHED');
             $A.get('e.force:refreshView').fire();
-        } else if(event.getParam("status") === "ERROR") {
+        } else if(event.getParam("status") === error) {
             console.log('handleStatusChange ERROR');
         }
     },
     recordUpdated: function(component, event, helper) {
         console.log('recordUpdated');
         var changeType = event.getParams().changeType;
+        var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var removed = String($A.get("$Label.c.Removed"));
+        var changed = String($A.get("$Label.c.Changed"));
+        var success = String($A.get("$Label.c.Success1"));
 
-        if (changeType === "ERROR") { /* handle error; do this first! */
+        if (changeType === error) { /* handle error; do this first! */
             console.log('ERROR');
-        } else if (changeType === "LOADED") { /* handle record load */
+        } else if (changeType === loaded) { /* handle record load */
             console.log('LOADED');
-        } else if (changeType === "REMOVED") { /* handle record removal */
+        } else if (changeType === removed) { /* handle record removal */
             console.log('REMOVED');
-        } else if (changeType === "CHANGED") { /* handle record change */
+        } else if (changeType === changed) { /* handle record change */
             console.log('CHANGED');
             $A.get('e.force:refreshView').fire();
 
@@ -49,7 +57,7 @@
                 },
                 function(privacyFlow, status, errorMessage){
                     console.log('STATUS=== ' + status + ' - ' + errorMessage);
-                    if (status === "SUCCESS") {
+                    if (status === success) {
                         // Finding the div by aura:id and pushing newly created component into it.
                         var outerDiv = component.find('outerDiv').get('v.body');
                         outerDiv.push(privacyFlow);

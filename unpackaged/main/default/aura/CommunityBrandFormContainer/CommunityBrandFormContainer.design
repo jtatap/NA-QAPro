@@ -2,7 +2,7 @@
 	<design:attribute name="brandname" label="Brand Name"
                       description="Please Configure the Brand Name Here"
                       datasource="apex://NF_BrandNamePicklist" required="true"/>
-	<design:attribute name="smallMargin" label="Margin for small-width(>=481px) screen"/>
-	<design:attribute name="mediumMargin" label="Margin for medium-width(>=768px) screen"/>
-	<design:attribute name="largeMargin" label="Margin for large-width(>=1023px) screen"/>
+	<design:attribute name="smallMargin" label="Margin for small-width(>=481px) screen" default="5%" />
+	<design:attribute name="mediumMargin" label="Margin for medium-width(>=768px) screen" default="0 12%" />
+	<design:attribute name="largeMargin" label="Margin for large-width(>=1023px) screen" default="0 32%" />
 </design:component>

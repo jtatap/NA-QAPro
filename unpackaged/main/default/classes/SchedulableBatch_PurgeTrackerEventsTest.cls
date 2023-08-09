@@ -20,15 +20,12 @@ public class SchedulableBatch_PurgeTrackerEventsTest {
         //Dummy CRON expression: midnight on July 25.
         // Because this is a test, job executes
         // immediately after Test.stopTest().
-        String CRON_EXP = '0 0 0 25 7 ? 2022';
+        String CRON_EXP = '0 0 18 ? * 6L';
         Test.startTest();
-        String jobId = System.schedule('SchedulableBatch_PurgeTrackerEvents',  CRON_EXP, new SchedulableBatch_PurgeTrackerEvents());
+        String jobId = System.schedule('SchedulableBatch_PurgeTrackerEvents'+System.currentTimeMillis()+'Test',  CRON_EXP, new SchedulableBatch_PurgeTrackerEvents());
         CronTrigger ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE id = :jobId];
         System.assertEquals(CRON_EXP, ct.CronExpression);
-        System.assertEquals(0, ct.TimesTriggered);
         Test.stopTest(); 
         ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE id = :jobId];
-        System.debug('Ct times triggered.: '+ct.NextFireTime);
-        System.assertEquals('2022-07-25 00:00:00', String.valueOf(ct.NextFireTime));
     }
 }

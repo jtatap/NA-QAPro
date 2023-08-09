@@ -81,7 +81,7 @@ global without sharing class BulkSignUp {
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response; 
         String requestData = req.requestBody.toString();
-        System.debug('request data '+requestData);
+        Log.push('request data '+requestData);
         List<Contact> newTopBrandContacts = new List<Contact>();
         List<Contact> newSubBrandContacts = new List<Contact>();
         LoyaltySettings__mdt loyaltySetting;
@@ -90,11 +90,11 @@ global without sharing class BulkSignUp {
         List<Contact> searchecdParentContactList = new List<Contact>();
 
         SubRequest subReqReceived = (SubRequest)JSON.deserialize(requestData,SubRequest.class);
-        System.debug('***subReqReceived = '+subReqReceived);
+        Log.push('***subReqReceived = '+subReqReceived);
         //called removeDuplicate method to remove duplicate rows based on same brand & email
         
         SubRequest subReq = removeDuplicate(subReqReceived);
-        System.debug('***subReq_afterDuplicateRemoved :'+subReq);
+        Log.push('***subReq_afterDuplicateRemoved :'+subReq);
         Set <Id> SubsriberKeys = new Set<Id>();
         Set <String> BrandIds = new Set<String>(); 
         Set <String> EmailAddresses = new Set<String>();
@@ -117,11 +117,11 @@ global without sharing class BulkSignUp {
         List <Contact> newContacts = new List<Contact>();
         List<SignUpActivity> signUpActivityList = new List<SignUpActivity>();
         String FileName =    subReq.FileName;
-        System.Debug('subReq.Subscribes : '+subReq.Subscribes);
+        Log.push('subReq.Subscribes : '+subReq.Subscribes);
         // Create List of Email and BrandId to be used to get matching contacts        
         for (Subscriber sub : subReq.Subscribes) {
-            system.debug('sub.BulkBuyer>>'+sub.BulkBuyer);
-            System.Debug('sub.LoyaltyId : '+sub.LoyaltyId);
+            Log.push('sub.BulkBuyer>>'+sub.BulkBuyer);
+            Log.push('sub.LoyaltyId : '+sub.LoyaltyId);
             if (sub.BulkBuyer!='Yes' && (String.isEmpty(sub.BrandId) || String.isEmpty(sub.Email))) {
                 isError = true;
                 break;
@@ -132,13 +132,14 @@ global without sharing class BulkSignUp {
             }
             if (String.isNotEmpty(sub.SubscriberKey) && sub.BulkBuyer!='Yes') SubsriberKeys.add(Id.valueOf(sub.SubscriberKey));
             else {
-                System.Debug('sub.LoyaltyId : '+sub.LoyaltyId);
+                Log.push('sub.LoyaltyId : '+sub.LoyaltyId);
                 if (String.isNotEmpty(sub.BrandId)) BrandIds.add(sub.BrandId);
                 if (String.isNotEmpty(sub.Email)) EmailAddresses.add(sub.Email);
                 if (String.isNotEmpty(sub.LoyaltyId) && sub.BulkBuyer=='Yes') loyaltyIds.add(sub.LoyaltyId);
-                System.debug('loyaltyIds : '+loyaltyIds);
+                Log.push('loyaltyIds : '+loyaltyIds);
             } 
         }
+        Logger.logDebug();
         if (isError) {
             res.statusCode = 400;
             errorResponse.code = 'INVALID_QUERY';
@@ -190,7 +191,7 @@ global without sharing class BulkSignUp {
                                      }
                                  }
         }
-        System.Debug('loyaltyToContactMap : '+loyaltyToContactMap);
+        Log.push('loyaltyToContactMap : '+loyaltyToContactMap);
         if(!SubkeyBrandIds.isEmpty() && !SubkeyEmails.isEmpty())existingSubkeyContactMap=new map<id,contact>([SELECT Id, FirstName, MiddleName, LastName, MailingStreet, MailingCity, MailingState, MailingPostalCode, Company_Code__c,
                                                                                                               Brand_Id__c, MailingCountry, Email, Phone, HomePhone, MobilePhone, Birthdate,  HomeStore__c, LoyaltyID__c, External_Id__c, Customer_Id__c,
                                                                                                               StoreOfCapture__c, Source_System__c,Ecomm_Connected__c, LoyaltyFlag__c, EmailOptInDate__c, EmailOptInStatus__c, Loyalty_Optin_Date__c, PVHCreatedDate__c, PrefCenterInterests__c,Source__c, SelfClaimedGender__c,AccountId
@@ -209,7 +210,7 @@ global without sharing class BulkSignUp {
         
         
         for (Subscriber sub : subReq.Subscribes) {
-            system.debug('entered into for loop');
+            Log.push('entered into for loop');
             Contact thisContact;
             if (String.isNotEmpty(sub.SubscriberKey) && sub.bulkBuyer!='Yes'){ 
                 //thisContact =  existingSubkeyContactMap.get(sub.SubscriberKey);
@@ -217,7 +218,7 @@ global without sharing class BulkSignUp {
                 if(subObj.Id == sub.SubscriberKey || subObj.Ecomm_Connected__c==true ) profileUpdateContacts.add(updateContact(subObj, sub)); 
                 }
             }else if (String.isNotEmpty(sub.loyaltyId) && sub.bulkBuyer=='Yes'){ 
-                system.debug('entered into for loop bulk buyer');
+                Log.push('entered into for loop bulk buyer');
                 //List<contact> lstCont=loyaltyToContactMap.get(sub.SubscriberKey);
                 //conIds.add(loyaltyToContactMap.keySet());
                 //added for duplicate issue 
@@ -232,10 +233,10 @@ global without sharing class BulkSignUp {
               //  }
                 
                 /*for(contact objCont:loyaltyToContactMap.values()){
-                    System.debug('objCont : '+objCont);
-                    System.debug('sub : '+sub);
+                    Log.push('objCont : '+objCont);
+                    Log.push('sub : '+sub);
                     profileUpdateContacts.add(updateContact(objCont, sub));
-                    System.debug('profileUpdateContacts : '+profileUpdateContacts);
+                    Log.push('profileUpdateContacts : '+profileUpdateContacts);
                 }*/
             } else {                
                 if (BrandToEmailContactMap.containsKey(sub.BrandId) && BrandToEmailContactMap.get(sub.BrandId).containsKey(sub.Email.toLowerCase())) {
@@ -258,7 +259,7 @@ global without sharing class BulkSignUp {
                         if(emailOptedIn){
                             
                             List<LoyaltySettings__mdt> subBrandsLoyaltySetting = [Select Id,BrandId__c,IsLoyaltyApplicable__c,Parent_Brand__c from LoyaltySettings__mdt where Parent_Brand__c  = :sub.BrandId ];
-                            //  system.debug('### subBrandsLoyaltySetting '+ subBrandsLoyaltySetting);
+                            //  Log.push('### subBrandsLoyaltySetting '+ subBrandsLoyaltySetting);
                             if(subBrandsLoyaltySetting.size()>0){
                                 createParent = false; createChild = true;
                                 //has subbrands
@@ -273,14 +274,14 @@ global without sharing class BulkSignUp {
                         //Not Top Level Brand 
                         //Does Parent Brand Contacts exists in DB
                         searchecdParentContactList = searchContacts(loyaltySetting.Parent_Brand__c,sub.email,emailRecordTypeId);
-                        //System.debug('### searchecdParentContactList :'+searchecdParentContactList);
+                        //Log.push('### searchecdParentContactList :'+searchecdParentContactList);
                         if(searchecdParentContactList.size()<1){
                             
                             //Contact does not exist for Parent Brand(with Loyalty Flag = N and Email Status = N)
                             createParent = true; createChild = false;
                             Contact newParentContact = new Contact();
                             Contact parentCon = createContact(newParentContact,sub, loyaltySetting.Parent_Brand__c, createParent, createChild);
-                            // System.debug('### parentCon:'+parentCon);
+                            // Log.push('### parentCon:'+parentCon);
                             // add to newTopBrandContacts
                             newTopBrandContacts.add(parentCon);
                         }
@@ -290,7 +291,7 @@ global without sharing class BulkSignUp {
                         Contact newSubBrandContact = new Contact();
                         
                         Contact subBrandCon = createContact(newSubBrandContact,sub, sub.BrandId, createParent, createChild);
-                        //System.debug('### subBrandCon:'+subBrandCon);
+                        //Log.push('### subBrandCon:'+subBrandCon);
                         // add to newSubBrandContacts list
                         newSubBrandContacts.add(subBrandCon);   
                     }            
@@ -298,8 +299,8 @@ global without sharing class BulkSignUp {
             }            
         }
         
-        //System.debug('***SIZE profileUpdateContacts = '+profileUpdateContacts.size());
-        System.debug('***profileUpdateContacts = '+profileUpdateContacts);
+        //Log.push('***SIZE profileUpdateContacts = '+profileUpdateContacts.size());
+        Log.push('***profileUpdateContacts = '+profileUpdateContacts);
         List <contact> allContacts = new List<contact>(); 
         if (!profileUpdateContacts.isEmpty()) {
             Database.SaveResult[] srList = Database.update(profileUpdateContacts, false);
@@ -309,13 +310,13 @@ global without sharing class BulkSignUp {
                     if(String.isNotBlank(c.AccountId))  accIdsToContact.put(c.AccountId, c);
                 }
             }
-            System.debug('^^^accIdsToContact = '+accIdsToContact);
+            Log.push('^^^accIdsToContact = '+accIdsToContact);
             ContactUtility.createErrorLogRecords(srList,profileUpdateContacts[0].Latest_Source__c,FileName);
             
             //updating Accounts for corresponding contacts
             List<Account> listAccountsToUpdate = getAccountsToUpdate();
             if(!listAccountsToUpdate.isEmpty()){
-                //System.debug('^^^listAccountsToUpdate = '+listAccountsToUpdate);
+                //Log.push('^^^listAccountsToUpdate = '+listAccountsToUpdate);
                 Database.SaveResult[] srListAcc = Database.update(listAccountsToUpdate, false);
                 ContactUtility.createErrorLogRecords(srListAcc,profileUpdateContacts[0].Latest_Source__c,FileName);
             }
@@ -369,7 +370,7 @@ allContacts.add(c);
         /*Now, this is performed with PB+invocable apex
 *if(signUpActivityList.size()>0) SignUpActivity.logSignUpActivity(signUpActivityList);
 */
-        
+        Logger.logDebug();
         SuccessResponse.Code = 'OK';
         SuccessResponse.Count = String.valueOf(subsList.size());
         SuccessResponse.subscribes = subsList;
@@ -380,7 +381,7 @@ allContacts.add(c);
     
     Static List<Contact> searchContacts(String brandId, String emails,Id emailRecordTypeId){
         
-        //System.debug('### Contact search Brand Id:'+brandId); System.debug('### Contact search emails: '+emails);System.debug('### Contact search emailRecordTypeId: '+emailRecordTypeId);
+        //Log.push('### Contact search Brand Id:'+brandId); Log.push('### Contact search emails: '+emails);Log.push('### Contact search emailRecordTypeId: '+emailRecordTypeId);
         List<Contact> searchedContactList =  [SELECT Id, FirstName, LastName, Brand_Id__c, MailingStreet, MailingCity, MailingState, MailingPostalCode, 
                                               Phone, MobilePhone, MailingCountry, Email, HomePhone, Birthdate, HomeStore__c, AccountId,  
                                               LoyaltyID__c, Latest_Source__c, EmailOptInStatus__c, SMSOptinStatus__c, LoyaltyFlag__c, ReportsToId, Source__c,SelfClaimedGender__c
@@ -476,9 +477,9 @@ allContacts.add(c);
         
         //for NON Outside Lists Signups: Update Contact
         else if(String.isNotBlank(sub.SourceSystem) && !sub.SourceSystem.equalsIgnoreCase('Outside Lists')){
-            System.debug('***sub.SourceSystem'+sub.SourceSystem);
-            System.debug('***Con.Source_System__c'+Con.Source_System__c);
-            System.debug('*** Con.Latest_Source__c'+ Con.Latest_Source__c);
+            Log.push('***sub.SourceSystem'+sub.SourceSystem);
+            Log.push('***Con.Source_System__c'+Con.Source_System__c);
+            Log.push('*** Con.Latest_Source__c'+ Con.Latest_Source__c);
             String searchBrand = sub.BrandId;
             //if records brand is child, assigning brandId with its parent
             if(mapSubbrandParentbrand.containsKey(sub.BrandId)){
@@ -487,14 +488,14 @@ allContacts.add(c);
             if(String.isNotBlank(sub.SourceSystem) && sub.SourceSystem=='WiFi'){   
                 if(subEmailOptinValue=='Y'){ 
                     if(con.EmailOptInStatus__c=='Y' && con.EmailOptInDate__c!=Null ){
-                        system.debug('EmailOptInStatus__c****'+con.EmailOptInStatus__c);
-                        system.debug('subEmailOptinValue****'+subEmailOptinValue);
+                        Log.push('EmailOptInStatus__c****'+con.EmailOptInStatus__c);
+                        Log.push('subEmailOptinValue****'+subEmailOptinValue);
                         con.EmailOptInStatus__c='Y';
                         //con.EmailOptInDate__c=system.now();
                         con.HasOptedOutOfEmail=false;
                     }
                     else if(con.EmailOptInStatus__c=='N' && con.EmailOptOutDate__c!=Null){
-                        system.debug('EmailOptInStatus__c****'+con.EmailOptInStatus__c);
+                        Log.push('EmailOptInStatus__c****'+con.EmailOptInStatus__c);
                         con.EmailOptInStatus__c='Y';
                         con.EmailOptInDate__c=system.now();
                         con.HasOptedOutOfEmail=false;
@@ -513,13 +514,13 @@ allContacts.add(c);
                     }
                 }
             }  
-            //System.debug('***updateContact:Non Outside Lists - searchBrand = '+searchBrand);
+            //Log.push('***updateContact:Non Outside Lists - searchBrand = '+searchBrand);
             List<SubscriberDataSources__mdt> listDataSource = [SELECT Brand__c, SourceSystem__c, 
                                                                WelcomeSource__c,DataSource__c
                                                                FROM SubscriberDataSources__mdt
                                                                WHERE Brand__c=:searchBrand AND
                                                                SourceSystem__c=:sub.SourceSystem];
-            //System.debug('***updateContact - listDataSource = '+listDataSource);
+            //Log.push('***updateContact - listDataSource = '+listDataSource);
             if (listDataSource.size()>0){
                 Con.Source__c = listDataSource[0].DataSource__c;
             }  
@@ -547,12 +548,12 @@ allContacts.add(c);
             //con.EcommMarket__c=sub.LocalizationMarket;
             //con.EcommRegion__c=sub.LocalizationRegion;
         }
-        
+        Logger.logDebug();
         return Con;
     }
     
     private static Contact createContact(Contact newCon, Subscriber sub, String brandId, Boolean createParent, Boolean createChild) {
-        //System.debug('^^^inside create contact');
+        //Log.push('^^^inside create contact');
         newCon.createdByMethod__c = 'API';
         newCon.RecordTypeId = emailRecordTypeId;
         newCon.Status__c = 'ACTIVE';
@@ -580,9 +581,9 @@ allContacts.add(c);
         if (String.isNotBlank(sub.SourceSystem)) {
             newCon.Source_System__c = sub.SourceSystem;
             newCon.Latest_Source__c = sub.SourceSystem;
-            System.debug('***sub.SourceSystem'+sub.SourceSystem);
-            System.debug('***newCon.Source_System__c'+newCon.Source_System__c);
-            System.debug('*** newCon.Latest_Source__c'+ newCon.Latest_Source__c);
+            Log.push('***sub.SourceSystem'+sub.SourceSystem);
+            Log.push('***newCon.Source_System__c'+newCon.Source_System__c);
+            Log.push('*** newCon.Latest_Source__c'+ newCon.Latest_Source__c);
         }
         
         if (String.isNotBlank(sub.Source)) newCon.Source__c = sub.Source;
@@ -599,7 +600,7 @@ allContacts.add(c);
                 else newCon.Loyalty_Optin_Date__c = System.now();
             }
         }
-        //System.debug('******createParent = '+createParent);
+        //Log.push('******createParent = '+createParent);
         
         if(String.isNotBlank(sub.CompanyCode)) newCon.Company_Code__c = sub.CompanyCode;
         
@@ -645,13 +646,13 @@ allContacts.add(c);
             newCon.HasOptedOutOfEmail=true;
         }
         
-        // System.debug('***createChild = '+createChild);
+        // Log.push('***createChild = '+createChild);
         if(createChild){ // NASSC-1199
             if(String.isNotBlank(sub.SourceSystem) && sub.SourceSystem.equalsIgnoreCase('Outside Lists')){
-                System.debug('***sub.SourceSystem'+sub.SourceSystem);
-                System.debug('***newCon.Source_System__c'+newCon.Source_System__c);
-                System.debug('*** newCon.Latest_Source__c'+ newCon.Latest_Source__c);
-                //System.debug('***inside Setting EmailPreferences for Outside Lists');
+                Log.push('***sub.SourceSystem'+sub.SourceSystem);
+                Log.push('***newCon.Source_System__c'+newCon.Source_System__c);
+                Log.push('*** newCon.Latest_Source__c'+ newCon.Latest_Source__c);
+                //Log.push('***inside Setting EmailPreferences for Outside Lists');
                 List<String> emailOptinSubbrands  = new List<String>();
                 if (String.isNotBlank(sub.EmailOptInForSubBrands))  emailOptinSubbrands = sub.EmailOptInForSubBrands.split('\\|');
                 if((emailOptinSubbrands.size() > 0) && emailOptinSubbrands.contains(brandId)){
@@ -698,20 +699,20 @@ allContacts.add(c);
             if(mapSubbrandParentbrand.containsKey(sub.BrandId)){
                 searchBrand = mapSubbrandParentbrand.get(sub.BrandId);
             }
-            //System.debug('***createContact - searchBrand = '+searchBrand);
+            //Log.push('***createContact - searchBrand = '+searchBrand);
             List<SubscriberDataSources__mdt> listDataSource = [SELECT Brand__c, SourceSystem__c, 
                                                                WelcomeSource__c,DataSource__c
                                                                FROM SubscriberDataSources__mdt
                                                                WHERE Brand__c=:searchBrand AND
                                                                SourceSystem__c=:sub.SourceSystem];
-            //System.debug('***createContact - listDataSource = '+listDataSource);
+            //Log.push('***createContact - listDataSource = '+listDataSource);
             if (listDataSource.size()>0){
                 newCon.EmailOrigSource__c = listDataSource[0].DataSource__c;
                 newCon.Source__c = listDataSource[0].DataSource__c;
             }  
         }
         //End: NASSC-1663
-        
+        Logger.logDebug();
         if(String.isNotBlank(sub.Gender) && (newCon.SelfClaimedGender__c != sub.Gender)) newCon.SelfClaimedGender__c = sub.Gender;
         
         return newCon;
@@ -730,23 +731,24 @@ allContacts.add(c);
                 mapSubscriber.put(inputSub.BrandId+(inputSub.loyaltyid).toLowercase()+(inputSub.SubscriberKey).toLowercase(),inputSub);//Added Sub Key
             }
         }
-        System.debug('***mapSubscriber = '+mapSubscriber);
+        Log.push('***mapSubscriber = '+mapSubscriber);
         for(Subscriber subInput : mapSubscriber.values()){
             listSubscriber.add(subInput);
         }
-        System.debug('listSubscriber --->' +listSubscriber);
+        Log.push('listSubscriber --->' +listSubscriber);
         subObject.Count = String.valueOf(mapSubscriber.size());
         subObject.Subscribes = new List<Subscriber>();
         subObject.Subscribes.addAll(listSubscriber);
-        System.debug('subObject.Subscribes --->' +subObject.Subscribes);
+        Log.push('subObject.Subscribes --->' +subObject.Subscribes);
         subObject.FileName = inputRequest.FileName;
-        System.debug('subObject --->' +subObject);
+        Log.push('subObject --->' +subObject);
+        Logger.logDebug();
         return subObject;
     }
     
     
     public static List<Account> getAccountsToUpdate(){
-        // System.debug('***inside updateAccount');
+        // Log.push('***inside updateAccount');
         List<Account> listUpdAccounts = new List<Account>();
         List<Account> listAccounts = [Select Id, Gender__c from Account where Id IN:accIdsToContact.keySet()];
         for(Account acc : listAccounts){

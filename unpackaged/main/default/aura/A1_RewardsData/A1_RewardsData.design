@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="numRecords" default="0" />
+    <design:attribute name="Spinner" default="false" />
+</design:component>

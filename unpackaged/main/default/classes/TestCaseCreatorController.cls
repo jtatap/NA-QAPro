@@ -14,6 +14,10 @@ public class TestCaseCreatorController {
         contact.AccountId = acc.id;
         contact.Brand_Id__c='1';
 		insert contact;
+        GenericRecords__c gr = new GenericRecords__c();
+        gr.recordId__c = contact.Id;
+        gr.Name ='privacyContact';
+        insert gr;
         ApexPages.StandardController sdc = new ApexPages.StandardController(contact);
         CaseCreatorController caseCreatorController = new CaseCreatorController(sdc);
         CaseCreatorController.createSupportCase();//create new case for this contact id

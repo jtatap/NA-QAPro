@@ -4,7 +4,7 @@
     <label>Warner</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxX3Tj9iDpu2V6_yYBhkKgI664k07iigrutK7Ndi7MdM7wUjW9Zyi8cemz962</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

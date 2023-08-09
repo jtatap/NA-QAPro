@@ -2,6 +2,8 @@
     fetchPicklistValues: function(component,objDetails,controllerField, dependentField,mapAttrName) {
         // call the server side function 
       
+        
+        var success = String($A.get("$Label.c.Success1"));
         var action = component.get("c.getDependentPicklist");
         // pass paramerters [object definition , contrller field name ,dependent field name] -
         // to server side function 
@@ -12,7 +14,7 @@
         });
         //set callback   
         action.setCallback(this, function(response) {
-            if (response.getState() == "SUCCESS") {
+            if (response.getState() == success) {
                 //store the return response from server (map<string,List<string>>)  
                 var StoreResponse = response.getReturnValue();
                // once set #StoreResponse to depnedentFieldMap attribute 

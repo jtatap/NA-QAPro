@@ -38,7 +38,7 @@
                     <value>3</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
-                <identifier>force_highlightsPanel</identifier>
+                <identifier>highlightsPanel1Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -53,7 +53,7 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListQuickLinksContainer</componentName>
-                <identifier>force_relatedListQuickLinksContainer</identifier>
+                <identifier>relatedListQuickLinksContainer1Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-74d97c91-4615-4456-ae46-9210eeef6c80</name>
@@ -62,14 +62,22 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.B2C_AuthToken__c</fieldItem>
+                <identifier>RecordB2C_AuthToken_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.B2C_Client_ID__c</fieldItem>
-                <identifier>RecordB2C_Client_ID__cField</identifier>
+                <identifier>b2cClientId1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-3267fb33-4cb0-471f-b73c-c493b7e38c96</name>
@@ -78,8 +86,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Is_Valid__c</fieldItem>
-                <identifier>RecordIs_Valid__cField</identifier>
+                <identifier>isValid1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -90,8 +102,12 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Is_Expired__c</fieldItem>
-                <identifier>RecordIs_Expired__cField</identifier>
+                <identifier>isExpired1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -107,7 +123,7 @@
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Expiration_Date__c</fieldItem>
-                <identifier>RecordExpiration_Date__cField</identifier>
+                <identifier>expirationDate1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -127,7 +143,7 @@
                     <value>Facet-3267fb33-4cb0-471f-b73c-c493b7e38c96</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column</identifier>
+                <identifier>column1Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -137,7 +153,7 @@
                     <value>Facet-314b7e2a-7dfe-4400-865c-3480757a4e93</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column2</identifier>
+                <identifier>column2Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-f708e4ba-89cd-4fc2-987b-fb15c334312b</name>
@@ -146,8 +162,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Is_Invalidated__c</fieldItem>
-                <identifier>RecordIs_Invalidated__cField</identifier>
+                <identifier>isInvalidated1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -162,8 +182,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Invalidation_Date__c</fieldItem>
-                <identifier>RecordInvalidation_Date__cField</identifier>
+                <identifier>invalidationDate1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -183,7 +207,7 @@
                     <value>Facet-f1477d29-8a04-426d-b793-e893e73c2bfc</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column3</identifier>
+                <identifier>column3Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -193,7 +217,7 @@
                     <value>Facet-c52df0f4-a5eb-4815-bc19-61d10f8ebb04</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column4</identifier>
+                <identifier>column4Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-c87c23ea-920b-4c2f-99d7-e847c6c540d8</name>
@@ -202,14 +226,22 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.B2C_ClientID_Value__c</fieldItem>
-                <identifier>RecordB2C_ClientID_Value__cField</identifier>
+                <identifier>b2cClientIdValue1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Is_B2C_Client_ID_Active__c</fieldItem>
-                <identifier>RecordIs_B2C_Client_ID_Active__cField</identifier>
+                <identifier>b2cClientIdActive1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-cd6118d4-425b-4e58-bb10-a82ce1134b1b</name>
@@ -218,14 +250,22 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.JWT_Certificate_Developer_Name__c</fieldItem>
-                <identifier>RecordJWT_Certificate_Developer_Name__cField</identifier>
+                <identifier>jwtCertificateDevName1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Is_JWT_Certificate_Valid__c</fieldItem>
-                <identifier>RecordIs_JWT_Certificate_Valid__cField</identifier>
+                <identifier>jwtCertificateValid1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4825fcdc-bf36-41a6-bf45-e11af9e7f084</name>
@@ -239,7 +279,7 @@
                     <value>Facet-cd6118d4-425b-4e58-bb10-a82ce1134b1b</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column5</identifier>
+                <identifier>column5Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -249,7 +289,7 @@
                     <value>Facet-4825fcdc-bf36-41a6-bf45-e11af9e7f084</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column6</identifier>
+                <identifier>column6Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-af471c55-e9ac-4890-a5c0-1b1953905f34</name>
@@ -258,8 +298,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Description__c</fieldItem>
-                <identifier>RecordDescription__cField</identifier>
+                <identifier>description1Id</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-d99332d0-6cb3-4fd6-afab-fc4b429e21e6</name>
@@ -273,7 +317,7 @@
                     <value>Facet-d99332d0-6cb3-4fd6-afab-fc4b429e21e6</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column7</identifier>
+                <identifier>column7Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-2e08eb45-6910-4538-b3e2-15c1b0548d9d</name>
@@ -291,7 +335,7 @@
                     <value>Status</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection</identifier>
+                <identifier>fieldSection1Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -305,7 +349,7 @@
                     <value>Manually Invalidate B2C AuthToken</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection2</identifier>
+                <identifier>fieldSection2Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -325,7 +369,7 @@
                     <value>B2C Client ID Properties</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection3</identifier>
+                <identifier>fieldSection3Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -345,7 +389,7 @@
                     <value>Description</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection4</identifier>
+                <identifier>fieldSection4Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-4f1f8bf5-0b65-42aa-bf9b-83c22460ab0c</name>
@@ -354,8 +398,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.CreatedById</fieldItem>
-                <identifier>RecordCreatedByIdField</identifier>
+                <identifier>createdById1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -375,7 +423,7 @@
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.LastModifiedById</fieldItem>
-                <identifier>RecordLastModifiedByIdField</identifier>
+                <identifier>lastModifiedById1Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -395,7 +443,7 @@
                     <value>Facet-89376b72-c133-4a37-aced-a89e617b3445</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column8</identifier>
+                <identifier>column8Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -405,7 +453,7 @@
                     <value>Facet-a3db6553-976d-4530-892c-e7b356e1c77b</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column9</identifier>
+                <identifier>column9Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-6af03da9-539c-4733-99e9-3916976bbe9d</name>
@@ -423,7 +471,7 @@
                     <value>System Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection5</identifier>
+                <identifier>fieldSection5Id</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Name}</leftValue>
@@ -451,7 +499,7 @@
                     <value>accordionSection--tjp9me2d7pa</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordionSection</componentName>
-                <identifier>customSection</identifier>
+                <identifier>accordionSection1Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -469,7 +517,7 @@
                     <value>accordionSection1</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordionSection</componentName>
-                <identifier>customSection2</identifier>
+                <identifier>accordionSection2Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -487,7 +535,7 @@
                     <value>accordionSection2</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordionSection</componentName>
-                <identifier>customSection3</identifier>
+                <identifier>accordionSection3Id</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-f3e632ab-51ea-464d-8393-8569d85ab8ef</name>
@@ -505,13 +553,13 @@
                     <value>accordionSection1</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordion</componentName>
-                <identifier>flexipage_accordion</identifier>
+                <identifier>accordion1Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>force:recordDetailPanelMobile</componentName>
-                <identifier>force_recordDetailPanelMobile</identifier>
+                <identifier>recordDetailPanelMobile1Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -534,7 +582,7 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
+                <identifier>relatedListContainer1Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -557,7 +605,7 @@
                     <value>Standard.Tab.detail</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>detailTab</identifier>
+                <identifier>tab1Id</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -571,7 +619,7 @@
                     <value>Standard.Tab.relatedLists</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>relatedListsTab</identifier>
+                <identifier>tab2Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -586,7 +634,7 @@
                     <value>maintabs</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
+                <identifier>tabset2Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -597,7 +645,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
-                <identifier>forceChatter_recordFeedContainer</identifier>
+                <identifier>recordFeedContainer1Id</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

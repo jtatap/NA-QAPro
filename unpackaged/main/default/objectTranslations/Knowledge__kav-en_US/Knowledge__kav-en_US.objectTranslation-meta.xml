@@ -8,17 +8,6 @@
         <plural>true</plural>
         <value>Knowledge</value>
     </caseValues>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <layouts>
         <layout>Community Layout</layout>
         <sections>
@@ -154,5 +143,17 @@
         <label><!-- Procedure --></label>
         <name>Procedure</name>
     </recordTypes>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

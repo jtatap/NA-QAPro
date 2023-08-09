@@ -4,7 +4,7 @@
  * @last modified on  : 08-05-2021
  * @last modified by  : chayan.batabyal@neuraflash.com
 **/
-@isTest
+@isTest(isParallel=false)
 public class NF_BrandFormControllerTest {
 
     public static Webform_Brands__mdt getDefault(){
@@ -37,7 +37,7 @@ public class NF_BrandFormControllerTest {
         pob.order = 2;
         pob.information = 'The work is in progress';
         pob.show = true;
-
+		Test.startTest();
         NF_BrandFormController.FormConfig fo = new NF_BrandFormController.FormConfig();
 
         System.assertEquals('',NF_BrandFormController.selectOption().value);
@@ -46,6 +46,7 @@ public class NF_BrandFormControllerTest {
         cob.parentId = 'someRandomCaseId';
         cob.filesToLink = new List<NF_BrandFormController.FileObject>{new NF_BrandFormController.FileObject()};
             cob.filesToDelete = new List<NF_BrandFormController.FileObject>{new NF_BrandFormController.FileObject()};
+                Test.stopTest();
                 System.assertEquals('someRandomCaseId',cob.parentId);
     }
 
@@ -54,8 +55,9 @@ public class NF_BrandFormControllerTest {
         String caseString = '{"filesToRelate": [],"filesToDelete": [],"Brand__c": 1,"Supplied_First_Name__c": "Amit","Supplied_Last_Name__c": "Gayal","SuppliedEmail": "amitgl259@gmail.com","SuppliedPhone": "+919899902749",';
         caseString += '"Channel__c": "Tommy.com","Reason_Code__c": "Loyalty","Reason_Code_Details__c": "Edit Account Information","Tracking_Number__c": "T0021321",';
         caseString += '"Order_Number__c": "O0021321","Description": "I cannot track my order. Please help me.\\n\\n", "Type": "Privacy"}';
-
+		Test.startTest();
         String caseId = NF_BrandFormController.createCase(caseString);
+        Test.stopTest();
         System.assertNotEquals(NULL,caseId);
     }
 
@@ -64,8 +66,9 @@ public class NF_BrandFormControllerTest {
         String caseString = '{"filesToRelate": [],"filesToDelete": [],"Brand__c": 1,"Supplied_First_Name__c": "Amit","Supplied_Last_Name__c": "Gayal","SuppliedEmail": "amitgl259@gmail.com","SuppliedPhone": "+919899902749",';
         caseString += '"Channel__c": "Tommy.com","Reason_Code__c": "Product","Reason_Code_Details__c": "Defective Merchandise","Tracking_Number__c": "T0021321",';
         caseString += '"Order_Number__c": "O0021321","Description": "I cannot track my order. Please help me.\\n\\n", "Type": "Privacy"}';
-
+		Test.startTest();
         String caseId = NF_BrandFormController.createCase(caseString);
+        Test.stopTest();
         System.assertNotEquals(NULL,caseId);
     }
 

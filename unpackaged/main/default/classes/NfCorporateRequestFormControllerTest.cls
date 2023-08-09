@@ -1,4 +1,4 @@
-@isTest
+@isTest(isParallel=false)
 public class NfCorporateRequestFormControllerTest {
     
     /* This will need to be deprecated once refactoring happens */

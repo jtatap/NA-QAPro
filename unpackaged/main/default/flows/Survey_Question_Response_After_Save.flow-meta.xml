@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>WHEN Survey Question Response is created where Customer wants follow up
+THEN trigger Create_Follow_up_Case flow</description>
+        <name>decCustomer_wants_follow_up</name>
+        <label>Customer wants follow up?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>resYes_Customer_wants_follow_up</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Question.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Would you like someone to follow up﻿ with you in regard to this</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ResponseValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Followup_Field</targetReference>
+            </connector>
+            <label>Yes, Customer wants follow up</label>
+        </rules>
+    </decisions>
+    <description>WHEN Survey Question Response is created where Customer wants follow up
+THEN trigger Create_Follow_up_Case flow</description>
+    <environments>Default</environments>
+    <interviewLabel>Survey Question Response: After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Survey Question Response: After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decCustomer_wants_follow_up</targetReference>
+        </connector>
+        <object>SurveyQuestionResponse</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Update_Followup_Field</name>
+        <label>Update Followup Field</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <flowName>Create_Follow_up_Case</flowName>
+        <inputAssignments>
+            <name>surveyInvitationId</name>
+            <value>
+                <elementReference>$Record.InvitationId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

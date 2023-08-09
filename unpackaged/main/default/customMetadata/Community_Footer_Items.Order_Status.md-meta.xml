@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">https://usa.tommy.com/TrackYourOrderView?catalogId=10551&amp;langId=-1&amp;storeId=10151</value>
+        <value xsi:type="xsd:string">https://usa.tommy.com/en/trackorder</value>
     </values>
 </CustomMetadata>

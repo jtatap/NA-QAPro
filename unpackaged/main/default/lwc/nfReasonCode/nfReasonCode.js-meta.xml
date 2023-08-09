@@ -5,6 +5,12 @@
     <targets>
         <target>lightning__RecordPage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="objectApiName" type="String" default="Case"></property>
+            <property name="indFields" type="String" default="Reason_Code__c;Reason_Code_Details__c;Reason_Sub_detail__c;Reason_Code_Product_Category__c;Reason_Code_Product_Sub_Categories_Widge__c;Reason_Code_Manufacturers__c;Sku_Style_Number__c;ZdPVHStoreNumber__c;ZdPVHDistrictNumber__c;Third_Party_Vendors__c;ZdPVHDateofServiceIssue__c;ZdPVHUpdateAccountInfoReason__c" />
+        </targetConfig>
+    </targetConfigs>
     <masterLabel>NF Reason Code</masterLabel>
     <description>This component is meant to be used in the Case Record Page. It displays a visual way to set the reason code.  </description>
 </LightningComponentBundle>

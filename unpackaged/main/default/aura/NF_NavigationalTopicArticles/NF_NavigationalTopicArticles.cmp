@@ -16,9 +16,7 @@
                     <aura:iteration items="{!v.topicList}" var="topicItem" indexVar="topicNumber">
                         <div class="listDesign">
                             <div class="Header-grid-container1 navTopicDesign">
-                                <!--<div><h1  ><a name="{!topicItem.Name}" href="{!v.communityUrl +topicItem.topicId}" title="{!topicItem.Name}" target="_self">{!topicItem.Name}</a></h1></div>-->
                                 <div><h1><a  style="{!'font-weight:700;font-size:24px;color:'+v.ColorDesign}" name="{!topicItem.topicName}" href="{!v.communityUrl +topicItem.topicId}" title="{!topicItem.topicName}" target="_self">{!topicItem.topicName}</a></h1></div> 
-                                <!--  <div><h1 style="{!'font-weight:700;font-size:24px;color:'+v.ColorDesign}">{!topicItem.topicName}</h1></div>-->
                                 <div class="rightAlign marginLAuto"><lightning:buttonIcon aura:id="chevronrightIcon" size="large" iconName="{!topicItem.iconName}" class="expandDiv" value="{!topicNumber}" variant="bare" onclick="{! c.handleClick }" alternativeText="expand" title="expand" /></div>
                             </div>
                             <hr class="topicLine" style="{!'border: solid 1px' +v.ColorDesign}" />

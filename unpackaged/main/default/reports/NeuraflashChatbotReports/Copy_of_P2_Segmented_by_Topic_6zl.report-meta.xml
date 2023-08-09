@@ -21,6 +21,13 @@
             <operator>contains</operator>
             <value>start,direct</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ebotdata__Bot_Chat_Log__c.ebotdata__Topic_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>General</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

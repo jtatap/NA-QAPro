@@ -174,6 +174,16 @@ Only use for Agil1 file transfers</description>
             <field>OriginalExpireDate__c</field>
             <table>Reward__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BonusBuy_ID__c</field>
+            <table>Reward__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Coupon_ID__c</field>
+            <table>Reward__c</table>
+        </columns>
         <masterLabel>Rewards</masterLabel>
     </sections>
     <sections>
@@ -355,6 +365,11 @@ Only use for Agil1 file transfers</description>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>c_cancelationtimestamp__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>PointsGranted__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
@@ -391,6 +406,16 @@ Only use for Agil1 file transfers</description>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Order_Number__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Parent</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>ZdPVHStoreNumber__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
@@ -401,32 +426,132 @@ Only use for Agil1 file transfers</description>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>ZdPVHOrders__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Type_READONLY__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IsChild__c</field>
+            <field>ZdPVHPhonenumber__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>B2C_Is_Locked__c</field>
+            <field>Supplied_Last_Name__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Is_Automation_Bypassed__c</field>
+            <field>Email_Assignment_Code__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AutomationBypassDateTimeDelay__c</field>
+            <field>Dear_Valued_Customer__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CSR_Email_UserConfirmation__c</field>
+            <field>Web_Email_READONLY__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SuppliedEmail</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Supplied_First_Name__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Support_Phone_Number__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Account</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Brand_Id__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Brand__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Id</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Contact_18_Digit_ID__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Email</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.MailingCountry</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Mailing_Country_Code__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.MailingGeocodeAccuracy</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.StoreOfCapture__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Source_System__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Store_Credit__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.StorePreference__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.StoreOfPreferenceLanguage__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>NFCaseScenario__c</field>
+            <table>Reward__c.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tealium_Email_Suppression__c</field>
             <table>Reward__c.Cases__r</table>
         </columns>
         <masterLabel>Cases</masterLabel>

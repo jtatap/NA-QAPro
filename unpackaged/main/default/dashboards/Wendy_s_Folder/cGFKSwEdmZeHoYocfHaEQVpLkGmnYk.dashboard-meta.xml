@@ -21,21 +21,29 @@
             <values>LAST_90_DAYS</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_FISCAL_QUARTER</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_FISCAL_QUARTER</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_FISCAL_YEAR</values>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>2/27/2022 12:00 AM</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>between</operator>
-            <values>11/27/2020 12:00 AM</values>
-            <values>12/2/2020 12:00 AM</values>
+            <values>2/28/2022 12:00 AM</values>
+            <values>4/3/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>4/4/2022 12:00 AM</values>
+            <values>5/1/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>5/1/2022 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>1/31/2022 12:00 AM</values>
+            <values>4/7/2022 12:00 AM</values>
         </dashboardFilterOptions>
         <name>Created Date</name>
     </dashboardFilters>
@@ -75,46 +83,16 @@
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>2</colSpan>
+            <colSpan>5</colSpan>
             <columnIndex>3</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
                     <axisBinding>y</axisBinding>
                     <column>FORMULA1</column>
                 </chartSummary>
-                <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>SurveyResponse$CreatedDate</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
-                <header>PVH CSAT</header>
-                <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/CSAT_Reports/Copy_of_CSAT_Trend</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>5</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Manual</chartAxisRange>
-                <chartAxisRangeMax>100.0</chartAxisRangeMax>
-                <chartAxisRangeMin>50.0</chartAxisRangeMin>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>FORMULA1</column>
-                </chartSummary>
-                <componentType>LineGrouped</componentType>
+                <componentType>Line</componentType>
                 <dashboardFilterColumns>
                     <column>SurveyResponse$CreatedDate</column>
                 </dashboardFilterColumns>
@@ -124,24 +102,18 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>SurveyResponse$CompletionDateTime</groupingColumn>
-                <groupingColumn>BucketField_34507918</groupingColumn>
+                <groupingColumn>SurveyResponse$CreatedDate</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>FORMULA1</sortColumn>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                    <groupingSorts>
-                        <groupingLevel>g2</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>PVH and TRUE CSAT</header>
-                <legendPosition>Right</legendPosition>
+                <header>CSAT Trend</header>
+                <legendPosition>Bottom</legendPosition>
                 <report>Wendy_s_Folder/CSAT_Reports/All_PVH_CSAT</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
@@ -149,16 +121,20 @@
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>9</columnIndex>
+            <colSpan>4</colSpan>
+            <columnIndex>8</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
+                    <axisBinding>x</axisBinding>
+                    <column>FORMULA1</column>
+                </chartSummary>
+                <chartSummary>
                     <axisBinding>y</axisBinding>
                     <column>FORMULA1</column>
                 </chartSummary>
-                <componentType>Bar</componentType>
+                <componentType>ScatterGrouped</componentType>
                 <dashboardFilterColumns>
                     <column>Case.Survey_Invitations__r$CreatedDate</column>
                 </dashboardFilterColumns>
@@ -169,51 +145,27 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>BucketField_44595246</groupingColumn>
+                <groupingColumn>Case$Brand_Lookup_Search__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
                 </groupingSortProperties>
                 <header>CSAT by Brand</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/CSAT_Reports/PVH_Brand_CSAT</report>
+                <legendPosition>Right</legendPosition>
+                <report>CSAT_Reports/PVH_Brand_CSAT</report>
                 <showPercentage>false</showPercentage>
-                <showPicturesOnCharts>false</showPicturesOnCharts>
-                <showValues>true</showValues>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>8</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>FORMULA1</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>SurveyResponse$CreatedDate</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
-                <header>TRUE CSAT</header>
-                <indicatorBreakpoint1>60.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/CSAT_Reports/TRUE_CSAT</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -244,7 +196,7 @@
                 </groupingSortProperties>
                 <header>CSAT by Agent</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/CSAT_Reports/CSAT_by_Agent</report>
+                <report>CSAT_Reports/CSAT_by_Agent</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -297,7 +249,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Top 10</header>
-                <report>Wendy_s_Folder/CSAT_Reports/CSAT_by_Agent</report>
+                <report>CSAT_Reports/CSAT_by_Agent</report>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>
@@ -344,7 +296,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Bottom 10</header>
-                <report>Wendy_s_Folder/CSAT_Reports/CSAT_by_Agent</report>
+                <report>CSAT_Reports/CSAT_by_Agent</report>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>
@@ -422,7 +374,7 @@
                 </groupingSortProperties>
                 <header>CSAT by Reason Code</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/CSAT_Reports/CSAT_by_Reason_Code</report>
+                <report>CSAT_Reports/CSAT_by_Reason_Code</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -467,7 +419,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>PVH CSAT by Reason Code</header>
-                <report>Wendy_s_Folder/CSAT_Reports/PVH_Brand_CSAT_by_Reason_Code</report>
+                <report>CSAT_Reports/PVH_Brand_CSAT_by_Reason_Code</report>
             </dashboardComponent>
             <rowIndex>16</rowIndex>
             <rowSpan>8</rowSpan>
@@ -508,7 +460,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>TRUE CSAT by Reason Code</header>
-                <report>Wendy_s_Folder/CSAT_Reports/TRUE_CSAT_by_Reason_Code</report>
+                <report>CSAT_Reports/TRUE_CSAT_by_Reason_Code</report>
             </dashboardComponent>
             <rowIndex>16</rowIndex>
             <rowSpan>8</rowSpan>
@@ -555,7 +507,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>CSAT by Channel</header>
-                <report>Wendy_s_Folder/CSAT_Reports/CSAT_by_Channel</report>
+                <report>CSAT_Reports/CSAT_by_Channel</report>
             </dashboardComponent>
             <rowIndex>16</rowIndex>
             <rowSpan>8</rowSpan>

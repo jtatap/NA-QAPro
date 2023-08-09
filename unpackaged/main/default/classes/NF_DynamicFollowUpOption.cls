@@ -15,19 +15,19 @@ public class NF_DynamicFollowUpOption {
     public static List<List<String>> getdynamicFollowUpOptions(List<String> dialogName) {
         List<String> stringList = new List<String>();
         List<List<String>> finalStringList = new List<List<String>>();
-        String QR1 = 'Yes';
-        String QR2 = 'No';
+        String QR1 = SYSTEM.LABEL.Yes;
+        String QR2 = SYSTEM.LABEL.No;
         String QR3;
 
         if(!dialogName.isEmpty() && String.isNotBlank(dialogName[0])) {
-            if(dialogName[0] == 'Product Details') {
-                QR3 = 'Find a different product';
+            if(dialogName[0] == SYSTEM.LABEL.Product_Details) {
+                QR3 = SYSTEM.LABEL.Find_a_different_product;
             }
-            if(dialogName[0] == 'Case Details') {
-                QR3 = 'Find a different case';
+            if(dialogName[0] == SYSTEM.LABEL.Case_Details) {
+                QR3 = SYSTEM.LABEL.Find_a_different_case;
             }
-            if(dialogName[0] == 'RMA Details') {
-                QR3 = 'Find a different RMA';
+            if(dialogName[0] == SYSTEM.LABEL.RMA_Details) {
+                QR3 = SYSTEM.LABEL.Find_a_different_RMA;
             }
         }
         stringList.add(QR1);

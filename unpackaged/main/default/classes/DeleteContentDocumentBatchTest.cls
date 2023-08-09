@@ -39,7 +39,7 @@ private class DeleteContentDocumentBatchTest {
 }*/
 
 //edited testClass 
-@isTest
+@isTest(isParallel=false)
 public class DeleteContentDocumentBatchTest 
 {
 	@testsetup
@@ -47,6 +47,10 @@ public class DeleteContentDocumentBatchTest
     {
       list<pcify__log__c> l=[SELECT pcify__RecordId__c FROM pcify__Log__c WHERE pcify__CreditCardDetected__c = TRUE AND pcify__Object__c ='ContentVersion' ORDER BY CreatedDate DESC limit 10];
     	insert l;
+        pcify__log__c log = new pcify__log__c();
+        log.pcify__LuhnValid__c  = true;
+        log.pcify__Object__c = 'ContentVersion';
+            insert log;
         list<ContentVersion> CVl=[SELECT ContentDocumentId FROM ContentVersion limit 10];
         insert CVl;
         //list<ContentDocument> CDl=[SELECT FileType,SharingOption FROM ContentDocument];

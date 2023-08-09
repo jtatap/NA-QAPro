@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEO_Additional_Detail__c</fullName>
+    <description>Use to add additional text for Title Tags in conjunction with existing Title &amp; Brand values</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use to add additional text for Title Tags in conjunction with existing Title &amp; Brand values. Enter with pipe &quot;|&quot; space &quot; &quot; then text. Example &quot;| Preferred Loyalty Program&quot;</inlineHelpText>
+    <label>SEO Additional Detail</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

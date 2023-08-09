@@ -2,15 +2,18 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Shipment_Carrier_should_be_same_as_Brand</fullName>
     <active>true</active>
-    <errorConditionFormula>((ISPICKVAL(Carrier__c,&#39;UPS - TH&#39;)) ||
-(ISPICKVAL(Carrier__c,&#39;UPS - HR&#39;)) ||
-(ISPICKVAL(Carrier__c,&#39;UPS - SP&#39;)))
- &amp;&amp;
-(
-ISPICKVAL( Brand__c,&#39;2&#39; ) 
-)&amp;&amp;
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Carrier__c,&#39;UPS - TH&#39;),
+        ISPICKVAL(Carrier__c,&#39;UPS - HR&#39;),
+        ISPICKVAL(Carrier__c,&#39;UPS - SP&#39;)
+    ),
+    ISPICKVAL( Brand__c,&#39;2&#39; ),
+    OR(
+        NOT(ISPICKVAL(Carrier__c, &#39;FedEx Jonesville&#39;)),
+        NOT(ISPICKVAL(Carrier__c, &#39;Fedex Bridgewater&#39;))
+    )
 
-(NOT(ISPICKVAL(Carrier__c, &#39;FedEx Jonesville&#39;)) ||
-NOT(ISPICKVAL(Carrier__c, &#39;Fedex Bridgewater&#39;)))</errorConditionFormula>
+)</errorConditionFormula>
     <errorMessage>Please select UPS-CK in the Carrier field.</errorMessage>
 </ValidationRule>

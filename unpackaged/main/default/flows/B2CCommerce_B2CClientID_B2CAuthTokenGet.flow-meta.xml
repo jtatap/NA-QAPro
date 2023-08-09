@@ -81,7 +81,7 @@
             <assignToReference>B2CAuthToken</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>recGet_ValidAuthToken.Name</elementReference>
+                <elementReference>recGet_ValidAuthToken.B2C_AuthToken__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -339,6 +339,7 @@
         </rules>
     </decisions>
     <description>... this flow is used to retrieve / request a REST API AuthToken from B2C Commerce&#39;s Account Manager for a given NamedCredential and B2C ClientID combination.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Auth: Get AuthToken {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: B2C Client ID: Account Manager AuthToken: Get</label>
     <processMetadataValues>

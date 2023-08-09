@@ -9,7 +9,6 @@
     <columns>ZetaGUID__c</columns>
     <columns>WaterfallSMSEnabled__c</columns>
     <columns>MCSMSEnabled__c</columns>
-    <columns>EnableRewardsButton__c</columns>
     <filterScope>Everything</filterScope>
     <label>Records</label>
 </ListView>

@@ -14,7 +14,7 @@ public class NF_ArticlesWithThisTopicControllerTest {
     static void makeData(){
         Id networkId = [SELECT Id FROM Network Order By Id LIMIT 1].Id;
 
-        Knowledge__kav newArticle = new Knowledge__kav(
+        /*Knowledge__kav newArticle = new Knowledge__kav(
             Title = 'TestTitle', Summary = 'TestSummary', URLName='TestURL', Sort_Order__c = 1
         );
         insert newArticle;
@@ -24,8 +24,20 @@ public class NF_ArticlesWithThisTopicControllerTest {
             FROM Knowledge__kav
             WHERE Id =: newArticle.Id
             LIMIT 1
-        ].KnowledgeArticleId, true);
+        ].KnowledgeArticleId, true);*/
+        
+        User knowledgeUser = [SELECT id,UserPermissionsKnowledgeUser FROM User WHERE UserPermissionsKnowledgeUser = true AND isActive = true AND Profile.Name = 'System Administrator' LIMIT 1];
+        
+        Knowledge__kav newArticle = new Knowledge__kav(Summary= 'TestSummary', Language = 'en_US', Title = 'TestTitle', UrlName = 'TestURL',Sort_Order__c=1);
+		insert newArticle;
 
+		Knowledge__kav k = [SELECT KnowledgeArticleId, PublishStatus FROM Knowledge__kav WHERE Id = :newArticle.Id];
+		String articleID = k.KnowledgeArticleId;
+        
+        System.runAs(knowledgeUser){
+           KbManagement.PublishingService.publishArticle(articleID, true);
+        }
+		
         Topic newTopic = new topic(NetworkId = networkId, Name = 'TestTopic');
         insert newTopic;
 

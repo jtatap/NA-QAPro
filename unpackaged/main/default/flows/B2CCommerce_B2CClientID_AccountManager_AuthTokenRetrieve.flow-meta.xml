@@ -103,7 +103,7 @@
             <name>tokenType</name>
         </outputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... audit the authToken failure -- since the retryCount was exceeded and no authToken was retrieved.</description>
         <name>asn_auditAuthTokenFailure</name>
@@ -311,6 +311,7 @@
         </rules>
     </decisions>
     <description>... retrieve a B2C Commerce Account Manager AuthToken using the verified B2C Client ID.</description>
+    <environments>Default</environments>
     <formulas>
         <description>... converts the retryCount picklist value to an integer we can count / measure</description>
         <name>RetryCountLimit</name>

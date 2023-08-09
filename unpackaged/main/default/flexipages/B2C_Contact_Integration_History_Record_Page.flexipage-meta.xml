@@ -146,12 +146,20 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Integration_Status_Code__c</fieldItem>
                 <identifier>RecordIntegration_Status_Code__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Integration_Has_Error__c</fieldItem>
                 <identifier>RecordIntegration_Has_Error__cField</identifier>
             </fieldInstance>
@@ -162,12 +170,20 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.B2C_AuthToken__c</fieldItem>
                 <identifier>RecordB2C_AuthToken__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Integration_Message__c</fieldItem>
                 <identifier>RecordIntegration_Message__cField</identifier>
             </fieldInstance>
@@ -202,12 +218,20 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.API_Url__c</fieldItem>
                 <identifier>RecordAPI_Url__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Process_Mode__c</fieldItem>
                 <identifier>RecordProcess_Mode__cField</identifier>
             </fieldInstance>

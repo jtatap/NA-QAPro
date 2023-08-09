@@ -1,4 +1,4 @@
-@isTest
+@isTest(isParallel=false)
 public class BulkSignUpTest {
     private static String getRendomNumber(Integer iDigit){
         return string.valueOf(Math.abs(Crypto.getRandomInteger())).leftPad(iDigit, '0');
@@ -341,8 +341,8 @@ public class BulkSignUpTest {
         BulkSignUp.SubResponse response =  BulkSignUp.doSignUp();
         Test.stopTest();        
         system.assertNotEquals(null, response);
-        //system.assertEquals('INVALID_QUERY', response.Code);
-        //system.assertEquals('Missing required parameters:  BrandId or email', response.Message);
+        system.assertNotEquals('INVALID_QUERY', response.Code);
+        system.assertNotEquals('Missing required parameters:  BrandId or email', response.Message);
     }
     
     @isTest
@@ -421,9 +421,7 @@ public class BulkSignUpTest {
         system.assertEquals(null, subData[0].SubscriberKey);
         List<Contact> contacts = new List<Contact>();
         contacts.add(createContact(subData[0]));
-        System.debug('Con brand'+contacts[0].Source_System__c);
-        System.debug('Con brand'+contacts[0].Brand_Id__c);
-        System.debug('Con brand'+contacts[0].StoreOfCapture__c);
+        
    //     contacts.add(createContact(subData[3]));
         insert contacts;
         subData[0].SubscriberKey = contacts[0].Id;
@@ -443,9 +441,7 @@ public class BulkSignUpTest {
         req.requestBody = Blob.valueof(JsonMsg);
         RestContext.request = req;
         RestContext.response= res;
-        System.debug('res :'+res);        
         BulkSignUp.SubResponse response =  BulkSignUp.doSignUp();
-        system.debug('****res1: ' + response);
         Test.stopTest();
         system.assertEquals('OK',response.Code);
     //    system.assertEquals('6',response.Count);
@@ -512,15 +508,14 @@ public class BulkSignUpTest {
         req.requestBody = Blob.valueof(JsonMsg);
         RestContext.request = req;
         RestContext.response= res;
-        System.debug('res :'+res);        
         BulkSignUp.SubResponse response =  BulkSignUp.doSignUp();
-        system.debug('****res1: ' + response);
         Test.stopTest();
         system.assertEquals('OK',response.Code);
     //    system.assertEquals('6',response.Count);
      //   system.assertEquals(6, [SELECT COUNT() FROM Contact]);
 
     }
+
     @isTest
     static void testBulkSignupBulkBuyer(){
         Contact newCon = new Contact();

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Payroll-provided message for former associates to access WD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>W-2 Inquiry, Current Associates</name>
+    <style>none</style>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -65,13 +65,13 @@ public with sharing class B2CIAPublishCustomerProfile extends B2CBaseAttributeAs
             if (requestInput.b2cProfileJSON != null && requestInput.b2cProfileJSON.length() > 0) {
 
                 // Otherwise, leverage the pre-defined profileJSON in the response
-               thisB2CProfileJSON = requestInput.b2cProfileJSON;
+                thisB2CProfileJSON = requestInput.b2cProfileJSON;
 
             }
 
             // Build the request object utilizing the input properties
             req = B2CHttpRequestHelper.getCustomerProfilePatchRequest(requestInput.apiUrl, requestInput.b2cAuthToken, requestInput.apiVersion, requestInput.b2cCustomerListId, requestInput.b2cCustomerNo, thisB2CProfileJSON);
-			system.debug('req>>>>>'+req);
+            system.debug('req>>>>>'+req);
             // Initialize the request
             https = new Http();
             res = https.send(req);
@@ -115,6 +115,9 @@ public with sharing class B2CIAPublishCustomerProfile extends B2CBaseAttributeAs
 
                 // Calculate and increment total updates to this profile via B2C Commerce Platform Events
                 totalUpdates = Integer.valueOf(customerPublishResult.crmContact.get('Total_Updates_to_B2C_Commerce__c'));
+                if(totalUpdates == null){
+                    totalUpdates = 0;
+                }
                 totalUpdates = totalUpdates + 1;
 
                 // Audit the total profile updates and the date an update was last processed

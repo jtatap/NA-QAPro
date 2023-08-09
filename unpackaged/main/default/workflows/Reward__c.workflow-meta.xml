@@ -16,7 +16,7 @@
             <name>Original_Expired_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Used to get the Previous value of ExpireDate</description>
         <formula>True</formula>
         <triggerType>onAllChanges</triggerType>

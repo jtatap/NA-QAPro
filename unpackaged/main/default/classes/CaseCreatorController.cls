@@ -9,10 +9,10 @@ public class CaseCreatorController {
     public PageReference createSupportCase(){
         // Apex code for handling record from a Detail page goes here
         Id contactRecordId = standardController.getId();
-        System.debug('Contact ID:'+contactRecordId);
+        Log.push('Contact ID:'+contactRecordId);
         Contact[] contacts = [SELECT Id,Brand_Id__c,RingCentralChannel__c,Phone,MobilePhone,OtherPhone FROM Contact WHERE id = :contactRecordId];
        	Contact selectedContact = contacts[0];
-        System.debug('selectedContact:'+selectedContact);
+        Log.push('selectedContact:'+selectedContact);
         String recordTypeId = Schema.getGlobalDescribe().get('Case').getDescribe().getRecordTypeInfosByName().get('Support Case').getRecordTypeId();
         //pick first not null phone number of contact in order of priority, Phone >MobilePhone>OtherPhone
         String incomingPhoneNumber = String.isNotBlank(selectedContact.Phone)?selectedContact.Phone:selectedContact.MobilePhone;  
@@ -21,7 +21,7 @@ public class CaseCreatorController {
         }
         Case c = new Case();
         c.RecordTypeId = recordTypeId;
-        c.Origin = 'Phone';
+        c.Origin = SYSTEM.LABEL.Phone;
         c.Brand__c = selectedContact.Brand_Id__c;
         c.SuppliedPhone = incomingPhoneNumber;
         if(String.isNotBlank(selectedContact.RingCentralChannel__c)){
@@ -30,17 +30,18 @@ public class CaseCreatorController {
         c.ContactId = contactRecordId;
         insert c;
         String urlvalue=Apexpages.currentPage().getUrl();
-        System.debug('current page URL:'+urlvalue);
+        Log.push('current page URL:'+urlvalue);
 
 		ApexPages.StandardController sc = new ApexPages.StandardController(c);
         PageReference pr= sc.view();
         pr.setRedirect(true);
+        Logger.logDebug();
         return pr;
     }
    
     /*
     public PageReference save() {
-        System.debug('Hitting save in CaseCreator');
+        Log.push('Hitting save in CaseCreator');
         PageReference detailPage = standardController.save();
         if (detailPage != null) {
             // Construct URL of edit page or whatever other page you want
@@ -58,7 +59,7 @@ public class CaseCreatorController {
         // Get the caller's number
        String ani = ApexPages.CurrentPage().getParameters().get('ANI');
          
-        System.debug('received ani '+ani);
+        Log.push('received ani '+ani);
         // Search for contacts with that phone number
         Contact[] contacts = [SELECT Id FROM Contact WHERE Phone = :ani];
         

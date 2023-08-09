@@ -9,10 +9,6 @@
             <access>VIEWER</access>
             <name>Tommy Hilfiger</name>
         </network>
-        <network>
-            <access>VIEWER</access>
-            <name>Calvin Klein Community</name>
-        </network>
         <workspace>
             <access>INFERRED</access>
             <isManagingWorkspace>true</isManagingWorkspace>

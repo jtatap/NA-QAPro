@@ -1,60 +1,47 @@
 @isTest
-public class ZetaCustomerCaptureTest {
-    public static List<Id> contactlist = new List<Id>();
-    
-    public static testmethod void testAccountCallout() {
-    
-        Id accountId;
-        Id contactId;
-        Contact contactObject;
-        
-        List<Account> accs = TestDataFactory.createAccount(1);
-        for(Account acc : accs) {
-           accountId  = acc.Id;
-        }
-        
-        List<Contact> cons = TestDataFactory.createContact(2);
-        for(Contact con : cons) {
-            contactObject = con;
-            
-            contactObject.AccountId = accountId;
-            contactObject.Channel__c = '1';
-            contactObject.Source__c = 'manual';
-            contactObject.Brand_Id__c = '1';
-            contactObject.Channel__c = '1';
-            contactObject.Source__c = 'manual';
-            contactObject.Salutation__c = 'Mr.';
-            contactObject.FirstName = 'TestFirstName';
-            contactObject.MiddleName = 'TestMiddleName';
-            contactObject.LastName = 'TestLastName';
-            contactObject.MailingStreet = 'Test street \n test \n test';
-            contactObject.MailingCity = 'TestCity';
-            contactObject.MailingState = 'testSate';
-            contactObject.MailingPostalCode = '90002';
-            contactObject.MailingCountry = 'USA';
-            contactObject.Email = 'test@test.com';
-            contactObject.HomePhone = '1234512345';
-            contactObject.MobilePhone = '1234567890';
-            contactObject.EmailOptInStatus__c = 'Y';
-            contactObject.SMSOptinStatus__c = 'Y';
-            contactObject.HomeStore__c = 'abcd';
-            contactObject.LoyaltyFlag__c = true;
-            contactObject.DirectMailOptin__c = true;
-            contactObject.Language__c = 'E';
-            contactObject.StoreOfCapture__c = 'test';
-            contactObject.Birthdate = date.ValueOf('1987-05-05');
-            //contactObject.CreatedByMethod__c = 'UI';
-            
-            Insert contactObject;
-            contactObject.CreatedByMethod__c = 'UI'; 
-            contactlist.add(contactObject.Id);           
-        }
-        
-        SingleRequestMock fakeResponse = new SingleRequestMock(200,
-                                                 'Complete',
-                                                 '[{"ResponseMessage":"NEW CUSTOMER","EmailAddress":"test@test.com"}]',
-                                                 null);
-        Test.setMock(HttpCalloutMock.class, fakeResponse);
-        ZetaCustomerCapture.sendCustomerData(contactlist);
+private class ZetaCustomerCaptureTest {
+
+    static testMethod void testSendCustomerData() {
+        // Create test data
+        Contact con = new Contact(FirstName='Test', LastName='User', Email='testuser@example.com', Brand_Id__c ='11');
+        insert con;
+
+        // Test the method
+        Test.startTest();
+        ZetaCustomerCapture.sendCustomerData(new List<Id> {con.Id});
+        Test.stopTest();
     }
+
+
+    static testMethod void testMakeCallOut() {
+        // Create test data
+        Contact con = new Contact(FirstName='Test', LastName='User', Email='testuser@example.com', Brand_Id__c ='11',Channel__c='6',Source__c='Web',Salutation__c='Mr',MiddleName='Test',MailingState='KA',MailingCity='Bangalore',MailingPostalCode='562125',MailingCountry='INDIA',
+                                 HomePhone='8888888888',MobilePhone='8888888888',HomeStore__c='Test',StoreOfCapture__c='Test',Language__c='E');
+        insert con;
+
+        // Create a mock response
+        String mockResponse = '{"ZetaGUID":"1234567890"}';
+        HttpResponse res = new HttpResponse();
+        res.setBody(mockResponse);
+        res.setStatusCode(200);
+
+        // Create a mock callout
+        Test.setMock(HttpCalloutMock.class, new ZetaCustomerCaptureMock(res));
+
+        Test.startTest();
+        // Call the method and pass in the test contact ID
+        ZetaCustomerCapture.makeCallOut(con.Id, '1234567890');
+        Test.stopTest();
+    }
+
+    class ZetaCustomerCaptureMock implements HttpCalloutMock {
+        HttpResponse res;
+        public ZetaCustomerCaptureMock(HttpResponse res) {
+            this.res = res;
+        }
+        public HTTPResponse respond(HTTPRequest req) {
+            return res;
+        }
+    }
+
 }

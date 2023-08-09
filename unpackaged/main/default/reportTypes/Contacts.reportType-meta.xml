@@ -323,6 +323,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>StorePreference__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Source__c</field>
             <table>Contact</table>
         </columns>
@@ -578,47 +583,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>VIP_Contact__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VIP__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Current_Point_Balance__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Store_Master__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EcommSite__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SFCC_User_ID__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Email_Updated_by_CSR__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Latest_Campaigns__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CSR_Trigger_PB__c</field>
+            <field>Profile_Complete__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -628,7 +593,32 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>UpdateBySFCCIntUser__c</field>
+            <field>Record_Type_ID_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner_type_id_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Created_by_id_18_character__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact_Full_Name__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IseCommSMS__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsExisting__c</field>
             <table>Contact</table>
         </columns>
         <masterLabel>Contacts</masterLabel>

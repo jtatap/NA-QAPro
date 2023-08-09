@@ -4,6 +4,6 @@
     <protected>false</protected>
     <values>
         <field>URL_for_REST_API_Requests__c</field>
-        <value xsi:type="xsd:string">https://qapro-pvhservicecloud.cs59.force.com/pvh</value>
+        <value xsi:type="xsd:string">https://pvhservicecloud--uat.sandbox.my.site.com/pvh</value>
     </values>
 </CustomMetadata>

@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>Request_Endpoint__c</field>
-        <value xsi:type="xsd:string">[BASE_URL]services/[API_VERSION]/agents/[SPECIFIC_ID]/state-history?startDate=[START_DATE]&amp;endDate=[END_DATE]&amp;searchString=Unavailable&amp;fields=startDate,agentStateId,agentStateName,agentSessionId,skillId,outStateId,outStateDescription,duration,stationName</value>
+        <value xsi:type="xsd:string">https://api-na1.niceincontact.com/incontactapi/services/[API_VERSION]/agents/[SPECIFIC_ID]/state-history?startDate=[START_DATE]&amp;endDate=[END_DATE]&amp;searchString=Unavailable&amp;fields=startDate,agentStateId,agentStateName,agentSessionId,skillId,outStateId</value>
     </values>
     <values>
         <field>Request_Headers__c</field>

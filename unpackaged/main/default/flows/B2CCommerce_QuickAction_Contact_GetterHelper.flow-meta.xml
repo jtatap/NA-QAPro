@@ -301,7 +301,7 @@
             <targetReference>recGet_Contact</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <description>... describes the total number of child Contacts assigned to the interrogated Account.</description>
         <name>var_childContactCount</name>

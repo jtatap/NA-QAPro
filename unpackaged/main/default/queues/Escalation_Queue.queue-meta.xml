@@ -5,7 +5,9 @@
     <name>Escalation Queue</name>
     <queueMembers>
         <publicGroups>
+            <publicGroup>All_Brands</publicGroup>
             <publicGroup>MOD_POE</publicGroup>
+            <publicGroup>Perimeter</publicGroup>
         </publicGroups>
     </queueMembers>
     <queueRoutingConfig>Escalations</queueRoutingConfig>

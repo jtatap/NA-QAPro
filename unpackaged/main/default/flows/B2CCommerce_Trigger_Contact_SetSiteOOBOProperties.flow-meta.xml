@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <decisions>
         <description>... evaluate if this Contact has the OOBO Customer Number.</description>
         <name>dec_doesContactHaveOOBOCustomerNo</name>
@@ -25,6 +25,7 @@
         </rules>
     </decisions>
     <description>... automates applying the OOBO Contact properties to each of the sites associated to the Contact&#39;s parent customerList -- when a Contact is updated that has the designated OOBO Customer No.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Trigger: Contact: Set Site OOBO Properties {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Trigger: Contact: Set Site OOBO Properties</label>
     <processMetadataValues>

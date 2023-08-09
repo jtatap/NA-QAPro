@@ -8,6 +8,9 @@
             <publicGroup>All_Brands</publicGroup>
             <publicGroup>Tommy_Hilfiger</publicGroup>
         </publicGroups>
+        <users>
+            <user>t1pvh@pvh.com</user>
+        </users>
     </queueMembers>
     <queueRoutingConfig>Email</queueRoutingConfig>
     <queueSobject>

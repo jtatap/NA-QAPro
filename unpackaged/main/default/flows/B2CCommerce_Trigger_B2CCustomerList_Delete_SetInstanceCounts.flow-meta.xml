@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the total count of B2C CustomerLists for the parent Instance to a local variable.</description>
         <name>asn_customerListCounts</name>
@@ -80,6 +80,7 @@
         </rules>
     </decisions>
     <description>... calculate the instance counts for sites and customerlists for a given customerList&#39;s parent instance when it is deleted.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Trigger: B2C CustomerList: Delete: Set Instance Counts {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Trigger: B2C CustomerList: Delete: Set Instance Counts</label>
     <processMetadataValues>

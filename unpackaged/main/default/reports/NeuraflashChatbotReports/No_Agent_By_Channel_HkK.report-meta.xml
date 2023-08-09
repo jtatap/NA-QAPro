@@ -21,6 +21,11 @@
         <field>FK_std13</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ebotdata__Bot_Session__c.Brand__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>No Agent By Channel</name>
     <params>
         <name>co</name>
@@ -33,8 +38,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2021-01-24</endDate>
+        <endDate>2021-04-11</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-12-25</startDate>
+        <startDate>2021-03-13</startDate>
     </timeFrameFilter>
 </Report>

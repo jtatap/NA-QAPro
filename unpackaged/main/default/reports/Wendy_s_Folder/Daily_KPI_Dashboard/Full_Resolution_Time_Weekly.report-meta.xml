@@ -40,11 +40,11 @@
             <value>Phone,Chat</value>
         </criteriaItems>
         <criteriaItems>
-            <column>LAST_UPDATE_BY</column>
+            <column>PARENT_CASE_ID</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Aliyah,Elizabeth Cruz,Hymein,Caroline,Ann Marie,Keith</value>
+            <operator>equals</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -71,8 +71,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2023-01-24</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2023-01-24</startDate>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

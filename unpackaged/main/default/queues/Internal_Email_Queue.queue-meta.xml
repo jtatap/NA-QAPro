@@ -5,7 +5,8 @@
     <name>Internal (Tier 2 &amp; 3) Email Queue</name>
     <queueMembers>
         <publicGroups>
-            <publicGroup>Tier_3_non_MOD_POE</publicGroup>
+            <publicGroup>Tier_3_CSR_Supervisor</publicGroup>
+            <publicGroup>PVH_Corp_Operations_Quality</publicGroup>
         </publicGroups>
     </queueMembers>
     <queueRoutingConfig>Email</queueRoutingConfig>

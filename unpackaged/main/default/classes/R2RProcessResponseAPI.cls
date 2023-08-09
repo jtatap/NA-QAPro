@@ -5,6 +5,7 @@ global without sharing class R2RProcessResponseAPI {
     @HttpGet
     global static void restGet() {
         RestRequest req = RestContext.request;
+        System.debug('The request params are ' + req.params);
         Account acc= new Account();
         String respMessage = 'Your response was not successfully processed. Please email customer support.';
         RestResponse resp = RestContext.response;
@@ -28,7 +29,7 @@ global without sharing class R2RProcessResponseAPI {
         }
         
         Case cs = [SELECT Id,Rectified_JSON_Data__c,ContactId,R2R_Email_UserConfirmation__c,Privacy_User_Confirmed_Date__c,Sub_Type__c,
-                   Resolution_Code__c,Status,VerificationHash__c,accountId,contact.firstName, contact.lastName,createddate,brand__c
+                   Resolution_Code__c,Status,VerificationHash__c,accountId,contact.firstName, contact.lastName,contact.Email_Address_Reason_Code__c,createddate,brand__c
                    FROM Case 
                    WHERE Id=:req.params.get('in_caseid')];
         cs.Due_Date__c = dueDate;
@@ -54,17 +55,31 @@ global without sharing class R2RProcessResponseAPI {
                 update cs; 
                
                Contact con = new Contact();
+               con.Id = cs.ContactId;
                //added as part of GCT-772
                if(cs.Sub_Type__c == Constants.doNotSellorShare){
-                   con.Id = cs.ContactId;
+                   if(cs.contact.Email_Address_Reason_Code__c == 'Tealium Request: Advertise OptOut'){
                    con.Advertising_Opt_out__c = 'Y';
                    con.Advertising_Opt_out_Date__c = System.Now();
+                   con.OptOutShare__c = true;
+                   con.Email_Address_Reason_Code__c = 'Tealium Request: Advertise OptOut';
+                   }
+                   else {
+                   con.Advertising_Opt_out__c = 'Y';
+                   con.Advertising_Opt_out_Date__c = System.Now();
+                   con.OptOutShare__c = true;
                    con.Email_Address_Reason_Code__c = 'Verification Success: Do Not Sell/Share approved';
+                       
+                   }
+                   
                }else{
-               con.Id = cs.ContactId;
-               con.Email_Address_Reason_Code__c = 'Verification Success : R2R update';
                
+               con.Email_Address_Reason_Code__c = 'Verification Success : R2R update';
+                    
                if(string.isNotEmpty(cs.Rectified_JSON_Data__c)){
+                    system.debug('cs.Rectified_JSON_Data__c***'+cs.Rectified_JSON_Data__c); 
+                     system.debug('con.SelfClaimedGender__c***'+ con.SelfClaimedGender__c); 
+                   
                     Map<String,Object> rectifiedJSONDataMap = (Map<String,Object>)JSON.deserializeUntyped(cs.Rectified_JSON_Data__c);
                     if(rectifiedJSONDataMap.get('newEmail')!=null && rectifiedJSONDataMap.get('newEmail') != ''){
                         con.Email = string.valueOf(rectifiedJSONDataMap.get('newEmail'));
@@ -111,12 +126,15 @@ global without sharing class R2RProcessResponseAPI {
                         con.Phone = string.valueOf(rectifiedJSONDataMap.get('newPhone'));
                     }
                     if(rectifiedJSONDataMap.get('newGender')!=null && rectifiedJSONDataMap.get('newGender') != ''){
-                        if(string.valueOf(rectifiedJSONDataMap.get('newGender'))!='-- Select Option --'){
-                            
+                       // if(string.valueOf(rectifiedJSONDataMap.get('newGender'))!='-- Select Option --'){
+                       // JIRA GCT-1848, GCT-6775  
+                       if(string.valueOf(rectifiedJSONDataMap.get('newGender'))!='--- Select Option ---'){
+                        system.debug('rectifiedJSONDataMap.get(newGender)***'+(string.valueOf(rectifiedJSONDataMap.get('newGender'))));    
                         Map<String,String> mapOfGender = new Map<String,String>();
-                            mapOfGender.put('Male','M');
-                            mapOfGender.put('Female','F');
-                            mapOfGender.put('Gender Neutral','GN');
+                            mapOfGender.put('Man','M');
+                            mapOfGender.put('Woman','F');
+                           //JIRA GCT-7509  
+                            mapOfGender.put('Gender Diverse','GN');
                             mapOfGender.put('Prefer not to say','PNTS');
                         con.SelfClaimedGender__c = mapOfGender.get(string.valueOf(rectifiedJSONDataMap.get('newGender')));
                         }
@@ -132,8 +150,11 @@ global without sharing class R2RProcessResponseAPI {
                 Flow.Interview.Call_Email_service_when_case_updated flow1 = new Flow.Interview.Call_Email_service_when_case_updated(req.params);
             	flow1.start();
                 update acc;
-                if(con.Email_Address_Reason_Code__c == 'Verification Success : R2R update' ||con.Email_Address_Reason_Code__c == 'Verification Success: Do Not Sell/Share approved' ){//added as part of GCT-772
-                ChildPrivacyCaseActionsHandler.createChildDataOwnerCases(cs.Id);
+               	System.debug('+++++ createChildDataOwnerCases check');
+                System.debug('email address reason code ' + con.Email_Address_Reason_Code__c);
+                if(con.Email_Address_Reason_Code__c == 'Verification Success : R2R update' ||con.Email_Address_Reason_Code__c == 'Verification Success: Do Not Sell/Share approved' || con.Email_Address_Reason_Code__c == 'Tealium Request: Advertise OptOut'){//added as part of GCT-772
+                System.debug('+++++ inside createChildDataOwnerCases check' + con.Email_Address_Reason_Code__c);
+                    ChildPrivacyCaseActionsHandler.createChildDataOwnerCases(cs.Id);
                 }
                 respMessage = 'Your response was successfully processed. Click here to close the window';
             }

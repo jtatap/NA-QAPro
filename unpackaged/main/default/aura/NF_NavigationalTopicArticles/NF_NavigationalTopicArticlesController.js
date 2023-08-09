@@ -1,13 +1,10 @@
 ({
     init : function(component, event, helper) {
-        // console.log('1');
-         helper.fetchNavigationalTopic(component, event); 
+        helper.fetchNavigationalTopic(component, event); 
      },
      handleClick: function(component, event, helper) {
 		var buttonClicked = event.getSource().get('v.value');
-		//console.log(buttonClicked);
 		var divContainer = component.find('expandContainer');
-		//console.log(divContainer);
 		$A.util.toggleClass(divContainer[buttonClicked], 'showElement'); 
 		var newList = [];
 		var navigationTupicList = component.get('v.topicList');

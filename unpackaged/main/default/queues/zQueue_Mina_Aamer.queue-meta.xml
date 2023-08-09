@@ -3,6 +3,11 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>noreply@pvh.invalid</email>
     <name>zQueue Mina Aamer</name>
+    <queueMembers>
+        <users>
+            <user>minaaamer@pvh.com</user>
+        </users>
+    </queueMembers>
     <queueRoutingConfig>Backlog</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>

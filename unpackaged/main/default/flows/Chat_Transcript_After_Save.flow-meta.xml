@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Fault_Section</name>
+        <label>Assign Fault Section</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>varFaultSection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Update Related Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Run_error_handling_subflow</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>WHEN a new Chat Transcript is created and has a related Case
+THEN update the related Case&#39;s status to be Open if the Case&#39;s Originating Queue Id is null</description>
+        <name>decHas_Queue_been_set_and_Case_New</name>
+        <label>Has Queue been set and Case New?</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>resYes_Queue_set_on_new_Case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CaseId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Originating_Queue_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Related_Case</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes, Queue set on new Case</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Chat Transcript: After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Chat Transcript: After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Related_Case</name>
+        <label>Update Related Case</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <faultConnector>
+            <targetReference>Assign_Fault_Section</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Originating_Queue_Id__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Case</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decHas_Queue_been_set_and_Case_New</targetReference>
+        </connector>
+        <object>LiveChatTranscript</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_error_handling_subflow</name>
+        <label>Run error handling subflow</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <flowName>Log_Error_Handling_Subflow</flowName>
+        <inputAssignments>
+            <name>varClassName</name>
+            <value>
+                <stringValue>Chat Transcript: After Save</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFaultSection</name>
+            <value>
+                <elementReference>varFaultSection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>varFaultSection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

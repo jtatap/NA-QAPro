@@ -3,5 +3,5 @@
     <description>Narvar domain settings</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://pvhservicecloud--projectdev.lightning.force.com</url>
+    <url>https://pvhservicecloud--uat.lightning.force.com</url>
 </RemoteSiteSetting>

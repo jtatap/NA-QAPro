@@ -16,14 +16,9 @@
         <value>New,Open,Pending,On Hold</value>
     </filters>
     <filters>
-        <field>CONTACT.FIRST_NAME</field>
-        <operation>equals</operation>
-        <value>christopher</value>
-    </filters>
-    <filters>
         <field>OWNER_NAME</field>
         <operation>equals</operation>
-        <value>zQueue Christopher Apostola</value>
+        <value>zQueue Lorraine</value>
     </filters>
     <filters>
         <field>Brand__c</field>

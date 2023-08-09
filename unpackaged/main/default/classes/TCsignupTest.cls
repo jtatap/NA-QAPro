@@ -46,7 +46,7 @@ private class TCsignupTest {
         RestContext.response= res;
         
         tcRes = TCsignUp.doSignup();
-        System.debug(tcRes);
+        
         System.assertEquals(res.statusCode, 400);
         System.assertEquals('Missing required parameters:  BrandId or email', tcRes.message);
         System.assertEquals('INVALID_QUERY', tcRes.code);
@@ -80,7 +80,7 @@ private class TCsignupTest {
         RestContext.response= res;
         
         tcRes = TCsignUp.doSignup();
-        System.debug(tcRes);
+        
         
         Contact con = [SELECT Id FROM Contact Limit 1];
         
@@ -114,7 +114,7 @@ private class TCsignupTest {
         RestContext.response= res;
         
         tcRes = TCsignUp.doSignup();
-        System.debug(tcRes);
+        
         
         Contact con = [SELECT Id FROM Contact Limit 1];
         
@@ -155,7 +155,7 @@ private class TCsignupTest {
         RestContext.response= res;
         
         tcRes = TCsignUp.doSignup();
-        System.debug(tcRes);
+        
         
         list<Contact> con = [SELECT Id FROM Contact WHERE Email='testemail@nomail.com'AND Brand_Id__c = '11'];
         System.assert(con.size()==1);
@@ -176,7 +176,7 @@ private class TCsignupTest {
         RestContext.response= res;
 
         tcRes = TCsignUp.doSignup();
-        System.debug(tcRes);
+
 
         con = [SELECT Id FROM Contact WHERE Email='testemail@nomail.com'AND Brand_Id__c = '11'];
         System.assert(con.size()==1);

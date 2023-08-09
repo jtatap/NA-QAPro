@@ -3,5 +3,5 @@
     <batchSize>200</batchSize>
     <masterLabel>ExecuteAsSFCCIntegrationUserTrigger</masterLabel>
     <platformEventConsumer>ExecuteAsSFCCIntegrationUserTrigger</platformEventConsumer>
-    <user>sfccintegrationuser@pvh.com.qapro</user>
+    <user>sfccintegrationuser@pvh.com.uat</user>
 </PlatformEventSubscriberConfig>

@@ -11,9 +11,9 @@
         <targetConfig targets="lightningCommunity__Default">
             <property name="ComponentKey" type="String" label="This is the key that is used to retrieve the records from the custom metadata that matches this component key." />
             <property label="Inner Tile Padding" name="innerPadding" type="String" datasource="small,medium,large,xlarge,xxlarge" default="medium" />
-            <property name="tileStyle" type="String" label="This is the default style for the component" />
+            <property name="tileStyle" type="String" label="This is the default style for the component" default="min-height:220px;border-color: #928b80; border-style: solid; border-width: thin;"/>
             <property name="maxwidth" type="Integer" label="This is the max width of the component, should match the max width of the page" />
-            <property name="columns" type="Integer" label="This is the max number of columns of the component, max number is 4" />
+            <property name="columns" type="Integer" label="This is the max number of columns of the component, max number is 4" default="3"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

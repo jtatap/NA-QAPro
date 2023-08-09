@@ -1511,6 +1511,52 @@ public class TestDataFactory {
         insert genRec;
     }
     
+    //creating IRE_StagingTable__c
+    public static IRE_StagingTable__c createIreStagingTable(String conId) {
+        IRE_StagingTable__c ireStagingTable = new IRE_StagingTable__c(
+        	MasterCustomerId__c = '1234567',
+            SubscriberKey__c = conId
+        );
+        
+        return ireStagingTable;
+    }
+    
+    //creating NF_Banner__c
+    public static NF_Banner__c createNfBanner(String brandId) {
+    	NF_Banner__c nb = new NF_Banner__c(
+    	Active__c = true,
+    	DateStart__c = System.Today() - 10,
+    	DateEnd__c = System.Today() + 100,
+        Brand__c = brandId);
+        
+        return nb;
+    }
+    
+    //creating ebotdata__Bot_Session__c
+    public static ebotdata__Bot_Session__c createEbot(String chatKey,String transcriptId) {
+         ebotdata__Bot_Session__c session = new ebotdata__Bot_Session__c(
+             	ebotdata__Live_Agent_Session_Id__c = chatKey,
+        		ebotdata__Live_Chat_Transcript__c = transcriptId
+         );
+        
+        return session;
+    } 
+    
+    //Create Live Chat Transcript
+    public static LiveChatTranscript createLiveChatTranscript(String brand,String chatKey){
+        LiveChatTranscript t1 = new LiveChatTranscript();
+        LiveChatVisitor lcv = new LiveChatVisitor();
+        try{
+            insert lcv;
+        }catch(Exception e){
+
+        }
+        t1.LiveChatVisitorId = lcv.Id;
+        t1.ChatKey = chatKey;
+        t1.Brand__c = brand;
+        return t1;
+    }
+    
     /**
     * @description this is a dummy test method needed in order to create a managed package for TestDataFactory
     */

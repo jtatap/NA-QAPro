@@ -2,7 +2,8 @@
 public class Scheduler_A1TrackerAPIKeysTest {
 	static Map<String, String> responseHeaders = new Map<String, String>();    
     @isTest(SeeAllData=true) 
-    public static void setC360APITokensTest(){        
+    public static void setC360APITokensTest(){
+        Test.startTest();
         responseHeaders.put('Content-Type', 'application/json');
         SingleRequestMock fakeResponse = new SingleRequestMock(200,
                                                  'Complete',
@@ -11,6 +12,9 @@ public class Scheduler_A1TrackerAPIKeysTest {
         
         Test.setMock(HttpCalloutMock.class, fakeResponse);   
         Scheduler_A1TrackerAPIKeys.setTrackerAPIKeys();
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
     
 }

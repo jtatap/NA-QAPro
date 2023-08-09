@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseScenarios</aiApplicationDeveloperName>
+    <description>ServiceCC predField NFCaseScenario__c</description>
+    <developerName>mlpd_v0_1670813004272</developerName>
+    <masterLabel>ServiceCCNFCaseScenario__c</masterLabel>
+    <predictionField>Case.NFCaseScenario__c</predictionField>
+    <status>Enabled</status>
+    <type>MulticlassClassification</type>
+</MLPredictionDefinition>

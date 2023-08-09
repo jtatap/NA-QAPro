@@ -3,24 +3,11 @@
     <actionCalls>
         <name>CK_Trigger_Survey</name>
         <label>CK Trigger Survey</label>
-        <locationX>710</locationX>
+        <locationX>882</locationX>
         <locationY>334</locationY>
         <actionName>SurveySubject.CK_Survey_Send</actionName>
         <actionType>emailAlert</actionType>
-        <inputParameters>
-            <name>SObjectRowId</name>
-            <value>
-                <elementReference>sObjSurveySubject.Id</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Izod_Send_Survey</name>
-        <label>Izod Send Survey</label>
-        <locationX>764</locationX>
-        <locationY>373</locationY>
-        <actionName>SurveySubject.IZOD_Survey_Send</actionName>
-        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -31,38 +18,11 @@
     <actionCalls>
         <name>Olga_Send_Survey</name>
         <label>Olga Send Survey</label>
-        <locationX>817</locationX>
+        <locationX>989</locationX>
         <locationY>411</locationY>
         <actionName>SurveySubject.Olga_Survey_Send</actionName>
         <actionType>emailAlert</actionType>
-        <inputParameters>
-            <name>SObjectRowId</name>
-            <value>
-                <elementReference>sObjSurveySubject.Id</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>SB_Send_Survey</name>
-        <label>SB Send Survey</label>
-        <locationX>926</locationX>
-        <locationY>492</locationY>
-        <actionName>SurveySubject.Style_Bureau_Survey_Send</actionName>
-        <actionType>emailAlert</actionType>
-        <inputParameters>
-            <name>SObjectRowId</name>
-            <value>
-                <elementReference>sObjSurveySubject.Id</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Speedo_Send_Survey</name>
-        <label>Speedo Send Survey</label>
-        <locationX>869</locationX>
-        <locationY>451</locationY>
-        <actionName>SurveySubject.Speedo_Survey_Send</actionName>
-        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -73,10 +33,11 @@
     <actionCalls>
         <name>Tommy_Send_Survey</name>
         <label>Tommy Send Survey</label>
-        <locationX>982</locationX>
+        <locationX>1154</locationX>
         <locationY>534</locationY>
         <actionName>SurveySubject.Tommy_Survey_Send</actionName>
         <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -87,24 +48,11 @@
     <actionCalls>
         <name>True_Co_Send_Survey</name>
         <label>True &amp; Co Send Survey</label>
-        <locationX>1035</locationX>
+        <locationX>1207</locationX>
         <locationY>572</locationY>
         <actionName>SurveySubject.True_CO_Survey_Send</actionName>
         <actionType>emailAlert</actionType>
-        <inputParameters>
-            <name>SObjectRowId</name>
-            <value>
-                <elementReference>sObjSurveySubject.Id</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Van_Heusen_Send_Survey</name>
-        <label>Van Heusen Send Survey</label>
-        <locationX>1093</locationX>
-        <locationY>607</locationY>
-        <actionName>SurveySubject.Van_Heusen_Survey_Send</actionName>
-        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -115,10 +63,11 @@
     <actionCalls>
         <name>Warners_Send_Survey</name>
         <label>Warners Send Survey</label>
-        <locationX>1150</locationX>
+        <locationX>1322</locationX>
         <locationY>642</locationY>
         <actionName>SurveySubject.Warners_Survey_Send</actionName>
         <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -130,7 +79,7 @@
     <assignments>
         <name>Assign_Survey_Subject</name>
         <label>Assign Survey Subject</label>
-        <locationX>208</locationX>
+        <locationX>380</locationX>
         <locationY>226</locationY>
         <assignmentItems>
             <assignToReference>sObjSurveySubject.SubjectId</assignToReference>
@@ -202,7 +151,7 @@
     <decisions>
         <name>Brand_Decision</name>
         <label>Brand Decision</label>
-        <locationX>376</locationX>
+        <locationX>548</locationX>
         <locationY>419</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -266,65 +215,6 @@
             <label>Calvin Klien Survey</label>
         </rules>
         <rules>
-            <name>Izod_Survey</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>4</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>81</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Izod_Send_Survey</targetReference>
-            </connector>
-            <label>Izod Survey</label>
-        </rules>
-        <rules>
-            <name>Van_Heusen_Survey</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>5</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>82</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Van_Heusen_Send_Survey</targetReference>
-            </connector>
-            <label>Van Heusen Survey</label>
-        </rules>
-        <rules>
-            <name>Speedo_Survey</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>7</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Speedo_Send_Survey</targetReference>
-            </connector>
-            <label>Speedo Survey</label>
-        </rules>
-        <rules>
             <name>Warners_Survey</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
@@ -338,21 +228,6 @@
                 <targetReference>Warners_Send_Survey</targetReference>
             </connector>
             <label>Warners Survey</label>
-        </rules>
-        <rules>
-            <name>SB_Survey</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>BrandID</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>84</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>SB_Send_Survey</targetReference>
-            </connector>
-            <label>SB Survey</label>
         </rules>
     </decisions>
     <formulas>
@@ -369,6 +244,12 @@
         </value>
     </processMetadataValues>
     <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
         <name>OriginBuilderType</name>
         <value>
             <stringValue>LightningFlowBuilder</stringValue>
@@ -378,7 +259,7 @@
     <recordCreates>
         <name>Create_Survey_Invitation</name>
         <label>Create Survey Invitation</label>
-        <locationX>540</locationX>
+        <locationX>712</locationX>
         <locationY>228</locationY>
         <assignRecordIdToReference>SurveyInvitationID</assignRecordIdToReference>
         <connector>
@@ -437,7 +318,7 @@
     <recordCreates>
         <name>Create_Survey_Subject</name>
         <label>Create Survey Subject</label>
-        <locationX>211</locationX>
+        <locationX>383</locationX>
         <locationY>417</locationY>
         <connector>
             <targetReference>Brand_Decision</targetReference>
@@ -447,7 +328,7 @@
     <recordLookups>
         <name>GetCreatedInvite</name>
         <label>GetCreatedInvite</label>
-        <locationX>367</locationX>
+        <locationX>539</locationX>
         <locationY>227</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -470,7 +351,7 @@
     <recordLookups>
         <name>Lookup_Brand_Community_Id</name>
         <label>Lookup Brand Community Id</label>
-        <locationX>539</locationX>
+        <locationX>711</locationX>
         <locationY>68</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -505,7 +386,7 @@
     <recordLookups>
         <name>Lookup_Case</name>
         <label>Lookup Case</label>
-        <locationX>217</locationX>
+        <locationX>389</locationX>
         <locationY>69</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -540,7 +421,7 @@
     <recordLookups>
         <name>Lookup_Community</name>
         <label>Lookup Community</label>
-        <locationX>713</locationX>
+        <locationX>885</locationX>
         <locationY>69</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -563,7 +444,7 @@
     <recordLookups>
         <name>Lookup_Contact</name>
         <label>Lookup Contact</label>
-        <locationX>381</locationX>
+        <locationX>553</locationX>
         <locationY>69</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -586,7 +467,7 @@
     <recordLookups>
         <name>Lookup_Survey</name>
         <label>Lookup Survey</label>
-        <locationX>713</locationX>
+        <locationX>885</locationX>
         <locationY>228</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>

@@ -1,7 +1,7 @@
 ({
 
 init : function(component, event, helper) {
-   // helper.getCases(component);
+    //helper.getCases(component);
    
 },
     
@@ -13,6 +13,8 @@ init : function(component, event, helper) {
        var statusField = cmp.find("status").get("v.value");
        var descField = cmp.find("desc").get("v.value");
        var contactField = cmp.get("v.selectedId");
+       var error = String($A.get("$Label.c.Error1"));
+       var success = String($A.get("$Label.c.Success1"));
       console.log('entered into handle submit'+contactField);
       
       var action1 = cmp.get("c.saveCase");
@@ -33,8 +35,8 @@ init : function(component, event, helper) {
                cmp.set("v.childCaseId",responseVal[0].Id);
                var childId=cmp.get("v.childCaseId");
           console.log('childId****'+childId); 
-                var workspaceAPI = cmp.find("workspace");
-          var workspaceAPI = cmp.find("workspace");
+                 var workspaceAPI = cmp.find("workspace");
+            var workspaceAPI = cmp.find("workspace");
             workspaceAPI.getEnclosingTabId().then(function(enclosingTabId) {
                 workspaceAPI.openSubtab({
                     parentTabId: enclosingTabId,
@@ -50,12 +52,13 @@ init : function(component, event, helper) {
             .catch(function(error) {
                 console.log(error);
             });
-             if(status === "SUCCESS"){
+          
+             if(status === success){
                console.log('status** Success');   
                  $A.get("e.force:closeQuickAction").fire();
                 $A.get('e.force:refreshView').fire();
                  }
-             else if(status === "ERROR"){
+             else if(status === error){
               console.log('status** Error'); 
              }
         });
@@ -79,7 +82,7 @@ createCase : function(component, event, helper) {
     var contactField = component.find("contact");
     var contact =  contactField.get("v.value");
     console.log('contactField'+contactField);
-   //var contact =  contactField.get("v.selectedContact");
+   
 
     var newCase = component.get('v.newCase');
     newCase.subject = subject;
@@ -89,7 +92,7 @@ createCase : function(component, event, helper) {
 
     console.log(newCase);
     helper.createCase(component, newCase);
-    //helper.createCase(component, JSON.stringify(newCase));
+    
 
     console.log('End of createCase');
 
@@ -101,9 +104,8 @@ createCase : function(component, event, helper) {
              name=message[i].Id;
         console.log("You selected: " + message[i].Id);
             component.set("v.selectedId",message[i].Id);
-            //component.set("v.selectedName",message[i].Name);
+           
     }
-       // component.set("v.contactRec",message);
-       // console.log('Entered into the after set'+ component.get('v.contactRec'));
+       
     }
 })

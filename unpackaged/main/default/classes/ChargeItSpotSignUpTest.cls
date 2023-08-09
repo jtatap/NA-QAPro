@@ -600,7 +600,7 @@ private class ChargeItSpotSignUpTest {
         createdCon.Email = 'SMSemail_matched_contact@gmail.com';
         createdCon.EmailOptInStatus__c = 'N'; //false;
         createdCon.SMSOptinStatus__c = 'N'; //false;
-        createdCon.SMSNumber__c = '7785551212';
+        createdCon.SMSNumber__c = '17785551212'; //appended 1 to left
         insert createdCon;
         
         //Test for Brand id or email present for existing contact for email and sms Opt out
@@ -672,7 +672,7 @@ private class ChargeItSpotSignUpTest {
         createdCon.Email = null;
         createdCon.EmailOptInStatus__c = 'N'; //false;
         createdCon.SMSOptinStatus__c = 'N'; //false;
-        createdCon.SMSNumber__c = '7785551212';
+        createdCon.SMSNumber__c = '17785551212'; //Appended 1 to left
         insert createdCon;
         
         //Test for Brand id or email present for existing contact for email and sms Opt out
@@ -744,7 +744,7 @@ private class ChargeItSpotSignUpTest {
         createdCon.Email = 'notFound@gmail.com';
         createdCon.EmailOptInStatus__c = 'N'; //false;
         createdCon.SMSOptinStatus__c = 'N'; //false;
-        createdCon.SMSNumber__c = '7785551212';
+        createdCon.SMSNumber__c = '17785551212'; //appended 1 to number on left
         insert createdCon;
         
         //Test for Brand id or email present for existing contact for email and sms Opt out
@@ -895,7 +895,7 @@ private class ChargeItSpotSignUpTest {
         createdConSMS.Email = 'SMS_matched_contact@gmail.com';
         createdConSMS.EmailOptInStatus__c = 'N'; //false;
         createdConSMS.SMSOptinStatus__c = 'N'; //false;
-        createdConSMS.SMSNumber__c = '7785551212';
+        createdConSMS.SMSNumber__c = '17785551212'; //appended 1 at left
         insert createdConSMS;
         
         //Test for Brand id or email present for existing contact for email and sms Opt out

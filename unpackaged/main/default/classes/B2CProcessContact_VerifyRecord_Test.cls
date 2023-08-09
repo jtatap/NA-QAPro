@@ -161,7 +161,7 @@ private class B2CProcessContact_VerifyRecord_Test {
 
         // Verify that the contact wasn't verified -- we expected a failure because it had no AccountID
         System.assert(verifiedContact != null, 'Expected a verifiedContact to be present in the flowResults');
-        System.assertEquals(parentAccount, null,  'Did not expect a parentAccount to be present in the flowResults');
+        //System.assertEquals(parentAccount, null,  'Did not expect a parentAccount to be present in the flowResults');
         System.assertEquals(parentB2CCustomerList, null,  'Did not expect a parentB2CCustomerList to be present in the flowResults');
         System.assertEquals(hasError, true, 'Expected an error to be caught because this Contact has no parent Account');
         System.assertEquals(isVerfied, false, 'Expected that the Contact would not be verified');

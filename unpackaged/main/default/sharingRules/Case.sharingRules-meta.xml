@@ -77,6 +77,26 @@
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>Temp_Role_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Temp Role CSR can access Tier1 CSR Cases</description>
+        <label>Temp Role Access</label>
+        <sharedTo>
+            <role>Tier_1_TEMP</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Case - Read Only,Support Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>notEqual</operation>
+            <value>True&amp;Co</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Tier_1_CSR_Wholesale</fullName>
         <accessLevel>Edit</accessLevel>
         <label>Tier 1 CSR Wholesale - Support</label>
@@ -192,15 +212,4 @@
         </criteriaItems>
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
-    <sharingOwnerRules>
-        <fullName>Temp_User_Access_to_Tier_1_CSR_Cases</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Temp User Access to Tier 1 CSR Cases</label>
-        <sharedTo>
-            <roleAndSubordinates>Tier_1_TEMP</roleAndSubordinates>
-        </sharedTo>
-        <sharedFrom>
-            <role>Tier_1_CSR</role>
-        </sharedFrom>
-    </sharingOwnerRules>
 </SharingRules>

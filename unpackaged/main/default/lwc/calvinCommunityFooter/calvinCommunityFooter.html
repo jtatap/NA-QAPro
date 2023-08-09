@@ -3,10 +3,10 @@
         <div class="global-footer">
             <template if:true={iscovidinfovisible}>
             <div class="covid-footer" style="display: block;">
-                COVID-19 Information 
-                <a href={covidURL} target="_blank">View here
-                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> for Calvin Klein on COVID-19 </span>
-                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> for Covid-19 information </span>
+                {label.COVID_19_Information} 
+                <a href={covidURL} target="_blank">{label.View_here}
+                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> {label.CKCovid} </span>
+                    <span style="display: none;" class="ae-compliance-indent ae-reader-visible"> {label.CovidInfo} </span>
                 </a>
             </div>
             </template>
@@ -61,7 +61,7 @@
             <div class="footer-legal autoMargin">
                 <div class="minMaxWidth">
                     <svg width="190px" height="29px" viewBox="0 0 190 29" version="1.1" xmlns="http://www.w3.org/2000/svg" labelledby="logoTitle" role="img" class="footer-logo">
-                        <title class="logoTitle">Calvin Klein</title>
+                        <title class="logoTitle">{label.Calvin_Klein}</title>
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g transform="translate(-733.000000, -317.000000)" fill="#000000">
                                 <g transform="translate(733.000000, 317.000000)">
@@ -96,7 +96,7 @@
                         </template>
                     </div>
                     <div class="webid-copyright">
-                        <span>Copyright © 2022 Calvin Klein. All rights reserved.</span>
+                        <span>{label.Copyright_2022_Calvin_Klein_All_rights_reserved}</span>
                     </div>
                 </div>
             </div>

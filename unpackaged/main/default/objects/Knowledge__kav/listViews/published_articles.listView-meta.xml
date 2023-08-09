@@ -4,7 +4,6 @@
     <columns>TITLE</columns>
     <columns>ARTICLE_NUMBER</columns>
     <columns>RECORDTYPE</columns>
-    <columns>URL_NAME</columns>
     <columns>ABSTRACT</columns>
     <columns>LANGUAGE</columns>
     <filterScope>Everything</filterScope>

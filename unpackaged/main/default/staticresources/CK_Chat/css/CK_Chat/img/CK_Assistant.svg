@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>CK Assistant</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 5e-05 9.32988 5e-05 9.32988 9.99995 0 9.99995"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-and-fonts" transform="translate(-160.000000, -1220.000000)">
+            <g id="CK-Assistant" transform="translate(160.000000, 1220.000000)">
+                <circle id="Oval-Copy-2" fill="#FFFFFF" cx="16" cy="16" r="16"></circle>
+                <g id="Group-5-Copy" transform="translate(7.000000, 11.000000)">
+                    <polygon id="Fill-1" fill="#1C1C1C" points="16.54281 0.1675 12.00661 5.3223 12.00661 0.1675 10.88561 0.1675 10.88561 9.8325 12.00661 9.8325 12.00661 6.7784 13.23101 5.3995 16.59441 9.8325 17.88311 9.8325 14.00421 4.5361 17.88311 0.1675"></polygon>
+                    <g id="Group-4">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <path d="M1.15978,5.01285 C1.15978,7.26815 2.78348,8.95625 4.90978,8.95625 C6.89438,8.95625 7.87368,7.73195 8.18298,7.12635 L9.30408,7.12635 C9.02058,8.05405 7.68038,9.99995 4.90978,9.99995 C2.11338,9.99995 -2e-05,7.88655 -2e-05,4.99995 C-2e-05,2.15215 2.13908,5e-05 4.90978,5e-05 C7.68038,5e-05 9.02058,1.90715 9.32988,2.89945 L8.17018,2.89945 C7.82208,2.26815 6.85568,1.04385 4.90978,1.04385 C2.78348,1.04385 1.15978,2.73195 1.15978,5.01285" id="Fill-2" fill="#1C1C1C" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

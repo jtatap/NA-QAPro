@@ -523,9 +523,10 @@ function loadBot(options, prechatFormDetails, prechatInfo){
     } else {
         initESW('https://service.force.com', options.buttonIds, options.deploymentID);
     }
-    window.addEventListener('message',function(e){
 
-        console.log(e);
+        /* 'Live Chat' message to open chatbox */
+        window.addEventListener('message',function(e){
+            console.log(e);
             if(e.data == 'frameOpen'){
                  document.getElementsByClassName('helpButtonEnabled')[0].click();
              }

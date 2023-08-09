@@ -3,7 +3,6 @@
     <assignments>
         <profiles>
             <profile>Tier 1 TEMP</profile>
-            <profile>Tier I CSR CCPA</profile>
             <profile>Tier I CSR PVH</profile>
         </profiles>
     </assignments>
@@ -17,7 +16,7 @@
     <enableChatMonitoring>true</enableChatMonitoring>
     <enableChatTransferToAgent>true</enableChatTransferToAgent>
     <enableChatTransferToButton>true</enableChatTransferToButton>
-    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableChatTransferToSkill>false</enableChatTransferToSkill>
     <enableLogoutSound>false</enableLogoutSound>
     <enableNotifications>false</enableNotifications>
     <enableRequestSound>false</enableRequestSound>

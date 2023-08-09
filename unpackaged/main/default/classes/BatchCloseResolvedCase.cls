@@ -42,14 +42,23 @@ global class BatchCloseResolvedCase implements Database.Batchable <sObject>{
             
             if(caseList.size()>0){
                 List<Database.SaveResult> results = Database.update(caseList, false);
-                for(Integer i=0;i<results.size();i++){
-                    if (!results.get(i).isSuccess()){
-                        Database.Error error = results.get(i).getErrors().get(0);
-                        String failedDML = error.getMessage();
-                        caseList.get(i);
-                        Logger.logError('BatchCloseResolvedCase Error: ' + caseList.get(i).Id + ' ' + error.getStatusCode() + ' ' + error.getMessage() + failedDML);     
-                    }
+               
+                Map<Id,Case> caseMap = new Map<Id,Case>();
+                
+                for(Case ca : caseList){
+                    caseMap.put(ca.Id, ca);
                 }
+                
+                String errorList;
+                for (Database.SaveResult result : results) {
+                    caseMap.remove(result.getId() );
+                    errorList = errorList + ' \n ' + result.getErrors();
+                }
+                
+                if( caseMap.keySet().size() > 0){
+                   Logger.logError('BatchCloseResolvedCase Error: ' + caseMap.keySet() + ' errorList ' + errorList); 
+                }
+                               
             } 
         } catch (Exception ex){
             Logger.logException(ex);

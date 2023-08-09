@@ -3,7 +3,7 @@
     <fullName>emailToAddress__c</fullName>
     <externalId>false</externalId>
     <label>emailToAddress</label>
-    <length>100</length>
+    <length>255</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -3,9 +3,11 @@
  */
 
 trigger NF_BotSessionPopulateFields on ebotdata__Bot_Session__c (after insert) {
-    System.debug('NF_BotSessionPopulateFields');
-    if(trigger.isAfter && trigger.isInsert) {
+    Log.push('NF_BotSessionPopulateFields');
+    /*if(trigger.isAfter && trigger.isInsert) {
         NF_BotSessionPopulateFields.updateFields(Trigger.newMap);
-    }
+    }*/
+    TriggerDispatcher.run(new NF_BotSessionPopulateFieldsHandler());
+    Logger.logDebug();
 
 }

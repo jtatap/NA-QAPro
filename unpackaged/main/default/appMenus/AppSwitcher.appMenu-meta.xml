@@ -129,10 +129,6 @@
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>MuleSoft</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>Zeta</name>
         <type>ConnectedApp</type>
     </appMenuItems>
@@ -197,8 +193,8 @@
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>ServiceNow</name>
-        <type>ConnectedApp</type>
+        <name>standard__Insights</name>
+        <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
         <name>narvar__Narvar_Track</name>
@@ -213,23 +209,15 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>B2C_Commerce_Integration</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>B2C_Commerce_JWTAuthentication</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>bgdv026_PVHCKCA_B2C_CRM_SYNC</name>
+        <name>Zenkraft_MultiCarrier</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>bgdv026_PVHCKUS_B2C_CRM_SYNC</name>
+        <name>OIQ_Integration</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>bgdv026_PVHGC_B2C_CRM_SYNC</name>
+        <name>ServiceNow</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
@@ -241,11 +229,35 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
+        <name>standard__DataManager</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Logger</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>Supervision_Configurations</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>B2C_CRM_Sync_PVHTHUS</name>
+        <name>MuleSoft</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>B2C_Commerce_Integration</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>B2C_Commerce_JWTAuthentication</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>B2C_CRM_Sync_PVHCKUS1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>bCryptTestingAPI</name>
         <type>ConnectedApp</type>
     </appMenuItems>
 </AppMenu>

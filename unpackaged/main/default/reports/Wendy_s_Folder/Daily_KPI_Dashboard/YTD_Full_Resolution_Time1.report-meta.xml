@@ -50,14 +50,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
-            <value>Spam Queue,Unverified Privacy Request,Automated Process</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OWNER</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>Queue</value>
+            <value>Unverified Privacy Request,Automated Process,Spam,Queue,System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Aliyah,Elizabeth Cruz,Hymein,Caroline,Ann Marie,Keith</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Resolved_Date__c</column>
@@ -108,8 +101,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2023-01-24</endDate>
+        <endDate>2023-08-09</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2023-01-24</startDate>
+        <startDate>2023-08-09</startDate>
     </timeFrameFilter>
 </Report>

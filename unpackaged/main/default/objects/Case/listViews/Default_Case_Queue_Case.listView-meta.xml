@@ -9,8 +9,6 @@
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <columns>CREATEDBY_USER.ALIAS</columns>
-    <columns>CASES.ESCALATION_STATE</columns>
-    <columns>ZdPVHEscalation__c</columns>
     <filterScope>Queue</filterScope>
     <filters>
         <field>CASES.STATUS</field>

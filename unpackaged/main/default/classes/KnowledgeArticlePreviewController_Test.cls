@@ -35,19 +35,22 @@ public class KnowledgeArticlePreviewController_Test {
             Database.SaveResult res2 = Database.insert(dcs,false);
             string kbaId = kba.id;  
             
-            Knowledge__kav kba2 = new Knowledge__kav(Title='title2',urlName='test-article2',Brand__c ='True&Co');
+            Knowledge__kav kba2 = new Knowledge__kav(Title='title2',urlName='test-article2',Brand__c ='Calvin Klein');
             Database.SaveResult res3 = Database.insert(kba2,false);
             
             Knowledge__DataCategorySelection dcs2 = new Knowledge__DataCategorySelection();
-            dcs2.DataCategoryName='Tommy_Internal';
+            dcs2.DataCategoryName='Calvin_Klein_Internal';
             dcs2.DataCategoryGroupName = 'PVH_Knowledge_Base';
             dcs2.ParentId = kba2.Id;  
             
             string kba2Id = kba2.id;
             
             KnowledgeArticlePreviewController.getCommunityURL(kbaId);
-            KnowledgeArticlePreviewController.getCommunityURL(kba2Id);
+            //KnowledgeArticlePreviewController.getCommunityURL(kba2Id);
+            KnowledgeArticlePreviewController.getArticleContent(kba2Id);
             Test.stopTest();
         }
     }
+    
+    
 }

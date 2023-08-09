@@ -1,0 +1,6 @@
+<design:component >
+    <design:attribute name="pendingPointAdjustment"  default="false" />
+    <design:attribute name="isEnableRewardsButton"  default="false" />
+    <design:attribute name="numRecords" default="0" />
+    <design:attribute name="Spinner" default="false" />
+</design:component>

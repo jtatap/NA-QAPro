@@ -990,6 +990,13 @@
             <operator>equals</operator>
             <value>Unsubscribe,Access My Data,Delete My Data</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,1,2,4,5,7,8,9,81,83,84,11,10,100,82</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

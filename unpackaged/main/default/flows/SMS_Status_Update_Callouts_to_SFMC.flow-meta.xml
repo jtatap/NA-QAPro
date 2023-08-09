@@ -536,7 +536,7 @@
             </processMetadataValues>
             <name>SmsNumber</name>
             <value>
-                <elementReference>formula_4_myRule_3_A1_7052245933</elementReference>
+                <elementReference>formula_4_myRule_3_A1_0757803757</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -1458,7 +1458,7 @@
                 <stringValue>PRIORVALUE([Contact].SMSNumber__c)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_4_myRule_3_A1_7052245933</name>
+        <name>formula_4_myRule_3_A1_0757803757</name>
         <dataType>String</dataType>
         <expression>PRIORVALUE({!myVariable_current.SMSNumber__c})</expression>
     </formulas>
@@ -1574,7 +1574,7 @@ TEXT(PRIORVALUE({!myVariable_current.SMSOptinStatus__c}))=&#39;Y&#39; &amp;&amp;
 NOT(ISBLANK({!myVariable_current.SMSNumber__c} ) )  &amp;&amp;
 NOT(ISCHANGED({!myVariable_current.SMSNumber__c} ))</expression>
     </formulas>
-    <interviewLabel>SMS_Status_Update_Callouts_to_SFMC-8_InterviewLabel</interviewLabel>
+    <interviewLabel>SMS_Status_Update_Callouts_to_SFMC-9_InterviewLabel</interviewLabel>
     <label>SMS Status Update Callouts</label>
     <processMetadataValues>
         <name>ObjectType</name>

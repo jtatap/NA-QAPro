@@ -12,13 +12,13 @@
     <columns>Reason_Code_Details__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>CASES.STATUS</field>
-        <operation>equals</operation>
-        <value>Open</value>
-    </filters>
-    <filters>
         <field>OWNER_NAME</field>
         <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New</value>
     </filters>
     <label>My zQueue Cases</label>
     <sharedTo>

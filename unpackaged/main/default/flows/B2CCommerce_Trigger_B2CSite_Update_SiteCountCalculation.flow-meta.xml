@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the count of sites for the old / previous customerList.</description>
         <name>asn_oldCListSiteCount</name>
@@ -142,6 +142,7 @@
         </rules>
     </decisions>
     <description>... trigger the site count calculation with a Site is created or updated.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Trigger: B2C Site: Update: Site Count Calculation {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Trigger: B2C Site: Update: Site Count Calculation</label>
     <processMetadataValues>

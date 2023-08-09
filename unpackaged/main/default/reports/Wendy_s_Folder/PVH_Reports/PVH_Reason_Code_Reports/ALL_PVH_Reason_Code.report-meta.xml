@@ -37,7 +37,7 @@
     </columns>
     <description>Reason Codes for All PVH.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND NOT (9 AND 8) AND NOT (10 AND 11 AND 12)</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND NOT (9 AND 8) AND NOT (10 AND 11 AND 12) AND 13</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -122,6 +122,13 @@
             <operator>equals</operator>
             <value>No Notes,No Reply</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -150,7 +157,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
     <sortColumn>Case.Brand__c</sortColumn>

@@ -47,7 +47,8 @@ public with sharing class B2CProcessContactHelper extends B2CBaseAttributeAssign
             // Create collections representing new / old Contact records
             newContacts = triggerNew;
             oldContacts = triggerOld;
-            
+            System.debug('--> New Contact Is: '+ newContacts);
+            System.debug('--> Old Contact Is: '+ oldContacts);
             System.debug('--> B2C createPublishPlatformEvent: newContacts.size:' + newContacts.size());
 
             // Loop over the collection of Contact updates
@@ -57,8 +58,8 @@ public with sharing class B2CProcessContactHelper extends B2CBaseAttributeAssign
                 newContact = newContacts.get(contactIndex);
                 oldContact = oldContacts.get(contactIndex);
                 System.debug('--> B2C createPublishPlatformEvent: contactIndex:' + contactIndex + ' Trigger.New:' + newContact.Id + ' Trigger.Old:' + oldContact.Id);
-				System.debug('--> B2C createPublishPlatformEvent: Trigger.New.LastName:' + newContact.LastName + ' Trigger.Old.LastName:' + oldContact.LastName);
-				System.debug('--> B2C createPublishPlatformEvent: Trigger.New.MailingCity:**' + newContact.MailingCity + ' Trigger.Old.MailingCity:' + oldContact.MailingCity);
+                System.debug('--> B2C createPublishPlatformEvent: Trigger.New.LastName:' + newContact.LastName + ' Trigger.Old.LastName:' + oldContact.LastName);
+                
                 System.debug('--> B2C createPublishPlatformEvent: newContact.Updated_by_B2C_Platform_Event__c:' + newContact.Updated_by_B2C_Platform_Event__c);
                 System.debug('--> B2C createPublishPlatformEvent: newContact.Last_Platform_Event_Applied_Updates__c:' + newContact.Last_Platform_Event_Applied_Updates__c);
                 // Has the updated by B2C Platform Event been flipped?  If so, continue
@@ -96,20 +97,15 @@ public with sharing class B2CProcessContactHelper extends B2CBaseAttributeAssign
 
                 // Determine if this Contact been updated through one of the publish fieldMappings
                 updatedFieldMappings = B2CProcessContactHelper.getUpdatedFieldMappings(oldContact, newContact, fieldMappings);
-                
-				System.debug('--> B2C createPublishPlatformEvent: updatedFieldMappings.size:' + updatedFieldMappings.size());
+                System.debug('--> updatedFieldMappings are :::'+ updatedFieldMappings);
+                System.debug('--> B2C createPublishPlatformEvent: updatedFieldMappings.size:' + updatedFieldMappings.size());
                     
                 // Has the Contact record been updated?
                 if (updatedFieldMappings.size() > 0) {
 
                     // If so, get the field-specific updates for the updated contact
-                    //if(oldContact.birthdate!=null && newContact.Birthdate==null){
-                        //newContact.Birthdate=date.today()-1;
-                    
-                    //}
                     thisB2CProfile = B2CContactManager.getPublishProfile(newContact, updatedFieldMappings);
                     thisB2CProfileJSON = JSON.serializePretty(thisB2CProfile, true);
-                    System.debug('--> B2C createPublishPlatformEvent:final Json  '+thisB2CProfileJSON);
 
                     // Then create the Contact Publish Platform Event and override the publish JSON
                     peCollection.add(B2CProcessContactHelper.createPublishPlatformEvent(validateContactInput, thisB2CProfileJSON));
@@ -121,7 +117,7 @@ public with sharing class B2CProcessContactHelper extends B2CBaseAttributeAssign
             System.debug('--> B2C createPublishPlatformEvent: Publish events:' + peCollection.size());
             
             // Publish the PE Collection if it contains at least one (1) record
-            if (peCollection.size() > 0) { EventBus.publish(peCollection); }
+            if (peCollection.size() > 0 && System.Limits.getPublishImmediateDML() < 150) { EventBus.publish(peCollection); }
 
         }
 
@@ -291,7 +287,7 @@ public with sharing class B2CProcessContactHelper extends B2CBaseAttributeAssign
         thisPE.OCAPI_Version_Number__c = validateContactInput.customerList.OCAPI_Version_No__c;
         thisPE.Process_Mode__c = validateContactInput.processMode;
         thisPE.B2C_Profile_Publish_JSON__c = b2cProfileJSON;
-		System.debug('Platform Event is +++ '+ thisPE);
+
         // Return the created platformEvent
         return thisPE;
 

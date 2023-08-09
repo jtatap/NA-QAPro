@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Additional_Information_ECom_Single__c</field>
-        <value xsi:type="xsd:string">Click here to start a return &lt;a href=&quot;https://returns.narvar.com/calvinklein/returns&quot;&gt;here&lt;/a&gt;.</value>
+        <value xsi:type="xsd:string">Click here to start a return &lt;a href=&quot;https://returns.narvar.com/calvinklein2/returns&quot;&gt;here&lt;/a&gt;.</value>
     </values>
     <values>
         <field>Additional_Information_Other_Retail__c</field>

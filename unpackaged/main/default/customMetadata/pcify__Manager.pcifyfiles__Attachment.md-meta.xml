@@ -31,6 +31,10 @@
         <value xsi:type="xsd:string">Report</value>
     </values>
     <values>
+        <field>pcify__DetectionFieldsPlus__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>pcify__IsActive__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>

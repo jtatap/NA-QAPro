@@ -4,7 +4,7 @@
     <label>True&amp;Co</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4Pjxa4AhHIBiLXWfp2xanH1ie8tc3Yt1ZYMitCthzEp8K93JAMJn_B4fyhrX3fF</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

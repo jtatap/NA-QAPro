@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Ecomm</masterLabel>
+            <translation><!-- Ecomm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail CA</masterLabel>
+            <translation><!-- Retail CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail US</masterLabel>
+            <translation><!-- Retail US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

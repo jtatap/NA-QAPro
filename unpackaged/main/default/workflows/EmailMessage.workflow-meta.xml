@@ -28,7 +28,7 @@
             <name>First_Reply_Time</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>EmailMessage.Incoming</field>
             <operation>equals</operation>
@@ -46,7 +46,7 @@
             <name>UpdateEmailToAddressOnCase</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>EmailMessage.ToAddress</field>
             <operation>notEqual</operation>

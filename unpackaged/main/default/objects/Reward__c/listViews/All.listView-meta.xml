@@ -5,8 +5,8 @@
     <columns>RewardType__c</columns>
     <columns>LoyaltyId__c</columns>
     <columns>Reason_Code__c</columns>
+    <columns>OBJECT_ID</columns>
     <columns>Amount__c</columns>
-    <columns>RewardId__c</columns>
     <columns>Status__c</columns>
     <columns>CREATED_DATE</columns>
     <columns>TransactionId__c</columns>

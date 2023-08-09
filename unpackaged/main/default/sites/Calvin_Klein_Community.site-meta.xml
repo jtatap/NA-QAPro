@@ -18,6 +18,10 @@
         <domainName>help.calvinklein.com</domainName>
         <primary>true</primary>
     </customWebAddresses>
+    <customWebAddresses>
+        <domainName>help.calvinklein.us</domainName>
+        <primary>false</primary>
+    </customWebAddresses>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
@@ -27,7 +31,7 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <serverIsDown>SNA_Calvin_Klein_Community1_sf_default_cdn_ui4aR</serverIsDown>
+    <serverIsDown>SNA_Calvin_Klein_Community1_sf_edge_NPWLr</serverIsDown>
     <siteAdmin>dimitri.savelieff@magnet360.com.pvh</siteAdmin>
     <siteGuestRecordDefaultOwner>pkuczynski@pvh.salesforce.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>

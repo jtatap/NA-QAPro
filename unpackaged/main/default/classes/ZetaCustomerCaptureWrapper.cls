@@ -138,9 +138,9 @@ public class ZetaCustomerCaptureWrapper {
             public List<EmailUserPreferences> EmailUserPreferences;
             
             public EmailPreferenceCls(Contact record) {
-                String optInFlag = 'false'; 
-                if(record.EmailOptInStatus__c=='Y') {
-                   optInFlag = 'true'; 
+                String optInFlag = system.label.false; 
+                if(record.EmailOptInStatus__c==SYSTEM.LABEL.Y) {
+                   optInFlag = system.label.true; 
                 }
                 BusinessUnitID = integer.valueof(record.Brand_Id__c);
                 EmailOptInFlag = Boolean.valueOf(optInFlag);
@@ -159,9 +159,9 @@ public class ZetaCustomerCaptureWrapper {
             public List<SMSPreferences> SMSPreferences;
             
             public SMSPreferenceCls(Contact record) {
-                String optInFlag = 'false'; 
-                if(record.SMSOptinStatus__c=='Y') {
-                   optInFlag = 'true'; 
+                String optInFlag = system.label.false; 
+                if(record.SMSOptinStatus__c==SYSTEM.LABEL.Y) {
+                   optInFlag = system.label.true; 
                 }
                 BusinessUnitID = integer.valueof(record.Brand_Id__c);
                 MobileOptInFlag = Boolean.valueOf(optInFlag);

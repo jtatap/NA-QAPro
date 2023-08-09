@@ -5,12 +5,20 @@
 
 import { LightningElement, api } from 'lwc';
 import { subscribe, unsubscribe, onError} from 'lightning/empApi';
+import RealTimeInfoLabel from '@salesforce/label/c.RealTimeInfo';
+import Subscribed from '@salesforce/label/c.Subscribed';
+import Unsubscribed from '@salesforce/label/c.Unsubscribed'
 
 export default class EmpApiLWC extends LightningElement {
     channelName = '/event/Log_Event__e';
     isSubscribed;
     @api totalRecords;
     subscription = {};
+    label = {
+        RealTimeInfoLabel,
+        Subscribed,
+        Unsubscribed
+    };
 
     renderedCallback(){
         if(!this.isSubscribed){

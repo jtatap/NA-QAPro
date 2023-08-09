@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
     <managedTopic>
-        <fullName>Tommy Hilfiger.Content:FAQs</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>FAQs</name>
-        <parentName></parentName>
-        <position>0</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Tommy Hilfiger.Content:Returns</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>Returns</name>
-        <parentName></parentName>
-        <position>1</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Tommy Hilfiger.Content:Shipping</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>Shipping</name>
-        <parentName></parentName>
-        <position>2</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Tommy Hilfiger.Content:Track Your Order Details</fullName>
-        <managedTopicType>Content</managedTopicType>
-        <name>Track Your Order Details</name>
-        <parentName></parentName>
-        <position>3</position>
-        <topicDescription> </topicDescription>
-    </managedTopic>
-    <managedTopic>
         <fullName>Tommy Hilfiger.Featured:FAQs</fullName>
         <managedTopicType>Featured</managedTopicType>
         <name>FAQs</name>

@@ -1,4 +1,4 @@
-@isTest
+@isTest(isParallel=false)
 public class Scheduler_SFMCAccessTokensTest {
 	static Map<String, String> responseHeaders = new Map<String, String>(); 
     
@@ -11,7 +11,6 @@ public class Scheduler_SFMCAccessTokensTest {
                                                  '{"access_token":"ecdc4492-8a1c-4f03-b9ad-6b9db87f61a1","expires_in":15445210}',
                                                  responseHeaders);
         
-        System.debug('*** fake response = '+fakeResponse);
         Test.setMock(HttpCalloutMock.class, fakeResponse);        
         Scheduler_SFMCAccessTokens.getSFMCAccessToken();
         CKScheduler_SFMCAccessTokens.getSFMCAccessToken();

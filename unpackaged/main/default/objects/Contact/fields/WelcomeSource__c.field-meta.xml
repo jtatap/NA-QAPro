@@ -41,6 +41,11 @@
                 <default>false</default>
                 <label>6-RAF</label>
             </value>
+            <value>
+                <fullName>07</fullName>
+                <default>false</default>
+                <label>CK Project Blue</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

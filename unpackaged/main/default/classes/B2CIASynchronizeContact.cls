@@ -79,14 +79,8 @@ public with sharing class B2CIASynchronizeContact extends B2CBaseAttributeAssign
             // Retrieve the individual values from the synchronization results
             updatedContact = (Contact) updatedResults.get('updatedObject');
             updatedContactFields = (List<String>) synchronizationResults.get('updatedFields');
-			
-            // To stop circular/duplicate publish event loop to SFCC
-            // see B2CProcessContactHelper.processTrigger
-             //if(updatedResults.get('updatedFields')== NULL){
-            	updatedContact.put('Updated_by_B2C_Platform_Event__c', true);    
-            //}
-            
-            
+            updatedContact.put('Updated_by_B2C_Platform_Event__c', true);
+
             // Audit the updatedContact (tracking which fieldValues were updated)
             System.debug(LoggingLevel.INFO, '--> updatedContact: ' + updatedContact);
 

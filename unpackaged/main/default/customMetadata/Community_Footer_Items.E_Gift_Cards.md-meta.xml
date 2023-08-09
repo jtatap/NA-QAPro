@@ -28,6 +28,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">https://usa.tommy.com/en/e-gift-cards</value>
+        <value xsi:type="xsd:string">https://usa.tommy.com/en/e-gift-cards.html</value>
     </values>
 </CustomMetadata>

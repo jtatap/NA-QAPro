@@ -40,7 +40,7 @@
                 </groupingSortProperties>
                 <header>Current New Cases by Queue</header>
                 <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Case_Status_by_Queue</report>
+                <report>Daily_KPI_Dashboard/Case_Status_by_Queue</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -208,16 +208,41 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>FORMULA1</column>
+                    <aggregate>Average</aggregate>
+                    <column>CDF1</column>
                 </chartSummary>
                 <componentChartTheme>dark</componentChartTheme>
+                <componentType>Metric</componentType>
+                <decimalPrecision>1</decimalPrecision>
+                <displayUnits>Integer</displayUnits>
+                <groupingSortProperties/>
+                <header>RT - Last 30 Days</header>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Full_Resolution_Time_Weekly</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>10</rowIndex>
+            <rowSpan>5</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>8</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>FORMULA1</column>
+                </chartSummary>
                 <componentType>Metric</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>FCR - 30 Days</header>
+                <header>FCR - Last 30 Days</header>
                 <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>85.0</indicatorBreakpoint2>
+                <indicatorBreakpoint2>75.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -228,8 +253,8 @@
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>8</columnIndex>
+            <colSpan>2</colSpan>
+            <columnIndex>10</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
@@ -283,7 +308,6 @@
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Yesterday</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>15</rowIndex>
@@ -295,6 +319,7 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
+                    <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
@@ -302,12 +327,12 @@
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
                 <header>Escalated Chats</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Alex_s_Folder1/Deflected_vs_Escalated_Yesterday</report>
+                <report>Alex_s_Folder1/Deflected_Count_Yesterday</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>15</rowIndex>
@@ -319,19 +344,19 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>RowCount</column>
+                    <column>FORMULA1</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Live Chat Count</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <header>Chat AHT</header>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Yesterday_Chat_ASA_and_AHT</report>
+                <report>Wendy_s_Folder/Chat_ASA_Today_with_Bot_Sessions</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>15</rowIndex>
@@ -369,7 +394,7 @@
                 </groupingSortProperties>
                 <header>CSAT by Reason Code</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/CSAT_Reports/PVH_Brand_CSAT_by_Reason_Code</report>
+                <report>CSAT_Reports/PVH_Brand_CSAT_by_Reason_Code</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -384,19 +409,19 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>FORMULA1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Live Chat AHT</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <header>Live Chats</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/Chat_ASA_Today_with_Bot_Sessions</report>
+                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Yesterday_Chat_ASA_and_AHT</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>20</rowIndex>
@@ -415,7 +440,7 @@
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Live Chat ASA</header>
+                <header>Chat ASA</header>
                 <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>

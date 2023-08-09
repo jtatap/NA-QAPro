@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Fault_Section</name>
+        <label>Assign Fault Section</label>
+        <locationX>440</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>varFaultSection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Update Case.Observation Form Field</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Run_error_handling_subflow</targetReference>
+        </connector>
+    </assignments>
+    <description>Triggers the Share_Observation_Form_with_CSR flow and updates the related Case to that the Observation Form is complete</description>
+    <environments>Default</environments>
+    <interviewLabel>Observation Form: After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Observation Form: After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case_Observation_Form_Field</name>
+        <label>Update Case.Observation Form Field</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Share_Observation_form_with_CSR</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Assign_Fault_Section</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Observation_Form_Complete__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Cases__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Case_Observation_Form_Field</targetReference>
+        </connector>
+        <object>Observation_Form__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_error_handling_subflow</name>
+        <label>Run error handling subflow</label>
+        <locationX>440</locationX>
+        <locationY>575</locationY>
+        <flowName>Log_Error_Handling_Subflow</flowName>
+        <inputAssignments>
+            <name>varClassName</name>
+            <value>
+                <stringValue>Observation Form: After Save</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFaultSection</name>
+            <value>
+                <elementReference>varFaultSection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Share_Observation_form_with_CSR</name>
+        <label>Share Observation form with CSR</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <flowName>Share_Observation_Form_with_CSR</flowName>
+        <inputAssignments>
+            <name>observationFormId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>varFaultSection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

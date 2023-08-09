@@ -11,17 +11,17 @@
     <targetConfigs>
         <targetConfig targets="lightningCommunity__Default">
             <property name="recordTypeName" type="String" label="Record Type Name:" description="Enter the label name of the record type to use when creating a case for this. 
-            This should not be changed, unless a differnent record type has to be used and approved" />
-            <property name="attachmentsInstructions" type="String" label="Attachement Instructions:" description="Attachement Instructions" />
-            <property name="brandLabel" type="String" label="Brand label:" description="Brand label:" />
-            <property name="businessGroupLabel" type="String" label="Business Group Label:" description="Business Group Label:" />
-            <property name="descriptionLabel" type="String" label="Description Label:" description="Description Label:" />
-            <property name="emailLabel" type="String" label="Email Label:" description="Email Label:" />
-            <property name="firstNameLabel" type="String" label="First Name Label:" description="First Name Label:" />
-            <property name="instructions" type="String" label="Instructions Label:" description="Instructions Label:" />
-            <property name="lastNameLabel" type="String" label="Last Name Label:" description="Last Name Label:" />
-            <property name="maxFilesInsertedLabel" type="String" label="Max Files Label:" description="The message to post when the max number of files have been inserted" />
-            <property name="maxFilesInsertedSubinstructions" type="String" label="Max Files Error Instructions:" description="This is the second line on the toast message" />
+            This should not be changed, unless a differnent record type has to be used and approved" default="Corporate Request" />
+            <property name="attachmentsInstructions" type="String" label="Attachement Instructions:" description="Attachement Instructions" default="Attach up to 5 files: If you have any attachments to add to your submission (such as photos, receipts, or screenshots), please attach up to 5 files so we can further assist you. Should a case require additional information, you may be asked to provide that at a later time."/>
+            <property name="brandLabel" type="String" label="Brand label:" description="Brand label:" default="Brand" />
+            <property name="businessGroupLabel" type="String" label="Business Group Label:" description="Business Group Label:" default="Business Group" />
+            <property name="descriptionLabel" type="String" label="Description Label:" description="Description Label:" default="Description" />
+            <property name="emailLabel" type="String" label="Email Label:" description="Email Label:" default="Email" />
+            <property name="firstNameLabel" type="String" label="First Name Label:" description="First Name Label:" default="First Name" />
+            <property name="instructions" type="String" label="Instructions Label:" description="Instructions Label:" default="Please tell us more about your inquiry using the form below and click to submit your information." />
+            <property name="lastNameLabel" type="String" label="Last Name Label:" description="Last Name Label:" default="Last Name" />
+            <property name="maxFilesInsertedLabel" type="String" label="Max Files Label:" description="The message to post when the max number of files have been inserted" default="Max files inserted." />
+            <property name="maxFilesInsertedSubinstructions" type="String" label="Max Files Error Instructions:" description="This is the second line on the toast message" default="Attach up to 5 files: If you have any attachments to add to your submission." />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

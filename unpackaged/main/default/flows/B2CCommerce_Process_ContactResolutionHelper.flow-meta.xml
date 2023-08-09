@@ -31,7 +31,7 @@
             <name>isError</name>
         </outputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... add the Contact to resolve to the collection being processed.</description>
         <name>asn_contactToContactCollection</name>
@@ -386,6 +386,7 @@
         </rules>
     </decisions>
     <description>... encapsulates the Contact Resolution logic for re-use and implementation simplification.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Process: Contact Resolution Helper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Contact Resolution Helper</label>
     <loops>

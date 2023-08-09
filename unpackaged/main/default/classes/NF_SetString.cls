@@ -19,12 +19,12 @@ public with sharing class NF_SetString {
         Output output = new Output();
 
         String entered = input[0].inputString;
-        if(entered.equalsIgnoreCase('YUP') || entered.equalsIgnoreCase('YES') || entered.equalsIgnoreCase('YA') || entered.equalsIgnoreCase('YEAH') || entered.equalsIgnoreCase('YEP'))
+        if(entered.equalsIgnoreCase(SYSTEM.LABEL.YUP) || entered.equalsIgnoreCase(SYSTEM.LABEL.YES1) || entered.equalsIgnoreCase(SYSTEM.LABEL.YA) || entered.equalsIgnoreCase(SYSTEM.LABEL.YEAH) || entered.equalsIgnoreCase(SYSTEM.LABEL.YEP))
         {
-            output.outputString = 'Yes';
+            output.outputString = SYSTEM.LABEL.YES1;
         }
-        else if(entered.equalsIgnoreCase('NO') || entered.equalsIgnoreCase('NOPE') || entered.equalsIgnoreCase('NAH')) {
-            output.outputString = 'No';
+        else if(entered.equalsIgnoreCase(SYSTEM.LABEL.NO1) || entered.equalsIgnoreCase(SYSTEM.LABEL.NOPE) || entered.equalsIgnoreCase(SYSTEM.LABEL.NAH)) {
+            output.outputString = SYSTEM.LABEL.NO1;
         }
         else {
             output.outputString = input[0].inputString;

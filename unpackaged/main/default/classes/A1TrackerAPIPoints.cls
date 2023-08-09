@@ -36,25 +36,26 @@ public class A1TrackerAPIPoints {
     
     @InvocableMethod(label='A1 Tracker Api' description='Post Tracker API Points')
     public static void invokePostTrackerAPIPoints(List<Id> CaseIds) {
-        System.debug('invokePostTrackerAPIPoints called');
+        Log.push('invokePostTrackerAPIPoints called');
         Id CaseId = CaseIds[0];
         futurePostTrackerAPIEvents(CaseId);
+        Logger.logDebug();
     }
     
     @future(callout=true)
     public static void futurePostTrackerAPIEvents(Id CaseId){
-        System.debug('futurePostTrackerAPIEvents called');
+        Log.push('futurePostTrackerAPIEvents called');
         Map<String,String> LoyaltyMap = new Map<String,String>(); 
         List<Case> CaseList = [SELECT Id, CaseNumber, NFCaseScenario__r.NFScenarioCategory__c, NFCaseScenario__r.NF_Scenario__c, LoyaltyComments__c, PointsGranted__c, PointsAdjustmentTimeStamp__c, OwnerId, NFCaseScenario__c, Contact.Brand_Id__c, Contact.LoyaltyID__c,Contact.LoyaltyFlag__c,Contact.Email,Owner.FirstName,Owner.LastName
                                FROM Case 
                                WHERE Id=:CaseId LIMIT 1];
 
-        System.debug('CaseList:'+CaseList);
+        Log.push('CaseList:'+CaseList);
         
         List<AccuralPeriods__mdt> accualPeriod = [SELECT Id,MasterLabel, AccuralPeriod__c, EndDate__c, StartDate__c 
                                                   FROM AccuralPeriods__mdt
                                                   WHERE StartDate__c <= :Date.today() and EndDate__c >= :Date.today()];
-        System.debug('accualPeriod:'+accualPeriod);
+        Log.push('accualPeriod:'+accualPeriod);
         
         //if records brand is child, assigning brandId with its parent
         //fetching loyalty MDT
@@ -64,20 +65,20 @@ public class A1TrackerAPIPoints {
             	LoyaltyMap.put(loyalRecord.BrandId__c,loyalRecord.Parent_Brand__c);
             }
         }
-        System.debug('***Posting Loyalty Map = '+LoyaltyMap);
+        Log.push('***Posting Loyalty Map = '+LoyaltyMap);
         String brandIdToPass = CaseList[0].Contact.Brand_Id__c;
         
         //if records brand is child, assigning brandId with its parent
         if(LoyaltyMap.containsKey(brandIdToPass)){
-            System.debug('***changing brandIdToPass: subBrand to parentBrand');
+            Log.push('***changing brandIdToPass: subBrand to parentBrand');
             brandIdToPass = LoyaltyMap.get(brandIdToPass);
         }
-        System.debug('***brandIdToPass = '+brandIdToPass);
+        Log.push('***brandIdToPass = '+brandIdToPass);
         
         List<A1_TrackerAPI_creds__mdt> creds =[SELECT Id,MasterLabel, Base64__c, BrandId__c, Password__c, Username__c, TenantId__c 
                                                FROM A1_TrackerAPI_creds__mdt
                                                WHERE BrandId__c =: brandIdToPass];
-        System.debug('creds:'+creds);
+        Log.push('creds:'+creds);
         if(!creds.isEmpty()){
             Events eve = new Events();
             eve.Type='points';
@@ -93,7 +94,7 @@ public class A1TrackerAPIPoints {
             eve.SourceCustomerNumber = CaseList[0].Contact.LoyaltyID__c;
             eve.CustomerID = CaseList[0].Contact.LoyaltyID__c;
             eve.Cookie = '';
-            System.debug('eve:'+eve);
+            Log.push('eve:'+eve);
 
             Customers cust = new Customers();
             cust.SourceCustomerNumber = CaseList[0].Contact.LoyaltyID__c;
@@ -101,33 +102,34 @@ public class A1TrackerAPIPoints {
             cust.ID = CaseList[0].Contact.LoyaltyID__c;
             if (CaseList[0].Contact.LoyaltyFlag__c!=null && CaseList[0].Contact.LoyaltyFlag__c) cust.c_loyaltyFlag = 'Yes';
             cust.Email = CaseList[0].Contact.Email;
-            System.debug('cust:'+cust);
+            Log.push('cust:'+cust);
             String body = String.valueOf('{"events" :['+JSON.serialize(eve)+'], "customers" : ['+JSON.serialize(cust)+']}');
             //String body = String.valueOf('"events" :['+JSON.serialize(eve)+'], "customers" : ['+JSON.serialize(cust)+']');
-            System.debug('body:'+body);
+            Log.push('body:'+body);
             String trackerAccKey = AgileOne.getTrackerAPIAccesskey(creds[0]);
-            System.debug('***AccessKey = '+trackerAccKey);
+            Log.push('***AccessKey = '+trackerAccKey);
             //String trackerAccKey = '2a$10$QbZVzccFtgdNW49AekLpWOMQuNXw.RVQMKEkTqHiGO52UluqDjXg2';
             String reqEndPoint = 'callout:A1_TrackerAPI_DataEndPoint/'+creds[0].TenantId__c+'/dw/tracker?scheme=a1webtag&accessKey='+trackerAccKey;
-            System.debug('httpCalloutMethod called');
+            Log.push('httpCalloutMethod called');
 
             String responseString = Null;
             HttpRequest req = new HttpRequest();
             req.setHeader('Content-Type', 'application/json');
             req.setBody(body);
             req.setEndpoint(reqEndPoint);
-            req.setMethod('POST');
-            System.debug('reqEndPoint '+reqEndPoint);
+            req.setMethod(SYSTEM.LABEL.POST);
+            Log.push('reqEndPoint '+reqEndPoint);
             Http http = new Http();
             try{
                 HttpResponse res = http.send(req);
-                System.debug('***response body:'+res.getBody());
+                Log.push('***response body:'+res.getBody());
                 responseString = res.getBody();
 
             }catch(System.CalloutException e) {
-                System.debug('Callout error: '+ e);
+                Log.push('Callout error: '+ e);
             }
         }
+        Logger.logDebug();
     }
         
 }

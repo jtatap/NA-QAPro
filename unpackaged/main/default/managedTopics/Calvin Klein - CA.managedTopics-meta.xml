@@ -6,7 +6,7 @@
         <name>Preferred Loyalty Program</name>
         <parentName></parentName>
         <position>0</position>
-        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s Preferred Loyalty Program? Visit our help page for more info on signing up, logging in, rewards, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Featured:Returns</fullName>
@@ -14,7 +14,7 @@
         <name>Returns</name>
         <parentName></parentName>
         <position>2</position>
-        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein return? Visit our help page for more info on how to make a return, our return policy, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Featured:Shipping</fullName>
@@ -22,7 +22,7 @@
         <name>Shipping</name>
         <parentName></parentName>
         <position>1</position>
-        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein shipping? Visit our help page for more info on shipping methods, charges, tracking, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Featured:Your Order</fullName>
@@ -30,7 +30,7 @@
         <name>Your Order</name>
         <parentName></parentName>
         <position>3</position>
-        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein order? Visit our help page for more info on order status, cancelling an order, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Additional Help Topics</fullName>
@@ -38,7 +38,7 @@
         <name>Additional Help Topics</name>
         <parentName></parentName>
         <position>4</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question or need assistance from Calvin Klein? Visit our help page to find answers to frequently asked questions and additional topics.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:FAQs</fullName>
@@ -54,7 +54,7 @@
         <name>Online Store Information</name>
         <parentName>Additional Help Topics</parentName>
         <position>3</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s online store? Visit our help page for more info on online orders, items, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Payment</fullName>
@@ -62,7 +62,7 @@
         <name>Payment</name>
         <parentName>Additional Help Topics</parentName>
         <position>1</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about making a payment with Calvin Klein? Visit our help page for more info on payment options, using PayPal, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Preferred Loyalty Program</fullName>
@@ -70,15 +70,7 @@
         <name>Preferred Loyalty Program</name>
         <parentName></parentName>
         <position>0</position>
-        <topicDescription>Join the Calvin Klein preferred loyalty program, and explore frequently asked questions regarding the program.</topicDescription>
-    </managedTopic>
-    <managedTopic>
-        <fullName>Calvin Klein - CA.Navigational:Product Care</fullName>
-        <managedTopicType>Navigational</managedTopicType>
-        <name>Product Care</name>
-        <parentName>Additional Help Topics</parentName>
-        <position>2</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about Calvin Klein&#39;s Preferred Loyalty Program? Visit our help page for more info on signing up, logging in, rewards, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Returns</fullName>
@@ -86,7 +78,7 @@
         <name>Returns</name>
         <parentName></parentName>
         <position>2</position>
-        <topicDescription>We offer a number of return methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein return? Visit our help page for more info on how to make a return, our return policy, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Shipping</fullName>
@@ -94,7 +86,7 @@
         <name>Shipping</name>
         <parentName></parentName>
         <position>1</position>
-        <topicDescription>We offer a number of shipping methods for your convenience. Read more about Calvin Klein&#39;s shipping and returns policies.</topicDescription>
+        <topicDescription>Have a question about Calvin Klein shipping? Visit our help page for more info on shipping methods, charges, tracking, and more.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Your Account</fullName>
@@ -102,7 +94,7 @@
         <name>Your Account</name>
         <parentName>Additional Help Topics</parentName>
         <position>0</position>
-        <topicDescription> </topicDescription>
+        <topicDescription>Have a question about your Calvin Klein account? Visit our help page for more info about opening and managing your account.</topicDescription>
     </managedTopic>
     <managedTopic>
         <fullName>Calvin Klein - CA.Navigational:Your Order</fullName>
@@ -110,6 +102,6 @@
         <name>Your Order</name>
         <parentName></parentName>
         <position>3</position>
-        <topicDescription>Looking to find information about your latest Calvin Klein purchase? Track your Calvin Klein order by signing up for email updates regarding your order status.</topicDescription>
+        <topicDescription>Have a question about your Calvin Klein order? Visit our help page for more info on order status, cancelling an order, and more.</topicDescription>
     </managedTopic>
 </ManagedTopics>

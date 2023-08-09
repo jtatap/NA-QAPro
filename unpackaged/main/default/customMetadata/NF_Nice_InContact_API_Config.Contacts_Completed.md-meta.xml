@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>Request_Endpoint__c</field>
-        <value xsi:type="xsd:string">[BASE_URL]services/[API_VERSION]/contacts/completed?startDate=[START_DATE]&amp;endDate=[END_DATE]&amp;fields=agentId,contactId,skillId,transferIndicatorId,inQueueSeconds,isShortAbandon,abandoned,abandonSeconds,refuseReason,preQueueSeconds,totalDurationSeconds</value>
+        <value xsi:type="xsd:string">https://api-na1.niceincontact.com/incontactapi/services/[API_VERSION]/contacts/completed?startDate=[START_DATE]&amp;endDate=[END_DATE]&amp;fields=agentId,contactId,skillId,transferIndicatorId,inQueueSeconds,isShortAbandon,abandoned,abandonSeconds,refuseReason</value>
     </values>
     <values>
         <field>Request_Headers__c</field>

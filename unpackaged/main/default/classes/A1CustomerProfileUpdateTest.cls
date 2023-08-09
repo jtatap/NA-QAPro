@@ -1,9 +1,9 @@
 @isTest
 public class A1CustomerProfileUpdateTest {
-    private static String getRendomNumber(Integer iDigit){
+      private static String getRendomNumber(Integer iDigit){
         return string.valueOf(Math.abs(Crypto.getRandomInteger())).leftPad(iDigit, '0');
     }
-    private static List<A1CustomerProfileUpdate.Subscriber> generateSubscribesData(){
+     private static List<A1CustomerProfileUpdate.Subscriber> generateSubscribesData(){
         List<A1CustomerProfileUpdate.Subscriber> subData = new List<A1CustomerProfileUpdate.Subscriber>();
         A1CustomerProfileUpdate.Subscriber subscribeReq1 = new A1CustomerProfileUpdate.Subscriber();
         A1CustomerProfileUpdate.Subscriber subscribeReq2 = new A1CustomerProfileUpdate.Subscriber();
@@ -13,7 +13,7 @@ public class A1CustomerProfileUpdateTest {
         A1CustomerProfileUpdate.Subscriber subscribeReq6 = new A1CustomerProfileUpdate.Subscriber();
         A1CustomerProfileUpdate.Subscriber subscribeReq7 = new A1CustomerProfileUpdate.Subscriber();
         A1CustomerProfileUpdate.Subscriber subscribeReq8 = new A1CustomerProfileUpdate.Subscriber();
-
+        
         //Subscriber data for brand 2, create new contact
         subscribeReq1.brandId = '2';
         subscribeReq1.firstName = 'fname' + getRendomNumber(10);
@@ -30,7 +30,7 @@ public class A1CustomerProfileUpdateTest {
         subscribeReq1.SourceSystem = 'Aquia';
         subscribeReq1.LoyaltyId = 'CK31031293225';
         subData.add(subscribeReq1);
-
+        
         //Subscriber data for brand 2, create new contact
         subscribeReq2.brandId = '2';
         subscribeReq2.firstName = 'fname1'+getRendomNumber(10);
@@ -47,9 +47,9 @@ public class A1CustomerProfileUpdateTest {
         subscribeReq2.StoreOfCapture = 'other';
         subscribeReq2.SourceSystem = 'Aquia';
         subscribeReq2.LoyaltyId = 'CK31041293225';
-
+        
         subData.add(subscribeReq2);
-
+        
         //Subscriber data for brand Id 1, create new contact
         subscribeReq3.brandId = '1';
         subscribeReq3.firstName = 'fname1'+getRendomNumber(10);
@@ -66,10 +66,10 @@ public class A1CustomerProfileUpdateTest {
         subscribeReq3.StoreOfCapture = 'other';
         subscribeReq3.SourceSystem = 'POS';
         subscribeReq3.LoyaltyId = 'TH31031293225';
-
+        
         subData.add(subscribeReq3);
-
-
+        
+        
         return subData;
     }
     public static Contact createContact(A1CustomerProfileUpdate.Subscriber sub){
@@ -89,15 +89,15 @@ public class A1CustomerProfileUpdateTest {
         newCon.StoreOfCapture__c = (sub.StoreOfCapture);
         newCon.Source_System__c = (sub.SourceSystem);
         newCon.LoyaltyID__c = (sub.LoyaltyId);
-
-        return newCon;
+        
+       return newCon;
     }
-    @isTest
+     @isTest
     static void testUtilDateMethod(){
         String strDate = '20120323';
         Date dtDate = null;
         Test.startTest();
-        dtDate = UtilityClass.strYYYMMDDtoDate(strDate);
+            dtDate = UtilityClass.strYYYMMDDtoDate(strDate);
         Test.stopTest();
 
         //System.assertEquals(Date.newInstance(2021,3,23),dtDate);
@@ -111,20 +111,20 @@ public class A1CustomerProfileUpdateTest {
         A1CustomerProfileUpdate.SubRequest subReq = new A1CustomerProfileUpdate.SubRequest();
         subReq.Count = '1';
         subReq.Subscribers = new List<A1CustomerProfileUpdate.Subscriber>{subData[0]};
-
+        
         Test.startTest();
-        RestRequest req = new RestRequest();
+        RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();
-
+        
         String JsonMsg=JSON.serialize(subReq);
-
+        
         req.requestURI = '/services/apexrest/A1subscribers/Update';  //Request URL
         req.httpMethod = 'POST';//HTTP Request Type
         req.requestBody = Blob.valueof(JsonMsg);
         RestContext.request = req;
         RestContext.response= res;
         A1CustomerProfileUpdate.SubResponse response =  A1CustomerProfileUpdate.doUpdate();
-        Test.stopTest();
+        Test.stopTest();        
         system.assertNotEquals(null, response);
         system.assertEquals('INVALID_QUERY', response.Code);
         system.assertEquals('Missing required parameters:  BrandId or email', response.Message);
@@ -139,17 +139,17 @@ public class A1CustomerProfileUpdateTest {
         insert contacts;
         subData[0].SubscriberKey = contacts[0].Id;
         subData[0].FirstName = 'test';
-
+        
         A1CustomerProfileUpdate.SubRequest subReq = new A1CustomerProfileUpdate.SubRequest();
         subReq.Count = '1';
         subReq.Subscribers = new List<A1CustomerProfileUpdate.Subscriber>{subData[0]};
-
+        
         Test.startTest();
-        RestRequest req = new RestRequest();
+        RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();
-
+        
         String JsonMsg=JSON.serialize(subReq);
-
+        
         req.requestURI = '/services/apexrest/A1subscribers/Update';  //Request URL
         req.httpMethod = 'POST';//HTTP Request Type
         req.requestBody = Blob.valueof(JsonMsg);
@@ -174,13 +174,13 @@ public class A1CustomerProfileUpdateTest {
         A1CustomerProfileUpdate.SubRequest subReq = new A1CustomerProfileUpdate.SubRequest();
         subReq.Count = '1';
         subReq.Subscribers = new List<A1CustomerProfileUpdate.Subscriber>{subData[1]};
-
+        
         Test.startTest();
-        RestRequest req = new RestRequest();
+        RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();
-
+        
         String JsonMsg=JSON.serialize(subReq);
-
+        
         req.requestURI = '/services/apexrest/A1subscribers/Update';  //Request URL
         req.httpMethod = 'POST';//HTTP Request Type
         req.requestBody = Blob.valueof(JsonMsg);
@@ -200,31 +200,32 @@ public class A1CustomerProfileUpdateTest {
         system.assertEquals(null, subData[0].SubscriberKey);
         List<Contact> contacts = new List<Contact>();
         contacts.add(createContact(subData[0]));
-        System.debug('Con brand'+contacts[0].Source_System__c);
-        System.debug('Con brand'+contacts[0].Brand_Id__c);
-        System.debug('Con brand'+contacts[0].StoreOfCapture__c);
-        //     contacts.add(createContact(subData[3]));
+        Log.push('Con brand'+contacts[0].Source_System__c);
+        Log.push('Con brand'+contacts[0].Brand_Id__c);
+        Log.push('Con brand'+contacts[0].StoreOfCapture__c);
+   //     contacts.add(createContact(subData[3]));
         insert contacts;
         subData[0].SubscriberKey = contacts[0].Id;
         A1CustomerProfileUpdate.SubRequest subReq = new A1CustomerProfileUpdate.SubRequest();
         subReq.Count = '1';
         subReq.Subscribers = subData;
-
+        
         Test.startTest();
-        RestRequest req = new RestRequest();
+        RestRequest req = new RestRequest(); 
         RestResponse res = new RestResponse();
-
+        
         String JsonMsg=JSON.serialize(subReq);
-
+        
         req.requestURI = '/services/apexrest/A1subscribers/Update';  //Request URL
         req.httpMethod = 'POST';//HTTP Request Type
         req.requestBody = Blob.valueof(JsonMsg);
         RestContext.request = req;
         RestContext.response= res;
-        System.debug('res :'+res);
+        Log.push('res :'+res);        
         A1CustomerProfileUpdate.SubResponse response =  A1CustomerProfileUpdate.doUpdate();
-        system.debug('****res1: ' + response);
+        Log.push('****res1: ' + response);
         Test.stopTest();
+        Logger.logDebug();
         system.assertEquals('OK',response.Code);
     }
 

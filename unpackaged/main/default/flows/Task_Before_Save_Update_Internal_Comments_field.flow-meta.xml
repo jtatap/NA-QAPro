@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>When Task&#39;s Description/Comments field is NOT null, then copy description text to Internal_Comments__c field</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fTaskComments</name>
+        <dataType>String</dataType>
+        <expression>IF(LEN({!$Record.Description})&gt;255,LEFT({!$Record.Description},252)&amp;&quot;...&quot;,{!$Record.Description})</expression>
+    </formulas>
+    <interviewLabel>Task: Before Save, Update &#39;Internal Comments&#39; field {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task: Before Save, Update &#39;Internal Comments&#39; field</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Truncates the Task Comments field into the Task Internal Comments field</description>
+        <name>Update_Task_internal_Comments_field</name>
+        <label>Update Task &#39;internal Comments&#39; field</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>Internal_Comments__c</field>
+            <value>
+                <elementReference>fTaskComments</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Task_internal_Comments_field</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Description</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

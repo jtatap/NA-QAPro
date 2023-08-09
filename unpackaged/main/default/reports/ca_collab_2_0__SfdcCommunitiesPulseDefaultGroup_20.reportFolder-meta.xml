@@ -6,7 +6,7 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>EditAllContents</accessLevel>
+        <accessLevel>Manage</accessLevel>
         <sharedTo>PVH_Corp</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>

@@ -5,12 +5,12 @@ global class EmailPublisherLoader implements QuickAction.QuickActionDefaultsHand
 
     // The main interface method
     global void onInitDefaults(QuickAction.QuickActionDefaults[] defaults) {
-        system.debug('*** SETTING DEFAULTS ***');
+        Log.push('*** SETTING DEFAULTS ***');
         QuickAction.SendEmailQuickActionDefaults sendEmailDefaults = null;
 
 
         // Check if the quick action is the standard case feed Send Email action
-        system.debug('*** DEFAULTS *** '+defaults);
+        Log.push('*** DEFAULTS *** '+defaults);
         for (Integer j = 0; j < defaults.size(); j++) {
             if (defaults.get(j) instanceof QuickAction.SendEmailQuickActionDefaults &&
                     defaults.get(j).getTargetSObject().getSObjectType() ==
@@ -22,13 +22,13 @@ global class EmailPublisherLoader implements QuickAction.QuickActionDefaultsHand
                 break;
             }
         }
-        system.debug('*** DEFAULTS *** '+sendEmailDefaults);
+        Log.push('*** DEFAULTS *** '+sendEmailDefaults);
 
         if (sendEmailDefaults != null) {
-            system.debug('*** UPDATING DEFAULTS *** ');
+            Log.push('*** UPDATING DEFAULTS *** ');
             Case c = [SELECT Status, Reason, Brand__c, RecordTypeId, Type, Sub_Type__c, Brand_Privacy_Email__c FROM Case
             WHERE Id=:sendEmailDefaults.getContextId()];
-            system.debug('*** CASE ID *** '+c.Id);
+            Log.push('*** CASE ID *** '+c.Id);
 			If (c.RecordTypeId == Constants.privacyRecordTypeId || c.RecordTypeId == Constants.dataOwnerCaseRecordTypeId || c.Type == Constants.privacyCaseType || c.Sub_Type__c == Constants.unsubscribeRequestSubType)
 			{
                 EmailMessage emailMessage = (EmailMessage)sendEmailDefaults.getTargetSObject();
@@ -43,24 +43,28 @@ global class EmailPublisherLoader implements QuickAction.QuickActionDefaultsHand
 					Brand_Setting__mdt bs = [Select MasterLabel, DeveloperName, Brand_Email__c  from Brand_Setting__mdt where Brand_Id__c = :c.Brand__c];
 					emailMessage.ValidatedFromAddress = bs.Brand_Email__c;
 				} catch(QueryException e) {
-					system.debug('*** EmailPublisherLoader - Exception raised setting validated From Address *** '+c.Id);
+					Logger.logException(e);
 				}
 			}
         }
+        Logger.logDebug();
     }
-
+	
+    @TestVisible
     private Id getTemplateIdHelper(String templateApiName) {
         Id templateId = null;
         try {
             templateId = [select id, name from EmailTemplate
             where developername = : templateApiName].id;
         } catch (Exception e) {
-            system.debug('Unble to locate EmailTemplate using name: ' +
-                    templateApiName + ' refer to Setup | Communications Templates '
-                    + templateApiName);
+            Logger.logError('Unble to locate EmailTemplate using name: ' +
+            templateApiName + ' refer to Setup | Communications Templates '
+            + templateApiName);
+            Logger.logException(e);
         }
         return templateId;
     }
+    @TestVisible
     private String getBccAddress(String reason) {
         if (reason != null && reason.equals('Technical'))
         { return 'support_technical@mycompany.com'; }

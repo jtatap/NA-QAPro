@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assigns the count of contactMatches to evaluate if this flow should process.</description>
         <name>asn_contactMatchesCount</name>
@@ -1044,6 +1044,7 @@
         </rules>
     </decisions>
     <description>... this flow takes a Contact record and collection of potential matches -- and evaluates if the Contact can me matches to one of the Contact records in the potential match collection.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Contact Filter Matches {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Contact Filter Matches</label>
     <loops>

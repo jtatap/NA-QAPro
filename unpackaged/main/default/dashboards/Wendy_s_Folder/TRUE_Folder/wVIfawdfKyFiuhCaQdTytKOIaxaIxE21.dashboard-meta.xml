@@ -29,46 +29,6 @@
             <values>THIS_FISCAL_YEAR</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>1/6/2020 12:00 AM</values>
-            <values>2/2/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>2/3/2020 12:00 AM</values>
-            <values>3/1/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>3/2/2020 12:00 AM</values>
-            <values>4/5/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>5/4/2020 12:00 AM</values>
-            <values>5/31/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>6/1/2020 12:00 AM</values>
-            <values>7/5/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>7/6/2020 12:00 AM</values>
-            <values>8/2/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>8/3/2020 12:00 AM</values>
-            <values>8/30/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>between</operator>
-            <values>8/31/2020 12:00 AM</values>
-            <values>10/4/2020 12:00 AM</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
             <operator>greaterOrEqual</operator>
             <values>1/18/2021 12:00 AM</values>
         </dashboardFilterOptions>
@@ -252,11 +212,68 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <componentType>FlexTable</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
+                    <flexTableColumn>
+                        <reportColumn>Case.Reason_Code__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>RowCount</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>FORMULA1</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableSortInfo>
+                        <sortOrder>1</sortOrder>
+                    </flexTableSortInfo>
+                    <hideChatterPhotos>true</hideChatterPhotos>
+                </flexComponentProperties>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>FORMULA1</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>TRUE: Product</header>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Product</report>
+            </dashboardComponent>
+            <rowIndex>12</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
-                    <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>CDF1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <dashboardFilterColumns>
@@ -275,57 +292,16 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Average Closed Duration- Weekly</header>
+                <header>Reason Code: Product</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>TRUE_Dashboard/TRUE_Average_Closed_Duration_per_Weekly</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Product</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
-            <rowSpan>8</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Manual</chartAxisRange>
-                <chartAxisRangeMax>700.0</chartAxisRangeMax>
-                <chartAxisRangeMin>200.0</chartAxisRangeMin>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Line</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>CREATED_DATE</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Reason Code: Return/Exchanges</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/TRUE_Return_Line_Chart1</report>
-                <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <title>YTD</title>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>12</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -337,7 +313,7 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Line</componentType>
+                <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
                     <column>CREATED_DATEONLY</column>
                 </dashboardFilterColumns>
@@ -348,23 +324,28 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingColumn>Case.Reason_Code_Details__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
                 </groupingSortProperties>
-                <header>Reason Code: Instructions</header>
+                <header>Reason Code Details: Product</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/TRUE_Instructions_Line_Chart</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Product</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>YTD</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -378,6 +359,12 @@
                 <flexComponentProperties>
                     <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
+                        <reportColumn>Case.Reason_Code__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
                         <reportColumn>Case.Reason_Code_Details__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>true</showTotal>
@@ -385,6 +372,12 @@
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>RowCount</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>FORMULA1</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>true</showTotal>
                         <type>aggregate</type>
@@ -398,18 +391,105 @@
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>FORMULA1</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Return/Exchange</header>
                 <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/Test_Return_Exchange</report>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowIndex>22</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Reason Code: Return/Exchange</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/Test_Return_Exchange</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>22</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>ColumnStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingColumn>Case.Reason_Code_Details__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Reason Code Details: Return/Exchange</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/Test_Return_Exchange</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>22</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
@@ -419,6 +499,12 @@
                 <flexComponentProperties>
                     <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
+                        <reportColumn>Case.Reason_Code__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
                         <reportColumn>Case.Reason_Code_Details__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>true</showTotal>
@@ -426,6 +512,12 @@
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>RowCount</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>FORMULA1</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>true</showTotal>
                         <type>aggregate</type>
@@ -439,55 +531,101 @@
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>FORMULA1</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Order</header>
                 <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Orders</report>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowIndex>32</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Reason Code: Orders</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Orders</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>32</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>6</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
                     <column>CREATED_DATEONLY</column>
                 </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingColumn>Case.Reason_Code_Details__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
+                        <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Product</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Product</report>
+                <header>Reason Code Details: Orders</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Orders</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowIndex>32</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -501,15 +639,27 @@
                 <flexComponentProperties>
                     <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
+                        <reportColumn>Case.Reason_Code__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
                         <reportColumn>Case.Reason_Code_Details__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
                         <type>grouping</type>
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>RowCount</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>FORMULA1</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
                         <type>aggregate</type>
                     </flexTableColumn>
                     <flexTableSortInfo>
@@ -520,97 +670,101 @@
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
+                        <sortOrder>a</sortOrder>
                     </groupingSorts>
-                </groupingSortProperties>
-                <header>Account</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Account</report>
-            </dashboardComponent>
-            <rowIndex>31</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <groupingSortProperties>
                     <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
+                        <groupingLevel>g2</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Shipping</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Shipping</report>
-            </dashboardComponent>
-            <rowIndex>31</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Corporate</header>
+                <header>TRUE: Corporate</header>
                 <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Corporate</report>
             </dashboardComponent>
-            <rowIndex>31</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowIndex>42</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Reason Code: Corporate</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Corporate</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>42</rowIndex>
+            <rowSpan>10</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>ColumnStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CREATED_DATEONLY</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingColumn>Case.Reason_Code_Details__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Reason Code Details: Corporate</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Corporate</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>42</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -624,15 +778,27 @@
                 <flexComponentProperties>
                     <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
+                        <reportColumn>Case.Reason_Code__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
                         <reportColumn>Case.Reason_Code_Details__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
                         <type>grouping</type>
                     </flexTableColumn>
                     <flexTableColumn>
                         <reportColumn>RowCount</reportColumn>
                         <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>FORMULA1</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
                         <type>aggregate</type>
                     </flexTableColumn>
                     <flexTableSortInfo>
@@ -643,138 +809,19 @@
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
+                        <sortOrder>a</sortOrder>
                     </groupingSorts>
-                </groupingSortProperties>
-                <header>Technical</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Technical</report>
-            </dashboardComponent>
-            <rowIndex>42</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <groupingSortProperties>
                     <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
+                        <groupingLevel>g2</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Billing</header>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Billing</report>
-            </dashboardComponent>
-            <rowIndex>42</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Case.Reason_Code_Details__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>true</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Fit</header>
+                <header>TRUE: Fit</header>
                 <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Fit</report>
             </dashboardComponent>
-            <rowIndex>42</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Column</componentType>
-                <dashboardFilterColumns>
-                    <column>CREATED_DATEONLY</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>Case.Reason_Sub_detail__c</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Defective Issue</header>
-                <legendPosition>Bottom</legendPosition>
-                <maxValuesDisplayed>5</maxValuesDisplayed>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Three1/Defective_Issue</report>
-                <showPercentage>false</showPercentage>
-                <showValues>true</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <title>Top 5</title>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>53</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowIndex>52</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -796,26 +843,23 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Case.Reason_Sub_detail__c</groupingColumn>
+                <groupingColumn>CREATED_DATE</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
+                        <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Website Issues</header>
+                <header>Reason Code: Fit</header>
                 <legendPosition>Bottom</legendPosition>
-                <maxValuesDisplayed>5</maxValuesDisplayed>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Three1/Shipping_Issue</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Fit</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Top 5</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>53</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowIndex>52</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -827,7 +871,7 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Column</componentType>
+                <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
                     <column>CREATED_DATEONLY</column>
                 </dashboardFilterColumns>
@@ -837,33 +881,36 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Case.Reason_Sub_detail__c</groupingColumn>
+                <groupingColumn>CREATED_DATE</groupingColumn>
+                <groupingColumn>Case.Reason_Code_Details__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
                         <sortColumn>RowCount</sortColumn>
-                        <sortOrder>d</sortOrder>
+                        <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Shopping Cart</header>
+                <header>Reason Code Details: Fit</header>
                 <legendPosition>Bottom</legendPosition>
-                <maxValuesDisplayed>5</maxValuesDisplayed>
-                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Three1/Shopping_Cart</report>
+                <report>Wendy_s_Folder/TRUE_Dashboard/Reason_Code_Reports/Level_Two/TRUE_Fit</report>
                 <showPercentage>false</showPercentage>
-                <showValues>true</showValues>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Top 5</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>53</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowIndex>52</rowIndex>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>alexisrios@pvh.com</runningUser>
+    <runningUser>wendyamaya@pvh.com</runningUser>
     <textColor>#000000</textColor>
     <title>TRUE Reason Code Dashboard</title>
     <titleColor>#000000</titleColor>

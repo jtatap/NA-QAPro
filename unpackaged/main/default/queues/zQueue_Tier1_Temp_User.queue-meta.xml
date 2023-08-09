@@ -5,7 +5,7 @@
     <name>zQueue Tier1 Temp User</name>
     <queueMembers>
         <users>
-            <user>tier1temp@pvh.com</user>
+            <user>tier1tempuser@pvh.com</user>
         </users>
     </queueMembers>
     <queueRoutingConfig>Backlog</queueRoutingConfig>

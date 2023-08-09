@@ -8,10 +8,6 @@
         <plural>true</plural>
         <value>BatchProcess</value>
     </caseValues>
-    
-    
-    
-    
     <layouts>
         <layout>BatchProcess Layout</layout>
         <sections>
@@ -19,5 +15,10 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    
+    
+    
+    
+    
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

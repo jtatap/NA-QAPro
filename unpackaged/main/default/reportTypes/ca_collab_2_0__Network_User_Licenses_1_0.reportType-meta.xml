@@ -356,6 +356,11 @@
             <field>Profile.UserLicense.TotalLicenses</field>
             <table>User</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>User_Type__c</field>
+            <table>User</table>
+        </columns>
         <masterLabel>Users</masterLabel>
     </sections>
 </ReportType>

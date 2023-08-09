@@ -4,10 +4,11 @@
 * @last modified on  : 06-10-2021
 * @last modified by  : Hemadri Ravilla
 **/
-@isTest
+@isTest(isParallel=false)
 public class LookupfieldControllerTest {
-    private static testmethod void getObjectDetailsTest()
-    {
+
+    @TestSetup
+    static void makeData(){
         Account acc = new Account();
         acc.Name = 'generic Account' + Math.random();
         insert acc;
@@ -30,13 +31,20 @@ public class LookupfieldControllerTest {
                 recordId__c = acc.Id
         );
         insert genRecAcct;
+ 
+    }
 
+    private static testmethod void getObjectDetailsTest()
+    {
+        Contact con = [SELECT id from Contact LIMIT 1];
         LookupfieldController.getObjectDetails('Contact');
         List<string> lstStr=new List<string>();
         lstStr.add('Name');
+        Test.startTest();
         LookupfieldController.GetRecord('Contact',lstStr,con.id);
         LookupfieldController.GetRecentRecords('Contact',lstStr,1);
         LookupfieldController.fetchContact('generic');
         LookupfieldController.SearchRecords('Contact',lstStr,lstStr,'generic','CreatedDate','DESC',20,null);
+        Test.stopTest();
     }
 }

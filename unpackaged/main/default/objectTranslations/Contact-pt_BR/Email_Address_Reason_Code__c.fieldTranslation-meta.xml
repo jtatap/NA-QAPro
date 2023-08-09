@@ -3,6 +3,14 @@
         <label><!-- Email Address Reason Code --></label>
         <name>Email_Address_Reason_Code__c</name>
         <picklistValues>
+            <masterLabel>Tealium Request: Advertise OptIn</masterLabel>
+            <translation><!-- Tealium Request: Advertise OptIn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tealium Request: Advertise OptOut</masterLabel>
+            <translation><!-- Tealium Request: Advertise OptOut --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Verfication Success: login email is already in use</masterLabel>
             <translation><!-- Verfication Success: login email is already in use --></translation>
         </picklistValues>

@@ -35,39 +35,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>4</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>5</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>81</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>82</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>83</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>84</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -223,10 +195,6 @@
         </values>
         <values>
             <fullName>Nordstrom</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Olga%2Ecom</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1151,7 +1119,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Public Relations  Inquirie</fullName>
+            <fullName>Public Relations Inquiry</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1963,6 +1931,13 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Queue_for_Rerouting__c</picklist>
+        <values>
+            <fullName>Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>R2R_Email_UserConfirmation__c</picklist>
         <values>
             <fullName>Confirmed</fullName>
@@ -2011,10 +1986,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Accounting</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Adaptive</fullName>
             <default>false</default>
         </values>
@@ -2031,15 +2002,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>BBB Complaint</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Balance Confirmation %28Points%2FRewards%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Black Friday Complaint</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2123,15 +2086,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Country%2FState Error</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Coupon Request</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Covet Diamond Request</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2207,10 +2162,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Explore Page</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Front Desk Transfer</fullName>
             <default>false</default>
         </values>
@@ -2228,10 +2179,6 @@
         </values>
         <values>
             <fullName>Gift Card Replacement</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Gift Card Request</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2359,14 +2306,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>PI%2FPD Removal Request</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>PVH Tool Preferred Points</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Password Reset Issue</fullName>
             <default>false</default>
         </values>
@@ -2388,10 +2327,6 @@
         </values>
         <values>
             <fullName>Payment Fraud</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Payroll</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2511,10 +2446,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Risk</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Security Tag</fullName>
             <default>false</default>
         </values>
@@ -2563,7 +2494,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Store Information %28Location%2C Phone%2C %26 Hours%29</fullName>
+            <fullName>Store Information %28Location%2C Phone %26 Hours%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2572,10 +2503,6 @@
         </values>
         <values>
             <fullName>Suggestion</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>TH Data Protection %E2%80%93 Japan</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2588,10 +2515,6 @@
         </values>
         <values>
             <fullName>Tommy Hilfiger Club</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Track It Issue</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2611,19 +2534,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Warners%2FOlga Inquiry</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Website Issue</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Wrong Number</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>eBay</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -61,7 +61,7 @@ global without sharing class SubscriberProfileUpdates {
         Contact brandAndEmailContact = new Contact();
         String requestData = req.requestBody.toString();
         PCUpdateRequest pcRequest = (PCUpdateRequest)json.deserialize(requestData, PCUpdateRequest.class);
-        System.debug('** req: '+ pcRequest);
+        Log.push('** req: '+ pcRequest);
         
         //scenario: if ContactId missing in request parameter
         if(String.isBlank(pcRequest.ContactId)){
@@ -72,10 +72,10 @@ global without sharing class SubscriberProfileUpdates {
         }
         
         else{
-            System.debug('** '+ pcRequest.ContactId);
-           // System.debug('** '+ pcRequest.SMS.SMSNumber);
-            //System.debug('** '+ pcRequest.Name.FirstName);
-            System.debug('** '+ pcRequest.MailingAddress.City);
+            Log.push('** '+ pcRequest.ContactId);
+           // Log.push('** '+ pcRequest.SMS.SMSNumber);
+            //Log.push('** '+ pcRequest.Name.FirstName);
+            Log.push('** '+ pcRequest.MailingAddress.City);
             foundContact = searchContact(pcRequest.ContactId);
             foundSMSContact = searchSMSContact(pcRequest.SMS.SMSNumber);
           
@@ -87,7 +87,7 @@ global without sharing class SubscriberProfileUpdates {
             
            
             if(foundContact == null){
-                System.debug('***Error: Contact Not Found');
+                Log.push('***Error: Contact Not Found');
                 res.statusCode = 400;
                 pcResponse.code = 'INVALID_CONTACTID';
                 pcResponse.message = 'No matching contact found';
@@ -96,7 +96,7 @@ global without sharing class SubscriberProfileUpdates {
             }
             
             else if(brandAndEmailContact != null && (foundContact.Email != pcRequest.Email) && (foundContact.Id != brandAndEmailContact.Id)){
-                System.debug('***Error: Another Contact Exists with Email');            
+                Log.push('***Error: Another Contact Exists with Email');            
                 res.statusCode = 400;
                 pcResponse.code = 'INVALID_EMAIL';
                 pcResponse.message = 'Supplied Email address used by another contact';
@@ -104,7 +104,7 @@ global without sharing class SubscriberProfileUpdates {
             }
             
             else if(foundSMSContact != null && (foundContact.Id != foundSMSContact.Id)){
-                System.debug('***Error: Another Contact Exists with SMSNumber');            
+                Log.push('***Error: Another Contact Exists with SMSNumber');            
                 res.statusCode = 400;
                 pcResponse.code = 'INVALID_SMSNUMBER';
                 pcResponse.message = 'SMS Number used by another contact';
@@ -114,20 +114,20 @@ global without sharing class SubscriberProfileUpdates {
            
             else if(foundContact != null && pcRequest.SMS.SMSNumber == null){
                 
-                System.debug(foundContact);
+                Log.push('foundContact'+foundContact);
                 Contact updatedConWithOutSMS= updateContacWithOutSMSNumber(foundContact,pcRequest);
-                System.debug(updatedConWithOutSMS);
+                Log.push('updatedConWithOutSMS'+updatedConWithOutSMS);
                 Account updatedAcc = updateAccount(foundContact,pcRequest);
                 Savepoint sp;
                 try {
                     sp = Database.setSavepoint();
                     update updatedConWithOutSMS;
-                    System.debug('***Contact Record Updated without SMS Number');  
+                    Log.push('***Contact Record Updated without SMS Number');  
                     update updatedAcc;
-                    System.debug('***Account Record Updated'); 
+                    Log.push('***Account Record Updated'); 
                 }
                 catch (Exception e) {
-                    System.debug('An exception occurred while updating Contact' + e.getMessage());
+                    Log.push('An exception occurred while updating Contact' + e.getMessage());
                     res.statusCode = 400;
                     pcResponse.code = 'OTHER_ERROR';
                     pcResponse.message = e.getMessage();
@@ -141,20 +141,20 @@ global without sharing class SubscriberProfileUpdates {
                 
             }            
             else {
-                System.debug(foundContact);
+                Log.push('foundContact'+foundContact);
                 Contact updatedCon = updateContact(foundContact,pcRequest);
-                System.debug(updatedCon);
+                Log.push('updatedCon'+updatedCon);
                 Account updatedAcc = updateAccount(foundContact,pcRequest);
                 Savepoint sp;
                 try {
                     sp = Database.setSavepoint();
                     update updatedCon;
-                    System.debug('***Contact Record Updated');  
+                    Log.push('***Contact Record Updated');  
                     update updatedAcc;
-                    System.debug('***Account Record Updated'); 
+                    Log.push('***Account Record Updated'); 
                 }
                 catch (Exception e) {
-                    System.debug('An exception occurred while updating Contact' + e.getMessage());
+                    Log.push('An exception occurred while updating Contact' + e.getMessage());
                     res.statusCode = 400;
                     pcResponse.code = 'OTHER_ERROR';
                     pcResponse.message = e.getMessage();
@@ -170,6 +170,7 @@ global without sharing class SubscriberProfileUpdates {
             } 
             
         }
+        Logger.logDebug();
         return pcResponse;        
     }
     
@@ -198,7 +199,7 @@ global without sharing class SubscriberProfileUpdates {
     }
     
     public static Contact updateContact(Contact con, PCUpdateRequest pcReq){
-        System.debug('***inside updateContact');
+        Log.push('***inside updateContact');
         
         if(String.isNotBlank(pcReq.Name.FirstName) && (con.FirstName != pcReq.Name.FirstName)) con.FirstName = pcReq.Name.FirstName;
         if(String.isNotBlank(pcReq.Name.LastName) && (con.LastName != pcReq.Name.LastName)) con.LastName = pcReq.Name.LastName;
@@ -230,29 +231,33 @@ global without sharing class SubscriberProfileUpdates {
        //Start: Setting SMS Related Fields
         if(String.isNotBlank(pcReq.SMS.SMSNumber) && pcReq.SMS.SMSOptinStatus == 'P' && String.isBlank(con.SMSNumber__c)){
             //brand new sms optin
-            System.debug('***First Time Optin');
+            Log.push('***First Time Optin');
             con.SMSNumber__c = pcReq.SMS.SMSNumber;
             con.SMSOptinStatus__c = 'P';
+            
             con.SMSOptInDate__c = System.now();
         }
         else if((pcReq.SMS.SMSOptinStatus == 'N') && (con.SMSOptinStatus__c == null || con.SMSOptinStatus__c == 'Y' || con.SMSOptinStatus__c == 'P')){
             // sms optout
-            System.debug('***Optout');
+            Log.push('***Optout');
             con.SMSOptinStatus__c = 'N';
             con.SMSOptOutDate__c = System.now();
+            
             con.SMS_Unsubscribe_Reason__c='eComm Opt-out';
         }
         else if(String.isNotBlank(pcReq.SMS.SMSNumber) && pcReq.SMS.SMSOptinStatus == 'P' && String.isNotBlank(con.SMSNumber__c) && con.SMSNumber__c == pcReq.SMS.SMSNumber){
            //sms reoptin with same number
-            System.debug('***Re-Optin with same number');
+            Log.push('***Re-Optin with same number');
             con.SMSOptinStatus__c = 'P';
+           
             con.SMSOptInDate__c = System.now();
         }
         else if(String.isNotBlank(pcReq.SMS.SMSNumber) && pcReq.SMS.SMSOptinStatus == 'P' && String.isNotBlank(con.SMSNumber__c) && con.SMSNumber__c != pcReq.SMS.SMSNumber){
             //sms optin with a different number
-            System.debug('***Re-Optin with different number');
+            Log.push('***Re-Optin with different number');
             con.SMSNumber__c = pcReq.SMS.SMSNumber;
             con.SMSOptinStatus__c = 'P';
+            
             con.SMSOptInDate__c = System.now();
         }
         //End: Setting SMS Related Field
@@ -263,20 +268,21 @@ global without sharing class SubscriberProfileUpdates {
         if(String.isNotBlank(pcReq.Gender) && (con.SelfClaimedGender__c != pcReq.Gender)) con.SelfClaimedGender__c = pcReq.Gender;
         
         //GCT-1571 TH - SMS Source to Match keyword opt in
-           LoyaltySettings__mdt prefernceKey =[select BrandId__c,preferenceCenterKeyword__c from LoyaltySettings__mdt where BrandId__c='1' limit 1];
-            if(prefernceKey!=Null){
-                con.Keyword__c=prefernceKey.preferenceCenterKeyword__c;
-            }
-        
+        LoyaltySettings__mdt prefernceKey =[select BrandId__c,preferenceCenterKeyword__c from LoyaltySettings__mdt where BrandId__c='1' limit 1];
+        if(prefernceKey!=Null){
+            con.Keyword__c=prefernceKey.preferenceCenterKeyword__c;
+        }
+
         if(String.isBlank(con.CountryOfCapture__c) && String.isNotBlank(pcReq.SMS.Locale)){
             if(pcReq.SMS.Locale.length() == 5) con.CountryOfCapture__c = pcReq.SMS.Locale.right(2).toUpperCase();
         }
-        System.debug(con);
+        Log.push('con'+con);
+        Logger.logDebug();
         return con;
     }
     /* NACDT-3788 AND BELT-1614 */
     public static Contact updateContacWithOutSMSNumber(Contact con, PCUpdateRequest pcReq){
-        system.debug('***inside updateContactWithOutSMSNumber');
+        Log.push('***inside updateContactWithOutSMSNumber');
         if(String.isNotBlank(pcReq.Name.FirstName) && (con.FirstName != pcReq.Name.FirstName)) con.FirstName = pcReq.Name.FirstName;
         if(String.isNotBlank(pcReq.Name.LastName) && (con.LastName != pcReq.Name.LastName)) con.LastName = pcReq.Name.LastName;
         if(String.isNotBlank(pcReq.Email) && (con.Email != pcReq.Email)) con.Email = pcReq.Email;
@@ -304,7 +310,7 @@ global without sharing class SubscriberProfileUpdates {
         
         if((pcReq.SMS.SMSOptinStatus == 'N') && (con.SMSOptinStatus__c == null || con.SMSOptinStatus__c == 'Y' || con.SMSOptinStatus__c == 'P')){
             // sms optout
-            System.debug('***Optout');
+            Log.push('***Optout');
             con.SMSOptinStatus__c = 'N';
             con.SMSOptOutDate__c = System.now();
             con.SMS_Unsubscribe_Reason__c='eComm Opt-out';
@@ -321,16 +327,17 @@ global without sharing class SubscriberProfileUpdates {
         if(prefernceKey!=Null){
            con.Keyword__c=prefernceKey.preferenceCenterKeyword__c;
           }
-        
+
         if(String.isBlank(con.CountryOfCapture__c) && String.isNotBlank(pcReq.SMS.Locale)){
             if(pcReq.SMS.Locale.length() == 5) con.CountryOfCapture__c = pcReq.SMS.Locale.right(2).toUpperCase();
         }
-        System.debug(con);
+        Log.push('con'+con);
+        Logger.logDebug();
         return con;
      }
     
     public static Account updateAccount(Contact con, PCUpdateRequest pcReq){
-        System.debug('***inside updateAccount');
+        Log.push('***inside updateAccount');
         List<Account> listAccount = [Select Id,Gender__c,Name from Account where Id=: con.AccountId];
         if (listAccount.size() > 0){
             if(String.isNotBlank(pcReq.Gender) && (listAccount[0].Gender__c != pcReq.Gender)) listAccount[0].Gender__c = pcReq.Gender;
@@ -338,7 +345,7 @@ global without sharing class SubscriberProfileUpdates {
                 listAccount[0].Name=pcReq.Name.FirstName+pcReq.Name.LastName;
             }
         }
-        
+        Logger.logDebug();
         return listAccount[0];
     }
     

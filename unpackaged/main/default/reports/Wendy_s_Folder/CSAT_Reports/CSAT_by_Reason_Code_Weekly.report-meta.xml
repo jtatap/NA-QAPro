@@ -73,8 +73,15 @@
             <column>Case$Brand__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>11</value>
+            <operator>equals</operator>
+            <value>1,2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Reason_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Corporate,Loyalty,Marketing,Orders,Payment,Product,Returns,Sales,Service,Technical</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

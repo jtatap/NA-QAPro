@@ -1,11 +1,14 @@
 ({
     init: function (component, event, helper) {
         var action = component.get("c.getDisableStatus");
+        var error = String($A.get("$Label.c.Error1"));
+        var success = String($A.get("$Label.c.Success1"));
+        
         action.setParams({caseId: component.get("v.recordId")});
         action.setCallback(this, $A.getCallback(function (resp) {
                 console.log('state' + resp);
                 var state = resp.getState();
-                if (state === "SUCCESS") {
+                if (state === success) {
                     var result = resp.getReturnValue();
                     var workspaceAPI = component.find("workspace");
                     if (result === true) {
@@ -17,45 +20,25 @@
 
 
                         workspaceAPI.getFocusedTabInfo().then(function (response) {
-                            //var focusedTabId = response.tabId;
+                            
                             component.set('v.isDisabled', true);
-                            /*workspaceAPI.disableTabClose({
-                                tabId: focusedTabId,
-                                disabled: true,
-                                closeable: false
-                            })
-                            .then(function (tabInfo) {
-                                console.log(tabInfo);
-                            })
-                            .catch(function (error) {
-                                console.log(error);
-                            });*/
+                            
                         })
                             .catch(function (error) {
                                 console.log(error);
                             });
                     } else {
                         workspaceAPI.getFocusedTabInfo().then(function (response) {
-                            //var focusedTabId = response.tabId;
+                           
                             component.set('v.isDisabled', false);
-                            /*workspaceAPI.disableTabClose({
-                                tabId: focusedTabId,
-                                disabled: false,
-                                closeable: true
-                            })
-                            .then(function (tabInfo) {
-                                console.log(tabInfo);
-                            })
-                            .catch(function (error) {
-                                console.log(error);
-                            });*/
+                            
                         })
                         .catch(function (error) {
                             console.log(error);
                         });
 
                     }
-                } else if (state === "ERROR") {
+                } else if (state === error) {
                     var errors = resp.getError();
                     console.log(errors);
                 }

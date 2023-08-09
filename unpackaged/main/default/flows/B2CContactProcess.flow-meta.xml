@@ -52,7 +52,7 @@
             <name>synchronizedTargetContact</name>
         </outputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <name>asn_AccountIDToSourceContact</name>
         <label>Assign the AccountID to the Contact</label>
@@ -650,6 +650,7 @@
         </rules>
     </decisions>
     <description>... this flow is used to execute Contact Processing requests from B2C Commerce -- and evaluate if a Contact record should be created or updated within the Salesforce Platform.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Create Or Update Contact {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Process: Create Or Update Contact</label>
     <processMetadataValues>

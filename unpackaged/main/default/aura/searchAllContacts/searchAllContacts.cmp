@@ -9,22 +9,21 @@
     <aura:attribute name="TotalNumberOfRecord" type="integer" default="0" description="use for display Number of records"/>
     <aura:attribute name="isSelectedContact" type="boolean" default="false"/>
     <aura:attribute name="SelectedContactRecord" type="String" access="global"/>
-    <!--aura:handler name="oSelectedContactEvent" event="c:SearchAllSelectionEvt" action="{!c.handleSearchComponentEvent}"/-->
-    <aura:registerEvent name="oSelectedContactEvent" type="c:SearchAllSelectionEvt"/>
+    
+     <aura:registerEvent name="oSelectedContactEvent" type="c:SearchAllSelectionEvt"/>
+	<aura:method name="sampleMethod" action="{!c.Search}" access="PUBLIC"> </aura:method>
     <aura:attribute name="sortDirection" type="String" default="asc" />
     <aura:attribute name="defaultSortDirection" type="String" default="asc" />
     <aura:attribute name="sortedBy" type="String" />
     <aura:attribute name="columns" type="List" access="global"/>
-    
-    <aura:method name="sampleMethod" action="{!c.Search}" access="PUBLIC"> </aura:method>
     <!-- SHOW LOADING SPINNER--> 
     <lightning:spinner variant="brand" size="large" aura:id="Id_spinner" class="slds-hide" />
-    <!-- <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">-->
+   
     <div class="slds-form-element__control">
         <div class="slds-m-around_medium">
             <!-- SEARCH INPUT AND SEARCH BUTTON--> 
             <div class="slds-grid">
-                <!--  <div class="slds-col">-->
+                
                 <lightning:layout>
                     <lightning:layoutItem size="8">
                         <lightning:input value="{!v.searchKeyword}"
@@ -36,8 +35,7 @@
                                          />
                     </lightning:layoutItem>
                 </lightning:layout>
-                <!--   </div>-->
-                <!-- onchange="{!c.Search}"-->
+               
                 
                 <lightning:layout >
                     <lightning:layoutItem size="12" >
@@ -47,7 +45,7 @@
                                           iconName="utility:search"/> 
                     </lightning:layoutItem>
                 </lightning:layout>
-                <!--  </div>-->
+                
             </div>
             <!-- TOTAL RECORDS BADGES--> 
             <div class="slds-m-around_x-small">
@@ -59,7 +57,7 @@
                 <div class="slds-notify_container slds-is-relative">
                     <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
                         <div class="slds-notify__content">
-                            <h2 class="slds-text-heading_small">No Records Found...</h2>
+                            <h2 class="slds-text-heading_small">{!$Label.c.No_Records_Found}...</h2>
                         </div>
                     </div>
                 </div>
@@ -78,10 +76,9 @@
                                      onsort="{!c.handleSort}"/>
             </div>
             <!-- TABLE CONTENT-->
-            <!-- <div class="slds-scrollable" style="height: 100rem; width: 150rem">-->
+            
             
         </div>
     </div>
-    <!--  </div>-->
-    <!-- </section>-->
+   
 </aura:component>

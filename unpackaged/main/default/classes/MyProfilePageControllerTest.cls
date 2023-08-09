@@ -5,6 +5,7 @@
 @IsTest public with sharing class MyProfilePageControllerTest {
 
     @IsTest(SeeAllData=true) static void testSave() {
+        Test.startTest();
         // Modify the test to query for a portal user that exists in your org
         List<User> existingPortalUsers = [SELECT id, profileId, userRoleId FROM User WHERE UserRoleId <> null AND UserType='CustomerSuccess'];
 
@@ -51,5 +52,6 @@
             existingPortalUser = [Select id, fax from User where id =: existingPortalUser.Id];
             System.assert(existingPortalUser.fax == randFax);
         }
+        Test.stopTest();
     }
 }

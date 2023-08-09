@@ -11,7 +11,7 @@ public with sharing class NF_UpdateTranscriptBodyWithContactName {
 
         List<LiveChatTranscript> transcriptsToUpdate = new List<LiveChatTranscript>{};
         for (Id chatTranscriptId : liveChatTranscripts.keySet()) {
-            System.debug('chatTranscriptId>>>' + chatTranscriptId);
+            Log.push('chatTranscriptId>>>' + chatTranscriptId);
             LiveChatTranscript transcript = [
                 SELECT Id, Status, Body, OwnerId, CaseId, ContactId, CreatedById
                 FROM LiveChatTranscript
@@ -19,7 +19,7 @@ public with sharing class NF_UpdateTranscriptBodyWithContactName {
                 LIMIT 1
             ];
 
-            if (transcript?.Status == 'Completed') {
+            if (transcript?.Status == SYSTEM.LABEL.Completed) {
                 // If the transcript is complete, update the body to include the visitor's name
                 Contact contactToDrawNameFrom = [
                     SELECT FirstName, LastName
@@ -28,8 +28,8 @@ public with sharing class NF_UpdateTranscriptBodyWithContactName {
                     LIMIT 1
                 ];
 
-                if (contactToDrawNameFrom != null & transcript.Body.contains('Visitor: ')) {
-                    transcript.Body = transcript.Body.replaceAll('Visitor: ', contactToDrawNameFrom.FirstName + ': ');
+                if (contactToDrawNameFrom != null & transcript.Body.contains(SYSTEM.LABEL.Visitor)) {
+                    transcript.Body = transcript.Body.replaceAll(SYSTEM.LABEL.Visitor, contactToDrawNameFrom.FirstName + ': ');
                     transcriptsToUpdate.add(transcript);
                 }
             }
@@ -41,9 +41,10 @@ public with sharing class NF_UpdateTranscriptBodyWithContactName {
                 return true;
             }
             catch (Exception e) {
-                System.debug('>>> Exception occurred trying to update transcript body: ' + e.getStackTraceString());
+                Logger.logException(e);
             }
         }
+        Logger.logDebug();
         return false;
     }
 }

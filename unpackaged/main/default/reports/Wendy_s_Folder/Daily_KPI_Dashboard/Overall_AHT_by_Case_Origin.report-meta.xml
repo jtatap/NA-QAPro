@@ -49,6 +49,9 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>aeon2__Log__c.aeon2__Idle__c</field>
     </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Case.Duplicate_Case__c</column>
@@ -127,8 +130,8 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2021-04-04</endDate>
+        <endDate>2021-05-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2021-02-01</startDate>
+        <startDate>2021-01-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -56,6 +56,7 @@ public class SFMCUtilityTest {
     
     @isTest
     public static void postToSFMCQueueMOAPITest_chargeIt(){
+        Test.startTest();
         setMockResponse();
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
         SFMCUtility.QueueMOData obj = new SFMCUtility.QueueMOData();
@@ -67,14 +68,17 @@ public class SFMCUtilityTest {
         obj.Country='US';
         obj.SMSLocale = 'en_US';
         ListData.add(obj);
+        Integer callouts = Limits.getCallouts();
         SFMCUtility.invocableTargetSMSAPI(ListData);
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToSFMCQueueMOAPI(jsonString);
-        
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
     
     @isTest
     public static void postToSFMCQueueMOAPITest_stop(){
+        Test.startTest();
         setMockResponse();
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
         SFMCUtility.QueueMOData obj = new SFMCUtility.QueueMOData();
@@ -86,14 +90,17 @@ public class SFMCUtilityTest {
         obj.Country='US';
         obj.SMSLocale = 'en_US';
         ListData.add(obj);
+        Integer callouts = Limits.getCallouts();
         SFMCUtility.invocableTargetSMSAPI(ListData);
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToSFMCQueueMOAPI(jsonString);
-        
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
     
     @isTest
     public static void postToWaterfallSMSAPI_preferenceCenter(){
+        Test.startTest();
         setMockResponse();
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
         SFMCUtility.QueueMOData obj = new SFMCUtility.QueueMOData();
@@ -105,14 +112,18 @@ public class SFMCUtilityTest {
         obj.Country='US';
         obj.SMSLocale = 'en_US';
         ListData.add(obj);
+
         SFMCUtility.invocableTargetSMSAPI(ListData);
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToWaterfallSMSAPI(jsonString);
-        
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
     
     @isTest
     public static void postToWaterfallSMSAPI_chargeIt(){
+        Test.startTest();
         setMockResponse();
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
         SFMCUtility.QueueMOData obj = new SFMCUtility.QueueMOData();
@@ -127,11 +138,14 @@ public class SFMCUtilityTest {
         SFMCUtility.invocableTargetSMSAPI(ListData);
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToWaterfallSMSAPI(jsonString);
-        
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
     
     @isTest
     public static void postToWaterfallSMSAPI_stop(){
+        Test.startTest();
         setMockResponse();
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
         SFMCUtility.QueueMOData obj = new SFMCUtility.QueueMOData();
@@ -146,12 +160,16 @@ public class SFMCUtilityTest {
         SFMCUtility.invocableTargetSMSAPI(ListData);
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToWaterfallSMSAPI(jsonString);
-        
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
+
     }
     @isTest static void searchSMSBrandContact(){
         //Test for Contact existing in the System BrandID 81.
+        Test.startTest();
         testdata1();
-        list<Contact> con2 = [SELECT Id, LoyaltyID__c,Email,Brand_Id__c,SMSNumber__c FROM Contact WHERE Brand_Id__c='2' AND SMSNumber__c='2345678902'];
+        list<Contact> con2 = [SELECT Id, LoyaltyID__c,Email,Brand_Id__c,SMSNumber__c,Keyword__c,SMSOptinStatus__c,SMSOptInDate__c,SMSOptOutDate__c FROM Contact WHERE Brand_Id__c='2' AND SMSNumber__c='2345678902'];
         //System.debug('con2 size'+con2.size());
         //system.debug('loyaltyId******'+con2[0].LoyaltyID__c);
         List<SFMCUtility.QueueMOData> ListData = new List<SFMCUtility.QueueMOData>();
@@ -168,11 +186,15 @@ public class SFMCUtilityTest {
         SFMCUtility.searchEmailBrandContact('2','testemail5@nomail.com');
         SFMCUtility.getSiblingAccountId('2','testemail5@nomail.com');
         SFMCUtility.validateEmail('testemail5@nomail.com');
-       
+		String abc = SFMCUtility.CKgetSFMCAccessToken();
+       	SFMCUtility.setContactSMSOptin(con2[0],true);
+        SFMCUtility.setContactSMSOptin(con2[0],false);
         //SFMCUtility.setContactSMSOptin(con2[0],true);
         
         String jsonString = json.serialize(ListData);
         SFMCUtility.postToWaterfallSMSAPI(jsonString);
-       
+        Integer callouts = Limits.getCallouts();
+       Test.stopTest();
+        system.assertEquals(0, callouts);
     }
 }

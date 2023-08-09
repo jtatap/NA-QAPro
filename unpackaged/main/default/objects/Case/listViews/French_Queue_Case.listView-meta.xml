@@ -12,10 +12,11 @@
     <label>French Queue</label>
     <queue>French_Queue</queue>
     <sharedTo>
+        <group>Tier_1_CSR_CCPA</group>
+        <group>Tier_1_CSR_PVH</group>
         <role>PVH_Corp</role>
         <role>Supervisor_Tier_3_CSR</role>
         <role>Tier_1_CSR</role>
         <role>Tier_1_TEMP</role>
-        <roleAndSubordinates>Tier_1_TEMP</roleAndSubordinates>
     </sharedTo>
 </ListView>

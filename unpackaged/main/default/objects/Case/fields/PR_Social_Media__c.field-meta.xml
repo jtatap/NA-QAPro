@@ -44,9 +44,9 @@
                 <label>Customer Complaint (US)</label>
             </value>
             <value>
-                <fullName>Public Relations  Inquirie</fullName>
+                <fullName>Public Relations Inquiry</fullName>
                 <default>false</default>
-                <label>Public Relations  Inquirie</label>
+                <label>Public Relations Inquiry</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -96,7 +96,7 @@
             <controllingFieldValue>PVH Asia</controllingFieldValue>
             <controllingFieldValue>PVH Europe</controllingFieldValue>
             <controllingFieldValue>Corporate - PR/Social Media</controllingFieldValue>
-            <valueName>Public Relations  Inquirie</valueName>
+            <valueName>Public Relations Inquiry</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

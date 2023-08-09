@@ -156,6 +156,16 @@
             <field>Reward_Status__c</field>
             <table>Reward__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BonusBuy_ID__c</field>
+            <table>Reward__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Coupon_ID__c</field>
+            <table>Reward__c</table>
+        </columns>
         <masterLabel>Rewards</masterLabel>
     </sections>
 </ReportType>

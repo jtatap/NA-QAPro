@@ -3,12 +3,10 @@
     <fullName>MyContacts</fullName>
     <columns>FULL_NAME</columns>
     <columns>ACCOUNT.NAME</columns>
-    <columns>CONTACT.TITLE</columns>
-    <columns>CONTACT.PHONE1</columns>
     <columns>CONTACT.EMAIL</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <columns>Brand_Id__c</columns>
-    <columns>Brand__c</columns>
+    <columns>LoyaltyFlag__c</columns>
     <filterScope>Mine</filterScope>
     <label>My Contacts</label>
 </ListView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Fault_Section</name>
+        <label>Assign Fault Section</label>
+        <locationX>572</locationX>
+        <locationY>408</locationY>
+        <assignmentItems>
+            <assignToReference>varFaultSection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Check &#39;3rd Day After Resolved Date&#39;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Run_error_handling_flow</targetReference>
+        </connector>
+    </assignments>
+    <description>Flow updates Case&#39;s &quot;3rd Day After Resolved Date&quot; checkbox to &quot;true&quot;. Case will then display in the &quot;Cases Ready for Quality Feedback&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Case: Resolved {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case: 3rd Day After Resolved Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Check_3rd_Day_After_Resolved_Date</name>
+        <label>Check &#39;3rd Day After Resolved Date&#39;</label>
+        <locationX>308</locationX>
+        <locationY>288</locationY>
+        <faultConnector>
+            <targetReference>Assign_Fault_Section</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>X3rd_Day_After_Resolved_Date__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Resolved</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>X3_Days_After_Resolved_Date</name>
+            <connector>
+                <targetReference>Check_3rd_Day_After_Resolved_Date</targetReference>
+            </connector>
+            <label>3 Days After Resolved Date</label>
+            <offsetNumber>3</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>Resolved_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_error_handling_flow</name>
+        <label>Run error handling flow</label>
+        <locationX>572</locationX>
+        <locationY>528</locationY>
+        <flowName>Log_Error_Handling_Subflow</flowName>
+        <inputAssignments>
+            <name>varClassName</name>
+            <value>
+                <stringValue>Case: 3rd Day After Resolved Date</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFaultSection</name>
+            <value>
+                <elementReference>varFaultSection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <triggerOrder>1500</triggerOrder>
+    <variables>
+        <name>varFaultSection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

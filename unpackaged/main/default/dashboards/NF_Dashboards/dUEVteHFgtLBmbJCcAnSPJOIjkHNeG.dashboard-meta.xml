@@ -7,6 +7,14 @@
     <colorPalette>accessible</colorPalette>
     <dashboardChartTheme>dark</dashboardChartTheme>
     <dashboardColorPalette>accessible</dashboardColorPalette>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>3/24/2021 12:00 AM</values>
+            <values>4/22/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <name>Bot Session: Created Date</name>
+    </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
             <colSpan>10</colSpan>
@@ -19,6 +27,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -61,6 +72,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -103,6 +117,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked100</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -145,6 +162,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -187,6 +207,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -229,6 +252,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked100</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -271,6 +297,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -313,6 +342,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -355,6 +387,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked100</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -397,6 +432,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -439,6 +477,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -481,6 +522,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked100</componentType>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>

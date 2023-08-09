@@ -5,10 +5,10 @@ export default class NfContactActions extends LightningElement {
     @api retrievedTileData;
     @api ComponentKey;
     @api maxwidth;
-    @api columns = 3;
+    @api columns;
     @api backgroundColor;
-    @api tileStyle = "min-height:220px;border-color: #928b80; border-style: solid; border-width: thin;";
-    @api innerPadding = "medium";
+    @api tileStyle;
+    @api innerPadding;
 
     @track loaded = false;
     @track maxWidthClass = "";

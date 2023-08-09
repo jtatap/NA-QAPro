@@ -2,7 +2,7 @@
 * @Author: Apoorv (NeuraFlash)
 * @CreatedDate: June'01, 2020
 */
-@isTest
+@isTest(isParallel=false)
 private class LogSelectorTest {
 
     private enum LogLevel {FATAL, ERROR, INFO, DEBUG}

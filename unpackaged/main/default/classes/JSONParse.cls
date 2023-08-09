@@ -167,7 +167,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return EncodingUtil.base64Decode((String) value);
     throw new InvalidConversionException(
-      'Only String values can be converted to a Blob: ' + toStringPretty()
+      SYSTEM.LABEL.Only_String_values_can_be_converted_to_a_Blob + toStringPretty()
     );
   }
 
@@ -183,7 +183,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Datetime.valueOfGmt(((String) value).replace('T', ' '));
     throw new InvalidConversionException(
-      'Only Long and String values can be converted to a Datetime: ' +
+      SYSTEM.LABEL.Only_Long_and_String_values_can_be_converted_to_a_Datetime +
       toStringPretty()
     );
   }
@@ -194,7 +194,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Date.valueOf((String) value);
     throw new InvalidConversionException(
-      'Only Long and String values can be converted to a Date: ' +
+      SYSTEM.LABEL.Only_Long_and_String_values_can_be_converted_to_a_Date +
       toStringPretty()
     );
   }
@@ -205,7 +205,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Decimal.valueOf((String) value);
     throw new InvalidConversionException(
-      'This value cannot be converted to a Decimal: ' + toStringPretty()
+      SYSTEM.LABEL.This_value_cannot_be_converted_to_a_Decimal + toStringPretty()
     );
   }
 
@@ -215,7 +215,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Double.valueOf((String) value);
     throw new InvalidConversionException(
-      'This value cannot be converted to a Double: ' + toStringPretty()
+      SYSTEM.LABEL.This_value_cannot_be_converted_to_a_Double + toStringPretty()
     );
   }
 
@@ -223,7 +223,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Id.valueOf((String) value);
     throw new InvalidConversionException(
-      'This value cannot be converted to an Id: ' + toStringPretty()
+      SYSTEM.LABEL.This_value_cannot_be_converted_to_an_Id + toStringPretty()
     );
   }
 
@@ -235,7 +235,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Integer.valueOf((String) value);
     throw new InvalidConversionException(
-      'This value cannot be converted to an Integer: ' + toStringPretty()
+      SYSTEM.LABEL.This_value_cannot_be_converted_to_an_Integer + toStringPretty()
     );
   }
 
@@ -247,14 +247,14 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Long.valueOf((String) value);
     throw new InvalidConversionException(
-      'This value cannot be converted to a Long: ' + toStringPretty()
+      SYSTEM.LABEL.This_value_cannot_be_converted_to_a_Long + toStringPretty()
     );
   }
 
   public String getStringValue() {
     if (isObject() || isArray())
       throw new InvalidConversionException(
-        'Objects and arrays are not Strings: ' + toStringPretty()
+        SYSTEM.LABEL.Objects_and_arrays_are_not_Strings + toStringPretty()
       );
     if (value instanceof String)
       return (String) value;
@@ -267,7 +267,7 @@ public with sharing class JSONParse {
     if (value instanceof String)
       return Datetime.valueOfGmt(((String) value).replace('T', ' ')).timeGmt();
     throw new InvalidConversionException(
-      'Only Long and String values can be converted to a Time: ' +
+      SYSTEM.LABEL.Only_Long_and_String_values_can_be_converted_to_a_Time +
       toStringPretty()
     );
   }

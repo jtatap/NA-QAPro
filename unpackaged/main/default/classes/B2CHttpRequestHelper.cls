@@ -249,7 +249,7 @@ public with sharing class B2CHttpRequestHelper {
         System.debug('--> apiVersion: ' + apiVersion);
         System.debug('--> ocapiSuffix: ' + ocapiSuffix);
         System.debug('--> httpRequest Timeout: 30,000 ms');
-		System.debug('--> bodyAsJSON'+bodyAsJSON);
+        System.debug('--> bodyAsJSON'+bodyAsJSON);
         // Define the request properties
         req.setMethod(httpMethod.toUpperCase());
         req.setHeader('Content-Type', 'application/json; charset=UTF-8');

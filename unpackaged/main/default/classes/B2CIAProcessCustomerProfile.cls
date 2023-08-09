@@ -83,7 +83,7 @@ public with sharing class B2CIAProcessCustomerProfile extends B2CBaseAttributeAs
                 thisCustomerProfile.put('Total_Updates_From_B2C_Commerce__c', totalContactUpdates);
                 thisCustomerProfile.put('Updated_by_B2C_Platform_Event__c', true);
                 //thisCustomerProfile.put('isEmployee__c', true);
-				//thisCustomerProfile.put('Profile_Complete__c', true);
+                //thisCustomerProfile.put('Profile_Complete__c', true);
                 // Append the customerProfile to the processing collection
                 customerProfiles.add(thisCustomerProfile);
 
@@ -92,7 +92,7 @@ public with sharing class B2CIAProcessCustomerProfile extends B2CBaseAttributeAs
                 // Audit that the PlatformEvent did not apply updates
                 originalCustomerProfile.put('Last_Platform_Event_Processed_Date__c', System.Datetime.now());
                 originalCustomerProfile.put('Last_Platform_Event_Applied_Updates__c', false);
-				//originalCustomerProfile.put('isEmployee__c', false);
+                //originalCustomerProfile.put('isEmployee__c', false);
                 //originalCustomerProfile.put('Profile_Complete__c', false);
                 // Append the customerProfile to the processing collection
                 customerProfiles.add(originalCustomerProfile);

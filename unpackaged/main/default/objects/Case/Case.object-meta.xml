@@ -227,9 +227,6 @@
         <searchResultsAdditionalFields>Brand__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CASES.ORIGIN</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Channel__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Channel_READONLY__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
 </CustomObject>

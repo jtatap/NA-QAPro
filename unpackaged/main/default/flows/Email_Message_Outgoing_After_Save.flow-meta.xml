@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Fault_Section</name>
+        <label>Assign Fault Section</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>varFaultSection</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Update Case First Reply Time</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Run_error_handling_subflow</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Sets &quot;First Reply Time&quot; on Case if null</description>
+        <name>decCase_First_Reply_Time_isblank</name>
+        <label>Case First Reply Time isblank</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>resFirst_Reply_Time_isblank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent.First_Reply_Time_Stamp__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_First_Reply_Time</targetReference>
+            </connector>
+            <label>First Reply Time isblank</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Email Message (Outgoing): After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Email Message (Outgoing): After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case_First_Reply_Time</name>
+        <label>Update Case First Reply Time</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <faultConnector>
+            <targetReference>Assign_Fault_Section</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>First_Reply_Time_Stamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Parent</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decCase_First_Reply_Time_isblank</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Incoming</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>EmailMessage</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_error_handling_subflow</name>
+        <label>Run error handling subflow</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <flowName>Log_Error_Handling_Subflow</flowName>
+        <inputAssignments>
+            <name>varClassName</name>
+            <value>
+                <stringValue>Email Message (Outgoing): After Save</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFaultSection</name>
+            <value>
+                <elementReference>varFaultSection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>varFaultSection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

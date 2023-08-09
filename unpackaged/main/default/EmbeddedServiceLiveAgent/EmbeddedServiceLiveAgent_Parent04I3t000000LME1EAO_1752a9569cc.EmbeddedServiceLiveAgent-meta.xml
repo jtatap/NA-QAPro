@@ -4,13 +4,13 @@
     <embeddedServiceQuickActions>
         <embeddedServiceLiveAgent>EmbeddedServiceLiveAgent_Parent04I3t000000LME1EAO_1752a9569cc</embeddedServiceLiveAgent>
         <order>1</order>
-        <quickActionDefinition>Snapins_Contact_PrechatQuickAction_08h3t000000Kzmb_1602737236503</quickActionDefinition>
+        <quickActionDefinition>Snapins_Contact_PrechatQuickAction_08h3t000000Kzmb_1681755439511</quickActionDefinition>
         <quickActionType>Prechat</quickActionType>
     </embeddedServiceQuickActions>
     <embeddedServiceQuickActions>
         <embeddedServiceLiveAgent>EmbeddedServiceLiveAgent_Parent04I3t000000LME1EAO_1752a9569cc</embeddedServiceLiveAgent>
         <order>2</order>
-        <quickActionDefinition>Snapins_Case_PrechatQuickAction_08h3t000000Kzmb_1602737236632</quickActionDefinition>
+        <quickActionDefinition>Snapins_Case_PrechatQuickAction_08h3t000000Kzmb_1681755439746</quickActionDefinition>
         <quickActionType>Prechat</quickActionType>
     </embeddedServiceQuickActions>
     <enabled>true</enabled>
@@ -20,6 +20,6 @@
     <liveChatButton>Digital_Assistant_Bot</liveChatButton>
     <liveChatDeployment>Digital_Assistant</liveChatDeployment>
     <masterLabel>EmbeddedServiceLiveAgent_Parent04I3t000000LME1EAO_1752a9569cc</masterLabel>
-    <prechatEnabled>false</prechatEnabled>
+    <prechatEnabled>true</prechatEnabled>
     <scenario>Service</scenario>
 </EmbeddedServiceLiveAgent>

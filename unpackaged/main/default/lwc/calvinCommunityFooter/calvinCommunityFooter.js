@@ -2,6 +2,12 @@ import { LightningElement, api } from 'lwc';
 import getFooterData from '@salesforce/apex/pvhCommunityFooterController.getFooterData';
 import getFooterCopyrightAreaData from '@salesforce/apex/pvhCommunityFooterController.getFooterCopyrightAreaData';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import CKCovid from '@salesforce/label/c.CKCovid';
+import CovidInfo from '@salesforce/label/c.CovidInfo';
+import COVID_19_Information from '@salesforce/label/c.COVID_19_Information';
+import View_here from '@salesforce/label/c.View_here';
+import Copyright_2022_Calvin_Klein_All_rights_reserved from '@salesforce/label/c.Copyright_2022_Calvin_Klein_All_rights_reserved';
+import Calvin_Klein from '@salesforce/label/c.Calvin_Klein';
 
 export default class CalvinCommunityFooter extends LightningElement {
     mapHeaderToItems = [];
@@ -11,6 +17,14 @@ export default class CalvinCommunityFooter extends LightningElement {
     @api brandName;
     @api iscovidinfovisible;
     covidURL = 'https://www.calvinklein.us/en/covid-19-information';
+    label =  {
+        CKCovid,
+        CovidInfo,
+        COVID_19_Information,
+        View_here,
+        Copyright_2022_Calvin_Klein_All_rights_reserved,
+        Calvin_Klein
+    }
 
     connectedCallback() {
         getFooterData({brandName : this.brandName})

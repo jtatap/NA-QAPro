@@ -11,7 +11,31 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CaseTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChildPrivacyCaseActionsHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PersonalDataFormApexController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>R2RChangeRequestSendEmail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>R2RProcessData</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>R2RProcessResponseAPI</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>RectifyDataEmailServiceClass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>true</custom>
@@ -50,6 +74,11 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>B2C_Commerce_JWTAuthentication</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Logger</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -99,87 +128,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__OnlineSales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>Sales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AllTabSet</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Community</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -819,23 +768,43 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>MessagingEndUser.AccountId</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>MessagingEndUser.ContactId</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>MessagingEndUser.HasInitialResponseSent</field>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <readable>false</readable>
+        <field>MessagingEndUser.IsOptedOut</field>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceResource.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MessagingEndUser.IsOptedOut</field>
+        <field>ServiceResource.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceResource.IsActive</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceResource.LocationId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2909,6 +2878,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Case-Custom Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3016,9 +2988,6 @@
         <layout>B2C_Site__c-B2C Site Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>BatchProcess__c-BatchProcess Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Brand_Details_Mapping__mdt-Brand Details Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3040,13 +3009,10 @@
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactStaging2__c-Contact Staging 2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contact_Staging__c-Contact Staging Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Corporate_Form_Configuration__c-Corporate Form Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CustomMetadataDeployTest__mdt-Custom Metadata Deploy Test Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Customer-Customer Layout</layout>
@@ -3101,6 +3067,9 @@
         <layout>NF_Banner__c-Portal Banner Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>NF_Batch_Control__mdt-NF Batch Control Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>NF_Case_Scenario__c-Case Scenario Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3122,10 +3091,22 @@
         <layout>Personal_Data_Request_Setting__mdt-Personal Data Request Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>QuickText_Usage__c-QuickText Usage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReplyText-Reply Candidate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Reward__c-Reward Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Seller-Seller Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceResource-Service Resource Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Trigger_Settings__mdt-Trigger Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
@@ -3159,9 +3140,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LiveChatTranscript-Chat Transcript Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MessagingEndUser-Messaging User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>NF_Contact_Tiles__mdt-Contact Tile Layout</layout>
@@ -4025,6 +4003,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>QuickText_Usage__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>aeon2__Day__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -4178,18 +4160,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>B2C_Site__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>BatchProcess__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ContactStaging2__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Contact_Staging__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

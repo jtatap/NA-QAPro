@@ -1,7 +1,7 @@
 /**
  * Exercises the JSONParse class.
  */
-@IsTest
+@IsTest(isParallel=false)
 private class JSONParse_Test {
 
     // Some JSON samples from https://json.org/example.html
@@ -210,7 +210,7 @@ private class JSONParse_Test {
             parser.getBlobValue();
             System.assert(false, 'Node is not a valid Blob, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Only String values can be converted to a Blob: 42', e.getMessage());
+            System.assertEquals('Only String values can be converted to a Blob:42', e.getMessage());
         }
     }
 
@@ -260,7 +260,7 @@ private class JSONParse_Test {
             parser.getDatetimeValue();
             System.assert(false, 'Node is not a valid Datetime, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Only Long and String values can be converted to a Datetime: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('Only Long and String values can be converted to a Datetime:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -277,7 +277,7 @@ private class JSONParse_Test {
             parser.getDateValue();
             System.assert(false, 'Node is not a valid Date, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Only Long and String values can be converted to a Date: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('Only Long and String values can be converted to a Date:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -300,7 +300,7 @@ private class JSONParse_Test {
             parser.getDecimalValue();
             System.assert(false, 'Node is not a valid Decimal, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('This value cannot be converted to a Decimal: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('This value cannot be converted to a Decimal:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -323,7 +323,7 @@ private class JSONParse_Test {
             parser.getDoubleValue();
             System.assert(false, 'Node is not a valid Double, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('This value cannot be converted to a Double: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('This value cannot be converted to a Double:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -340,7 +340,7 @@ private class JSONParse_Test {
             parser.getIdValue();
             System.assert(false, 'Node is not a valid Id, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('This value cannot be converted to an Id: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('This value cannot be converted to an Id:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -363,7 +363,7 @@ private class JSONParse_Test {
             parser.getIntegerValue();
             System.assert(false, 'Node is not a valid Integer, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('This value cannot be converted to an Integer: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('This value cannot be converted to an Integer:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -386,7 +386,7 @@ private class JSONParse_Test {
             parser.getLongValue();
             System.assert(false, 'Node is not a valid Long, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('This value cannot be converted to a Long: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('This value cannot be converted to a Long:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 
@@ -409,7 +409,7 @@ private class JSONParse_Test {
             parser.getStringValue();
             System.assert(false, 'Node is not a valid String, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Objects and arrays are not Strings: { }', e.getMessage());
+            System.assertEquals('Objects and arrays are not Strings:{ }', e.getMessage());
         }
 
         try {
@@ -417,7 +417,7 @@ private class JSONParse_Test {
             parser.getStringValue();
             System.assert(false, 'Node is not a valid String, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Objects and arrays are not Strings: [ ]', e.getMessage());
+            System.assertEquals('Objects and arrays are not Strings:[ ]', e.getMessage());
         }
     }
 
@@ -434,7 +434,7 @@ private class JSONParse_Test {
             parser.getTimeValue();
             System.assert(false, 'Node is not a valid Time, should have seen an exception about that.');
         }catch(JSONParse.InvalidConversionException e) {
-            System.assertEquals('Only Long and String values can be converted to a Time: [ 1, 2, 3 ]', e.getMessage());
+            System.assertEquals('Only Long and String values can be converted to a Time:[ 1, 2, 3 ]', e.getMessage());
         }
     }
 }

@@ -35,10 +35,19 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Case.Brand__c</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Code__c</field>
+    </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND NOT (5 AND 6) AND 7</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND NOT (5 AND 6) AND 7 AND 8</booleanFilter>
         <criteriaItems>
             <column>CREATED_DATEONLY</column>
             <columnToColumn>false</columnToColumn>
@@ -58,14 +67,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,1,2,4,5,7,8,9,81,83,84,11,10,100,82</value>
+            <value>,1,2,4,5,7,8,9,81,83,84,10,82</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Channel__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,CalvinKlein.us,Online - CalvinKlein.com,Calvin Klein Retail,Tommy.com,Online - Tommy.com,Tommy Hilfiger Retail,SpeedoUSA.com,VanHeusen.com,Online - vanheusen.com,Izod.com,Online - Izod.com,styleBureau.com,trueandco.com,CalvinKlein.ca,Speedo.com,Warner.com,Van Heusen | IZOD Company Store,Amazon.com,Nordstrom,Other Retailer</value>
+            <value>,CalvinKlein.us,Online - CalvinKlein.com,Calvin Klein Retail,Tommy.com,Online - Tommy.com,Tommy Hilfiger Retail,SpeedoUSA.com,VanHeusen.com,Online - vanheusen.com,Izod.com,Online - Izod.com,styleBureau.com,trueandco.com,CalvinKlein.ca,Speedo.com,Warner.com,Van Heusen | IZOD Company Store</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Code__c</column>
@@ -79,7 +88,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Call/Chat Disconnect</value>
+            <value>Call/Chat Disconnect,No Reply,Spam</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
@@ -87,6 +96,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Email,Phone,Web,Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>jeff kyle,andrew rojas,jessica bensinger,stephanie christian,aliyah caiazzo,elizabeth cruz,hymein hill,caroline grady,cheryl ritchwood,ann marie stevens,alexis rios,wendy amaya,soant rios,ioannis mimidas,ericka guevara,charles orens,robin doherty,jasen nemeth,diane haluszka,keith rivela,braj,blair piper,jayaseela,system,user,queue,zqueue,request,elizabeth sellers,carolyn anderson,stephanie anderson</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

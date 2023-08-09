@@ -17,5 +17,10 @@
         <operation>contains</operation>
         <value>Tommy</value>
     </filters>
+    <filters>
+        <field>CONTACT.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/26/2022 12:00 AM</value>
+    </filters>
     <label>Tommy Only</label>
 </ListView>

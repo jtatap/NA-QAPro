@@ -4,7 +4,7 @@
     <label>Zeta</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxWdArdKb2R3jDP3C21m1iERIYwXIdDb3NR7DcFTn6.CH87TQyVlCwb3Y629Y</consumerKey>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

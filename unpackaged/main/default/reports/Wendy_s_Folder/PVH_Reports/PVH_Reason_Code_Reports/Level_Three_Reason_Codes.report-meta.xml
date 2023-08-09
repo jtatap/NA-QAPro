@@ -19,13 +19,7 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.TrueAndCo_ReasonCodes__c</field>
-    </columns>
-    <columns>
-        <field>Case.TrueAndCo_ReasonCodeDetails__c</field>
-    </columns>
-    <columns>
-        <field>Case.TrueAndCo_ReasonSubDetail__c</field>
+        <field>DESCRIPTION</field>
     </columns>
     <filter>
         <criteriaItems>

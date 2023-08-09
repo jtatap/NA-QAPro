@@ -12,7 +12,8 @@ public class WaitTime {
       //sleep for parameter x millisecs
       finishTime = DateTime.now().getTime();
     }
-     System.debug('>>> Done from ' + startTime + ' to ' + finishTime);
+     Log.push('>>> Done from ' + startTime + ' to ' + finishTime);
+     Logger.logDebug();
   }
     
 }

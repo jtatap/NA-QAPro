@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_Ready_for_Quality_Feedback_Aliyah</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>Brand__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Resolved,Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Support_Case</value>
+    </filters>
+    <filters>
+        <field>Brand__c</field>
+        <operation>equals</operation>
+        <value>1,2,4,5,7,8,9,81,83,11,10,82</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Email,Phone,Web,Chat</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>greaterThan</operation>
+        <value>4/18/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Carolyn Anderson,Fatimah Mcallister,Courtney McGuire,Giana DiGiovanni,Aimee VanderVliet,Angelica Colon,Suvidha Sreedhar,Briayana PAdmore,Austin Fugate</value>
+    </filters>
+    <label>Cases Ready for Quality Feedback-Aliyah</label>
+    <sharedTo>
+        <role>PVH_Corp</role>
+    </sharedTo>
+</ListView>

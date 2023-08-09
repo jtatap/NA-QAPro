@@ -26,4 +26,8 @@
             <masterLabel>CK CA Guest checkout</masterLabel>
             <translation><!-- CK CA Guest checkout --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>CK Project Blue</masterLabel>
+            <translation><!-- CK Project Blue --></translation>
+        </picklistValues>
     </CustomFieldTranslation>

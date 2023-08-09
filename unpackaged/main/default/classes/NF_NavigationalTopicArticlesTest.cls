@@ -1,4 +1,4 @@
-@IsTest
+@IsTest(isParallel=false)
 public with sharing class NF_NavigationalTopicArticlesTest {
 
 
@@ -24,7 +24,11 @@ public with sharing class NF_NavigationalTopicArticlesTest {
         TopicAssignment Topicass = new TopicAssignment(TopicId = topicID, EntityId = newArticle.Id, NetworkId = NetworkId);
         insert Topicass;
         
-        KbManagement.PublishingService.publishArticle(articleId, true);
+        User knowledgeUser = [SELECT id,UserPermissionsKnowledgeUser FROM User WHERE UserPermissionsKnowledgeUser = true AND isActive = true AND Profile.Name = 'System Administrator' LIMIT 1];
+        System.runAs(knowledgeUser) {
+        	KbManagement.PublishingService.publishArticle(articleId, true);  
+        }
+        
         Test.startTest();
            List<NF_NavigationalTopicArticlesController.knowledgeArticleVerWrapper> articleList = NF_NavigationalTopicArticlesController.getArticles();
         	system.assertNotEquals(articleList, null);

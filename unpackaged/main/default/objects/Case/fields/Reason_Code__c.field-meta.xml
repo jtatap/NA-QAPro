@@ -22,34 +22,9 @@
                 <label>Loyalty</label>
             </value>
             <value>
-                <fullName>Payment</fullName>
-                <default>false</default>
-                <label>Payment</label>
-            </value>
-            <value>
                 <fullName>Marketing</fullName>
                 <default>false</default>
                 <label>Marketing</label>
-            </value>
-            <value>
-                <fullName>Service</fullName>
-                <default>false</default>
-                <label>Service</label>
-            </value>
-            <value>
-                <fullName>Returns</fullName>
-                <default>false</default>
-                <label>Returns</label>
-            </value>
-            <value>
-                <fullName>Technical</fullName>
-                <default>false</default>
-                <label>Technical</label>
-            </value>
-            <value>
-                <fullName>Product</fullName>
-                <default>false</default>
-                <label>Product</label>
             </value>
             <value>
                 <fullName>Orders</fullName>
@@ -57,9 +32,34 @@
                 <label>Orders</label>
             </value>
             <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Returns</fullName>
+                <default>false</default>
+                <label>Returns</label>
+            </value>
+            <value>
                 <fullName>Sales</fullName>
                 <default>false</default>
                 <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
             </value>
         </valueSetDefinition>
     </valueSet>

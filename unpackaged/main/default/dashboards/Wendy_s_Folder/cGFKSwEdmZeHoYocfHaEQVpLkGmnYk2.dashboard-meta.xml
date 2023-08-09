@@ -62,7 +62,7 @@
                 </groupingSortProperties>
                 <header>CSAT Trend Line</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/CSAT_Reports/All_PVH_CSAT</report>
+                <report>CSAT_Reports/All_PVH_CSAT</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -96,7 +96,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Wendy_s_Folder/CSAT_Reports/All_PVH_CSAT</report>
+                <report>CSAT_Reports/All_PVH_CSAT</report>
                 <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>

@@ -5,6 +5,7 @@
     <columns>ACCOUNT.NAME</columns>
     <columns>System_Type__c</columns>
     <columns>CONTACT.EMAIL</columns>
+    <columns>DataOwner_Subtype__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>CONTACT.RECORDTYPE</field>

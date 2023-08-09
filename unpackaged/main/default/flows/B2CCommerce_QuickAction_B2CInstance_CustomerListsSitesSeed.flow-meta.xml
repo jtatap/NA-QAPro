@@ -69,7 +69,7 @@
             <name>totalSiteRecords</name>
         </outputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <decisions>
         <description>... this decision evaluates if the B2C Client ID associated to the B2C Instance was found.  If not, an error will be displayed to the user.</description>
         <name>dec_doesB2CInstanceB2CClientIDExist</name>
@@ -203,6 +203,7 @@
         </rules>
     </decisions>
     <description>... retrieves all the B2C Commerce CustomerLists and related Sites associated to the current B2C Commerce instance.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: Seed CustomerLists and Sites {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: B2C Instance: Seed CustomerLists and Sites</label>
     <processMetadataValues>
@@ -672,7 +673,7 @@
             <targetReference>recGet_getB2CInstance</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <subflows>
         <description>... process the retrieved B2C CustomerLists and Sites against the existing collection of CustomerLists and Sites.</description>
         <name>sub_processCustomerListsAndSites</name>

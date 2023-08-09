@@ -7,8 +7,8 @@
             {label: 'NAME', fieldName: 'Name', type: 'text',sortable: true,},
             {label: 'EMAIL', fieldName: 'Email', type: 'email',sortable: true,},
             {label: 'BRAND', fieldName: 'Brand__c', type: 'text',sortable: true,},
-            {label: 'LOYALTY ID', fieldName: 'LoyaltyID__c', type: 'text',sortable: true,},
-             {label: 'ECOMM CONNECTED', fieldName: 'Ecomm_Connected__c', type: 'text',sortable: true,}
+            {label: 'LOYALTY ID', fieldName: 'LoyaltyID__c', type: 'text',sortable: true,},            
+            {label: 'ECOMM CONNECTED', fieldName: 'Ecomm_Connected__c', type: 'text',sortable: true,}
         ]);
         action.setParams({'ObjectName' : component.get("v.objectAPIName")});
         action.setCallback(this, function(response) {
@@ -113,11 +113,7 @@
         var searchText = component.get('v.searchText');
         console.log('searchText'+searchText);
         //do not repeat the search if nothing changed
-        /*  if (component.lastSearchText !== searchText) {
-            component.lastSearchText = searchText;
-        } else {
-            return;
-        }*/
+        
         
         component.set("v.isSearching", true); 
         if (searchText == null || searchText.trim().length < 3 ) {

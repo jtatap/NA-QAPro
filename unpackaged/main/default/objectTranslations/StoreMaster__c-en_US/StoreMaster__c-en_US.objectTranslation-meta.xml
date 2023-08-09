@@ -8,25 +8,61 @@
         <plural>true</plural>
         <value>Store Master</value>
     </caseValues>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <layouts>
         <layout>Store Master Layout</layout>
+        <sections>
+            <label><!-- CS Store Information --></label>
+            <section>CS Store Information</section>
+        </sections>
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
     </layouts>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <quickActions>
+        <label><!-- Update Store --></label>
+        <name>Update_Store</name>
+    </quickActions>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to modify this field. Please contact your supervisor for assistance. --></errorMessage>
+        <name>Prevent_CSR_Update</name>
+    </validationRules>
 </CustomObjectTranslation>

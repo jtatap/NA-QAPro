@@ -1,7 +1,7 @@
-@isTest
+@isTest(isParallel=false)
 public class OOBOClasses_Test {
 	static testmethod void contactCheck_Test(){
-               
+        Test.startTest();
         account acc = new account(name = 'DummyAccount');
         insert acc;
         
@@ -33,6 +33,8 @@ public class OOBOClasses_Test {
         
         List<Contact> conList = new List<Contact>();
         conList.add(con);
-        ContactCheck.linkContact (cs.Id,conList);
+        Id theId = ContactCheck.linkContact (cs.Id,conList);
+            Test.stopTest();
+            System.assert(theId != null);
     }   
 }

@@ -37,7 +37,7 @@ public with sharing class LogSelector {
             tableResponse.dataTableRecords = logs;
             return tableResponse;
         } catch(Exception ex){
-            System.debug(LoggingLevel.ERROR, 'Something went wrong: LogSelector > getLogs: '+ex.getMessage());
+            Logger.logException(ex);
         }
         return null;
     }

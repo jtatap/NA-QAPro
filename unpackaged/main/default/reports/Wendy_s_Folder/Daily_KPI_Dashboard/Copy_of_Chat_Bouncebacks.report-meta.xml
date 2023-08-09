@@ -18,14 +18,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value></value>
+            <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>User.LiveChatTranscripts$ChatReqTimedOut</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value></value>
+            <value>0</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

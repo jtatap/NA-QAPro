@@ -6,7 +6,7 @@
     <name>Deletion Data Owner Reminder Email</name>
     <relatedEntityType>Case</relatedEntityType>
     <style>none</style>
-    <subject>REMINDER - Action Required: {{{Case.Brand__c}}}  Personal Data Deletion Request_{{{Case.CaseNumber}}}_{{{Case.Thread_Id}}}​​​​​​​</subject>
+    <subject>REMINDER - Action Required: {{{Case.Brand__c}}}  Personal Data Deletion Request {{{Case.CaseNumber}}}</subject>
     <type>custom</type>
     <uiType>SFX</uiType>
 </EmailTemplate>

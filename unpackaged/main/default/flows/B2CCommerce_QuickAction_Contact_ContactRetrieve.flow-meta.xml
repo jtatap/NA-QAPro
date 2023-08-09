@@ -767,7 +767,7 @@
             <targetReference>sub_retrieveContactDetails</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <subflows>
         <description>... retrieve the sourceContact details either directly or in-directly from the recordId provided.</description>
         <name>sub_retrieveContactDetails</name>

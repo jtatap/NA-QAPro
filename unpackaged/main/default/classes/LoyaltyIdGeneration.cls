@@ -1,132 +1,124 @@
 /******************************************************************************
-* @Description: Generate Loyalty ID for  TH/CK/HE customers which has null value 
-* @Date       : Jan 2021
-* @JIRA       : NASSC-2694
-*
-******************************************************************************/
+ * @Description: Generate Loyalty ID for  TH/CK/HE customers which has null value
+ * @Date       : Jan 2021
+ * @JIRA       : NASSC-2694
+ *
+ ******************************************************************************/
+public class LoyaltyIdGeneration{
+    public static Boolean runFlag = true;
+    private static Map<String, LoyaltySettings__mdt> loyaltySettingMap = new Map<String, LoyaltySettings__mdt>();
+    public static void loyaltyIdGenHandler(Map<Id, Contact> conId, set<String> brandSet){
 
-public class LoyaltyIdGeneration
-{
-    public static Boolean runFlag= true;
-    private static Map<String,LoyaltySettings__mdt> loyaltySettingMap=new Map<String,LoyaltySettings__mdt>();
-   
-    public static void loyaltyIdGenHandler (Map<Id,Contact> conId,set<String> brandSet) 
-    {  
-        
-         system.debug('inside loyaltyidGeneration');
+        Log.push('inside loyaltyidGeneration');
         List<Contact> updateContacts = new List<Contact>();
-        Map<Contact,LoyaltyID_Sequence__c> nonLoyaltyContacts = new Map<Contact,LoyaltyID_Sequence__c>();
-        Map<String,String> parentContacts = new Map<String,String>();
-        Map<String,Contact> childContacts = new Map<String,Contact>();
-        
+        Map<Contact, LoyaltyID_Sequence__c> nonLoyaltyContacts = new Map<Contact, LoyaltyID_Sequence__c>();
+        Map<String, String> parentContacts = new Map<String, String>();
+        Map<String, Contact> childContacts = new Map<String, Contact>();
+
         Id emailRecordTypeId = Schema.SObjectType.Contact.getRecordTypeInfosByDeveloperName().get('Email').getRecordTypeId();
-        
-        
-        for(LoyaltySettings__mdt meta: [Select Id,BrandId__c,IsLoyaltyApplicable__c,Parent_Brand__c,LoyaltyPrefix__c from LoyaltySettings__mdt where BrandId__c IN:brandSet AND IsLoyaltyApplicable__c = true])
-        {
-            loyaltySettingMap.put(meta.BrandId__c,meta);
-        }        
-        
-        for(Contact con:conId.values())
-        {   
+
+        System.debug('brandSet @20: ' + brandSet);
+        for (LoyaltySettings__mdt meta : [Select Id, BrandId__c, IsLoyaltyApplicable__c, Parent_Brand__c, LoyaltyPrefix__c
+                                          from LoyaltySettings__mdt
+                                          where BrandId__c IN:brandSet AND IsLoyaltyApplicable__c = true]){
+            loyaltySettingMap.put(meta.BrandId__c, meta);
+        }
+        System.debug('loyaltySettingMap @26: ' + loyaltySettingMap);
+        for (Contact con : conId.values()){
+            System.debug('con.Brand_Id__c @27: ' + con.Brand_Id__c);
             //MetaData brand has match with contact
-            if(loyaltySettingMap.containsKey(con.Brand_Id__c))
-            {
-                //Parent brand is empty in MetaDataType for this contact brand. 
-                if(String.isEmpty(loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c))
-                {                                                   
+            if (loyaltySettingMap.containsKey(con.Brand_Id__c)){
+                //Parent brand is empty in MetaDataType for this contact brand.
+                if (String.isEmpty(loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c)){
                     LoyaltyID_Sequence__c lSeq = new LoyaltyID_Sequence__c();
-                    nonLoyaltyContacts.put(con,lSeq);
-                } 
-                //Parent brand is not empty in MetaDataType for this contact brand. 
-                else if(String.isNotEmpty(loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c))
-                {
-                    parentContacts.put(con.Email,loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c);
-                    childContacts.put(con.Email,con);
-                    system.debug('childContacts****'+childContacts);
+                    nonLoyaltyContacts.put(con, lSeq);
+                }
+                //Parent brand is not empty in MetaDataType for this contact brand.
+                else if (String.isNotEmpty(loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c)){
+                    parentContacts.put(con.Email, loyaltySettingMap.get(con.Brand_Id__c).Parent_Brand__c);
+                    childContacts.put(con.Email, con);
+                    Log.push('childContacts****' + childContacts);
                 }
             }
         }
-        
+
         //Creating LoyaltyID_Sequence__c for Contacts iff Parent brand is empty in MetaDataType .
-        if(nonLoyaltyContacts.size() > 0)
-        {   
+        if (nonLoyaltyContacts.size() > 0){
             updateContacts.addAll(populateContactsWithLoyaltyIds(nonLoyaltyContacts));
             //populateContactsWithLoyaltyIds(nonLoyaltyContacts);
         }
-        
-        /* If Parent brand is not empty in MetaDataType*/        
-        if(parentContacts.size()>0)
-        {
-            
+        /* If Parent brand is not empty in MetaDataType*/
+        System.debug('parentContacts @51: ' + parentContacts);
+        if (parentContacts.size() > 0){
             List<Contact> parentContactList = [SELECT ID, Brand_Id__c, Email, LoyaltyID__c, LoyaltyFlag__c, Loyalty_Optin_Date__c
-                                               FROM Contact 
-                                               WHERE RecordTypeId = :emailRecordTypeId AND Brand_Id__c IN :parentContacts.values() AND Email!=Null AND Email IN :parentContacts.keySet() ];
-            
-            if(parentContactList.size()>0)
-            {
-                Map<Contact,LoyaltyID_Sequence__c>  nonParentLoyaltyContacts = new Map<Contact,LoyaltyID_Sequence__c>();
-                
-                for(Contact parentContact : parentContactList)
-                {
+                                               FROM Contact
+                                               WHERE RecordTypeId = :emailRecordTypeId AND Brand_Id__c IN:parentContacts.values() AND Email != Null AND Email IN:parentContacts.keySet()];
+
+            if (parentContactList.size() > 0){
+                Map<Contact, LoyaltyID_Sequence__c> nonParentLoyaltyContacts = new Map<Contact, LoyaltyID_Sequence__c>();
+                for (Contact parentContact : parentContactList){
                     contact childContact = childContacts.get(parentContact.Email);
-                    
+
                     /* If Parent contact has loyaltyId - then use that to populate in child contact.*/
-                    if (parentContact.LoyaltyID__c != null) 
-                    {
-                        Contact origContactUpdate = new Contact(Id=childContact.Id);
+                    if (parentContact.LoyaltyID__c != null){
+                        Contact origContactUpdate = new Contact(Id = childContact.Id);
                         origContactUpdate.LoyaltyID__c = parentContact.LoyaltyID__c;
-                        if (parentContact.LoyaltyFlag__c != null) origContactUpdate.LoyaltyFlag__c = parentContact.LoyaltyFlag__c;
-                        if (parentContact.Loyalty_Optin_Date__c != null) origContactUpdate.Loyalty_Optin_Date__c = parentContact.Loyalty_Optin_Date__c;
+                        if (parentContact.LoyaltyFlag__c != null)
+                            origContactUpdate.LoyaltyFlag__c = parentContact.LoyaltyFlag__c;
+                        if (parentContact.Loyalty_Optin_Date__c != null)
+                            origContactUpdate.Loyalty_Optin_Date__c = parentContact.Loyalty_Optin_Date__c;
                         updateContacts.add(origContactUpdate);
-                        system.debug('updateContacts***'+updateContacts);
-                    }                    
-                    else
-                    {
+                        Log.push('updateContacts***' + updateContacts);
+                    } else{
                         LoyaltyID_Sequence__c lSeq = new LoyaltyID_Sequence__c();
-                        nonParentLoyaltyContacts.put(parentContact,lSeq);
-                    }                    
+                        nonParentLoyaltyContacts.put(parentContact, lSeq);
+                    }
                 }
                 /* Check Parent contact has no loyalityId - Creating LoyaltyID_Sequence__c and populate the same in Parent & Child */
-                for(Contact parentContact : populateContactsWithLoyaltyIds(nonParentLoyaltyContacts))
-                {
+                for (Contact parentContact : populateContactsWithLoyaltyIds(nonParentLoyaltyContacts)){
                     contact childContact = childContacts.get(parentContact.Email);
-                    Contact origContactUpdate = new Contact(Id=childContact.Id);
-                    origContactUpdate.LoyaltyID__c= parentContact.LoyaltyID__c;
+                    Contact origContactUpdate = new Contact(Id = childContact.Id);
+                    origContactUpdate.LoyaltyID__c = parentContact.LoyaltyID__c;
                     updateContacts.add(parentContact);
                     updateContacts.add(origContactUpdate);
-                    system.debug('updateContacts***'+updateContacts);
+                    Log.push('updateContacts***' + updateContacts);
                 }
             }
-            
+
         }
         /* Update all Contacts at once */
-        if(updateContacts.size()>0)
-        {
+        if (updateContacts.size() > 0){
             Update updateContacts;
         }
+        Logger.logDebug();
     }
-    private static List<Contact> populateContactsWithLoyaltyIds(Map<Contact,LoyaltyID_Sequence__c> nonLoyaltyContacts)
-    {
+
+    @TestVisible
+    private static List<Contact> populateContactsWithLoyaltyIds(Map<Contact, LoyaltyID_Sequence__c> nonLoyaltyContacts){
         List<Contact> returnConList = new List<Contact>();
-        insert nonLoyaltyContacts.values();
-        Set<id> newLoyaltyIds = new Set<id>();
-        
-        for(SObject sobj: nonLoyaltyContacts.values())
-        { 
-            newLoyaltyIds.add(sobj.Id);
-        }    
-        List<LoyaltyID_Sequence__c> loyaltylList =  [Select Id, Name from LoyaltyID_Sequence__c WHERE Id in :newLoyaltyIds];
-        Integer index=0;
-        for(Contact con: nonLoyaltyContacts.keyset())
-        {
-            if(String.isNotEmpty(loyaltySettingMap.get(con.Brand_Id__c).LoyaltyPrefix__c))
-            {
-                Contact origContactUpdate = new Contact(Id=con.Id, LoyaltyID__c = loyaltySettingMap.get(con.Brand_Id__c).LoyaltyPrefix__c + loyaltylList[index].Name);
-                returnConList.add(origContactUpdate);
+        try{
+
+            insert nonLoyaltyContacts.values();
+            Set<id> newLoyaltyIds = new Set<id>();
+            for (SObject sobj : nonLoyaltyContacts.values()){
+                newLoyaltyIds.add(sobj.Id);
             }
-            index++;             
+            List<LoyaltyID_Sequence__c> loyaltylList = [Select Id, Name
+                                                        from LoyaltyID_Sequence__c
+                                                        WHERE Id in:newLoyaltyIds];
+            Integer index = 0;
+            for (Contact con : nonLoyaltyContacts.keyset()){
+                if (String.isNotEmpty(loyaltySettingMap.get(con.Brand_Id__c).LoyaltyPrefix__c)){
+                    Contact origContactUpdate = new Contact(Id = con.Id, LoyaltyID__c = loyaltySettingMap.get(con.Brand_Id__c).LoyaltyPrefix__c + loyaltylList[index].Name);
+                    returnConList.add(origContactUpdate);
+                }
+                index++;
+            }
+        } catch (Exception e){
+            System.debug('e @117 ' + e.getStackTraceString());
+            Logger.logException(e);
         }
+
         return returnConList;
     }
     

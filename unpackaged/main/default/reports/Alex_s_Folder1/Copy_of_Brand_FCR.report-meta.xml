@@ -79,10 +79,10 @@
             <axisBinding>y</axisBinding>
             <column>FORMULA1</column>
         </chartSummaries>
-        <chartType>Line</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>CREATED_DATE</groupingColumn>
+        <groupingColumn>BucketField_33914612</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -95,9 +95,6 @@
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
-    <columns>
-        <field>BucketField_33914612</field>
-    </columns>
     <columns>
         <field>CASE_NUMBER</field>
     </columns>
@@ -122,14 +119,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>1,2,4,5,7,8,9,81,83,84,10,100,82</value>
+            <value>,1,2,4,5,7,8,9,81,83,84,11,10,100,82</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Channel__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,CalvinKlein.us,Online - CalvinKlein.com,Calvin Klein Retail,Tommy.com,Online - Tommy.com,Tommy Hilfiger Retail,SpeedoUSA.com,Other Retailer,VanHeusen.com,Online - vanheusen.com,Izod.com,Online - Izod.com,styleBureau.com,CalvinKlein.ca,Speedo.com,Warner.com</value>
+            <value>,CalvinKlein.us,Online - CalvinKlein.com,Calvin Klein Retail,Tommy.com,Online - Tommy.com,Tommy Hilfiger Retail,SpeedoUSA.com,VanHeusen.com,Online - vanheusen.com,Izod.com,Online - Izod.com,styleBureau.com,trueandco.com,CalvinKlein.ca,Speedo.com,Warner.com,Van Heusen | IZOD Company Store,Amazon.com,Nordstrom,Other Retailer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Code__c</column>
@@ -143,7 +140,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Call/Chat Disconnect</value>
+            <value>Call/Chat Disconnect,No Reply,Spam</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
@@ -163,7 +160,7 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>ORIGIN</field>
+        <field>BucketField_33914612</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -187,8 +184,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2020-12-06</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-08-24</startDate>
+        <interval>LAST_FISCALPERIOD</interval>
     </timeFrameFilter>
 </Report>

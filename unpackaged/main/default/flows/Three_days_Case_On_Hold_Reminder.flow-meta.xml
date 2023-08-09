@@ -611,7 +611,7 @@
         <object>Case</object>
     </recordUpdates>
     <startElementReference>myPreWaitDecision_myWait_myRule_1</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>cancelWaits</name>
         <dataType>String</dataType>

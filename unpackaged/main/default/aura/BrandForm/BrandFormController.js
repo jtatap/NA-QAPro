@@ -41,26 +41,7 @@
         // make Spinner attribute to false for hide loading spinner    
         component.set("v.Spinner", false);
     },
-    /*
-    onFirstNameFocus : function(component, event, helper) {
-        component.find("firstname").setCustomValidity("");
-        component.find("firstname").reportValidity();
-        
-    },
     
-    onLastNameFocus: function(component, event, helper) {
-       // component.find("lastname").setCustomValidity("");
-        component.find("lastname").reportValidity();
-        
-    },
-    
-    onEmailFocus: function(component, event, helper) {
-        component.find("email").setCustomValidity("");
-        component.find("email").reportValidity();
-        
-    }
-    
-	*/
     uploadFinished : function(component, event, helper) {
         var uploadedFiles = event.getParam("files");
         component.set("v.isRemoveFilesDisplay",true);
@@ -98,7 +79,6 @@
 
         component.set('v.files', files);
         component.set("v.Spinner", false);
-        //helper.delUploadedfiles(component,documentId);
         if(files.length == 0) {
             component.set("v.isRemoveFilesDisplay",false);
             component.set('v.disabled', false);

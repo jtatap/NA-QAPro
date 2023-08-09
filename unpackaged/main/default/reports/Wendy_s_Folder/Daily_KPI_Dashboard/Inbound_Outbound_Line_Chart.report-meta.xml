@@ -144,11 +144,6 @@
         <field>EMAIL.MESSAGE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>BucketField_76407550</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Inbound/Outbound Line Chart</name>
     <params>
         <name>units</name>

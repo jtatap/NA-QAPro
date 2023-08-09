@@ -17,11 +17,11 @@ public with sharing class NF_UpdateSessionFollowup {
 
             ebotdata__Bot_Session__c session = NF_Util.getBotSession(chatKey);
             session.Visitor_Feedback_Intent__c = lbi;
-            session.Visitor_Feedback_Result__c = (isPositiveFeedback) ? 'Yes' : 'No';
+            session.Visitor_Feedback_Result__c = (isPositiveFeedback) ? SYSTEM.LABEL.Yes : SYSTEM.LABEL.No;
 
             update session;
         }catch(Exception e){
-            System.debug('NF_UpdateSessionFollowup.updateSession Exception encountered ' + e);
+            Logger.logException(e);
         }
     }
 }

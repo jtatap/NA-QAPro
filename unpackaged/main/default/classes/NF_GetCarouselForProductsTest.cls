@@ -7,6 +7,7 @@ public with sharing class NF_GetCarouselForProductsTest {
 
     @IsTest
     static void test1DefaultBrand() {
+        Test.startTest();
         List<NF_GetCarouselForProducts.Input> inputs = new List<NF_GetCarouselForProducts.Input>();
         NF_GetCarouselForProducts.Input input = new NF_GetCarouselForProducts.Input();
 
@@ -14,12 +15,16 @@ public with sharing class NF_GetCarouselForProductsTest {
         input.brandName = 'Calvin Klein';
         inputs.add(input);
         NF_GetCarouselForProducts.getResponse(inputs);
+        list<ebotdata__Bot_Session__c> sessionList = [SELECT Id FROM ebotdata__Bot_Session__c];
+        Test.stopTest();
+        System.assert(!sessionList.isEmpty());
         //System.assertNotEquals(outputs.get(0).shippingQuestionsURL,null);
         // T
 
     }
     @IsTest
     static void test2THBrand() {
+        Test.startTest();
         List<NF_GetCarouselForProducts.Input> inputs = new List<NF_GetCarouselForProducts.Input>();
         NF_GetCarouselForProducts.Input input = new NF_GetCarouselForProducts.Input();
 
@@ -27,7 +32,9 @@ public with sharing class NF_GetCarouselForProductsTest {
         input.brandName = 'IZOD';
         inputs.add(input);
         NF_GetCarouselForProducts.getResponse(inputs);
-
+        list<ebotdata__Bot_Session__c> sessionList = [SELECT Id FROM ebotdata__Bot_Session__c];
+        Test.stopTest();
+        System.assert(!sessionList.isEmpty());
     }
 
 }

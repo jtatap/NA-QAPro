@@ -146,6 +146,34 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>classificationType</name>
+                    <value>CaseWrapUp</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleFieldName</name>
+                    <value>Einstein Case Wrap-Up</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>updateQuickActionName</name>
+                    <value>Case.Einstein_Case_Scenario</value>
+                </componentInstanceProperties>
+                <componentName>runtime_service_predictions:einsteinFieldRecommendations</componentName>
+                <identifier>runtime_service_predictions_einsteinFieldRecommendations</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>stayOnCurrentRecord</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>runtime_service_predictions:einsteinSuggestionsCardContainer</componentName>
+                <identifier>runtime_service_predictions_einsteinSuggestionsCardContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>createQuickActionName</name>
                     <value>NewContact</value>
                 </componentInstanceProperties>

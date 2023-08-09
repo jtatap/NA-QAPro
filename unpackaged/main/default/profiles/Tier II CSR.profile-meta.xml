@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <categoryGroupVisibilities>
         <dataCategoryGroup>PVH_Knowledge_Base</dataCategoryGroup>
@@ -2053,87 +2053,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__OnlineSales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>Sales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AllTabSet</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Community</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -2145,16 +2065,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.AutomationBypassDateTimeDelay__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.AutomationBypassDateTime__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2385,11 +2295,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.IsEscalated</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Is_Automation_Bypassed__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3348,11 +3253,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.Current_Point_Balance__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.CustomerRequestDNMOld__c</field>
         <readable>true</readable>
@@ -3654,11 +3554,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.SFCC_User_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Contact.SMSNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3735,11 +3630,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Store_Credit__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.Store_Master__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4524,11 +4414,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContactStaging2__c.Email_Interests__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>ContactStaging2__c.Email_Optin_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4550,11 +4435,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ContactStaging2__c.Fraud__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContactStaging2__c.HomeStore__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4609,32 +4489,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContactStaging2__c.SMSNumber__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContactStaging2__c.SMSOptInDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContactStaging2__c.SMSOptOutDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContactStaging2__c.SMSOptinStatus__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>ContactStaging2__c.Seuqence__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContactStaging2__c.StoreOfCapture__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4710,11 +4565,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>IRE_StagingTable__c.IREReactivationDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>IRE_StagingTable__c.LoyaltyID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5750,11 +5600,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>StoreMaster__c.Country__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>StoreMaster__c.Old_StoreUniqueId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9571,9 +9416,6 @@
         <layout>B2C_Site__c-B2C Site Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>BatchProcess__c-BatchProcess Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Brand_Details_Mapping__mdt-Brand Details Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -9593,12 +9435,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Campaign-Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactStaging2__c-Contact Staging 2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contact_Staging__c-Contact Staging Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Corporate_Form_Configuration__c-Corporate Form Configuration Layout</layout>
@@ -9714,9 +9550,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LiveChatTranscript-Chat Transcript Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MessagingEndUser-Messaging User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>NF_Contact_Tiles__mdt-Contact Tile Layout</layout>
@@ -11292,18 +11125,6 @@
     <tabVisibilities>
         <tab>B2C_Site__c</tab>
         <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>BatchProcess__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ContactStaging2__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Contact_Staging__c</tab>
-        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Corporate_Form_Configuration__c</tab>

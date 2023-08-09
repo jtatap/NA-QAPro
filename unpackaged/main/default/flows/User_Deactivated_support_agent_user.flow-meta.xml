@@ -177,17 +177,7 @@
         </connector>
         <filterFormula>AND(
 ISCHANGED({!$Record.Profile.Name}),
-{!$Record.IsActive} = TRUE,
-OR(
-{!$Record.Profile.Name} != &#39;Ops/Quality&#39;,
-{!$Record.Profile.Name} != &#39;Tier 1 TEMP&#39;,
-{!$Record.Profile.Name} != &#39;Tier I CSR CCPA&#39;,
-{!$Record.Profile.Name} != &#39;Tier I CSR PVH&#39;,
-{!$Record.Profile.Name} != &#39;Tier I CSR Wholesale&#39;,
-{!$Record.Profile.Name} != &#39;Tier II CSR&#39;,
-{!$Record.Profile.Name} != &#39;Tier III CSR/Supervisor&#39;,
-{!$Record.Profile.Name} != &#39;System Administrator&#39;
-))</filterFormula>
+{!$Record.IsActive} = TRUE)</filterFormula>
         <object>User</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

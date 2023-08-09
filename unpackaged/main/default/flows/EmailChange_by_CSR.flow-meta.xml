@@ -298,7 +298,7 @@
             <targetReference>getContact</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <textTemplates>
         <name>BodyOfMail</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>

@@ -19,7 +19,7 @@
                     <div class="slds-page-header__name-title">
                         <h1>
                          <span>Points</span>
-                            <span class="slds-page-header__title slds-truncate" title="Recently Viewed ">C/S Issued Points</span>
+                            <span class="slds-page-header__title slds-truncate" title="Recently Viewed ">{!$Label.c.C_S_Issued_Points}</span>
                         </h1>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
         	<lightning:layout >
                 <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                     <div class="header-column">
-                        <p class="field-title" >Type</p>
+                        <p class="field-title" >{!$Label.c.Type}</p>
                         <label class="slds-form-element__label">{!v.pointWrapper.Type}</label>
                     </div>
                 </lightning:layoutItem>
@@ -42,7 +42,7 @@
         	<lightning:layout >
                 <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-small">
                     <div class="header-column">
-                        <p class="field-title" >Points Issued</p>
+                        <p class="field-title" >{!$Label.c.Points_Issued}</p>
                         <label class="slds-form-element__label">{!v.pointWrapper.PointsIssued}</label>
                     </div>
                 </lightning:layoutItem>
@@ -59,48 +59,41 @@
     <h3 class="slds-section-title--divider">Information</h3>
     <div class="c-container">
         <lightning:layout multipleRows="true">
-           <!-- <aura:if isTrue="{!v.pointWrapper.Category == 'Transaction'}"> -->
-            <!-- Show HyperLink only When Category=Transaction AND Type=Purchase -->
-            <aura:if isTrue="{! and(v.pointWrapper.Category == 'Transaction',v.pointWrapper.Type == 'Purchase')}">
+           <aura:if isTrue="{! and(v.pointWrapper.Category == 'Transaction',v.pointWrapper.Type == 'Purchase')}">
                 <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
-                        <p class="field-title">Description</p>
+                        <p class="field-title">{!$Label.c.Description}</p>
                         <p class="slds-form-element__label"><a href="javascript:void(0)" onclick="{!c.handleTransactionClick}">{!v.pointWrapper.Description}</a></p>                    
                 </lightning:layoutItem>            
                 <aura:set attribute="else">
                         <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
-                            <p class="field-title">Description</p>
+                            <p class="field-title">{!$Label.c.Description}</p>
                             <label class="slds-form-element__label">{!v.pointWrapper.Description}</label>
                         </lightning:layoutItem>
                 </aura:set>
             </aura:if>            
             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
-                    <p class="field-title">Issue Date</p>
+                    <p class="field-title">{!$Label.c.Issue_Date}</p>
                     <label class="slds-form-element__label">{!v.pointWrapper.IssueDate}</label>
             </lightning:layoutItem>
             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
                 <div class="header-column">
-                    <p class="field-title" >Case Number</p>
+                    <p class="field-title" >{!$Label.c.Case_Number}</p>
                     <label class="slds-form-element__label">{!v.pointWrapper.Casenumber}</label>
                 </div>
             </lightning:layoutItem>
               <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
                 <div class="header-column">
-                    <p class="field-title" >Type</p>
+                    <p class="field-title" >{!$Label.c.Type}</p>
                     <label class="slds-form-element__label">{!v.pointWrapper.Type}</label>
                 </div>
             </lightning:layoutItem>
               <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
-                    <p class="field-title" >Points Issued</p>
+                    <p class="field-title" >{!$Label.c.Points_Issued}</p>
                     <label class="slds-form-element__label">{!v.pointWrapper.PointsIssued}</label>
             </lightning:layoutItem>
-            <!--
-            <lightning:layoutItem size="12" mediumDeviceSize="6" padding="small">
-                    <p class="field-title" >Reason Code</p>
-                    <label class="slds-form-element__label">{!v.pointWrapper.ReasonCode}</label>
-            </lightning:layoutItem>
-			-->
+            
             <lightning:layoutItem size="12" mediumDeviceSize="6" padding="around-medium">
-                    <p class="field-title" >Transaction Id</p>
+                    <p class="field-title" >{!$Label.c.Transaction_Id}</p>
                     <label class="slds-form-element__label">{!v.pointWrapper.Description}</label>
             </lightning:layoutItem>
         </lightning:layout>

@@ -579,17 +579,17 @@
             </value>
         </filters>
         <filters>
-            <field>Id</field>
+            <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>a2F2C000000GOB8UAO</stringValue>
+                <stringValue>PVHCKUS</stringValue>
             </value>
         </filters>
         <filters>
-            <field>Id</field>
+            <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>a2F2C000000GOB9UAO</stringValue>
+                <stringValue>PVHCKCA</stringValue>
             </value>
         </filters>
         <object>B2C_Site__c</object>
@@ -788,17 +788,17 @@
             </value>
         </filters>
         <filters>
-            <field>Id</field>
+            <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>a2F2C000000GOB8UAO</stringValue>
+                <stringValue>PVHCKUS</stringValue>
             </value>
         </filters>
         <filters>
-            <field>Id</field>
+            <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>a2F2C000000GOB9UAO</stringValue>
+                <stringValue>PVHCKCA</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -1070,6 +1070,14 @@
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
         </fields>
+        <fields>
+            <name>BackToComponent</name>
+            <extensionName>c:LC_LauchFromFlow</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>
@@ -1155,6 +1163,18 @@
                         <name>version</name>
                         <value>
                             <elementReference>selectedSiteVersion</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>caseRecordId</name>
+                        <value>
+                            <elementReference>caseRecordId</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value>
+                            <elementReference>recordId</elementReference>
                         </value>
                     </inputParameters>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>

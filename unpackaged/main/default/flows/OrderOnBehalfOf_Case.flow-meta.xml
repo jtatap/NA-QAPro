@@ -752,7 +752,7 @@
         <connector>
             <targetReference>asn_activeB2CSites</targetReference>
         </connector>
-        <filterLogic>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND (7 OR 8)</filterLogic>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND 5 AND 6</filterLogic>
         <filters>
             <field>Is_Active__c</field>
             <operator>EqualTo</operator>
@@ -793,20 +793,6 @@
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>a2F2C000000GOB9UAO</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>a2F2C000000GOB8UAO</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -999,7 +985,7 @@
         <description>... select a B2C Site based on the customerList that was identified.</description>
         <name>scrn_b2cSiteSelect</name>
         <label>Select a B2C Site</label>
-        <locationX>1107</locationX>
+        <locationX>1106</locationX>
         <locationY>1795</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>

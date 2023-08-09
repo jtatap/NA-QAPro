@@ -1,7 +1,7 @@
 <aura:component controller="A1_RewardsDataApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 	<aura:attribute name="recordId" type="String" />
-    <aura:attribute name="numRecords" type="Integer" default="0"/>
+    <aura:attribute name="numRecords" type="Integer" />
     <aura:attribute name="rewardWrapper" type="object[]"/>
     <aura:attribute name="pointWrapper" type="object[]"/>
      <aura:attribute name="pointWrapperObject" type="object"/>
@@ -14,13 +14,13 @@
 	<!--spinner -->
     <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
     <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
-    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="Spinner" type="boolean"/>
     
     <!-- showing spinner -->
     <aura:if isTrue="{!v.Spinner}">
         <div aura:id="spinnerId" class="slds-spinner_container">
             <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
-                <span class="slds-assistive-text">Loading</span>
+                <span class="slds-assistive-text">{!$Label.c.Loading}</span>
                 <div class="slds-spinner__dot-a"></div>
                 <div class="slds-spinner__dot-b"></div>
             </div>
@@ -32,13 +32,7 @@
     Rewards ({!v.numRecords})
     </div>
     
-    <!--
-    <lightning:datatable data="{! v.rewtList }" 
-                         columns="{! v.mycolumns }" 
-                         keyField="id"
-                         hideCheckboxColumn="true"/>
-
-	-->
+    
     <aura:if isTrue="{!not(empty(v.rewardWrapper))}">
     <!-- custom code to show table -->
      <div class="slds-p-around--medium slds-scrollable_x slds-scrollable_y">
@@ -46,20 +40,20 @@
         <thead>
             <tr class="slds-text-title--caps">
                 <th scope="col">
-                    <div class="slds-truncate" title="rewardid">Reward ID</div>
+                    <div class="slds-truncate" title="rewardid">{!$Label.c.Reward_ID}</div>
                 </th>
                 
                 <th scope="col">
-                    <div class="slds-truncate" title="desc">Description</div>
+                    <div class="slds-truncate" title="desc">{!$Label.c.Description}</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="rewardid">Transaction ID</div>
+                    <div class="slds-truncate" title="rewardid">{!$Label.c.Transaction_Id}</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="status">Status</div>
+                    <div class="slds-truncate" title="status">{!$Label.c.Status1}</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="status">Expiry Date</div>
+                    <div class="slds-truncate" title="status">{!$Label.c.Expiry_Date}</div>
                 </th>
             </tr>
         </thead>
@@ -101,7 +95,7 @@
     </table>
   </div>
       <aura:set attribute="else">
-          <div class="slds-m-top_xx-small slds-align_absolute-center">No Records Found</div>
+          <div class="slds-m-top_xx-small slds-align_absolute-center">{!$Label.c.No_Records_Found}</div>
     </aura:set>
   </aura:if> 
 </aura:component>

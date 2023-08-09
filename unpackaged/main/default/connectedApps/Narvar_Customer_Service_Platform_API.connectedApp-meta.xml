@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
-    <contactEmail>peter.mcdowell@neuraflash.com</contactEmail>
+    <contactEmail>brajkishorsingh@pvh.com</contactEmail>
     <label>Narvar Customer Service Platform API</label>
     <oauthConfig>
-        <callbackUrl>https://csp-api.narvar.com/salesforce/auth/callback</callbackUrl>
-        <consumerKey>3MVG9hq7jmfCuKffRsiRSjzlJqF2PZsXniIWW1QVgxN6ud7NQ01eKP6c3avaTiEcnUYjAh0zuXMS2WAKR9rJN</consumerKey>
+        <callbackUrl>https://csp-api-st01.narvar.qa/salesforce/auth/callback</callbackUrl>
+        
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
-        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
         <scopes>Api</scopes>
         <scopes>RefreshToken</scopes>
     </oauthConfig>

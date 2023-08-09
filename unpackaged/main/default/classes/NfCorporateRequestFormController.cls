@@ -17,7 +17,7 @@ public without sharing class NfCorporateRequestFormController {
     @AuraEnabled  
     public static string uploadFile(String caseId, string file, string fileName) {  
         try{  
-            String base64File = EncodingUtil.urlDecode(file, 'UTF-8');     
+            String base64File = EncodingUtil.urlDecode(file, SYSTEM.LABEL.UTF_8);     
             ContentVersion contentVersionRec = new ContentVersion();  
             contentVersionRec.Title = fileName;  
             contentVersionRec.PathOnClient = '/' + fileName;  
@@ -103,21 +103,21 @@ public without sharing class NfCorporateRequestFormController {
         try {
             Case currentCase = (Case)JSON.deserialize(caseData, Case.Class);
             currentCase.recordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get(recordTypeName).getRecordTypeId();
-            currentCase.Email_Assignment_Code__c = 'I';
-            currentCase.Origin = 'Web';
+            currentCase.Email_Assignment_Code__c = SYSTEM.LABEL.I;
+            currentCase.Origin = SYSTEM.LABEL.Web;
             AssignmentRule assignRule = [select id from AssignmentRule where SobjectType = 'Case' and Active = true and Name='Case Assignment Rule' limit 1];
             Database.DMLOptions dmls = new Database.DMLOptions(); //Creating the DMLOptions for "Assign using active assignment rules" checkbox
             dmls.assignmentRuleHeader.assignmentRuleId= assignRule.id;
             currentCase.setOptions(dmls);
-            currentCase.Subject = 'Corporate Request - ' + currentCase.Business_Group__c;
+            currentCase.Subject = SYSTEM.LABEL.Corporate_Request + currentCase.Business_Group__c;
             insert currentCase;    
             currentCase = [Select CaseNumber FROM Case WHERE ID =: currentCase.Id];
             List<String> params = new List<String>{currentCase.CaseNumber};
             String msgLabel = Label.nfThank_you_message;
             String thankyoumessage = String.format(msgLabel, params);
-            returnParamaters.put('CASENUMBER',currentCase.CaseNumber);
-            returnParamaters.put('CASEID',currentCase.Id);
-            returnParamaters.put('THANKYOUMESSAGE', thankyoumessage);
+            returnParamaters.put(SYSTEM.LABEL.CASENUMBER,currentCase.CaseNumber);
+            returnParamaters.put(SYSTEM.LABEL.CASEID,currentCase.Id);
+            returnParamaters.put(SYSTEM.LABEL.THANKYOUMESSAGE, thankyoumessage);
         } catch (Exception ex) {
             Logger.logException(ex);
             throw new AuraHandledException(ex.getMessage());

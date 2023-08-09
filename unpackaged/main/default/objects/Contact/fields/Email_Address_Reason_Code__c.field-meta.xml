@@ -60,6 +60,16 @@
                 <default>false</default>
                 <label>Verification Declined: No Advertising Opt Out</label>
             </value>
+            <value>
+                <fullName>Tealium Request: Advertise OptIn</fullName>
+                <default>false</default>
+                <label>Tealium Request: Advertise OptIn</label>
+            </value>
+            <value>
+                <fullName>Tealium Request: Advertise OptOut</fullName>
+                <default>false</default>
+                <label>Tealium Request: Advertise OptOut</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

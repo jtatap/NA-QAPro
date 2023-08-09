@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title></title>
-	<meta /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="IE=edge" />
+	<meta /><meta content="width=device-width, initial-scale=1" name="viewport" /><meta content="IE=edge" />
 	<style type="text/css">/* CLIENT-SPECIFIC STYLES */
     body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
     table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
@@ -122,7 +122,9 @@
 												<div>By clicking “Yes” you acknowledge that you have submitted this request and understand that the information submitted will be updated on your account.</div>
 
 												<div>
-												<div>&nbsp;</div>
+												<div><br />
+												If you have requested to update your email address, by clicking "Yes" you acknowledge that you have submitted this request and understand that the login username for {{{Case.Brand__c}}} account will be updated. Please note that means any accrued loyalty points or rewards will be transferred to your new email address. If you are currently opted-in to receive marketing emails your preference will also be transferred to your new email address.<br />
+												&nbsp;</div>
 
 												<div>If you have not submitted the request, please click the "No" link below.&nbsp;</div>
 

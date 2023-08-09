@@ -75,9 +75,7 @@
             <columnIndex>8</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Manual</chartAxisRange>
-                <chartAxisRangeMax>100.0</chartAxisRangeMax>
-                <chartAxisRangeMin>20.0</chartAxisRangeMin>
+                <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
                     <axisBinding>y</axisBinding>
                     <column>FORMULA1</column>
@@ -89,20 +87,19 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>SurveyResponse$CreatedDate</groupingColumn>
+                <groupingColumn>SurveyResponse$CompletionDateTime</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>PVH CSAT%</header>
+                <header>Last and Current CSAT %</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>Wendy_s_Folder/CSAT_Reports/Current_and_Previous_CSAT</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Last and Current Fiscal Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -128,7 +125,7 @@
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>YTD</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_Full_Resolution_Time1</report>
+                <report>Daily_KPI_Dashboard/YTD_Full_Resolution_Time1</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
@@ -154,7 +151,7 @@
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>YTD</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/YTD_First_Reply_Time</report>
+                <report>Daily_KPI_Dashboard/YTD_First_Reply_Time</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
@@ -187,7 +184,7 @@
                 </groupingSortProperties>
                 <header>First Reply Time</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/This_and_Last_Month_First_Reply_Time</report>
+                <report>Daily_KPI_Dashboard/This_and_Last_Month_First_Reply_Time</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -293,7 +290,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>CREATED_DATEONLY</groupingColumn>
-                <groupingColumn>BucketField_72140786</groupingColumn>
+                <groupingColumn>ORIGIN</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -301,17 +298,15 @@
                     </groupingSorts>
                     <groupingSorts>
                         <groupingLevel>g2</groupingLevel>
-                        <sortColumn>RowCount</sortColumn>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>New Email Cases Backlog</header>
+                <header>New Emails by Day</header>
                 <legendPosition>Right</legendPosition>
                 <report>Wendy_s_Folder/TRUE_Dashboard/KPI_Dashboard_Reports/All_New_Case_Count</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>PVH and TRUE</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>26</rowIndex>
@@ -365,7 +360,7 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>LineGrouped</componentType>
+                <componentType>Line</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -373,24 +368,18 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>EMAIL.MESSAGE_DATE</groupingColumn>
-                <groupingColumn>BucketField_76407550</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
-                    <groupingSorts>
-                        <groupingLevel>g2</groupingLevel>
-                        <sortOrder>d</sortOrder>
-                    </groupingSorts>
                 </groupingSortProperties>
-                <header>PVH and TRUE Outbound Emails</header>
-                <legendPosition>Right</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Inbound_Outbound_Line_Chart</report>
+                <header>Outbound Emails by Day</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Daily_KPI_Dashboard/Inbound_Outbound_Line_Chart</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Last 7 Days</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>26</rowIndex>
@@ -415,7 +404,7 @@
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>YTD</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/PVH_EMAIL_AHT_YTD</report>
+                <report>Daily_KPI_Dashboard/PVH_EMAIL_AHT_YTD</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
@@ -440,7 +429,7 @@
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>Last 7 Days</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_AHT_Last_7_Days</report>
+                <report>Daily_KPI_Dashboard/Email_AHT_Last_7_Days</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
@@ -579,7 +568,7 @@
                 </groupingSortProperties>
                 <header>Chat Inbound</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Tommy_vs_Speedo</report>
+                <report>Daily_KPI_Dashboard/Tommy_vs_Speedo</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -617,7 +606,7 @@
                 <header>Chat Platform</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Copy_of_Chat_Transcripts_Loc_Plat</report>
+                <report>Daily_KPI_Dashboard/Copy_of_Chat_Transcripts_Loc_Plat</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>false</showTotal>
                 <showValues>false</showValues>
@@ -661,7 +650,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Chat Location</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Chat_Location</report>
+                <report>Daily_KPI_Dashboard/Chat_Location</report>
                 <title>Top 10</title>
             </dashboardComponent>
             <rowIndex>38</rowIndex>

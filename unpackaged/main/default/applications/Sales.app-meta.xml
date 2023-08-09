@@ -17,6 +17,33 @@
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Brand</recordType>
         <type>Flexipage</type>
+        <profile>Base Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Brand_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Brand</recordType>
+        <type>Flexipage</type>
+        <profile>Calvin Klein - CA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Brand_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Brand</recordType>
+        <type>Flexipage</type>
+        <profile>Calvin Klein Community Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Brand_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Brand</recordType>
+        <type>Flexipage</type>
         <profile>Chatter External User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -45,33 +72,6 @@
         <recordType>Account.Brand</recordType>
         <type>Flexipage</type>
         <profile>ContractManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Brand_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Brand</recordType>
-        <type>Flexipage</type>
-        <profile>Base Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Brand_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Brand</recordType>
-        <type>Flexipage</type>
-        <profile>Calvin Klein - CA Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Brand_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Brand</recordType>
-        <type>Flexipage</type>
-        <profile>Calvin Klein Community Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -243,15 +243,6 @@
         <recordType>Account.Brand</recordType>
         <type>Flexipage</type>
         <profile>Tier I CSR Wholesale [OLD]</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Brand_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Brand</recordType>
-        <type>Flexipage</type>
-        <profile>Tier II CSR</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -278,6 +269,15 @@
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Brand</recordType>
         <type>Flexipage</type>
+        <profile>True&amp;Co Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Brand_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Brand</recordType>
+        <type>Flexipage</type>
         <profile>Van Heusen Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -288,15 +288,6 @@
         <recordType>Account.Brand</recordType>
         <type>Flexipage</type>
         <profile>Warners Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Brand_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Brand</recordType>
-        <type>Flexipage</type>
-        <profile>True&amp;Co Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -531,15 +522,6 @@
         <recordType>Contact.Data_Owner</recordType>
         <type>Flexipage</type>
         <profile>Tier I CSR Wholesale [OLD]</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Data_Owner_Contact_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Data_Owner</recordType>
-        <type>Flexipage</type>
-        <profile>Tier II CSR</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -604,7 +586,5 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>Landing_Page</tabs>
-    <tabs>NF_Banner__c</tabs>
-    <tabs>IRE_StagingTable__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

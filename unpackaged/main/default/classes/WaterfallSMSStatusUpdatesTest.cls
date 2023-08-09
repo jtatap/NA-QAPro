@@ -57,6 +57,8 @@ public class WaterfallSMSStatusUpdatesTest {
         WaterfallSMSStatusUpdates.SubResponse subResponse = new WaterfallSMSStatusUpdates.SubResponse();
 		subResponse = WaterfallSMSStatusUpdates.doSignUp();
         System.debug('***Response 1 = '+subResponse);
+        Test.stopTest();
+        System.assert(subResponse.Message == 'Success');
     }
    
     
@@ -74,7 +76,9 @@ public class WaterfallSMSStatusUpdatesTest {
         RestContext.response= res;
         WaterfallSMSStatusUpdates.SubResponse subResponse = new WaterfallSMSStatusUpdates.SubResponse();
 		subResponse = WaterfallSMSStatusUpdates.doSignUp();
+        Test.stopTest();
         System.debug('***Response 2 = '+subResponse);
+        System.assert(subResponse.Message == 'Success');
     }
     
     @isTest
@@ -91,7 +95,9 @@ public class WaterfallSMSStatusUpdatesTest {
         RestContext.response= res;
         WaterfallSMSStatusUpdates.SubResponse subResponse = new WaterfallSMSStatusUpdates.SubResponse();
 		subResponse = WaterfallSMSStatusUpdates.doSignUp();
+        Test.stopTest();
         System.debug('***Response 3 = '+subResponse);
+        System.assert(subResponse.Message == 'Success');
     }
 	
 }

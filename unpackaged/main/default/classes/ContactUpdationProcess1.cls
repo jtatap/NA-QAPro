@@ -10,10 +10,11 @@ global List<Contact> finalConList = new List<Contact>();
         List<BatchProcess__c> nextBP = [SELECT Id, IsProcessed__c, FileName__c FROM BatchProcess__c WHERE IsProcessed__c = false LIMIT 1];
         if(nextBP.size() > 0){
             fileName = nextBP[0].FileName__c;
-            System.debug('fileName: '+fileName);
+            Log.push('fileName: '+fileName);
             batchProcessId = nextBP[0].Id;
-            System.debug('batchProcessId: '+batchProcessId);
+            Log.push('batchProcessId: '+batchProcessId);
             //OutputFileName = nextBP[0].OutputFileName__c;
+            Logger.logDebug();
         }
     }
     global Database.QueryLocator start(Database.BatchableContext bc) {
@@ -83,8 +84,8 @@ global List<Contact> finalConList = new List<Contact>();
                 ContentDocumentLink cDe = new ContentDocumentLink();
                 cDe.ContentDocumentId = conDoc;
                 cDe.LinkedEntityId = batchProcessId;
-                cDe.ShareType = 'I';
-                cDe.Visibility = 'AllUsers';
+                cDe.ShareType = SYSTEM.LABEL.I;
+                cDe.Visibility = SYSTEM.LABEL.AllUsers;
                 insert cDe;
         //Updating the current file as processed and starting the process for next file
         
@@ -96,7 +97,8 @@ global List<Contact> finalConList = new List<Contact>();
         if(nextBP.size() > 0){
             ContactUpdationProcess1 cup = new ContactUpdationProcess1();
             Id batchId = database.executeBatch(cup);
-            System.debug('batchId : '+batchId);
+            Log.push('batchId : '+batchId);
+            Logger.logDebug();
         }
         
     } 

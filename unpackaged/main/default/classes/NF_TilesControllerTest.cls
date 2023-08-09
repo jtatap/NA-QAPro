@@ -8,17 +8,19 @@
 *===========================================================
 * 1.0    06/07/2021    Luis Rocha		Initial Version
 */
-@IsTest
+@IsTest(isParallel=false)
 public with sharing class NF_TilesControllerTest {
 
     @IsTest
     static void testForCoverage(){
+        Test.startTest();
         Boolean exceptionCaught = false;
         try{
             NF_TilesController.getTiles();
         } catch (exception ex){
             exceptionCaught = true; 
         }
+        Test.stopTest();
         System.assert(!exceptionCaught);
     }
 }

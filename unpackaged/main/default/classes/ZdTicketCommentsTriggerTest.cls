@@ -1,6 +1,7 @@
 @isTest
 public class ZdTicketCommentsTriggerTest {
-  	@isTest
+
+    @isTest
     static void testPVHComment(){
 
         Id zdPVHRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('ZdPVH').getRecordTypeId();
@@ -25,7 +26,7 @@ public class ZdTicketCommentsTriggerTest {
         tc2.ZdTnCCommentId__c = 'for TnCTicket111';
         tc2.created_at__c = System.now();
         tcList.add(tc2);
-        
+
         ZdTicketComment__c tc1 = new ZdTicketComment__c();
         tc1.ZdPVHParentTicketId__c = 'PVHTicket111';
         tc1.CommentBody__c = 'some body text';
@@ -33,14 +34,14 @@ public class ZdTicketCommentsTriggerTest {
         tc1.created_at__c = System.now();
         tcList.add(tc1);
         insert tcList;
-        
-		List<CaseComment> CaseCommentList = [select id, ParentId from CaseComment];
-        System.assertEquals(c2.id, CaseCommentList[0].ParentId);
- 
-        System.assertEquals(c1.id, CaseCommentList[1].ParentId);       
         Test.stopTest();
-        
+        List<CaseComment> CaseCommentList = [select id, ParentId from CaseComment];
+        System.assertEquals(c2.id, CaseCommentList[0].ParentId);
+
+        System.assertEquals(c1.id, CaseCommentList[1].ParentId);
+
+
     }
-    
-    
+
+
 }

@@ -1,4 +1,4 @@
-@isTest
+@isTest(isParallel=false)
 public class SchedulableBatch_IREStagingTableTest {
      @testsetup
     static void setup(){
@@ -19,7 +19,7 @@ public class SchedulableBatch_IREStagingTableTest {
         //Dummy CRON expression: midnight on July 25.
         // Because this is a test, job executes
         // immediately after Test.stopTest().
-        String CRON_EXP = '0 0 0 25 7 ? 2022';
+        String CRON_EXP = '0 0 0 25 9 ? 2023';
         Test.startTest();
         String jobId = System.schedule('SchedulableBatch_purgeIREStagingTable15',  CRON_EXP, new SchedulableBatch_purgeIREStagingTable());
         CronTrigger ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE id = :jobId];
@@ -27,7 +27,6 @@ public class SchedulableBatch_IREStagingTableTest {
         System.assertEquals(0, ct.TimesTriggered);
         Test.stopTest(); 
         ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE id = :jobId];
-        System.debug('Ct times triggered.: '+ct.NextFireTime);
-        System.assertEquals('2022-07-25 00:00:00', String.valueOf(ct.NextFireTime));
+        System.assertEquals('2023-09-25 00:00:00', String.valueOf(ct.NextFireTime));
     }
 }

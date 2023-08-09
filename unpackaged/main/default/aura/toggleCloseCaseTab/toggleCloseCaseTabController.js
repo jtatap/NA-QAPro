@@ -6,14 +6,18 @@
     recordUpdated: function(component, event, helper) {
         console.log('recordUpdated');
         var changeType = event.getParams().changeType;
+        var error = String($A.get("$Label.c.Error1"));
+        var loaded = String($A.get("$Label.c.Loaded"));
+        var removed = String($A.get("$Label.c.Removed"));
+        var changed = String($A.get("$Label.c.Changed"));
 
-        if (changeType === "ERROR") { /* handle error; do this first! */
+        if (changeType === error) { /* handle error; do this first! */
             console.log('ERROR');
-        } else if (changeType === "LOADED") { /* handle record load */
+        } else if (changeType === loaded) { /* handle record load */
             console.log('LOADED');
-        } else if (changeType === "REMOVED") { /* handle record removal */
+        } else if (changeType === removed) { /* handle record removal */
             console.log('REMOVED');
-        } else if (changeType === "CHANGED") { /* handle record change */
+        } else if (changeType === changed) { /* handle record change */
             console.log('CHANGED');
             $A.get('e.force:refreshView').fire();
         }

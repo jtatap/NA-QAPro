@@ -8,6 +8,10 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
         <senderAddress>customerservice@support.calvinklein.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Calvin_Klein_Ecomm_Auto_Response</template>
@@ -61,18 +65,6 @@
         <template>unfiled$public/Five_days_milestone_Calvin_klein</template>
     </alerts>
     <alerts>
-        <fullName>Five_days_milestone_Izod</fullName>
-        <description>Five days milestone Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Five_days_milestone_Izod</template>
-    </alerts>
-    <alerts>
         <fullName>Five_days_milestone_Olga</fullName>
         <description>Five days milestone Olga</description>
         <protected>false</protected>
@@ -83,30 +75,6 @@
         <senderAddress>contactus@support.olgaintimates.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Five_days_milestone_Olga</template>
-    </alerts>
-    <alerts>
-        <fullName>Five_days_milestone_Speedo</fullName>
-        <description>Five days milestone Speedo</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Five_days_milestone_Speedo</template>
-    </alerts>
-    <alerts>
-        <fullName>Five_days_milestone_Style_Bureau</fullName>
-        <description>Five days milestone Style Bureau</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Five_days_milestone_Style_Bureau</template>
     </alerts>
     <alerts>
         <fullName>Five_days_milestone_Tommy_Hilfiger</fullName>
@@ -143,42 +111,6 @@
         <senderAddress>contactus@support.warners.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Five_days_milestone_Warner</template>
-    </alerts>
-    <alerts>
-        <fullName>Five_days_milestone_van_heusen</fullName>
-        <description>Five days milestone van heusen</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Five_days_milestone_van_heusen</template>
-    </alerts>
-    <alerts>
-        <fullName>Izod_Ecomm_Auto_Response_Alert</fullName>
-        <description>Izod Ecomm Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Izod_Ecomm_Auto_Response</template>
-    </alerts>
-    <alerts>
-        <fullName>Izod_Wholesale_Auto_Response_Alert</fullName>
-        <description>Izod Wholesale Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>pvhcustomerservice@support.pvh.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Izod_Retail_Wholesale_Auto_Response</template>
     </alerts>
     <alerts>
         <fullName>Olga_Auto_Response_Alert</fullName>
@@ -253,30 +185,6 @@
         <template>unfiled$public/Send_Mass_email_to_case_Returns_CK</template>
     </alerts>
     <alerts>
-        <fullName>Send_Mass_email_to_case_Returns_Izod</fullName>
-        <description>Send Mass email to case Returns Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_Returns_Izod</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Mass_email_to_case_Returns_Speedo_USA</fullName>
-        <description>Send Mass email to case Returns Speedo USA</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_Returns_Speedo_USA</template>
-    </alerts>
-    <alerts>
         <fullName>Send_Mass_email_to_case_Returns_TH</fullName>
         <description>Send Mass email to case Returns TH</description>
         <protected>false</protected>
@@ -301,18 +209,6 @@
         <template>unfiled$public/Send_Mass_email_to_case_Returns_True_Co</template>
     </alerts>
     <alerts>
-        <fullName>Send_Mass_email_to_case_Returns_VH</fullName>
-        <description>Send Mass email to case Returns VH</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_Returns_VH</template>
-    </alerts>
-    <alerts>
         <fullName>Send_Mass_email_to_case_Shipments_CK</fullName>
         <description>Send Mass email to case Shipments CK</description>
         <protected>false</protected>
@@ -323,30 +219,6 @@
         <senderAddress>customerservice@support.calvinklein.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Send_Mass_email_to_case_shipments_CK</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Mass_email_to_case_Shipments_Izod</fullName>
-        <description>Send Mass email to case Shipments Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_shipments_Izod</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Mass_email_to_case_Shipments_Speedo_USA</fullName>
-        <description>Send Mass email to case Shipments Speedo USA</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_shipments_Speedo_USA</template>
     </alerts>
     <alerts>
         <fullName>Send_Mass_email_to_case_Shipments_TH</fullName>
@@ -361,18 +233,6 @@
         <template>unfiled$public/Send_Mass_email_to_case_shipments_TH</template>
     </alerts>
     <alerts>
-        <fullName>Send_Mass_email_to_case_Shipments_VH</fullName>
-        <description>Send Mass email to case Shipments VH</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_shipments_VH</template>
-    </alerts>
-    <alerts>
         <fullName>Send_Mass_email_to_case_order_CK</fullName>
         <description>Send Mass email to case order CK</description>
         <protected>false</protected>
@@ -383,30 +243,6 @@
         <senderAddress>customerservice@support.calvinklein.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Send_Mass_email_to_case_order_CK</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Mass_email_to_case_order_Izod</fullName>
-        <description>Send Mass email to case order Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_order_Izod</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Mass_email_to_case_order_Speedo_USA</fullName>
-        <description>Send Mass email to case order Speedo USA</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_order_Speedo_USA</template>
     </alerts>
     <alerts>
         <fullName>Send_Mass_email_to_case_order_TH</fullName>
@@ -433,18 +269,6 @@
         <template>unfiled$public/Send_Mass_email_to_case_order_True_Co</template>
     </alerts>
     <alerts>
-        <fullName>Send_Mass_email_to_case_order_VH</fullName>
-        <description>Send Mass email to case order VH</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Send_Mass_email_to_case_order_VH</template>
-    </alerts>
-    <alerts>
         <fullName>Send_Mass_email_to_case_shipments_True_Co</fullName>
         <description>Send Mass email to case shipments True&amp;Co</description>
         <protected>false</protected>
@@ -469,18 +293,6 @@
         <template>unfiled$public/Seven_days_milestone_Calvin_klein</template>
     </alerts>
     <alerts>
-        <fullName>Seven_days_milestone_Izod</fullName>
-        <description>Seven days milestone Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Seven_days_milestone_Izod</template>
-    </alerts>
-    <alerts>
         <fullName>Seven_days_milestone_Olga</fullName>
         <description>Seven days milestone Olga</description>
         <protected>false</protected>
@@ -491,30 +303,6 @@
         <senderAddress>contactus@support.olgaintimates.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Seven_days_milestone_Olga</template>
-    </alerts>
-    <alerts>
-        <fullName>Seven_days_milestone_Speedo</fullName>
-        <description>Seven days milestone Speedo</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Seven_days_milestone_Speedo</template>
-    </alerts>
-    <alerts>
-        <fullName>Seven_days_milestone_Style_Bureau</fullName>
-        <description>Seven days milestone Style Bureau</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Seven_days_milestone_Style_Bureau</template>
     </alerts>
     <alerts>
         <fullName>Seven_days_milestone_Tommy_Hilfiger</fullName>
@@ -553,42 +341,6 @@
         <template>unfiled$public/Seven_days_milestone_Warner</template>
     </alerts>
     <alerts>
-        <fullName>Seven_days_milestone_van_heusen</fullName>
-        <description>Seven days milestone van heusen</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Seven_days_milestone_van_heusen</template>
-    </alerts>
-    <alerts>
-        <fullName>Speedo_Ecomm_Auto_response_Alert</fullName>
-        <description>Speedo Ecomm Auto-response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Speedo_Ecomm_Auto_response</template>
-    </alerts>
-    <alerts>
-        <fullName>Speedo_Wholesale_Auto_response_Alert</fullName>
-        <description>Speedo Wholesale Auto-response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Speedo_Wholesale_Auto_response</template>
-    </alerts>
-    <alerts>
         <fullName>Three_days_Case_On_Hold_Reminder</fullName>
         <description>Three days Case On-Hold Reminder</description>
         <protected>false</protected>
@@ -611,18 +363,6 @@
         <template>unfiled$public/Three_days_milestone_Calvin_klein</template>
     </alerts>
     <alerts>
-        <fullName>Three_days_milestone_Izod</fullName>
-        <description>Three days milestone Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Three_days_milestone_Izod</template>
-    </alerts>
-    <alerts>
         <fullName>Three_days_milestone_Olga</fullName>
         <description>Three days milestone Olga</description>
         <protected>false</protected>
@@ -633,30 +373,6 @@
         <senderAddress>contactus@support.olgaintimates.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Three_days_milestone_Olga</template>
-    </alerts>
-    <alerts>
-        <fullName>Three_days_milestone_Speedo</fullName>
-        <description>Three days milestone Speedo</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Three_days_milestone_Speedo</template>
-    </alerts>
-    <alerts>
-        <fullName>Three_days_milestone_Style_Bureau</fullName>
-        <description>Three days milestone Style Bureau</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Three_days_milestone_Style_Bureau</template>
     </alerts>
     <alerts>
         <fullName>Three_days_milestone_Tommy_Hilfiger</fullName>
@@ -693,18 +409,6 @@
         <senderAddress>contactus@support.warners.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Three_days_milestone_Warner</template>
-    </alerts>
-    <alerts>
-        <fullName>Three_days_milestone_van_heusen</fullName>
-        <description>Three days milestone van heusen</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Three_days_milestone_van_heusen</template>
     </alerts>
     <alerts>
         <fullName>Tommy_Ecomm_Auto_Response2_Alert</fullName>
@@ -791,18 +495,6 @@
         <template>unfiled$public/Two_days_milestone_Calvin_klein</template>
     </alerts>
     <alerts>
-        <fullName>Two_days_milestone_Izod</fullName>
-        <description>Two days milestone Izod</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.izod.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Two_days_milestone_Izod</template>
-    </alerts>
-    <alerts>
         <fullName>Two_days_milestone_Olga</fullName>
         <description>Two days milestone Olga</description>
         <protected>false</protected>
@@ -813,30 +505,6 @@
         <senderAddress>contactus@support.olgaintimates.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Two_days_milestone_Olga</template>
-    </alerts>
-    <alerts>
-        <fullName>Two_days_milestone_Speedo</fullName>
-        <description>Two days milestone Speedo</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>speedocustomerservice@support.speedousa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Two_days_milestone_Speedo</template>
-    </alerts>
-    <alerts>
-        <fullName>Two_days_milestone_Style_Bureau</fullName>
-        <description>Two days milestone Style Bureau</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Two_days_milestone_Style_Bureau</template>
     </alerts>
     <alerts>
         <fullName>Two_days_milestone_Tommy_Hilfiger</fullName>
@@ -867,18 +535,6 @@
         <template>unfiled$public/Two_days_milestone_True_Co</template>
     </alerts>
     <alerts>
-        <fullName>Two_days_milestone_Van_Heusen</fullName>
-        <description>Two days milestone Van Heusen</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactId</field>
-            <type>contactLookup</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Two_days_milestone_Van_Heusen</template>
-    </alerts>
-    <alerts>
         <fullName>Two_days_milestone_Warners</fullName>
         <description>Two days milestone Warners</description>
         <protected>false</protected>
@@ -891,42 +547,6 @@
         <template>unfiled$public/Two_days_milestone_Warners</template>
     </alerts>
     <alerts>
-        <fullName>Van_Heusen_Ecomm_Auto_Response_Alert</fullName>
-        <description>Van Heusen Ecomm Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Van_Heusen_Ecomm_Auto_Response</template>
-    </alerts>
-    <alerts>
-        <fullName>Van_Heusen_Retail_Auto_Response_Alert</fullName>
-        <description>Van Heusen Retail Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>vanheusencustomerservice@support.vanheusen.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Van_Heusen_Retail_Wholesale_Auto_Response</template>
-    </alerts>
-    <alerts>
-        <fullName>Van_Heusen_Wholesale_Auto_Response_Alert</fullName>
-        <description>Van Heusen Wholesale Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>pvhcustomerservice@support.pvh.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Van_Heusen_Retail_Wholesale_Auto_Response</template>
-    </alerts>
-    <alerts>
         <fullName>Warners_Auto_Response_Alert</fullName>
         <description>Warners Auto-Response Alert</description>
         <protected>false</protected>
@@ -937,18 +557,6 @@
         <senderAddress>contactus@support.warners.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Warners_Auto_Response</template>
-    </alerts>
-    <alerts>
-        <fullName>styleBureau_Auto_Response_Alert</fullName>
-        <description>styleBureau Auto-Response Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customerservice@support.stylebureau.partnerbrands.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/styleBureau_Auto_Response</template>
     </alerts>
     <fieldUpdates>
         <fullName>BrandCalvinKleinEcom</fullName>
@@ -1230,6 +838,16 @@
         <name>Set Case Subject</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Channel_to_Online</fullName>
+        <field>Channel__c</field>
+        <literalValue>VanHeusen.com</literalValue>
+        <name>Set Channel to Online</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -1689,7 +1307,7 @@
             <name>Calvin_Klein_Ecomm_Auto_Response_2_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2) OR ( 3 AND 4 AND 5)) AND 6</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -1730,7 +1348,7 @@
             <name>Calvin_Klein_Ecomm_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3 ) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -1776,7 +1394,7 @@
             <name>Calvin_Klein_Retail_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR (4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -1822,7 +1440,7 @@
             <name>Calvin_Klein_Wholesale_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -1848,11 +1466,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Izod Ecomm</fullName>
-        <actions>
-            <name>Izod_Ecomm_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -1894,11 +1508,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Izod Wholesale</fullName>
-        <actions>
-            <name>Izod_Wholesale_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -1928,7 +1538,7 @@
             <name>Olga_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR (4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -1974,7 +1584,7 @@
             <name>PVH_Corp_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2000,11 +1610,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Speedo Ecomm</fullName>
-        <actions>
-            <name>Speedo_Ecomm_Auto_response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2046,11 +1652,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Speedo Wholesale</fullName>
-        <actions>
-            <name>Speedo_Wholesale_Auto_response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND (2 OR 8) AND 3 ) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2131,7 +1733,7 @@
             <name>Tommy_Retail_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2161,7 +1763,7 @@
             <name>Tommy_Wholesale_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2191,7 +1793,7 @@
             <name>True_Co_Auto_response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3 ) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2233,11 +1835,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Van Heusen Ecomm</fullName>
-        <actions>
-            <name>Van_Heusen_Ecomm_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 6) OR (3 AND 4 AND 5)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2279,11 +1877,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Van Heusen Retail</fullName>
-        <actions>
-            <name>Van_Heusen_Retail_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR (6 AND 4 AND 5)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2325,11 +1919,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response Van Heusen Wholesale</fullName>
-        <actions>
-            <name>Van_Heusen_Wholesale_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2359,7 +1949,7 @@
             <name>Warners_Auto_Response_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3 ) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2401,11 +1991,7 @@
     </rules>
     <rules>
         <fullName>Auto-Response styleBureau</fullName>
-        <actions>
-            <name>styleBureau_Auto_Response_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3 ) OR ( 4 AND 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2451,7 +2037,7 @@
             <name>PVH_Corp_Auto_Response2_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2481,7 +2067,7 @@
             <name>Tommy_Ecomm_Auto_Response2_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>((1 AND 2 AND 3) OR (6 AND 4 AND 5)) AND 7</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2527,7 +2113,7 @@
             <name>Tommy_Retail_Auto_Response2_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2565,7 +2151,7 @@
             <name>CalvinKleinCAPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2592,7 +2178,7 @@
             <name>CalvinKleinEcomPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2619,7 +2205,7 @@
             <name>CalvinKleinRetailPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2646,7 +2232,7 @@
             <name>IzodPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2673,7 +2259,7 @@
             <name>SpeedoPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2711,7 +2297,7 @@
             <name>SpeedoPurchaseChannelWS</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2776,7 +2362,7 @@
             <name>TommyPurcahseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2804,7 +2390,7 @@
             <name>TommyPurcahseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2831,7 +2417,7 @@
             <name>TommyChannelEcomm</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2858,7 +2444,7 @@
             <name>True_CoPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -2891,7 +2477,7 @@
             <name>VanheusenPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2918,7 +2504,7 @@
             <name>WarnersPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2945,7 +2531,7 @@
             <name>OlgaPurchaseChannel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -2984,7 +2570,7 @@
             <name>X3rd_Day_After_Resolved_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>equals</operation>
@@ -2998,7 +2584,7 @@
             <name>Populate_Resolved_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>equals</operation>
@@ -3020,7 +2606,7 @@
             <name>Populate_Supplied_Last_Name</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Populate Supplied First and Last Name</description>
         <formula>ISCHANGED( SuppliedName )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -3031,7 +2617,7 @@
             <name>Change_Brand_to_VH</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Brand__c</field>
             <operation>equals</operation>
@@ -3050,7 +2636,7 @@
             <name>Set_Last_Status_Change</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Used to track the last time a status was changed to open in order to properly assign case to either a zQueue or the originating queue.</description>
         <formula>AND(  ISCHANGED(Status),  PRIORVALUE(Status) &lt;&gt; &#39;New&#39; ,  PRIORVALUE(Status) &lt;&gt; &#39;Closed&#39; ,  NOT(ISPICKVAL(Status, &#39;Open&#39;)) )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -3061,7 +2647,7 @@
             <name>Update_Case_Record_Type_Field_Privacy</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Type</field>
             <operation>equals</operation>
@@ -3080,7 +2666,7 @@
             <name>Update_Case_Record_Type_Field_Support</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Type</field>
             <operation>equals</operation>
@@ -3099,7 +2685,7 @@
             <name>Set_Case_Subject</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Subject</field>
             <operation>equals</operation>
@@ -3113,7 +2699,7 @@
             <name>SetNewPhoneCaseToOpenStatus</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -3134,7 +2720,7 @@
             <name>Update_reminder_to_Reminder_Ready</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Eligible_for_7day_reminder__c</field>
             <operation>equals</operation>
@@ -3194,7 +2780,7 @@
             <name>Update_READONLY_Web_Phone</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -3214,7 +2800,7 @@
             <name>Update_READONLY_Tommy_Adaptive</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>

@@ -25,16 +25,10 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>LiveChatTranscript.LiveChatTranscriptEvents$Type</field>
-    </columns>
-    <columns>
-        <field>LiveChatTranscript.LiveChatTranscriptEvents$Detail</field>
+        <field>LiveChatTranscript$Case</field>
     </columns>
     <columns>
         <field>LiveChatTranscript$Name</field>
-    </columns>
-    <columns>
-        <field>LiveChatTranscript.LiveChatTranscriptEvents$Name</field>
     </columns>
     <columns>
         <field>LiveChatTranscript$Brand__c</field>
@@ -65,7 +59,7 @@
     </params>
     <reportType>Chat_Transcript_and_Events__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

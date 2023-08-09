@@ -7,6 +7,8 @@
 private class NF_IncrementIntTest {
     @IsTest
     static void test1() {
+        Test.startTest();
         System.assert(NF_IncrementInt.increment(new List<Integer>{1})[0] == 2);
+        Test.stopTest();
     }
 }

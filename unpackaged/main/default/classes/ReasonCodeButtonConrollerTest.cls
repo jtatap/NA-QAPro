@@ -1,4 +1,4 @@
-@isTest
+@isTest(isParallel=false)
 public class ReasonCodeButtonConrollerTest {
     
    @isTest
@@ -16,7 +16,18 @@ public class ReasonCodeButtonConrollerTest {
         con.AccountId = acc.id;
         con.Brand_Id__c='9';
         insert con;
+		
+        GenericRecords__c genRec = new GenericRecords__c(
+                Name = Constants.privacyContactGenericRecordSettingName,
+                recordId__c = con.Id
+        );
+        insert genRec;
 
+        GenericRecords__c genRecAcct = new GenericRecords__c(
+                Name = Constants.AccountGenericRecordSettingName,
+                recordId__c = acc.Id
+        );
+        insert genRecAcct;
         
         Case parentcse = new Case();
         parentcse.ContactId=con.Id;

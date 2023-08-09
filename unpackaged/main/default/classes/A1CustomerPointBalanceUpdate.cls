@@ -28,26 +28,26 @@ global with sharing class A1CustomerPointBalanceUpdate {
         Blob body = req.requestBody;
         String requestString = body.toString(); // retrieve request string
         
-        System.Debug('requestString' + requestString);
+        Log.push('requestString' + requestString);
         
         requestWrapper rw = (requestWrapper)JSON.deserialize(requestString,requestWrapper.class); // deserialize request payload
-        System.Debug('rw' + rw);
+        Log.push('rw' + rw);
         
         Set<String> LoyaltyIds = new Set<String>();
         Map<String,requestwrapper.subscriber_class> subscribermap = new Map<String,requestwrapper.subscriber_class>();
         
         for(requestwrapper.subscriber_class scs : rw.Subscribers) { // loop through subscriber_class from request
-            System.Debug('String.isBlank(scs.LoyaltyId)' + String.isBlank(scs.LoyaltyId) + 'String.isBlank(scs.BrandId)' + String.isBlank(scs.BrandId));
+            Log.push('String.isBlank(scs.LoyaltyId)' + String.isBlank(scs.LoyaltyId) + 'String.isBlank(scs.BrandId)' + String.isBlank(scs.BrandId));
 
             if(String.isNotBlank(scs.LoyaltyId) && String.isNotBlank(scs.BrandId)) { // check if both LoyaltyId and BrandId are not blank
                 subscribermap.put(scs.LoyaltyId, scs);
             }
             else { // return missing LoyaltyId in response
-                system.debug('It is in else loop');
+                Log.push('It is in else loop');
                 response.statusCode = 400;
                 SubResponse fres = new SubResponse();
-                fres.code = 'INVALID_QUERY';
-                fres.message = 'Missing required parameters LoyaltyId ';
+                fres.code = SYSTEM.LABEL.INVALID_QUERY;
+                fres.message = SYSTEM.LABEL.Missing_required_parameters_LoyaltyId;
                 response.responseBody = Blob.valueOf(JSON.serialize(fres));
                 return ;
             }   
@@ -73,11 +73,14 @@ global with sharing class A1CustomerPointBalanceUpdate {
             successres.Count = String.Valueof(updateconlist.size());
             successres.LoyaltyId = subscribermap.KeySet();
             response.responseBody = Blob.valueOf(JSON.serialize(successres));
-            system.debug('response.responseBody'+response.responseBody);
+            Log.push('response.responseBody'+response.responseBody);
+            Logger.logDebug();
             return;
         }
         catch (Exception e) { // exception
-            System.Debug('Update failed due to' + e.getMessage());
+            Log.push('Update failed due to' + e.getMessage());
+            Logger.logDebug();
         }
+        
     }
 }

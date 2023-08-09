@@ -3,19 +3,19 @@ public class mailChangeRequest{
     
     @InvocableMethod(label='mailChangeRequest' description='Trigger to old mail')
     public static void mailChangeRequest(list<Case> cse) {    
-        System.debug('Limits.getQueries -mailChangeRequest '+ Limits.getQueries());
+        Log.push('Limits.getQueries -mailChangeRequest '+ Limits.getQueries());
         List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>();
         Map<String, Id> templateNameToIdMap = new Map<String, Id>();
         PrivacyEmailHandler emailHandler = new PrivacyEmailHandler();
-        List<EmailTemplate> templates = [Select Id, Name from EmailTemplate where Name in ('A1 - Email Change Confirmation request','A1 - Email Change Confirmation request-TH')];
-        system.debug('Case Id is '+ cse[0].Id +  '   End'); 
-        system.debug('Brand Lookup value is '+ cse[0].Brand_Lookup_Search__c + '   End'); 
+         List<EmailTemplate> templates = [Select Id, Name from EmailTemplate where Name in ('A1 - Email Change Confirmation request','A1 - Email Change Confirmation request-TH')];
+        Log.push('Case Id is '+ cse[0].Id +  '   End'); 
+        Log.push('Brand Lookup value is '+ cse[0].Brand_Lookup_Search__c + '   End'); 
          String mailid =  '%' + cse[0].Brand_Lookup_Search__c + '%';
-        system.debug('Mail Id is '+ mailid + '   End'); 
+        Log.push('Mail Id is '+ mailid + '   End'); 
         
         Id orgWideEmailId = [SELECT Id FROM OrgWideEmailAddress where Address like :'%customerservice@support%' and displayName like :mailid limit 1].id;
-        system.debug('Email id is '+ orgWideEmailId + '   End');
-        System.debug('Limits.getQueries -mailChangeRequest-2 '+ Limits.getQueries());
+        Log.push('Email id is '+ orgWideEmailId + '   End');
+        Log.push('Limits.getQueries -mailChangeRequest-2 '+ Limits.getQueries());
         for (EmailTemplate template : templates) {
             templateNameToIdMap.put(template.Name, template.Id);
         }
@@ -26,7 +26,7 @@ public class mailChangeRequest{
         }
         else if (cse[0].Brand_Lookup_Search__c =='Tommy'){
             mail.setTemplateId(templateNameToIdMap.get('A1 - Email Change Confirmation request-TH'));
-        }        
+        }
         mail.setOrgWideEmailAddressId(orgWideEmailId);
         mail.setToAddresses(new List<String>{cse[0].ContactEmail});
         mail.setSaveAsActivity(true);
@@ -36,11 +36,12 @@ public class mailChangeRequest{
         mail.setTreatTargetObjectAsRecipient(false);
         
         emailsToSend.add(mail);
-        system.debug('Case record is '+ cse[0]);
-        system.debug('Email Template is '+ Constants.A1RequestEmail);
-        system.debug('Target Mail Id is' + cse[0].ContactEmail);
-        System.debug('And the mail is '+ mail);
-        System.debug('Size of list of mails'+ emailsToSend.size());
+        Log.push('Case record is '+ cse[0]);
+        Log.push('Email Template is '+ Constants.A1RequestEmail);
+        Log.push('Target Mail Id is' + cse[0].ContactEmail);
+        Log.push('And the mail is '+ mail);
+        Log.push('Size of list of mails'+ emailsToSend.size());
         Messaging.sendEmail(emailsToSend);
+        Logger.logDebug();
     }
 }

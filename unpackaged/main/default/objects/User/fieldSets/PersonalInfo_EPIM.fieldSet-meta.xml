@@ -3,71 +3,6 @@
     <fullName>PersonalInfo_EPIM</fullName>
     <description>Fieldset for User Field Masking</description>
     <displayedFields>
-        <field>Username</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>MobilePhone</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ManagerId</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>CompanyName</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Department</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>State</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Phone</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>BadgeText</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Longitude</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>SenderEmail</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Latitude</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>City</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Fax</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>PostalCode</field>
         <isFieldManaged>true</isFieldManaged>
         <isRequired>false</isRequired>
@@ -149,6 +84,71 @@
     </displayedFields>
     <displayedFields>
         <field>Alias</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Username</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>MobilePhone</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>ManagerId</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>CompanyName</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Department</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>State</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Phone</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>BadgeText</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Longitude</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>SenderEmail</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Latitude</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>City</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Fax</field>
         <isFieldManaged>true</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

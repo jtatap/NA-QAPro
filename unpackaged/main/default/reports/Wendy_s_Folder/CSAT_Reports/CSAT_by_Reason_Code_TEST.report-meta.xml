@@ -112,7 +112,7 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Survey_Invitations__r.SurveyResponses$CompletionDateTime</dateColumn>
-        <endDate>2021-03-28</endDate>
+        <endDate>2021-07-18</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2021-02-01</startDate>
     </timeFrameFilter>

@@ -14,7 +14,6 @@
     <permissionSets>Manage Data Owners</permissionSets>
     <permissionSets>CS Super User</permissionSets>
     <profiles>Ops/Quality</profiles>
-    <profiles>Tier II CSR</profiles>
     <profiles>Tier III CSR/Supervisor</profiles>
     <profiles>Tier I CSR CCPA</profiles>
     <profiles>Tier I CSR PVH</profiles>

@@ -1,15 +1,17 @@
 ({
     doInit : function(component, event, helper) {
         var action = component.get("c.getContactId");
+        var success = String($A.get("$Label.c.Success1"));
+        
         action.setParams ({"CaseId": component.get("v.recordId")});
         action.setCallback(this, function(response){
             var state = response.getState();
-            if(state == "SUCCESS") {
+            if(state == success) {
                 
                 if(response.getReturnValue() == 'STOP: You must create a contact record or associate contact record with an existing account prior to placing an order.'
                    || response.getReturnValue() == 'This Customer Account is Disabled you cannot place an Order'
                    || response.getReturnValue() == 'This Customer Account is Locked, please unlock before placing an Order'
-                   || response.getReturnValue() == 'Brand of Case is not same as the Contact' ){
+                	|| response.getReturnValue() == 'Brand of Case is not same as the Contact'){
                     component.set("v.msg1", response.getReturnValue());    
                 }
                 else{
@@ -21,14 +23,14 @@
                     action2.setParams ({"contactId": component.get("v.ContactId")});
                     action2.setCallback(this, function(response2){
                         var state = response2.getState();
-                        if(state == "SUCCESS") {
+                        if(state == success) {
                             component.set("v.eCommNotConnected", response2.getReturnValue());
                             if(component.get("v.eCommNotConnected") == true){
                                 var action1 = component.get("c.eCommOtherCont");
                                 action1.setParams ({"contactId": component.get("v.ContactId")});
                                 action1.setCallback(this, function(response1){
                                     var state = response1.getState();
-                                    if(state == "SUCCESS") {
+                                    if(state == success) {
                                         component.set("v.con", response1.getReturnValue());
                                         component.set("v.NewContactId", response1.getReturnValue().Id);
                                         
@@ -65,7 +67,6 @@
                 
             }
             else{
-                //alert("Action is a Failure");
             }
         });
         $A.enqueueAction(action);
@@ -75,13 +76,13 @@
     
     confirm :function(component, event, helper) {
         var action = component.get("c.linkContact");
+        var success = String($A.get("$Label.c.Success1"));
         action.setParams ({"Cont": component.get("v.con"),
                            "CaseId":component.get("v.recordId") });
         action.setCallback(this, function(response){
             var state = response.getState();
-            if(state == "SUCCESS") {
+            if(state == success) {
                 component.set("v.NewContactId", response.getReturnValue());
-                //alert('Contactid is :'+ component.get("v.NewContactId"));
                 component.set("v.msg", "Case linked to EcommConnected Contact");
                 component.set("v.launchFlow",false);
                 var input_variable = [

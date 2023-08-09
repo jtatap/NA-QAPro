@@ -57,8 +57,7 @@
     <aura:attribute name="changedGender" type="string" description="gender Associated to rectify data"/>
     <aura:attribute name="changedDate" type="string" description="date Associated to rectify data"/>
     <aura:attribute name="changedMonth" type="string" description="month Associated to rectify data"/>
-     <aura:attribute name="brandWebLink" type="string"/>
-    
+    <aura:attribute name="brandWebLink" type="string"/>
     <aura:attribute name="changedData" type="string" description=""/>
     <aura:attribute name="monthVals" type="list" description="" />
     <aura:attribute name="dateVals" type="list" description=""/>
@@ -307,7 +306,11 @@
               aura:id="email"
               label="Email Address associated with Account"
               value="{!v.newCase.SuppliedEmail}"
+              onblur="{!c.checkIfEmailExist}"
             />
+            <aura:if isTrue="{!v.showErr}">
+              <div style="color:red; font-size: 0.90rem ">We could not find that email address in our system. Please check that you have entered it correctly or contact <u><a style="color:red" href="{!v.brandLink}" target="_blank">Customer Service</a></u> for further assistance.</div>
+            </aura:if>
             <lightning:input
               class="theField"
               name="phonenumber"
@@ -334,7 +337,8 @@
               <!--Sekhar: JIRA: GCT-774 - New Drop down added for Do Not Sell/Share -->
           <aura:if isTrue = "{!OR(v.showRectifyData,v.doNotSellShare)}">
                
-          <aura:if isTrue = "{!v.showRectifyData}">
+            <aura:if isTrue = "{!v.showRectifyData}">
+              
           <lightning:input
               class="theField"
               required="true"
@@ -345,9 +349,9 @@
               value="{!v.associatedEmail}"
               onblur="{!c.checkForEmail}"
             />
-           </aura:if>
-              
-              <aura:if isTrue = "{!v.doNotSellShare}">
+             
+          </aura:if>
+          <aura:if isTrue = "{!v.doNotSellShare}">
                   <lightning:input
                                    class="theField"
                                    required="true"
@@ -358,16 +362,16 @@
                                    value="{!v.associatedEmail}"
                                    />
               </aura:if>
- 
+              
               <aura:if isTrue="{!v.showErr}">
-            <div style="color:red; font-size: 0.90rem ">We could not find that email address in our system. Please check that you have entered it correctly or contact <u><a style="color:red" href="{!v.brandLink}" target="_blank">Customer Service</a></u> for further assistance.</div>
+                <div style="color:red; font-size: 0.90rem ">We could not find that email address in our system. Please check that you have entered it correctly or contact <u><a style="color:red" href="{!v.brandLink}" target="_blank">Customer Service</a></u> for further assistance.</div>
               </aura:if>
               <br/>
               <aura:if isTrue = "{!!v.doNotSellShare}">
               <div class="theField">Please enter the information you would like to rectify:</div> <br />
               <div class = "theField">
               <table>
-                  <aura:if isTrue="{!v.brandNames!='1'}">
+                <!--  <aura:if isTrue="{!v.brandNames!='1'}">-->
                   <tr><td>
                       <lightning:input type="checkbox" value="{!v.checkEmail}" label="Email"  aura:id="emailCheck" onchange="{!c.changeCheck}" />
                
@@ -378,7 +382,7 @@
                       <span><lightning:input class="theField" pattern="^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~]+)*@(?:[a-z0-9](?:[a-zA-Z0-9]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9]*[a-zA-Z]{2})?$" messageWhenPatternMismatch = "Please Enter a valid Email Address." label="Email"  required="{!v.checkEmail}" type="email" name="emailaddress" aura:id="changedEmail" value="{!v.changedEmail}" onblur="{!c.changeEmail}"/></span>
                       </aura:if>
                  </td></tr>
-              </aura:if>
+             <!-- </aura:if>-->
               <tr><td>
                       <span><lightning:input type="checkbox" value="{!v.checkFirstName}" label = "First Name" aura:id="firstNameCheck" onchange="{!c.changeCheck}"/></span>
                     </td>
@@ -450,12 +454,12 @@
                                                 value="{!v.changedGender}"
                                                 >
                                   <option value="">--- Select Option ---</option>
-                                  <option value="Male">Male</option>
-                                  <option value="Female">Female</option>
-                                  <aura:if isTrue="{!v.hasTH}">
-                                  <option value="Gender Neutral">Gender Neutral</option>
+                                   <option value="Woman">Woman</option>
+                                   <option value="Man">Man</option>
+                                  <!--<aura:if isTrue="{!v.hasTH}">-->
+                                  <option value="Gender Diverse">Gender Diverse</option>
                                   <option value="Prefer not to say">Prefer not to say</option>
-                                  </aura:if>
+                                 <!-- </aura:if>-->
                               </lightning:select>
                       </span>
                       </aura:if>
@@ -529,11 +533,6 @@
               />
             </div>
               </aura:if>
-              
-              
-              
-              
-              
               
              <aura:if isTrue = "{!v.otherRequests}">
             <div class="slds-align_absolute-center">
@@ -614,27 +613,23 @@
           <aura:if isTrue="{!not(empty(v.brandOptOutInfo))}">
             <br />
             <br />
-            <b>Do Not Sell My Personal Information</b>:
+              <b>Do Not Sell My Personal Info/Targeted Advertising/Sharing Opt-Out</b>:
             <p align="justify"
-              >At <aura:unescapedHtml value="{!v.brandLabel}" />, we do not share your personal data directly with third parties for their own marketing purposes in exchange for monetary consideration. However, as mentioned in our <a href="{!v.brandPrivacyPolicy}" target="_blank">Privacy Policy</a>, we do engage in Interest-Based Advertising and related activities, where we allow third parties to place cookies, pixels, and trackers on our site to collect personal data in association with the delivery of personalized ads. If you want to opt out of this, please turn off Advertising Cookies by navigating to our Do Not Sell My Personal Information page located in the footer section of
-              <lightning:formattedUrl
-                value="{!v.brandWebLink}"
-                label="{!v.brandWebLink}"
-                target="_blank"
-              />
+            >At <aura:unescapedHtml value="{!v.brandLabel}" />, we do not share your personal data directly with third parties for their own marketing purposes in exchange for monetary consideration. However, as mentioned in our <a href="{!v.brandPrivacyPolicy}" target="_blank">Privacy Policy</a>, we do engage in Interest-Based Advertising and related activities, where we allow third parties to place cookies, pixels, and trackers on our site to collect personal data in association with the delivery of personalized ads. If you select the Targeted Advertising/Sharing Opt-Out option on this form, we will stop sending you targeted advertising through our paid media channels and we still stop sharing your information with third parties for the same purpose. Please note we will also block your personal data from being extracted from our website for marketing purposes. Please note that you may still see ads from <aura:unescapedHtml value="{!v.brandLabel}" /> while you are browsing the internet. This is because you may fall into a broad category of individuals that could receive our ads, and not because we are targeting you directly. 
+             
+             
             </p>
           </aura:if>
-            <br />
-            <br />
-            <b>Targeted Advertising/Sharing Opt-Out</b>:
+           
+          <!--  <b>Targeted Advertising/Sharing Opt-Out</b>:
             <p align="justify"
               >We will stop sending you targeted advertising through our paid media channels and we still stop sharing your information with third parties for the same purpose. Please note that you may still see ads from <aura:unescapedHtml value="{!v.brandLabel}" /> while you are browsing the internet. This is because you may fall into a broad category of individuals that could receive our ads, and not because we are targeting you directly.
-            </p>
+            </p>-->
             <br />
             <br />
             <b>Right to Rectification</b>:
             <p align="justify"
-              >We will provide you with the option to update the Personal Data you’ve to us. After you provide updated information we will send an email to you to ensure you are the one making the correction request. We may not be able to update some of your information as it must be preserved for legal, security, fraud prevention, troubleshooting, fulfillment, financial, or tax purposes. To change your email address please contact Customer Service at (866) 513-0513.
+              >We will provide you with the option to update the Personal Data you’ve to us. After you provide updated information we will send an email to you to ensure you are the one making the correction request. We may not be able to update some of your information as it must be preserved for legal, security, fraud prevention, troubleshooting, fulfillment, financial, or tax purposes.
              
             </p>
         </div>

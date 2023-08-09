@@ -6,6 +6,7 @@
     <queueMembers>
         <publicGroups>
             <publicGroup>Tier_3_CSR_Supervisor</publicGroup>
+            <publicGroup>PVH_Corp_Operations_Quality</publicGroup>
         </publicGroups>
     </queueMembers>
     <queueRoutingConfig>Email</queueRoutingConfig>

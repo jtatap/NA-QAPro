@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>ButtonClass__c</field>
-        <value xsi:type="xsd:string">flatButton</value>
+        <value xsi:nil="true" />
     </values>
     <values>
         <field>ComponentKey__c</field>
@@ -16,18 +16,31 @@
     </values>
     <values>
         <field>HTML_Content__c</field>
-        <value xsi:type="xsd:string">&lt;div class=&quot;slds-grid slds-grid_vertical&quot;&gt;
-        &lt;div style=&quot;font-weight:700;color:#333333;&quot; class=&quot;slds-text-heading_medium slds-col&quot;&gt;
-Call
+        <value xsi:type="xsd:string">&lt;div style=&quot;font-weight:700;color:#333333;&quot; class=&quot;slds-text-heading_medium slds-col&quot;&gt;
+Phone
 &lt;/div&gt;
-        &lt;div class=&quot;slds-col slds-p-top_large&quot;&gt;
-Call Us: 866.513.0513
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+Monday - Friday: 9am-9pm ET
+&lt;/br&gt;
+Saturday &amp; Sunday: 9am-5pm ET
+&lt;/div&gt;
+
+&lt;div class=&quot;slds-p-top_x-small&quot;&gt;
+&lt;b&gt;Online Inquiries &lt;/b&gt;| 800-376-0528
+&lt;/br&gt;
+
+
+&lt;b&gt;Store Inquiries &lt;/b&gt;| 866-214-6694
+&lt;/br&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;</value>
     </values>
     <values>
         <field>LinkToOpen__c</field>
-        <value xsi:type="xsd:string">tel:8665130513</value>
+        <value xsi:type="xsd:string">tel:800-376-0528</value>
     </values>
     <values>
         <field>SortOrder__c</field>

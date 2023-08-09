@@ -60,7 +60,7 @@ global without sharing class InboundSignUp {
         public String Message;
         public String ContactId;
         public String LoyaltyId;
-		//public String ExistingCustomer;
+        public String ExistingCustomer;
      }
     
   
@@ -87,7 +87,7 @@ global without sharing class InboundSignUp {
         signupResponse errorResponse = new signupResponse();
         String errorMessage = ' ';
         Boolean existingCont = false;
-		Boolean newCont = false;
+        Boolean newCont = false;
         List<ID> contactID = new List<ID>();
         List<Subscribes> subsList = new List<Subscribes>();
         List<Subscribes> subsListAll = new List<Subscribes>();
@@ -103,11 +103,11 @@ global without sharing class InboundSignUp {
                    isError = true;
                    break;
                }
-            else {//storing brand id and email
+         
                 if(String.isNotEmpty(sub.BrandId)) BrandIds.add(sub.BrandId);
                 if(String.isNotEmpty(sub.Email)) EmailAddresses.add(sub.Email);
                 if(String.isNotEmpty(sub.sourceSystem)) sourceSystem = sub.sourceSystem;
-            }
+            
         }
         if (isError) {
             res.statusCode = 400;
@@ -120,143 +120,135 @@ global without sharing class InboundSignUp {
             errorResponse.count = subsList.size();
             return errorResponse;
         } 
-        mapSubbrandParentbrand = getSubToParentBrandDetails();//fetching parent brand id linked to sub brand id
-        if(!BrandIds.isEmpty() && !EmailAddresses.isEmpty()){
-            brandEmailContacts = fetchExistingContact(BrandIds,EmailAddresses);//fetching existing contacts in system based on brand and email address
-        }
-        system.debug('brandEmailContacts:: '+brandEmailContacts);
-        if(!brandEmailContacts.isEmpty()) { 
-            existingCont = true;
-            for(Contact con : brandEmailContacts){
-                Map<String,Contact> emailToContactMap = new Map<String,Contact>();
-                if(BrandToEmailContactMap.containsKey(con.Brand_Id__c)){
-                    BrandToEmailContactMap.get(con.Brand_Id__c).put(con.Email,con);//assigning brandId to multiple contacts
-                } 
-                else{
-                    emailToContactMap.put(con.Email,con);
-                    BrandToEmailContactMap.put(con.Brand_Id__c,emailToContactMap);
-                } 
+        //populate map of subBrand,parentBrand            
+        List<LoyaltySettings__mdt> loyaltyList = [Select Id, BrandId__c, Parent_Brand__c from LoyaltySettings__mdt];
+        for(LoyaltySettings__mdt loyalRecord : loyaltyList){
+            if(loyalRecord.Parent_Brand__c != null){
+                mapSubbrandParentbrand.put(loyalRecord.BrandId__c,loyalRecord.Parent_Brand__c);
             }
-        }
-        system.debug('BrandToEmailContactMap:: '+BrandToEmailContactMap);
-        Map<String,LoyaltySettings__mdt> mapLoyaltySettings = new Map<String,LoyaltySettings__mdt>();
-        mapLoyaltySettings = brandLoyaltySettings(BrandIds);//fetching loyalty settings based on brandId
-        system.debug('mapLoyaltySettings:: '+mapLoyaltySettings);
-
-        for(Subscriber sub : subReq.Subscribes) {
-            Boolean emailOptedIn = false;
-            Contact thisContact;
-            if(BrandToEmailContactMap.containsKey(sub.BrandId) && BrandToEmailContactMap.get(sub.BrandId).containsKey(sub.Email.toLowerCase())) {
-                thisContact = BrandToEmailContactMap.get(sub.BrandId).get(sub.Email.toLowerCase());//getting contact based on brandId
-                if(thisContact != null && sub.sourceSystem !='EXTOLE'){
-                    profileUpdateContacts.add(createOrUpdateContact(thisContact,sub,sub.BrandId,false));//updating contact as per payload
-                }
-            } 
-            else if(mapLoyaltySettings.get(sub.BrandId)!=null){   //checking loyalty setting based on brandId                  
-                LoyaltySettings__mdt loyaltySettingDetails = mapLoyaltySettings.get(sub.BrandId);
-                if(String.isEmpty(loyaltySettingDetails.Parent_Brand__c)){//checking parent brand id empty or not based on loyalty settings 
-                    Contact newParentContact = new Contact();   
-                    //creating new contact as per payload
-                    insertParentBrandContacts.add(createOrUpdateContact(newParentContact,sub,sub.BrandId,false));
-                }
-                    
-            }         
         }
         
-        List<contact> allContacts = new List<contact>(); 
-        if(!profileUpdateContacts.isEmpty()) {
-            //updating existing contact details as per payload
-            Database.SaveResult[] srList = Database.update(profileUpdateContacts,false);
-            for(Contact c : profileUpdateContacts){
-                if(c.id != null) {
-                    allContacts.add(c);
-                    if(String.isNotBlank(c.AccountId)) {
-                        accIdsToContact.put(c.AccountId, c);//storing accountid from contact
-                    } 
-                }
+        System.debug(BrandIds+''+EmailAddresses);
+        if (!BrandIds.isEmpty() && !EmailAddresses.isEmpty()){
+            brandEmailContacts = [SELECT Id, FirstName, MiddleName, LastName,Latest_Source__c,WelcomeSource__c,Market_ds__c,Country_ds__c,Region_ds__c, MailingStreet, MailingCity, MailingState, MailingPostalCode, Company_Code__c,
+                                  Brand_Id__c, MailingCountry, Email, Phone, HomePhone, MobilePhone, Birthdate,  HomeStore__c, LoyaltyID__c, External_Id__c, Customer_Id__c,
+                                  StoreOfCapture__c, Source_System__c,Ecomm_Connected__c, LoyaltyFlag__c, EmailOptInDate__c, AccountId, EmailOptInStatus__c, Loyalty_Optin_Date__c, PVHCreatedDate__c, PrefCenterInterests__c, Source__c,SelfClaimedGender__c
+                                  FROM Contact
+                                  WHERE Brand_Id__c IN :BrandIds and Email IN :EmailAddresses order by Ecomm_Connected__c DESC, LastmodifiedDate DESC];
+        }
+        
+        Log.push('loyaltyToContactMap : '+loyaltyToContactMap);
+        system.debug('brandEmailContacts***'+brandEmailContacts);
+        if (!brandEmailContacts.isEmpty()) {            
+             for (Contact beCon : brandEmailContacts){
+                Map <String,Contact> emailToContactMap = new Map<String,Contact>();
+                if (BrandToEmailContactMap.containsKey(beCon.Brand_Id__c)) BrandToEmailContactMap.get(beCon.Brand_Id__c).put(beCon.Email,beCon);
+                else {
+                    emailToContactMap.put(beCon.Email,beCon);
+                    BrandToEmailContactMap.put(beCon.Brand_Id__c, emailToContactMap);
+                } 
             }
-            //error logs
-            ContactUtility.createErrorLogRecords(srList,profileUpdateContacts[0].Latest_Source__c,'');
+        }
+        system.debug(BrandToEmailContactMap);
+
+        
+        for (Subscriber sub : subReq.Subscribes) {
+            Log.push('entered into for loop');
+            system.debug('entered into for loop***');
+            Contact thisContact;
+         if (BrandToEmailContactMap.size()>0 && BrandToEmailContactMap.containsKey(sub.BrandId) && BrandToEmailContactMap.get(sub.BrandId).containsKey(sub.Email.toLowerCase())) {
+              thisContact = BrandToEmailContactMap.get(sub.BrandId).get(sub.Email.toLowerCase());
+                 system.debug('thisContact***'+thisContact);
+                      if(thisContact != Null){
+						  existingCont = true;
+						  profileUpdateContacts.add(updateContact(thisContact,sub,sub.BrandId,existingCont));
+						  
+					  }
+            }else { 
+                    system.debug('entered into for loop***');
+                      Contact newParentContact = new Contact(); 
+                 system.debug('newParentContact***'+newParentContact); 
+                        createParent = false;
+                        existingCont = false;						
+                        profileUpdateContacts.add(createContact(newParentContact,Sub,sub.BrandId,existingCont));
+                        system.debug('profileUpdateContacts***'+profileUpdateContacts); 
+                    }         
+           }
             
+        
+        //Log.push('***SIZE profileUpdateContacts = '+profileUpdateContacts.size());
+        Log.push('***profileUpdateContacts = '+profileUpdateContacts);
+        system.debug('profileUpdateContacts*****'+profileUpdateContacts);
+        List <contact> allContacts = new List<contact>(); 
+        if (!profileUpdateContacts.isEmpty()) {
+             for(Contact c : profileUpdateContacts){
+                //if(c.id != null ) {
+                    allContacts.add(c);
+                    if(String.isNotBlank(c.AccountId))  accIdsToContact.put(c.AccountId, c);
+               // }
+            }
+        }
+        
+        system.debug('allContacts****'+allContacts);
+         if (allContacts.size() > 0){
+          system.debug('**Inside UpdateContact**'+allContacts);
+            upsert allContacts;
+        } 
+
+            Log.push('^^^accIdsToContact = '+accIdsToContact);
+            //ContactUtility.createErrorLogRecords(srList,profileUpdateContacts[0].Latest_Source__c,FileName);
+            
+            //updating Accounts for corresponding contacts
             List<Account> listAccountsToUpdate = getAccountsToUpdate();
             if(!listAccountsToUpdate.isEmpty()){
-                Database.SaveResult[] srListAcc = Database.update(listAccountsToUpdate, false);//updating account based on contact linked account
-                ContactUtility.createErrorLogRecords(srListAcc,profileUpdateContacts[0].Latest_Source__c,'');
+                //Log.push('^^^listAccountsToUpdate = '+listAccountsToUpdate);
+                Database.SaveResult[] srListAcc = Database.update(listAccountsToUpdate, false);
+              //  ContactUtility.createErrorLogRecords(srListAcc,profileUpdateContacts[0].Latest_Source__c,FileName);
             }
-        }
-        if(!insertParentBrandContacts.isEmpty()) {
-            List<Database.SaveResult> srList = Database.insert(insertParentBrandContacts,false);//creating new contact as per payload
-            for(integer i=0; i<insertParentBrandContacts.size(); i++){
-                if(insertParentBrandContacts[i].LastName!=null){
-                    allContacts.add(insertParentBrandContacts[i]); //adding all parent brand contact
-                }
-                ContactUtility.createErrorLogRecords(srList,insertParentBrandContacts[0].Latest_Source__c,'');//Error log creation
-            }
-        }
-        signupResponse genRes = new signupResponse();
-        
-        List<Contact> conList = [Select id,LoyaltyId__c,Latest_Source__c,Brand_Id__c from Contact where id IN:allContacts];
-		if(ConList.size()>0){
-		newCont = true;
-		}
-		//contructing response payload
-        if(newCont == true && existingCont == false){
-        for(Contact con : conList){
-            contactID.add(con.Id);
             
-            Subscribes sub = new Subscribes();
-            sub.StatusCode = 200;
-            sub.Code = 'OK';
-            sub.Message = 'Success';
-            sub.ContactId = con.Id;
-            sub.LoyaltyId = con.LoyaltyId__c;
-           // sub.ExistingCustomer = String.valueOf(existingCont);
-            subsList.add(sub);
-            signUpActivityList.add(SignUpActivity.signupActivity(con.Id, con.Latest_Source__c,con.Brand_Id__c));
-            
-        }
-        }
-        if(existingCont == true){
-            for(contact existCon : brandEmailContacts){
-              /*  if(sourceSystem =='EXTOLE'){
+             
+      
+		
+		for(contact finalRes : allContacts){
                     Subscribes sub = new Subscribes();
-                    sub.Code = 'OK';
-                    sub.Message = 'Customer Existing in the System, You are not eligible for this program';
-                    sub.ContactId = existCon.Id;
-                    sub.LoyaltyId = existCon.LoyaltyId__c;
-                    sub.ExistingCustomer = String.valueOf(existingCont);
-                    subsList.add(sub);
-                }else{*/
-                    Subscribes sub = new Subscribes();
-                	sub.StatusCode = 200;
+                    sub.StatusCode = 200;
                     sub.Code = ' OK';
-                    sub.Message = 'Success: Customer Data Updated';
-                    sub.ContactId = existCon.Id;
-                    sub.LoyaltyId = existCon.LoyaltyId__c;
-                   // sub.ExistingCustomer = String.valueOf(existingCont);
+                    sub.Message = 'Success';
+                    sub.ContactId = finalRes.Id;
+                    sub.LoyaltyId = finalRes.LoyaltyId__c;
+                    sub.ExistingCustomer =String.valueOf(finalRes.IsExisting__c);
                     subsList.add(sub);
                     system.debug('subsList>>>>>>>>>>'+subsList);
-                    signUpActivityList.add(SignUpActivity.signupActivity(existCon.Id, existCon.Latest_Source__c,existCon.Brand_Id__c));
-               // }
-            }	
-        }
+                    signUpActivityList.add(SignUpActivity.signupActivity(finalRes.Id, finalRes.Latest_Source__c,finalRes.Brand_Id__c));
+               
+            }  
+		
+		
         
         
+         signupResponse genRes = new signupResponse();
+        
+        Logger.logDebug();
+        system.debug('****');
         //Response status
+        genRes.subscribes = subsList;
+        genRes.count=Integer.valueOf(signupRequestPayload.count);
         genRes.count = subsList.size();
         res.statusCode = 200;
-        genRes.subscribes = subsList;
+        //genRes.subscribes = subsList;
         return genRes;
     }
-    
+
     //Creating or updating contact details based on payload
-    private static Contact createOrUpdateContact(Contact newCon,Subscriber sub,String brandId,Boolean createParent) {
+    private static Contact createContact(Contact newCon,Subscriber sub,String brandId,boolean existingCont) {
+        system.debug('**Inside NewContact**');
         newCon.createdByMethod__c = 'API';
         newCon.RecordTypeId = contactEmailRecordTypeId;
         newCon.Status__c = 'ACTIVE';
+         newCon.IsExisting__c=false;
         if (String.isNotBlank(brandId)) newCon.Brand_Id__c = brandId;
-        if (String.isNotBlank(sub.FirstName)) newCon.FirstName = sub.FirstName; else newCon.FirstName = 'Unknown';
-     	if(String.isNotBlank(sub.lastName)){ newCon.LastName = sub.lastName; }
+        if (String.isNotBlank(sub.firstName)) newCon.FirstName = sub.firstName; else newCon.FirstName = 'Unknown';
+        if(String.isNotBlank(sub.lastName)){ newCon.LastName = sub.lastName; }
         else if(String.isBlank(sub.lastName) || String.valueOf(sub.lastName) == '') newCon.LastName = 'Unknown';
       /*  if (String.isNotBlank(sub.address1) && String.isNotBlank(sub.address2)){
             newCon.MailingStreet = sub.address1 + '\n' + sub.address2;
@@ -289,7 +281,7 @@ global without sharing class InboundSignUp {
         newCon.Market_ds__c = sub.market; 
         newCon.Region_ds__c = sub.region; 
         newCon.Country_ds__c = sub.Country;
-        if(String.isBlank(newCon.Source_System__c)) {
+        if(String.isBlank(sub.SourceSystem)) {
             newCon.Source_System__c = sub.SourceSystem;
         }
         if(String.isNotBlank(sub.SourceSystem)) {
@@ -318,21 +310,21 @@ global without sharing class InboundSignUp {
            // subEmailOptinValue= 'Y';
         if(subEmailOptinValue=='Y') {
             newCon.EmailOptInStatus__c = subEmailOptinValue;
-			newCon.EmailOptInDate__c = System.now();
+            newCon.EmailOptInDate__c = System.now();
             newCon.HasOptedOutOfEmail = false;            
         } else if(subEmailOptinValue=='N'){
             newCon.EmailOptInStatus__c = 'N';
             newCon.EmailOptOutDate__c=system.now();
             newCon.HasOptedOutOfEmail=true;
         }
-        if(string.isEmpty(newCon.Id)){
-            if(createParent){
+        /*if(string.isEmpty(newCon.Id)){
+            /if(createParent){
                 newCon.EmailOptInStatus__c = 'N';
                 newCon.EmailOptOutDate__c=system.now();
                 newCon.EmailOptInDate__c=Null;
                 newCon.HasOptedOutOfEmail=true;
-            }
-        }
+            //}
+        }*/
         if(String.isNotBlank(sub.SourceSystem)){
             String searchBrand = sub.BrandId;
             if(mapSubbrandParentbrand.containsKey(sub.BrandId)){
@@ -351,14 +343,74 @@ global without sharing class InboundSignUp {
             }  
         }
         
+        Logger.logDebug();
       //  if(String.isNotBlank(sub.Gender) && (newCon.SelfClaimedGender__c != sub.Gender)) newCon.SelfClaimedGender__c = sub.Gender;
         return newCon;
     }
     
+     ////Existing conact Update 
+     private static Contact updateContact(Contact Con,Subscriber sub,String brandId,boolean existingCont){
+         system.debug('**Inside UpdateContact**');
+        Con.Status__c = 'ACTIVE';
+          Con.IsExisting__c=true;
+        if(String.isNotBlank(sub.brandId) && (Con.Brand_ID__c != sub.brandId)) Con.Brand_ID__c = sub.brandId;
+        //if(String.isNotBlank(sub.email) && (Con.Email != sub.email)) Con.Email = sub.email;
+         if(String.isNotBlank(sub.firstName) && (Con.FirstName != sub.firstName)){
+               Con.FirstName = sub.firstName;
+         }
+         
+        
+         if(String.isNotBlank(sub.lastName) && (Con.LastName != sub.lastName)){ 
+                 Con.LastName = sub.lastName;
+         }
+         
+        
+        if(String.isNotBlank(sub.welcomeSource) && (Con.WelcomeSource__c != sub.welcomeSource)) Con.WelcomeSource__c = sub.welcomeSource;
+        
+        
+        if(String.isNotBlank(sub.market) && (Con.Market_ds__c != sub.market))Con.Market_ds__c = sub.market; 
+        if(String.isNotBlank(sub.region) && (Con.Region_ds__c != sub.region))Con.Region_ds__c = sub.region; 
+        if(String.isNotBlank(sub.Country) && (Con.Country_ds__c != sub.Country))Con.Country_ds__c = sub.Country; 
+        
+        //Source System 
+        if(String.isNotBlank(sub.SourceSystem)) {
+             con.Latest_Source__c = sub.SourceSystem;
+        
+        }
+        List<SubscriberDataSources__mdt> listDataSource = [SELECT Brand__c, SourceSystem__c, 
+                                                               WelcomeSource__c,DataSource__c
+                                                               FROM SubscriberDataSources__mdt
+                                                               WHERE Brand__c=:brandId AND
+                                                               SourceSystem__c=:sub.SourceSystem AND WelcomeSource__c=:sub.welcomeSource];
+        if (listDataSource.size()>0){
+                Con.Source__c = listDataSource[0].DataSource__c;
+       }  
+             
+       If(String.isNotBlank(sub.LoyaltyOptinFlag) && (Con.LoyaltyFlag__c != Boolean.valueOf(sub.LoyaltyOptinFlag)) && Con.LoyaltyFlag__c !=True){
+                Con.LoyaltyFlag__c = Boolean.valueOf(sub.LoyaltyOptinFlag);
+                Con.Loyalty_Optin_Date__c=System.Today();
+            }
+            
+        
+        if(String.isNotBlank(sub.emailOptinFlag) && Boolean.valueOf(sub.emailOptinFlag) == true && con.EmailOptInStatus__c!='Y'){ 
+            con.EmailOptInStatus__c='Y';
+            con.EmailOptInDate__c=system.now();
+            con.HasOptedOutOfEmail=false;
+            }
+       
+        if(String.isNotBlank(sub.emailOptinFlag) && Boolean.valueOf(sub.emailOptinFlag) == false && con.EmailOptInStatus__c!='N'){ 
+             con.EmailOptInStatus__c='N';
+             con.EmailOptOutDate__c=system.now();
+             con.HasOptedOutOfEmail=true;
+            }
+      Logger.logDebug();
+       return Con;
+    }
+    
     /*
-	* Name : removeDuplicate
-	* Description: removing of duplicate data from payload
-	*/ 
+    * Name : removeDuplicate
+    * Description: removing of duplicate data from payload
+    */ 
     public static signupRequest removeDuplicate(signupRequest inputRequest){
         Map<String,Subscriber> mapSubscriber = new Map<String,Subscriber>();
         List<Subscriber> listSubscriber = new List<Subscriber>();
@@ -381,9 +433,9 @@ global without sharing class InboundSignUp {
     }
     
     /*
-	* Name : getAccountsToUpdate
-	* Description : Updating of gender on Account based on SelfClaimedGender
-	*/ 
+    * Name : getAccountsToUpdate
+    * Description : Updating of gender on Account based on SelfClaimedGender
+    */ 
     public static List<Account> getAccountsToUpdate(){
         List<Account> listUpdAccounts = new List<Account>();
         List<Account> listAccounts = [Select Id, Gender__c from Account where Id IN:accIdsToContact.keySet()];
@@ -399,8 +451,8 @@ global without sharing class InboundSignUp {
     }
     
     /* Name : fetchExistingContact
-	* Description : fetching contact details based on brand Id and email address
-	*/ 
+    * Description : fetching contact details based on brand Id and email address
+    */ 
     public static List<contact> fetchExistingContact(Set<String> brandIdSet,Set<String> emailAddressSet){
         List<Contact> existingContactList = new List<Contact>();
         existingContactList = [SELECT Id,AccountId,FirstName,MiddleName,LastName,MailingStreet,MailingCity, MailingState,MailingPostalCode,Company_Code__c,
@@ -416,9 +468,9 @@ global without sharing class InboundSignUp {
     }
     
     /*
-	* Name : getSubToParentBrandDetails
-	* Description : matching sub brand to parent brand based on loyalty settings
-	*/ 
+    * Name : getSubToParentBrandDetails
+    * Description : matching sub brand to parent brand based on loyalty settings
+    */ 
     
     public static Map<String,String> getSubToParentBrandDetails(){
         Map<String,String> subToParentBrandMap = new Map<String,String>();
@@ -432,9 +484,9 @@ global without sharing class InboundSignUp {
     }
     
     /*
-	* Name : brandLoyaltySettings
-	* Description : matching brandId to loyalty settings
-	*/ 
+    * Name : brandLoyaltySettings
+    * Description : matching brandId to loyalty settings
+    */ 
     public static Map<String,LoyaltySettings__mdt> brandLoyaltySettings(Set<String> brandIdSet){
         Map<String,LoyaltySettings__mdt> loyaltySettingsMap = new Map<String,LoyaltySettings__mdt>();
         List<LoyaltySettings__mdt> loyaltySettingList = [SELECT Id,BrandId__c,IsLoyaltyApplicable__c,Parent_Brand__c 

@@ -225,7 +225,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Email AHT by Agent (Today)</header>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Email_AHT</report>
+                <report>Daily_KPI_Dashboard/Email_AHT</report>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>

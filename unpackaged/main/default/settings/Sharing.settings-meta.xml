@@ -8,7 +8,7 @@
     <enableExternalSharingModel>true</enableExternalSharingModel>
     <enableManagerGroups>false</enableManagerGroups>
     <enableManualUserRecordSharing>false</enableManualUserRecordSharing>
-    <enablePortalUserCaseSharing>false</enablePortalUserCaseSharing>
+    <enablePortalUserCaseSharing>true</enablePortalUserCaseSharing>
     <enablePortalUserVisibility>true</enablePortalUserVisibility>
     <enableRemoveTMGroupMembership>false</enableRemoveTMGroupMembership>
     <enableRestrictAccessLookupRecords>false</enableRestrictAccessLookupRecords>

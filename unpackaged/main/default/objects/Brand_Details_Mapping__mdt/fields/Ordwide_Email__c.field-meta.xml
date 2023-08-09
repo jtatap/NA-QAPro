@@ -3,7 +3,7 @@
     <fullName>Ordwide_Email__c</fullName>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
-    <label>Ordwide Email</label>
+    <label>Orgwide Email</label>
     <length>255</length>
     <required>false</required>
     <type>Text</type>

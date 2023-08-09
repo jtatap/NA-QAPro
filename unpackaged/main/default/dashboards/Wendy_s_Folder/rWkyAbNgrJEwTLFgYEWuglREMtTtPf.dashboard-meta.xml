@@ -45,6 +45,11 @@
             <values>11/27/2020 12:00 AM</values>
             <values>12/2/2020 12:00 AM</values>
         </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>5/31/2021 12:00 AM</values>
+            <values>7/4/2021 12:00 AM</values>
+        </dashboardFilterOptions>
         <name>Bot Session: Created Date</name>
     </dashboardFilters>
     <dashboardGridLayout>
@@ -478,9 +483,9 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>wendyamaya@pvh.com</runningUser>
+    <runningUser>alexisrios@pvh.com</runningUser>
     <textColor>#000000</textColor>
-    <title>Holiday KPIs</title>
+    <title>Monthly KPIs</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

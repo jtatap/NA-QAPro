@@ -5,7 +5,6 @@
     <name>Empty Response All Brands</name>
     <relatedEntityType>Case</relatedEntityType>
     <style>none</style>
-    <subject>Empty Response All Brands</subject>
     <type>custom</type>
     <uiType>SFX</uiType>
 </EmailTemplate>

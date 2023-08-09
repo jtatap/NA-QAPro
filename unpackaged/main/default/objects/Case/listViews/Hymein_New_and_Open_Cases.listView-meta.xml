@@ -6,7 +6,7 @@
     <columns>CASES.SUBJECT</columns>
     <columns>CASES.STATUS</columns>
     <columns>Brand__c</columns>
-    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
     <columns>Reason_Code__c</columns>
     <columns>Reason_Code_Details__c</columns>
@@ -17,9 +17,9 @@
         <value>New,Open,Pending,On Hold</value>
     </filters>
     <filters>
-        <field>OWNER_NAME</field>
-        <operation>contains</operation>
-        <value>ericka</value>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>francine</value>
     </filters>
     <label>Brianna New and Open Cases</label>
     <sharedTo>

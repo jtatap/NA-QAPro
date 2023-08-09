@@ -6,6 +6,7 @@
 private class NF_UpdateSessionTest {
     @IsTest
     static void test1UpdateSession() {
+        Test.startTest();
         List<NF_UpdateSession.Input> inputs = new List<NF_UpdateSession.Input>();
         NF_UpdateSession.Input input = new NF_UpdateSession.Input();
 
@@ -16,6 +17,7 @@ private class NF_UpdateSessionTest {
         NF_Util.associateCaseWithSession(input.chatKey,'');
         NF_UpdateSession.updateSession(inputs);
         ebotdata__Bot_Session__c session = NF_Util.getBotSession(input.chatKey);
+        Test.stopTest();
         System.assertEquals(session.Brand__c,'Calvin Klein');
     }
 }

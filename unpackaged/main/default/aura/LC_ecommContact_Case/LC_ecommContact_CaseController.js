@@ -1,19 +1,17 @@
 ({
     doInit : function(component, event, helper) {
         var action = component.get("c.getContactId");
+        var success = String($A.get("$Label.c.Success1"));
+        
         action.setParams ({"CaseId": component.get("v.recordId")});
         action.setCallback(this, function(response){
             var state = response.getState();
-            if(state == "SUCCESS") {
+            if(state == success) {
                 var str = response.getReturnValue();
                 if (!str.startsWith('003')){
                     component.set("v.msg1", response.getReturnValue());
                 }
-                /*if(response.getReturnValue() == 'STOP: You must create a contact record or associate contact record with an existing account.'
-                   || response.getReturnValue() == 'The Customer Account is disabled.'
-                   || response.getReturnValue() == 'The Customer Account is Locked.'){
-                    component.set("v.msg1", response.getReturnValue());    
-                }*/
+                
                 else{
                     component.set("v.ContactExist",true);
                     component.set("v.ContactId", response.getReturnValue());
@@ -23,14 +21,14 @@
                     action2.setParams ({"contactId": component.get("v.ContactId")});
                     action2.setCallback(this, function(response2){
                         var state = response2.getState();
-                        if(state == "SUCCESS") {
+                        if(state == success) {
                             component.set("v.eCommNotConnected", response2.getReturnValue());
                             if(component.get("v.eCommNotConnected") == true){
                                 var action1 = component.get("c.eCommOtherCont");
                                 action1.setParams ({"contactId": component.get("v.ContactId")});
                                 action1.setCallback(this, function(response1){
                                     var state = response1.getState();
-                                    if(state == "SUCCESS") {
+                                    if(state == success) {
                                         component.set("v.con", response1.getReturnValue());
                                         component.set("v.NewContactId", response1.getReturnValue().Id);
                                         
@@ -48,7 +46,7 @@
                                         var errors = response1.getError();
                                         if (errors) {
                                             if (errors[0] && errors[0].message) {
-                                                //alert("Error message1: " + errors[0].message);
+                                                
                                             }
                                         } 
                                     }
@@ -67,7 +65,7 @@
                 
             }
             else{
-                //alert("Action is a Failure");
+                
             }
         });
         $A.enqueueAction(action);
@@ -78,16 +76,15 @@
     confirm :function(component, event, helper) {
         component.set ('v.isLoading', true);
         var action = component.get("c.linkContact");
+        var success = String($A.get("$Label.c.Success1"));
         action.setParams ({"Cont": component.get("v.con"),
                            "CaseId":component.get("v.recordId") });
         action.setCallback(this, function(response){
             var state = response.getState();
-            if(state == "SUCCESS") {
+            if(state == success) {
                 component.set("v.NewContactId", response.getReturnValue());
-                //alert('Contactid is :'+ component.get("v.NewContactId"));
                 component.set("v.msg", "Case linked to EcommConnected Contact");
                 component.set ('v.isLoading', false);
-                //component.set("v.launchFlow",false);
                 var input_variable = [
                     {name : "recordId",type : "String",value : component.get("v.NewContactId")},
                     {name : "asRegistered",type : "Boolean",value : true},
@@ -102,8 +99,7 @@
                 navEvt.fire();
                 $A.get('e.force:refreshView').fire();
                 console.log('-- check1-->',input_variable);
-                //var flow = component.find("flowId");
-                //flow.startFlow("OrderOnBehalfOf_Case",input_variable);
+                
             }
             else{
                 var errors = response.getError();

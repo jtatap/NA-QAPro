@@ -4,7 +4,7 @@
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Rectification Success Template</name>
     <style>none</style>
-    <subject>Personal data request update successfull</subject>
+    <subject>Personal data request update successful</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

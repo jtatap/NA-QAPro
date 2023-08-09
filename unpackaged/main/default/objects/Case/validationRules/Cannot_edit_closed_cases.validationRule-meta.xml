@@ -4,7 +4,7 @@
     <active>true</active>
     <description>You cannot edit Cases that are in a Closed Status.</description>
     <errorConditionFormula>AND(
-OR(ISPICKVAL(Status, &quot;Closed&quot;),ISPICKVAL(PRIORVALUE(Status), &quot;Closed&quot;)), 
+OR(ISPICKVAL(Status, &quot;Closed&quot;),ISPICKVAL(PRIORVALUE(Status), &quot;Closed&quot;)),
 NOT(ISCHANGED( Follow_up_Case__c )),
 ISBLANK(csmrgp__Merged_Date_Time__c ),
 $Profile.Name &lt;&gt; &quot;System Administrator&quot;,

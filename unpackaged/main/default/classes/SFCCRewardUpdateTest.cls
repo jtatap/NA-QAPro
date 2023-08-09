@@ -25,6 +25,7 @@ public class SFCCRewardUpdateTest {
         RestContext.response= res;
         SFCCRewardUpdate.doUpdate();
         test.stopTest();
+        System.assert(res.statusCode == 200);
     }
     public static testmethod void testErrorInvalidBrand(){
         String jsonStr = '{'+
@@ -51,6 +52,7 @@ public class SFCCRewardUpdateTest {
         RestContext.response= res;
         SFCCRewardUpdate.doUpdate();
         test.stopTest();
+        Assert.areEqual(res.statusCode,400);
     }
     public static testmethod void testErrorEmptyValues(){
         String jsonStr = '{'+
@@ -77,5 +79,6 @@ public class SFCCRewardUpdateTest {
         RestContext.response= res;
         SFCCRewardUpdate.doUpdate();
         test.stopTest();
+        Assert.areEqual(res.statusCode,400);
     }
 }

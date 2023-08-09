@@ -211,6 +211,20 @@ please call our Customer Service team toll-free at</value>
         <value>Additional Details</value>
     </labels>
     <labels>
+        <fullName>Advertise_In</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Advertise In</shortDescription>
+        <value>Advertise In</value>
+    </labels>
+    <labels>
+        <fullName>Advertise_Out</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Advertise Out</shortDescription>
+        <value>Advertise Out</value>
+    </labels>
+    <labels>
         <fullName>AllUsers</fullName>
         <categories>NF_Constants</categories>
         <language>en_US</language>
@@ -519,7 +533,7 @@ accrue new loyalty points.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Calvin CA URL</shortDescription>
-        <value>https://qapro-pvhservicecloud.cs59.force.com/calvinkleinca/s/</value>
+        <value>https://pvhservicecloud--uat.sandbox.my.site.com/calvinkleinca/s/</value>
     </labels>
     <labels>
         <fullName>Calvin_Klein</fullName>
@@ -566,7 +580,7 @@ accrue new loyalty points.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Calvin US URL</shortDescription>
-        <value>https://qapro-pvhservicecloud.cs59.force.com/calvinklein/s/</value>
+        <value>https://pvhservicecloud--uat.sandbox.my.site.com/calvinklein/s/</value>
     </labels>
     <labels>
         <fullName>Cannot_find_corresponding</fullName>
@@ -796,8 +810,8 @@ accrue new loyalty points.</value>
         <categories>NF_Constants</categories>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>Copyright © 2022 Calvin Klein. All rights reserved.</shortDescription>
-        <value>Copyright © 2022 Calvin Klein. All rights reserved.</value>
+        <shortDescription>Copyright © 2023 Calvin Klein. All rights reserved.</shortDescription>
+        <value>Copyright © 2023 Calvin Klein. All rights reserved.</value>
     </labels>
     <labels>
         <fullName>Corporate_Request</fullName>
@@ -937,6 +951,14 @@ please contact Customer Service at</value>
         <value>Data Owner Request</value>
     </labels>
     <labels>
+        <fullName>Default_Case_Queue</fullName>
+        <categories>PVH_Constants</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default_Case_Queue</shortDescription>
+        <value>Default_Case_Queue</value>
+    </labels>
+    <labels>
         <fullName>Delete_My_Data</fullName>
         <categories>NF_Constants</categories>
         <language>en_US</language>
@@ -991,6 +1013,13 @@ please contact Customer Service at</value>
         <protected>false</protected>
         <shortDescription>Dropped</shortDescription>
         <value>Dropped</value>
+    </labels>
+    <labels>
+        <fullName>DummyAccountId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DummyAccountId</shortDescription>
+        <value>0011U00000qGGPIQA4</value>
     </labels>
     <labels>
         <fullName>Ecomm_Verify</fullName>
@@ -1314,7 +1343,7 @@ or legal notices.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>GeneralCase_ClosedDays</shortDescription>
-        <value>1</value>
+        <value>15</value>
     </labels>
     <labels>
         <fullName>General_Swimwear</fullName>
@@ -2090,6 +2119,13 @@ If you have any attachments to add to your submission (such as photos, receipts,
         <value>Missing required parameters: BrandId or email or lastName</value>
     </labels>
     <labels>
+        <fullName>Missing_required_parameters_BrandId_or_email_or_requestType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing_required_parameters_BrandId_or_email_or_requestType</shortDescription>
+        <value>Missing required parameters BrandId or email or requestType</value>
+    </labels>
+    <labels>
         <fullName>Missing_required_parameters_LoyaltyId</fullName>
         <categories>NF_Constants</categories>
         <language>en_US</language>
@@ -2110,7 +2146,7 @@ If you have any attachments to add to your submission (such as photos, receipts,
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>MuleSoftUserName</shortDescription>
-        <value>mulesoftapiuser@pvh.com.sfsc.qapro</value>
+        <value>mulesoftapiuser@pvh.com.sfsc.uat</value>
     </labels>
     <labels>
         <fullName>MuleSoft_APIUser</fullName>
@@ -2808,7 +2844,7 @@ information, please click</value>
         <fullName>PlatformIntegrationUser</fullName>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>User</shortDescription>
+        <shortDescription>PlatformIntegrationUser</shortDescription>
         <value>Platform Integration User</value>
     </labels>
     <labels>
@@ -3365,6 +3401,14 @@ the Privacy Matters option when prompted.</value>
         <value>SignUp</value>
     </labels>
     <labels>
+        <fullName>Spam_Queue</fullName>
+        <categories>PVH_Constant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Spam_Queue</shortDescription>
+        <value>Spam_Queue</value>
+    </labels>
+    <labels>
         <fullName>Speedo</fullName>
         <categories>NF_Constants</categories>
         <language>en_US</language>
@@ -3778,7 +3822,7 @@ the Privacy Matters option when prompted.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>TommyHLabel</shortDescription>
-        <value>2020 Tommy Hilfiger licensing, LLC. All rights reserved.</value>
+        <value>2023 Tommy Hilfiger licensing, LLC. All rights reserved.</value>
     </labels>
     <labels>
         <fullName>Tommy_Chat_Priority</fullName>
@@ -3825,7 +3869,7 @@ the Privacy Matters option when prompted.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Tommy URL</shortDescription>
-        <value>https://qapro-pvhservicecloud.cs59.force.com/tommy/s/</value>
+        <value>https://pvhservicecloud--uat.sandbox.my.site.com/tommy/s/</value>
     </labels>
     <labels>
         <fullName>Total</fullName>
@@ -4156,6 +4200,14 @@ the Privacy Matters option when prompted.</value>
         <value>Visitor:</value>
     </labels>
     <labels>
+        <fullName>WE_CAMPAIGN</fullName>
+        <categories>PVH Constant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WE_CAMPAIGN</shortDescription>
+        <value>WE_CAMPAIGN</value>
+    </labels>
+    <labels>
         <fullName>WE_CHECKOUT</fullName>
         <categories>NF_Constants</categories>
         <language>en_US</language>
@@ -4274,6 +4326,14 @@ the Privacy Matters option when prompted.</value>
         <protected>false</protected>
         <shortDescription>04</shortDescription>
         <value>04</value>
+    </labels>
+    <labels>
+        <fullName>X07</fullName>
+        <categories>PVH_Constant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>07</shortDescription>
+        <value>07</value>
     </labels>
     <labels>
         <fullName>X1</fullName>
@@ -4569,7 +4629,7 @@ the Privacy Matters option when prompted.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>calvinklein1</shortDescription>
-        <value>calvinklein1</value>
+        <value>calvinklein2</value>
     </labels>
     <labels>
         <fullName>carrier_holidays</fullName>
@@ -4714,6 +4774,14 @@ the Privacy Matters option when prompted.</value>
         <protected>false</protected>
         <shortDescription>/dw/tracker?scheme=a1webtag&amp;accessKey=</shortDescription>
         <value>/dw/tracker?scheme=a1webtag&amp;accessKey=</value>
+    </labels>
+    <labels>
+        <fullName>eCommLatestSource</fullName>
+        <categories>PVH_Constant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eCommLatestSource</shortDescription>
+        <value>eComm</value>
     </labels>
     <labels>
         <fullName>eComm_Opt_out</fullName>
@@ -5632,7 +5700,7 @@ the Privacy Matters option when prompted.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>tommy1</shortDescription>
-        <value>tommy1</value>
+        <value>tommy2</value>
     </labels>
     <labels>
         <fullName>track_Url_Tracking_Id</fullName>

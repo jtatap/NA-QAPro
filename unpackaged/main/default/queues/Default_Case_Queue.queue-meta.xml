@@ -5,7 +5,6 @@
     <name>Default Case Queue</name>
     <queueMembers>
         <publicGroups>
-            <publicGroup>Ops_Quality_Group</publicGroup>
             <publicGroup>PVH_Corp_Operations_Quality</publicGroup>
         </publicGroups>
     </queueMembers>

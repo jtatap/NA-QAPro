@@ -206,7 +206,7 @@ public class PersonalDataFormApexControllerTest
         
         String jsonData = '{"newEmail":"","newFirstName":"testsek","newLastName":"testbar","newAddress":"test 234","newUnit":"111","newCountry":"United States of America","newState":"Maryland","newZipCode":"20874","newPhone":"1234561234","newGender":"Male","newMonth":"5","newDate":"17"}';
         String changedData = 'First Name: testsek Last Name: testbar= Address: test 234 Apartment/Suite/Unit: 111 City: germantown State: Maryland Country: United States of America Zip Code: 20874 Phone: 1234561234 Gender: Male Birthday (Month-Day): 5-17';
-        PersonalDataFormApexController.createCaseForDonotSellShare(brandName,'foo@example.com');
+        PersonalDataFormApexController.createCaseForDonotSellShare(brandName,'foo@example.com',false);
        
     }
     
@@ -234,8 +234,25 @@ public class PersonalDataFormApexControllerTest
         
         String jsonData = '{"newEmail":"","newFirstName":"testsek","newLastName":"testbar","newAddress":"test 234","newUnit":"111","newCountry":"United States of America","newState":"Maryland","newZipCode":"20874","newPhone":"1234561234","newGender":"Male","newMonth":"5","newDate":"17"}';
         String changedData = 'First Name: testsek Last Name: testbar= Address: test 234 Apartment/Suite/Unit: 111 City: germantown State: Maryland Country: United States of America Zip Code: 20874 Phone: 1234561234 Gender: Male Birthday (Month-Day): 5-17';
-        PersonalDataFormApexController.createCaseForDonotSellShare(brandName,'foo@example.comm');
+        PersonalDataFormApexController.createCaseForDonotSellShare(brandName,'foo@example.comm',false);
        
     }
+    
+     @isTest 
+    static void checkIfContactExistWithEmailIdTest() 
+    {	
+     	 Contact con = new contact();
+        con.firstname = 'test';
+        con.lastname = 'contact';
+        con.email = 'foo1@example.com';
+        con.Brand__c = 'Calvin Klein';
+        insert con;
+        
+        PersonalDataFormApexController.CaseWrapper wrap =  PersonalDataFormApexController.checkIfContactExistWithEmailId('2', 'foo1@example.com');
+        Test.startTest();
+        System.assertEquals(true, wrap.error);
+        Test.stopTest();
+    }
 
+    
 }

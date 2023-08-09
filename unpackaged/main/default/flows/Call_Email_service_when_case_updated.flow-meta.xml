@@ -4,7 +4,7 @@
         <name>Send_Email</name>
         <label>Send Email</label>
         <locationX>176</locationX>
-        <locationY>158</locationY>
+        <locationY>134</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -12,15 +12,21 @@
         </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>emailBody</name>
+            <name>emailAddresses</name>
             <value>
-                <elementReference>updateContact</elementReference>
+                <stringValue>rectifydata@15osb9vramxlq6671ytigtwm5khlrpzy6v3hlhwdct8p2x19g0.8l-4esduay.cs224.apex.sandbox.salesforce.com</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailAddresses</name>
+            <name>senderType</name>
             <value>
-                <stringValue>rectifydata@7-zf0zaqoey1aec6k0yx9tdwhq3vbir0q4xw6anvagv6glzfpsd.2c-cmsruac.cs59.apex.sandbox.salesforce.com</stringValue>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>custsvchelp@support.pvh.com</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -29,13 +35,19 @@
                 <elementReference>in_caseid</elementReference>
             </value>
         </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>updateContact</elementReference>
+            </value>
+        </inputParameters>
     </actionCalls>
     <apiVersion>54.0</apiVersion>
     <assignments>
         <name>Exit_Flow</name>
         <label>Exit Flow</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>242</locationY>
         <assignmentItems>
             <assignToReference>out_success</assignToReference>
             <operator>Assign</operator>

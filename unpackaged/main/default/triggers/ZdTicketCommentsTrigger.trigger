@@ -1,6 +1,6 @@
 trigger ZdTicketCommentsTrigger on ZdTicketComment__c (before insert) {
 
-    List <String> PVHTicketIds = new List<String>();
+    /*List <String> PVHTicketIds = new List<String>();
     List <String> TnCTicketIds = new List<String>();
     List <Case> PVHParentCases = new List<Case>();   
     List <Case> TnCParentCases = new List<Case>();
@@ -25,5 +25,6 @@ trigger ZdTicketCommentsTrigger on ZdTicketComment__c (before insert) {
         else if (tc.ZdTnCParentTicketId__c!=null) newCaseComment.ParentId = TnCCaseIdMap.get(tc.ZdTnCParentTicketId__c);
         if (newCaseComment.ParentId!=null) CaseCommentList.add(newCaseComment);
     }
-    if (CaseCommentList.size()>0) insert CaseCommentList;
+    if (CaseCommentList.size()>0) insert CaseCommentList;*/
+    TriggerDispatcher.run(new NF_ZdTicketCommentsTriggerHandler());
 }

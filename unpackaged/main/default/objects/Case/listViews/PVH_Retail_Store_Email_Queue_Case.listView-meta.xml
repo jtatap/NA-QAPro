@@ -9,7 +9,12 @@
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Queue</filterScope>
-    <label>Store Contact Queue</label>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Open</value>
+    </filters>
+    <label>Off Contact Queue</label>
     <queue>PVH_Retail_Store_Email_Queue</queue>
     <sharedTo>
         <group>Tier_1_CSR_CCPA</group>

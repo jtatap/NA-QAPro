@@ -35,7 +35,7 @@
             <name>isCertificateValid</name>
         </outputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... set the output variables explaining that no B2C Client ID was found.</description>
         <name>asn_B2CClientIDNotFound</name>
@@ -101,6 +101,7 @@
         </rules>
     </decisions>
     <description>... this flow can be used to validate if a given B2C Client ID certificate exists.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: B2C Client ID: JWT Certificate: Validate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: B2C Client ID: JWT Certificate: Validate</label>
     <processMetadataValues>

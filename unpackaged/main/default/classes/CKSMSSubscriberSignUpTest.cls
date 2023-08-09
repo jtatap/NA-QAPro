@@ -8,29 +8,29 @@ public class CKSMSSubscriberSignUpTest {
         insert accOne;
         
         Contact conOne = new Contact(LastName='TestConOne', AccountId=accOne.Id,
-                                     Brand_Id__c='2',SMSNumber__c='15555555550',Email='emailone@doamin.com',SMSOptinStatus__c='Y',SMSLocale__c='en_US');
+                                     Brand_Id__c='2',SMSNumber__c='15555555550',Email='emailone@doamin.com',SMSOptinStatus__c='Y',SMSLocale__c='en_US',keyword__c = 'ABCDE');
         listTestContacts.add(conOne);
         
         Contact conTwo = new Contact(LastName='TestConTwo', AccountId=accOne.Id,
-                                     Brand_Id__c='2',Email='emailtwo@doamin.com',SMSNumber__c='');
+                                     Brand_Id__c='2',Email='emailtwo@doamin.com',SMSNumber__c='',keyword__c = 'ABCDE');
         listTestContacts.add(conTwo);
         
         Contact conThree = new Contact(LastName='TestConThree', AccountId=accOne.Id,
-                                     Brand_Id__c='2',SMSNumber__c='15555555552',Email='');
+                                     Brand_Id__c='2',SMSNumber__c='15555555552',Email='',keyword__c = 'ABCDE');
         listTestContacts.add(conThree);
         
         Contact conFour = new Contact(LastName='TestConFour', AccountId=accOne.Id,
-                                     Brand_Id__c='2',Email='emailfour@doamin.com',SMSNumber__c='15555555551');
+                                     Brand_Id__c='2',Email='emailfour@doamin.com',SMSNumber__c='15555555551',keyword__c = 'ABCDE');
         listTestContacts.add(conFour);
         
         Contact conFive = new Contact(LastName='TestConFive', AccountId=accOne.Id,
-                                     Brand_Id__c='2',SMSNumber__c='',Email='');
+                                     Brand_Id__c='2',SMSNumber__c='',Email='',keyword__c = 'ABCDE');
         listTestContacts.add(conFive);
         Contact conSix = new Contact(LastName='TestConSix', AccountId=accOne.Id,
-                                     Brand_Id__c='2',Email='emailsix@doamin.com',SMSNumber__c='15545455550');
+                                     Brand_Id__c='2',Email='emailsix@doamin.com',SMSNumber__c='15545455550',keyword__c = 'ABCDE');
         listTestContacts.add(conSix);
         Contact conSeven = new Contact(LastName='TestConSeven', AccountId=accOne.Id,
-                                     Brand_Id__c='2',Email='',SMSNumber__c='15545555550');
+                                     Brand_Id__c='2',Email='',SMSNumber__c='15545555550',keyword__c = 'ABCDE');
         listTestContacts.add(conSeven);
         /*
         Contact conSix = new Contact(LastName='TestConSix', AccountId=accOne.Id,
@@ -61,9 +61,9 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
+        Test.stopTest();
         System.assertEquals('MISSING_PARAMETERS', responseObj.code);
     }
     @isTest
@@ -87,9 +87,9 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
+        Test.stopTest();
         System.assertEquals('MISSING_PARAMETERS', responseObj.code);
     }
      @isTest
@@ -113,10 +113,9 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
-        
+        Test.stopTest();
     }
    @isTest
     public static void doSMSSignUp_SMSMatchNoEmailMatch(){
@@ -139,10 +138,9 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
-        
+        Test.stopTest();
     }
     @isTest
     public static void doSMSSignUp_SMSMatchInvalidEmailMatch(){
@@ -175,10 +173,9 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
-        
+        Test.stopTest();
     }
     @isTest
     public static void doSMSSignUp_EmailMatch(){
@@ -208,10 +205,75 @@ public class CKSMSSubscriberSignUpTest {
      	req.requestURI = '/CKSMSSubscriber/SignUp';
         req.httpMethod = 'POST';
         req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
         responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
-        System.debug('***Got Response = '+responseObj);
-        System.debug('***RES = '+res);
-        
+        Test.stopTest();
     }
+    
+    @isTest
+    public static void doSMSSignUp_EmailMatchNoSMSNumber(){
+          List<Contact> updatedlistTestContacts = new List<Contact>();
+        Account acc3 = new Account(Name = 'Testing', Gender__c='M');
+        insert acc3;
+        
+        Contact con10= new Contact(LastName='TestCon10', AccountId=acc3.Id,
+                                     Brand_Id__c='2',SMSNumber__c=null,Email='emailtest11@doamin.com',SMSOptinStatus__c='Y',LoyaltyFlag__c=False,keyword__c = 'ABCD');
+        updatedlistTestContacts.add(con10);
+        insert updatedlistTestContacts;
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();             
+    
+        RestContext.request = req;
+        RestContext.response= res;
+        CKSMSSubscriberSignUp.SMSRequest requestObj = new CKSMSSubscriberSignUp.SMSRequest();
+        CKSMSSubscriberSignUp.SMSResponse responseObj = new CKSMSSubscriberSignUp.SMSResponse();
+        requestObj.brandId = '2';
+		requestObj.emailAddress = 'emailtest11@doamin.com';
+		requestObj.smsNumber = '15557555557';
+		requestObj.loyaltyOptin = true;
+		requestObj.storeOfCapture = 'CK801';
+        requestObj.locale = 'es_MX';
+        //newCon.SMSLocale__c  =smsRequest.locale;
+      	String JSONRequest = JSON.serialize(requestObj);  
+     	req.requestURI = '/CKSMSSubscriber/SignUp';
+        req.httpMethod = 'POST';
+        req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
+        responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
+        Test.stopTest();
+    }
+    @isTest
+    public static void doSMSSignUp_EmailMatchwithEmailOptin(){
+          List<Contact> updatedlistTestContacts = new List<Contact>();
+        Account acc3 = new Account(Name = 'Testing', Gender__c='M');
+        insert acc3;
+        
+        Contact con10= new Contact(LastName='TestCon10', AccountId=acc3.Id,
+                                     Brand_Id__c='2',EmailOptInStatus__c='Y',SMSNumber__c='15557655557',Email='emailtest10@doamin.com',SMSOptinStatus__c='Y',LoyaltyFlag__c=False,keyword__c = 'ABCDE');
+        updatedlistTestContacts.add(con10);
+        insert updatedlistTestContacts;
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();             
+    
+        RestContext.request = req;
+        RestContext.response= res;
+        CKSMSSubscriberSignUp.SMSRequest requestObj = new CKSMSSubscriberSignUp.SMSRequest();
+        CKSMSSubscriberSignUp.SMSResponse responseObj = new CKSMSSubscriberSignUp.SMSResponse();
+        requestObj.brandId = '2';
+		requestObj.emailAddress = 'emailtest10@doamin.com';
+		requestObj.smsNumber = '15557555557';
+		requestObj.loyaltyOptin = true;
+		requestObj.storeOfCapture = 'CK801';
+        requestObj.locale = 'es_MX';
+        //newCon.SMSLocale__c  =smsRequest.locale;
+      	String JSONRequest = JSON.serialize(requestObj);  
+     	req.requestURI = '/CKSMSSubscriber/SignUp';
+        req.httpMethod = 'POST';
+        req.requestBody = Blob.valueof(JSONRequest);
+        Test.startTest();
+        responseObj = CKSMSSubscriberSignUp.doSMSSignUp();
+        Test.stopTest();
+    }
+   
     
 }

@@ -3,6 +3,7 @@
     fetchPicklistValues: function(component,objDetails,controllerField, dependentField) {
         // call the server side function  
         var action = component.get("c.getDependentMap");
+        var success = String($A.get("$Label.c.Success1"));
       
         var brandNames = component.get("v.brandNames");
         var caseSourceCountry = component.get("v.caseSourceCountry");
@@ -20,7 +21,7 @@
         });
         //set callback   
         action.setCallback(this, function(response) {
-            if (response.getState() == "SUCCESS") {
+            if (response.getState() == success) {
                 var getResults = response.getReturnValue();
                 console.log('***We got Response = '+getResults);
                 //store the return response from server (map<string,List<string>>)  
@@ -33,7 +34,7 @@
                 component.set("v.brandPhone", getResults.brand_phone);
                 component.set("v.brandPrivacyPolicy", getResults.brand_privacyPolicy);
                 component.set("v.brandOptOutInfo", getResults.brand_optOutInfo);
-                component.set("v.brandWebLink", getResults.webSite_Link)
+                component.set("v.brandWebLink", getResults.webSite_Link);
                 console.log('Label = '+getResults.brand_label);
                 console.log('Email = '+getResults.brand_email);
                 console.log('Phone = '+getResults.brand_phone);
@@ -70,6 +71,59 @@
         $A.enqueueAction(action);
     },
     
+    checkIfEmailExistHelper: function(component, event) {
+
+		var newCase = component.get("v.newCase");
+        var brandNames = component.get("v.brandNames");
+        var saveAction = component.get("c.checkIfContactExistWithEmailId");
+        console.log('SuppliedEmail' +component.get("v.newCase.SuppliedEmail"));
+        saveAction.setParams({ 
+            "brandNames" : brandNames,
+            "checkEmail" : component.get("v.newCase.SuppliedEmail")
+           
+        });
+        saveAction.setCallback(this, function(a) {
+            var state = a.getState();
+            if (state === "SUCCESS") {
+                
+                //$A.get('e.force:refreshView').fire(); 
+                var result = a.getReturnValue();
+                if(result.error){
+                    component.set("v.brandLink",result.brandLink);
+                    component.set("v.showErr",true);
+                   // component.find("v.newCase.SuppliedEmail").setCustomValidity('');
+    				//component.find("v.newCase.SuppliedEmail").reportValidity();
+                }else if(result.emailCheck){
+                    component.set("v.brandLink",result.brandLink);
+                    component.set("v.showErr",false);
+                    component.set("v.contactDetails", result.contactDetails);
+                   // component.find("v.newCase.SuppliedEmail").setCustomValidity("");
+    				//component.find("v.newCase.SuppliedEmail").reportValidity();
+                }else{
+                     component.set("v.showErr",false);
+                
+                }
+            }
+            
+            else if (state === "INCOMPLETE") {
+                console.log('***INCOMPLETE');
+            }
+            else if (state === "ERROR") {
+                var errors = a.getError();
+                if (errors) {
+                    if (errors[0] && errors[0].message) {
+                        console.log("Error message: " + 
+                                 errors[0].message);
+                        this.showToast(component, event,helper, "error","Error: ","Something Went Wrong.");
+                    }
+                } else {
+                    console.log("Unknown error");
+                }
+            }
+        });
+        $A.enqueueAction(saveAction)
+    },
+
     handleRectifyDataHelper : function(component, event, changedData, insertCase,jsonData) {
 		var newCase = component.get("v.newCase");
         var brandNames = component.get("v.brandNames");
@@ -85,12 +139,10 @@
         });
         saveAction.setCallback(this, function(a) {
             var state = a.getState();
-            console.log('succes1');
             if (state === "SUCCESS") {
                 
                 //$A.get('e.force:refreshView').fire(); 
                 var result = a.getReturnValue();
-                console.log('succes'+result.error);
                 if(result.error){
                     component.set("v.brandLink",result.brandLink);
                     component.set("v.showErr",true);
@@ -135,11 +187,9 @@
         $A.enqueueAction(saveAction)
     },
     
-    
     fetchDepValues: function(component, ListOfDependentFields) {
         // create a empty array var for store dependent picklist values for controller field  
         var dependentFields = [];
-        //dependentFields.push('--- None ---');
         for (var i = 0; i < ListOfDependentFields.length; i++) {
             dependentFields.push(ListOfDependentFields[i]);
         }
@@ -147,6 +197,8 @@
         component.set("v.listDependingValues", dependentFields);
         
     },
+    
+    
     
     handleCreateCase : function(component, event, helper) {
         console.log('***inside save helper');
@@ -157,6 +209,9 @@
         var caseSourceCountry = component.get("v.caseSourceCountry");
         console.log('***Name of Customer = '+fName+' '+lName);
         var saveAction = component.get("c.createCase");
+        var success = String($A.get("$Label.c.Success1"));
+        var incomplete = String($A.get("$Label.c.Incomplete"));
+        var error = String($A.get("$Label.c.Error1"));
         
         saveAction.setParams({ 
             "getCaseDetail": newCase,
@@ -167,9 +222,9 @@
         });
         saveAction.setCallback(this, function(a) {
             var state = a.getState();
-            if (state === "SUCCESS") {
+            if (state === success) {
                 
-                //$A.get('e.force:refreshView').fire(); 
+                
                 var result = a.getReturnValue();
                 console.log('***Case Created with Id = '+result);
                 
@@ -185,10 +240,10 @@
                 
             }
             
-            else if (state === "INCOMPLETE") {
+            else if (state === incomplete) {
                 console.log('***INCOMPLETE');
             }
-            else if (state === "ERROR") {
+            else if (state === error) {
                 var errors = a.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {
@@ -211,7 +266,8 @@
         var saveAction = component.get("c.createCaseForDonotSellShare");
         saveAction.setParams({ 
             "brandNames" : brandNames,
-            "checkEmail" : component.get("v.associatedEmail")
+            "checkEmail" : component.get("v.associatedEmail"),
+            "isTealiumApi": false
            
         });
         saveAction.setCallback(this, function(a) {
@@ -273,7 +329,7 @@
             "message": errorMessage
         });
         toastEvent.fire();
-    }
+    },	
     
     
 })

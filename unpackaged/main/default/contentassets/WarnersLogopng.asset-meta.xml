@@ -4,6 +4,10 @@
     <language>en_US</language>
     <masterLabel>WarnersLogopng</masterLabel>
     <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>Warners</name>
+        </network>
         <organization>
             <access>VIEWER</access>
         </organization>

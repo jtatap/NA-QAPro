@@ -14,14 +14,14 @@
     <aura:attribute name="msg1" type="String"/>
     <aura:attribute name="value" type="List"/>
     
-    <h1 class="slds-text-heading_large slds-align_absolute-center">Ecomm Verify</h1>
+    <h1 class="slds-text-heading_large slds-align_absolute-center">{!$Label.c.Ecomm_Verify}</h1>
     
     <aura:if isTrue="{!v.ContactExist}">
             <aura:if isTrue="{!v.eCommNotConnected}">
                 <aura:if isTrue="{!v.otherECommContact}">
                     <lightning:card class="crd">
                         <div style="font-weight: bold; font-size:120%;">
-                            <p>Review: This customer has an email address which has an Ecomm Contact with the following details:</p>
+                            <p>{!$Label.c.ReviewMsg}</p>
                             <p>  </p>
                         </div>    
                         <div class="datTab" style="color:Black; font-size:95%; font-family: courier;">
@@ -34,7 +34,7 @@
                         </lightning:recordViewForm> 
                         <div style="font-weight: bold; font-size:120%; padding-top:around-small">
                             <p>  </p>
-                            <p>To link the Case with above Contact, click below </p>
+                            <p>{!$Label.c.LinkMsg} </p>
                             
                         </div>    
                         <lightning:button class="btn"  label="Re-associate the Contact" onclick="{!c.confirm}"/>    
@@ -52,7 +52,7 @@
                     <aura:set attribute="else">
                         <lightning:card>
                             <div class="err"  style="font-weight: bold; font-size:120%; margin-top: around-large;">
-                                <p> There is no available Ecomm Contact with matching email address </p>
+                                <p> {!$Label.c.AvailableMsg} </p>
                                 <p> </p>
                                 <p>  </p>
                             </div>
@@ -63,7 +63,7 @@
                 <aura:set attribute="else">
                     <lightning:card>
                         <div class="err" style="font-weight: bold; font-size:120%;">
-                            <p> This is an Ecomm Connected Contact. </p>
+                            <p> {!$Label.c.ConnectedMsg} </p>
                         </div>    
                     </lightning:card>
                 </aura:set>

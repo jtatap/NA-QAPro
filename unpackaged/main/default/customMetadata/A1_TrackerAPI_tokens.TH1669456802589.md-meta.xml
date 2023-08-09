@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TH1669456802589</label>
+    <protected>false</protected>
+    <values>
+        <field>AppName__c</field>
+        <value xsi:type="xsd:string">DWTracker</value>
+    </values>
+    <values>
+        <field>ApplicationID__c</field>
+        <value xsi:type="xsd:string">NA-TH-dwTracker-UAT</value>
+    </values>
+    <values>
+        <field>BrandId__c</field>
+        <value xsi:type="xsd:string">1</value>
+    </values>
+    <values>
+        <field>access_key__c</field>
+        <value xsi:type="xsd:string">$2a$10$tj8owk8HCwSiDCkhRQnorO4OFC9kVP.smTftnQh0jsdSk9eCXp2Ga</value>
+    </values>
+    <values>
+        <field>access_token__c</field>
+        <value xsi:type="xsd:string">be6a5e1e-1ff4-43b8-a1b4-e1bc3a976e36</value>
+    </values>
+    <values>
+        <field>key_expires_at__c</field>
+        <value xsi:type="xsd:dateTime">2023-05-20T10:00:13.000Z</value>
+    </values>
+    <values>
+        <field>token_expires_at__c</field>
+        <value xsi:type="xsd:dateTime">2023-05-19T23:20:04.000Z</value>
+    </values>
+    <values>
+        <field>token_expires_in__c</field>
+        <value xsi:type="xsd:double">1.5168002E7</value>
+    </values>
+</CustomMetadata>

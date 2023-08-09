@@ -38,7 +38,7 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>nfCorporateFormEditor</componentName>
-                <identifier>c_nfCorporateFormEditor2</identifier>
+                <identifier>nfCorporateFormEditor</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-62349eee-8ad7-409e-9e25-2fc872364c37</name>
@@ -60,7 +60,7 @@
                     <value>Field Assignment</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab1</identifier>
+                <identifier>customTab</identifier>
             </componentInstance>
         </itemInstances>
         <name>maintabs</name>
@@ -88,7 +88,7 @@
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField1</identifier>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -98,7 +98,7 @@
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.BusinessGroup__c</fieldItem>
-                <identifier>RecordBusinessGroup_cField1</identifier>
+                <identifier>RecordBusinessGroup__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -108,7 +108,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.FieldData__c</fieldItem>
-                <identifier>RecordFieldData_cField1</identifier>
+                <identifier>RecordFieldData__cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
@@ -129,7 +129,7 @@
                     <value>Facet-0f087e06-c2a1-4aea-ae1a-28d468466161</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column1</identifier>
+                <identifier>flexipage_column</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-1a092117-430f-4131-b452-15b08c288155</name>
@@ -147,7 +147,7 @@
                     <value>&lt;p&gt;Video Link and Documentation Upcoming.&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText1</identifier>
+                <identifier>flexipage_richText</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-d41ba3cb-5db0-460e-90ff-71e7cee081ea</name>
@@ -169,7 +169,7 @@
                     <value>accordionSection1</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordionSection</componentName>
-                <identifier>flexipage_accordionSection1</identifier>
+                <identifier>customSection</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-0c2e0f53-d5ea-40b9-8045-e31938b1d6b6</name>
@@ -187,7 +187,7 @@
                     <value>Basic Overview</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection1</identifier>
+                <identifier>flexipage_fieldSection</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -197,7 +197,7 @@
                     <value>Facet-0c2e0f53-d5ea-40b9-8045-e31938b1d6b6</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:accordion</componentName>
-                <identifier>flexipage_accordion1</identifier>
+                <identifier>flexipage_accordion</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>

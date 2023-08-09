@@ -5,7 +5,7 @@
     <aura:attribute name="recordError" type="String" />
     <aura:attribute name="record" type="Object" />
     <aura:attribute name="simpleRecord" type="Object" />
-    
+    <aura:handler name="change" value="{!v.selectedId}" action="{!c.updateRecord}"/> 
     <lightning:card variant="Narrow" title="Contact Details" 
                     iconName="standard:contact">
         <div style="padding:1rem;padding-top :0.2rem">
@@ -19,11 +19,12 @@
                              maxResults="5"
                              filter="CreatedDate > 1900-01-01T00:00:01Z" /> 
               <div style="padding-top:1rem;">
-        <center>
+               
+        <!-- <center>
             <lightning:button label="Confirm" onclick="{!c.updateRecord}" variant="brand"/> 
-          </center>
+          </center> -->
       </div> 
-             
+     
             <force:recordData aura:id="recordHandler"
                         fields="['Id','ContactId']"
                         recordId="{!v.recordId}"

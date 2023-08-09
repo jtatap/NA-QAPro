@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... assign the recordCounts to the specific variables used to track B2C Site and B2C CustomerList recordCounts.</description>
         <name>asn_B2CInstanceRecordCounts</name>
@@ -26,6 +26,7 @@
         </connector>
     </assignments>
     <description>... this flow will update the instance counts (B2C Sites and B2C CustomerLists) for the selected B2C Instance.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: Update B2C Instance Counts {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: Counts: B2C Instance Counts</label>
     <processMetadataValues>

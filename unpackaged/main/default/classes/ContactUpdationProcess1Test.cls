@@ -1,6 +1,7 @@
-@isTest
+@isTest(isParallel=false)
 public class ContactUpdationProcess1Test {
-@isTest static void testdoSignup(){
+    @TestSetup
+    static void makeData(){
         Account acc = new Account(Name=System.Label.PlaceHolderAccountName);
         String recordTypeId = Schema.SObjectType.Contact.getRecordTypeInfosByDeveloperName().get('Email').getRecordTypeId();
         insert acc;
@@ -54,7 +55,8 @@ public class ContactUpdationProcess1Test {
             bpList.add(bp);
         }
         insert bpList;
-        
+    }
+@isTest static void testdoSignup(){
         Test.startTest();
         ContactUpdationProcess1 c = new ContactUpdationProcess1();
         Database.executeBatch(c);

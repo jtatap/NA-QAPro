@@ -1,4 +1,4 @@
-import { api, LightningElement, track } from 'lwc'; 
+import { api, LightningElement, track } from 'lwc';
 
 import getFormConfig from '@salesforce/apex/NF_BrandFormController.getFormConfig';
 import createCase from '@salesforce/apex/NF_BrandFormController.createCase';
@@ -37,16 +37,7 @@ const FIELD_VALIDATION = {
 		messageWhenPatternMismatch: "You have entered invalid phone number"
 	},
 	//Use below to apply validation
-	/* "Order_Number__c": {
-		pattern: "[0-9]{8}",
-		messageWhenPatternMismatch: "Invalid: Order Number Should be of Exactly 8 Digits",
-		isRequired: true
-	},
-	"Tracking_Number__c": {
-		pattern: "[0-9]{8}",
-		messageWhenPatternMismatch: "Invalid: Tracking Number Should be of Exactly 8 Digits",
-		isRequired: true
-	} */
+	
 }
 
 //Channel picklist labels for which "Additional Details" are to be shown
@@ -145,6 +136,7 @@ export default class CommunityBrandForm extends LightningElement {
 			if(this.singleBrandChannelValue){
 				this.selectedChannelType = 'Single';
 			}
+
 			//Set Fields
 			let FIELDS = [];
 			var key = 0;
@@ -155,14 +147,17 @@ export default class CommunityBrandForm extends LightningElement {
 					//Sort the data at granular level
 					f.fieldOptions.sort((x, y) => { return x.order - y.order });
 				}
+
 				FIELDS.push(this.addFieldValidation(f));
 				var fieldsLength = FIELDS.length;
 				FIELDS[fieldsLength - 1].key = ++key;
 				this.writeLog(JSON.stringify(this.addFieldValidation(f)));
 			});
+
 			FIELDS.sort((x, y) => { return x.order - y.order });
 			this.fields = FIELDS;
 			console.log(this.fields);
+
 			//Set brand logo
 			this.brandHeader = {
 				image: BRAND_FORM_RESOURCE + this.formConfig.brand.logoUrl,
@@ -205,7 +200,6 @@ export default class CommunityBrandForm extends LightningElement {
 	}
 
 	handlePicklistChange(e) {
-
 		//Clear previously additional fields
 		this.fields = this.fields.filter(p => !p.additional);
 
@@ -214,6 +208,7 @@ export default class CommunityBrandForm extends LightningElement {
 		let descriptionIndex = this.fields.findIndex(f => f.fieldName === 'Description');
 		let allInputs = this.allInputs();
 		var hideDescription = false;
+
 		if(e.detail.parent === 'Reason_Code_Details__c' && e.detail.secondaryAction === 'Block'){
 			hideDescription = true;
 		}
@@ -319,6 +314,7 @@ export default class CommunityBrandForm extends LightningElement {
 							x.push(eachOption);
 						}
 					});
+
 					this.writeLog('Field options to update: ' + x.length);
 
 					destination.input.value = "";
@@ -348,7 +344,7 @@ export default class CommunityBrandForm extends LightningElement {
 				this.handleFieldToggle(e, destination, hiddenIndex);
 			});
 
-			//this.writeLog('Field to update: ' + destination.field.fieldName);
+			
 		}
 	}
 
@@ -372,7 +368,6 @@ export default class CommunityBrandForm extends LightningElement {
 				//Check for change in Channel__c
 				if (e.detail.parent === "Channel__c") {
 					//Hide Additional detail if the picklist label is not a part of AD_SHOW_CHANNEL_LABELS
-					//if (e.detail.label !== "Tommy.com" && e.detail.label !== "Online – CalvinKlein.com" && e.detail.label !== "Online – CalvinKlein Canada") {
 					if (AD_SHOW_CHANNEL_LABELS.indexOf(e.detail.label) === -1){
 						addDetailDiv.classList.add("slds-hide");
 						if (hiddenDiv) {
@@ -397,7 +392,6 @@ export default class CommunityBrandForm extends LightningElement {
 
 					//Check if the field is hidden by channel. IF YES, do nothing ELSE hide
 					if (!addDetailDiv.classList.contains("hidden-by-Channel")) {
-
 						if (e.detail.label === "Tommy Adaptive") {
 							this.writeLog('========================= found value ==================');
 							addDetailDiv.classList.add('slds-hide');
@@ -514,9 +508,6 @@ export default class CommunityBrandForm extends LightningElement {
 			if (inputCmp.field.fieldName === "Reason_Code__c") {
 				reasonCode = inputCmp.result.value;
 			}
-			/* if (inputCmp.field.fieldName === "Reason_Code_Details__c" && reasonCode === "Product" && this.brandname === "Tommy Hilfiger") {
-				fieldValidity = true;
-			} */
 			if (inputCmp.hidden === true) {
 				fieldValidity = true;
 			}
@@ -569,7 +560,6 @@ export default class CommunityBrandForm extends LightningElement {
 		this.writeLog('Files to attach: ' + JSON.stringify(this.filesToAttach));
 		this.writeLog('Files to attach: ' + this.filesToAttach.length);
 		this.writeLog('Files to remove: ' + this.supportCase.filesToDelete.length);
-		//this.template.querySelector('.form-input-file').disabled = this.filesToAttach.length >= 5;
 	}
 
 	get maxFilesReached() {

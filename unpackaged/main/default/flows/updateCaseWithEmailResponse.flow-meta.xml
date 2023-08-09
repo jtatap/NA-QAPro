@@ -4,7 +4,7 @@
     <assignments>
         <name>CaseNotFound</name>
         <label>CaseNotFound</label>
-        <locationX>672</locationX>
+        <locationX>843</locationX>
         <locationY>51</locationY>
         <assignmentItems>
             <assignToReference>out_response</assignToReference>
@@ -24,7 +24,7 @@
     <assignments>
         <name>Fault</name>
         <label>Fault</label>
-        <locationX>438</locationX>
+        <locationX>609</locationX>
         <locationY>752</locationY>
         <assignmentItems>
             <assignToReference>out_success</assignToReference>
@@ -44,8 +44,8 @@
     <assignments>
         <name>response_update_negative</name>
         <label>response_update_negative</label>
-        <locationX>971</locationX>
-        <locationY>492</locationY>
+        <locationX>1133</locationX>
+        <locationY>482</locationY>
         <assignmentItems>
             <assignToReference>out_response</assignToReference>
             <operator>Assign</operator>
@@ -64,8 +64,8 @@
     <assignments>
         <name>response_updatePositive</name>
         <label>response_updatePositive</label>
-        <locationX>62</locationX>
-        <locationY>657</locationY>
+        <locationX>210</locationX>
+        <locationY>665</locationY>
         <assignmentItems>
             <assignToReference>out_success</assignToReference>
             <operator>Assign</operator>
@@ -85,8 +85,8 @@
         <description>List of acceptable case actions input into the API request</description>
         <name>Set_Case_Statuses</name>
         <label>Set Case Statuses</label>
-        <locationX>386</locationX>
-        <locationY>108</locationY>
+        <locationX>557</locationX>
+        <locationY>106</locationY>
         <assignmentItems>
             <assignToReference>CaseStatuses</assignToReference>
             <operator>Add</operator>
@@ -144,12 +144,34 @@
         <description>Valid list of responses is set in &#39;Set Case Statuses&#39;</description>
         <name>CheckBoolean</name>
         <label>CheckResponse</label>
-        <locationX>451</locationX>
-        <locationY>202</locationY>
+        <locationX>841</locationX>
+        <locationY>180</locationY>
         <defaultConnector>
             <targetReference>response_update_negative</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>False</defaultConnectorLabel>
+        <rules>
+            <name>Already_Confirmed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.R2R_Email_UserConfirmation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Confirmed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.R2R_Email_UserConfirmation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>response_update_negative</targetReference>
+            </connector>
+            <label>Already Confirmed</label>
+        </rules>
         <rules>
             <name>Update_User_Confirmation</name>
             <conditionLogic>and</conditionLogic>
@@ -167,6 +189,13 @@
                     <elementReference>Get_Case.VerificationHash__c</elementReference>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.R2R_Email_UserConfirmation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Started</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Update_User_Confirmed_Case</targetReference>
             </connector>
@@ -176,17 +205,24 @@
             <name>Other_Valid_Responses</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>CaseStatuses</leftValueReference>
-                <operator>Contains</operator>
-                <rightValue>
-                    <elementReference>in_response</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
                 <leftValueReference>in_verificationCode</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>Get_Case.VerificationHash__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>in_response</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resolved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.R2R_Email_UserConfirmation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Started</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -196,6 +232,7 @@
         </rules>
     </decisions>
     <description>Changed response messages</description>
+    <environments>Default</environments>
     <formulas>
         <name>DueDateFormula</name>
         <dataType>DateTime</dataType>
@@ -210,6 +247,12 @@
         </value>
     </processMetadataValues>
     <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
         <name>OriginBuilderType</name>
         <value>
             <stringValue>LightningFlowBuilder</stringValue>
@@ -220,7 +263,7 @@
         <description>Hash is verified later.</description>
         <name>Get_Case</name>
         <label>Get Case</label>
-        <locationX>218</locationX>
+        <locationX>389</locationX>
         <locationY>50</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -250,12 +293,13 @@
         <queriedFields>Type</queriedFields>
         <queriedFields>Sub_Type__c</queriedFields>
         <queriedFields>RecordTypeId</queriedFields>
+        <queriedFields>R2R_Email_UserConfirmation__c</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>Privacy_Interval</name>
         <label>Privacy Interval</label>
-        <locationX>219</locationX>
+        <locationX>390</locationX>
         <locationY>202</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -278,7 +322,7 @@
     <recordUpdates>
         <name>Update_Case_Status_pos</name>
         <label>Update Case Status Positive</label>
-        <locationX>514</locationX>
+        <locationX>685</locationX>
         <locationY>431</locationY>
         <connector>
             <targetReference>response_updatePositive</targetReference>
@@ -294,6 +338,12 @@
                 <elementReference>in_caseid</elementReference>
             </value>
         </filters>
+        <inputAssignments>
+            <field>R2R_Email_UserConfirmation__c</field>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>Resolution_Code__c</field>
             <value>
@@ -312,8 +362,8 @@
         <description>Updates case where the user has confirmed their request and sets the date</description>
         <name>Update_User_Confirmed_Case</name>
         <label>Update User Confirmed Case</label>
-        <locationX>200</locationX>
-        <locationY>316</locationY>
+        <locationX>371</locationX>
+        <locationY>315</locationY>
         <connector>
             <targetReference>response_updatePositive</targetReference>
         </connector>
@@ -338,6 +388,12 @@
             <field>Privacy_User_Confirmed_Date__c</field>
             <value>
                 <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>R2R_Email_UserConfirmation__c</field>
+            <value>
+                <stringValue>Confirmed</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

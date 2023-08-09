@@ -10,7 +10,7 @@
             <template if:false={editMode}>
                 <div class="slds-col slds-size_12-of-12 slds-p-around_small">
                     <div class="slds-p-around_medium">
-                        <lightning-card icon-name="action:record" title="Reason Code"> 
+                        <lightning-card icon-name="action:record" title="Reason Code">
                             <div class="slds-var-m-left_medium">
                                 <template if:true={record}>
                                     <lightning-record-view-form object-api-name="Case" record-id={recordId}>
@@ -18,60 +18,66 @@
                                             <lightning-output-field field-name="Reason_Code__c">
                                             </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Reason_Code_Details__c.value}>
-                                            <lightning-output-field field-name="Reason_Code_Details__c"></lightning-output-field>
+                                            <lightning-output-field field-name="Reason_Code_Details__c">
+                                            </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Reason_Sub_detail__c.value}>
-                                            <lightning-output-field label="Reason Sub Detail" class="Reason_Sub_detail__c" field-name="Reason_Sub_detail__c" ></lightning-output-field>
+                                            <lightning-output-field label="Reason Sub Detail"
+                                                class="Reason_Sub_detail__c" field-name="Reason_Sub_detail__c">
+                                            </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Reason_Code_Product_Category__c.value}>
-                                            <lightning-output-field label="Product Category" field-name="Reason_Code_Product_Category__c"></lightning-output-field>
+                                            <lightning-output-field label="Product Category"
+                                                field-name="Reason_Code_Product_Category__c"></lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Reason_Code_Product_Sub_Categories_Widge__c.value}>
-                                            <lightning-output-field label="Reason Sub Category" field-name="Reason_Code_Product_Sub_Categories_Widge__c" >
+                                            <lightning-output-field label="Reason Sub Category"
+                                                field-name="Reason_Code_Product_Sub_Categories_Widge__c">
                                             </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Reason_Code_Manufacturers__c.value}>
-                                            <lightning-output-field field-name="Reason_Code_Manufacturers__c" >
+                                            <lightning-output-field field-name="Reason_Code_Manufacturers__c">
                                             </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.Sku_Style_Number__c.value}>
-                                            <lightning-output-field field-name="Sku_Style_Number__c" >
+                                            <lightning-output-field field-name="Sku_Style_Number__c">
                                             </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.ZdPVHStoreNumber__c.value}>
-                                            <lightning-output-field  field-name="ZdPVHStoreNumber__c" >
+                                            <lightning-output-field field-name="ZdPVHStoreNumber__c">
                                             </lightning-output-field>
                                         </template>
-                                        
+
                                         <template if:true={mapData.ZdPVHDistrictNumber__c.value}>
-                                            <lightning-output-field field-name="ZdPVHDistrictNumber__c" >
+                                            <lightning-output-field field-name="ZdPVHDistrictNumber__c">
                                             </lightning-output-field>
                                         </template>
                                         <template if:true={mapData.ZdPVHDateofServiceIssue__c.value}>
-                                            <lightning-output-field field-name="ZdPVHDateofServiceIssue__c" >
+                                            <lightning-output-field field-name="ZdPVHDateofServiceIssue__c">
                                             </lightning-output-field>
                                         </template>
                                         <template if:true={mapData.ZdPVHUpdateAccountInfoReason__c.value}>
-                                            <lightning-output-field field-name="ZdPVHUpdateAccountInfoReason__c" >
+                                            <lightning-output-field field-name="ZdPVHUpdateAccountInfoReason__c">
                                             </lightning-output-field>
                                         </template>
                                         <template if:true={mapData.Third_Party_Vendors__c.value}>
-                                            <lightning-output-field field-name="Third_Party_Vendors__c" >
+                                            <lightning-output-field field-name="Third_Party_Vendors__c">
                                             </lightning-output-field>
                                         </template>
                                     </lightning-record-view-form>
                                 </template>
                                 <div class="slds-p-around_medium">
-                                    <button type="button" class="reasonCodeButton slds-button slds-button_neutral slds-button_brand"
-                                    onclick={handleEditClick}>Edit</button>
+                                    <button type="button"
+                                        class="reasonCodeButton slds-button slds-button_neutral slds-button_brand"
+                                        onclick={handleEditClick}>Edit</button>
                                 </div>
                             </div>
                         </lightning-card>
@@ -83,93 +89,122 @@
                 <template for:each={listOfReasonCodes} for:item="reasonCode">
                     <div key={reasonCode.value} class="slds-col slds-size_4-of-12">
                         <div class="slds-p-around_medium">
-                            <c-nf-picklist-as-buttons currentreasoncode={currentReasonCode} onbuttonselected={handlebuttonpress} itemtodisplay={reasonCode}></c-nf-picklist-as-buttons>
-                        </div></div>
+                            <c-nf-picklist-as-buttons currentreasoncode={currentReasonCode}
+                                onbuttonselected={handlebuttonpress} itemtodisplay={reasonCode}>
+                            </c-nf-picklist-as-buttons>
+                        </div>
+                    </div>
                 </template>
 
                 <div class="slds-col slds-size_12-of-12">
                     <div class="slds-p-around_medium">
-                        <div if:false={isLoaded}><div><lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner></div></div>
+                        <div if:false={isLoaded}>
+                            <div>
+                                <lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner>
+                            </div>
+                        </div>
                         <lightning-record-edit-form record-id={recordId} record-type-id="0121U000000SgktQAC"
-                            object-api-name="Case" onsuccess={handleSuccess} onsubmit={handleSubmit} onerror={handleError}>
+                            object-api-name="Case" onsuccess={handleSuccess} onsubmit={handleSubmit}
+                            onerror={handleError}>
                             <lightning-messages></lightning-messages>
                             <div style="display: none;">
-                                <lightning-input-field class="Reason_Code__c" field-name="Reason_Code__c" onchange={handleInputChange}>
-                                </lightning-input-field></div>
+                                <lightning-input-field class="Reason_Code__c" field-name="Reason_Code__c"
+                                    onchange={handleInputChange}>
+                                </lightning-input-field>
+                            </div>
 
                             <div style={display_Reason_Code_Details__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <label for="Reason_Code_Details__c">Reason Code Details</label>
-                                <lightning-input-field id="Reason_Code_Details__c" variant="label-hidden" field-name="Reason_Code_Details__c" onchange={handleInputChange}></lightning-input-field>
+                                <label for="Reason_Code_Details__c">{label.Reason_Code_Details}</label>
+                                <lightning-input-field id="Reason_Code_Details__c" variant="label-hidden"
+                                    field-name="Reason_Code_Details__c" onchange={handleInputChange}>
+                                </lightning-input-field>
                             </div>
 
                             <div style={display_Reason_Sub_detail__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <label for="Reason_Sub_detail__c">Reason Sub Detail</label>
-                                <lightning-input-field id="Reason_Sub_detail__c" variant="label-hidden" class="Reason_Sub_detail__c" field-name="Reason_Sub_detail__c" onchange={handleInputChange} ></lightning-input-field>
+                                <label for="Reason_Sub_detail__c">{label.Reason_Sub_Detail}</label>
+                                <lightning-input-field id="Reason_Sub_detail__c" variant="label-hidden"
+                                    class="Reason_Sub_detail__c" field-name="Reason_Sub_detail__c"
+                                    onchange={handleInputChange}></lightning-input-field>
                             </div>
 
                             <div style={display_Reason_Code_Product_Category__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <label for="Reason_Code_Product_Category__c">Product Category</label>
-                                <lightning-input-field id="Reason_Code_Product_Category__c" variant="label-hidden" field-name="Reason_Code_Product_Category__c" onchange={handleInputChange}></lightning-input-field>
+                                <label for="Reason_Code_Product_Category__c">{label.Product_Category}</label>
+                                <lightning-input-field id="Reason_Code_Product_Category__c" variant="label-hidden"
+                                    field-name="Reason_Code_Product_Category__c" onchange={handleInputChange}>
+                                </lightning-input-field>
                             </div>
 
                             <div style={display_Reason_Code_Product_Sub_Categories_Widge__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <label for="Reason_Code_Product_Sub_Categories_Widge__c">Product Sub Category</label>
-                                <lightning-input-field id="Reason_Code_Product_Sub_Categories_Widge__c" variant="label-hidden" value={mapData.Reason_Code_Product_Sub_Categories_Widge__c.value} field-name="Reason_Code_Product_Sub_Categories_Widge__c" onchange={handleInputChange} >
+                                <label for="Reason_Code_Product_Sub_Categories_Widge__c">{label.Product_Sub_Category}</label>
+                                <lightning-input-field id="Reason_Code_Product_Sub_Categories_Widge__c"
+                                    variant="label-hidden"
+                                    value={mapData.Reason_Code_Product_Sub_Categories_Widge__c.value}
+                                    field-name="Reason_Code_Product_Sub_Categories_Widge__c"
+                                    onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={display_Reason_Code_Manufacturers__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field field-name="Reason_Code_Manufacturers__c" onchange={handleInputChange} >
+                                <lightning-input-field field-name="Reason_Code_Manufacturers__c"
+                                    onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={display_Sku_Style_Number__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field field-name="Sku_Style_Number__c" onchange={handleInputChange} >
+                                <lightning-input-field field-name="Sku_Style_Number__c" onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={display_ZdPVHStoreNumber__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field required={required_ZdPVHStoreNumber__c} class="display_ZdPVHStoreNumber__c" field-name="ZdPVHStoreNumber__c" onchange={handleInputChange} >
+                                <lightning-input-field required={required_ZdPVHStoreNumber__c}
+                                    class="display_ZdPVHStoreNumber__c" field-name="ZdPVHStoreNumber__c"
+                                    onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={display_ZdPVHDistrictNumber__c}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field required={required_ZdPVHDistrictNumber__c} class="display_ZdPVHDistrictNumber__c" field-name="ZdPVHDistrictNumber__c" onchange={handleInputChange} >
+                                <lightning-input-field required={required_ZdPVHDistrictNumber__c}
+                                    class="display_ZdPVHDistrictNumber__c" field-name="ZdPVHDistrictNumber__c"
+                                    onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={isRequired1}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field required={required_ZdPVHDateofServiceIssue__c} field-name="ZdPVHDateofServiceIssue__c" onchange={handleInputChange} >
+                                <lightning-input-field required={required_ZdPVHDateofServiceIssue__c}
+                                    field-name="ZdPVHDateofServiceIssue__c" onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={isAccInfoReason}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field field-name="ZdPVHUpdateAccountInfoReason__c" onchange={handleInputChange} >
+                                <lightning-input-field field-name="ZdPVHUpdateAccountInfoReason__c"
+                                    onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div style={isProCatSubSelected}>
                                 <div class="slds-p-top_x-small"></div>
-                                <lightning-input-field field-name="Third_Party_Vendors__c" onchange={handleInputChange} >
+                                <lightning-input-field field-name="Third_Party_Vendors__c" onchange={handleInputChange}>
                                 </lightning-input-field>
                             </div>
 
                             <div class="slds-grid slds-m-top_medium">
                                 <div class="slds-col" style="text-align: center;">
-                                    <lightning-button id="submit"  variant="Brand" type="submit" label="Save"></lightning-button>
+                                    <lightning-button id="submit" variant="Brand" type="submit" label="Save">
+                                    </lightning-button>
                                 </div>
                                 <div class="slds-col" style="text-align: center;">
-                                    <lightning-button id="cancel"  variant="destructive" onclick={handleReset} type="cancel" label="Cancel"></lightning-button>
+                                    <lightning-button id="cancel" variant="destructive" onclick={handleReset}
+                                        type="cancel" label="Cancel"></lightning-button>
                                 </div>
                             </div>
                         </lightning-record-edit-form>

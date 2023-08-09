@@ -9,23 +9,60 @@
         <masterLabel>FCR%</masterLabel>
         <scale>1</scale>
     </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_60532331</developerName>
+        <masterLabel>Brand</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Brand__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>82</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>84</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>81</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>83</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4</sourceValue>
+            </sourceValues>
+            <value>Heritage</value>
+        </values>
+    </buckets>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
             <axisBinding>y</axisBinding>
-            <column>RowCount</column>
+            <column>FORMULA1</column>
         </chartSummaries>
-        <chartType>Donut</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Case.First_Contact_Resolution__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>Case.Brand__c</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>true</showTotal>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
         <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -39,6 +76,9 @@
     </columns>
     <columns>
         <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>BucketField_60532331</field>
     </columns>
     <filter>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND NOT (5 AND 6)</booleanFilter>
@@ -86,6 +126,11 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Brand__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Case.First_Contact_Resolution__c</field>

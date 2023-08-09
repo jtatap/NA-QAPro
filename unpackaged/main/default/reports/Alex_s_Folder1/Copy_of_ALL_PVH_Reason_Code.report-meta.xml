@@ -71,7 +71,7 @@
         <groupingColumn>CREATED_DATE</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>ORIGIN</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Case.Brand__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -92,7 +92,7 @@
     </columns>
     <description>Reason Codes for All PVH.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -118,8 +118,8 @@
             <column>Case.Brand__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>,11,100</value>
+            <operator>equals</operator>
+            <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
@@ -142,17 +142,10 @@
             <operator>equals</operator>
             <value>Shipping</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Case.Channel__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>,Calvin Klein Retail,Tommy Hilfiger Retail,Other Retailer,trueandco.com,Van Heusen | IZOD Company Store</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>FiscalWeek</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -160,11 +153,6 @@
         <dateGranularity>Day</dateGranularity>
         <field>Case.Brand__c</field>
         <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>ORIGIN</field>
-        <sortOrder>Desc</sortOrder>
     </groupingsDown>
     <name>Shipping Reason Code Trend</name>
     <params>
@@ -182,8 +170,8 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <endDate>2020-12-06</endDate>
+        <endDate>2023-08-09</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-08-24</startDate>
+        <startDate>2023-08-09</startDate>
     </timeFrameFilter>
 </Report>

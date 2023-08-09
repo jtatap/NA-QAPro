@@ -101,7 +101,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
-            <value>System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Hymein,Caroline,Ann Marie,Keith,Alexis Rios</value>
+            <value>System,Braj,Wendy,Jasen,Ioannis,Avinash,Sona,Charles,Diane,Robin,Cheryl,Ericka Guevara,Soant,Hymein,Caroline,Ann Marie,Keith,Alexis Rios,Jeff Kyle,Elizabeth Cruz,Aliyah Caiazzo,Christopher Apostola</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>

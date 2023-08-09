@@ -2,10 +2,10 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Latest_Campaigns__c</fullName>
     <externalId>false</externalId>
-    <label>Latest Campaigns</label>
+    <label>Campaign Name</label>
     <length>1000</length>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <type>LongTextArea</type>
-    <visibleLines>5</visibleLines>
+    <visibleLines>2</visibleLines>
 </CustomField>

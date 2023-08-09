@@ -8,8 +8,10 @@ global class Batch_purgeIREStagingTable implements  Database.Batchable <sObject>
     String QueryString = Null;
     
     global Database.QueryLocator start(Database.BatchableContext bc){
-        QueryString = 'SELECT Id, CreatedDate FROM IRE_StagingTable__c ';
-        System.debug('QueryString: '+ QueryString);
+        NF_Batch_Control__mdt batchMeta = NF_Batch_Control__mdt.getInstance('Batch_purgeIREStagingTable');
+        QueryString = batchMeta.Query_String__c;
+        Log.push('QueryString: '+ QueryString);
+        Logger.logDebug();
         return Database.getQueryLocator(QueryString);
     }
     
@@ -22,24 +24,25 @@ global class Batch_purgeIREStagingTable implements  Database.Batchable <sObject>
             integer datediff = CreatedDate.daysBetween(Today);
                    
                     if(datediff > 21){
-                    System.debug('>>>Records Add in IREStagingList');
+                    Log.push('>>>Records Add in IREStagingList');
                     IREStagingList.add(IST);
                 }
             } 
             
         
-        System.debug('IREStagingList size: '+ IREStagingList.size());
+        Log.push('IREStagingList size: '+ IREStagingList.size());
         
         if(IREStagingList.size()>0){
             List<Database.DeleteResult> results = Database.Delete(IREStagingList, false);
             for (Database.DeleteResult result : results) {
                 if (!result.isSuccess()){
                     for (Database.Error err : result.getErrors()){
-                        System.debug('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
+                        Log.push('Error: '+ err.getStatusCode() + ' ' + err.getMessage());
                     }
                 }
             }
-        } 
+        }
+        Logger.logDebug(); 
     }
     
     global void finish(Database.BatchableContext bc){

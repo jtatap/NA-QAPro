@@ -49,21 +49,27 @@ public with sharing class NF_UtilTest {
 
     @IsTest
     public static void test1() {
+        Test.startTest();
         String chatKey = NF_UtilTest.createLiveChatTranscript();
         NF_Util.insertSession(chatKey,'','Calvin Klein');
         String intent = NF_Util.getLastBusinessIntent(chatKey);
+        Test.stopTest();
         System.assertNotEquals(NF_Util.getBotSession(chatKey),null);
     }
 
     @IsTest
     public static void test2() {
+        Test.startTest();
         RecordType rt = NF_Util.getRecordType();
-        //System.assertNotEquals(rt,null);
+        Test.stopTest();
+        System.assertEquals(rt,null);
     }
 
     @IsTest
     public static void test3() {
+        Test.startTest();
         Brand_Setting__mdt mdt = NF_Util.getBrandName('https://calvinklein.com');
+        Test.stopTest();
         System.assertNotEquals(mdt.Brand_Id__c,null);
         System.assertNotEquals(NF_Util.getDomainName('https://calvinklein.com'),null);
 
@@ -71,12 +77,15 @@ public with sharing class NF_UtilTest {
 
     @IsTest
     public static void test4() {
+        Test.startTest();
         List<String> names = NF_Util.splitFullNameIntoFirstAndLast('test user');
+        Test.stopTest();
         System.assertNotEquals(names.size(),0);
 
     }
     @IsTest
     public static void test5() {
+        Test.startTest();
         Account test = NF_Util.createCustomer('test', 'user', 'test@gmail.com');
         System.assertNotEquals(test,null);
         Account account = NF_Util.getContact('test@gmail.com');
@@ -88,10 +97,10 @@ public with sharing class NF_UtilTest {
 
         Contact c = NF_Util.getContact('test@gmail.com', '', 'Tommy Hilfiger');
         System.assertNotEquals(c,null);
+        System.Test.stopTest();
+
     }
-    
-    
-    
+
     public static ebotdata__Bot_Session__c insertBotSession(String chatKey){
         ebotdata__Bot_Session__c session = new ebotdata__Bot_Session__c();
         session.ebotdata__Live_Agent_Session_Id__c = chatKey;
@@ -111,7 +120,7 @@ public with sharing class NF_UtilTest {
 
     @IsTest
     static void test1GetRamdomResponse() {
-        
+        Test.startTest();
         contact con = new contact (lastname='Dummycontact' ,email='test@gmail.com',Brand_Id__c = '1',LoyaltyID__c='123456');
         insert con;
         
@@ -121,7 +130,6 @@ public with sharing class NF_UtilTest {
         gr.Name ='privacyContact';
         insert gr;
         Case cs = NF_Util.getCaseRelatedToContact(con.Id);
-        
         List<NF_CreateCase.Input> inputs = new List<NF_CreateCase.Input>();
         NF_CreateCase.Input input = new NF_CreateCase.Input();
         List<NF_CreateCase.Output> outputs;
@@ -135,11 +143,13 @@ public with sharing class NF_UtilTest {
         input.reason = 'just a test';
         inputs.add(input);
         outputs = NF_CreateCase.createCase(inputs);
+        Test.stopTest();
         System.assertNotEquals(outputs.get(0).caseNumber,null);
 
     }
     @IsTest
     static void updateSessionTest1() {
+        Test.startTest();
         NF_UpdateSessionFollowup.Input input= new NF_UpdateSessionFollowup.Input();
         input.chatKey = NF_UtilTest.createLiveChatTranscript();
         input.isPositiveFeedback = 'true';
@@ -153,6 +163,7 @@ public with sharing class NF_UtilTest {
         WHERE ebotdata__Live_Agent_Session_Id__c = :input.chatKey
         LIMIT 1];
         //return botSessions.size() > 0 ? botSessions[0] : null;
+        Test.stopTest();
         System.assertEquals(botSessions[0].Visitor_Feedback_Result__c,'Yes');
 
     }
@@ -176,5 +187,12 @@ public with sharing class NF_UtilTest {
         insert transcript;
 
         return transcript;
+    }
+    
+    @isTest
+    static void getBrandNameTest(){
+        NF_Util.getBrandName(SYSTEM.LABEL.TOMMY);
+        NF_Util.getBrandName(SYSTEM.LABEL.IZOD);
+        NF_Util.getBrandName(SYSTEM.LABEL.VH);
     }
 }

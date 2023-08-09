@@ -13,7 +13,6 @@ public class RewardsTest {
     //method: fake response
     //@isTest(SeeAllData=true) 
     public static void setMockResponse(){
-        
         responseHeaders.put('Content-Type','application/json');
         SingleRequestMock fakeResponse = new SingleRequestMock(200,
                                                                'Complete',
@@ -46,6 +45,7 @@ public class RewardsTest {
     //method:
     @isTest
     public static void invocablePostRewardsToA1Test(){
+        Test.startTest();
         setMockResponse();
         List<Rewards.RewardsData> ListData = new List<Rewards.RewardsData>();
         Rewards.RewardsData obj = new Rewards.RewardsData();
@@ -56,6 +56,9 @@ public class RewardsTest {
         obj.rewardId = '134275624';
         ListData.add(obj);
         Rewards.invocablePostRewardsToA1(ListData);
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
         
     }
     
@@ -80,6 +83,7 @@ public class RewardsTest {
     //method:
     @isTest
     public static void invocablePostRewardsToA1Test1(){
+        Test.startTest();
         setMockResponse();
         List<Rewards.RewardsData> ListData = new List<Rewards.RewardsData>();
         Rewards.RewardsData obj = new Rewards.RewardsData();
@@ -90,10 +94,14 @@ public class RewardsTest {
         obj.rewardId = '134275625';
         ListData.add(obj);
         Rewards.invocablePostRewardsToA1(ListData);
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
         
     }
     @isTest
     public static void createErrorLogTest(){
+        Test.startTest();
         List<ErrorLog__c> insertErrorLog=new List<ErrorLog__c>();
         String reqEndPoint='Testing';
         String reqBody='test1';
@@ -111,7 +119,9 @@ public class RewardsTest {
         }
         
         Rewards.createErrorLogs(reqEndPoint,reqBody,resStatusCode,resBody);
-        
+        Integer callouts = Limits.getCallouts();
+        Test.stopTest();
+        system.assertEquals(0, callouts);
     }
      
 }

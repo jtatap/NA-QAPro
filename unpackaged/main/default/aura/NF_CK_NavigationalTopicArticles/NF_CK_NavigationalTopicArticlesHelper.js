@@ -2,10 +2,12 @@
     fetchNavigationalTopic : function(component, event) {
         var self = this;
         var articalDisplayed = component.get('v.articalDisplayed');
+        var success = String($A.get("$Label.c.Success1"));
+        var error = String($A.get("$Label.c.Error1"));
         var action = component.get("c.getArticles");
         action.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS") {
+            if (state === success) {
                 var navigationTopicList = response.getReturnValue();
                 console.log(navigationTopicList);
                 if(navigationTopicList != null && navigationTopicList != undefined){
@@ -31,7 +33,7 @@
                 }
                 var newList = [];
                 component.set('v.topicList',navigationTopicList);
-            }else if (state === "ERROR") {
+            }else if (state === error) {
                 var errors = response.getError();
                 if (errors) {
                     if (errors[0] && errors[0].message) {

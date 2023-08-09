@@ -236,7 +236,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>Yesterday</metricLabel>
-                <report>Wendy_s_Folder/Daily_KPI_Dashboard/Yesterday_Chat_ASA_and_AHT</report>
+                <report>Daily_KPI_Dashboard/Yesterday_Chat_ASA_and_AHT</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>

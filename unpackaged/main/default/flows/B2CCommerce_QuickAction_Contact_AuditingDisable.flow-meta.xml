@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <assignments>
         <description>... updates the key properties on the record selected which disable REST API auditing.</description>
         <name>asn_disableB2CCommerceRESTAPIAuditing</name>
@@ -26,6 +26,7 @@
         </connector>
     </assignments>
     <description>... disables auditing of B2C Commerce OCAPI REST API interactions for a given Contact.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: Contact Auditing Disable {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: Contact: Integration Auditing: Disable</label>
     <processMetadataValues>

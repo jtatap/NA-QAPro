@@ -10,11 +10,12 @@
     <columns>OWNER_NAME</columns>
     <columns>CASES.ORIGIN</columns>
     <columns>Brand__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>CASES.STATUS</field>
         <operation>equals</operation>
-        <value>Resolved</value>
+        <value>Resolved,Closed</value>
     </filters>
     <filters>
         <field>CASES.RECORDTYPE</field>
@@ -34,12 +35,12 @@
     <filters>
         <field>CASES.CREATED_DATE_DATE_ONLY</field>
         <operation>greaterThan</operation>
-        <value>3/14/2021 12:00 AM</value>
+        <value>4/5/2022 12:00 AM</value>
     </filters>
     <filters>
         <field>CORE.USERS.FIRST_NAME</field>
         <operation>equals</operation>
-        <value>Nirmala</value>
+        <value>NIRMALA</value>
     </filters>
     <label>Cases Ready for Quality Feedback</label>
     <sharedTo>

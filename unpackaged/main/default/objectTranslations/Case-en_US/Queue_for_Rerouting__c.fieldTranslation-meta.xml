@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Use this field to reroute the Case to the correct Queue and update the Originating Queue. --></help>
+        <label><!-- Queue for Rerouting --></label>
+        <name>Queue_for_Rerouting__c</name>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

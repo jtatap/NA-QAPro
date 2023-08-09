@@ -12,7 +12,7 @@
     <enableFlowInterviewSharingEnabled>true</enableFlowInterviewSharingEnabled>
     <enableFlowNullPreviousValueFix>false</enableFlowNullPreviousValueFix>
     <enableFlowPauseEnabled>false</enableFlowPauseEnabled>
-    <enableFlowUseApexExceptionEmail>true</enableFlowUseApexExceptionEmail>
+    <enableFlowUseApexExceptionEmail>false</enableFlowUseApexExceptionEmail>
     <enableFlowViaRestUsesUserCtxt>true</enableFlowViaRestUsesUserCtxt>
     <enableLightningRuntimeEnabled>true</enableLightningRuntimeEnabled>
     <isAccessToInvokedApexRequired>true</isAccessToInvokedApexRequired>

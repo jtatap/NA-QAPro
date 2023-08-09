@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <decisions>
         <description>... evaluate if a B2C Client ID was found using the corresponding recordId.</description>
         <name>dec_wasB2CClientIDFound</name>
@@ -54,6 +54,7 @@
         </rules>
     </decisions>
     <description>... this quickAction can be used to validate that the JWT certificate associated to a B2C Client ID is valid and usable to mint JWTs.</description>
+    <environments>Default</environments>
     <interviewLabel>B2C Commerce: Quick Action: B2C Client ID: Verify Certificate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>B2C Commerce: Quick Action: B2C Client ID: Verify JWT Certificate</label>
     <processMetadataValues>

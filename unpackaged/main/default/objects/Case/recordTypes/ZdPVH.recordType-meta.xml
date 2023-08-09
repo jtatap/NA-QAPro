@@ -43,10 +43,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>5</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>7</fullName>
             <default>false</default>
         </values>
@@ -1115,7 +1111,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Public Relations  Inquirie</fullName>
+            <fullName>Public Relations Inquiry</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1919,6 +1915,13 @@
         </values>
         <values>
             <fullName>Van Heusen store</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Queue_for_Rerouting__c</picklist>
+        <values>
+            <fullName>Wholesale</fullName>
             <default>false</default>
         </values>
     </picklistValues>
